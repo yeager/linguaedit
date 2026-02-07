@@ -1,0 +1,62 @@
+# Swedish translation for LexiLoom
+# Copyright (C) 2026 Daniel Nylander
+# This file is distributed under the same license as the LexiLoom package.
+# Daniel Nylander <po@danielnylander.se>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: LexiLoom 0.1.0\n"
+"Report-Msgid-Bugs-To: po@danielnylander.se\n"
+"POT-Creation-Date: 2025-02-07 16:00+0100\n"
+"PO-Revision-Date: 2025-02-07 16:00+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Open file"
+msgstr "Öppna fil"
+
+msgid "Save"
+msgstr "Spara"
+
+msgid "Lint file"
+msgstr "Kontrollera fil"
+
+msgid "Pre-translate all"
+msgstr "Föröversätt alla"
+
+msgid "Spell check current"
+msgstr "Stavningskontroll"
+
+msgid "File metadata…"
+msgstr "Filmetadata…"
+
+msgid "Check for updates"
+msgstr "Sök efter uppdateringar"
+
+msgid "About LexiLoom"
+msgstr "Om LexiLoom"
+
+msgid "Source (msgid)"
+msgstr "Källa (msgid)"
+
+msgid "Translation (msgstr)"
+msgstr "Översättning (msgstr)"
+
+msgid "Pre-translate"
+msgstr "Föröversätt"
+
+msgid "Spell check"
+msgstr "Stavningskontroll"
+
+msgid "Fuzzy"
+msgstr "Luddig"
+
+msgid "No file loaded"
+msgstr "Ingen fil laddad"
+
+msgid "Saved!"
+msgstr "Sparat!"
