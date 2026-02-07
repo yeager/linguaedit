@@ -8,10 +8,10 @@ import sys
 import requests
 from typing import Optional
 
-from lexiloom import __version__
+from traduco import __version__
 
 
-GITHUB_RELEASES_URL = "https://api.github.com/repos/danielnylander/lexiloom/releases/latest"
+GITHUB_RELEASES_URL = "https://api.github.com/repos/yeager/traduco/releases/latest"
 
 
 def check_for_updates() -> Optional[dict]:

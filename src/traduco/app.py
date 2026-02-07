@@ -1,4 +1,4 @@
-"""LexiLoom GTK4 application entry point."""
+"""Traduco GTK4 application entry point."""
 
 from __future__ import annotations
 
@@ -8,11 +8,11 @@ gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 from gi.repository import Adw, Gio
 
-from lexiloom import APP_ID
-from lexiloom.ui.window import LexiLoomWindow
+from traduco import APP_ID
+from traduco.ui.window import TraducoWindow
 
 
-class LexiLoomApp(Adw.Application):
+class TraducoApp(Adw.Application):
     """Main application class."""
 
     def __init__(self):
@@ -21,18 +21,18 @@ class LexiLoomApp(Adw.Application):
         self.connect("open", self._on_open)
 
     def _on_activate(self, app):
-        win = LexiLoomWindow(app)
+        win = TraducoWindow(app)
         win.present()
 
     def _on_open(self, app, files, n_files, hint):
-        win = LexiLoomWindow(app)
+        win = TraducoWindow(app)
         if files:
             win._load_file(files[0].get_path())
         win.present()
 
 
 def main():
-    app = LexiLoomApp()
+    app = TraducoApp()
     app.run(sys.argv)
 
 

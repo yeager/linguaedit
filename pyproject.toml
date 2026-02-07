@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "lexiloom"
+name = "traduco"
 version = "0.1.0"
 description = "A GTK4 translation file editor for PO, TS, and JSON files"
 readme = "README.md"
@@ -17,7 +17,6 @@ classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: X11 Applications :: GTK",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
     "Topic :: Software Development :: Localization",
 ]
@@ -33,10 +32,10 @@ ai = ["openai>=1.0", "anthropic>=0.18"]
 dev = ["pytest", "ruff"]
 
 [project.scripts]
-lexiloom = "lexiloom.app:main"
+traduco = "traduco.app:main"
 
 [project.gui-scripts]
-lexiloom-gui = "lexiloom.app:main"
+traduco-gui = "traduco.app:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

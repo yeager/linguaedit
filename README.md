@@ -1,4 +1,4 @@
-# LexiLoom
+# Traduco
 
 A GTK4 translation file editor for **PO**, **TS**, and **JSON** i18n files.
 
@@ -52,17 +52,17 @@ pip install -e ".[ai]"
 
 ```bash
 # Launch GUI
-lexiloom
+traduco
 
 # Open a file directly
-lexiloom path/to/file.po
+traduco path/to/file.po
 ```
 
 ## Project Structure
 
 ```
-lexiloom/
-├── src/lexiloom/
+traduco/
+├── src/traduco/
 │   ├── app.py              # Application entry point
 │   ├── ui/
 │   │   └── window.py       # Main GTK4 window
@@ -77,7 +77,7 @@ lexiloom/
 │       ├── github.py       # GitHub PR workflow
 │       ├── platforms.py    # Transifex, Weblate, Crowdin
 │       └── updater.py      # In-app update checker
-├── po/                     # Translations for LexiLoom itself
+├── po/                     # Translations for Traduco itself
 ├── docs/                   # Documentation
 └── pyproject.toml
 ```
