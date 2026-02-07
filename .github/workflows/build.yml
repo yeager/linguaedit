@@ -1,0 +1,101 @@
+name: Build Traduco
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          brew install gtk4 libadwaita pygobject3
+          pip install pyinstaller PyGObject polib requests
+      - name: Build .app
+        run: |
+          pyinstaller --windowed --name Traduco --icon=data/traduco.png \
+            --add-data "po/locale:locale" --hidden-import=traduco \
+            --exclude-module=enchant --paths=src src/traduco/app.py
+          cd dist && zip -r ../Traduco-${{ github.ref_name }}-macOS.zip Traduco.app
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: Traduco-${{ github.ref_name }}-macOS.zip
+
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install deps
+        run: |
+          pip install pyinstaller polib requests
+          pip install PyGObject-stubs
+      - name: Install GTK4 (MSYS2)
+        uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          install: mingw-w64-ucrt-x86_64-gtk4 mingw-w64-ucrt-x86_64-libadwaita mingw-w64-ucrt-x86_64-python-gobject
+      - name: Build .exe
+        shell: msys2 {0}
+        run: |
+          pyinstaller Traduco-windows.spec
+          cd dist && 7z a ../Traduco-${{ github.ref_name }}-Windows.zip Traduco/
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: Traduco-${{ github.ref_name }}-Windows.zip
+
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgtk-4-dev libadwaita-1-dev python3-gi gir1.2-adw-1
+          pip install pyinstaller polib requests PyGObject
+      - name: Build .deb
+        run: |
+          VERSION=${GITHUB_REF_NAME#v}
+          PKG=traduco_${VERSION}_all
+          mkdir -p ${PKG}/DEBIAN
+          mkdir -p ${PKG}/usr/lib/python3/dist-packages/traduco
+          mkdir -p ${PKG}/usr/bin
+          mkdir -p ${PKG}/usr/share/locale/sv/LC_MESSAGES
+          cp -r src/traduco/* ${PKG}/usr/lib/python3/dist-packages/traduco/
+          cp po/locale/sv/LC_MESSAGES/traduco.mo ${PKG}/usr/share/locale/sv/LC_MESSAGES/
+          cat > ${PKG}/usr/bin/traduco << 'SCRIPT'
+          #!/usr/bin/env python3
+          from traduco.app import main
+          main()
+          SCRIPT
+          chmod 755 ${PKG}/usr/bin/traduco
+          cat > ${PKG}/DEBIAN/control << EOF
+          Package: traduco
+          Version: ${VERSION}
+          Section: devel
+          Priority: optional
+          Architecture: all
+          Depends: python3, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1, python3-polib
+          Maintainer: Daniel Nylander <po@danielnylander.se>
+          Description: GTK4 translation file editor
+           A GTK4 translation file editor for PO, TS, and JSON i18n files
+           with linting, pre-translation, and platform integration.
+          EOF
+          dpkg-deb --build ${PKG}
+          mv ${PKG}.deb traduco_${VERSION}_all.deb
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: traduco_*_all.deb

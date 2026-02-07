@@ -1,0 +1,28 @@
+app-id: se.danielnylander.Traduco
+runtime: org.gnome.Platform
+runtime-version: '46'
+sdk: org.gnome.Sdk
+command: traduco
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --share=network
+  - --filesystem=home:ro
+
+modules:
+  - name: python3-polib
+    buildsystem: simple
+    build-commands:
+      - pip3 install --no-index --find-links . --prefix=/app polib
+    sources:
+      - type: pypi
+        name: polib
+
+  - name: traduco
+    buildsystem: simple
+    build-commands:
+      - pip3 install --no-index --prefix=/app .
+    sources:
+      - type: dir
+        path: .
