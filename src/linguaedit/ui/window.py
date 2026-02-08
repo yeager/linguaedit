@@ -21,6 +21,8 @@ from __future__ import annotations
 
 import json
 import re
+import shutil
+import subprocess
 from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Optional
@@ -666,6 +668,8 @@ class LinguaEditWindow(QMainWindow):
         catalog_menu.addAction(self.tr("Feed file to TM"), self._on_feed_tm)
         catalog_menu.addSeparator()
         catalog_menu.addAction(self.tr("Statistics…"), self._on_statistics)
+        catalog_menu.addSeparator()
+        catalog_menu.addAction(self.tr("Compile translation"), self._on_compile, QKeySequence("Ctrl+Shift+B"))
 
         qa_menu = catalog_menu.addMenu(self.tr("Quality"))
         qa_menu.addAction(self.tr("Consistency check"), self._on_consistency_check)
@@ -771,6 +775,10 @@ class LinguaEditWindow(QMainWindow):
 
         # Validate
         tb.addAction(style.standardIcon(style.StandardPixmap.SP_DialogApplyButton), self.tr("Validate"), self._on_lint)
+        tb.addSeparator()
+
+        # Compile
+        tb.addAction(style.standardIcon(style.StandardPixmap.SP_MediaPlay), self.tr("Compile"), self._on_compile)
 
     # ── Keyboard shortcuts ────────────────────────────────────────
 
@@ -1757,6 +1765,10 @@ class LinguaEditWindow(QMainWindow):
             self._show_toast("Saved!")
             self._update_stats()
             self._populate_list()
+
+            # Auto-compile if enabled
+            if self._app_settings.get_value("auto_compile_on_save", False):
+                self._on_compile()
         except Exception as e:
             self._show_toast(f"Save error: {e}")
         finally:
@@ -2585,6 +2597,59 @@ class LinguaEditWindow(QMainWindow):
         dialog = SyncDialog(self, platform, mode, file_content, file_name)
         dialog.set_on_file_downloaded(self._load_file)
         dialog.exec()
+
+    # ── Compile translation ──────────────────────────────────────
+
+    def _on_compile(self):
+        """Compile the current translation file (.po → .mo, .ts → .qm)."""
+        if not self._file_data:
+            self._show_toast("No file loaded")
+            return
+
+        path = Path(str(self._file_data.path))
+
+        if self._file_type == "po":
+            mo_path = path.with_suffix(".mo")
+            try:
+                import polib
+                po = polib.pofile(str(path))
+                po.save_as_mofile(str(mo_path))
+                self._show_toast(f"Compiled: {mo_path}")
+            except ImportError:
+                # Fallback to msgfmt
+                if shutil.which("msgfmt"):
+                    result = subprocess.run(
+                        ["msgfmt", "-o", str(mo_path), str(path)],
+                        capture_output=True, text=True
+                    )
+                    if result.returncode == 0:
+                        self._show_toast(f"Compiled: {mo_path}")
+                    else:
+                        self._show_toast(f"msgfmt error: {result.stderr.strip()}")
+                else:
+                    self._show_toast("Cannot compile: install 'polib' or 'gettext' (msgfmt)")
+            except Exception as e:
+                self._show_toast(f"Compile error: {e}")
+
+        elif self._file_type == "ts":
+            qm_path = path.with_suffix(".qm")
+            lrelease = shutil.which("pyside6-lrelease") or shutil.which("lrelease")
+            if not lrelease:
+                self._show_toast("Cannot compile: pyside6-lrelease or lrelease not found")
+                return
+            try:
+                result = subprocess.run(
+                    [lrelease, str(path), "-qm", str(qm_path)],
+                    capture_output=True, text=True
+                )
+                if result.returncode == 0:
+                    self._show_toast(f"Compiled: {qm_path}")
+                else:
+                    self._show_toast(f"lrelease error: {result.stderr.strip()}")
+            except Exception as e:
+                self._show_toast(f"Compile error: {e}")
+        else:
+            self._show_toast(f"Compile not supported for {self._file_type} files")
 
     # ── Helpers ───────────────────────────────────────────────────
 

@@ -55,6 +55,9 @@ DEFAULTS: dict[str, Any] = {
     "color_scheme": "default",  # default / light / dark
     "editor_font_size": 12,
 
+    # Build
+    "auto_compile_on_save": False,
+
     # Internal
     "first_run_complete": False,
 }

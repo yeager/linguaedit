@@ -5,6 +5,7 @@ from __future__ import annotations
 from PySide6.QtWidgets import (
     QDialog, QVBoxLayout, QTabWidget, QWidget, QFormLayout,
     QLineEdit, QComboBox, QSpinBox, QGroupBox, QDialogButtonBox,
+    QCheckBox,
 )
 from PySide6.QtCore import Qt
 
@@ -86,6 +87,11 @@ class PreferencesDialog(QDialog):
         self._target_edit = QLineEdit(self._settings["target_language"])
         form.addRow("Target language:", self._target_edit)
 
+        self._auto_compile_check = QCheckBox("Auto-compile on save")
+        self._auto_compile_check.setChecked(self._settings.get_value("auto_compile_on_save", False))
+        self._auto_compile_check.setToolTip("Automatically compile .mo/.qm after saving")
+        form.addRow("", self._auto_compile_check)
+
         self._formality_combo = QComboBox()
         self._formality_combo.addItems(["Default", "Formal", "Informal"])
         formality_map = {"default": 0, "formal": 1, "informal": 2}
@@ -132,6 +138,8 @@ class PreferencesDialog(QDialog):
 
         s["source_language"] = self._source_edit.text().strip() or "en"
         s["target_language"] = self._target_edit.text().strip() or "sv"
+
+        s["auto_compile_on_save"] = self._auto_compile_check.isChecked()
 
         formality_vals = ["default", "formal", "informal"]
         s["formality"] = formality_vals[self._formality_combo.currentIndex()]

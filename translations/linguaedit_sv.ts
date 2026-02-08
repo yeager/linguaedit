@@ -446,6 +446,14 @@ Sparad i: %2</translation>
         <translation>Statistik…</translation>
     </message>
     <message>
+        <source>Compile translation</source>
+        <translation>Kompilera översättning</translation>
+    </message>
+    <message>
+        <source>Compile</source>
+        <translation>Kompilera</translation>
+    </message>
+    <message>
         <source>Git</source>
         <translation>Git</translation>
     </message>
