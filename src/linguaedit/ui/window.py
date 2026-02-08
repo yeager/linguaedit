@@ -42,8 +42,9 @@ from PySide6.QtWidgets import (
 from PySide6.QtCore import Qt, QTimer, QFileSystemWatcher, Signal, Slot
 from PySide6.QtGui import (
     QAction, QKeySequence, QFont, QColor, QIcon, QBrush,
-    QDragEnterEvent, QDropEvent, QPalette, QShortcut,
+    QDragEnterEvent, QDropEvent, QPalette, QShortcut, QDesktopServices,
 )
+from PySide6.QtCore import QUrl
 
 from linguaedit import APP_ID, __version__
 from linguaedit.parsers.po_parser import parse_po, save_po, POFileData, TranslationEntry
@@ -717,6 +718,8 @@ class LinguaEditWindow(QMainWindow):
         help_menu = mb.addMenu(self.tr("&Help"))
         help_menu.addAction(self.tr("GitHub PR…"), self._on_github_pr)
         help_menu.addAction(self.tr("Check for updates"), self._on_check_updates)
+        help_menu.addAction(self.tr("GitHub Repository"), lambda: QDesktopServices.openUrl(QUrl("https://github.com/yeager/linguaedit")))
+        help_menu.addAction(self.tr("Report a Bug"), lambda: QDesktopServices.openUrl(QUrl("https://github.com/yeager/linguaedit/issues")))
         help_menu.addSeparator()
         help_menu.addAction(self.tr("Donate ♥"), self._on_donate)
         help_menu.addSeparator()
