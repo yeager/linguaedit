@@ -216,6 +216,10 @@ Sparad i: %2</translation>
         <source>✗ Push failed: %1</source>
         <translation>✗ Sändning misslyckades: %1</translation>
     </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Okänd</translation>
+    </message>
 </context>
 <context>
     <name>WelcomeDialog</name>
@@ -616,6 +620,10 @@ Sparad i: %2</translation>
     <message>
         <source>Enter translator note:</source>
         <translation>Ange översättarnotering:</translation>
+    </message>
+    <message>
+        <source>About Qt</source>
+        <translation>Om Qt</translation>
     </message>
 </context>
 </TS>

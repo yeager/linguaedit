@@ -709,7 +709,7 @@ class LinguaEditWindow(QMainWindow):
         help_menu.addAction("Donate ♥", self._on_donate)
         help_menu.addSeparator()
         help_menu.addAction("About LinguaEdit", self._on_about)
-        help_menu.addAction("About Qt", lambda: QApplication.instance().aboutQt())
+        help_menu.addAction(self.tr("About Qt"), lambda: QApplication.instance().aboutQt())
 
     # ── Toolbar ───────────────────────────────────────────────────
 
