@@ -252,6 +252,8 @@ class ValidationDialog(QDialog):
         self._tree = QTreeWidget()
         self._tree.setHeaderLabels([self.tr("#"), self.tr("Severity"), self.tr("Message"), self.tr("Source text")])
         self._tree.setRootIsDecorated(False)
+        self._tree.setSortingEnabled(True)
+        self._tree.sortByColumn(0, Qt.AscendingOrder)
         self._tree.itemDoubleClicked.connect(self._on_item_clicked)
         self._issues = result.issues
         self._populate()
@@ -278,7 +280,7 @@ class ValidationDialog(QDialog):
             if issue.severity == "warning" and not show_warnings:
                 continue
             src = issue.msgid[:60].replace("\n", " ")
-            item = QTreeWidgetItem([str(issue.entry_index + 1), issue.severity, issue.message, src])
+            item = _SortableItem([str(issue.entry_index + 1), issue.severity, issue.message, src])
             item.setData(0, Qt.UserRole, issue.entry_index)
             self._tree.addTopLevelItem(item)
         self._tree.resizeColumnToContents(0)
