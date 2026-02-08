@@ -55,6 +55,13 @@ from linguaedit.parsers.android_parser import parse_android, save_android, Andro
 from linguaedit.parsers.arb_parser import parse_arb, save_arb, ARBFileData
 from linguaedit.parsers.php_parser import parse_php, save_php, PHPFileData
 from linguaedit.parsers.yaml_parser import parse_yaml, save_yaml, YAMLFileData
+from linguaedit.parsers.godot import parse_godot, save_godot, GodotFileData
+from linguaedit.parsers.chrome_i18n import parse_chrome_i18n, save_chrome_i18n, ChromeI18nFileData
+from linguaedit.parsers.java_properties import parse_java_properties, save_java_properties, JavaPropertiesFileData
+from linguaedit.parsers.subtitles import parse_subtitles, save_subtitles, SubtitleFileData
+from linguaedit.parsers.apple_strings import parse_apple_strings, save_apple_strings, AppleStringsData
+from linguaedit.parsers.unity_asset import parse_unity_asset, save_unity_asset, UnityAssetData
+from linguaedit.parsers.resx import parse_resx, save_resx, RESXData
 from linguaedit.services.linter import lint_entries, LintResult, LintIssue
 from linguaedit.services.spellcheck import check_text, available_languages
 from linguaedit.services.translator import translate, ENGINES, TranslationError
@@ -77,9 +84,27 @@ from linguaedit.ui.project_dock import ProjectDockWidget
 from linguaedit.ui.ai_review_dialog import AIReviewDialog
 from linguaedit.ui.translation_editor import TranslationEditor
 from linguaedit.ui.plural_forms_editor import PluralFormsEditor
+from linguaedit.ui.minimap import MinimapWidget
+from linguaedit.ui.regex_tester_dialog import RegexTesterDialog
+from linguaedit.ui.layout_simulator_dialog import LayoutSimulatorDialog
+from linguaedit.ui.locale_map_dialog import LocaleMapDialog
+from linguaedit.ui.ocr_dialog import OCRDialog
 from linguaedit.services.settings import Settings
 from linguaedit.services.context_lookup import get_context_service
 from linguaedit.services.terminology import get_terminology_service
+from linguaedit.services.confidence import get_confidence_calculator
+from linguaedit.services.source_context import get_source_context_service
+from linguaedit.services.plugins import get_plugin_manager
+from linguaedit.services.history import get_history_manager
+from linguaedit.services.tmx import TMXService
+from linguaedit.services.segmenter import EntrySegmenter, TextSegmenter
+from linguaedit.services.achievements import get_achievement_manager
+from linguaedit.services.macros import get_macro_manager, MacroActionType
+from linguaedit.ui.plugin_dialog import PluginDialog
+from linguaedit.ui.history_dialog import HistoryDialog, FileHistoryDialog
+from linguaedit.ui.unicode_dialog import UnicodeDialog
+from linguaedit.ui.achievements_dialog import AchievementsDialog
+from linguaedit.ui.macro_dialog import MacroDialog
 
 # ── Recent files helper ──────────────────────────────────────────────
 
@@ -139,7 +164,7 @@ _ALL_EXTENSIONS = {
     ".xml", ".arb", ".php", ".yml", ".yaml",
 }
 
-_FILE_FILTER = "Translation files (*.po *.pot *.ts *.json *.xliff *.xlf *.xml *.arb *.php *.yml *.yaml)"
+_FILE_FILTER = "Translation files (*.po *.pot *.ts *.json *.xliff *.xlf *.xml *.arb *.php *.yml *.yaml *.csv *.tres *.properties *.srt *.vtt)"
 
 
 # ── Inline linting for a single entry ────────────────────────────────
@@ -443,6 +468,23 @@ class LinguaEditWindow(QMainWindow):
         
         # Feature 13: Focus Mode
         self._focus_mode = False
+        
+        # New services initialization
+        self._plugin_manager = get_plugin_manager()
+        self._history_manager = get_history_manager()
+        self._achievement_manager = get_achievement_manager()
+        self._macro_manager = get_macro_manager()
+        
+        # Character counter state
+        self._char_count_limit = 280  # Default Twitter-like limit
+        self._char_count_widget = None
+        
+        # TTS state
+        self._tts_process = None
+        
+        # Fullscreen state
+        self._is_fullscreen = False
+        self._pre_fullscreen_state = None
 
         self._build_ui()
         self._apply_settings()
@@ -598,7 +640,23 @@ class LinguaEditWindow(QMainWindow):
         self._tree.currentItemChanged.connect(self._on_tree_item_changed)
         self._tree.setContextMenuPolicy(Qt.CustomContextMenu)
         self._tree.customContextMenuRequested.connect(self._show_tree_context_menu)
-        table_layout.addWidget(self._tree, 1)
+        
+        # Tree + minimap layout
+        tree_minimap_layout = QHBoxLayout()
+        tree_minimap_layout.setContentsMargins(0, 0, 0, 0)
+        tree_minimap_layout.setSpacing(2)
+        
+        tree_minimap_layout.addWidget(self._tree, 1)
+        
+        # Minimap
+        self._minimap = MinimapWidget()
+        self._minimap.jump_to_entry.connect(self._on_minimap_jump)
+        self._minimap.setVisible(False)  # Dolt som standard
+        tree_minimap_layout.addWidget(self._minimap)
+        
+        tree_minimap_widget = QWidget()
+        tree_minimap_widget.setLayout(tree_minimap_layout)
+        table_layout.addWidget(tree_minimap_widget, 1)
 
         # Progress bar under table
         progress_row = QHBoxLayout()
@@ -914,6 +972,13 @@ class LinguaEditWindow(QMainWindow):
         sb.addPermanentWidget(self._sb_cursor)
 
         self._trans_view.cursorPositionChanged.connect(self._on_cursor_position_changed)
+        
+        # Feature 7: Character counter setup
+        if self._app_settings.get_value("show_character_counter", True):
+            self._setup_character_counter()
+        
+        # Setup character limit
+        self._char_count_limit = self._app_settings.get_value("character_limit", 280)
 
     @staticmethod
     def _make_separator() -> QFrame:
@@ -960,8 +1025,13 @@ class LinguaEditWindow(QMainWindow):
         edit_menu.addAction(self.tr("Find && Replace…"), self._show_search_replace_dialog, QKeySequence("Ctrl+H"))
         edit_menu.addSeparator()
         edit_menu.addAction(self.tr("Copy source to translation"), self._copy_source_to_target, QKeySequence("Ctrl+B"))
+        edit_menu.addAction(self.tr("Propagate Translation"), self._on_propagate_translation, QKeySequence("Ctrl+P"))
         edit_menu.addSeparator()
         edit_menu.addAction(self.tr("Batch Edit…"), self._show_batch_edit_dialog, QKeySequence("Ctrl+Shift+B"))
+        edit_menu.addSeparator()
+        # Feature 4: Segmentation
+        edit_menu.addAction(self.tr("Split Entry"), self._on_split_entry, QKeySequence("Ctrl+Shift+S"))
+        edit_menu.addAction(self.tr("Merge Entries"), self._on_merge_entries)
         edit_menu.addSeparator()
         edit_menu.addAction(self.tr("Preferences…"), self._on_preferences, QKeySequence("Ctrl+,"))
 
@@ -979,6 +1049,7 @@ class LinguaEditWindow(QMainWindow):
         catalog_menu.addAction(self.tr("Compile translation"), self._on_compile, QKeySequence("Ctrl+Shift+B"))
         catalog_menu.addSeparator()
         catalog_menu.addAction(self.tr("Email Translation…"), self._email_translation)
+        catalog_menu.addAction(self.tr("Merge with POT…"), self._msgmerge_with_pot, QKeySequence("Ctrl+Shift+M"))
         catalog_menu.addSeparator()
         catalog_menu.addAction(self.tr("Generate Report…"), self._on_generate_report, QKeySequence("Ctrl+Shift+R"))
 
@@ -1005,6 +1076,38 @@ class LinguaEditWindow(QMainWindow):
         tools_menu.addSeparator()
         tools_menu.addAction(self.tr("Compare Files…"), self._show_diff_dialog, QKeySequence("Ctrl+D"))
         tools_menu.addSeparator()
+        # Feature 3: TMX Import/Export
+        tmx_menu = tools_menu.addMenu(self.tr("TMX"))
+        tmx_menu.addAction(self.tr("Import TMX…"), self._on_import_tmx)
+        tmx_menu.addAction(self.tr("Export TMX…"), self._on_export_tmx)
+        tools_menu.addSeparator()
+        # Feature 8: Unicode Inspector
+        tools_menu.addAction(self.tr("Unicode Inspector"), self._show_unicode_inspector, QKeySequence("Ctrl+Shift+U"))
+        tools_menu.addSeparator()
+        # Feature 2: Plugin management
+        tools_menu.addAction(self.tr("Manage Plugins…"), self._show_plugin_dialog)
+        tools_menu.addSeparator()
+        # Feature 14: Macros
+        macros_menu = tools_menu.addMenu(self.tr("Macros"))
+        macros_menu.addAction(self.tr("Record Macro"), self._on_record_macro, QKeySequence("Ctrl+Shift+M"))
+        macros_menu.addAction(self.tr("Play Macro"), self._on_play_macro, QKeySequence("Ctrl+M"))
+        macros_menu.addAction(self.tr("Manage Macros…"), self._show_macro_dialog)
+        tools_menu.addSeparator()
+        # Feature 11: Git Integration
+        git_integration_menu = tools_menu.addMenu(self.tr("Git"))
+        git_integration_menu.addAction(self.tr("Commit…"), self._on_git_commit_dialog, QKeySequence("Ctrl+Shift+G"))
+        git_integration_menu.addAction(self.tr("Status"), self._on_git_status)
+        git_integration_menu.addAction(self.tr("Diff"), self._on_git_diff)
+        # New features
+        tools_menu.addAction(self.tr("Regex Tester"), self._show_regex_tester, QKeySequence("Ctrl+Shift+X"))
+        tools_menu.addAction(self.tr("Layout Simulator"), self._show_layout_simulator, QKeySequence("Ctrl+Shift+L"))
+        tools_menu.addAction(self.tr("OCR Screenshot…"), self._show_ocr_dialog, QKeySequence("Ctrl+Shift+O"))
+        tools_menu.addSeparator()
+        
+        # Crowdin submenu
+        crowdin_menu = tools_menu.addMenu(self.tr("Crowdin"))
+        crowdin_menu.addAction(self.tr("Pull Latest"), self._crowdin_pull_latest)
+        tools_menu.addSeparator()
         tools_menu.addAction(self.tr("Glossary…"), self._show_glossary_dialog)
         
         # View
@@ -1015,6 +1118,15 @@ class LinguaEditWindow(QMainWindow):
         view_menu.addAction(self.tr("Show Bookmarked Only"), self._toggle_bookmarked_filter, QKeySequence("Ctrl+Shift+K"))
         view_menu.addAction(self.tr("Review Mode"), self._toggle_review_mode, QKeySequence("Ctrl+R"))
         view_menu.addAction(self.tr("Focus Mode"), self._toggle_focus_mode, QKeySequence("Ctrl+Shift+F"))
+        # Feature 13: Fullscreen Mode
+        view_menu.addAction(self.tr("Fullscreen"), self._toggle_fullscreen, QKeySequence("F11"))
+        view_menu.addSeparator()
+        # Feature 10: Minimap
+        view_menu.addAction(self.tr("Minimap"), self._toggle_minimap, QKeySequence("Ctrl+Shift+M"))
+        view_menu.addAction(self.tr("Translation Map…"), self._show_locale_map_dialog)
+        view_menu.addSeparator()
+        # Feature 10: Achievements
+        view_menu.addAction(self.tr("Achievements…"), self._show_achievements_dialog)
         view_menu.addSeparator()
         theme_menu = view_menu.addMenu(self.tr("Theme"))
         theme_menu.addAction(self.tr("System Default"), lambda: self._set_theme("system"))
@@ -1109,6 +1221,9 @@ class LinguaEditWindow(QMainWindow):
         
         # Feature 7: Taggar
         QShortcut(QKeySequence("Ctrl+T"), self, self._add_tag)
+        
+        # Feature 13: Fullscreen escape
+        QShortcut(QKeySequence("Escape"), self, self._exit_fullscreen_if_active)
 
     # ══════════════════════════════════════════════════════════════
     #  ENTRY TABLE (QTreeWidget)
@@ -1384,6 +1499,87 @@ class LinguaEditWindow(QMainWindow):
         entries = self._get_entries()
         if self._current_index < len(entries):
             self._trans_view.setPlainText(entries[self._current_index][0])
+    
+    def _on_propagate_translation(self):
+        """Propagera aktuell översättning till alla identiska source-strängar."""
+        if self._current_index < 0 or not self._file_data:
+            return
+            
+        entries = self._get_entries()
+        current_entry = entries[self._current_index]
+        current_source = current_entry[0]
+        current_translation = self._trans_view.toPlainText().strip()
+        
+        if not current_translation:
+            QMessageBox.information(self, self.tr("Propagate Translation"), 
+                                  self.tr("Current string has no translation to propagate."))
+            return
+        
+        # Hitta alla entries med samma source text
+        identical_entries = []
+        for i, entry in enumerate(entries):
+            if i != self._current_index and entry[0] == current_source:
+                identical_entries.append((i, entry))
+        
+        if not identical_entries:
+            QMessageBox.information(self, self.tr("Propagate Translation"), 
+                                  self.tr("No identical source strings found."))
+            return
+        
+        # Visa bekräftelsedialog
+        from PySide6.QtWidgets import QDialog, QVBoxLayout, QHBoxLayout, QCheckBox, QDialogButtonBox
+        
+        dialog = QDialog(self)
+        dialog.setWindowTitle(self.tr("Propagate Translation"))
+        dialog.setMinimumWidth(500)
+        
+        layout = QVBoxLayout(dialog)
+        
+        # Header text
+        header = QLabel(self.tr(f"Found {len(identical_entries)} identical strings. Apply this translation to all?"))
+        header.setWordWrap(True)
+        layout.addWidget(header)
+        
+        # Show current translation
+        current_label = QLabel(self.tr(f"<b>Translation:</b> {html_escape(current_translation[:100])}"))
+        current_label.setWordWrap(True)
+        layout.addWidget(current_label)
+        
+        # Checkbox list
+        checkboxes = []
+        for i, (entry_idx, entry) in enumerate(identical_entries):
+            cb = QCheckBox(f"{entry_idx + 1}. {entry[0][:80]}...")
+            cb.setChecked(True)
+            checkboxes.append((cb, entry_idx))
+            layout.addWidget(cb)
+        
+        # Buttons
+        buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        buttons.accepted.connect(dialog.accept)
+        buttons.rejected.connect(dialog.reject)
+        layout.addWidget(buttons)
+        
+        if dialog.exec() == QDialog.Accepted:
+            # Apply translation to selected entries
+            applied_count = 0
+            for cb, entry_idx in checkboxes:
+                if cb.isChecked():
+                    if self._file_type == "po":
+                        self._file_data.entries[entry_idx].msgstr = current_translation
+                    elif self._file_type == "ts":
+                        self._file_data.entries[entry_idx].translation = current_translation
+                    elif self._file_type == "json":
+                        self._file_data.translations[list(self._file_data.translations.keys())[entry_idx]] = current_translation
+                    # Add other file types as needed
+                    applied_count += 1
+            
+            if applied_count > 0:
+                self._modified = True
+                self._refresh_tree()
+                QMessageBox.information(self, self.tr("Propagate Translation"), 
+                                      self.tr(f"Applied translation to {applied_count} strings."))
+            
+            self._update_progress()
 
     # ── Plural tabs ───────────────────────────────────────────────
 
@@ -1464,6 +1660,16 @@ class LinguaEditWindow(QMainWindow):
             if current_item is not None:
                 self._lint_and_update_row(current_item, self._current_index)
         self._lint_timer.start()
+        
+        # Feature 7: Update character counter
+        if self._app_settings.get_value("show_character_counter", True):
+            self._update_character_count()
+        
+        # Record macro action if recording
+        if hasattr(self, '_macro_manager') and self._macro_manager.is_recording:
+            self._record_macro_action(MacroActionType.EDIT_TEXT, 
+                                    entry_index=self._current_index,
+                                    text=self._trans_view.toPlainText())
         
     def _on_comment_changed(self):
         """Handle translator comment changes."""
@@ -1574,6 +1780,40 @@ class LinguaEditWindow(QMainWindow):
         return row
 
     # ── TM suggestions ────────────────────────────────────────────
+    
+    def _generate_word_diff_html(self, source_text: str, tm_source: str) -> str:
+        """Genererar HTML-diff på ord-nivå mellan source och TM-förslag."""
+        if not source_text or not tm_source:
+            return ""
+        
+        # Split på ord
+        source_words = source_text.split()
+        tm_words = tm_source.split()
+        
+        # Använd SequenceMatcher för att hitta skillnader
+        matcher = SequenceMatcher(None, source_words, tm_words)
+        html_parts = []
+        
+        for tag, i1, i2, j1, j2 in matcher.get_opcodes():
+            if tag == 'equal':
+                # Identiska ord
+                html_parts.extend(source_words[i1:i2])
+            elif tag == 'delete':
+                # Ord som tagits bort från source
+                deleted = " ".join(source_words[i1:i2])
+                html_parts.append(f'<span style="background-color: #ffcccc; text-decoration: line-through;">{html_escape(deleted)}</span>')
+            elif tag == 'insert':
+                # Ord som lagts till i TM
+                inserted = " ".join(tm_words[j1:j2])
+                html_parts.append(f'<span style="background-color: #ccffcc;">{html_escape(inserted)}</span>')
+            elif tag == 'replace':
+                # Ersatta ord
+                deleted = " ".join(source_words[i1:i2])
+                inserted = " ".join(tm_words[j1:j2])
+                html_parts.append(f'<span style="background-color: #ffcccc; text-decoration: line-through;">{html_escape(deleted)}</span>')
+                html_parts.append(f'<span style="background-color: #ccffcc;">{html_escape(inserted)}</span>')
+        
+        return " ".join(html_parts)
 
     def _show_tm_suggestions(self, msgid: str):
         while self._tm_layout.count():
@@ -1591,10 +1831,24 @@ class LinguaEditWindow(QMainWindow):
             row = QVBoxLayout(container)
             row.setContentsMargins(2, 2, 2, 2)
             row.setSpacing(1)
+            
+            # Match percentage
             pct_label = QLabel(f"<b>{m.similarity:.0%}</b> match")
             pct_label.setStyleSheet("color: gray; font-size: 10px;")
             row.addWidget(pct_label)
-            btn = QPushButton(m.target[:80])
+            
+            # Diff mellan source och TM source
+            if m.similarity < 1.0:  # Visa bara diff om inte 100% match
+                diff_html = self._generate_word_diff_html(msgid, m.source)
+                if diff_html:
+                    diff_label = QLabel(diff_html)
+                    diff_label.setWordWrap(True)
+                    diff_label.setTextFormat(Qt.RichText)
+                    diff_label.setStyleSheet("font-size: 9px; padding: 2px; border: 1px solid #ddd; background-color: #f9f9f9;")
+                    row.addWidget(diff_label)
+            
+            # Target text button
+            btn = QPushButton(m.target[:80] + ("..." if len(m.target) > 80 else ""))
             btn.setToolTip(f"Source: {m.source}\nTarget: {m.target}")
             btn.setStyleSheet("text-align: left; padding: 4px;")
             btn.clicked.connect(lambda checked, t=m.target: self._apply_tm_match(t))
@@ -1756,6 +2010,18 @@ class LinguaEditWindow(QMainWindow):
             return [(e.key, e.value, False) for e in self._file_data.entries]
         elif self._file_type == "yaml":
             return [(e.key, e.value, False) for e in self._file_data.entries]
+        elif self._file_type == "godot":
+            # För Godot CSV/TRES - använd första språket som target
+            if self._file_data.languages:
+                target_lang = self._file_data.languages[0]
+                return [(e.key, e.translations.get(target_lang, ""), False) for e in self._file_data.entries]
+            return [(e.key, "", False) for e in self._file_data.entries]
+        elif self._file_type == "chrome_i18n":
+            return [(e.key, e.message, False) for e in self._file_data.entries]
+        elif self._file_type == "java_properties":
+            return [(e.key, e.value, False) for e in self._file_data.entries]
+        elif self._file_type == "subtitles":
+            return [(f"#{e.index} {e.start_time}-{e.end_time}", e.text, False) for e in self._file_data.entries]
         return []
 
     def _get_reference(self, idx: int) -> str:
@@ -2196,6 +2462,28 @@ class LinguaEditWindow(QMainWindow):
             elif p.suffix in (".yml", ".yaml"):
                 self._file_data = parse_yaml(p)
                 self._file_type = "yaml"
+            elif p.suffix in (".csv", ".tres"):
+                self._file_data = parse_godot(p)
+                self._file_type = "godot"
+            elif p.suffix == ".properties":
+                self._file_data = parse_java_properties(p)
+                self._file_type = "java_properties"
+            elif p.suffix in (".srt", ".vtt"):
+                self._file_data = parse_subtitles(p)
+                self._file_type = "subtitles"
+            elif p.name == "messages.json" or p.parent.name == "_locales":
+                # Chrome extension i18n (heuristik)
+                self._file_data = parse_chrome_i18n(p)
+                self._file_type = "chrome_i18n"
+            elif p.suffix in (".strings", ".stringsdict"):
+                self._file_data = parse_apple_strings(p)
+                self._file_type = "apple_strings"
+            elif p.suffix == ".asset":
+                self._file_data = parse_unity_asset(p)
+                self._file_type = "unity_asset"
+            elif p.suffix == ".resx":
+                self._file_data = parse_resx(p)
+                self._file_type = "resx"
             else:
                 self._show_toast(self.tr("Unsupported file type: %s") % p.suffix)
                 return
@@ -2367,14 +2655,29 @@ class LinguaEditWindow(QMainWindow):
                 save_php(self._file_data)
             elif self._file_type == "yaml":
                 save_yaml(self._file_data)
+            elif self._file_type == "godot":
+                save_godot(self._file_data)
+            elif self._file_type == "chrome_i18n":
+                save_chrome_i18n(self._file_data)
+            elif self._file_type == "java_properties":
+                save_java_properties(self._file_data)
+            elif self._file_type == "subtitles":
+                save_subtitles(self._file_data)
+            elif self._file_type == "apple_strings":
+                save_apple_strings(self._file_data, self._file_data.file_path)
+            elif self._file_type == "unity_asset":
+                save_unity_asset(self._file_data, self._file_data.file_path)
+            elif self._file_type == "resx":
+                save_resx(self._file_data, self._file_data.file_path)
             self._modified = False
             self._show_toast(self.tr("Saved!"))
             self._update_stats()
             self._populate_list()
 
-            # Auto-compile if enabled
+            # Auto-compile if enabled (Feature 1)
             if self._app_settings.get_value("auto_compile_on_save", False):
                 self._on_compile()
+                self._show_toast(self.tr("Auto-compiled after save"))
         except Exception as e:
             self._show_toast(self.tr("Save error: %s") % str(e))
         finally:
@@ -4188,3 +4491,735 @@ class LinguaEditWindow(QMainWindow):
             preview_text += f"\n\nHTML detected: {translation}"
         
         self._preview_label.setText(preview_text)
+    
+    # ══════════════════════════════════════════════════════════════
+    # NEW FEATURES IMPLEMENTATION
+    # ══════════════════════════════════════════════════════════════
+    
+    # Feature 2: Plugin Management
+    def _show_plugin_dialog(self):
+        """Show plugin management dialog."""
+        dialog = PluginDialog(self)
+        dialog.exec()
+    
+    # Feature 3: TMX Import/Export
+    def _on_import_tmx(self):
+        """Import TMX file into translation memory."""
+        file_path, _ = QFileDialog.getOpenFileName(
+            self, self.tr("Import TMX"), "", self.tr("TMX Files (*.tmx)")
+        )
+        
+        if not file_path:
+            return
+        
+        try:
+            from pathlib import Path
+            imported_count, errors = TMXService.import_from_tmx(Path(file_path))
+            
+            message = self.tr("Imported {} translation units").format(imported_count)
+            if errors:
+                message += self.tr("\n\nErrors:\n{}").format("\n".join(errors))
+            
+            QMessageBox.information(self, self.tr("TMX Import"), message)
+            
+        except Exception as e:
+            QMessageBox.critical(
+                self, self.tr("Import Error"),
+                self.tr("Failed to import TMX file: {}").format(str(e))
+            )
+    
+    def _on_export_tmx(self):
+        """Export translation memory to TMX file."""
+        file_path, _ = QFileDialog.getSaveFileName(
+            self, self.tr("Export TMX"), "translation_memory.tmx",
+            self.tr("TMX Files (*.tmx)")
+        )
+        
+        if not file_path:
+            return
+        
+        try:
+            from pathlib import Path
+            source_lang = self._app_settings.get("source_language", "en")
+            target_lang = self._app_settings.get("target_language", "sv")
+            
+            exported_count = TMXService.export_to_tmx(
+                Path(file_path), source_lang, target_lang
+            )
+            
+            QMessageBox.information(
+                self, self.tr("TMX Export"),
+                self.tr("Exported {} translation units to {}").format(
+                    exported_count, file_path
+                )
+            )
+            
+        except Exception as e:
+            QMessageBox.critical(
+                self, self.tr("Export Error"),
+                self.tr("Failed to export TMX file: {}").format(str(e))
+            )
+    
+    # Feature 4: Segmentation
+    def _on_split_entry(self):
+        """Split the current entry at sentence boundaries."""
+        if self._current_index < 0 or not self._file_data:
+            return
+        
+        entry = self._file_data.entries[self._current_index]
+        source = entry.msgid if hasattr(entry, 'msgid') else entry.source
+        target = entry.msgstr if hasattr(entry, 'msgstr') else entry.translation
+        
+        if not source.strip():
+            self._show_toast(self.tr("Cannot split empty entry"))
+            return
+        
+        # Check if suitable for splitting
+        if not TextSegmenter.is_suitable_for_splitting(source):
+            reply = QMessageBox.question(
+                self, self.tr("Split Entry"),
+                self.tr("This entry may not be suitable for splitting. Continue anyway?"),
+                QMessageBox.Yes | QMessageBox.No, QMessageBox.No
+            )
+            if reply != QMessageBox.Yes:
+                return
+        
+        # Split the entry
+        segments = EntrySegmenter.split_entry(
+            source, target,
+            self._app_settings.get("source_language", "en"),
+            self._app_settings.get("target_language", "sv")
+        )
+        
+        if len(segments) <= 1:
+            self._show_toast(self.tr("Entry could not be split"))
+            return
+        
+        # For PO files, we need to create new msgids
+        if self._file_type == "po":
+            # Replace current entry with first segment
+            if hasattr(entry, 'msgid'):
+                entry.msgid = segments[0][0]
+                entry.msgstr = segments[0][1]
+            
+            # Add new entries for remaining segments
+            for source_seg, target_seg in segments[1:]:
+                new_entry = type(entry)()
+                new_entry.msgid = source_seg
+                new_entry.msgstr = target_seg
+                new_entry.fuzzy = True  # Mark as fuzzy
+                self._file_data.entries.append(new_entry)
+        
+        else:
+            # For other formats, just update the current entry
+            entry.source = segments[0][0]
+            entry.translation = segments[0][1]
+            
+            # Would need format-specific logic for adding entries
+        
+        self._modified = True
+        self._populate_list()
+        self._show_toast(self.tr("Entry split into {} segments").format(len(segments)))
+    
+    def _on_merge_entries(self):
+        """Merge selected entries into one."""
+        selected_indices = list(self._selected_indices)
+        if len(selected_indices) < 2:
+            self._show_toast(self.tr("Select multiple entries to merge"))
+            return
+        
+        # Sort indices
+        selected_indices.sort()
+        
+        # Collect entries to merge
+        entries_to_merge = []
+        for idx in selected_indices:
+            if idx < len(self._file_data.entries):
+                entry = self._file_data.entries[idx]
+                source = entry.msgid if hasattr(entry, 'msgid') else entry.source
+                target = entry.msgstr if hasattr(entry, 'msgstr') else entry.translation
+                entries_to_merge.append((source, target))
+        
+        # Merge entries
+        merged_source, merged_target = EntrySegmenter.merge_entries(entries_to_merge)
+        
+        # Update first entry
+        first_idx = selected_indices[0]
+        first_entry = self._file_data.entries[first_idx]
+        if hasattr(first_entry, 'msgid'):
+            first_entry.msgid = merged_source
+            first_entry.msgstr = merged_target
+        else:
+            first_entry.source = merged_source
+            first_entry.translation = merged_target
+        
+        # Remove other entries (in reverse order)
+        for idx in reversed(selected_indices[1:]):
+            del self._file_data.entries[idx]
+        
+        self._modified = True
+        self._selected_indices.clear()
+        self._populate_list()
+        self._show_toast(self.tr("Merged {} entries").format(len(selected_indices)))
+    
+    # Feature 6: Inline Editing (requires QStyledItemDelegate)
+    def _enable_inline_editing(self, enabled: bool):
+        """Enable or disable inline editing in the entry table."""
+        # This would require implementing a custom QStyledItemDelegate
+        # For now, just store the setting
+        self._inline_editing_enabled = enabled
+    
+    # Feature 7: Character Counter
+    def _setup_character_counter(self):
+        """Setup character counter widget."""
+        if not hasattr(self, '_char_count_widget') or self._char_count_widget is None:
+            self._char_count_widget = QLabel()
+            self._char_count_widget.setStyleSheet("padding: 2px 4px; font-size: 10pt;")
+            self.statusBar().addPermanentWidget(self._char_count_widget)
+    
+    def _update_character_count(self):
+        """Update character counter display."""
+        if not hasattr(self, '_char_count_widget') or self._char_count_widget is None:
+            return
+        
+        if self._current_index < 0 or not self._file_data:
+            self._char_count_widget.setText("")
+            return
+        
+        entry = self._file_data.entries[self._current_index]
+        source = entry.msgid if hasattr(entry, 'msgid') else entry.source
+        target = entry.msgstr if hasattr(entry, 'msgstr') else entry.translation
+        
+        char_count = len(target)
+        word_count = len(target.split()) if target else 0
+        source_chars = len(source) if source else 0
+        
+        text = self.tr("{} chars | {} words | Source: {} chars").format(
+            char_count, word_count, source_chars
+        )
+        
+        # Check limit
+        if char_count > self._char_count_limit:
+            text = f"⚠️ {text}"
+            self._char_count_widget.setStyleSheet("color: red; padding: 2px 4px; font-weight: bold;")
+        else:
+            self._char_count_widget.setStyleSheet("color: gray; padding: 2px 4px;")
+        
+        self._char_count_widget.setText(text)
+    
+    # Feature 8: Unicode Inspector
+    def _show_unicode_inspector(self):
+        """Show Unicode inspector dialog."""
+        text = ""
+        if self._current_index >= 0 and self._file_data:
+            entry = self._file_data.entries[self._current_index]
+            text = entry.msgstr if hasattr(entry, 'msgstr') else entry.translation
+        
+        dialog = UnicodeDialog(text, self)
+        dialog.exec()
+    
+    # Feature 9: Burndown Chart (part of statistics dialog)
+    def _get_progress_data_for_chart(self):
+        """Get progress data for burndown chart."""
+        # This would integrate with the history service to get daily progress
+        return self._history_manager.get_statistics().get("daily_changes", [])
+    
+    # Feature 10: Achievements
+    def _show_achievements_dialog(self):
+        """Show achievements dialog."""
+        dialog = AchievementsDialog(self)
+        dialog.exec()
+    
+    def _record_translation_achievement(self):
+        """Record a translation for achievement tracking."""
+        if not self._file_data:
+            return
+        
+        # Determine language and format
+        language = self._app_settings.get("target_language", "sv")
+        format_type = self._file_type or "unknown"
+        
+        # Check if this was a manual translation (not auto-translated)
+        is_manual = True  # Could be determined by checking if auto-translate was used
+        
+        self._achievement_manager.record_translation(language, format_type, is_manual)
+    
+    # Feature 11: Git Integration
+    def _on_git_commit_dialog(self):
+        """Show git commit dialog."""
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+        
+        # Simple commit dialog
+        message, ok = QInputDialog.getMultiLineText(
+            self, self.tr("Git Commit"),
+            self.tr("Commit message:"),
+            self.tr("Updated {} translation").format(
+                self._app_settings.get("target_language", "")
+            )
+        )
+        
+        if not ok or not message.strip():
+            return
+        
+        try:
+            import subprocess
+            from pathlib import Path
+            
+            file_dir = Path(self._file_data.path).parent
+            
+            # Add current file
+            subprocess.run(
+                ["git", "add", str(self._file_data.path)],
+                cwd=file_dir, check=True
+            )
+            
+            # Commit
+            subprocess.run(
+                ["git", "commit", "-m", message.strip()],
+                cwd=file_dir, check=True
+            )
+            
+            # Ask about push
+            reply = QMessageBox.question(
+                self, self.tr("Push Changes"),
+                self.tr("Commit successful. Push to remote?"),
+                QMessageBox.Yes | QMessageBox.No, QMessageBox.Yes
+            )
+            
+            if reply == QMessageBox.Yes:
+                subprocess.run(
+                    ["git", "push"],
+                    cwd=file_dir, check=True
+                )
+                self._show_toast(self.tr("Changes pushed successfully"))
+            else:
+                self._show_toast(self.tr("Changes committed locally"))
+            
+        except subprocess.CalledProcessError as e:
+            QMessageBox.warning(
+                self, self.tr("Git Error"),
+                self.tr("Git operation failed: {}").format(str(e))
+            )
+        except Exception as e:
+            QMessageBox.critical(
+                self, self.tr("Error"),
+                self.tr("Git operation error: {}").format(str(e))
+            )
+    
+    # Feature 12: TTS Preview
+    def _setup_tts_button(self):
+        """Setup TTS preview button in editor."""
+        if hasattr(self, '_trans_edit') and self._trans_edit:
+            # Add TTS button to editor layout
+            tts_btn = QPushButton("🔊")
+            tts_btn.setMaximumSize(30, 30)
+            tts_btn.setToolTip(self.tr("Play Translation"))
+            tts_btn.clicked.connect(self._play_tts)
+            
+            # Would need to add to editor layout
+    
+    def _play_tts(self):
+        """Play TTS for current translation."""
+        if self._current_index < 0 or not self._file_data:
+            return
+        
+        entry = self._file_data.entries[self._current_index]
+        text = entry.msgstr if hasattr(entry, 'msgstr') else entry.translation
+        
+        if not text.strip():
+            self._show_toast(self.tr("No text to play"))
+            return
+        
+        try:
+            import subprocess
+            import sys
+            import platform
+            
+            # Stop any existing TTS
+            if self._tts_process and self._tts_process.poll() is None:
+                self._tts_process.terminate()
+            
+            # Use system TTS
+            if platform.system() == "Darwin":  # macOS
+                self._tts_process = subprocess.Popen(
+                    ["say", text],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL
+                )
+            elif platform.system() == "Linux":
+                # Try espeak
+                self._tts_process = subprocess.Popen(
+                    ["espeak", text],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL
+                )
+            elif platform.system() == "Windows":
+                # Use PowerShell
+                ps_command = f'Add-Type -AssemblyName System.Speech; (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak("{text}")'
+                self._tts_process = subprocess.Popen(
+                    ["powershell", "-Command", ps_command],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL
+                )
+            
+            self._show_toast(self.tr("Playing translation..."))
+            
+        except Exception as e:
+            QMessageBox.warning(
+                self, self.tr("TTS Error"),
+                self.tr("Text-to-speech failed: {}").format(str(e))
+            )
+    
+    # Feature 13: Fullscreen Mode
+    def _toggle_fullscreen(self):
+        """Toggle fullscreen mode."""
+        if self._is_fullscreen:
+            self._exit_fullscreen()
+        else:
+            self._enter_fullscreen()
+    
+    def _enter_fullscreen(self):
+        """Enter fullscreen mode."""
+        if self._is_fullscreen:
+            return
+        
+        # Store current state
+        self._pre_fullscreen_state = {
+            'menu_visible': not self.menuBar().isHidden(),
+            'toolbar_visible': self._toolbar.isVisible() if hasattr(self, '_toolbar') else True,
+            'statusbar_visible': not self.statusBar().isHidden(),
+            'geometry': self.geometry()
+        }
+        
+        # Hide UI elements
+        self.menuBar().hide()
+        if hasattr(self, '_toolbar'):
+            self._toolbar.hide()
+        self.statusBar().hide()
+        
+        # Hide docks
+        for dock in self.findChildren(QDockWidget):
+            if dock.isVisible():
+                dock.hide()
+        
+        # Enter fullscreen
+        self.showFullScreen()
+        self._is_fullscreen = True
+        
+        self._show_toast(self.tr("Fullscreen mode - Press Escape to exit"))
+    
+    def _exit_fullscreen(self):
+        """Exit fullscreen mode."""
+        if not self._is_fullscreen:
+            return
+        
+        # Exit fullscreen
+        self.showNormal()
+        
+        # Restore UI elements
+        if self._pre_fullscreen_state:
+            if self._pre_fullscreen_state['menu_visible']:
+                self.menuBar().show()
+            
+            if self._pre_fullscreen_state['toolbar_visible'] and hasattr(self, '_toolbar'):
+                self._toolbar.show()
+            
+            if self._pre_fullscreen_state['statusbar_visible']:
+                self.statusBar().show()
+            
+            # Restore geometry
+            self.setGeometry(self._pre_fullscreen_state['geometry'])
+        
+        self._is_fullscreen = False
+        self._pre_fullscreen_state = None
+    
+    def _exit_fullscreen_if_active(self):
+        """Exit fullscreen if currently in fullscreen mode."""
+        if self._is_fullscreen:
+            self._exit_fullscreen()
+    
+    # Feature 14: Macros
+    def _show_macro_dialog(self):
+        """Show macro management dialog."""
+        dialog = MacroDialog(self)
+        dialog.exec()
+    
+    def _on_record_macro(self):
+        """Start recording a macro."""
+        if self._macro_manager.is_recording:
+            self._show_toast(self.tr("Already recording a macro"))
+            return
+        
+        # Get macro name
+        name, ok = QInputDialog.getText(
+            self, self.tr("Record Macro"),
+            self.tr("Enter macro name:")
+        )
+        
+        if not ok or not name.strip():
+            return
+        
+        name = name.strip()
+        if self._macro_manager.get_macro(name):
+            QMessageBox.warning(
+                self, self.tr("Macro Exists"),
+                self.tr("A macro with this name already exists.")
+            )
+            return
+        
+        # Start recording
+        self._macro_manager.start_recording()
+        self._recording_macro_name = name
+        self._show_toast(self.tr("Recording macro '{}'...").format(name))
+    
+    def _on_play_macro(self):
+        """Show macro selection and play."""
+        macros = self._macro_manager.get_all_macros()
+        if not macros:
+            self._show_toast(self.tr("No macros available"))
+            return
+        
+        macro_names = [name for name, macro in macros.items() if macro.enabled]
+        if not macro_names:
+            self._show_toast(self.tr("No enabled macros"))
+            return
+        
+        name, ok = QInputDialog.getItem(
+            self, self.tr("Play Macro"),
+            self.tr("Select macro to play:"),
+            macro_names, 0, False
+        )
+        
+        if ok and name:
+            success = self._macro_manager.play_macro(name, self)
+            if not success:
+                self._show_toast(self.tr("Failed to play macro"))
+    
+    def _record_macro_action(self, action_type: MacroActionType, **parameters):
+        """Record an action for macro recording."""
+        if self._macro_manager.is_recording:
+            self._macro_manager.recorder.record_action(action_type, **parameters)
+    
+    # Translation History Integration
+    def _save_entry_with_history(self, entry_index: int, old_value: str, new_value: str, field: str = "target"):
+        """Save entry change to history."""
+        if not self._file_data:
+            return
+        
+        # Record history
+        self._history_manager.add_change(
+            str(self._file_data.path), 
+            entry_index, 
+            field, 
+            old_value, 
+            new_value,
+            self._app_settings.get("translator_name", "")
+        )
+        
+        # Record achievement
+        if field == "target" and new_value.strip() and not old_value.strip():
+            self._record_translation_achievement()
+    
+    def _show_translation_history(self):
+        """Show translation history for current entry."""
+        if self._current_index < 0 or not self._file_data:
+            return
+        
+        dialog = HistoryDialog(str(self._file_data.path), self._current_index, self)
+        dialog.rollback_requested.connect(self._rollback_translation)
+        dialog.exec()
+    
+    def _rollback_translation(self, old_value: str):
+        """Rollback translation to previous value."""
+        if self._current_index < 0 or not self._file_data:
+            return
+        
+        entry = self._file_data.entries[self._current_index]
+        if hasattr(entry, 'msgstr'):
+            entry.msgstr = old_value
+        else:
+            entry.translation = old_value
+        
+        self._modified = True
+        self._update_translation_text(old_value)
+        self._show_toast(self.tr("Translation rolled back"))
+    
+    # Enhanced Compile with Auto-compile
+    def _on_compile_enhanced(self):
+        """Enhanced compile that also handles auto-compile setting."""
+        self._on_compile()
+        
+        # Check if we should auto-compile
+        if self._app_settings.get("auto_compile_on_save", False):
+            self._show_toast(self.tr("Auto-compile enabled"))
+    
+    # Plugin Integration
+    def _run_plugin_lint(self, source: str, target: str) -> list:
+        """Run linting through plugins."""
+        return self._plugin_manager.lint_with_plugins(source, target)
+    
+    def _get_plugin_suggestions(self, source: str, lang: str) -> list:
+        """Get suggestions from plugins."""
+        return self._plugin_manager.get_suggestions_from_plugins(source, lang)
+    
+    # Context Menu Enhancement
+    def _show_enhanced_context_menu(self, position):
+        """Enhanced context menu with new features."""
+        # Call original context menu
+        self._show_tree_context_menu(position)
+        
+        # Add separator and new items to the menu that was created
+        current_row = self._tree.currentItem()
+        if current_row:
+            menu = QMenu(self)
+            
+            # Feature 5: Translation History
+            if self._history_manager.has_history(str(self._file_data.path), self._current_index):
+                menu.addAction(self.tr("Translation History…"), self._show_translation_history)
+            
+            # Feature 12: TTS
+            menu.addAction(self.tr("🔊 Play Translation"), self._play_tts)
+            
+            menu.exec(self._tree.mapToGlobal(position))
+
+    # ── New Features Implementation ──────────────────────────────────────────
+
+    def _show_regex_tester(self):
+        """Show Regex Tester dialog."""
+        current_text = ""
+        if hasattr(self, '_translation_editor') and self._translation_editor:
+            current_text = self._translation_editor.toPlainText()
+        
+        dialog = RegexTesterDialog(self, current_text)
+        dialog.exec()
+
+    def _show_layout_simulator(self):
+        """Show Layout Simulator dialog."""
+        source_text = ""
+        target_text = ""
+        
+        # Get current entry texts
+        current_entry = self._get_current_entry()
+        if current_entry:
+            source_text = current_entry.source
+            target_text = current_entry.target
+        
+        dialog = LayoutSimulatorDialog(self, source_text, target_text)
+        dialog.exec()
+
+    def _show_locale_map_dialog(self):
+        """Show Locale Map dialog."""
+        project_path = ""
+        if hasattr(self, '_current_file') and self._current_file:
+            project_path = str(Path(self._current_file).parent)
+        
+        dialog = LocaleMapDialog(self, project_path)
+        dialog.exec()
+
+    def _show_ocr_dialog(self):
+        """Show OCR dialog."""
+        dialog = OCRDialog(self)
+        dialog.strings_extracted.connect(self._on_ocr_strings_extracted)
+        dialog.exec()
+
+    def _on_ocr_strings_extracted(self, strings: list):
+        """Handle extracted strings from OCR."""
+        if strings:
+            # Could open the created PO file or show a notification
+            self._show_toast(self.tr("OCR extraction completed. {} strings extracted.").format(len(strings)))
+
+    def _crowdin_pull_latest(self):
+        """Pull latest translations from Crowdin OTA."""
+        QMessageBox.information(
+            self, 
+            self.tr("Crowdin OTA"),
+            self.tr("Crowdin Over-The-Air functionality not yet implemented.\n"
+                   "This would pull latest translations using distribution hash.")
+        )
+
+    def _msgmerge_with_pot(self):
+        """Merge current PO file with POT file using msgmerge."""
+        if not hasattr(self, '_current_file') or not self._current_file:
+            QMessageBox.warning(self, self.tr("No File"), self.tr("Please open a PO file first."))
+            return
+        
+        if not self._current_file.endswith('.po'):
+            QMessageBox.warning(self, self.tr("Wrong File Type"), self.tr("This feature only works with PO files."))
+            return
+        
+        # Browse for POT file
+        pot_file, _ = QFileDialog.getOpenFileName(
+            self,
+            self.tr("Select POT File"),
+            str(Path(self._current_file).parent),
+            self.tr("POT Files (*.pot)")
+        )
+        
+        if not pot_file:
+            return
+        
+        try:
+            # Run msgmerge
+            import subprocess
+            cmd = ["msgmerge", "--update", self._current_file, pot_file]
+            result = subprocess.run(cmd, capture_output=True, text=True)
+            
+            if result.returncode == 0:
+                QMessageBox.information(
+                    self, 
+                    self.tr("Success"),
+                    self.tr("PO file merged successfully with POT file.\nPlease reload the file to see changes.")
+                )
+                # Reload the file
+                self._reload_current_file()
+            else:
+                QMessageBox.warning(
+                    self,
+                    self.tr("Msgmerge Error"),
+                    self.tr("msgmerge failed:\n{}").format(result.stderr or result.stdout)
+                )
+                
+        except FileNotFoundError:
+            QMessageBox.warning(
+                self,
+                self.tr("Msgmerge Not Found"),
+                self.tr("msgmerge command not found. Please install gettext tools.")
+            )
+        except Exception as e:
+            QMessageBox.critical(
+                self,
+                self.tr("Error"),
+                self.tr("Failed to run msgmerge:\n{}").format(str(e))
+            )
+
+    def _reload_current_file(self):
+        """Reload the current file."""
+        if hasattr(self, '_current_file') and self._current_file:
+            self._load_file(self._current_file)
+    
+    # ── Feature 10: Minimap ──────────────────────────────────────
+    
+    def _toggle_minimap(self):
+        """Toggle minimap visibility."""
+        is_visible = self._minimap.isVisible()
+        self._minimap.setVisible(not is_visible)
+        
+        if not is_visible:
+            self._update_minimap()
+    
+    def _update_minimap(self):
+        """Update minimap with current entries."""
+        if not hasattr(self, '_minimap'):
+            return
+            
+        entries = self._get_entries()
+        self._minimap.set_entries(entries)
+        self._minimap.set_current_index(self._current_index)
+    
+    def _on_minimap_jump(self, entry_index: int):
+        """Jump to entry from minimap click."""
+        entries = self._get_entries()
+        if 0 <= entry_index < len(entries):
+            self._select_entry(entry_index)

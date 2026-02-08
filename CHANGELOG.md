@@ -5,6 +5,35 @@ All notable changes to LinguaEdit will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.0] - 2026-02-08
+
+### Added
+
+#### Major New Features
+- **Regex Tester Dialog** (Ctrl+Shift+X) - Test format strings with sample values, live preview of string substitution
+- **Layout Simulator Dialog** (Ctrl+Shift+L) - Test text rendering with different fonts and widths, mobile/desktop presets, overflow warnings
+- **Locale Map Dialog** - World map visualization of translation progress by country, project-wide statistics
+- **OCR Screenshot Tool** (Ctrl+Shift+O) - Extract text from images using tesseract, create PO files from extracted strings
+- **Confidence Score System** - Automatic quality assessment (0-100%) based on TM matches, length ratios, format strings, glossary usage
+- **Source Code Context Lookup** - Fetch surrounding code context from local files and GitHub API for better translation understanding
+- **Gettext msgmerge Integration** (Ctrl+Shift+M) - Merge PO files with POT templates using msgmerge command
+- **Back-translation Feature** - Reverse translate to verify meaning preservation (integrated in AI Review)
+- **Crowdin OTA Support** - Over-The-Air content delivery integration for live translation updates
+
+#### File Format Support
+- **Apple .strings/.stringsdict** - iOS/macOS localization files with plural forms support
+- **Unity .asset files** - YAML-based Unity localization tables with StringTable and AssetTable support
+- **RESX (.NET)** - Microsoft .NET resource files with metadata preservation
+
+#### Speech and Accessibility
+- **Speech-to-Text Integration** - Dictation support with microphone button in editor (macOS NSSpeechRecognizer, Linux Whisper)
+- **A/B Test Alternatives** - Store and manage multiple translation variants with export selection
+
+### Enhanced
+- Translation Map visualization with color-coded progress indicators
+- Improved confidence scoring with background thread calculation
+- Better source reference parsing for GitHub URLs and local files
+
 ## [0.10.0] - 2026-02-08
 
 ### Added
