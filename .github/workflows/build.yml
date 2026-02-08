@@ -39,21 +39,28 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install deps
-        run: pip install pyinstaller PySide6 polib requests PyYAML
+        run: |
+          pip install pyinstaller PySide6 polib requests PyYAML Pillow
+      - name: Create .ico
+        run: |
+          python -c "from PIL import Image; img=Image.open('resources/icon.png'); img.save('resources/icon.ico', sizes=[(16,16),(32,32),(48,48),(64,64),(128,128),(256,256)])"
       - name: Build .exe
         run: |
           pyinstaller --windowed --name LinguaEdit `
+            --icon resources/icon.ico `
             --add-data "translations;translations" `
             --add-data "resources;resources" `
             --hidden-import=linguaedit `
             --exclude-module=enchant `
             --paths=src src/linguaedit/app.py
-          cd dist
-          7z a ../LinguaEdit-${{ github.ref_name }}-Windows.zip LinguaEdit/
+      - name: Build installer
+        run: |
+          $version = "${{ github.ref_name }}".TrimStart("v")
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" /DMyAppVersion=$version installer\linguaedit.iss
       - uses: actions/upload-artifact@v4
         with:
           name: windows-build
-          path: LinguaEdit-${{ github.ref_name }}-Windows.zip
+          path: LinguaEdit-*-Setup.exe
 
   linux:
     runs-on: ubuntu-latest
@@ -82,6 +89,6 @@ jobs:
         with:
           files: |
             LinguaEdit-*-macOS.zip
-            LinguaEdit-*-Windows.zip
+            LinguaEdit-*-Setup.exe
             linguaedit_*_all.deb
           overwrite_files: true
