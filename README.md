@@ -1,152 +1,229 @@
 # LinguaEdit
 
-A Qt6/PySide6 translation file editor for **PO**, **TS**, **JSON**, **XLIFF**, **Android XML**, **ARB**, **PHP**, and **YAML** i18n files.
-
-![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue)
+![GitHub Release](https://img.shields.io/github/v/release/yeager/linguaedit)
+![License](https://img.shields.io/badge/license-GPL--3.0-blue)
 ![Python](https://img.shields.io/badge/python-3.10+-green)
-![Version](https://img.shields.io/badge/version-0.4.1-orange)
+![Qt6](https://img.shields.io/badge/Qt-6-green)
 ![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey)
 
-![LinguaEdit main window](docs/screenshots/main-window.png)
+**Professional translation file editor built with Qt6/PySide6**
 
-## Features
+![LinguaEdit](docs/screenshot.png)
 
-- **Multi-format editing** — PO/POT (gettext), Qt TS (XML), JSON (flat & nested), XLIFF 1.2/2.0, Android XML (strings.xml), Flutter ARB, PHP arrays, YAML
-- **Tabbed editing** — open multiple files in tabs simultaneously
-- **Inline linting & quality score** — format specifier checks, whitespace, length ratio, punctuation
-- **QA profiles** — configurable quality assurance rule sets (formal, casual, strict)
-- **Pre-translation** — Lingva, MyMemory (free); OpenAI, Anthropic (paid)
-- **Translation memory** — fuzzy lookup from previously translated entries
-- **Glossary manager** — maintain project glossaries with term enforcement
-- **Spell checking** — via PyEnchant with configurable language
-- **Translation reports** — generate HTML/CSV summary reports with statistics
-- **Git integration** — view file status, diffs, and staged changes
-- **Column sorting** — click headers to sort by source, translation, or status
-- **Diff viewer** — side-by-side comparison of changes
-- **Search & filter** — filter entries by text, status, or lint issues
-- **Batch translation** — pre-translate all untranslated entries at once
-- **Drag-and-drop** — open files by dropping them on the window
-- **Recent files** — quick access to last 20 opened files
-- **Keyboard shortcuts** — Ctrl+S save, Ctrl+O open, Ctrl+F find, and more
-- **Metadata viewer** — Last-Translator, PO-Revision-Date, language, etc.
-- **Plural form editing** — full support for nplurals
-- **Comment editing** — translator comments per entry
-- **Character & word count** — live display in status bar
-- **Dark/light theme** — follows system preference or manual toggle
-- **Icon toolbar** — Open, Save, Undo, Redo, Previous, Next, Copy Source, Pre-translate, Validate — with icons and text labels
-- **App logo** — custom SVG/PNG icon for window and About dialog
+## ✨ Features for Translators
 
-### Platform Integration
+### 📝 Multi-format Support
+Edit translation files in multiple formats:
+- **PO/POT** (GNU Gettext)
+- **TS** (Qt Linguist XML)
+- **XLIFF** 1.2 & 2.0
+- **JSON** (flat & nested i18n)
+- **YAML** (i18n files)
+- **Android XML** (strings.xml)
+- **ARB** (Flutter Application Resource Bundle)
+- **PHP** (array format)
 
-- **GitHub PR workflow** — fetch POT, create branch, push translation, open PR
-- **Transifex** — pull/push resources via API v3
-- **Weblate** — pull/push translations via REST API
-- **Crowdin** — pull/push files via API v2
-- **Secure keystore** — API keys stored in platform keyring (libsecret / macOS Keychain)
+### 🔍 Smart Search & Replace
+- Advanced search with **regex support**
+- Replace across all translation units
+- Filter by translation status
+- Search in source text, translations, or comments
+- Case-sensitive and whole-word options
 
-### In-app Updates
+### 🧠 Translation Memory
+- **SQLite-based** translation memory
+- **Fuzzy matching** algorithm
+- Learn from your previous translations
+- Suggest similar translations automatically
+- Import/export TM databases
 
-Automatic update checking on macOS and Windows.
+### 📚 Glossary & Terminology
+- Built-in **glossary manager**
+- **Consistency checking** across translations
+- Term enforcement and suggestions
+- Project-specific terminologies
+- Import/export glossaries
 
-## Requirements
+### ✅ Smart Quality Assurance
+Advanced linting for translation quality:
+- **Format string validation** (printf, .NET, etc.)
+- **HTML tag consistency** checking
+- **Keyboard accelerator** validation (&File, etc.)
+- **Duplicate translation** detection
+- **Case consistency** checking
+- **Whitespace** validation
+- Quality score calculation
 
+### 📊 Statistics & Reports
+- Generate **HTML and PDF reports**
+- Translation progress statistics
+- Word count and completion rates
+- Quality metrics overview
+- Export data for project management
+
+### 🔄 Batch Operations
+- **Bulk fuzzy matching** from TM
+- **Search & replace all** across files
+- **Pre-translation** with AI services
+- **Mass status updates**
+- **Batch validation** runs
+
+### 💬 Translator Workflow
+- **Translator comments** for each string
+- **Fuzzy/untranslated** status tracking
+- **Previous/Next** navigation
+- **Copy source to target**
+- **History** of changes per entry
+
+### 📂 Project Management
+- **Multi-file project view**
+- **Per-file status** overview
+- Recent files quick access
+- **Tabbed editing** interface
+- **Drag-and-drop** file opening
+
+### 🔀 File Comparison
+- **Side-by-side diff view**
+- Compare different file versions
+- **Git integration** for version control
+- **Change highlighting**
+
+### 🌐 Online Synchronization
+Integrate with translation platforms:
+- **Weblate** (pull/push via REST API)
+- **Transifex** (API v3 integration)
+- **Crowdin** (API v2 support)
+- **GitHub PR workflow**
+- Secure API key storage
+
+### 🎨 Beautiful Interface
+Choose from 5 professional themes:
+- **Light** - Clean and bright
+- **Dark** - Easy on the eyes
+- **Solarized Dark** - Developer favorite
+- **Nord** - Arctic inspired
+- **Monokai** - Syntax highlighting style
+
+### 🌍 Multilingual Interface
+LinguaEdit itself is available in 11 languages:
+- 🇸🇪 **Svenska** (Swedish)
+- 🇩🇪 **Deutsch** (German)  
+- 🇫🇷 **Français** (French)
+- 🇪🇸 **Español** (Spanish)
+- 🇵🇹 **Português** (Portuguese)
+- 🇯🇵 **日本語** (Japanese)
+- 🇨🇳 **中文** (Chinese)
+- 🇰🇷 **한국어** (Korean)
+- 🇵🇱 **Polski** (Polish)
+- 🇩🇰 **Dansk** (Danish)
+- 🇳🇴 **Norsk** (Norwegian)
+
+### ⌨️ Keyboard Shortcuts for Everything
+Work efficiently with full keyboard support:
+
+| Shortcut | Action |
+|----------|--------|
+| **Ctrl+O** | Open file |
+| **Ctrl+S** | Save file |
+| **Ctrl+H** | Find and Replace |
+| **Ctrl+I** | Go to entry |
+| **Ctrl+D** | Toggle Done status |
+| **Ctrl+Shift+B** | Batch operations |
+| **Ctrl+Shift+H** | Translation Memory |
+| **Ctrl+Shift+O** | Online sync |
+| **Ctrl+Shift+R** | Generate report |
+| **Ctrl+Shift+V** | Validate all |
+
+## 🚀 Installation
+
+### Package Managers
+```bash
+# Python package managers
+pip install linguaedit
+pipx install linguaedit
+
+# macOS Homebrew (coming soon)
+brew install linguaedit
+```
+
+### Linux Packages
+
+#### Debian/Ubuntu (APT Repository)
+```bash
+echo "deb https://yeager.github.io/debian-repo stable main" | sudo tee /etc/apt/sources.list.d/yeager.list
+wget -O - https://yeager.github.io/debian-repo/key.gpg | sudo apt-key add -
+sudo apt update
+sudo apt install linguaedit
+```
+
+#### RPM-based (RHEL, Fedora, openSUSE)
+```bash
+# Add RPM repository
+sudo tee /etc/yum.repos.d/yeager.repo << EOF
+[yeager]
+name=Yeager's RPM Repository
+baseurl=https://yeager.github.io/rpm-repo
+enabled=1
+gpgcheck=0
+EOF
+
+sudo yum install linguaedit
+# or on Fedora/openSUSE:
+sudo dnf install linguaedit
+```
+
+### Windows & macOS Installers
+Download platform-specific installers from [GitHub Releases](https://github.com/yeager/linguaedit/releases):
+- **Windows**: `LinguaEdit-0.9.0-Windows-x64.exe`
+- **macOS**: `LinguaEdit-0.9.0-macOS.dmg`
+
+## 🛠️ Development
+
+### Requirements
 - Python 3.10+
-- PySide6 (Qt 6)
+- Qt6/PySide6
+- Git (for repository features)
 
-### macOS
-
+### Build from Source
 ```bash
-brew install enchant
-pip install PySide6
-```
-
-### Linux (Ubuntu/Debian)
-
-```bash
-sudo apt install libenchant-2-dev
-pip install PySide6
-```
-
-### Linux (Fedora)
-
-```bash
-sudo dnf install enchant2-devel
-pip install PySide6
-```
-
-## Installation
-
-```bash
-pip install -e .
-
-# With AI translation support:
-pip install -e ".[ai]"
-```
-
-### Pre-built packages
-
-- **macOS** — download `LinguaEdit-0.4.0-macOS.zip` from [Releases](https://github.com/yeager/linguaedit/releases)
-- **Linux (.deb)** — available from [Yeager's APT repo](https://yeager.github.io/debian-repo/)
-- **Windows** — build from source or use GitHub Actions artifacts
-
-## Usage
-
-```bash
-# Launch GUI
+git clone https://github.com/yeager/linguaedit.git
+cd linguaedit
+pip install -e ".[dev]"
 linguaedit
-
-# Open a file directly
-linguaedit path/to/file.po
 ```
 
-## Project Structure
+## 🤝 Contributing
 
-```
-linguaedit/
-├── src/linguaedit/
-│   ├── app.py              # Application entry point (PySide6)
-│   ├── ui/
-│   │   ├── window.py       # Main Qt window
-│   │   ├── welcome_dialog.py
-│   │   ├── preferences_dialog.py
-│   │   ├── platform_dialog.py
-│   │   └── sync_dialog.py
-│   ├── parsers/
-│   │   ├── po_parser.py    # PO/POT parser
-│   │   ├── ts_parser.py    # Qt TS parser (XML)
-│   │   ├── json_parser.py  # JSON i18n parser
-│   │   ├── xliff_parser.py # XLIFF 1.2/2.0 parser
-│   │   ├── android_parser.py # Android strings.xml parser
-│   │   ├── arb_parser.py   # Flutter ARB parser
-│   │   ├── php_parser.py   # PHP array parser
-│   │   └── yaml_parser.py  # YAML i18n parser
-│   └── services/
-│       ├── linter.py       # Translation linting & quality score
-│       ├── translator.py   # Pre-translation engines
-│       ├── spellcheck.py   # Spell checking (enchant)
-│       ├── github.py       # GitHub PR workflow
-│       ├── platforms.py    # Transifex, Weblate, Crowdin
-│       ├── keystore.py     # Secure API key storage
-│       ├── tm.py           # Translation memory
-│       ├── updater.py      # In-app update checker
-│       ├── glossary.py     # Glossary manager
-│       ├── qa_profiles.py  # QA profile engine
-│       ├── report.py       # Translation reports
-│       └── git_integration.py # Git status & diff
-├── translations/           # Qt .ts/.qm translation files
-├── docs/                   # Documentation
-└── pyproject.toml
-```
+LinguaEdit is open source (GPL-3.0) and welcomes contributions:
 
-## License
+- 🐛 **Bug reports** - Use GitHub Issues
+- 💡 **Feature requests** - Discuss in GitHub Discussions  
+- 🔄 **Pull requests** - Follow the contributing guide
+- 🌍 **Translations** - Help translate LinguaEdit itself
 
-GPL-3.0-or-later — see [LICENSE](LICENSE)
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
-## Support / Donate
+## 👤 Credits
 
-- [GitHub Sponsors](https://github.com/sponsors/yeager)
-- 🇸🇪 Swish: +46702526206
+**Created by Daniel Nylander**  
+Professional translator and open source developer
 
-## Author
+- 📧 Email: po@danielnylander.se
+- 🐙 GitHub: [@yeager](https://github.com/yeager)
+- 🌐 Website: https://danielnylander.se
 
-Daniel Nylander <po@danielnylander.se>
+## 💝 Support Development
+
+If LinguaEdit helps your translation work, consider supporting its development:
+
+- ⭐ **Star the project** on GitHub
+- 💖 **GitHub Sponsors**: [github.com/sponsors/yeager](https://github.com/sponsors/yeager)
+- 📱 **Swish** (Sweden): +46702526206
+
+Your support helps keep LinguaEdit free and open source for the translation community!
+
+---
+
+## 📄 License
+
+GPL-3.0-or-later - see [LICENSE](LICENSE) file for details.
