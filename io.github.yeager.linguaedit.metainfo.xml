@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.yeager.linguaedit</id>
+  <name>LinguaEdit</name>
+  <summary>Translation file editor for PO, TS, XLIFF, JSON, YAML, and more</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <developer id="io.github.yeager">
+    <name>Daniel Nylander</name>
+  </developer>
+
+  <description>
+    <p>
+      LinguaEdit is a professional translation file editor built with Qt6.
+      It supports PO, TS, XLIFF, JSON, YAML, Android XML, ARB, and PHP
+      localization files with built-in linting, pre-translation via AI and
+      translation memory, and platform integration with Transifex, Weblate,
+      and Crowdin.
+    </p>
+    <p>Features include:</p>
+    <ul>
+      <li>Edit PO, TS, XLIFF, JSON, YAML, Android XML, ARB, and PHP files</li>
+      <li>Built-in linting with placeholder and format string validation</li>
+      <li>Pre-translate with AI (OpenAI, Anthropic) or free services (Lingva, MyMemory)</li>
+      <li>Translation memory for consistent translations</li>
+      <li>Compile .mo and .qm files directly</li>
+      <li>Git integration (status, diff, commit)</li>
+      <li>Light, dark, and system theme support</li>
+      <li>Available in 11 languages</li>
+    </ul>
+  </description>
+
+  <url type="homepage">https://github.com/yeager/linguaedit</url>
+  <url type="bugtracker">https://github.com/yeager/linguaedit/issues</url>
+  <url type="vcs-browser">https://github.com/yeager/linguaedit</url>
+  <url type="donation">https://github.com/sponsors/yeager</url>
+
+  <launchable type="desktop-id">io.github.yeager.linguaedit.desktop</launchable>
+
+  <provides>
+    <binary>linguaedit</binary>
+  </provides>
+
+  <categories>
+    <category>Development</category>
+    <category>Translation</category>
+    <category>TextEditor</category>
+  </categories>
+
+  <keywords>
+    <keyword>translation</keyword>
+    <keyword>localization</keyword>
+    <keyword>i18n</keyword>
+    <keyword>l10n</keyword>
+    <keyword>gettext</keyword>
+    <keyword>PO</keyword>
+    <keyword>TS</keyword>
+    <keyword>XLIFF</keyword>
+  </keywords>
+
+  <content_rating type="oars-1.1" />
+
+  <releases>
+    <release version="0.8.0" date="2026-02-08">
+      <description>
+        <p>Major release with 11 languages, documentation, theme support, and compilation features.</p>
+      </description>
+    </release>
+  </releases>
+</component>
