@@ -9,3 +9,4 @@ build/
 *.spec
 !LinguaEdit.spec
 !LinguaEdit-windows.spec
+linguaedit_0.4.0_all.deb
