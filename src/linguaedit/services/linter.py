@@ -7,6 +7,8 @@ from dataclasses import dataclass, field
 
 from PySide6.QtCore import QCoreApplication
 
+from linguaedit.services.glossary import check_glossary
+
 
 
 @dataclass
@@ -107,12 +109,61 @@ def lint_entries(entries: list[dict]) -> LintResult:
                     penalty += 0.1
                     break
 
-        # Suspicious length ratio
+        # Suspicious length ratio  
         if len(msgid) > 5 and len(msgstr) > 0:
             ratio = len(msgstr) / len(msgid)
             if ratio > 3.0 or ratio < 0.2:
                 issues.append(LintIssue("warning", QCoreApplication.translate("Linter", "Suspicious length ratio: %sx") % f"{ratio:.1f}", idx, msgid))
                 penalty += 0.5
+
+        # HTML/XML tag validation
+        html_tag_pattern = r'<[^>]+>'
+        src_tags = set(re.findall(html_tag_pattern, msgid))
+        dst_tags = set(re.findall(html_tag_pattern, msgstr))
+        
+        if src_tags != dst_tags:
+            missing_in_target = src_tags - dst_tags
+            extra_in_target = dst_tags - src_tags
+            
+            if missing_in_target:
+                issues.append(LintIssue("error", QCoreApplication.translate("Linter", "Missing HTML/XML tags in translation: %s") % ", ".join(missing_in_target), idx, msgid))
+                penalty += 1.5
+            if extra_in_target:
+                issues.append(LintIssue("warning", QCoreApplication.translate("Linter", "Extra HTML/XML tags in translation: %s") % ", ".join(extra_in_target), idx, msgid))
+                penalty += 1.0
+
+        # Qt accelerator keys (&) validation 
+        src_accelerators = re.findall(r'&[a-zA-Z]', msgid)
+        dst_accelerators = re.findall(r'&[a-zA-Z]', msgstr)
+        
+        if len(src_accelerators) != len(dst_accelerators):
+            issues.append(LintIssue("warning", QCoreApplication.translate("Linter", "Accelerator key mismatch: source has %d, translation has %d") % (len(src_accelerators), len(dst_accelerators)), idx, msgid))
+            penalty += 0.8
+
+    # Check for duplicate msgids with different translations (after individual entry checks)
+    msgid_translations = {}
+    for e in entries:
+        msgid = e.get("msgid", "")
+        msgstr = e.get("msgstr", "")
+        if msgid and msgstr:
+            if msgid in msgid_translations:
+                if msgid_translations[msgid] != msgstr:
+                    # Found duplicate msgid with different translation
+                    issues.append(LintIssue("warning", QCoreApplication.translate("Linter", "Inconsistent translation for '%s'") % msgid[:50], e.get("index", -1), msgid))
+                    penalty += 0.5
+            else:
+                msgid_translations[msgid] = msgstr
+
+    # Check glossary consistency
+    try:
+        glossary_violations = check_glossary(entries)
+        for violation in glossary_violations:
+            issues.append(LintIssue("warning", 
+                QCoreApplication.translate("Linter", "Glossary inconsistency: %s") % violation.message, 
+                violation.entry_index, violation.term.source))
+            penalty += 0.3
+    except Exception:
+        pass  # Glossary check is optional
 
     score = max(0.0, 100.0 - (penalty / total) * 100.0)
     return LintResult(issues=issues, score=round(score, 1))

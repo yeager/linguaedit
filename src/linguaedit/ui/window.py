@@ -67,6 +67,13 @@ from linguaedit.services.git_integration import (
 )
 from linguaedit.ui.platform_dialog import PlatformSettingsDialog
 from linguaedit.ui.sync_dialog import SyncDialog
+from linguaedit.ui.search_replace_dialog import SearchReplaceDialog
+from linguaedit.ui.batch_edit_dialog import BatchEditDialog
+from linguaedit.ui.glossary_dialog import GlossaryDialog
+from linguaedit.ui.statistics_dialog import StatisticsDialog
+from linguaedit.ui.header_dialog import HeaderDialog
+from linguaedit.ui.diff_dialog import DiffDialog
+from linguaedit.ui.project_dock import ProjectDockWidget
 from linguaedit.services.settings import Settings
 
 # ── Recent files helper ──────────────────────────────────────────────
@@ -397,6 +404,10 @@ class LinguaEditWindow(QMainWindow):
 
         # Block recursive text change signals
         self._trans_block = False
+        
+        # New dialogs and dock widgets
+        self._search_replace_dialog: Optional[SearchReplaceDialog] = None
+        self._project_dock: Optional[ProjectDockWidget] = None
 
         self._build_ui()
         self._apply_settings()
@@ -599,6 +610,18 @@ class LinguaEditWindow(QMainWindow):
         self._trans_view.setFrameShape(QFrame.StyledPanel)
         self._trans_view.textChanged.connect(self._on_trans_buffer_changed)
         editor_layout.addWidget(self._trans_view, 1)
+        
+        # Translator comment field
+        comment_label = QLabel(self.tr("<b>Translator comment:</b>"))
+        comment_label.setContentsMargins(6, 0, 6, 0)
+        editor_layout.addWidget(comment_label)
+        
+        self._comment_view = QTextEdit()
+        self._comment_view.setMaximumHeight(60)
+        self._comment_view.setFrameShape(QFrame.StyledPanel)
+        self._comment_view.setPlaceholderText(self.tr("Add translator notes..."))
+        self._comment_view.textChanged.connect(self._on_comment_changed)
+        editor_layout.addWidget(self._comment_view)
 
         # Plural tabs (shown for plural entries only)
         self._plural_notebook = QTabWidget()
@@ -845,6 +868,8 @@ class LinguaEditWindow(QMainWindow):
         close_act.triggered.connect(lambda: self._on_tab_close(self._tab_widget.currentIndex()))
 
         file_menu.addSeparator()
+        file_menu.addAction(self.tr("Open Project…"), self._show_project_dock, QKeySequence("Ctrl+Shift+O"))
+        file_menu.addSeparator()
         file_menu.addAction(self.tr("Quit"), QApplication.quit, QKeySequence.Quit)
 
         # Edit
@@ -853,9 +878,11 @@ class LinguaEditWindow(QMainWindow):
         edit_menu.addAction(self.tr("Redo"), self._do_redo, QKeySequence.Redo)
         edit_menu.addSeparator()
         edit_menu.addAction(self.tr("Find…"), self._on_focus_search, QKeySequence.Find)
-        edit_menu.addAction(self.tr("Find && Replace…"), self._toggle_search_replace, QKeySequence("Ctrl+H"))
+        edit_menu.addAction(self.tr("Find && Replace…"), self._show_search_replace_dialog, QKeySequence("Ctrl+H"))
         edit_menu.addSeparator()
         edit_menu.addAction(self.tr("Copy source to translation"), self._copy_source_to_target, QKeySequence("Ctrl+B"))
+        edit_menu.addSeparator()
+        edit_menu.addAction(self.tr("Batch Edit…"), self._show_batch_edit_dialog, QKeySequence("Ctrl+Shift+B"))
         edit_menu.addSeparator()
         edit_menu.addAction(self.tr("Preferences…"), self._on_preferences, QKeySequence("Ctrl+,"))
 
@@ -865,9 +892,10 @@ class LinguaEditWindow(QMainWindow):
         catalog_menu.addAction(self.tr("Pre-translate…"), self._on_pretranslate_all, QKeySequence("Ctrl+Shift+T"))
         catalog_menu.addAction(self.tr("Spell check current"), self._run_spellcheck, QKeySequence("F7"))
         catalog_menu.addAction(self.tr("File metadata…"), self._on_show_metadata)
+        catalog_menu.addAction(self.tr("Edit Header…"), self._show_header_dialog, QKeySequence("Ctrl+Shift+H"))
         catalog_menu.addAction(self.tr("Feed file to TM"), self._on_feed_tm)
         catalog_menu.addSeparator()
-        catalog_menu.addAction(self.tr("Statistics…"), self._on_statistics)
+        catalog_menu.addAction(self.tr("Statistics…"), self._show_statistics_dialog, QKeySequence("Ctrl+I"))
         catalog_menu.addSeparator()
         catalog_menu.addAction(self.tr("Compile translation"), self._on_compile, QKeySequence("Ctrl+Shift+B"))
         catalog_menu.addSeparator()
@@ -875,7 +903,7 @@ class LinguaEditWindow(QMainWindow):
 
         qa_menu = catalog_menu.addMenu(self.tr("Quality"))
         qa_menu.addAction(self.tr("Consistency check"), self._on_consistency_check)
-        qa_menu.addAction(self.tr("Glossary…"), self._on_glossary)
+        qa_menu.addAction(self.tr("Glossary…"), self._show_glossary_dialog)
         qa_menu.addAction(self.tr("QA profile: Formal"), lambda: self._on_qa_profile("formal"))
         qa_menu.addAction(self.tr("QA profile: Informal"), lambda: self._on_qa_profile("informal"))
         qa_menu.addAction(self.tr("Export report…"), self._on_export_report)
@@ -890,15 +918,24 @@ class LinguaEditWindow(QMainWindow):
         go_menu.addSeparator()
         go_menu.addAction(self.tr("Done and next (Ctrl+Enter)"), lambda: (self._save_current_entry(), self._navigate(1)))
 
+        # Tools
+        tools_menu = mb.addMenu(self.tr("&Tools"))
+        tools_menu.addAction(self.tr("Compare Files…"), self._show_diff_dialog, QKeySequence("Ctrl+D"))
+        tools_menu.addSeparator()
+        tools_menu.addAction(self.tr("Glossary…"), self._show_glossary_dialog)
+        
         # View
         view_menu = mb.addMenu(self.tr("&View"))
         view_menu.addAction(self.tr("Compare language…"), self._on_compare_lang)
         view_menu.addAction(self.tr("Auto-propagate"), self._on_auto_propagate)
         view_menu.addSeparator()
         theme_menu = view_menu.addMenu(self.tr("Theme"))
-        theme_menu.addAction(self.tr("System"), lambda: self._set_theme("system"))
+        theme_menu.addAction(self.tr("System Default"), lambda: self._set_theme("system"))
         theme_menu.addAction(self.tr("Light"), lambda: self._set_theme("light"))
         theme_menu.addAction(self.tr("Dark"), lambda: self._set_theme("dark"))
+        theme_menu.addAction(self.tr("Solarized Dark"), lambda: self._set_theme("solarized_dark"))
+        theme_menu.addAction(self.tr("Nord"), lambda: self._set_theme("nord"))
+        theme_menu.addAction(self.tr("Monokai"), lambda: self._set_theme("monokai"))
 
         # Git
         git_menu = mb.addMenu(self.tr("&Git"))
@@ -1126,6 +1163,14 @@ class LinguaEditWindow(QMainWindow):
         self._trans_block = True
         self._trans_view.setPlainText(msgstr)
         self._trans_block = False
+        
+        # Load translator comment
+        comment = ""
+        if self._file_type == "po":
+            comment = self._file_data.entries[idx].tcomment or ""
+        elif self._file_type == "ts":
+            comment = self._file_data.entries[idx].comment or ""
+        self._comment_view.setPlainText(comment)
 
         if idx not in self._undo_stacks:
             self._undo_stacks[idx] = [msgstr]
@@ -1320,6 +1365,19 @@ class LinguaEditWindow(QMainWindow):
             if current_item is not None:
                 self._lint_and_update_row(current_item, self._current_index)
         self._lint_timer.start()
+        
+    def _on_comment_changed(self):
+        """Handle translator comment changes."""
+        if self._current_index >= 0 and self._file_data:
+            comment_text = self._comment_view.toPlainText()
+            
+            if self._file_type == "po":
+                self._file_data.entries[self._current_index].tcomment = comment_text
+                self._modified = True
+            elif self._file_type == "ts":
+                # For TS files, we can use the comment field
+                self._file_data.entries[self._current_index].comment = comment_text
+                self._modified = True
 
     # ── Inline linting ────────────────────────────────────────────
 
@@ -1812,39 +1870,107 @@ class LinguaEditWindow(QMainWindow):
     # ── Auto-propagate ────────────────────────────────────────────
 
     def _set_theme(self, theme: str):
-        """Set application theme: system, light, or dark."""
-        from PySide6.QtWidgets import QStyleFactory
+        """Set application theme."""
         app = QApplication.instance()
         settings = Settings.get()
         settings["theme"] = theme
 
         if theme == "dark":
-            palette = QPalette()
-            palette.setColor(QPalette.Window, QColor(30, 30, 30))
-            palette.setColor(QPalette.WindowText, QColor(224, 224, 224))
-            palette.setColor(QPalette.Base, QColor(22, 22, 22))
-            palette.setColor(QPalette.AlternateBase, QColor(35, 35, 35))
-            palette.setColor(QPalette.ToolTipBase, QColor(40, 40, 40))
-            palette.setColor(QPalette.ToolTipText, QColor(224, 224, 224))
-            palette.setColor(QPalette.Text, QColor(224, 224, 224))
-            palette.setColor(QPalette.Button, QColor(40, 40, 40))
-            palette.setColor(QPalette.ButtonText, QColor(224, 224, 224))
-            palette.setColor(QPalette.BrightText, QColor(255, 50, 50))
-            palette.setColor(QPalette.Link, QColor(90, 170, 255))
-            palette.setColor(QPalette.Highlight, QColor(50, 100, 180))
-            palette.setColor(QPalette.HighlightedText, QColor(240, 240, 240))
-            app.setPalette(palette)
+            self._apply_dark_theme(app)
+        elif theme == "solarized_dark":
+            self._apply_solarized_dark_theme(app)
+        elif theme == "nord":
+            self._apply_nord_theme(app)
+        elif theme == "monokai":
+            self._apply_monokai_theme(app)
         elif theme == "light":
             app.setPalette(app.style().standardPalette())
+            app.setStyleSheet("")
         else:
             # System default
             app.setPalette(app.style().standardPalette())
+            app.setStyleSheet("")
 
         settings.save()
         # Refresh list to update row colors
         if self._file_data:
             self._populate_list()
-        self._show_toast(self.tr("Theme changed"))
+        self._show_toast(self.tr("Theme changed to %s") % theme)
+
+    def _apply_dark_theme(self, app):
+        """Apply dark theme."""
+        palette = QPalette()
+        palette.setColor(QPalette.Window, QColor(30, 30, 30))
+        palette.setColor(QPalette.WindowText, QColor(224, 224, 224))
+        palette.setColor(QPalette.Base, QColor(22, 22, 22))
+        palette.setColor(QPalette.AlternateBase, QColor(35, 35, 35))
+        palette.setColor(QPalette.ToolTipBase, QColor(40, 40, 40))
+        palette.setColor(QPalette.ToolTipText, QColor(224, 224, 224))
+        palette.setColor(QPalette.Text, QColor(224, 224, 224))
+        palette.setColor(QPalette.Button, QColor(40, 40, 40))
+        palette.setColor(QPalette.ButtonText, QColor(224, 224, 224))
+        palette.setColor(QPalette.BrightText, QColor(255, 50, 50))
+        palette.setColor(QPalette.Link, QColor(90, 170, 255))
+        palette.setColor(QPalette.Highlight, QColor(50, 100, 180))
+        palette.setColor(QPalette.HighlightedText, QColor(240, 240, 240))
+        app.setPalette(palette)
+
+    def _apply_solarized_dark_theme(self, app):
+        """Apply Solarized Dark theme."""
+        palette = QPalette()
+        # Solarized Dark colors
+        palette.setColor(QPalette.Window, QColor(0, 43, 54))        # base03
+        palette.setColor(QPalette.WindowText, QColor(131, 148, 150)) # base0
+        palette.setColor(QPalette.Base, QColor(7, 54, 66))          # base02
+        palette.setColor(QPalette.AlternateBase, QColor(0, 43, 54))  # base03
+        palette.setColor(QPalette.ToolTipBase, QColor(7, 54, 66))
+        palette.setColor(QPalette.ToolTipText, QColor(131, 148, 150))
+        palette.setColor(QPalette.Text, QColor(147, 161, 161))       # base1
+        palette.setColor(QPalette.Button, QColor(7, 54, 66))
+        palette.setColor(QPalette.ButtonText, QColor(131, 148, 150))
+        palette.setColor(QPalette.BrightText, QColor(220, 50, 47))   # red
+        palette.setColor(QPalette.Link, QColor(38, 139, 210))        # blue
+        palette.setColor(QPalette.Highlight, QColor(42, 161, 152))   # cyan
+        palette.setColor(QPalette.HighlightedText, QColor(253, 246, 227)) # base3
+        app.setPalette(palette)
+
+    def _apply_nord_theme(self, app):
+        """Apply Nord theme."""
+        palette = QPalette()
+        # Nord colors
+        palette.setColor(QPalette.Window, QColor(46, 52, 64))        # nord0
+        palette.setColor(QPalette.WindowText, QColor(216, 222, 233)) # nord4
+        palette.setColor(QPalette.Base, QColor(59, 66, 82))          # nord1
+        palette.setColor(QPalette.AlternateBase, QColor(67, 76, 94)) # nord2
+        palette.setColor(QPalette.ToolTipBase, QColor(67, 76, 94))
+        palette.setColor(QPalette.ToolTipText, QColor(216, 222, 233))
+        palette.setColor(QPalette.Text, QColor(229, 233, 240))       # nord5
+        palette.setColor(QPalette.Button, QColor(67, 76, 94))
+        palette.setColor(QPalette.ButtonText, QColor(216, 222, 233))
+        palette.setColor(QPalette.BrightText, QColor(191, 97, 106))  # nord11
+        palette.setColor(QPalette.Link, QColor(136, 192, 208))       # nord8
+        palette.setColor(QPalette.Highlight, QColor(94, 129, 172))   # nord10
+        palette.setColor(QPalette.HighlightedText, QColor(236, 239, 244)) # nord6
+        app.setPalette(palette)
+
+    def _apply_monokai_theme(self, app):
+        """Apply Monokai theme."""
+        palette = QPalette()
+        # Monokai colors
+        palette.setColor(QPalette.Window, QColor(39, 40, 34))        # background
+        palette.setColor(QPalette.WindowText, QColor(248, 248, 242)) # foreground
+        palette.setColor(QPalette.Base, QColor(30, 31, 26))          # darker bg
+        palette.setColor(QPalette.AlternateBase, QColor(49, 51, 44))
+        palette.setColor(QPalette.ToolTipBase, QColor(49, 51, 44))
+        palette.setColor(QPalette.ToolTipText, QColor(248, 248, 242))
+        palette.setColor(QPalette.Text, QColor(248, 248, 242))
+        palette.setColor(QPalette.Button, QColor(49, 51, 44))
+        palette.setColor(QPalette.ButtonText, QColor(248, 248, 242))
+        palette.setColor(QPalette.BrightText, QColor(249, 38, 114))  # pink
+        palette.setColor(QPalette.Link, QColor(102, 217, 239))       # cyan
+        palette.setColor(QPalette.Highlight, QColor(73, 72, 62))     # selection
+        palette.setColor(QPalette.HighlightedText, QColor(248, 248, 242))
+        app.setPalette(palette)
 
     def _on_auto_propagate(self):
         if not self._file_data:
@@ -3133,6 +3259,298 @@ class LinguaEditWindow(QMainWindow):
                 self._show_toast(self.tr("Compile error: %s") % str(e))
         else:
             self._show_toast(self.tr("Compile not supported for %s files") % self._file_type)
+
+    # ── New Features Methods ─────────────────────────────────────
+
+    def _show_search_replace_dialog(self):
+        """Show the search and replace dialog."""
+        if not self._search_replace_dialog:
+            self._search_replace_dialog = SearchReplaceDialog(self)
+            self._search_replace_dialog.highlight_requested.connect(self._handle_search_highlight)
+            self._search_replace_dialog.replace_requested.connect(self._handle_replace_request)
+            
+        self._search_replace_dialog.show()
+        self._search_replace_dialog.raise_()
+        self._search_replace_dialog.focus_find_field()
+        
+    def _handle_search_highlight(self, pattern: str, case_sensitive: bool, is_regex: bool, scope: str):
+        """Handle search highlighting request."""
+        # Implement search highlighting in the entry list
+        # For now, just apply filter to show matching entries
+        if pattern:
+            self._search_entry.setText(pattern)
+            self._apply_filter()
+            
+    def _handle_replace_request(self, find_text: str, replace_text: str, case_sensitive: bool, is_regex: bool, scope: str, replace_all: bool):
+        """Handle replace request."""
+        if not self._file_data:
+            return
+            
+        if replace_all:
+            count = 0
+            entries = self._get_entries()
+            for i, (msgid, msgstr, is_fuzzy) in enumerate(entries):
+                if scope == "source" and find_text.lower() in msgid.lower():
+                    continue  # Can't replace in source
+                elif scope == "translation" or scope == "both":
+                    if find_text.lower() in msgstr.lower():
+                        new_text = msgstr.replace(find_text, replace_text)
+                        self._set_entry_translation(i, new_text)
+                        count += 1
+                        
+            if count > 0:
+                self._modified = True
+                self._populate_list()
+                self._show_toast(self.tr("Replaced in %d entries") % count)
+        else:
+            # Replace current
+            if self._current_index >= 0:
+                text = self._trans_view.toPlainText()
+                new_text = text.replace(find_text, replace_text, 1)
+                if new_text != text:
+                    self._trans_view.setPlainText(new_text)
+
+    def _show_batch_edit_dialog(self):
+        """Show the batch edit dialog."""
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+            
+        # Prepare entries for batch editing
+        entries = []
+        for i, (msgid, msgstr, is_fuzzy) in enumerate(self._get_entries()):
+            entries.append({
+                "index": i,
+                "msgid": msgid,
+                "msgstr": msgstr,
+                "is_fuzzy": is_fuzzy
+            })
+            
+        dialog = BatchEditDialog(self, entries)
+        dialog.apply_changes.connect(self._apply_batch_changes)
+        dialog.exec()
+        
+    def _apply_batch_changes(self, modified_entries):
+        """Apply batch changes to entries."""
+        for entry in modified_entries:
+            idx = entry["index"]
+            
+            if "new_msgstr" in entry:
+                self._set_entry_translation(idx, entry["new_msgstr"])
+                
+            if "new_is_fuzzy" in entry:
+                self._set_entry_fuzzy(idx, entry["new_is_fuzzy"])
+                
+        self._modified = True
+        self._populate_list()
+        self._update_stats()
+        self._show_toast(self.tr("Applied changes to %d entries") % len(modified_entries))
+
+    def _show_glossary_dialog(self):
+        """Show the glossary management dialog.""" 
+        dialog = GlossaryDialog(self)
+        dialog.glossary_changed.connect(self._on_glossary_changed)
+        dialog.exec()
+        
+    def _on_glossary_changed(self):
+        """Handle glossary changes."""
+        # Re-run linting to check for new glossary violations
+        if self._file_data:
+            entries = self._get_entries()
+            lint_input = []
+            for i, (msgid, msgstr, is_fuzzy) in enumerate(entries):
+                flags = ["fuzzy"] if is_fuzzy else []
+                lint_input.append({"index": i, "msgid": msgid, "msgstr": msgstr, "flags": flags})
+            if lint_input:
+                result = lint_entries(lint_input)
+                self._lint_cache.clear()
+                for issue in result.issues:
+                    self._lint_cache.setdefault(issue.entry_index, []).append(issue)
+                self._populate_list()
+
+    def _show_statistics_dialog(self):
+        """Show the statistics dialog."""
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+            
+        # Prepare entries for statistics
+        entries = []
+        for i, (msgid, msgstr, is_fuzzy) in enumerate(self._get_entries()):
+            entries.append({
+                "msgid": msgid,
+                "msgstr": msgstr,
+                "is_fuzzy": is_fuzzy
+            })
+            
+        file_name = Path(str(self._file_data.path)).name if self._file_data else ""
+        dialog = StatisticsDialog(self, entries, file_name)
+        dialog.exec()
+
+    def _show_header_dialog(self):
+        """Show the header editor dialog."""
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+            
+        dialog = HeaderDialog(self, self._file_type, self._file_data)
+        if dialog.exec() == QDialog.Accepted:
+            self._modified = True
+            self._show_toast(self.tr("Header updated"))
+
+    def _show_diff_dialog(self):
+        """Show the file comparison dialog."""
+        dialog = DiffDialog(self)
+        dialog.exec()
+
+    def _show_project_dock(self):
+        """Show or create the project dock widget."""
+        if not self._project_dock:
+            self._project_dock = ProjectDockWidget(self)
+            self._project_dock.file_open_requested.connect(self._load_file)
+            self.addDockWidget(Qt.LeftDockWidgetArea, self._project_dock)
+        else:
+            self._project_dock.show()
+            self._project_dock.raise_()
+
+    # ── Enhanced report with bilingual export ────────────────────
+
+    def _on_generate_report(self):
+        """Generate translation report with bilingual option."""
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+
+        from PySide6.QtWidgets import QCheckBox, QVBoxLayout, QDialog, QDialogButtonBox, QGroupBox
+        
+        # Custom dialog for report options
+        dialog = QDialog(self)
+        dialog.setWindowTitle(self.tr("Generate Report"))
+        dialog.setMinimumSize(300, 200)
+        
+        layout = QVBoxLayout(dialog)
+        
+        options_group = QGroupBox(self.tr("Report Options"))
+        options_layout = QVBoxLayout(options_group)
+        
+        bilingual_cb = QCheckBox(self.tr("Bilingual export (source + translation)"))
+        options_layout.addWidget(bilingual_cb)
+        
+        include_fuzzy_cb = QCheckBox(self.tr("Include fuzzy entries"))
+        include_fuzzy_cb.setChecked(True)
+        options_layout.addWidget(include_fuzzy_cb)
+        
+        layout.addWidget(options_group)
+        
+        buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        buttons.accepted.connect(dialog.accept)
+        buttons.rejected.connect(dialog.reject)
+        layout.addWidget(buttons)
+        
+        if dialog.exec() != QDialog.Accepted:
+            return
+            
+        # Generate report
+        entries = self._get_entries()
+        bilingual = bilingual_cb.isChecked()
+        include_fuzzy = include_fuzzy_cb.isChecked()
+        
+        file_path, _ = QFileDialog.getSaveFileName(
+            self,
+            self.tr("Save Report"),
+            f"{Path(str(self._file_data.path)).stem}_report.html",
+            self.tr("HTML files (*.html);;PDF files (*.pdf)")
+        )
+        
+        if not file_path:
+            return
+            
+        try:
+            self._generate_custom_report(entries, file_path, bilingual, include_fuzzy)
+            self._show_toast(self.tr("Report saved: %s") % file_path)
+        except Exception as e:
+            self._show_toast(self.tr("Report error: %s") % str(e))
+
+    def _generate_custom_report(self, entries, file_path: str, bilingual: bool, include_fuzzy: bool):
+        """Generate custom HTML report."""
+        html_content = []
+        html_content.append("<!DOCTYPE html>")
+        html_content.append("<html><head>")
+        html_content.append("<meta charset='utf-8'>")
+        html_content.append("<title>Translation Report</title>")
+        html_content.append("<style>")
+        html_content.append("body { font-family: Arial, sans-serif; margin: 20px; }")
+        html_content.append("table { border-collapse: collapse; width: 100%; }")
+        html_content.append("th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }")
+        html_content.append("th { background-color: #f2f2f2; }")
+        html_content.append(".fuzzy { background-color: #fff3cd; }")
+        html_content.append(".untranslated { background-color: #f8d7da; }")
+        html_content.append(".translated { background-color: #d4edda; }")
+        html_content.append("</style>")
+        html_content.append("</head><body>")
+        
+        # Header
+        file_name = Path(str(self._file_data.path)).name if self._file_data else "Unknown"
+        html_content.append(f"<h1>Translation Report: {file_name}</h1>")
+        
+        # Statistics
+        total = len(entries)
+        translated = sum(1 for _, msgstr, is_fuzzy in entries if msgstr and not is_fuzzy)
+        fuzzy = sum(1 for _, _, is_fuzzy in entries if is_fuzzy)
+        untranslated = total - translated - fuzzy
+        
+        html_content.append("<h2>Statistics</h2>")
+        html_content.append(f"<p>Total entries: {total}</p>")
+        html_content.append(f"<p>Translated: {translated} ({translated/total*100:.1f}%)</p>")
+        html_content.append(f"<p>Fuzzy: {fuzzy} ({fuzzy/total*100:.1f}%)</p>")
+        html_content.append(f"<p>Untranslated: {untranslated} ({untranslated/total*100:.1f}%)</p>")
+        
+        # Table
+        html_content.append("<h2>Entries</h2>")
+        html_content.append("<table>")
+        
+        if bilingual:
+            html_content.append("<tr><th>#</th><th>Source</th><th>Translation</th><th>Status</th></tr>")
+        else:
+            html_content.append("<tr><th>#</th><th>Text</th><th>Status</th></tr>")
+            
+        for i, (msgid, msgstr, is_fuzzy) in enumerate(entries):
+            if not include_fuzzy and is_fuzzy:
+                continue
+                
+            # Determine status and CSS class
+            if not msgstr:
+                status = "Untranslated"
+                css_class = "untranslated"
+            elif is_fuzzy:
+                status = "Fuzzy"
+                css_class = "fuzzy"
+            else:
+                status = "Translated"
+                css_class = "translated"
+                
+            html_content.append(f"<tr class='{css_class}'>")
+            html_content.append(f"<td>{i+1}</td>")
+            
+            if bilingual:
+                # Escape HTML
+                source_html = msgid.replace('<', '&lt;').replace('>', '&gt;').replace('\n', '<br>')
+                translation_html = msgstr.replace('<', '&lt;').replace('>', '&gt;').replace('\n', '<br>')
+                html_content.append(f"<td>{source_html}</td>")
+                html_content.append(f"<td>{translation_html}</td>")
+            else:
+                text_html = (msgstr or msgid).replace('<', '&lt;').replace('>', '&gt;').replace('\n', '<br>')
+                html_content.append(f"<td>{text_html}</td>")
+                
+            html_content.append(f"<td>{status}</td>")
+            html_content.append("</tr>")
+            
+        html_content.append("</table>")
+        html_content.append("</body></html>")
+        
+        # Write file
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(html_content))
 
     # ── Helpers ───────────────────────────────────────────────────
 
