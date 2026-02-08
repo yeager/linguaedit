@@ -1096,6 +1096,119 @@
     </message>
 </context>
 <context>
+    <name>PreferencesDialog</name>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="21"/>
+        <source>Preferences</source>
+        <translation>Preferências</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="32"/>
+        <source>Personal</source>
+        <translation>Pessoal</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="33"/>
+        <source>Translation</source>
+        <translation>Tradução</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="34"/>
+        <source>Appearance</source>
+        <translation>Aparência</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="48"/>
+        <source>Name:</source>
+        <translation>Nome:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="51"/>
+        <source>Email:</source>
+        <translation>E-mail:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="61"/>
+        <source>Language / Locale:</source>
+        <translation>Idioma/Locale:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="64"/>
+        <source>Team:</source>
+        <translation>Equipe:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="82"/>
+        <source>Default engine:</source>
+        <translation>Motor padrão:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="85"/>
+        <source>Source language:</source>
+        <translation>Idioma de origem:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="88"/>
+        <source>Target language:</source>
+        <translation>Idioma de destino:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="90"/>
+        <source>Auto-compile on save</source>
+        <translation>Compilar automaticamente ao salvar</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="92"/>
+        <source>Automatically compile .mo/.qm after saving</source>
+        <translation>Compilar automaticamente .mo/.qm após salvar</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="96"/>
+        <source>Default</source>
+        <translation>Padrão</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="96"/>
+        <source>Formal</source>
+        <translation>Formal</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="96"/>
+        <source>Informal</source>
+        <translation>Informal</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="99"/>
+        <source>Formality level:</source>
+        <translation>Nível de formalidade:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="108"/>
+        <source>System default</source>
+        <translation>Padrão do sistema</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="108"/>
+        <source>Light</source>
+        <translation>Claro</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="108"/>
+        <source>Dark</source>
+        <translation>Escuro</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="111"/>
+        <source>Theme:</source>
+        <translation>Tema:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/preferences_dialog.py" line="116"/>
+        <source>Editor font size:</source>
+        <translation>Tamanho da fonte do editor:</translation>
+    </message>
+</context>
+<context>
     <name>ValidationDialog</name>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="224"/>
@@ -1153,6 +1266,143 @@
         <location filename="../src/linguaedit/ui/window.py" line="266"/>
         <source>Close</source>
         <translation>Fechar</translation>
+    </message>
+</context>
+<context>
+    <name>WelcomeDialog</name>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="22"/>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="69"/>
+        <source>Welcome to LinguaEdit</source>
+        <translation>Bem-vindo ao LinguaEdit</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="41"/>
+        <source>Back</source>
+        <translation>Voltar</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="46"/>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="211"/>
+        <source>Next</source>
+        <translation>Próximo</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="80"/>
+        <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,
+Android XML, ARB, PHP, and YAML files.
+
+Features include AI-powered pre-translation, translation memory,
+quality assurance, spell checking, and platform integration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="97"/>
+        <source>Personal Information</source>
+        <translation>Informações pessoais</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="102"/>
+        <source>Name:</source>
+        <translation>Nome:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="105"/>
+        <source>Email:</source>
+        <translation>E-mail:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="115"/>
+        <source>Language / Locale:</source>
+        <translation>Idioma/Locale:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="118"/>
+        <source>Team (optional):</source>
+        <translation>Equipe (opcional):</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="130"/>
+        <source>Translation Settings</source>
+        <translation>Configurações de tradução</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="143"/>
+        <source>Default engine:</source>
+        <translation>Motor padrão:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="146"/>
+        <source>Source language:</source>
+        <translation>Idioma de origem:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="149"/>
+        <source>Target language:</source>
+        <translation>Idioma de destino:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="152"/>
+        <source>Default</source>
+        <translation>Padrão</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="152"/>
+        <source>Formal</source>
+        <translation>Formal</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="152"/>
+        <source>Informal</source>
+        <translation>Informal</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="155"/>
+        <source>Formality level:</source>
+        <translation>Nível de formalidade:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="167"/>
+        <source>Appearance</source>
+        <translation>Aparência</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="171"/>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="234"/>
+        <source>System default</source>
+        <translation>Padrão do sistema</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="171"/>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="234"/>
+        <source>Light</source>
+        <translation>Claro</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="171"/>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="234"/>
+        <source>Dark</source>
+        <translation>Escuro</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="174"/>
+        <source>Theme:</source>
+        <translation>Tema:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="179"/>
+        <source>Editor font size:</source>
+        <translation>Tamanho da fonte do editor:</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="192"/>
+        <source>You&apos;re all set!</source>
+        <translation>Tudo pronto!</translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/welcome_dialog.py" line="208"/>
+        <source>Start translating!</source>
+        <translation>Começar a traduzir!</translation>
     </message>
 </context>
 </TS>
