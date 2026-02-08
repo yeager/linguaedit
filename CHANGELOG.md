@@ -5,6 +5,48 @@ All notable changes to LinguaEdit will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.0] - 2026-02-08
+
+### Added
+
+#### Major Features - AI and Workflow Enhancement
+- **AI Review Dialog** (Ctrl+Shift+A) - AI-powered translation quality assessment with OpenAI/Anthropic API integration and offline heuristic fallback
+- **Contextual Translation Suggestions** - External translation lookup from GNOME, KDE, and Mozilla Pontoon projects with local caching
+- **Online Terminology Lookup** - Microsoft Terminology and IATE (EU) integration for technical term verification  
+- **Enhanced Translation Editor** - Autocomplete functionality with TM-based suggestions and configurable trigger settings
+- **Plural Forms Editor** - Specialized editor for ngettext/plural forms with CLDR-based language rules and tab-based interface
+
+#### Productivity Features  
+- **Bookmarks System** - Star entries for quick navigation (Ctrl+B toggle, F2/Shift+F2 navigation, Ctrl+Shift+K filter)
+- **Tags and Filtering** - Categorize entries with custom tags and predefined categories (UI, error, tooltip, menu, dialog, help)
+- **Review Mode** (Ctrl+R) - Workflow mode with approve/reject buttons and status tracking for quality assurance
+- **Focus Mode** (Ctrl+Shift+F) - Hide completed translations to focus on untranslated/fuzzy entries with progress tracking
+- **Email Integration** - Send translations via email with auto-filled TP robot addresses and attachment support
+
+#### UI Enhancements
+- **Context Panel** - Display screenshots and visual context for entries with configurable screenshot directories
+- **Preview Panel** - Real-time translation preview with length warnings, HTML detection, and configurable width simulation
+- **Extended Entry List** - New columns for bookmarks (⭐) and tags with improved filtering and context menus
+- **Weblate Integration** - Webhook notifications and API integration for checking new strings (planned)
+
+#### Technical Improvements
+- **Enhanced Services** - New service layer for context lookup, terminology, and external API integration
+- **Improved Caching** - SQLite-based caching for external services with automatic cleanup and freshness validation
+- **Better Keyboard Navigation** - Additional shortcuts and improved accessibility
+- **Data Persistence** - Bookmarks and tags saved per file with JSON-based storage
+
+### Changed
+- Translation editor replaced with enhanced autocomplete-enabled version
+- Entry table now includes bookmark and tag columns  
+- Side panel extended with Context and Preview tabs
+- Improved filtering system with multiple simultaneous filter support
+
+### Technical Details
+- All new features implement proper internationalization with Swedish translations
+- Service architecture follows dependency injection patterns
+- External API integration includes proper error handling and offline fallbacks
+- UI components follow Qt6/PySide6 best practices with proper signal/slot patterns
+
 ## [0.9.0] - 2026-02-08
 
 ### Added

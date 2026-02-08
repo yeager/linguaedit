@@ -23,7 +23,7 @@ import json
 import re
 import shutil
 import subprocess
-from difflib import SequenceMatcher
+from difflib import SequenceMatcher, unified_diff, ndiff
 from pathlib import Path
 from typing import Optional
 from html import escape as html_escape
@@ -74,7 +74,12 @@ from linguaedit.ui.statistics_dialog import StatisticsDialog
 from linguaedit.ui.header_dialog import HeaderDialog
 from linguaedit.ui.diff_dialog import DiffDialog
 from linguaedit.ui.project_dock import ProjectDockWidget
+from linguaedit.ui.ai_review_dialog import AIReviewDialog
+from linguaedit.ui.translation_editor import TranslationEditor
+from linguaedit.ui.plural_forms_editor import PluralFormsEditor
 from linguaedit.services.settings import Settings
+from linguaedit.services.context_lookup import get_context_service
+from linguaedit.services.terminology import get_terminology_service
 
 # ── Recent files helper ──────────────────────────────────────────────
 
@@ -408,6 +413,36 @@ class LinguaEditWindow(QMainWindow):
         # New dialogs and dock widgets
         self._search_replace_dialog: Optional[SearchReplaceDialog] = None
         self._project_dock: Optional[ProjectDockWidget] = None
+        
+        # Feature 1: AI Review
+        self._ai_review_dialog: Optional[AIReviewDialog] = None
+        
+        # Feature 5: Plural Forms Editor
+        self._plural_forms_editor: Optional[PluralFormsEditor] = None
+        
+        # Feature 6: Bokmärken
+        self._bookmarks: set[int] = set()
+        self._bookmarks_file = Path.home() / ".local" / "share" / "linguaedit" / "bookmarks.json"
+        self._show_bookmarked_only = False
+        
+        # Feature 7: Taggar/Filter  
+        self._tags: dict[int, list[str]] = {}  # index -> [tags]
+        self._tags_file = Path.home() / ".local" / "share" / "linguaedit" / "tags.json"
+        self._active_tag_filter: Optional[str] = None
+        
+        # Feature 8: Review Mode
+        self._review_mode = False
+        self._review_status: dict[int, str] = {}  # index -> "needs_review", "approved", "rejected"
+        self._review_comments: dict[int, str] = {}  # index -> comment
+        
+        # Feature 11: Screenshot Context Panel
+        self._context_dock: Optional[QDockWidget] = None
+        
+        # Feature 12: Preview Panel  
+        self._preview_dock: Optional[QDockWidget] = None
+        
+        # Feature 13: Focus Mode
+        self._focus_mode = False
 
         self._build_ui()
         self._apply_settings()
@@ -550,15 +585,19 @@ class LinguaEditWindow(QMainWindow):
         self._tree.setAlternatingRowColors(True)
         self._tree.setSelectionMode(QAbstractItemView.ExtendedSelection)
         self._tree.setUniformRowHeights(True)
-        self._tree.setHeaderLabels(["#", self.tr("Source text"), self.tr("Translation"), ""])
+        self._tree.setHeaderLabels(["#", "⭐", self.tr("Source text"), self.tr("Translation"), self.tr("Tags"), ""])
         self._tree.setSortingEnabled(True)
         header = self._tree.header()
         header.setStretchLastSection(False)
-        header.setSectionResizeMode(0, QHeaderView.ResizeToContents)
-        header.setSectionResizeMode(1, QHeaderView.Stretch)
-        header.setSectionResizeMode(2, QHeaderView.Stretch)
-        header.setSectionResizeMode(3, QHeaderView.ResizeToContents)
+        header.setSectionResizeMode(0, QHeaderView.ResizeToContents)  # #
+        header.setSectionResizeMode(1, QHeaderView.ResizeToContents)  # ⭐ (bookmark)
+        header.setSectionResizeMode(2, QHeaderView.Stretch)           # Source text  
+        header.setSectionResizeMode(3, QHeaderView.Stretch)           # Translation
+        header.setSectionResizeMode(4, QHeaderView.ResizeToContents)  # Tags
+        header.setSectionResizeMode(5, QHeaderView.ResizeToContents)  # Status/flags
         self._tree.currentItemChanged.connect(self._on_tree_item_changed)
+        self._tree.setContextMenuPolicy(Qt.CustomContextMenu)
+        self._tree.customContextMenuRequested.connect(self._show_tree_context_menu)
         table_layout.addWidget(self._tree, 1)
 
         # Progress bar under table
@@ -606,9 +645,10 @@ class LinguaEditWindow(QMainWindow):
         self._trans_header = QLabel(self.tr("<b>Translation:</b>"))
         self._trans_header.setContentsMargins(6, 0, 6, 0)
         editor_layout.addWidget(self._trans_header)
-        self._trans_view = QTextEdit()
+        self._trans_view = TranslationEditor()
         self._trans_view.setFrameShape(QFrame.StyledPanel)
         self._trans_view.textChanged.connect(self._on_trans_buffer_changed)
+        self._trans_view.translation_changed.connect(self._on_trans_buffer_changed)
         editor_layout.addWidget(self._trans_view, 1)
         
         # Translator comment field
@@ -772,6 +812,45 @@ class LinguaEditWindow(QMainWindow):
         split_layout.addWidget(self._split_trans_label)
         split_layout.addStretch()
         self._side_panel.addTab(split_widget, self.tr("Reference"))
+        
+        # Feature 11: Context Panel (Screenshot)
+        context_widget = QWidget()
+        context_layout = QVBoxLayout(context_widget)
+        context_layout.setContentsMargins(4, 4, 4, 4)
+        
+        self._context_image_label = QLabel(self.tr("No screenshot available"))
+        self._context_image_label.setAlignment(Qt.AlignCenter)
+        self._context_image_label.setStyleSheet("QLabel { border: 1px dashed gray; min-height: 150px; color: gray; }")
+        context_layout.addWidget(self._context_image_label)
+        
+        context_layout.addStretch()
+        self._side_panel.addTab(context_widget, self.tr("Context"))
+        
+        # Feature 12: Preview Panel
+        preview_widget = QWidget()
+        preview_layout = QVBoxLayout(preview_widget)
+        preview_layout.setContentsMargins(4, 4, 4, 4)
+        
+        self._preview_label = QLabel(self.tr("Translation preview will appear here"))
+        self._preview_label.setWordWrap(True)
+        self._preview_label.setAlignment(Qt.AlignTop)
+        self._preview_label.setStyleSheet("QLabel { border: 1px solid gray; padding: 8px; min-height: 100px; }")
+        preview_layout.addWidget(self._preview_label)
+        
+        # Preview controls
+        preview_controls = QHBoxLayout()
+        preview_controls.addWidget(QLabel(self.tr("Max width:")))
+        self._preview_width_spin = QSpinBox()
+        self._preview_width_spin.setRange(100, 1000)
+        self._preview_width_spin.setValue(300)
+        self._preview_width_spin.setSuffix(" px")
+        self._preview_width_spin.valueChanged.connect(self._update_preview)
+        preview_controls.addWidget(self._preview_width_spin)
+        preview_controls.addStretch()
+        preview_layout.addLayout(preview_controls)
+        
+        preview_layout.addStretch()
+        self._side_panel.addTab(preview_widget, self.tr("Preview"))
 
         outer_splitter.addWidget(self._side_panel)
         outer_splitter.setSizes([850, 300])
@@ -899,6 +978,8 @@ class LinguaEditWindow(QMainWindow):
         catalog_menu.addSeparator()
         catalog_menu.addAction(self.tr("Compile translation"), self._on_compile, QKeySequence("Ctrl+Shift+B"))
         catalog_menu.addSeparator()
+        catalog_menu.addAction(self.tr("Email Translation…"), self._email_translation)
+        catalog_menu.addSeparator()
         catalog_menu.addAction(self.tr("Generate Report…"), self._on_generate_report, QKeySequence("Ctrl+Shift+R"))
 
         qa_menu = catalog_menu.addMenu(self.tr("Quality"))
@@ -920,6 +1001,8 @@ class LinguaEditWindow(QMainWindow):
 
         # Tools
         tools_menu = mb.addMenu(self.tr("&Tools"))
+        tools_menu.addAction(self.tr("AI Review"), self._show_ai_review, QKeySequence("Ctrl+Shift+A"))
+        tools_menu.addSeparator()
         tools_menu.addAction(self.tr("Compare Files…"), self._show_diff_dialog, QKeySequence("Ctrl+D"))
         tools_menu.addSeparator()
         tools_menu.addAction(self.tr("Glossary…"), self._show_glossary_dialog)
@@ -928,6 +1011,10 @@ class LinguaEditWindow(QMainWindow):
         view_menu = mb.addMenu(self.tr("&View"))
         view_menu.addAction(self.tr("Compare language…"), self._on_compare_lang)
         view_menu.addAction(self.tr("Auto-propagate"), self._on_auto_propagate)
+        view_menu.addSeparator()
+        view_menu.addAction(self.tr("Show Bookmarked Only"), self._toggle_bookmarked_filter, QKeySequence("Ctrl+Shift+K"))
+        view_menu.addAction(self.tr("Review Mode"), self._toggle_review_mode, QKeySequence("Ctrl+R"))
+        view_menu.addAction(self.tr("Focus Mode"), self._toggle_focus_mode, QKeySequence("Ctrl+Shift+F"))
         view_menu.addSeparator()
         theme_menu = view_menu.addMenu(self.tr("Theme"))
         theme_menu.addAction(self.tr("System Default"), lambda: self._set_theme("system"))
@@ -1014,6 +1101,14 @@ class LinguaEditWindow(QMainWindow):
     def _setup_shortcuts(self):
         QShortcut(QKeySequence("Ctrl+Return"), self, lambda: (self._save_current_entry(), self._navigate(1)))
         QShortcut(QKeySequence("Ctrl+U"), self, lambda: self._fuzzy_check.toggle())
+        
+        # Feature 6: Bokmärken
+        QShortcut(QKeySequence("Ctrl+B"), self, self._toggle_bookmark)
+        QShortcut(QKeySequence("F2"), self, lambda: self._navigate_bookmarks(1))
+        QShortcut(QKeySequence("Shift+F2"), self, lambda: self._navigate_bookmarks(-1))
+        
+        # Feature 7: Taggar
+        QShortcut(QKeySequence("Ctrl+T"), self, self._add_tag)
 
     # ══════════════════════════════════════════════════════════════
     #  ENTRY TABLE (QTreeWidget)
@@ -1045,7 +1140,11 @@ class LinguaEditWindow(QMainWindow):
             src_preview = msgid[:200].replace("\n", "⏎ ") if msgid else "(empty)"
             trans_preview = msgstr[:200].replace("\n", "⏎ ") if msgstr else ""
 
-            item = _SortableItem([str(orig_idx + 1), src_preview, trans_preview, status])
+            # Bokmärke och taggar
+            bookmark_icon = "⭐" if orig_idx in self._bookmarks else ""
+            tags_text = ", ".join(self._tags.get(orig_idx, []))
+
+            item = _SortableItem([str(orig_idx + 1), bookmark_icon, src_preview, trans_preview, tags_text, status])
             item.setData(0, Qt.UserRole, orig_idx)
 
             # Row colors (theme-aware)
@@ -1674,6 +1773,50 @@ class LinguaEditWindow(QMainWindow):
         entries = self._get_entries()
         n = len(entries)
         indices = list(range(n))
+        
+        # Apply filters first
+        filtered_indices = []
+        for i in indices:
+            msgid, msgstr, is_fuzzy = entries[i]
+            
+            # Feature 6: Bokmärken filter
+            if self._show_bookmarked_only and i not in self._bookmarks:
+                continue
+            
+            # Feature 7: Taggar filter
+            if self._active_tag_filter:
+                entry_tags = self._tags.get(i, [])
+                if self._active_tag_filter not in entry_tags:
+                    continue
+            
+            # Feature 8: Review mode filter
+            if self._review_mode:
+                review_status = self._review_status.get(i, "needs_review")
+                if review_status not in ["needs_review", "rejected"]:
+                    continue
+            
+            # Feature 13: Focus mode filter
+            if self._focus_mode:
+                # Hide completed translations (har översättning och inte fuzzy)
+                if msgstr and not is_fuzzy:
+                    continue
+            
+            # Standard filter mode
+            if self._filter_mode == "untranslated" and msgstr:
+                continue
+            elif self._filter_mode == "fuzzy" and not is_fuzzy:
+                continue
+            elif self._filter_mode == "translated" and (not msgstr or is_fuzzy):
+                continue
+            elif self._filter_mode == "warnings":
+                lint_issues = self._lint_cache.get(i, [])
+                has_warning = any(iss.severity in ("error", "warning") for iss in lint_issues)
+                if not has_warning:
+                    continue
+            
+            filtered_indices.append(i)
+        
+        indices = filtered_indices
         mode = self._sort_mode
         if mode == "file":
             self._sort_order = indices
@@ -2071,6 +2214,11 @@ class LinguaEditWindow(QMainWindow):
 
         _add_recent(str(p))
         self._rebuild_recent_menu()
+        
+        # Load bookmarks and tags for this file  
+        self._load_bookmarks()
+        self._load_tags()
+        
         self._populate_list()
         self._update_stats()
         self._modified = False
@@ -3562,3 +3710,481 @@ class LinguaEditWindow(QMainWindow):
         msg.setWindowTitle(title)
         msg.setText(body)
         msg.exec()
+
+    # ══════════════════════════════════════════════════════════════
+    #  NEW FEATURES (0.10.0)
+    # ══════════════════════════════════════════════════════════════
+
+    # ── Feature 1: AI Review ─────────────────────────────────────
+
+    def _show_ai_review(self):
+        """Visar AI Review dialog för aktuell översättning."""
+        if not self._file_data or self._current_index < 0:
+            self._show_toast(self.tr("No translation selected"))
+            return
+        
+        entry = self._file_data.entries[self._current_index]
+        source = entry.msgid or ""
+        translation = entry.msgstr or ""
+        
+        if not source.strip():
+            self._show_toast(self.tr("No source text to review"))
+            return
+        
+        dialog = AIReviewDialog(source, translation, self)
+        if dialog.exec():
+            # Hämta eventuell uppdaterad översättning
+            new_translation = dialog.get_translation()
+            if new_translation != translation:
+                # Uppdatera översättning
+                self._update_translation_text(new_translation)
+                self._show_toast(self.tr("Translation updated from AI review"))
+
+    # ── Feature 6: Bokmärken ─────────────────────────────────────
+
+    def _toggle_bookmark(self):
+        """Togglear bokmärke för aktuell rad."""
+        if self._current_index < 0:
+            return
+        
+        if self._current_index in self._bookmarks:
+            self._bookmarks.remove(self._current_index)
+            self._show_toast(self.tr("Bookmark removed"))
+        else:
+            self._bookmarks.add(self._current_index)
+            self._show_toast(self.tr("Bookmark added"))
+        
+        self._save_bookmarks()
+        self._refresh_tree()
+
+    def _toggle_bookmarked_filter(self):
+        """Togglear visning av endast bokmärkta rader."""
+        self._show_bookmarked_only = not self._show_bookmarked_only
+        
+        if self._show_bookmarked_only:
+            self._show_toast(self.tr("Showing only bookmarked entries"))
+        else:
+            self._show_toast(self.tr("Showing all entries"))
+        
+        self._refresh_tree()
+
+    def _navigate_bookmarks(self, direction: int):
+        """Navigerar till nästa/föregående bokmärke."""
+        if not self._bookmarks:
+            self._show_toast(self.tr("No bookmarks set"))
+            return
+        
+        sorted_bookmarks = sorted(self._bookmarks)
+        
+        if direction > 0:  # Nästa bokmärke
+            next_bookmarks = [b for b in sorted_bookmarks if b > self._current_index]
+            if next_bookmarks:
+                self._go_to_entry(next_bookmarks[0])
+            else:
+                self._go_to_entry(sorted_bookmarks[0])  # Wrap around
+        else:  # Föregående bokmärke
+            prev_bookmarks = [b for b in sorted_bookmarks if b < self._current_index]
+            if prev_bookmarks:
+                self._go_to_entry(prev_bookmarks[-1])
+            else:
+                self._go_to_entry(sorted_bookmarks[-1])  # Wrap around
+
+    def _save_bookmarks(self):
+        """Sparar bokmärken till fil."""
+        if not self._file_data:
+            return
+        
+        try:
+            self._bookmarks_file.parent.mkdir(parents=True, exist_ok=True)
+            
+            # Ladda befintlig data
+            bookmarks_data = {}
+            if self._bookmarks_file.exists():
+                try:
+                    bookmarks_data = json.loads(self._bookmarks_file.read_text("utf-8"))
+                except:
+                    pass
+            
+            # Uppdatera för aktuell fil
+            file_key = str(Path(self._file_data.file_path).resolve())
+            bookmarks_data[file_key] = list(self._bookmarks)
+            
+            # Spara
+            self._bookmarks_file.write_text(json.dumps(bookmarks_data, ensure_ascii=False, indent=2), "utf-8")
+            
+        except Exception as e:
+            print(f"Failed to save bookmarks: {e}")
+
+    def _load_bookmarks(self):
+        """Laddar bokmärken från fil."""
+        if not self._file_data:
+            self._bookmarks.clear()
+            return
+        
+        try:
+            if not self._bookmarks_file.exists():
+                self._bookmarks.clear()
+                return
+            
+            bookmarks_data = json.loads(self._bookmarks_file.read_text("utf-8"))
+            file_key = str(Path(self._file_data.file_path).resolve())
+            
+            self._bookmarks = set(bookmarks_data.get(file_key, []))
+            
+        except Exception as e:
+            print(f"Failed to load bookmarks: {e}")
+            self._bookmarks.clear()
+
+    # ── Feature 7: Taggar/Filter ─────────────────────────────────
+
+    def _add_tag(self):
+        """Lägger till tagg för aktuell rad."""
+        if self._current_index < 0:
+            return
+        
+        from PySide6.QtWidgets import QInputDialog
+        
+        # Fördefinierade taggar
+        predefined_tags = ["UI", "error", "tooltip", "menu", "dialog", "help"]
+        existing_tags = self._tags.get(self._current_index, [])
+        
+        # Visa input dialog
+        tag, ok = QInputDialog.getItem(
+            self, self.tr("Add Tag"), 
+            self.tr("Select or enter tag:"),
+            predefined_tags, editable=True
+        )
+        
+        if ok and tag.strip():
+            tag = tag.strip()
+            if self._current_index not in self._tags:
+                self._tags[self._current_index] = []
+            
+            if tag not in self._tags[self._current_index]:
+                self._tags[self._current_index].append(tag)
+                self._save_tags()
+                self._refresh_tree()
+                self._show_toast(self.tr(f"Tag '{tag}' added"))
+
+    def _remove_tag(self, tag: str):
+        """Tar bort tagg från aktuell rad."""
+        if self._current_index < 0 or self._current_index not in self._tags:
+            return
+        
+        if tag in self._tags[self._current_index]:
+            self._tags[self._current_index].remove(tag)
+            if not self._tags[self._current_index]:
+                del self._tags[self._current_index]
+            
+            self._save_tags()
+            self._refresh_tree()
+            self._show_toast(self.tr(f"Tag '{tag}' removed"))
+
+    def _filter_by_tag(self, tag: str):
+        """Filtrerar listan baserat på tagg."""
+        if self._active_tag_filter == tag:
+            self._active_tag_filter = None
+            self._show_toast(self.tr("Tag filter removed"))
+        else:
+            self._active_tag_filter = tag
+            self._show_toast(self.tr(f"Filtering by tag: {tag}"))
+        
+        self._refresh_tree()
+
+    def _save_tags(self):
+        """Sparar taggar till fil."""
+        if not self._file_data:
+            return
+        
+        try:
+            self._tags_file.parent.mkdir(parents=True, exist_ok=True)
+            
+            # Ladda befintlig data
+            tags_data = {}
+            if self._tags_file.exists():
+                try:
+                    tags_data = json.loads(self._tags_file.read_text("utf-8"))
+                except:
+                    pass
+            
+            # Uppdatera för aktuell fil
+            file_key = str(Path(self._file_data.file_path).resolve())
+            tags_data[file_key] = {str(k): v for k, v in self._tags.items()}
+            
+            # Spara
+            self._tags_file.write_text(json.dumps(tags_data, ensure_ascii=False, indent=2), "utf-8")
+            
+        except Exception as e:
+            print(f"Failed to save tags: {e}")
+
+    def _load_tags(self):
+        """Laddar taggar från fil."""
+        if not self._file_data:
+            self._tags.clear()
+            return
+        
+        try:
+            if not self._tags_file.exists():
+                self._tags.clear()
+                return
+            
+            tags_data = json.loads(self._tags_file.read_text("utf-8"))
+            file_key = str(Path(self._file_data.file_path).resolve())
+            
+            raw_tags = tags_data.get(file_key, {})
+            self._tags = {int(k): v for k, v in raw_tags.items()}
+            
+        except Exception as e:
+            print(f"Failed to load tags: {e}")
+            self._tags.clear()
+
+    # ── Feature 8: Review Mode ───────────────────────────────────
+
+    def _toggle_review_mode(self):
+        """Togglear review mode."""
+        self._review_mode = not self._review_mode
+        
+        if self._review_mode:
+            self._show_toast(self.tr("Review mode enabled"))
+        else:
+            self._show_toast(self.tr("Review mode disabled"))
+        
+        self._refresh_tree()
+        self._update_editor_for_review_mode()
+
+    def _update_editor_for_review_mode(self):
+        """Uppdaterar editorn för review mode."""
+        if not hasattr(self, '_trans_view'):
+            return
+        
+        # Här skulle vi lägga till review-knappar i editorn
+        # För nu, bara en enkel implementering
+        pass
+
+    def _set_review_status(self, status: str, comment: str = ""):
+        """Sätter review-status för aktuell rad."""
+        if self._current_index < 0:
+            return
+        
+        self._review_status[self._current_index] = status
+        if comment:
+            self._review_comments[self._current_index] = comment
+        
+        self._refresh_tree()
+        self._show_toast(self.tr(f"Status set to: {status}"))
+
+    # ── Feature 9: Email Translation ─────────────────────────────
+
+    def _email_translation(self):
+        """Skickar översättning via e-post."""
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+        
+        from PySide6.QtWidgets import QDialog, QFormLayout, QLineEdit, QTextEdit, QCheckBox
+        
+        dialog = QDialog(self)
+        dialog.setWindowTitle(self.tr("Email Translation"))
+        dialog.setModal(True)
+        dialog.resize(400, 300)
+        
+        layout = QFormLayout(dialog)
+        
+        # To
+        to_edit = QLineEdit()
+        # Auto-fill med TP robot om det är en PO-fil
+        if hasattr(self._file_data, 'headers'):
+            language = self._file_data.headers.get('Language', '')
+            if language:
+                to_edit.setText(f"{language}@translationproject.org")
+        layout.addRow(self.tr("To:"), to_edit)
+        
+        # Subject
+        subject_edit = QLineEdit()
+        filename = Path(self._file_data.file_path).name
+        subject_edit.setText(f"Translation: {filename}")
+        layout.addRow(self.tr("Subject:"), subject_edit)
+        
+        # Body
+        body_edit = QTextEdit()
+        body_edit.setPlainText(f"Please find attached the translation file: {filename}")
+        layout.addRow(self.tr("Message:"), body_edit)
+        
+        # Attach current file
+        attach_check = QCheckBox(self.tr("Attach current file"))
+        attach_check.setChecked(True)
+        layout.addWidget(attach_check)
+        
+        # Buttons
+        button_box = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        button_box.accepted.connect(dialog.accept)
+        button_box.rejected.connect(dialog.reject)
+        layout.addWidget(button_box)
+        
+        if dialog.exec():
+            # Öppna e-postklient via mailto: URL
+            import urllib.parse
+            
+            to = to_edit.text().strip()
+            subject = subject_edit.text().strip() 
+            body = body_edit.toPlainText().strip()
+            
+            if to:
+                mailto_url = f"mailto:{to}?subject={urllib.parse.quote(subject)}&body={urllib.parse.quote(body)}"
+                QDesktopServices.openUrl(QUrl(mailto_url))
+                self._show_toast(self.tr("Email client opened"))
+            else:
+                self._show_toast(self.tr("Please enter recipient email"))
+
+    # ── Feature 13: Focus Mode ───────────────────────────────────
+
+    def _toggle_focus_mode(self):
+        """Togglear focus mode."""
+        self._focus_mode = not self._focus_mode
+        
+        if self._focus_mode:
+            self._show_toast(self.tr("Focus mode enabled - hiding completed translations"))
+        else:
+            self._show_toast(self.tr("Focus mode disabled"))
+        
+        self._refresh_tree()
+        self._update_progress_for_focus()
+
+    def _update_progress_for_focus(self):
+        """Uppdaterar progressbar för focus mode."""
+        if not self._file_data or not self._focus_mode:
+            return
+        
+        # Räkna återstående strängar i focus mode
+        remaining = 0
+        total = len(self._file_data.entries)
+        
+        for entry in self._file_data.entries:
+            if not entry.msgstr or 'fuzzy' in (entry.flags or []):
+                remaining += 1
+        
+        if hasattr(self, '_stats_label'):
+            self._stats_label.setText(self.tr(f"{remaining}/{total} remaining"))
+
+    # ── Utility methods ──────────────────────────────────────────
+
+    def _update_translation_text(self, text: str):
+        """Uppdaterar översättningstext (helper method)."""
+        if hasattr(self, '_trans_view'):
+            self._trans_view.setPlainText(text)
+            # Trigga save
+            self._on_trans_buffer_changed()
+
+    def _go_to_entry(self, index: int):
+        """Navigerar till specifik entry (helper method)."""
+        if 0 <= index < len(self._file_data.entries):
+            # Hitta motsvarande tree item
+            for i in range(self._tree.topLevelItemCount()):
+                item = self._tree.topLevelItem(i)
+                if item and item.data(0, Qt.UserRole) == index:
+                    self._tree.setCurrentItem(item)
+                    break
+
+    def _show_tree_context_menu(self, position):
+        """Visar context menu för tree widget."""
+        item = self._tree.itemAt(position)
+        if not item:
+            return
+        
+        index = item.data(0, Qt.UserRole)
+        if index is None:
+            return
+        
+        menu = QMenu(self)
+        
+        # Bokmärke
+        if index in self._bookmarks:
+            menu.addAction(self.tr("Remove Bookmark"), lambda: self._toggle_bookmark())
+        else:
+            menu.addAction(self.tr("Add Bookmark"), lambda: self._toggle_bookmark())
+        
+        menu.addSeparator()
+        
+        # Taggar
+        tag_menu = menu.addMenu(self.tr("Tags"))
+        
+        # Befintliga taggar för denna entry
+        current_tags = self._tags.get(index, [])
+        if current_tags:
+            for tag in current_tags:
+                action = tag_menu.addAction(f"✓ {tag}")
+                action.triggered.connect(lambda checked, t=tag: self._remove_tag(t))
+        
+        tag_menu.addSeparator()
+        tag_menu.addAction(self.tr("Add Tag..."), self._add_tag)
+        
+        # Review status (om review mode är aktivt)
+        if self._review_mode:
+            menu.addSeparator()
+            review_menu = menu.addMenu(self.tr("Review"))
+            
+            review_menu.addAction(self.tr("Approve"), 
+                                lambda: self._set_review_status("approved"))
+            review_menu.addAction(self.tr("Reject"), 
+                                lambda: self._set_review_status("rejected"))
+            review_menu.addAction(self.tr("Needs Review"), 
+                                lambda: self._set_review_status("needs_review"))
+        
+        menu.exec(self._tree.mapToGlobal(position))
+    
+    def _update_preview(self):
+        """Uppdaterar preview panel med aktuell översättning."""
+        if not hasattr(self, '_preview_label') or self._current_index < 0:
+            return
+        
+        if not self._file_data:
+            self._preview_label.setText(self.tr("No file loaded"))
+            return
+        
+        entry = self._file_data.entries[self._current_index]
+        source = entry.msgid or "" if hasattr(entry, 'msgid') else getattr(entry, 'source', "")
+        translation = entry.msgstr or "" if hasattr(entry, 'msgstr') else getattr(entry, 'translation', "")
+        
+        if not translation:
+            self._preview_label.setText(self.tr("No translation to preview"))
+            return
+        
+        max_width = self._preview_width_spin.value()
+        
+        # Enkla beräkningar för text-rendering
+        char_width = 8  # Ungefärlig bredd per tecken
+        chars_per_line = max_width // char_width
+        
+        # Simulera radbrytning
+        words = translation.split()
+        lines = []
+        current_line = ""
+        
+        for word in words:
+            if len(current_line + " " + word) <= chars_per_line:
+                current_line += (" " if current_line else "") + word
+            else:
+                if current_line:
+                    lines.append(current_line)
+                current_line = word
+        
+        if current_line:
+            lines.append(current_line)
+        
+        preview_text = "\n".join(lines)
+        
+        # Kontrollera längd jämfört med källa
+        source_length = len(source)
+        trans_length = len(translation)
+        
+        if source_length > 0:
+            ratio = trans_length / source_length
+            if ratio > 1.5:
+                warning = f"\n\n⚠️ Warning: Translation is {ratio:.1f}x longer than source"
+                preview_text += warning
+        
+        # Kontrollera HTML-innehåll
+        if "<" in translation and ">" in translation:
+            preview_text += f"\n\nHTML detected: {translation}"
+        
+        self._preview_label.setText(preview_text)
