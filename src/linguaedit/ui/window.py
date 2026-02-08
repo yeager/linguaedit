@@ -221,7 +221,7 @@ class LinguaEditWindow(QMainWindow):
 
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle("LinguaEdit")
+        self.setWindowTitle(self.tr("LinguaEdit"))
         self.resize(1200, 800)
         self.setAcceptDrops(True)
 
@@ -466,6 +466,7 @@ class LinguaEditWindow(QMainWindow):
 
         # Source label + view
         self._source_header = QLabel(self.tr("<b>Source text:</b>"))
+        self._source_header.setContentsMargins(6, 0, 6, 0)
         editor_layout.addWidget(self._source_header)
         self._source_view = QTextEdit()
         self._source_view.setReadOnly(True)
@@ -476,6 +477,7 @@ class LinguaEditWindow(QMainWindow):
 
         # Translation label + view
         self._trans_header = QLabel(self.tr("<b>Translation:</b>"))
+        self._trans_header.setContentsMargins(6, 0, 6, 0)
         editor_layout.addWidget(self._trans_header)
         self._trans_view = QTextEdit()
         self._trans_view.setFrameShape(QFrame.StyledPanel)
@@ -491,6 +493,13 @@ class LinguaEditWindow(QMainWindow):
         self._lint_inline_label = QLabel()
         self._lint_inline_label.setWordWrap(True)
         editor_layout.addWidget(self._lint_inline_label)
+
+        # Source references (where the string is used in code)
+        self._source_refs_label = QLabel()
+        self._source_refs_label.setWordWrap(True)
+        self._source_refs_label.setStyleSheet("color: #666; font-size: 11px; padding: 2px 6px;")
+        self._source_refs_label.setVisible(False)
+        editor_layout.addWidget(self._source_refs_label)
 
         # Action bar under translation editor (POedit-style)
         action_bar = QHBoxLayout()
@@ -628,13 +637,39 @@ class LinguaEditWindow(QMainWindow):
         outer_splitter.addWidget(self._side_panel)
         outer_splitter.setSizes([850, 300])
 
+        # ── Left sidebar (quick actions) ──
+        self._sidebar = QToolBar()
+        self._sidebar.setOrientation(Qt.Vertical)
+        self._sidebar.setMovable(False)
+        self._sidebar.setIconSize(self._sidebar.iconSize() * 1.4)
+        self._sidebar.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        self._sidebar.setStyleSheet("QToolBar { spacing: 6px; padding: 4px; }")
+
+        style = self.style()
+        self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_DialogOpenButton), self.tr("Open"), self._on_open)
+        self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_DialogSaveButton), self.tr("Save"), self._on_save)
+        self._sidebar.addSeparator()
+        self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_DialogApplyButton), self.tr("Validate"), self._on_lint)
+        self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_MediaPlay), self.tr("Compile"), self._on_compile)
+        self._sidebar.addSeparator()
+        self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_ComputerIcon), self.tr("Pre-translate"), self._on_pretranslate_all)
+        self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_FileDialogContentsView), self.tr("Search"), self._toggle_search_replace)
+        self._sidebar.addSeparator()
+        self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_FileDialogDetailedView), self.tr("Settings"), self._on_preferences)
+
         # ── Central widget ──
         central = QWidget()
         central_layout = QVBoxLayout(central)
         central_layout.setContentsMargins(0, 0, 0, 0)
         central_layout.setSpacing(0)
         central_layout.addWidget(self._tab_widget)
-        central_layout.addWidget(outer_splitter, 1)
+
+        content_row = QHBoxLayout()
+        content_row.setContentsMargins(0, 0, 0, 0)
+        content_row.setSpacing(0)
+        content_row.addWidget(self._sidebar)
+        content_row.addWidget(outer_splitter, 1)
+        central_layout.addLayout(content_row, 1)
         self.setCentralWidget(central)
 
         # ── Status Bar (POedit-style) ──
@@ -908,6 +943,13 @@ class LinguaEditWindow(QMainWindow):
 
     def _on_tree_item_changed(self, current: QTreeWidgetItem | None, previous: QTreeWidgetItem | None):
         self._save_current_entry()
+
+        # Lint the previous row and update its status icon/color
+        if previous is not None and self._file_data:
+            prev_idx = previous.data(0, Qt.UserRole)
+            if prev_idx is not None:
+                self._lint_and_update_row(previous, prev_idx)
+
         if current is None:
             self._current_index = -1
             return
@@ -1059,6 +1101,22 @@ class LinguaEditWindow(QMainWindow):
 
         self._info_label.setText("")
         self._lint_inline_label.setText("")
+
+        # Source references (where the string appears in code)
+        if self._file_type == "po" and hasattr(self._file_data.entries[idx], 'occurrences') and self._file_data.entries[idx].occurrences:
+            refs = self._file_data.entries[idx].occurrences
+            ref_parts = [f"📍 {f}:{l}" for f, l in refs[:10]]
+            if len(refs) > 10:
+                ref_parts.append(self.tr("… and %d more") % (len(refs) - 10))
+            self._source_refs_label.setText("  ".join(ref_parts))
+            self._source_refs_label.setVisible(True)
+        elif self._file_type == "ts" and hasattr(self._file_data.entries[idx], 'location_file') and self._file_data.entries[idx].location_file:
+            e = self._file_data.entries[idx]
+            self._source_refs_label.setText(f"📍 {e.location_file}:{e.location_line}")
+            self._source_refs_label.setVisible(True)
+        else:
+            self._source_refs_label.setVisible(False)
+
         self._show_tm_suggestions(msgid)
         self._display_comment_threads()
         self._update_split_view(idx)
@@ -1171,6 +1229,49 @@ class LinguaEditWindow(QMainWindow):
         else:
             self._lint_inline_label.setText("")
             self._lint_inline_label.setStyleSheet("")
+
+    def _lint_and_update_row(self, item: QTreeWidgetItem, idx: int):
+        """Lint a single entry and update its tree row status icon and color."""
+        entries = self._get_entries()
+        if idx >= len(entries):
+            return
+        msgid, msgstr, is_fuzzy = entries[idx]
+        flags = ["fuzzy"] if is_fuzzy else []
+        issues = _lint_single(msgid, msgstr, flags)
+        self._lint_cache[idx] = issues
+        has_warning = any(iss.severity in ("error", "warning") for iss in issues)
+
+        # Update status icon
+        if has_warning:
+            status = "⚠"
+        elif is_fuzzy:
+            status = "🔶"
+        elif msgstr:
+            status = "✓"
+        else:
+            status = "●"
+        item.setText(3, status)
+
+        # Update row color
+        colors = _get_colors()
+        if has_warning:
+            self._color_row(item, colors['warning'])
+        elif is_fuzzy:
+            self._color_row(item, colors['fuzzy'])
+        elif not msgstr:
+            self._color_row(item, colors['untranslated'])
+        else:
+            # Clear background for translated rows
+            for col in range(4):
+                item.setBackground(col, QBrush())
+
+        # Update status column foreground
+        if not msgstr:
+            item.setForeground(3, QBrush(colors['untranslated_fg']))
+        elif is_fuzzy:
+            item.setForeground(3, QBrush(colors['fuzzy_fg']))
+        else:
+            item.setForeground(3, QBrush(colors['translated_fg']))
 
     # ── Info panel ────────────────────────────────────────────────
 
@@ -1728,6 +1829,19 @@ class LinguaEditWindow(QMainWindow):
         self._redo_stacks.clear()
         self._lint_cache.clear()
         self._selected_indices.clear()
+
+        # Run linting on all entries at load time
+        entries = self._get_entries()
+        lint_input = []
+        for i, (msgid, msgstr, is_fuzzy) in enumerate(entries):
+            flags = ["fuzzy"] if is_fuzzy else []
+            lint_input.append({"index": i, "msgid": msgid, "msgstr": msgstr, "flags": flags})
+        if lint_input:
+            result = lint_entries(lint_input)
+            for issue in result.issues:
+                self._lint_cache.setdefault(issue.entry_index, []).append(issue)
+            self._populate_list()
+
         self._setup_file_monitor(p)
 
         # Select first entry
@@ -1926,7 +2040,7 @@ class LinguaEditWindow(QMainWindow):
             self._file_type = None
             self._current_index = -1
             self._tree.clear()
-            self.setWindowTitle("LinguaEdit")
+            self.setWindowTitle(self.tr("LinguaEdit"))
 
     def _save_current_tab(self):
         index = self._tab_widget.currentIndex()

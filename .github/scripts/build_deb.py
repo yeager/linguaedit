@@ -51,6 +51,10 @@ with open(f"{PKG}/DEBIAN/postinst", "w") as f:
     f.write("pip install --quiet PySide6 polib requests PyYAML\n")
 os.chmod(f"{PKG}/DEBIAN/postinst", 0o755)
 
+# Desktop file
+os.makedirs(f"{PKG}/usr/share/applications", exist_ok=True)
+shutil.copy2("io.github.yeager.linguaedit.desktop", f"{PKG}/usr/share/applications/")
+
 # Build
 subprocess.run(["dpkg-deb", "--build", PKG, f"linguaedit_{VERSION}_all.deb"], check=True)
 print(f"Built linguaedit_{VERSION}_all.deb")

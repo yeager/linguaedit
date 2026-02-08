@@ -25,6 +25,11 @@ jobs:
             --hidden-import=linguaedit \
             --exclude-module=enchant \
             --paths=src src/linguaedit/app.py
+      - name: Register file types
+        run: |
+          plutil -insert CFBundleDocumentTypes -json '[{"CFBundleTypeName":"PO File","CFBundleTypeExtensions":["po","pot"],"CFBundleTypeRole":"Editor"},{"CFBundleTypeName":"Qt TS File","CFBundleTypeExtensions":["ts"],"CFBundleTypeRole":"Editor"},{"CFBundleTypeName":"XLIFF File","CFBundleTypeExtensions":["xliff","xlf"],"CFBundleTypeRole":"Editor"},{"CFBundleTypeName":"ARB File","CFBundleTypeExtensions":["arb"],"CFBundleTypeRole":"Editor"}]' dist/LinguaEdit.app/Contents/Info.plist
+      - name: Create zip
+        run: |
           cd dist && zip -r ../LinguaEdit-${{ github.ref_name }}-macOS.zip LinguaEdit.app
       - uses: actions/upload-artifact@v4
         with:

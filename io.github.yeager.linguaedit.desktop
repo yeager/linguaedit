@@ -8,5 +8,5 @@ Terminal=false
 Type=Application
 Categories=Development;Translation;TextEditor;
 Keywords=translation;localization;i18n;l10n;gettext;PO;TS;XLIFF;
-MimeType=text/x-gettext-translation;application/x-gettext-translation;application/x-xliff;
+MimeType=text/x-gettext-translation;application/x-gettext-translation;application/x-xliff;application/x-qt-ts;
 StartupNotify=true

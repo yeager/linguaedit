@@ -39,5 +39,16 @@ Name: "{group}\LinguaEdit"; Filename: "{app}\LinguaEdit.exe"
 Name: "{group}\{cm:UninstallProgram,LinguaEdit}"; Filename: "{uninstallexe}"
 Name: "{autodesktop}\LinguaEdit"; Filename: "{app}\LinguaEdit.exe"; Tasks: desktopicon
 
+[Registry]
+Root: HKCR; Subkey: ".po"; ValueType: string; ValueData: "LinguaEdit.File"; Flags: uninsdeletevalue
+Root: HKCR; Subkey: ".pot"; ValueType: string; ValueData: "LinguaEdit.File"; Flags: uninsdeletevalue
+Root: HKCR; Subkey: ".ts"; ValueType: string; ValueData: "LinguaEdit.File"; Flags: uninsdeletevalue
+Root: HKCR; Subkey: ".xliff"; ValueType: string; ValueData: "LinguaEdit.File"; Flags: uninsdeletevalue
+Root: HKCR; Subkey: ".xlf"; ValueType: string; ValueData: "LinguaEdit.File"; Flags: uninsdeletevalue
+Root: HKCR; Subkey: ".arb"; ValueType: string; ValueData: "LinguaEdit.File"; Flags: uninsdeletevalue
+Root: HKCR; Subkey: "LinguaEdit.File"; ValueType: string; ValueData: "Translation File"; Flags: uninsdeletekey
+Root: HKCR; Subkey: "LinguaEdit.File\DefaultIcon"; ValueType: string; ValueData: "{app}\LinguaEdit.exe,0"
+Root: HKCR; Subkey: "LinguaEdit.File\shell\open\command"; ValueType: string; ValueData: """{app}\LinguaEdit.exe"" ""%1"""
+
 [Run]
 Filename: "{app}\LinguaEdit.exe"; Description: "{cm:LaunchProgram,LinguaEdit}"; Flags: nowait postinstall skipifsilent
