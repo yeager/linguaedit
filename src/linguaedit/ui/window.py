@@ -1187,6 +1187,15 @@ class LinguaEditWindow(QMainWindow):
         view_menu.addAction(self.tr("Show Pinned First"), self._toggle_pinned_first, QKeySequence("Ctrl+Shift+P"))
         view_menu.addAction(self.tr("Review Mode"), self._toggle_review_mode, QKeySequence("Ctrl+R"))
         view_menu.addAction(self.tr("Focus Mode"), self._toggle_focus_mode, QKeySequence("Ctrl+Shift+F"))
+
+        # Layout toggle
+        self._layout_toggle_action = view_menu.addAction(
+            self.tr("Editor on Right") if not self._editor_on_right else self.tr("Editor Below"),
+            self._toggle_editor_layout)
+
+        # Zen Mode
+        view_menu.addAction(self.tr("Zen Mode"), self._toggle_zen_mode, QKeySequence("Ctrl+Shift+Z"))
+
         # Feature 13: Fullscreen Mode
         view_menu.addAction(self.tr("Fullscreen"), self._toggle_fullscreen, QKeySequence("F11"))
         view_menu.addSeparator()
@@ -1302,6 +1311,9 @@ class LinguaEditWindow(QMainWindow):
 
         # Feature 13: Quick Actions
         QShortcut(QKeySequence("Ctrl+."), self, self._show_quick_actions)
+        
+        # Zen Mode
+        QShortcut(QKeySequence("Ctrl+Shift+Z"), self, self._toggle_zen_mode)
 
     # ══════════════════════════════════════════════════════════════
     #  ENTRY TABLE (QTreeWidget)
@@ -1344,6 +1356,18 @@ class LinguaEditWindow(QMainWindow):
 
             item = _SortableItem([str(orig_idx + 1), bookmark_icon, src_preview, trans_preview, tags_text, status])
             item.setData(0, Qt.UserRole, orig_idx)
+
+            # Set delegate status for colored borders
+            if has_warning:
+                delegate_status = EntryItemDelegate.STATUS_WARNING
+            elif is_fuzzy:
+                delegate_status = EntryItemDelegate.STATUS_FUZZY
+            elif not msgstr:
+                delegate_status = EntryItemDelegate.STATUS_UNTRANSLATED
+            else:
+                delegate_status = EntryItemDelegate.STATUS_TRANSLATED
+            for col in range(6):
+                item.setData(col, Qt.UserRole + 1, delegate_status)
 
             # Row colors (theme-aware)
             colors = _get_colors()
@@ -6009,3 +6033,192 @@ class LinguaEditWindow(QMainWindow):
         entries = self._get_entries()
         if 0 <= entry_index < len(entries):
             self._select_entry(entry_index)
+
+    # ══════════════════════════════════════════════════════════════
+    #  UX IMPROVEMENTS
+    # ══════════════════════════════════════════════════════════════
+
+    # ── 1. Alternative horizontal layout ─────────────────────────
+
+    def _toggle_editor_layout(self):
+        """Switch between vertical (editor below) and horizontal (editor right) layout."""
+        self._editor_on_right = not self._editor_on_right
+        self._app_settings.set_value("editor_on_right", self._editor_on_right)
+        self._apply_editor_layout()
+        label = self.tr("Editor Below") if self._editor_on_right else self.tr("Editor on Right")
+        self._layout_toggle_action.setText(label)
+
+    def _apply_editor_layout(self):
+        """Apply the current layout preference."""
+        # Remove widgets from current splitter
+        # We need to re-parent them
+        if self._editor_on_right:
+            self._v_splitter.setOrientation(Qt.Horizontal)
+            self._v_splitter.setSizes([450, 550])
+        else:
+            self._v_splitter.setOrientation(Qt.Vertical)
+            self._v_splitter.setSizes([400, 350])
+
+    # ── 2. Zen Translation Mode ──────────────────────────────────
+
+    def _toggle_zen_mode(self):
+        """Enter or exit Zen translation mode."""
+        if self._zen_mode_active:
+            self._exit_zen_mode()
+        else:
+            self._enter_zen_mode()
+
+    def _enter_zen_mode(self):
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+
+        self._zen_mode_active = True
+
+        # Create zen widget
+        self._zen_widget = ZenModeWidget(self)
+        self._zen_widget.exit_requested.connect(self._exit_zen_mode)
+        self._zen_widget.save_and_next.connect(self._zen_save_and_next_untranslated)
+        self._zen_widget.save_and_next_entry.connect(self._zen_save_and_next)
+        self._zen_widget.save_and_prev_entry.connect(self._zen_save_and_prev)
+        self._zen_widget.entry_changed.connect(self._zen_on_text_changed)
+
+        # Hide normal UI elements
+        self.menuBar().setVisible(False)
+        self._toolbar = self.findChild(QToolBar)
+        if self._toolbar:
+            self._toolbar.setVisible(False)
+        self.statusBar().setVisible(False)
+        self._sidebar.setVisible(False)
+        self._outer_splitter.setVisible(False)
+        self._tab_widget.setVisible(False)
+
+        # Add zen widget to central layout
+        central_layout = self.centralWidget().layout()
+        central_layout.addWidget(self._zen_widget, 1)
+
+        # Load current entry
+        self._zen_load_current_entry()
+
+    def _exit_zen_mode(self):
+        if not self._zen_mode_active:
+            return
+        self._zen_mode_active = False
+
+        # Save current zen translation
+        if self._zen_widget and self._file_data and self._current_index >= 0:
+            self._trans_view.setPlainText(self._zen_widget.get_translation())
+            self._save_current_entry()
+
+        # Remove zen widget
+        if self._zen_widget:
+            self._zen_widget.setParent(None)
+            self._zen_widget.deleteLater()
+            self._zen_widget = None
+
+        # Restore UI
+        self.menuBar().setVisible(True)
+        if self._toolbar:
+            self._toolbar.setVisible(True)
+        self.statusBar().setVisible(True)
+        self._sidebar.setVisible(True)
+        self._outer_splitter.setVisible(True)
+        self._tab_widget.setVisible(True)
+
+    def _zen_load_current_entry(self):
+        if not self._zen_widget or not self._file_data:
+            return
+        entries = self._get_entries()
+        if self._current_index < 0 or self._current_index >= len(entries):
+            return
+        msgid, msgstr, is_fuzzy = entries[self._current_index]
+        total = len(entries)
+        translated = sum(1 for _, ms, f in entries if ms and not f)
+
+        if not msgstr:
+            status = "untranslated"
+        elif is_fuzzy:
+            status = "fuzzy"
+        else:
+            status = "translated"
+
+        self._zen_widget.set_entry(msgid, msgstr, self._current_index, total, translated, status)
+
+    def _zen_save_and_next_untranslated(self):
+        if self._zen_widget:
+            self._trans_view.setPlainText(self._zen_widget.get_translation())
+            self._save_current_entry()
+            self._navigate_untranslated(1)
+            self._zen_load_current_entry()
+
+    def _zen_save_and_next(self):
+        if self._zen_widget:
+            self._trans_view.setPlainText(self._zen_widget.get_translation())
+            self._save_current_entry()
+            self._navigate(1)
+            self._zen_load_current_entry()
+
+    def _zen_save_and_prev(self):
+        if self._zen_widget:
+            self._trans_view.setPlainText(self._zen_widget.get_translation())
+            self._save_current_entry()
+            self._navigate(-1)
+            self._zen_load_current_entry()
+
+    def _zen_on_text_changed(self, text: str):
+        """Update the main translation buffer from zen mode edits."""
+        pass  # We sync on save, not on every keystroke
+
+    # ── 5. Tab/Enter navigation flow ─────────────────────────────
+
+    def _save_and_flash(self):
+        """Save current entry and show a brief green flash."""
+        self._save_current_entry()
+        self._trans_view.setStyleSheet("QPlainTextEdit { border: 2px solid #4caf50; }")
+        self._saved_flash_timer.start()
+
+    def _clear_saved_flash(self):
+        self._trans_view.setStyleSheet("")
+
+    def _tab_save_next(self):
+        """Tab: save + next entry."""
+        self._save_and_flash()
+        self._navigate(1)
+
+    def _shift_tab_save_prev(self):
+        """Shift+Tab: save + previous entry."""
+        self._save_and_flash()
+        self._navigate(-1)
+
+    def _ctrl_enter_save_next_untranslated(self):
+        """Ctrl+Enter: save + next untranslated."""
+        self._save_and_flash()
+        self._navigate_untranslated(1)
+
+    # ── 6. Context-aware toolbar ─────────────────────────────────
+
+    def _update_toolbar_visibility(self):
+        """Hide quality/tools actions when no file is loaded."""
+        has_file = self._file_data is not None
+        # The sidebar has quality/tools actions that should be hidden
+        for i in range(self._sidebar.layout().count() if self._sidebar.layout() else 0):
+            pass  # Sidebar actions are always visible for now
+
+    def _show_toolbar_customizer(self):
+        """Show toolbar customization dialog."""
+        actions = []
+        for action in self._sidebar.actions():
+            if action.isSeparator():
+                continue
+            actions.append({
+                "name": action.text(),
+                "group": self.tr("Sidebar"),
+                "visible": action.isVisible(),
+                "action": action,
+            })
+        dlg = ToolbarCustomizeDialog(actions, self)
+        if dlg.exec():
+            visibility = dlg.get_visibility()
+            for action in self._sidebar.actions():
+                if action.text() in visibility:
+                    action.setVisible(visibility[action.text()])

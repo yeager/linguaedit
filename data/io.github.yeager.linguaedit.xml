@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+
+  <!-- PO/POT (gettext) -->
+  <mime-type type="text/x-gettext-translation">
+    <comment>PO translation file</comment>
+    <glob pattern="*.po"/>
+  </mime-type>
+  <mime-type type="text/x-gettext-translation-template">
+    <comment>POT translation template</comment>
+    <glob pattern="*.pot"/>
+  </mime-type>
+
+  <!-- Qt Linguist TS -->
+  <mime-type type="text/x-qt-linguist">
+    <comment>Qt Linguist translation file</comment>
+    <glob pattern="*.ts"/>
+  </mime-type>
+
+  <!-- XLIFF -->
+  <mime-type type="application/xliff+xml">
+    <comment>XLIFF translation file</comment>
+    <glob pattern="*.xliff"/>
+    <glob pattern="*.xlf"/>
+  </mime-type>
+
+  <!-- SDLXLIFF (Trados) -->
+  <mime-type type="application/x-sdlxliff">
+    <comment>SDL Trados XLIFF file</comment>
+    <glob pattern="*.sdlxliff"/>
+  </mime-type>
+
+  <!-- MQXLIFF (memoQ) -->
+  <mime-type type="application/x-mqxliff">
+    <comment>memoQ XLIFF file</comment>
+    <glob pattern="*.mqxliff"/>
+  </mime-type>
+
+  <!-- ARB (Flutter) -->
+  <mime-type type="application/x-arb">
+    <comment>Application Resource Bundle</comment>
+    <glob pattern="*.arb"/>
+  </mime-type>
+
+  <!-- SRT subtitles -->
+  <mime-type type="application/x-srt">
+    <comment>SubRip subtitle file</comment>
+    <glob pattern="*.srt"/>
+  </mime-type>
+
+  <!-- TMX -->
+  <mime-type type="application/x-tmx">
+    <comment>Translation Memory eXchange</comment>
+    <glob pattern="*.tmx"/>
+  </mime-type>
+
+  <!-- Godot -->
+  <mime-type type="text/x-godot-translation">
+    <comment>Godot translation file</comment>
+    <glob pattern="*.tres"/>
+  </mime-type>
+
+  <!-- RESX (.NET) -->
+  <mime-type type="application/x-resx">
+    <comment>.NET resource file</comment>
+    <glob pattern="*.resx"/>
+  </mime-type>
+
+  <!-- Apple .strings -->
+  <mime-type type="application/x-apple-strings">
+    <comment>Apple strings localization file</comment>
+    <glob pattern="*.strings"/>
+  </mime-type>
+
+</mime-info>

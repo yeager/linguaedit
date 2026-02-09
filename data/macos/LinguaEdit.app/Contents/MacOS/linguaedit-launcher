@@ -1,0 +1,6 @@
+#!/bin/bash
+# LinguaEdit macOS launcher — finds the pipx-installed binary
+exec "$HOME/.local/bin/linguaedit-gui" "$@" 2>/dev/null || \
+exec /opt/homebrew/bin/linguaedit-gui "$@" 2>/dev/null || \
+exec /usr/local/bin/linguaedit-gui "$@" 2>/dev/null || \
+exec python3 -m linguaedit "$@"
