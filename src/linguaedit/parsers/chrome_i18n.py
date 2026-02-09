@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional, Any, Union
 
 
 @dataclass
@@ -27,8 +27,9 @@ class ChromeI18nFileData:
     indent: int = 2
 
 
-def parse_chrome_i18n(path: Path) -> ChromeI18nFileData:
+def parse_chrome_i18n(path: Union[str, Path]) -> ChromeI18nFileData:
     """Parsa Chrome extension i18n JSON-fil."""
+    path = Path(path)
     if not path.exists():
         raise FileNotFoundError(f"File not found: {path}")
     

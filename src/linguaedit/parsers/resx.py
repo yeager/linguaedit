@@ -52,24 +52,26 @@ def parse_resx(file_path: Union[str, Path]) -> RESXData:
             comment = comment_elem.text if comment_elem is not None else ''
             
             # Create translation entry
+            flags_list = []
+            comment_parts = []
+            if comment:
+                comment_parts.append(comment)
+            if space:
+                flags_list.append(f'xml:space={space}')
+            if type_attr:
+                comment_parts.append(f'Type: {type_attr}')
+            if mime_type:
+                comment_parts.append(f'MIME: {mime_type}')
+
             entry = TranslationEntry(
-                source=name,
-                target=value or '',
-                context=name,
-                comments=[comment] if comment else [],
-                locations=[str(path)],
-                flags=set(),
-                previous_source="",
+                msgid=name,
+                msgstr=value or '',
+                msgctxt=name,
+                comment='\n'.join(comment_parts),
+                flags=flags_list,
+                occurrences=[(str(path), '')],
                 fuzzy=False
             )
-            
-            # Add metadata as flags/comments
-            if space:
-                entry.flags.add(f'xml:space={space}')
-            if type_attr:
-                entry.comments.append(f'Type: {type_attr}')
-            if mime_type:
-                entry.comments.append(f'MIME: {mime_type}')
             
             entries.append(entry)
         
@@ -110,12 +112,9 @@ def save_resx(data: RESXData, file_path: Union[str, Path]) -> None:
     # Create root element
     root = ET.Element('root')
     
-    # Add schema if available
-    if data.schema:
+    # Add schema if available (skip reserved namespaces)
+    if data.schema and data.schema != 'http://www.w3.org/XML/1998/namespace':
         root.set('xmlns', data.schema)
-    else:
-        # Default schema
-        root.set('xmlns', 'http://www.w3.org/XML/1998/namespace')
     
     # Add standard resheader elements
     standard_headers = {
@@ -145,7 +144,7 @@ def save_resx(data: RESXData, file_path: Union[str, Path]) -> None:
     # Add data entries
     for entry in data.entries:
         data_elem = ET.SubElement(root, 'data')
-        data_elem.set('name', entry.source)
+        data_elem.set('name', entry.msgid)
         
         # Add xml:space if needed
         for flag in entry.flags:
@@ -153,21 +152,20 @@ def save_resx(data: RESXData, file_path: Union[str, Path]) -> None:
                 space_value = flag[10:]  # Remove 'xml:space=' prefix
                 data_elem.set('{http://www.w3.org/XML/1998/namespace}space', space_value)
         
-        # Add type and mimetype from comments
-        for comment in entry.comments:
-            if comment.startswith('Type: '):
-                type_value = comment[6:]
-                data_elem.set('type', type_value)
-            elif comment.startswith('MIME: '):
-                mime_value = comment[6:]
-                data_elem.set('mimetype', mime_value)
+        # Parse metadata from comment field
+        comment_lines = entry.comment.split('\n') if entry.comment else []
+        for cline in comment_lines:
+            if cline.startswith('Type: '):
+                data_elem.set('type', cline[6:])
+            elif cline.startswith('MIME: '):
+                data_elem.set('mimetype', cline[6:])
         
         # Add value
         value_elem = ET.SubElement(data_elem, 'value')
-        value_elem.text = entry.target
+        value_elem.text = entry.msgstr
         
         # Add comment if available and not metadata
-        regular_comments = [c for c in entry.comments 
+        regular_comments = [c for c in comment_lines
                           if not c.startswith('Type: ') and not c.startswith('MIME: ')]
         if regular_comments:
             comment_elem = ET.SubElement(data_elem, 'comment')

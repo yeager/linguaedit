@@ -6,7 +6,7 @@ import csv
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Union
 
 
 @dataclass
@@ -147,8 +147,9 @@ def _parse_tres_content(content: str) -> GodotFileData:
     )
 
 
-def parse_godot(path: Path) -> GodotFileData:
+def parse_godot(path: Union[str, Path]) -> GodotFileData:
     """Parsa Godot CSV/TRES-fil."""
+    path = Path(path)
     if not path.exists():
         raise FileNotFoundError(f"File not found: {path}")
     

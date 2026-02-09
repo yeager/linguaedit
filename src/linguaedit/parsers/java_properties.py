@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Union
 
 
 @dataclass
@@ -122,8 +122,9 @@ def _parse_properties_line(line: str) -> tuple[Optional[str], Optional[str], Opt
     return key, value_part, None
 
 
-def parse_java_properties(path: Path) -> JavaPropertiesFileData:
+def parse_java_properties(path: Union[str, Path]) -> JavaPropertiesFileData:
     """Parsa Java .properties-fil."""
+    path = Path(path)
     if not path.exists():
         raise FileNotFoundError(f"File not found: {path}")
     

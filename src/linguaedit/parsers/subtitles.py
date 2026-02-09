@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional, Any, Union
 
 
 @dataclass
@@ -201,8 +201,9 @@ def _parse_vtt_content(content: str) -> SubtitleFileData:
     )
 
 
-def parse_subtitles(path: Path) -> SubtitleFileData:
+def parse_subtitles(path: Union[str, Path]) -> SubtitleFileData:
     """Parsa subtitle-fil (SRT eller VTT)."""
+    path = Path(path)
     if not path.exists():
         raise FileNotFoundError(f"File not found: {path}")
     
