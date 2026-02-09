@@ -39,7 +39,7 @@ from PySide6.QtWidgets import (
     QMessageBox, QInputDialog, QApplication, QToolButton,
     QAbstractItemView, QSpinBox, QDockWidget, QStyledItemDelegate,
 )
-from PySide6.QtCore import Qt, QTimer, QFileSystemWatcher, Signal, Slot
+from PySide6.QtCore import Qt, QTimer, QFileSystemWatcher, Signal, Slot, QPropertyAnimation, QEasingCurve
 from PySide6.QtGui import (
     QAction, QKeySequence, QFont, QColor, QIcon, QBrush,
     QDragEnterEvent, QDropEvent, QPalette, QShortcut, QDesktopServices,
