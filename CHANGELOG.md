@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.2.1 (2026-02-09) — Full Swedish Translation
+
+### Updated
+- Swedish translation: **100% coverage** (1023 strings)
+- Updated POT template with all extractable strings
+- File type associations for macOS and Linux (.desktop + MIME XML)
+
 ## 1.2.0 (2026-02-09) — The Translator's Dream
 
 ### Editor & UX

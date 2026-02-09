@@ -66,7 +66,7 @@
     <message>
         <location filename="../src/linguaedit/ui/ai_review_dialog.py" line="313"/>
         <source>Fel</source>
-        <translation type="unfinished">Fel</translation>
+        <translation>Fel</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ai_review_dialog.py" line="314"/>
@@ -88,22 +88,22 @@
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="188"/>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="242"/>
         <source>Achievements</source>
-        <translation type="unfinished"></translation>
+        <translation>Prestationer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="202"/>
         <source>Achievement Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Prestationsförlopp</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="210"/>
         <source>Overall Progress:</source>
-        <translation type="unfinished"></translation>
+        <translation>Övergripande förlopp:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="226"/>
         <source>Translations: {0} | Streak: {1} days | Languages: {2}</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningar: {0} | Svit: {1} dagar | Språk: {2}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="246"/>
@@ -136,54 +136,54 @@
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="158"/>
         <source>Batch Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Batchredigering</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="186"/>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="218"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Förhandsgranskning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="192"/>
         <source>Entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Post</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="192"/>
         <source>Operation</source>
-        <translation type="unfinished"></translation>
+        <translation>Åtgärd</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="192"/>
         <source>Before</source>
-        <translation type="unfinished"></translation>
+        <translation>Före</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="192"/>
         <source>After</source>
-        <translation type="unfinished"></translation>
+        <translation>Efter</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="219"/>
         <source>Apply Changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillämpa ändringar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="238"/>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="265"/>
         <source>Search &amp; Replace</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök &amp; Ersätt</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="241"/>
         <source>Find:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="245"/>
         <source>Replace:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ersätt:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="252"/>
@@ -209,37 +209,37 @@
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="275"/>
         <source>Mark all translations as fuzzy</source>
-        <translation type="unfinished"></translation>
+        <translation>Markera alla översättningar som osäkra</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="276"/>
         <source>Clear fuzzy flag from all translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Rensa osäker-flaggan från alla översättningar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="277"/>
         <source>Accept all fuzzy translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Acceptera alla osäkra översättningar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="293"/>
         <source>Copy Source</source>
-        <translation type="unfinished">Kopiera källa</translation>
+        <translation>Kopiera källa</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="296"/>
         <source>Copy source text to empty translation fields.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera källtext till tomma översättningsfält.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="300"/>
         <source>Copy source to empty translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera källa till tomma översättningar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="306"/>
         <source>Source Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Källkopiering</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="335"/>
@@ -254,27 +254,27 @@
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="358"/>
         <source>Processing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Bearbetar...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="384"/>
         <source>Completed with %d errors. %d entries modified.</source>
-        <translation type="unfinished"></translation>
+        <translation>Slutfört med %d fel. %d poster ändrade.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="386"/>
         <source>Completed successfully. %d entries modified.</source>
-        <translation type="unfinished"></translation>
+        <translation>Slutfört. %d poster ändrade.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="411"/>
         <source>Text change</source>
-        <translation type="unfinished"></translation>
+        <translation>Textändring</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="416"/>
         <source>Fuzzy: </source>
-        <translation type="unfinished"></translation>
+        <translation>Osäker: </translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="416"/>
@@ -294,7 +294,7 @@
     <message>
         <location filename="../src/linguaedit/ui/batch_edit_dialog.py" line="452"/>
         <source>Apply changes to %d entries?</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillämpa ändringar på %d poster?</translation>
     </message>
 </context>
 <context>
@@ -302,17 +302,17 @@
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="113"/>
         <source>Compare Translation Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Jämför översättningsfiler</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="130"/>
         <source>Select Files to Compare</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj filer att jämföra</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="134"/>
         <source>Original File:</source>
-        <translation type="unfinished"></translation>
+        <translation>Originalfil:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="135"/>
@@ -320,178 +320,178 @@
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="344"/>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="345"/>
         <source>No file selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen fil vald</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="139"/>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="148"/>
         <source>Browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>Bläddra...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="143"/>
         <source>Comparison File:</source>
-        <translation type="unfinished"></translation>
+        <translation>Jämförelsefil:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="154"/>
         <source>Comparison Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Jämförelsealternativ</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="157"/>
         <source>Ignore case</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignorera skiftläge</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="158"/>
         <source>Ignore whitespace</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignorera blanksteg</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="159"/>
         <source>Show unchanged</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa oförändrade</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="167"/>
         <source>Compare Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Jämför filer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="208"/>
         <source>Comparison Statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>Jämförelsestatistik</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="217"/>
         <source>Total entries:</source>
-        <translation type="unfinished"></translation>
+        <translation>Totalt antal poster:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="220"/>
         <source>Added:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillagda:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="223"/>
         <source>Removed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Borttagna:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="226"/>
         <source>Modified:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändrade:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="229"/>
         <source>Unchanged:</source>
-        <translation type="unfinished"></translation>
+        <translation>Oförändrade:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="235"/>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="246"/>
         <source>Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sammanfattning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="257"/>
         <source>Original File</source>
-        <translation type="unfinished"></translation>
+        <translation>Originalfil</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="266"/>
         <source>Comparison File</source>
-        <translation type="unfinished"></translation>
+        <translation>Jämförelsefil</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="275"/>
         <source>Side by Side</source>
-        <translation type="unfinished"></translation>
+        <translation>Sida vid sida</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="284"/>
         <source>Show:</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="288"/>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="563"/>
         <source>All Changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Alla ändringar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="289"/>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="565"/>
         <source>Added Only</source>
-        <translation type="unfinished"></translation>
+        <translation>Endast tillagda</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="290"/>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="567"/>
         <source>Removed Only</source>
-        <translation type="unfinished"></translation>
+        <translation>Endast borttagna</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="291"/>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="569"/>
         <source>Modified Only</source>
-        <translation type="unfinished"></translation>
+        <translation>Endast ändrade</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="302"/>
         <source>Change</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändring</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="302"/>
         <source>Source Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Källtext</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="302"/>
         <source>Original</source>
-        <translation type="unfinished"></translation>
+        <translation>Original</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="302"/>
         <source>Comparison</source>
-        <translation type="unfinished"></translation>
+        <translation>Jämförelse</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="315"/>
         <source>Changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändringar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="328"/>
         <source>Select Translation File</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj översättningsfil</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="330"/>
         <source>Translation files (*.po *.pot *.ts *.json *.xliff *.xlf);;All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningsfiler (*.po *.pot *.ts *.json *.xliff *.xlf);;Alla filer (*)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="399"/>
         <source>Unsupported file format: %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Filformatet stöds inte: %s</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="410"/>
         <source>Failed to load file: %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte läsa in fil: %s</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="449"/>
         <source>Comparison failed: %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Jämförelse misslyckades: %s</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="488"/>
         <source>Comparison complete. %d changes found.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jämförelse klar. %d ändringar hittades.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/diff_dialog.py" line="575"/>
@@ -572,37 +572,37 @@
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="290"/>
         <source>Recent changes in: {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Senaste ändringar i: {}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="302"/>
         <source>Date/Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Datum/Tid</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="302"/>
         <source>Entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Post</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="302"/>
         <source>Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Fält</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="303"/>
         <source>User</source>
-        <translation type="unfinished"></translation>
+        <translation>Användare</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="303"/>
         <source>Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sammanfattning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="321"/>
         <source>View Entry History</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa posthistorik</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="328"/>
@@ -612,7 +612,7 @@
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="359"/>
         <source>Unknown</source>
-        <translation type="unfinished">Okänt</translation>
+        <translation>Okänt</translation>
     </message>
 </context>
 <context>
@@ -620,33 +620,33 @@
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="92"/>
         <source>Glossary Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordlistehantering</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="108"/>
         <source>Search &amp; Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök &amp; Filtrera</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="111"/>
         <source>Search:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="113"/>
         <source>Search in source or target...</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök i källa eller mål...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="117"/>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="172"/>
         <source>Domain:</source>
-        <translation type="unfinished"></translation>
+        <translation>Domän:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="125"/>
         <source>Terms</source>
-        <translation type="unfinished"></translation>
+        <translation>Termer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="131"/>
@@ -671,22 +671,22 @@
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="152"/>
         <source>Edit Term</source>
-        <translation type="unfinished"></translation>
+        <translation>Redigera term</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="156"/>
         <source>Source:</source>
-        <translation type="unfinished"></translation>
+        <translation>Källa:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="161"/>
         <source>Target:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mål:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="166"/>
         <source>Notes:</source>
-        <translation type="unfinished"></translation>
+        <translation>Anteckningar:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="184"/>
@@ -717,22 +717,22 @@
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="198"/>
         <source>Export CSV...</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportera CSV...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="289"/>
         <source>All domains</source>
-        <translation type="unfinished"></translation>
+        <translation>Alla domäner</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="308"/>
         <source>Showing %d of %d terms</source>
-        <translation type="unfinished"></translation>
+        <translation>Visar %d av %d termer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="311"/>
         <source>%d terms</source>
-        <translation type="unfinished"></translation>
+        <translation>%d termer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="385"/>
@@ -753,22 +753,22 @@
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="390"/>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="426"/>
         <source>Target text cannot be empty.</source>
-        <translation type="unfinished"></translation>
+        <translation>Måltexten kan inte vara tom.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="399"/>
         <source>Duplicate Term</source>
-        <translation type="unfinished"></translation>
+        <translation>Dubblettterm</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="400"/>
         <source>A term with this source text already exists. Update it?</source>
-        <translation type="unfinished"></translation>
+        <translation>En term med denna källtext finns redan. Uppdatera den?</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="448"/>
         <source>Confirm Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Bekräfta borttagning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="449"/>
@@ -783,28 +783,28 @@
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="477"/>
         <source>Copy Source</source>
-        <translation type="unfinished">Kopiera källa</translation>
+        <translation>Kopiera källa</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="483"/>
         <source>Copy Target</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera mål</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="495"/>
         <source>Import Glossary from CSV</source>
-        <translation type="unfinished"></translation>
+        <translation>Importera ordlista från CSV</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="497"/>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="567"/>
         <source>CSV files (*.csv);;All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>CSV-filer (*.csv);;Alla filer (*)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="506"/>
         <source>CSV Import Format</source>
-        <translation type="unfinished"></translation>
+        <translation>CSV-importformat</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="507"/>
@@ -812,13 +812,16 @@
 source,target,notes,domain
 
 First row can be a header (will be automatically detected).</source>
-        <translation type="unfinished"></translation>
+        <translation>Förväntat CSV-format:
+källa,mål,anteckningar,domän
+
+Första raden kan vara en rubrik (identifieras automatiskt).</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="543"/>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="549"/>
         <source>Import Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Import slutförd</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="544"/>
@@ -826,43 +829,47 @@ First row can be a header (will be automatically detected).</source>
 
 First errors:
 %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Importerade %d termer med %d fel.
+
+Första felen:
+%s</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="550"/>
         <source>Successfully imported %d terms.</source>
-        <translation type="unfinished"></translation>
+        <translation>%d termer importerades.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="560"/>
         <source>No terms to export.</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga termer att exportera.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="565"/>
         <source>Export Glossary to CSV</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportera ordlista till CSV</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="586"/>
         <source>Export Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Export slutförd</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="587"/>
         <source>Exported %d terms to %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Exporterade %d termer till %s</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="593"/>
         <source>Export Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportfel</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/glossary_dialog.py" line="594"/>
         <source>Failed to export glossary:
 %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte exportera ordlista:
+%s</translation>
     </message>
 </context>
 <context>
@@ -870,224 +877,224 @@ First errors:
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="23"/>
         <source>Edit File Header</source>
-        <translation type="unfinished"></translation>
+        <translation>Redigera filhuvud</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="69"/>
         <source>Project Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Projektinformation</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="73"/>
         <source>Project-Id-Version:</source>
-        <translation type="unfinished"></translation>
+        <translation>Project-Id-Version:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="76"/>
         <source>Package:</source>
-        <translation type="unfinished"></translation>
+        <translation>Paket:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="80"/>
         <source>Report-Msgid-Bugs-To:</source>
-        <translation type="unfinished"></translation>
+        <translation>Report-Msgid-Bugs-To:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="85"/>
         <source>Translation Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningsinformation</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="90"/>
         <source>Last-Translator:</source>
-        <translation type="unfinished"></translation>
+        <translation>Last-Translator:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="94"/>
         <source>Language-Team:</source>
-        <translation type="unfinished"></translation>
+        <translation>Language-Team:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="99"/>
         <source>Language:</source>
-        <translation type="unfinished">Språk:</translation>
+        <translation>Språk:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="104"/>
         <source>Technical Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Teknisk information</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="110"/>
         <source>POT-Creation-Date:</source>
-        <translation type="unfinished"></translation>
+        <translation>POT-Creation-Date:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="115"/>
         <source>PO-Revision-Date:</source>
-        <translation type="unfinished"></translation>
+        <translation>PO-Revision-Date:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="119"/>
         <source>Charset:</source>
-        <translation type="unfinished"></translation>
+        <translation>Teckenuppsättning:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="123"/>
         <source>Content-Transfer-Encoding:</source>
-        <translation type="unfinished"></translation>
+        <translation>Content-Transfer-Encoding:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="128"/>
         <source>Plural Forms</source>
-        <translation type="unfinished"></translation>
+        <translation>Pluralformer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="131"/>
         <source>Define how plural forms work for this language.</source>
-        <translation type="unfinished"></translation>
+        <translation>Definiera hur pluralformer fungerar för detta språk.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="142"/>
         <source>English (2 forms)</source>
-        <translation type="unfinished"></translation>
+        <translation>Engelska (2 former)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="146"/>
         <source>Germanic (2 forms)</source>
-        <translation type="unfinished"></translation>
+        <translation>Germanska (2 former)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="150"/>
         <source>Romance (2 forms)</source>
-        <translation type="unfinished"></translation>
+        <translation>Romanska (2 former)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="158"/>
         <source>PO Headers</source>
-        <translation type="unfinished"></translation>
+        <translation>PO-huvuden</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="166"/>
         <source>TS File Attributes</source>
-        <translation type="unfinished"></translation>
+        <translation>TS-filattribut</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="172"/>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="218"/>
         <source>Target Language:</source>
-        <translation type="unfinished"></translation>
+        <translation>Målspråk:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="177"/>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="213"/>
         <source>Source Language:</source>
-        <translation type="unfinished"></translation>
+        <translation>Källspråk:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="181"/>
         <source>TS Version:</source>
-        <translation type="unfinished"></translation>
+        <translation>TS-version:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="186"/>
         <source>Additional Metadata</source>
-        <translation type="unfinished"></translation>
+        <translation>Ytterligare metadata</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="190"/>
         <source>Translator:</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättare:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="194"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommentar:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="199"/>
         <source>TS Attributes</source>
-        <translation type="unfinished"></translation>
+        <translation>TS-attribut</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="207"/>
         <source>XLIFF File Attributes</source>
-        <translation type="unfinished"></translation>
+        <translation>XLIFF-filattribut</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="222"/>
         <source>XLIFF Version:</source>
-        <translation type="unfinished"></translation>
+        <translation>XLIFF-version:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="225"/>
         <source>Original File:</source>
-        <translation type="unfinished"></translation>
+        <translation>Originalfil:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="232"/>
         <source>Data Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Datatyp:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="237"/>
         <source>Tool Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Verktygsinformation</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="242"/>
         <source>Tool ID:</source>
-        <translation type="unfinished"></translation>
+        <translation>Verktygs-ID:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="246"/>
         <source>Tool Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Verktygsnamn:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="249"/>
         <source>Tool Version:</source>
-        <translation type="unfinished"></translation>
+        <translation>Verktygsversion:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="254"/>
         <source>XLIFF Attributes</source>
-        <translation type="unfinished"></translation>
+        <translation>XLIFF-attribut</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="262"/>
         <source>File Metadata</source>
-        <translation type="unfinished"></translation>
+        <translation>Filmetadata</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="266"/>
         <source>Project Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Projektnamn:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="269"/>
         <source>Version:</source>
-        <translation type="unfinished">Version:</translation>
+        <translation>Version:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="273"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Beskrivning:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="278"/>
         <source>Metadata</source>
-        <translation type="unfinished"></translation>
+        <translation>Metadata</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="458"/>
         <source>Restore Defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Återställ standardvärden</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/header_dialog.py" line="459"/>
         <source>Restore all fields to default values?</source>
-        <translation type="unfinished"></translation>
+        <translation>Återställa alla fält till standardvärden?</translation>
     </message>
 </context>
 <context>
@@ -1095,68 +1102,68 @@ First errors:
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="46"/>
         <source>Translation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningshistorik</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="63"/>
         <source>History for entry {0} in {1}</source>
-        <translation type="unfinished"></translation>
+        <translation>Historik för post {0} i {1}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="78"/>
         <source>Change History</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändringshistorik</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="84"/>
         <source>Date/Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Datum/Tid</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="84"/>
         <source>Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Fält</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="84"/>
         <source>User</source>
-        <translation type="unfinished"></translation>
+        <translation>Användare</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="84"/>
         <source>Change Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändringstyp</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="100"/>
         <source>Changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändringar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="105"/>
         <source>Before:</source>
-        <translation type="unfinished"></translation>
+        <translation>Före:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="106"/>
         <source>After:</source>
-        <translation type="unfinished"></translation>
+        <translation>Efter:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="128"/>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="220"/>
         <source>Select a history entry to see changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj en historikpost för att visa ändringar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="133"/>
         <source>Diff:</source>
-        <translation type="unfinished"></translation>
+        <translation>Diff:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="142"/>
         <source>Rollback to This Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Återställ till denna version</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="149"/>
@@ -1166,37 +1173,37 @@ First errors:
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="174"/>
         <source>Unknown</source>
-        <translation type="unfinished">Okänt</translation>
+        <translation>Okänt</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="179"/>
         <source>Added</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillagd</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="181"/>
         <source>Deleted</source>
-        <translation type="unfinished"></translation>
+        <translation>Borttagen</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="183"/>
         <source>Modified</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändrad</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="190"/>
         <source>No history available</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen historik tillgänglig</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="239"/>
         <source>No changes</source>
-        <translation type="unfinished">Inga ändringar</translation>
+        <translation>Inga ändringar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="255"/>
         <source>Confirm Rollback</source>
-        <translation type="unfinished"></translation>
+        <translation>Bekräfta återställning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/history_dialog.py" line="257"/>
@@ -1204,7 +1211,10 @@ First errors:
 
 This will replace the current text with:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Vill du verkligen återställa till denna version?
+
+Detta ersätter nuvarande text med:
+{}</translation>
     </message>
 </context>
 <context>
@@ -1214,7 +1224,8 @@ This will replace the current text with:
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="135"/>
         <source>Click to select image
 (PNG, JPG, GIF)</source>
-        <translation type="unfinished"></translation>
+        <translation>Klicka för att välja bild
+(PNG, JPG, GIF)</translation>
     </message>
 </context>
 <context>
@@ -1222,82 +1233,82 @@ This will replace the current text with:
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="86"/>
         <source>Layout Simulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Layoutsimulator</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="100"/>
         <source>Font Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Teckensnittsinställningar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="110"/>
         <source>Font Family:</source>
-        <translation type="unfinished"></translation>
+        <translation>Teckensnittsfamilj:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="116"/>
         <source>Size (pt):</source>
-        <translation type="unfinished"></translation>
+        <translation>Storlek (pt):</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="118"/>
         <source>Bold</source>
-        <translation type="unfinished"></translation>
+        <translation>Fetstil</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="125"/>
         <source>Width Constraints</source>
-        <translation type="unfinished"></translation>
+        <translation>Breddbegränsningar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="133"/>
         <source>Max Width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Max bredd:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="138"/>
         <source>Mobile Button</source>
-        <translation type="unfinished"></translation>
+        <translation>Mobilknapp</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="139"/>
         <source>Dialog Button</source>
-        <translation type="unfinished"></translation>
+        <translation>Dialogknapp</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="140"/>
         <source>Menu Item</source>
-        <translation type="unfinished"></translation>
+        <translation>Menypost</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="141"/>
         <source>Tablet</source>
-        <translation type="unfinished"></translation>
+        <translation>Surfplatta</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="149"/>
         <source>Presets:</source>
-        <translation type="unfinished"></translation>
+        <translation>Förinställningar:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="151"/>
         <source>Highlight Overflow</source>
-        <translation type="unfinished"></translation>
+        <translation>Markera överskjutning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="159"/>
         <source>Text Comparison</source>
-        <translation type="unfinished"></translation>
+        <translation>Textjämförelse</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="164"/>
         <source>Source Text:</source>
-        <translation type="unfinished"></translation>
+        <translation>Källtext:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="179"/>
         <source>Translation Text:</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningstext:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/layout_simulator_dialog.py" line="203"/>
@@ -1503,17 +1514,17 @@ This will replace the current text with:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1151"/>
         <source>Solarized Dark</source>
-        <translation type="unfinished"></translation>
+        <translation>Solarized Dark</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1152"/>
         <source>Nord</source>
-        <translation type="unfinished"></translation>
+        <translation>Nord</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1153"/>
         <source>Monokai</source>
-        <translation type="unfinished"></translation>
+        <translation>Monokai</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1163"/>
@@ -1703,7 +1714,7 @@ This will replace the current text with:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="733"/>
         <source>Add translator notes...</source>
-        <translation type="unfinished"></translation>
+        <translation>Lägg till översättarnoteringar...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="803"/>
@@ -1744,17 +1755,17 @@ This will replace the current text with:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="905"/>
         <source>Translation preview will appear here</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningsförhandsgranskning visas här</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="913"/>
         <source>Max width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Max bredd:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="924"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Förhandsgranskning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="945"/>
@@ -1778,38 +1789,38 @@ This will replace the current text with:
         <location filename="../src/linguaedit/ui/window.py" line="1564"/>
         <location filename="../src/linguaedit/ui/window.py" line="1610"/>
         <source>Propagate Translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Propagera översättning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1043"/>
         <source>Batch Edit…</source>
-        <translation type="unfinished"></translation>
+        <translation>Batchredigering…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1046"/>
         <location filename="../src/linguaedit/ui/window.py" line="4888"/>
         <source>Split Entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Dela post</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1047"/>
         <source>Merge Entries</source>
-        <translation type="unfinished"></translation>
+        <translation>Sammanfoga poster</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1057"/>
         <source>Edit Header…</source>
-        <translation type="unfinished"></translation>
+        <translation>Redigera huvud…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1064"/>
         <source>Email Translation…</source>
-        <translation type="unfinished"></translation>
+        <translation>Skicka översättning via e-post…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1065"/>
         <source>Merge with POT…</source>
-        <translation type="unfinished"></translation>
+        <translation>Sammanfoga med POT…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1067"/>
@@ -1869,54 +1880,54 @@ This will replace the current text with:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1093"/>
         <source>TMX</source>
-        <translation type="unfinished"></translation>
+        <translation>TMX</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1094"/>
         <source>Import TMX…</source>
-        <translation type="unfinished"></translation>
+        <translation>Importera TMX…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1095"/>
         <source>Export TMX…</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportera TMX…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1098"/>
         <source>Unicode Inspector</source>
-        <translation type="unfinished"></translation>
+        <translation>Unicode-inspektör</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1101"/>
         <source>Manage Plugins…</source>
-        <translation type="unfinished"></translation>
+        <translation>Hantera tillägg…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1104"/>
         <source>Macros</source>
-        <translation type="unfinished"></translation>
+        <translation>Makron</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1105"/>
         <location filename="../src/linguaedit/ui/window.py" line="5265"/>
         <source>Record Macro</source>
-        <translation type="unfinished"></translation>
+        <translation>Spela in makro</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1106"/>
         <location filename="../src/linguaedit/ui/window.py" line="5298"/>
         <source>Play Macro</source>
-        <translation type="unfinished"></translation>
+        <translation>Spela upp makro</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1107"/>
         <source>Manage Macros…</source>
-        <translation type="unfinished"></translation>
+        <translation>Hantera makron…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1110"/>
         <source>Git</source>
-        <translation type="unfinished"></translation>
+        <translation>Git</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1112"/>
@@ -1931,42 +1942,42 @@ This will replace the current text with:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1115"/>
         <source>Regex Tester</source>
-        <translation type="unfinished"></translation>
+        <translation>Regex-testare</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1116"/>
         <source>Layout Simulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Layoutsimulator</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1117"/>
         <source>OCR Screenshot…</source>
-        <translation type="unfinished"></translation>
+        <translation>OCR-skärmbild…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1122"/>
         <source>Pull Latest</source>
-        <translation type="unfinished"></translation>
+        <translation>Hämta senaste</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1131"/>
         <source>Show Bookmarked Only</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa endast bokmärkta</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1132"/>
         <source>Show Pinned First</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa fästa först</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1133"/>
         <source>Review Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Granskningsläge</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1134"/>
         <source>Focus Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Fokusläge</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1136"/>
@@ -1981,17 +1992,17 @@ This will replace the current text with:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1141"/>
         <source>Watch File</source>
-        <translation type="unfinished"></translation>
+        <translation>Bevaka fil</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1142"/>
         <source>Translation Map…</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningskarta…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1145"/>
         <source>Achievements…</source>
-        <translation type="unfinished"></translation>
+        <translation>Prestationer…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1147"/>
@@ -2006,12 +2017,12 @@ This will replace the current text with:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1557"/>
         <source>No identical source strings found.</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga identiska källsträngar hittades.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1570"/>
         <source>Found {len(identical_entries)} identical strings. Apply this translation to all?</source>
-        <translation type="unfinished"></translation>
+        <translation>Hittade {len(identical_entries)} identiska strängar. Tillämpa denna översättning på alla?</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1575"/>
@@ -2021,162 +2032,162 @@ This will replace the current text with:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1611"/>
         <source>Applied translation to {applied_count} strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillämpade översättning på {applied_count} strängar.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="2718"/>
         <source>Auto-compiled after save</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatiskt kompilerad efter sparning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="3836"/>
         <source>Applied changes to %d entries</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillämpade ändringar på %d poster</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="3888"/>
         <source>Header updated</source>
-        <translation type="unfinished"></translation>
+        <translation>Huvudet uppdaterat</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="3917"/>
         <source>Generate Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Generera rapport</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="3922"/>
         <source>Report Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Rapportalternativ</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="3925"/>
         <source>Bilingual export (source + translation)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tvåspråkig export (källa + översättning)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="3928"/>
         <source>Include fuzzy entries</source>
-        <translation type="unfinished"></translation>
+        <translation>Inkludera osäkra poster</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="3951"/>
         <source>HTML files (*.html);;PDF files (*.pdf)</source>
-        <translation type="unfinished"></translation>
+        <translation>HTML-filer (*.html);;PDF-filer (*.pdf)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="3959"/>
         <source>Report saved: %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Rapport sparad: %s</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="3961"/>
         <source>Report error: %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Rapportfel: %s</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4064"/>
         <source>No translation selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen översättning vald</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4072"/>
         <source>No source text to review</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen källtext att granska</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4082"/>
         <source>Translation updated from AI review</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättning uppdaterad från AI-granskning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4093"/>
         <source>Bookmark removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Bokmärke borttaget</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4096"/>
         <source>Bookmark added</source>
-        <translation type="unfinished"></translation>
+        <translation>Bokmärke tillagt</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4106"/>
         <source>Showing only bookmarked entries</source>
-        <translation type="unfinished"></translation>
+        <translation>Visar endast bokmärkta poster</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4108"/>
         <source>Showing all entries</source>
-        <translation type="unfinished"></translation>
+        <translation>Visar alla poster</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4115"/>
         <source>No bookmarks set</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga bokmärken satta</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4188"/>
         <source>Entry unpinned</source>
-        <translation type="unfinished"></translation>
+        <translation>Post avfäst</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4191"/>
         <source>Entry pinned</source>
-        <translation type="unfinished"></translation>
+        <translation>Post fäst</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4201"/>
         <source>Showing pinned entries first</source>
-        <translation type="unfinished"></translation>
+        <translation>Visar fästa poster först</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4203"/>
         <source>Normal sorting order</source>
-        <translation type="unfinished"></translation>
+        <translation>Normal sorteringsordning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4285"/>
         <source>Loaded: {path.name}</source>
-        <translation type="unfinished"></translation>
+        <translation>Laddad: {path.name}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4289"/>
         <source>Error loading {path.name}: {e}</source>
-        <translation type="unfinished"></translation>
+        <translation>Fel vid laddning av {path.name}: {e}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4398"/>
         <source>Watch mode enabled - file changes will be detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Bevakningsläge aktiverat – filändringar kommer att upptäckas</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4406"/>
         <source>Watch mode disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Bevakningsläge inaktiverat</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4418"/>
         <source>File reloaded (external change detected)</source>
-        <translation type="unfinished"></translation>
+        <translation>Filen laddades om (extern ändring upptäckt)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4423"/>
         <source>File Changed</source>
-        <translation type="unfinished"></translation>
+        <translation>Filen ändrad</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4424"/>
         <source>The file has been changed externally. Reload?</source>
-        <translation type="unfinished"></translation>
+        <translation>Filen har ändrats externt. Ladda om?</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4458"/>
         <source>Add Tag</source>
-        <translation type="unfinished"></translation>
+        <translation>Lägg till tagg</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4459"/>
         <source>Select or enter tag:</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj eller ange tagg:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4472"/>
@@ -2191,102 +2202,102 @@ This will replace the current text with:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4492"/>
         <source>Tag filter removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Taggfilter borttaget</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4495"/>
         <source>Filtering by tag: {tag}</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrerar efter tagg: {tag}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4553"/>
         <source>Review mode enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Granskningsläge aktiverat</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4555"/>
         <source>Review mode disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Granskningsläge inaktiverat</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4579"/>
         <source>Status set to: {status}</source>
-        <translation type="unfinished"></translation>
+        <translation>Status satt till: {status}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4592"/>
         <source>Email Translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Skicka översättning via e-post</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4605"/>
         <source>To:</source>
-        <translation type="unfinished"></translation>
+        <translation>Till:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4611"/>
         <source>Subject:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ämne:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4616"/>
         <source>Message:</source>
-        <translation type="unfinished"></translation>
+        <translation>Meddelande:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4619"/>
         <source>Attach current file</source>
-        <translation type="unfinished"></translation>
+        <translation>Bifoga aktuell fil</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4640"/>
         <source>Email client opened</source>
-        <translation type="unfinished"></translation>
+        <translation>E-postklienten öppnad</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4642"/>
         <source>Please enter recipient email</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange mottagarens e-postadress</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4651"/>
         <source>Focus mode enabled - hiding completed translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Fokusläge aktiverat – färdiga översättningar döljs</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4653"/>
         <source>Focus mode disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Fokusläge inaktiverat</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4672"/>
         <source>{remaining}/{total} remaining</source>
-        <translation type="unfinished"></translation>
+        <translation>{remaining}/{total} återstående</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4707"/>
         <source>Remove Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort bokmärke</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4709"/>
         <source>Add Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Lägg till bokmärke</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4713"/>
         <source>📌 Unpin Entry</source>
-        <translation type="unfinished"></translation>
+        <translation>📌 Avfäst post</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4715"/>
         <source>📌 Pin Entry</source>
-        <translation type="unfinished"></translation>
+        <translation>📌 Fäst post</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4730"/>
         <source>Add Tag...</source>
-        <translation type="unfinished"></translation>
+        <translation>Lägg till tagg...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4735"/>
@@ -2301,33 +2312,33 @@ This will replace the current text with:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4739"/>
         <source>Reject</source>
-        <translation type="unfinished"></translation>
+        <translation>Avvisa</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4741"/>
         <source>Needs Review</source>
-        <translation type="unfinished"></translation>
+        <translation>Behöver granskning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4760"/>
         <source>No translation to preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen översättning att förhandsgranska</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4817"/>
         <source>Import TMX</source>
-        <translation type="unfinished"></translation>
+        <translation>Importera TMX</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4817"/>
         <location filename="../src/linguaedit/ui/window.py" line="4843"/>
         <source>TMX Files (*.tmx)</source>
-        <translation type="unfinished"></translation>
+        <translation>TMX-filer (*.tmx)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4827"/>
         <source>Imported {} translation units</source>
-        <translation type="unfinished"></translation>
+        <translation>Importerade {} översättningsenheter</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4829"/>
@@ -2335,117 +2346,120 @@ This will replace the current text with:
 
 Errors:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+Fel:
+{}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4831"/>
         <source>TMX Import</source>
-        <translation type="unfinished"></translation>
+        <translation>TMX-import</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4835"/>
         <source>Import Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Importfel</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4836"/>
         <source>Failed to import TMX file: {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte importera TMX-fil: {}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4842"/>
         <source>Export TMX</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportera TMX</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4859"/>
         <source>TMX Export</source>
-        <translation type="unfinished"></translation>
+        <translation>TMX-export</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4860"/>
         <source>Exported {} translation units to {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Exporterade {} översättningsenheter till {}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4867"/>
         <source>Export Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportfel</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4868"/>
         <source>Failed to export TMX file: {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte exportera TMX-fil: {}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4882"/>
         <source>Cannot split empty entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte dela tom post</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4889"/>
         <source>This entry may not be suitable for splitting. Continue anyway?</source>
-        <translation type="unfinished"></translation>
+        <translation>Denna post kanske inte är lämplig att dela. Fortsätta ändå?</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4903"/>
         <source>Entry could not be split</source>
-        <translation type="unfinished"></translation>
+        <translation>Posten kunde inte delas</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4930"/>
         <source>Entry split into {} segments</source>
-        <translation type="unfinished"></translation>
+        <translation>Post delad i {} segment</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4936"/>
         <source>Select multiple entries to merge</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj flera poster att sammanfoga</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="4971"/>
         <source>Merged {} entries</source>
-        <translation type="unfinished"></translation>
+        <translation>Sammanfogade {} poster</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5005"/>
         <source>{} chars | {} words | Source: {} chars</source>
-        <translation type="unfinished"></translation>
+        <translation>{} tecken | {} ord | Källa: {} tecken</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5066"/>
         <source>Updated {} translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Uppdaterade {} översättning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5094"/>
         <source>Push Changes</source>
-        <translation type="unfinished"></translation>
+        <translation>Skicka ändringar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5095"/>
         <source>Commit successful. Push to remote?</source>
-        <translation type="unfinished"></translation>
+        <translation>Commit lyckades. Skicka till fjärrarkiv?</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5104"/>
         <source>Changes pushed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändringar skickade</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5106"/>
         <source>Changes committed locally</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändringar committade lokalt</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5110"/>
         <source>Git Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Git-fel</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5111"/>
         <source>Git operation failed: {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Git-åtgärd misslyckades: {}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5115"/>
@@ -2461,52 +2475,52 @@ Errors:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5126"/>
         <source>Play Translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Spela upp översättning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5140"/>
         <source>No text to play</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen text att spela upp</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5175"/>
         <source>Playing translation...</source>
-        <translation type="unfinished"></translation>
+        <translation>Spelar upp översättning...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5179"/>
         <source>TTS Error</source>
-        <translation type="unfinished"></translation>
+        <translation>TTS-fel</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5180"/>
         <source>Text-to-speech failed: {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Text-till-tal misslyckades: {}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5219"/>
         <source>Fullscreen mode - Press Escape to exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Helskärmsläge – tryck Escape för att avsluta</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5260"/>
         <source>Already recording a macro</source>
-        <translation type="unfinished"></translation>
+        <translation>Spelar redan in ett makro</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5266"/>
         <source>Enter macro name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange makronamn:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5275"/>
         <source>Macro Exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Makrot finns redan</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5276"/>
         <source>A macro with this name already exists.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ett makro med detta namn finns redan.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5283"/>
@@ -2516,88 +2530,89 @@ Errors:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5289"/>
         <source>No macros available</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga makron tillgängliga</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5294"/>
         <source>No enabled macros</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga aktiverade makron</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5299"/>
         <source>Select macro to play:</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj makro att spela upp:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5306"/>
         <source>Failed to play macro</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte spela upp makro</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5355"/>
         <source>Translation rolled back</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättning återställd</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5364"/>
         <source>Auto-compile enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatisk kompilering aktiverad</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5388"/>
         <source>Translation History…</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningshistorik…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5391"/>
         <source>🔊 Play Translation</source>
-        <translation type="unfinished"></translation>
+        <translation>🔊 Spela upp översättning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5439"/>
         <source>OCR extraction completed. {} strings extracted.</source>
-        <translation type="unfinished"></translation>
+        <translation>OCR-extrahering slutförd. {} strängar extraherade.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5445"/>
         <source>Crowdin OTA</source>
-        <translation type="unfinished"></translation>
+        <translation>Crowdin OTA</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5446"/>
         <source>Crowdin Over-The-Air functionality not yet implemented.
 This would pull latest translations using distribution hash.</source>
-        <translation type="unfinished"></translation>
+        <translation>Crowdin Over-The-Air-funktionalitet är ännu inte implementerad.
+Detta skulle hämta senaste översättningar med distributionshash.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5453"/>
         <source>No File</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen fil</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5453"/>
         <source>Please open a PO file first.</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna en PO-fil först.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5457"/>
         <source>Wrong File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Fel filtyp</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5457"/>
         <source>This feature only works with PO files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Denna funktion fungerar bara med PO-filer.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5463"/>
         <source>Select POT File</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj POT-fil</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5465"/>
         <source>POT Files (*.pot)</source>
-        <translation type="unfinished"></translation>
+        <translation>POT-filer (*.pot)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5480"/>
@@ -2613,29 +2628,31 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5488"/>
         <source>Msgmerge Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Msgmerge-fel</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5489"/>
         <source>msgmerge failed:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>msgmerge misslyckades:
+{}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5495"/>
         <source>Msgmerge Not Found</source>
-        <translation type="unfinished"></translation>
+        <translation>Msgmerge hittades inte</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5496"/>
         <source>msgmerge command not found. Please install gettext tools.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommandot msgmerge hittades inte. Installera gettext-verktygen.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="5502"/>
         <source>Failed to run msgmerge:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte köra msgmerge:
+{}</translation>
     </message>
     <message>
         <source>System</source>
@@ -3418,12 +3435,12 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/services/linter.py" line="246"/>
         <source>Extra HTML/XML tags in translation: %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Extra HTML/XML-taggar i översättningen: %s</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/services/linter.py" line="254"/>
         <source>Accelerator key mismatch: source has %d, translation has %d</source>
-        <translation type="unfinished"></translation>
+        <translation>Snabbtangent stämmer inte: källan har %d, översättningen har %d</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/services/linter.py" line="287"/>
@@ -3433,7 +3450,7 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/services/linter.py" line="297"/>
         <source>Glossary inconsistency: %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordlisteavvikelse: %s</translation>
     </message>
 </context>
 <context>
@@ -3441,42 +3458,42 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="216"/>
         <source>Translation Map</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningskarta</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="235"/>
         <source>Project:</source>
-        <translation type="unfinished"></translation>
+        <translation>Projekt:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="242"/>
         <source>Browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>Bläddra...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="250"/>
         <source>Translation Progress by Region</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningsförlopp per region</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="270"/>
         <source>Country Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Landsdetaljer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="273"/>
         <source>Click on a country to see details</source>
-        <translation type="unfinished"></translation>
+        <translation>Klicka på ett land för att visa detaljer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="289"/>
         <source>Locale Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Locale-filer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="299"/>
         <source>Project Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Projektsammanfattning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="314"/>
@@ -3496,17 +3513,17 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="550"/>
         <source>Open File</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna fil</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="551"/>
         <source>Would open: {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Skulle öppna: {}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="556"/>
         <source>No translation files found in project.</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga översättningsfiler hittades i projektet.</translation>
     </message>
 </context>
 <context>
@@ -3514,17 +3531,17 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="22"/>
         <source>Manage Macros</source>
-        <translation type="unfinished"></translation>
+        <translation>Hantera makron</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="48"/>
         <source>Record New Macro</source>
-        <translation type="unfinished"></translation>
+        <translation>Spela in nytt makro</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="52"/>
         <source>Stop Recording</source>
-        <translation type="unfinished"></translation>
+        <translation>Stoppa inspelning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="59"/>
@@ -3545,17 +3562,17 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="79"/>
         <source>Macros</source>
-        <translation type="unfinished"></translation>
+        <translation>Makron</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="89"/>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Spela upp</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="94"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>Byt namn</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="99"/>
@@ -3570,27 +3587,27 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="116"/>
         <source>Name:</source>
-        <translation type="unfinished">Namn:</translation>
+        <translation>Namn:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="120"/>
         <source>Shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kortkommando:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="124"/>
         <source>Enabled:</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktiverad:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="132"/>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Beskrivning:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="138"/>
         <source>Actions:</source>
-        <translation type="unfinished"></translation>
+        <translation>Åtgärder:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="148"/>
@@ -3605,42 +3622,42 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="222"/>
         <source>No actions recorded</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga åtgärder inspelade</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="276"/>
         <source>Record Macro</source>
-        <translation type="unfinished"></translation>
+        <translation>Spela in makro</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="277"/>
         <source>Enter macro name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange makronamn:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="289"/>
         <source>Macro Exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Makrot finns redan</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="290"/>
         <source>A macro with this name already exists. Please choose a different name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ett makro med detta namn finns redan. Välj ett annat namn.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="312"/>
         <source>Macro Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Makrobeskrivning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="313"/>
         <source>Enter macro description (optional):</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange makrobeskrivning (valfritt):</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="328"/>
         <source>Macro Saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Makro sparat</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="329"/>
@@ -3650,33 +3667,33 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="334"/>
         <source>Recording Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Inspelning misslyckades</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="335"/>
         <source>Failed to save the macro. No actions were recorded.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte spara makrot. Inga åtgärder spelades in.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="345"/>
         <source>🔴 Recording in progress...</source>
-        <translation type="unfinished"></translation>
+        <translation>🔴 Inspelning pågår...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="368"/>
         <source>🔴 Recording... ({} actions)</source>
-        <translation type="unfinished"></translation>
+        <translation>🔴 Inspelning... ({} åtgärder)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="398"/>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="409"/>
         <source>Playback Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Uppspelningsfel</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="399"/>
         <source>Cannot find main window for macro playback.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte hitta huvudfönstret för makrouppspelning.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="410"/>
@@ -3686,27 +3703,27 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="427"/>
         <source>Rename Macro</source>
-        <translation type="unfinished"></translation>
+        <translation>Byt namn på makro</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="428"/>
         <source>Enter new name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange nytt namn:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="445"/>
         <source>Rename Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Namnbyte misslyckades</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="446"/>
         <source>Failed to rename macro. The new name may already exist.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte byta namn på makrot. Det nya namnet kanske redan används.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="460"/>
         <source>Delete Macro</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort makro</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="461"/>
@@ -3716,78 +3733,78 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="472"/>
         <source>Delete Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Borttagning misslyckades</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="473"/>
         <source>Failed to delete macro.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte ta bort makrot.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="523"/>
         <source>Import Macro</source>
-        <translation type="unfinished"></translation>
+        <translation>Importera makro</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="525"/>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="560"/>
         <source>JSON Files (*.json)</source>
-        <translation type="unfinished"></translation>
+        <translation>JSON-filer (*.json)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="536"/>
         <source>Import Successful</source>
-        <translation type="unfinished"></translation>
+        <translation>Import lyckades</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="538"/>
         <source>Import Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Import misslyckades</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="543"/>
         <source>Import Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Importfel</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="544"/>
         <source>Failed to import macro: {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte importera makro: {}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="558"/>
         <source>Export Macro</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportera makro</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="573"/>
         <source>Export Successful</source>
-        <translation type="unfinished"></translation>
+        <translation>Export lyckades</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="574"/>
         <source>Macro exported to {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Makro exporterat till {}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="579"/>
         <source>Export Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Export misslyckades</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="580"/>
         <source>Failed to export macro.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte exportera makrot.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="586"/>
         <source>Export Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportfel</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="587"/>
         <source>Failed to export macro: {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte exportera makro: {}</translation>
     </message>
 </context>
 <context>
@@ -3795,7 +3812,7 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/minimap.py" line="36"/>
         <source>Minimap: Click to jump to entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Minikarta: Klicka för att hoppa till post</translation>
     </message>
 </context>
 <context>
@@ -3803,22 +3820,22 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="145"/>
         <source>OCR Screenshot</source>
-        <translation type="unfinished"></translation>
+        <translation>OCR-skärmbild</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="185"/>
         <source>Browse Image...</source>
-        <translation type="unfinished"></translation>
+        <translation>Bläddra efter bild...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="189"/>
         <source>Extract Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Extrahera text</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="196"/>
         <source>Create PO from Extracted Strings</source>
-        <translation type="unfinished"></translation>
+        <translation>Skapa PO från extraherade strängar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="201"/>
@@ -3833,112 +3850,112 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="222"/>
         <source>OCR Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>OCR-inställningar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="250"/>
         <source>Language:</source>
-        <translation type="unfinished">Språk:</translation>
+        <translation>Språk:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="255"/>
         <source>Orientation and script detection (OSD) only</source>
-        <translation type="unfinished"></translation>
+        <translation>Enbart orienterings- och skriptdetektering (OSD)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="256"/>
         <source>Automatic page segmentation with OSD</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatisk sidsegmentering med OSD</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="257"/>
         <source>Automatic page segmentation, but no OSD, or OCR</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatisk sidsegmentering, men ingen OSD eller OCR</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="258"/>
         <source>Fully automatic page segmentation, but no OSD</source>
-        <translation type="unfinished"></translation>
+        <translation>Helautomatisk sidsegmentering, men ingen OSD</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="259"/>
         <source>Assume a single column of text of variable sizes</source>
-        <translation type="unfinished"></translation>
+        <translation>Anta en enstaka kolumn med text av varierande storlek</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="260"/>
         <source>Assume a single uniform block of vertically aligned text</source>
-        <translation type="unfinished"></translation>
+        <translation>Anta ett enstaka enhetligt block med vertikalt justerad text</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="261"/>
         <source>Assume a single uniform block of text</source>
-        <translation type="unfinished"></translation>
+        <translation>Anta ett enstaka enhetligt textblock</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="262"/>
         <source>Treat the image as a single text line</source>
-        <translation type="unfinished"></translation>
+        <translation>Behandla bilden som en enstaka textrad</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="263"/>
         <source>Treat the image as a single word</source>
-        <translation type="unfinished"></translation>
+        <translation>Behandla bilden som ett enstaka ord</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="264"/>
         <source>Treat the image as a single word in a circle</source>
-        <translation type="unfinished"></translation>
+        <translation>Behandla bilden som ett enstaka ord i en cirkel</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="265"/>
         <source>Treat the image as a single character</source>
-        <translation type="unfinished"></translation>
+        <translation>Behandla bilden som ett enstaka tecken</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="266"/>
         <source>Sparse text. Find as much text as possible in no particular order</source>
-        <translation type="unfinished"></translation>
+        <translation>Gles text. Hitta så mycket text som möjligt i valfri ordning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="267"/>
         <source>Sparse text with OSD</source>
-        <translation type="unfinished"></translation>
+        <translation>Gles text med OSD</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="268"/>
         <source>Raw line. Treat the image as a single text line, bypassing hacks</source>
-        <translation type="unfinished"></translation>
+        <translation>Rå rad. Behandla bilden som en enstaka textrad utan specialbehandling</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="275"/>
         <source>Page Segmentation:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sidsegmentering:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="278"/>
         <source>Apply preprocessing</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillämpa förbehandling</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="280"/>
         <source>Apply image preprocessing to improve OCR accuracy</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillämpa bildförbehandling för att förbättra OCR-noggrannhet</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="295"/>
         <source>Extracted Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Extraherad text</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="300"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filter:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="303"/>
         <source>Filter extracted strings...</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrera extraherade strängar...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="317"/>
@@ -3953,17 +3970,17 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="327"/>
         <source>Remove Selected</source>
-        <translation type="unfinished">Ta bort markerat</translation>
+        <translation>Ta bort markerat</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="336"/>
         <source>Raw OCR Output</source>
-        <translation type="unfinished"></translation>
+        <translation>Rå OCR-utdata</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="374"/>
         <source>Tesseract Required</source>
-        <translation type="unfinished"></translation>
+        <translation>Tesseract krävs</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="376"/>
@@ -3974,17 +3991,23 @@ Installation instructions:
 • Ubuntu/Debian: sudo apt install tesseract-ocr
 • Windows: Download from GitHub releases
 • Arch Linux: sudo pacman -S tesseract</source>
-        <translation type="unfinished"></translation>
+        <translation>OCR-funktionalitet kräver att tesseract-ocr är installerat.
+
+Installationsanvisningar:
+• macOS: brew install tesseract
+• Ubuntu/Debian: sudo apt install tesseract-ocr
+• Windows: Hämta från GitHub-releaser
+• Arch Linux: sudo pacman -S tesseract</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="389"/>
         <source>Select Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj bild</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="391"/>
         <source>Image Files (*.png *.jpg *.jpeg *.gif *.bmp *.tiff)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildfiler (*.png *.jpg *.jpeg *.gif *.bmp *.tiff)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="409"/>
@@ -4000,27 +4023,27 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="472"/>
         <source>OCR Error</source>
-        <translation type="unfinished"></translation>
+        <translation>OCR-fel</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="500"/>
         <source>No Strings</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga strängar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="501"/>
         <source>No strings selected for PO file creation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga strängar valda för skapande av PO-fil.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="507"/>
         <source>Save PO File</source>
-        <translation type="unfinished"></translation>
+        <translation>Spara PO-fil</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="509"/>
         <source>PO Files (*.po)</source>
-        <translation type="unfinished"></translation>
+        <translation>PO-filer (*.po)</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="517"/>
@@ -4037,7 +4060,8 @@ Installation instructions:
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="528"/>
         <source>Failed to create PO file:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte skapa PO-fil:
+{}</translation>
     </message>
 </context>
 <context>
@@ -4045,17 +4069,17 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="36"/>
         <source>Checking tesseract installation...</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrollerar tesseract-installation...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="40"/>
         <source>Tesseract not installed. Please install tesseract-ocr.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tesseract är inte installerat. Installera tesseract-ocr.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/ocr_dialog.py" line="43"/>
         <source>Processing image...</source>
-        <translation type="unfinished"></translation>
+        <translation>Bearbetar bild...</translation>
     </message>
 </context>
 <context>
@@ -4063,12 +4087,12 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="34"/>
         <source>Platform Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Plattformsinställningar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="53"/>
         <source>🔒 Tokens stored in %1</source>
-        <translation type="unfinished"></translation>
+        <translation>🔒 Token lagrade i %1</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="56"/>
@@ -4078,52 +4102,52 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="63"/>
         <source>Transifex</source>
-        <translation type="unfinished">Transifex</translation>
+        <translation>Transifex</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="64"/>
         <source>Weblate</source>
-        <translation type="unfinished">Weblate</translation>
+        <translation>Weblate</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="65"/>
         <source>Crowdin</source>
-        <translation type="unfinished">Crowdin</translation>
+        <translation>Crowdin</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="74"/>
         <source>Transifex API</source>
-        <translation type="unfinished"></translation>
+        <translation>Transifex API</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="83"/>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="250"/>
         <source>API Token:</source>
-        <translation type="unfinished"></translation>
+        <translation>API-token:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="87"/>
         <source>Organization:</source>
-        <translation type="unfinished"></translation>
+        <translation>Organisation:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="91"/>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="175"/>
         <source>Project:</source>
-        <translation type="unfinished"></translation>
+        <translation>Projekt:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="95"/>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="258"/>
         <source>Base URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bas-URL:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="105"/>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="188"/>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="267"/>
         <source>Test Connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Testa anslutning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="109"/>
@@ -4144,56 +4168,56 @@ Installation instructions:
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="215"/>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="298"/>
         <source>✓ Connected: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>✓ Ansluten: %1</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="135"/>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="218"/>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="301"/>
         <source>✗ %1</source>
-        <translation type="unfinished"></translation>
+        <translation>✗ %1</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="150"/>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="233"/>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="319"/>
         <source>✓ Saved</source>
-        <translation type="unfinished"></translation>
+        <translation>✓ Sparat</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="158"/>
         <source>Weblate API</source>
-        <translation type="unfinished"></translation>
+        <translation>Weblate API</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="166"/>
         <source>API URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>API-URL:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="171"/>
         <source>API Key:</source>
-        <translation type="unfinished"></translation>
+        <translation>API-nyckel:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="179"/>
         <source>Component:</source>
-        <translation type="unfinished"></translation>
+        <translation>Komponent:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="241"/>
         <source>Crowdin API</source>
-        <translation type="unfinished"></translation>
+        <translation>Crowdin API</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="254"/>
         <source>Project ID:</source>
-        <translation type="unfinished"></translation>
+        <translation>Projekt-ID:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/platform_dialog.py" line="284"/>
         <source>✗ Project ID must be a number</source>
-        <translation type="unfinished"></translation>
+        <translation>✗ Projekt-ID måste vara ett tal</translation>
     </message>
 </context>
 <context>
@@ -4201,22 +4225,22 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="21"/>
         <source>Manage Plugins</source>
-        <translation type="unfinished"></translation>
+        <translation>Hantera tillägg</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="38"/>
         <source>Reload Plugins</source>
-        <translation type="unfinished"></translation>
+        <translation>Ladda om tillägg</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="42"/>
         <source>Open Plugin Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna tilläggsmapp</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="53"/>
         <source>Installed Plugins</source>
-        <translation type="unfinished"></translation>
+        <translation>Installerade tillägg</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="59"/>
@@ -4231,32 +4255,32 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="59"/>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Författare</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="59"/>
         <source>Enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktiverad</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="76"/>
         <source>Plugin Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilläggsdetaljer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="100"/>
         <source>Enable</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivera</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="104"/>
         <source>Disable</source>
-        <translation type="unfinished"></translation>
+        <translation>Inaktivera</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="118"/>
         <source>Plugins are loaded from: {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillägg laddas från: {}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="130"/>
@@ -4271,27 +4295,27 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="204"/>
         <source>Author: {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Författare: {}</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="268"/>
         <source>Plugins Reloaded</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillägg omladdade</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="269"/>
         <source>All plugins have been reloaded successfully.</source>
-        <translation type="unfinished"></translation>
+        <translation>Alla tillägg har laddats om.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="274"/>
         <source>Reload Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Omladdning misslyckades</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plugin_dialog.py" line="275"/>
         <source>Failed to reload plugins: {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte ladda om tillägg: {}</translation>
     </message>
 </context>
 <context>
@@ -4299,7 +4323,7 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/plural_forms_editor.py" line="42"/>
         <source>Plural rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Pluralregler</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/plural_forms_editor.py" line="61"/>
@@ -4407,22 +4431,22 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/preferences_dialog.py" line="104"/>
         <source>Double-click to edit translations directly in the list</source>
-        <translation type="unfinished"></translation>
+        <translation>Dubbelklicka för att redigera översättningar direkt i listan</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/preferences_dialog.py" line="108"/>
         <source>Show character counter</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa teckenräknare</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/preferences_dialog.py" line="116"/>
         <source> characters</source>
-        <translation type="unfinished"></translation>
+        <translation> tecken</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/preferences_dialog.py" line="117"/>
         <source>Character limit:</source>
-        <translation type="unfinished"></translation>
+        <translation>Teckengräns:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/preferences_dialog.py" line="126"/>
@@ -4465,12 +4489,12 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="208"/>
         <source>Open...</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="209"/>
         <source>Open project folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna projektmapp</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="213"/>
@@ -4485,18 +4509,18 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="229"/>
         <source>Filter:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filter:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="233"/>
         <source>All files</source>
-        <translation type="unfinished"></translation>
+        <translation>Alla filer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="234"/>
         <location filename="../src/linguaedit/ui/project_dock.py" line="412"/>
         <source>Incomplete</source>
-        <translation type="unfinished"></translation>
+        <translation>Ofullständig</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="235"/>
@@ -4514,19 +4538,19 @@ Installation instructions:
         <location filename="../src/linguaedit/ui/project_dock.py" line="237"/>
         <location filename="../src/linguaedit/ui/project_dock.py" line="418"/>
         <source>TS files</source>
-        <translation type="unfinished"></translation>
+        <translation>TS-filer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="238"/>
         <location filename="../src/linguaedit/ui/project_dock.py" line="420"/>
         <source>JSON files</source>
-        <translation type="unfinished"></translation>
+        <translation>JSON-filer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="239"/>
         <location filename="../src/linguaedit/ui/project_dock.py" line="422"/>
         <source>XLIFF files</source>
-        <translation type="unfinished"></translation>
+        <translation>XLIFF-filer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="248"/>
@@ -4556,32 +4580,32 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="279"/>
         <source>Files:</source>
-        <translation type="unfinished"></translation>
+        <translation>Filer:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="282"/>
         <source>Avg:</source>
-        <translation type="unfinished"></translation>
+        <translation>Medel:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="299"/>
         <source>Select Project Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj projektmapp</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="335"/>
         <source>Analyzing project...</source>
-        <translation type="unfinished"></translation>
+        <translation>Analyserar projekt...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="388"/>
         <source>Found %d translation files</source>
-        <translation type="unfinished"></translation>
+        <translation>Hittade %d översättningsfiler</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="393"/>
         <source>No translation files found in this folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga översättningsfiler hittades i denna mapp</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="442"/>
@@ -4596,7 +4620,7 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="458"/>
         <source>Copy Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera sökväg</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/project_dock.py" line="467"/>
@@ -4614,32 +4638,32 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/quick_actions.py" line="25"/>
         <source>Quick Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Snabbåtgärder</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/quick_actions.py" line="35"/>
         <source>📋 Copy source</source>
-        <translation type="unfinished"></translation>
+        <translation>📋 Kopiera källa</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/quick_actions.py" line="47"/>
         <source>🧠 Apply TM suggestion</source>
-        <translation type="unfinished"></translation>
+        <translation>🧠 Tillämpa TM-förslag</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/quick_actions.py" line="73"/>
         <source>📚 Apply glossary term</source>
-        <translation type="unfinished"></translation>
+        <translation>📚 Tillämpa ordlisteterm</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/quick_actions.py" line="92"/>
         <source>🔤 Capitalize first letter</source>
-        <translation type="unfinished"></translation>
+        <translation>🔤 Gör första bokstaven versal</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/quick_actions.py" line="94"/>
         <source>🔤 Lowercase first letter</source>
-        <translation type="unfinished"></translation>
+        <translation>🔤 Gör första bokstaven gemen</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/quick_actions.py" line="108"/>
@@ -4652,17 +4676,17 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="596"/>
         <source>Recording Macro</source>
-        <translation type="unfinished"></translation>
+        <translation>Spelar in makro</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="603"/>
         <source>🔴 Recording macro...</source>
-        <translation type="unfinished"></translation>
+        <translation>🔴 Spelar in makro...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/macro_dialog.py" line="612"/>
         <source>Stop Recording</source>
-        <translation type="unfinished"></translation>
+        <translation>Stoppa inspelning</translation>
     </message>
 </context>
 <context>
@@ -4670,32 +4694,32 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="22"/>
         <source>Regex Tester</source>
-        <translation type="unfinished"></translation>
+        <translation>Regex-testare</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="36"/>
         <source>Input Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Indata</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="50"/>
         <source>Format Strings Found</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatsträngar hittade</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="60"/>
         <source>Test Values</source>
-        <translation type="unfinished"></translation>
+        <translation>Testvärden</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="75"/>
         <source>Live Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Förhandsgranskning i realtid</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="91"/>
         <source>Copy Result</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera resultat</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="97"/>
@@ -4710,22 +4734,22 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="156"/>
         <source>Test value</source>
-        <translation type="unfinished"></translation>
+        <translation>Testvärde</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="158"/>
         <source>Value</source>
-        <translation type="unfinished">Värde</translation>
+        <translation>Värde</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="219"/>
         <source>Copied</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopierat</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="220"/>
         <source>Result copied to clipboard.</source>
-        <translation type="unfinished"></translation>
+        <translation>Resultatet kopierat till urklipp.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="222"/>
@@ -4743,7 +4767,7 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="29"/>
         <source>Find &amp; Replace</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök &amp; Ersätt</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="47"/>
@@ -4758,17 +4782,17 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="53"/>
         <source>Enter search text...</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange söktext...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="57"/>
         <source>Replace:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ersätt:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="59"/>
         <source>Enter replacement text...</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange ersättningstext...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="65"/>
@@ -4783,7 +4807,7 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="71"/>
         <source>Whole words</source>
-        <translation type="unfinished"></translation>
+        <translation>Hela ord</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="72"/>
@@ -4798,7 +4822,7 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="84"/>
         <source>Source text</source>
-        <translation type="unfinished">Källtext</translation>
+        <translation>Källtext</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="85"/>
@@ -4813,17 +4837,17 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="110"/>
         <source>Find Next</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök nästa</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="111"/>
         <source>Find Previous</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök föregående</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="112"/>
         <source>Find All</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök alla</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="121"/>
@@ -4833,7 +4857,7 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="122"/>
         <source>Replace All</source>
-        <translation type="unfinished">Ersätt alla</translation>
+        <translation>Ersätt alla</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="130"/>
@@ -4848,7 +4872,7 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/search_replace_dialog.py" line="277"/>
         <source>No matches found</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga träffar hittades</translation>
     </message>
 </context>
 <context>
@@ -4856,102 +4880,102 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="111"/>
         <source>Translation Statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningsstatistik</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="130"/>
         <source>Overview</source>
-        <translation type="unfinished"></translation>
+        <translation>Översikt</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="135"/>
         <source>Translation Progress:</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningsförlopp:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="152"/>
         <source>Total entries:</source>
-        <translation type="unfinished"></translation>
+        <translation>Totalt antal poster:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="155"/>
         <source>Translated:</source>
-        <translation type="unfinished"></translation>
+        <translation>Översatta:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="158"/>
         <source>Untranslated:</source>
-        <translation type="unfinished"></translation>
+        <translation>Oöversatta:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="161"/>
         <source>Fuzzy/Needs work:</source>
-        <translation type="unfinished"></translation>
+        <translation>Osäkra/Behöver granskas:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="168"/>
         <source>Text Statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>Textstatistik</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="177"/>
         <source>Source text:</source>
-        <translation type="unfinished"></translation>
+        <translation>Källtext:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="178"/>
         <source>Translation:</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättning:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="180"/>
         <source>Words:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ord:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="184"/>
         <source>Characters:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tecken:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="188"/>
         <source>Expansion ratio:</source>
-        <translation type="unfinished"></translation>
+        <translation>Expansionsförhållande:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="194"/>
         <source>Longest Source Strings</source>
-        <translation type="unfinished"></translation>
+        <translation>Längsta källsträngar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="200"/>
         <source>Entry #</source>
-        <translation type="unfinished"></translation>
+        <translation>Post nr</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="200"/>
         <source>Length</source>
-        <translation type="unfinished"></translation>
+        <translation>Längd</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="200"/>
         <source>Text Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Textförhandsgranskning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="219"/>
         <source>Additional Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Ytterligare detaljer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="268"/>
         <source>N/A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ej tillämpligt</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/statistics_dialog.py" line="312"/>
         <source>No additional details available.</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga ytterligare detaljer tillgängliga.</translation>
     </message>
 </context>
 <context>
@@ -4959,47 +4983,47 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="127"/>
         <source>Translation Statistics</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningsstatistik</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="131"/>
         <source>Total Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Totalt antal översättningar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="132"/>
         <source>Files Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Filer slutförda</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="133"/>
         <source>Languages Used</source>
-        <translation type="unfinished"></translation>
+        <translation>Använda språk</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="134"/>
         <source>File Formats</source>
-        <translation type="unfinished"></translation>
+        <translation>Filformat</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="135"/>
         <source>Current Streak</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktuell svit</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="136"/>
         <source>Best Streak</source>
-        <translation type="unfinished"></translation>
+        <translation>Bästa svit</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="137"/>
         <source>Manual Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Manuella översättningar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="138"/>
         <source>Auto Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatiska översättningar</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="158"/>
@@ -5014,7 +5038,7 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/achievements_dialog.py" line="171"/>
         <source>Formats: {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Format: {}</translation>
     </message>
 </context>
 <context>
@@ -5022,132 +5046,133 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="46"/>
         <source>Pull</source>
-        <translation type="unfinished"></translation>
+        <translation>Hämta</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="46"/>
         <source>Push</source>
-        <translation type="unfinished"></translation>
+        <translation>Skicka</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="77"/>
         <source>Loading resources…</source>
-        <translation type="unfinished"></translation>
+        <translation>Läser in resurser…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="81"/>
         <source>Resources</source>
-        <translation type="unfinished"></translation>
+        <translation>Resurser</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="89"/>
         <source>Language:</source>
-        <translation type="unfinished">Språk:</translation>
+        <translation>Språk:</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="91"/>
         <source>e.g. sv, de, fr</source>
-        <translation type="unfinished"></translation>
+        <translation>t.ex. sv, de, fr</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="96"/>
         <source>Pull Translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Hämta översättning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="99"/>
         <source>Push Translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Skicka översättning</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="130"/>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="134"/>
         <source>✗ Error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>✗ Fel: %1</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="141"/>
         <source>Transifex not configured. Open Platform Settings first.</source>
-        <translation type="unfinished"></translation>
+        <translation>Transifex inte konfigurerat. Öppna plattformsinställningarna först.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="150"/>
         <source>Weblate not configured. Open Platform Settings first.</source>
-        <translation type="unfinished"></translation>
+        <translation>Weblate inte konfigurerat. Öppna plattformsinställningarna först.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="163"/>
         <source>Crowdin not configured. Open Platform Settings first.</source>
-        <translation type="unfinished"></translation>
+        <translation>Crowdin inte konfigurerat. Öppna plattformsinställningarna först.</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="167"/>
         <source>Unknown</source>
-        <translation type="unfinished">Okänt</translation>
+        <translation>Okänt</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="175"/>
         <source>No resources found</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga resurser hittades</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="184"/>
         <source>%1 resources found</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 resurser hittades</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="192"/>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="254"/>
         <source>Select a resource first</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj en resurs först</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="197"/>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="259"/>
         <source>Enter a language code</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange en språkkod</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="202"/>
         <source>Downloading…</source>
-        <translation type="unfinished"></translation>
+        <translation>Hämtar…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="214"/>
         <source>✓ Downloaded at %1
 Saved to: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>✓ Hämtad %1
+Sparad till: %2</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="223"/>
         <source>✗ Pull failed: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>✗ Hämtning misslyckades: %1</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="244"/>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="298"/>
         <source>Unknown platform</source>
-        <translation type="unfinished"></translation>
+        <translation>Okänd plattform</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="250"/>
         <source>No file loaded to push</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen fil laddad att skicka</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="264"/>
         <source>Uploading…</source>
-        <translation type="unfinished"></translation>
+        <translation>Laddar upp…</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="272"/>
         <source>✓ Uploaded at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>✓ Uppladdad %1</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/sync_dialog.py" line="276"/>
         <source>✗ Push failed: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>✗ Sändning misslyckades: %1</translation>
     </message>
 </context>
 <context>
@@ -5155,22 +5180,22 @@ Saved to: %2</source>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="48"/>
         <source>Unicode Inspector</source>
-        <translation type="unfinished"></translation>
+        <translation>Unicode-inspektör</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="61"/>
         <source>Text to Analyze</source>
-        <translation type="unfinished"></translation>
+        <translation>Text att analysera</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="66"/>
         <source>Enter or paste text to analyze...</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange eller klistra in text att analysera...</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="72"/>
         <source>Analyze</source>
-        <translation type="unfinished"></translation>
+        <translation>Analysera</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="76"/>
@@ -5185,22 +5210,22 @@ Saved to: %2</source>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="94"/>
         <source>Character Analysis</source>
-        <translation type="unfinished"></translation>
+        <translation>Teckenanalys</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="100"/>
         <source>Pos</source>
-        <translation type="unfinished"></translation>
+        <translation>Pos</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="100"/>
         <source>Char</source>
-        <translation type="unfinished"></translation>
+        <translation>Tecken</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="100"/>
         <source>Code Point</source>
-        <translation type="unfinished"></translation>
+        <translation>Kodpunkt</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="101"/>
@@ -5215,17 +5240,17 @@ Saved to: %2</source>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="101"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Block</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="119"/>
         <source>Character Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Teckendetaljer</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="150"/>
         <source>Copy Analysis</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera analys</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="157"/>
@@ -5240,12 +5265,12 @@ Saved to: %2</source>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="249"/>
         <source> | ⚠️ Check highlighted characters</source>
-        <translation type="unfinished"></translation>
+        <translation> | ⚠️ Kontrollera markerade tecken</translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/unicode_dialog.py" line="341"/>
         <source>Enter text to analyze Unicode characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange text för att analysera Unicode-tecken</translation>
     </message>
 </context>
 <context>
