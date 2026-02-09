@@ -291,20 +291,30 @@ class StatisticsDialog(QDialog):
         
         if stats.total_entries > 0:
             avg_src_length = stats.source_chars / stats.total_entries
-            details.append(f"{self.tr('Average source length')}: {avg_src_length:.1f} {self.tr('characters')}")
-            
+            #: Average source length label
+            lbl = self.tr("Average source length")
+            #: characters unit
+            chars = self.tr("characters")
+            details.append(f"{lbl}: {avg_src_length:.1f} {chars}")
+
         if stats.translated_entries > 0:
             avg_trans_length = stats.translation_chars / stats.translated_entries
-            details.append(f"{self.tr('Average translation length')}: {avg_trans_length:.1f} {self.tr('characters')}")
-            
+            #: Average translation length label
+            lbl2 = self.tr("Average translation length")
+            details.append(f"{lbl2}: {avg_trans_length:.1f} {chars}")
+
         if stats.source_words > 0:
             words_per_entry = stats.source_words / stats.total_entries
-            details.append(f"{self.tr('Average words per entry')}: {words_per_entry:.1f}")
-            
+            #: Average words per entry label
+            lbl3 = self.tr("Average words per entry")
+            details.append(f"{lbl3}: {words_per_entry:.1f}")
+
         # Translation density
         if stats.total_entries > 0:
             completion = (stats.translated_entries + stats.fuzzy_entries) / stats.total_entries * 100
-            details.append(f"{self.tr('Translation completion')}: {completion:.1f}%")
+            #: Translation completion label
+            lbl4 = self.tr("Translation completion")
+            details.append(f"{lbl4}: {completion:.1f}%")
             
         if details:
             self._details_text.setPlainText('\n'.join(details))

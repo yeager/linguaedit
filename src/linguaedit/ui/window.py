@@ -1047,7 +1047,8 @@ class LinguaEditWindow(QMainWindow):
         self._sidebar.addSeparator()
         # Quality
         self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_DialogApplyButton), self.tr("Validate"), self._on_lint)
-        self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_MediaPlay), self.tr("Compile"), self._on_compile)
+        self._compile_action = self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_MediaPlay), self.tr("Compile"), self._on_compile)
+        self._compile_status = None  # None=neutral, True=ok, False=error
         self._sidebar.addSeparator()
         # Translation
         self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_ComputerIcon), self.tr("Pre-translate"), self._on_pretranslate_all)
@@ -1366,17 +1367,51 @@ class LinguaEditWindow(QMainWindow):
 
         style = self.style()
 
+        def _make_arrow_icon(direction: str, color: str = "#8ab4f8") -> QIcon:
+            """Create a modern rounded arrow icon."""
+            from PySide6.QtGui import QPixmap, QPainter, QPen, QPainterPath
+            px = QPixmap(24, 24)
+            px.fill(QColor(0, 0, 0, 0))
+            p = QPainter(px)
+            p.setRenderHint(QPainter.RenderHint.Antialiasing)
+            pen = QPen(QColor(color), 2.5, Qt.PenStyle.SolidLine, Qt.PenCapStyle.RoundCap, Qt.PenJoinStyle.RoundJoin)
+            p.setPen(pen)
+            if direction == "undo":  # curved left arrow
+                path = QPainterPath()
+                path.moveTo(16, 6)
+                path.cubicTo(10, 6, 6, 10, 6, 14)
+                path.lineTo(6, 10)
+                p.drawPath(path)
+                p.drawLine(6, 14, 10, 14)
+                p.drawLine(6, 14, 6, 10)
+            elif direction == "redo":  # curved right arrow
+                path = QPainterPath()
+                path.moveTo(8, 6)
+                path.cubicTo(14, 6, 18, 10, 18, 14)
+                path.lineTo(18, 10)
+                p.drawPath(path)
+                p.drawLine(14, 14, 18, 14)
+                p.drawLine(18, 14, 18, 10)
+            elif direction == "up":  # chevron up
+                p.drawLine(6, 15, 12, 8)
+                p.drawLine(12, 8, 18, 15)
+            elif direction == "down":  # chevron down
+                p.drawLine(6, 9, 12, 16)
+                p.drawLine(12, 16, 18, 9)
+            p.end()
+            return QIcon(px)
+
         # Undo / Redo
-        tb.addAction(style.standardIcon(style.StandardPixmap.SP_ArrowBack), self.tr("Undo"), self._do_undo)
-        tb.addAction(style.standardIcon(style.StandardPixmap.SP_ArrowForward), self.tr("Redo"), self._do_redo)
+        tb.addAction(_make_arrow_icon("undo", "#f0a050"), self.tr("Undo"), self._do_undo)
+        tb.addAction(_make_arrow_icon("redo", "#f0a050"), self.tr("Redo"), self._do_redo)
         tb.addSeparator()
 
         # Navigation
-        tb.addAction(style.standardIcon(style.StandardPixmap.SP_ArrowUp), self.tr("Previous"), lambda: self._navigate(-1))
+        tb.addAction(_make_arrow_icon("up", "#8ab4f8"), self.tr("Previous"), lambda: self._navigate(-1))
         self._nav_counter_label = QLabel(" 0 / 0 ")
         self._nav_counter_label.setStyleSheet("font-weight: bold; padding: 0 4px;")
         tb.addWidget(self._nav_counter_label)
-        tb.addAction(style.standardIcon(style.StandardPixmap.SP_ArrowDown), self.tr("Next"), lambda: self._navigate(1))
+        tb.addAction(_make_arrow_icon("down", "#8ab4f8"), self.tr("Next"), lambda: self._navigate(1))
         tb.addSeparator()
 
         # Copy Source
@@ -2029,6 +2064,11 @@ class LinguaEditWindow(QMainWindow):
         if self._trans_block:
             return
         self._push_undo_snapshot()
+        # Reset compile icon — file changed since last compile
+        if hasattr(self, '_compile_action') and self._compile_status is not None:
+            style = self.style()
+            self._compile_action.setIcon(style.standardIcon(style.StandardPixmap.SP_MediaPlay))
+            self._compile_status = None
         # Auto-clear fuzzy flag when user edits a fuzzy entry
         if self._current_index >= 0 and self._file_data and self._fuzzy_check.isChecked():
             self._fuzzy_check.setChecked(False)  # triggers _on_fuzzy_toggled
@@ -3068,8 +3108,10 @@ class LinguaEditWindow(QMainWindow):
     # ══════════════════════════════════════════════════════════════
 
     def _on_open(self):
-        path, _ = QFileDialog.getOpenFileName(self, self.tr("Open Translation File"), "", _FILE_FILTER)
+        last_dir = self._app_settings.get_value("last_open_directory", "")
+        path, _ = QFileDialog.getOpenFileName(self, self.tr("Open Translation File"), last_dir, _FILE_FILTER)
         if path:
+            self._app_settings.set_value("last_open_directory", str(Path(path).parent))
             self._load_file(path)
 
     def _load_file(self, path: str):
@@ -3077,6 +3119,11 @@ class LinguaEditWindow(QMainWindow):
         if not p.exists():
             self._show_toast(self.tr("File not found: %s") % str(p))
             return
+        # Reset compile icon to neutral
+        if hasattr(self, '_compile_action'):
+            style = self.style()
+            self._compile_action.setIcon(style.standardIcon(style.StandardPixmap.SP_MediaPlay))
+            self._compile_status = None
 
         if self._file_data and self._tab_widget.count() > 0:
             self._save_current_tab()
@@ -4463,6 +4510,39 @@ class LinguaEditWindow(QMainWindow):
         dlg.subtitle_extracted.connect(self._load_file)
         dlg.exec()
 
+    def _update_compile_icon(self, success: bool):
+        """Update compile action icon: green check = OK, red X = error."""
+        if not hasattr(self, '_compile_action'):
+            return
+        from PySide6.QtGui import QPixmap, QPainter
+        px = QPixmap(32, 32)
+        px.fill(QColor(0, 0, 0, 0))
+        painter = QPainter(px)
+        painter.setRenderHint(QPainter.RenderHint.Antialiasing)
+        if success:
+            painter.setPen(Qt.PenStyle.NoPen)
+            painter.setBrush(QColor("#2ecc71"))
+            painter.drawEllipse(2, 2, 28, 28)
+            painter.setPen(QColor("white"))
+            font = painter.font()
+            font.setPixelSize(20)
+            font.setBold(True)
+            painter.setFont(font)
+            painter.drawText(px.rect(), Qt.AlignmentFlag.AlignCenter, "✓")
+        else:
+            painter.setPen(Qt.PenStyle.NoPen)
+            painter.setBrush(QColor("#e74c3c"))
+            painter.drawEllipse(2, 2, 28, 28)
+            painter.setPen(QColor("white"))
+            font = painter.font()
+            font.setPixelSize(20)
+            font.setBold(True)
+            painter.setFont(font)
+            painter.drawText(px.rect(), Qt.AlignmentFlag.AlignCenter, "✗")
+        painter.end()
+        self._compile_action.setIcon(QIcon(px))
+        self._compile_status = success
+
     def _on_compile(self):
         """Compile the current translation file (.po → .mo, .ts → .qm)."""
         if not self._file_data:
@@ -4478,6 +4558,7 @@ class LinguaEditWindow(QMainWindow):
                 po = polib.pofile(str(path))
                 po.save_as_mofile(str(mo_path))
                 self._show_toast(self.tr("Compiled: %s") % str(mo_path))
+                self._update_compile_icon(True)
             except ImportError:
                 # Fallback to msgfmt
                 if shutil.which("msgfmt"):
@@ -4487,12 +4568,16 @@ class LinguaEditWindow(QMainWindow):
                     )
                     if result.returncode == 0:
                         self._show_toast(self.tr("Compiled: %s") % str(mo_path))
+                        self._update_compile_icon(True)
                     else:
                         self._show_toast(self.tr("msgfmt error: %s") % result.stderr.strip())
+                        self._update_compile_icon(False)
                 else:
                     self._show_toast(self.tr("Cannot compile: install 'polib' or 'gettext' (msgfmt)"))
+                    self._update_compile_icon(False)
             except Exception as e:
                 self._show_toast(self.tr("Compile error: %s") % str(e))
+                self._update_compile_icon(False)
 
         elif self._file_type == "ts":
             qm_path = path.with_suffix(".qm")
@@ -4507,12 +4592,16 @@ class LinguaEditWindow(QMainWindow):
                 )
                 if result.returncode == 0:
                     self._show_toast(self.tr("Compiled: %s") % str(qm_path))
+                    self._update_compile_icon(True)
                 else:
                     self._show_toast(self.tr("lrelease error: %s") % result.stderr.strip())
+                    self._update_compile_icon(False)
             except Exception as e:
                 self._show_toast(self.tr("Compile error: %s") % str(e))
+                self._update_compile_icon(False)
         else:
             self._show_toast(self.tr("Compile not supported for %s files") % self._file_type)
+            self._update_compile_icon(False)
 
     # ── New Features Methods ─────────────────────────────────────
 
@@ -4609,8 +4698,8 @@ class LinguaEditWindow(QMainWindow):
         dlg = ConcordanceDialog(
             parent=self,
             initial_query=initial,
-            source_lang=self._app_settings.get("source_language", ""),
-            target_lang=self._app_settings.get("target_language", ""),
+            source_lang=self._app_settings.get_value("source_language", ""),
+            target_lang=self._app_settings.get_value("target_language", ""),
         )
         dlg.exec()
 
@@ -4911,8 +5000,8 @@ class LinguaEditWindow(QMainWindow):
             return
         
         entry = self._file_data.entries[self._current_index]
-        source = entry.msgid or ""
-        translation = entry.msgstr or ""
+        source = getattr(entry, 'msgid', None) or getattr(entry, 'source', '') or ""
+        translation = getattr(entry, 'msgstr', None) or getattr(entry, 'translation', '') or ""
         
         if not source.strip():
             self._show_toast(self.tr("No source text to review"))

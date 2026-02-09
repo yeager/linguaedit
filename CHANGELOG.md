@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v1.3.1 — "Polished & Translated" (2026-02-09)
+
+### Bug Fixes
+- Fixed TM autocomplete crash (`lookup_tm()` keyword argument mismatch)
+- Fixed Concordance dialog crash (`Settings.get()` vs `get_value()`)
+- Fixed AI Review crash with TS files (used PO-specific attributes)
+- Fixed `pyside6-lupdate` missing strings inside f-strings
+
+### Improvements
+- Compile button shows visual status: green ✓ (success), red ✗ (error), neutral (not compiled)
+- Compile icon resets to neutral when translation text is edited
+- Modern rounded arrow icons for Undo/Redo (orange) and Previous/Next (blue chevrons)
+- File open dialog remembers last used directory
+- Swedish translation 100% complete (1257/1257 strings)
+- 6 professional screenshots added to README and website
+
 ## 1.3.0 (2026-02-09) — Secure, Polished & Video-Ready
 
 ### Security

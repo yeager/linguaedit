@@ -275,7 +275,7 @@ class TranslationEditor(QPlainTextEdit):
         
         try:
             # Hämta från Translation Memory
-            tm_results = lookup_tm(partial_text, limit=10)
+            tm_results = lookup_tm(partial_text, max_results=10)
             for result in tm_results:
                 target_text = result.get("target", "")
                 if target_text and len(target_text.strip()) > 0:
