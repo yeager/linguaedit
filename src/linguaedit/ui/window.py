@@ -996,6 +996,10 @@ class LinguaEditWindow(QMainWindow):
         self._sidebar.addSeparator()
         self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_FileDialogDetailedView), self.tr("Settings"), self._on_preferences)
 
+        # Toolbar right-click customization
+        self._sidebar.setContextMenuPolicy(Qt.CustomContextMenu)
+        self._sidebar.customContextMenuRequested.connect(self._on_toolbar_context_menu)
+
         # ── Central widget ──
         central = QWidget()
         central_layout = QVBoxLayout(central)
@@ -1035,6 +1039,13 @@ class LinguaEditWindow(QMainWindow):
         sb.addPermanentWidget(self._sb_cursor)
 
         self._trans_view.cursorPositionChanged.connect(self._on_cursor_position_changed)
+        
+        # Install event filter for Tab/Shift+Tab navigation in translation editor
+        self._trans_view.installEventFilter(self)
+        
+        # Apply saved layout preference
+        if self._editor_on_right:
+            self._apply_editor_layout()
         
         # Feature 7: Character counter setup
         if self._app_settings.get_value("show_character_counter", True):
@@ -1306,14 +1317,29 @@ class LinguaEditWindow(QMainWindow):
         # Feature 7: Taggar
         QShortcut(QKeySequence("Ctrl+T"), self, self._add_tag)
 
-        # Feature 13: Fullscreen escape
-        QShortcut(QKeySequence("Escape"), self, self._exit_fullscreen_if_active)
+        # Feature 13: Fullscreen escape / Zen mode escape
+        QShortcut(QKeySequence("Escape"), self, self._on_escape_pressed)
 
         # Feature 13: Quick Actions
         QShortcut(QKeySequence("Ctrl+."), self, self._show_quick_actions)
         
         # Zen Mode
         QShortcut(QKeySequence("Ctrl+Shift+Z"), self, self._toggle_zen_mode)
+
+    def eventFilter(self, obj, event):
+        """Handle Tab/Shift+Tab in translation editor for navigation."""
+        from PySide6.QtCore import QEvent
+        if obj is self._trans_view and event.type() == QEvent.KeyPress:
+            if event.key() == Qt.Key_Tab and not event.modifiers():
+                self._tab_save_next()
+                return True
+            if event.key() == Qt.Key_Backtab or (event.key() == Qt.Key_Tab and event.modifiers() & Qt.ShiftModifier):
+                self._shift_tab_save_prev()
+                return True
+            if event.key() == Qt.Key_Return and event.modifiers() & Qt.ControlModifier:
+                self._ctrl_enter_save_next_untranslated()
+                return True
+        return super().eventFilter(obj, event)
 
     # ══════════════════════════════════════════════════════════════
     #  ENTRY TABLE (QTreeWidget)
@@ -5745,6 +5771,14 @@ class LinguaEditWindow(QMainWindow):
         self._is_fullscreen = False
         self._pre_fullscreen_state = None
     
+    def _on_escape_pressed(self):
+        """Handle Escape: exit zen mode first, then fullscreen."""
+        if self._zen_mode_active:
+            self._exit_zen_mode()
+            return
+        if self._is_fullscreen:
+            self._exit_fullscreen()
+
     def _exit_fullscreen_if_active(self):
         """Exit fullscreen if currently in fullscreen mode."""
         if self._is_fullscreen:
@@ -6222,3 +6256,9 @@ class LinguaEditWindow(QMainWindow):
             for action in self._sidebar.actions():
                 if action.text() in visibility:
                     action.setVisible(visibility[action.text()])
+
+    def _on_toolbar_context_menu(self, pos):
+        """Show context menu for toolbar customization."""
+        menu = QMenu(self)
+        menu.addAction(self.tr("Customize Toolbar…"), self._show_toolbar_customizer)
+        menu.exec(self._sidebar.mapToGlobal(pos))
