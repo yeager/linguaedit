@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=LinguaEdit
+GenericName=Translation Editor
+GenericName[sv]=Översättningsredigerare
+Comment=Professional translation editor for localization files
+Comment[sv]=Professionell översättningsredigerare för lokaliseringsfiler
+Exec=linguaedit-gui %F
+Icon=io.github.yeager.linguaedit
+Terminal=false
+Categories=Development;Translation;TextEditor;
+Keywords=translation;localization;l10n;i18n;po;gettext;xliff;
+StartupNotify=true
+MimeType=text/x-gettext-translation;text/x-gettext-translation-template;application/x-linguist;application/xliff+xml;application/x-xliff+xml;text/x-qt-linguist;application/json;text/yaml;text/x-java-properties;text/x-android-resource;application/x-arb;text/x-php;application/x-chrome-i18n;application/x-resx;application/x-apple-strings;text/x-godot-translation;application/x-sdlxliff;application/x-mqxliff;application/x-srt;text/vtt;application/x-tmx;

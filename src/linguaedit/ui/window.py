@@ -510,6 +510,16 @@ class LinguaEditWindow(QMainWindow):
         self._is_fullscreen = False
         self._pre_fullscreen_state = None
 
+        # UX improvements
+        self._zen_mode_active = False
+        self._zen_widget: ZenModeWidget | None = None
+        self._editor_on_right = self._app_settings.get_value("editor_on_right", False)
+        self._side_panel_expanded = True
+        self._saved_flash_timer = QTimer()
+        self._saved_flash_timer.setSingleShot(True)
+        self._saved_flash_timer.setInterval(300)
+        self._saved_flash_timer.timeout.connect(self._clear_saved_flash)
+
         self._build_ui()
         self._apply_settings()
         self._setup_shortcuts()
@@ -572,13 +582,14 @@ class LinguaEditWindow(QMainWindow):
         self._tab_widget.tabCloseRequested.connect(self._on_tab_close)
 
         # ── Main horizontal splitter: [editor area | side panel] ──
-        outer_splitter = QSplitter(Qt.Horizontal)
+        self._outer_splitter = QSplitter(Qt.Horizontal)
 
         # ── Left: vertical splitter [entry table | editors] ──
         self._v_splitter = QSplitter(Qt.Vertical)
 
         # ── Top: entry table with filter bar ──
-        table_container = QWidget()
+        self._table_container = QWidget()
+        table_container = self._table_container
         table_layout = QVBoxLayout(table_container)
         table_layout.setContentsMargins(0, 0, 0, 0)
         table_layout.setSpacing(2)
@@ -665,6 +676,10 @@ class LinguaEditWindow(QMainWindow):
         self._tree.setContextMenuPolicy(Qt.CustomContextMenu)
         self._tree.customContextMenuRequested.connect(self._show_tree_context_menu)
         
+        # Custom delegate for colored borders
+        self._entry_delegate = EntryItemDelegate(self._tree, dark_mode=_is_dark_theme())
+        self._tree.setItemDelegate(self._entry_delegate)
+        
         # Tree + minimap layout
         tree_minimap_layout = QHBoxLayout()
         tree_minimap_layout.setContentsMargins(0, 0, 0, 0)
@@ -697,7 +712,8 @@ class LinguaEditWindow(QMainWindow):
         self._v_splitter.addWidget(table_container)
 
         # ── Bottom: source + translation editors ──
-        editor_container = QWidget()
+        self._editor_container = QWidget()
+        editor_container = self._editor_container
         editor_layout = QVBoxLayout(editor_container)
         editor_layout.setContentsMargins(8, 4, 8, 0)
         editor_layout.setSpacing(4)
@@ -802,7 +818,7 @@ class LinguaEditWindow(QMainWindow):
         self._v_splitter.addWidget(editor_container)
         self._v_splitter.setSizes([400, 350])
 
-        outer_splitter.addWidget(self._v_splitter)
+        self._outer_splitter.addWidget(self._v_splitter)
 
         # ── Right: side panel (TM, string info, concordance) ──
         self._side_panel = QTabWidget()
@@ -939,8 +955,10 @@ class LinguaEditWindow(QMainWindow):
         preview_layout.addStretch()
         self._side_panel.addTab(preview_widget, self.tr("Preview"))
 
-        outer_splitter.addWidget(self._side_panel)
-        outer_splitter.setSizes([850, 300])
+        # Wrap side panel in collapsible container
+        self._collapsible_side = CollapsibleSidePanel(self._side_panel)
+        self._outer_splitter.addWidget(self._collapsible_side)
+        self._outer_splitter.setSizes([850, 300])
 
         # ── Left sidebar (quick actions — full panel) ──
         from PySide6.QtCore import QSize
@@ -989,7 +1007,7 @@ class LinguaEditWindow(QMainWindow):
         content_row.setContentsMargins(0, 0, 0, 0)
         content_row.setSpacing(0)
         content_row.addWidget(self._sidebar)
-        content_row.addWidget(outer_splitter, 1)
+        content_row.addWidget(self._outer_splitter, 1)
         central_layout.addLayout(content_row, 1)
         self.setCentralWidget(central)
 
