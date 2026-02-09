@@ -44,6 +44,7 @@ from PySide6.QtGui import (
     QAction, QKeySequence, QFont, QColor, QIcon, QBrush,
     QDragEnterEvent, QDropEvent, QPalette, QShortcut, QDesktopServices,
 )
+from PySide6.QtWidgets import QGraphicsOpacityEffect
 from PySide6.QtCore import QUrl
 
 from linguaedit import APP_ID, __version__
@@ -119,6 +120,7 @@ from linguaedit.ui.achievements_dialog import AchievementsDialog
 from linguaedit.ui.macro_dialog import MacroDialog
 from linguaedit.ui.concordance_dialog import ConcordanceDialog
 from linguaedit.ui.segment_ops import SplitDialog, MergePreviewDialog
+from linguaedit.ui.progress_ring import ProgressRing
 
 # ── Recent files helper ──────────────────────────────────────────────
 
@@ -523,6 +525,9 @@ class LinguaEditWindow(QMainWindow):
         self._saved_flash_timer.setSingleShot(True)
         self._saved_flash_timer.setInterval(300)
         self._saved_flash_timer.timeout.connect(self._clear_saved_flash)
+
+        self._horizontal_split = self._app_settings.get_value("horizontal_split", False)
+        self._context_panel = None
 
         self._build_ui()
         self._apply_settings()
@@ -1457,7 +1462,7 @@ class LinguaEditWindow(QMainWindow):
             QToolTip.hideText()
             return True
 
-        if obj is self._trans_view and event.type() == QEvent.KeyPress:
+        if getattr(self, '_trans_view', None) is not None and obj is self._trans_view and event.type() == QEvent.KeyPress:
             if event.key() == Qt.Key_Tab and not event.modifiers():
                 self._tab_save_next()
                 return True
@@ -4996,7 +5001,7 @@ class LinguaEditWindow(QMainWindow):
             if self._bookmarks_file.exists():
                 try:
                     bookmarks_data = json.loads(self._bookmarks_file.read_text("utf-8"))
-                except:
+                except (json.JSONDecodeError, OSError):
                     pass
             
             # Uppdatera för aktuell fil
@@ -5362,7 +5367,7 @@ class LinguaEditWindow(QMainWindow):
             if self._tags_file.exists():
                 try:
                     tags_data = json.loads(self._tags_file.read_text("utf-8"))
-                except:
+                except (json.JSONDecodeError, OSError):
                     pass
             
             # Uppdatera för aktuell fil

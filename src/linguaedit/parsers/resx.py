@@ -20,6 +20,24 @@ class RESXData:
     schema: str = ""
     headers: Dict[str, str] = None
 
+    @property
+    def total_count(self) -> int:
+        return len(self.entries)
+
+    @property
+    def translated_count(self) -> int:
+        return sum(1 for e in self.entries if e.msgstr)
+
+    @property
+    def untranslated_count(self) -> int:
+        return sum(1 for e in self.entries if not e.msgstr)
+
+    @property
+    def percent_translated(self) -> float:
+        if not self.entries:
+            return 100.0
+        return round(self.translated_count / len(self.entries) * 100, 1)
+
 
 def parse_resx(file_path: Union[str, Path]) -> RESXData:
     """Parse .NET RESX file."""

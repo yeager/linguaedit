@@ -1,0 +1,10 @@
+linguaedit (1.3.0) stable; urgency=medium
+
+  * Cross-platform credential storage (Keychain/Credential Locker/Secret Service)
+  * Video preview synced with subtitle editing
+  * Concordance search, segment split/merge
+  * UI: progress ring, minimap, context panel, quick actions
+  * Security: XXE protection in all XML parsers
+  * Bug fixes: RESX, Apple Strings, Unity Asset parsers
+
+ -- Daniel Nylander <daniel@danielnylander.se>  Sun, 09 Feb 2026 12:00:00 +0100

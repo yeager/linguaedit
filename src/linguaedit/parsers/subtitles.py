@@ -37,6 +37,24 @@ class SubtitleFileData:
     styles: List[str] = field(default_factory=list)  # VTT STYLE blocks
     notes: List[str] = field(default_factory=list)  # VTT NOTE blocks
 
+    @property
+    def total_count(self) -> int:
+        return len(self.entries)
+
+    @property
+    def translated_count(self) -> int:
+        return sum(1 for e in self.entries if e.translation)
+
+    @property
+    def untranslated_count(self) -> int:
+        return sum(1 for e in self.entries if not e.translation)
+
+    @property
+    def percent_translated(self) -> float:
+        if not self.entries:
+            return 100.0
+        return round(self.translated_count / len(self.entries) * 100, 1)
+
 
 def _parse_timestamp_srt(timestamp: str) -> str:
     """Parsa SRT timestamp format (HH:MM:SS,mmm)."""
@@ -231,7 +249,7 @@ def parse_subtitles(path: Union[str, Path]) -> SubtitleFileData:
     else:
         file_data = _parse_srt_content(content)
     
-    file_data.path = path
+    file_data.path = Path(path) if not isinstance(path, Path) else path
     file_data.encoding = encoding
     
     return file_data
@@ -240,7 +258,7 @@ def parse_subtitles(path: Union[str, Path]) -> SubtitleFileData:
 def save_subtitles(file_data: SubtitleFileData, path: Optional[Path] = None) -> None:
     """Spara subtitle-fil."""
     if path:
-        file_data.path = path
+        file_data.path = Path(path) if not isinstance(path, Path) else path
     
     if file_data.format == "vtt":
         _save_vtt(file_data)
