@@ -351,7 +351,7 @@ class HeaderDialog(QDialog):
                 dt = QDateTime.fromString(pot_date, "yyyy-MM-dd hh:mm")
                 if dt.isValid():
                     self._po_pot_date.setDateTime(dt)
-            except:
+            except Exception:
                 pass
                 
         revision_date = metadata.get("PO-Revision-Date", "")
@@ -360,7 +360,7 @@ class HeaderDialog(QDialog):
                 dt = QDateTime.fromString(revision_date, "yyyy-MM-dd hh:mm")
                 if dt.isValid():
                     self._po_revision_date.setDateTime(dt)
-            except:
+            except Exception:
                 pass
                 
         # Content-Type parsing

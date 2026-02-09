@@ -12,7 +12,7 @@ from PySide6.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
     QTextEdit, QLineEdit, QFileDialog, QMessageBox, QProgressBar,
     QGroupBox, QListWidget, QListWidgetItem, QSplitter,
-    QCheckBox, QComboBox, QSpinBox, QFormLayout
+    QCheckBox, QComboBox, QSpinBox, QFormLayout, QWidget
 )
 from PySide6.QtCore import Qt, Signal, QThread, QTimer
 from PySide6.QtGui import QPixmap, QFont, QIcon

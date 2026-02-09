@@ -96,6 +96,7 @@ from linguaedit.ui.regex_tester_dialog import RegexTesterDialog
 from linguaedit.ui.layout_simulator_dialog import LayoutSimulatorDialog
 from linguaedit.ui.locale_map_dialog import LocaleMapDialog
 from linguaedit.ui.ocr_dialog import OCRDialog
+from linguaedit.ui.context_panel import ContextPanel
 from linguaedit.services.settings import Settings
 from linguaedit.services.context_lookup import get_context_service
 from linguaedit.services.terminology import get_terminology_service
@@ -3554,19 +3555,6 @@ class LinguaEditWindow(QMainWindow):
         self._tabs[index] = td
         self._tab_widget.setCurrentIndex(index)
         return td
-
-    # ── Drag & drop ──────────────────────────────────────────────
-
-    def dragEnterEvent(self, event: QDragEnterEvent):
-        if event.mimeData().hasUrls():
-            event.acceptProposedAction()
-
-    def dropEvent(self, event: QDropEvent):
-        for url in event.mimeData().urls():
-            path = url.toLocalFile()
-            if path and Path(path).suffix in _ALL_EXTENSIONS:
-                self._load_file(path)
-                return
 
     # ══════════════════════════════════════════════════════════════
     #  TOOLS & DIALOGS

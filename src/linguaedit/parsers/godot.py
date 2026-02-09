@@ -50,7 +50,7 @@ def _parse_csv_content(content: str, encoding: str = "utf-8") -> GodotFileData:
     header = next(reader)
     
     if not header or len(header) < 2:
-        raise ValueError(self.tr("Invalid CSV format: missing header"))
+        raise ValueError("Invalid CSV format: missing header")
     
     # Första kolumnen är key, resten är språk
     languages = header[1:]

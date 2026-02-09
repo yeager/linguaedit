@@ -63,7 +63,7 @@ class QuickActionsMenu(QMenu):
                     source_term = term.source.lower()
                     if any(source_term in word or word in source_term for word in words):
                         glossary_terms.append(term)
-            except:
+            except Exception:
                 pass
             
             if glossary_terms:

@@ -766,7 +766,6 @@ class GitDiffDialog(QDialog):
         old_only = [k for k in old_dict if k not in new_dict]
         new_only = [k for k in new_dict if k not in old_dict]
 
-        from difflib import SequenceMatcher
         for old_key in old_only:
             best_ratio = 0
             best_new = None

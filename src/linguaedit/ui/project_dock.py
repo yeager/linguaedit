@@ -11,7 +11,7 @@ from PySide6.QtWidgets import (
     QTreeWidget, QTreeWidgetItem, QLabel, QPushButton,
     QLineEdit, QComboBox, QProgressBar, QMenu,
     QHeaderView, QAbstractItemView, QFileDialog,
-    QMessageBox, QToolButton, QFrame
+    QMessageBox, QToolButton, QFrame, QApplication
 )
 from PySide6.QtCore import Qt, Signal, QThread, QFileSystemWatcher
 from PySide6.QtGui import QAction, QIcon, QBrush, QColor, QPixmap
