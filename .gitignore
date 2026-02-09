@@ -9,5 +9,6 @@ build/
 *.spec
 !LinguaEdit.spec
 !LinguaEdit-windows.spec
+!scripts/linguaedit.spec
 linguaedit_0.4.0_all.deb
 *.qm
