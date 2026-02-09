@@ -109,6 +109,7 @@ from linguaedit.services.macros import get_macro_manager, MacroActionType
 from linguaedit.ui.plugin_dialog import PluginDialog
 from linguaedit.ui.history_dialog import HistoryDialog, FileHistoryDialog
 from linguaedit.ui.video_subtitle_dialog import VideoSubtitleDialog
+from linguaedit.ui.video_preview import VideoPreviewWidget
 from linguaedit.ui.zen_mode import ZenModeWidget
 from linguaedit.ui.entry_delegate import EntryItemDelegate
 from linguaedit.ui.collapsible_panel import CollapsibleSidePanel
@@ -410,6 +411,7 @@ class LinguaEditWindow(QMainWindow):
         self._file_type = None
         self._current_index = -1
         self._modified = False
+        self._video_preview = None
         self._app_settings = Settings.get()
         self._spell_lang = "en_US"
         self._trans_engine = self._app_settings["default_engine"]
@@ -1580,6 +1582,11 @@ class LinguaEditWindow(QMainWindow):
             start = entry.start_time.replace(".", fmt)
             end = entry.end_time.replace(".", fmt)
             self._timestamp_edit.setText(f"{start} --> {end}")
+
+            # Seek video preview to this timestamp
+            if hasattr(self, "_video_preview") and self._video_preview and self._video_preview.isVisible():
+                self._video_preview.seek_to_time(entry.start_time)
+                self._video_preview.show_subtitle(msgid)
         else:
             self._source_header.setText(f"<b>{self.tr('Source text')}</b>  <span style='color:gray'>({len(msgid.split())} {self.tr('words')})</span>")
             self._timestamp_frame.setVisible(False)
@@ -4280,12 +4287,13 @@ class LinguaEditWindow(QMainWindow):
         for ext in sorted(SUPPORTED_VIDEO_EXTENSIONS):
             candidate = parent / (stem + ext)
             if candidate.exists():
-                # Always show video preview when translating subtitles
-                dlg = VideoSubtitleDialog(self)
-                dlg.subtitle_extracted.connect(self._load_file)
-                dlg.open_video(candidate)
-                dlg.show()  # Non-modal so translator can work alongside
-                self._video_preview_dlg = dlg  # Keep reference
+                # Open video preview widget alongside editor
+                preview = VideoPreviewWidget(self)
+                preview.open_video(candidate)
+                preview.setWindowFlags(Qt.Window)
+                preview.resize(640, 400)
+                preview.show()
+                self._video_preview = preview  # Keep reference
                 return
 
     def _on_video_subtitles(self):
