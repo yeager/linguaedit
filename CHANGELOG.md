@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## 1.2.0 (2026-02-09) — The Translator's Dream
+
+### Editor & UX
+- **Zen Translation Mode** (Ctrl+Shift+Z) — distraction-free source → translation workflow
+- **Horizontal layout toggle** — editor on right or below (View menu)
+- **Inline MT suggestions** — DeepL/OpenAI suggestions appear as you translate
+- **Spell check** — red wavy underlines with suggestions and custom dictionary
+- **Poedit-style shortcuts** — Alt+Enter (next untranslated), Ctrl+Shift+Up/Down (prev/next fuzzy)
+- **Tab navigation flow** — Tab saves and moves to next, Ctrl+Enter to next untranslated
+- **Save flash animation** — green border flash confirming save
+- **Colored entry borders** — red (untranslated), orange (fuzzy), green (translated)
+- **Auto-collapsing side panel** — hides when empty, thin tab bar when collapsed
+- **Context-aware toolbar** — right-click to customize, overflow menu for less-used actions
+- **Dark theme** — comprehensive 200-line QSS dark theme
+- **"Reviewed" status filter** — filter entries by review status
+
+### File Formats
+- **SDLXLIFF** (Trados) parser with segment definitions and confirmation status
+- **MQXLIFF** (memoQ) parser with namespace detection and segment properties
+- **File type associations** — double-click .po/.ts/.xliff etc. to open in LinguaEdit (macOS + Linux)
+
+### Tools
+- **Project Dashboard** (Ctrl+D) — per-language progress bars, pie/bar charts, CSV export
+- **Git-based diff** (Ctrl+Shift+D) — compare with previous commits, detect outdated translations
+- **Batch Machine Translate** (Ctrl+Alt+T) — one-click MT for all untranslated with preview
+
 ## 1.1.0 (2026-02-09) — Video Subtitle Extraction
 
 ### Added
