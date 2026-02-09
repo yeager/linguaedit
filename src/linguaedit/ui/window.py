@@ -72,7 +72,8 @@ from linguaedit.services.glossary import get_terms, add_term, remove_term, check
 from linguaedit.services.qa_profiles import get_profiles, check_profile
 from linguaedit.services.report import generate_report
 from linguaedit.services.git_integration import (
-    get_status, get_diff, stage_file, commit, get_branches, switch_branch, create_branch
+    get_status, get_diff, stage_file, commit, get_branches, switch_branch, create_branch,
+    get_file_at_commit, get_commits_for_file,
 )
 from linguaedit.ui.platform_dialog import PlatformSettingsDialog
 from linguaedit.ui.sync_dialog import SyncDialog
@@ -108,6 +109,10 @@ from linguaedit.services.macros import get_macro_manager, MacroActionType
 from linguaedit.ui.plugin_dialog import PluginDialog
 from linguaedit.ui.history_dialog import HistoryDialog, FileHistoryDialog
 from linguaedit.ui.video_subtitle_dialog import VideoSubtitleDialog
+from linguaedit.ui.zen_mode import ZenModeWidget
+from linguaedit.ui.entry_delegate import EntryItemDelegate
+from linguaedit.ui.collapsible_panel import CollapsibleSidePanel
+from linguaedit.ui.toolbar_customizer import ToolbarCustomizeDialog
 from linguaedit.ui.unicode_dialog import UnicodeDialog
 from linguaedit.ui.achievements_dialog import AchievementsDialog
 from linguaedit.ui.macro_dialog import MacroDialog
@@ -1079,6 +1084,7 @@ class LinguaEditWindow(QMainWindow):
         catalog_menu = mb.addMenu(self.tr("&Catalog"))
         catalog_menu.addAction(self.tr("Validate (Lint)"), self._on_lint, QKeySequence("Ctrl+Shift+V"))
         catalog_menu.addAction(self.tr("Pre-translate…"), self._on_pretranslate_all, QKeySequence("Ctrl+Shift+T"))
+        catalog_menu.addAction(self.tr("Batch Translate…"), self._show_batch_translate_dialog, QKeySequence("Ctrl+Alt+T"))
         catalog_menu.addAction(self.tr("Spell check current"), self._run_spellcheck, QKeySequence("F7"))
         catalog_menu.addAction(self.tr("File metadata…"), self._on_show_metadata)
         catalog_menu.addAction(self.tr("Edit Header…"), self._show_header_dialog, QKeySequence("Ctrl+Shift+H"))
@@ -1114,7 +1120,9 @@ class LinguaEditWindow(QMainWindow):
         tools_menu = mb.addMenu(self.tr("&Tools"))
         tools_menu.addAction(self.tr("AI Review"), self._show_ai_review, QKeySequence("Ctrl+Shift+A"))
         tools_menu.addSeparator()
-        tools_menu.addAction(self.tr("Compare Files…"), self._show_diff_dialog, QKeySequence("Ctrl+D"))
+        tools_menu.addAction(self.tr("Compare Files…"), self._show_diff_dialog)
+        tools_menu.addAction(self.tr("Diff with Previous Version…"), self._show_git_diff_dialog, QKeySequence("Ctrl+Shift+D"))
+        tools_menu.addAction(self.tr("Project Dashboard"), self._show_dashboard, QKeySequence("Ctrl+D"))
         tools_menu.addSeparator()
         # Feature 3: TMX Import/Export
         tmx_menu = tools_menu.addMenu(self.tr("TMX"))
@@ -2412,6 +2420,9 @@ class LinguaEditWindow(QMainWindow):
         app = QApplication.instance()
         settings = Settings.get()
         settings["theme"] = theme
+
+        # Clear stylesheet first (dark theme sets one)
+        app.setStyleSheet("")
 
         if theme == "dark":
             self._apply_dark_theme(app)
@@ -4273,6 +4284,73 @@ class LinguaEditWindow(QMainWindow):
         """Show the file comparison dialog."""
         dialog = DiffDialog(self)
         dialog.exec()
+
+    def _show_git_diff_dialog(self):
+        """Compare current file with a previous git commit."""
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+        entries = self._get_entries()
+        dialog = GitDiffDialog(
+            self,
+            file_path=str(self._file_data.path),
+            file_type=self._file_type,
+            current_entries=entries,
+        )
+        dialog.exec()
+
+    def _show_dashboard(self):
+        """Show the project dashboard."""
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+        # Gather all open tabs as "languages"
+        project_files = []
+        for tab_idx, td in self._tabs.items():
+            if td.file_data:
+                label = Path(td.file_path).name if td.file_path else f"Tab {tab_idx}"
+                # Temporarily get entries from this tab
+                old_data, old_type = self._file_data, self._file_type
+                self._file_data, self._file_type = td.file_data, td.file_type
+                entries = self._get_entries()
+                self._file_data, self._file_type = old_data, old_type
+                project_files.append((label, entries))
+        if not project_files:
+            # Just use current file
+            entries = self._get_entries()
+            name = Path(str(self._file_data.path)).name
+            project_files = [(name, entries)]
+        dialog = DashboardDialog(self, project_files=project_files)
+        dialog.exec()
+
+    def _show_batch_translate_dialog(self):
+        """Show the batch machine translate dialog."""
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+        entries = self._get_entries()
+        extra = self._build_engine_kwargs()
+        dialog = BatchTranslateDialog(
+            self,
+            entries=entries,
+            default_engine=self._trans_engine,
+            source_lang=self._trans_source,
+            target_lang=self._trans_target,
+            extra_kwargs=extra,
+        )
+        dialog.translations_accepted.connect(self._apply_batch_translations)
+        dialog.exec()
+
+    def _apply_batch_translations(self, results: list):
+        """Apply batch translation results: [(index, text, mark_fuzzy), ...]."""
+        for idx, text, mark_fuzzy in results:
+            self._set_entry_translation(idx, text)
+            if mark_fuzzy:
+                self._set_entry_fuzzy(idx, True)
+        self._modified = True
+        self._populate_list()
+        self._update_stats()
+        self._show_toast(self.tr("%d translations applied") % len(results))
 
     def _show_project_dock(self):
         """Show or create the project dock widget."""
