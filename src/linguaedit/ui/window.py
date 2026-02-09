@@ -3008,11 +3008,21 @@ class LinguaEditWindow(QMainWindow):
                 self._file_data = parse_resx(p)
                 self._file_type = "resx"
             elif p.suffix.lower() in (".mkv", ".mp4", ".avi", ".mov", ".webm", ".flv", ".wmv", ".ogv", ".mpg", ".mpeg", ".m2ts", ".3gp"):
-                # Video file — open extraction dialog instead
+                # Video file — ask to extract subtitles, then show dialog
+                reply = QMessageBox.question(
+                    self,
+                    self.tr("Video file"),
+                    self.tr("Would you like to extract subtitles from this video?"),
+                    QMessageBox.Yes | QMessageBox.No,
+                    QMessageBox.Yes,
+                )
                 dlg = VideoSubtitleDialog(self)
                 dlg.subtitle_extracted.connect(self._load_file)
                 dlg.open_video(p)
-                dlg.exec()
+                if reply == QMessageBox.Yes:
+                    dlg.exec()
+                else:
+                    dlg.show()
                 return
             else:
                 self._show_toast(self.tr("Unsupported file type: %s") % p.suffix)

@@ -511,7 +511,7 @@ class VideoSubtitleDialog(QDialog):
                 )
 
     def _do_extract(self, output_path: Optional[Path] = None) -> Optional[Path]:
-        """Perform the actual extraction."""
+        """Perform the actual extraction with progress feedback."""
         if not self._video_path or not self._tracks:
             return None
 
@@ -526,11 +526,23 @@ class VideoSubtitleDialog(QDialog):
             output_path = self._video_path.with_suffix(fmt)
 
         self._progress.setVisible(True)
-        self._progress.setRange(0, 0)  # indeterminate
+        self._progress.setRange(0, 100)
+        self._progress.setValue(0)
+        self._progress.setFormat(self.tr("Extraherar undertexter… %p%"))
         QApplication.processEvents()
 
+        def _on_progress(pct: float):
+            self._progress.setValue(int(pct * 100))
+            QApplication.processEvents()
+
         try:
-            result = extract_subtitle(self._video_path, track, output_path, fmt)
+            result = extract_subtitle(
+                self._video_path, track, output_path, fmt,
+                progress_callback=_on_progress,
+                duration=self._duration,
+            )
+            self._progress.setValue(100)
+            QApplication.processEvents()
             self._progress.setVisible(False)
             return result
         except Exception as e:

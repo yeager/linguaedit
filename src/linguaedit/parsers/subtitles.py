@@ -260,8 +260,9 @@ def _save_srt(file_data: SubtitleFileData) -> None:
         end = _format_timestamp_srt(entry.end_time)
         lines.append(f"{start} --> {end}")
         
-        # Text
-        lines.append(entry.text)
+        # Text (use translation if available, otherwise original)
+        text = entry.translation if entry.translation else entry.text
+        lines.append(text)
         lines.append("")  # Tom rad mellan entries
     
     content = '\n'.join(lines)
@@ -295,8 +296,9 @@ def _save_vtt(file_data: SubtitleFileData) -> None:
             timing_line += f" {entry.cue_settings}"
         lines.append(timing_line)
         
-        # Text
-        lines.append(entry.text)
+        # Text (use translation if available, otherwise original)
+        text = entry.translation if entry.translation else entry.text
+        lines.append(text)
         lines.append("")  # Tom rad mellan cues
     
     content = '\n'.join(lines)
