@@ -528,6 +528,10 @@ class LinguaEditWindow(QMainWindow):
         self._apply_settings()
         self._setup_shortcuts()
 
+        # Apply saved split orientation
+        if self._horizontal_split:
+            self._apply_split_orientation()
+
     # ── Settings ──────────────────────────────────────────────────
 
     def _apply_settings(self):
@@ -1847,6 +1851,10 @@ class LinguaEditWindow(QMainWindow):
         self._show_tm_suggestions(msgid)
         self._display_comment_threads()
         self._update_split_view(idx)
+
+        # Update context panel and quick toolbar
+        self._update_context_panel(msgid)
+        self._update_quick_toolbar_state()
         self._run_inline_lint()
         
         # Update minimap current index
@@ -4598,6 +4606,20 @@ class LinguaEditWindow(QMainWindow):
         self._populate_list()
         self._update_stats()
         self._show_toast(self.tr("Applied changes to %d entries") % len(modified_entries))
+
+    def _show_concordance_dialog(self):
+        """Show the concordance search dialog."""
+        # Pre-fill with selected text if any
+        initial = ""
+        if hasattr(self, '_source_view') and self._source_view.textCursor().hasSelection():
+            initial = self._source_view.textCursor().selectedText()
+        dlg = ConcordanceDialog(
+            parent=self,
+            initial_query=initial,
+            source_lang=self._app_settings.get("source_language", ""),
+            target_lang=self._app_settings.get("target_language", ""),
+        )
+        dlg.exec()
 
     def _show_glossary_dialog(self):
         """Show the glossary management dialog.""" 

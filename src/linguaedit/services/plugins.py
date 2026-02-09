@@ -112,7 +112,19 @@ class PluginManager(QObject):
         self.plugins_changed.emit()
     
     def _load_plugin(self, plugin_file: Path):
-        """Load a single plugin file."""
+        """Load a single plugin file.
+
+        SECURITY NOTE: Plugins execute arbitrary Python code. Only load
+        plugins from the trusted plugin directory. Users should verify
+        plugin source before installing.
+        """
+        # Verify plugin is inside the expected directory (prevent path traversal)
+        try:
+            plugin_file.resolve().relative_to(self._plugin_dir.resolve())
+        except ValueError:
+            print(f"SECURITY: Refusing to load plugin outside plugin dir: {plugin_file}")
+            return
+
         spec = importlib.util.spec_from_file_location(
             plugin_file.stem, plugin_file
         )

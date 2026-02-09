@@ -8,6 +8,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Iterator
 
+from linguaedit.parsers import safe_parse_xml
+
 from linguaedit.services.tm import TM_DB
 
 
@@ -86,7 +88,7 @@ class TMXService:
         imported = 0
         
         try:
-            tree = ET.parse(tmx_path)
+            tree = safe_parse_xml(tmx_path)
             tmx = tree.getroot()
             
             if tmx.tag != "tmx":
@@ -174,7 +176,7 @@ class TMXService:
         errors = []
         
         try:
-            tree = ET.parse(tmx_path)
+            tree = safe_parse_xml(tmx_path)
             tmx = tree.getroot()
             
             # Check root element
@@ -229,7 +231,7 @@ class TMXService:
         }
         
         try:
-            tree = ET.parse(tmx_path)
+            tree = safe_parse_xml(tmx_path)
             tmx = tree.getroot()
             
             info["valid"] = True
