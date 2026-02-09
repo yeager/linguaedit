@@ -4280,19 +4280,12 @@ class LinguaEditWindow(QMainWindow):
         for ext in sorted(SUPPORTED_VIDEO_EXTENSIONS):
             candidate = parent / (stem + ext)
             if candidate.exists():
-                reply = QMessageBox.question(
-                    self,
-                    self.tr("Video found"),
-                    self.tr("A matching video file was found:\n%s\n\n"
-                            "Would you like to open the video preview?") % candidate.name,
-                    QMessageBox.Yes | QMessageBox.No,
-                    QMessageBox.Yes,
-                )
-                if reply == QMessageBox.Yes:
-                    dlg = VideoSubtitleDialog(self)
-                    dlg.subtitle_extracted.connect(self._load_file)
-                    dlg.open_video(candidate)
-                    dlg.exec()
+                # Always show video preview when translating subtitles
+                dlg = VideoSubtitleDialog(self)
+                dlg.subtitle_extracted.connect(self._load_file)
+                dlg.open_video(candidate)
+                dlg.show()  # Non-modal so translator can work alongside
+                self._video_preview_dlg = dlg  # Keep reference
                 return
 
     def _on_video_subtitles(self):
