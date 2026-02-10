@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## [1.4.0] — 2026-02-10
+
+### Added
+- Save confirmation dialog when closing tabs with unsaved changes
+- Scrollbars on comment and plural editor fields
+- FFmpeg subtitle extraction now shows progress bar with cancel support
+- FFmpeg error handling with user-friendly warning dialogs
+
+### Fixed
+- Fuzzy toggle button now works correctly for TS files (no longer auto-cleared on save)
+- Fuzzy toggle button now works correctly for SDLXLIFF/MQXLIFF files (confirmed flag respects fuzzy state)
+- Side panel can now be freely resized (removed maximum width constraint)
+- FFmpeg timeout reduced from 120s to 30s for faster error recovery
+
+### Changed
+- Side panel minimum width reduced to 200px for more flexible layouts
+
 ## v1.3.2 — "Rock Solid" (2026-02-09)
 
 ### Bug Fixes

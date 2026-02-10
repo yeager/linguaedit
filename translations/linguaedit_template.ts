@@ -1984,7 +1984,7 @@ This will replace the current text with:
     <name>LinguaEditWindow</name>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="395"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3596"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3626"/>
         <source>LinguaEdit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2100,7 +2100,7 @@ This will replace the current text with:
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="695"/>
         <location filename="../src/linguaedit/ui/window.py" line="1557"/>
-        <location filename="../src/linguaedit/ui/window.py" line="5683"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5715"/>
         <source>Tags</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2111,34 +2111,34 @@ This will replace the current text with:
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="740"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3096"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3502"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3642"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3668"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3732"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3750"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3779"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3933"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3960"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3979"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3988"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4004"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4044"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4192"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4220"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4577"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4687"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4759"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4778"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4794"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4808"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4832"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4873"/>
-        <location filename="../src/linguaedit/ui/window.py" line="5349"/>
-        <location filename="../src/linguaedit/ui/window.py" line="5549"/>
-        <location filename="../src/linguaedit/ui/window.py" line="5715"/>
-        <location filename="../src/linguaedit/ui/window.py" line="6017"/>
-        <location filename="../src/linguaedit/ui/window.py" line="6663"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3098"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3506"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3672"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3698"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3762"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3780"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3809"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3963"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3990"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4009"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4018"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4034"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4074"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4222"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4250"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4609"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4719"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4791"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4810"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4826"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4840"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4864"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4905"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5381"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5581"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5747"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6049"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6695"/>
         <source>No file loaded</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2163,42 +2163,42 @@ This will replace the current text with:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="815"/>
+        <location filename="../src/linguaedit/ui/window.py" line="816"/>
         <source>Add translator notes...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="840"/>
+        <location filename="../src/linguaedit/ui/window.py" line="841"/>
         <source>Needs work</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="841"/>
+        <location filename="../src/linguaedit/ui/window.py" line="842"/>
         <source>Mark this string as fuzzy / needs review (Ctrl+U)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="847"/>
+        <location filename="../src/linguaedit/ui/window.py" line="848"/>
         <source>Copy source</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="848"/>
+        <location filename="../src/linguaedit/ui/window.py" line="849"/>
         <source>Copy source text to translation (Ctrl+B)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="852"/>
+        <location filename="../src/linguaedit/ui/window.py" line="853"/>
         <source>Clear</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="853"/>
+        <location filename="../src/linguaedit/ui/window.py" line="854"/>
         <source>Clear translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="857"/>
+        <location filename="../src/linguaedit/ui/window.py" line="858"/>
         <source>💬 Comment</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2326,7 +2326,7 @@ This will replace the current text with:
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1075"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4050"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4080"/>
         <source>Pre-translate</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2620,13 +2620,13 @@ This will replace the current text with:
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1286"/>
-        <location filename="../src/linguaedit/ui/window.py" line="6356"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6388"/>
         <source>Record Macro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1287"/>
-        <location filename="../src/linguaedit/ui/window.py" line="6389"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6421"/>
         <source>Play Macro</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2862,13 +2862,13 @@ This will replace the current text with:
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1376"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4461"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4491"/>
         <source>Donate ♥</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1378"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4482"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4509"/>
         <source>About LinguaEdit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2933,198 +2933,198 @@ This will replace the current text with:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="2336"/>
+        <location filename="../src/linguaedit/ui/window.py" line="2338"/>
         <source>Add Comment</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="2336"/>
+        <location filename="../src/linguaedit/ui/window.py" line="2338"/>
         <source>Enter translator note:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="2438"/>
-        <location filename="../src/linguaedit/ui/window.py" line="2621"/>
+        <location filename="../src/linguaedit/ui/window.py" line="2440"/>
+        <location filename="../src/linguaedit/ui/window.py" line="2623"/>
         <source>%d matches</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="2607"/>
+        <location filename="../src/linguaedit/ui/window.py" line="2609"/>
         <source>Invalid regex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="2668"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4675"/>
+        <location filename="../src/linguaedit/ui/window.py" line="2670"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4707"/>
         <source>Replaced in %d entries</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="2772"/>
+        <location filename="../src/linguaedit/ui/window.py" line="2774"/>
         <source>Theme changed to %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3125"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3127"/>
         <source>Auto-propagated %d entries</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3135"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3137"/>
         <source>Open Translation File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3143"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3145"/>
         <source>File not found: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3232"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3234"/>
         <source>Unsupported file type: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3235"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3237"/>
         <source>Error loading file: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3315"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3317"/>
         <source>File reloaded (changed externally)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3484"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3488"/>
         <source>Saved!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3491"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3495"/>
         <source>Auto-compiled after save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3493"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3497"/>
         <source>Save error: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3511"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3515"/>
         <source>%d strings — %d translated, %d fuzzy, %d untranslated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3521"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3525"/>
         <source>%d strings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3522"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3526"/>
         <source>Translated: %d</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3523"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3527"/>
         <source>Fuzzy: %d</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3524"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3528"/>
         <source>Untranslated: %d</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3532"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3536"/>
         <source>Ln %d, Col %d</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3690"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3720"/>
         <source>No inconsistencies found! ✓</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3691"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3721"/>
         <source>Consistency Check</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3697"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3727"/>
         <source>No terms defined</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3699"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3729"/>
         <source>Glossary / Terminology</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3704"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3706"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3734"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3736"/>
         <source>Add Term</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3704"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3734"/>
         <source>Source term:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3706"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3736"/>
         <source>Target term:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3709"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3739"/>
         <source>Added: %s → %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3725"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3755"/>
         <source>No glossary violations found! ✓</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3726"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3756"/>
         <source>Glossary Check</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3744"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3774"/>
         <source>QA Profile: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3773"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3803"/>
         <source>Report saved to %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3783"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4912"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3813"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4944"/>
         <source>Save Report</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3784"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3814"/>
         <source>HTML (*.html);;PDF (*.pdf)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3800"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3830"/>
         <source>Report saved</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3830"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3860"/>
         <source>Unknown</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1082"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3954"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4954"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3984"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4986"/>
         <source>Statistics</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3145,52 +3145,52 @@ This will replace the current text with:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="871"/>
+        <location filename="../src/linguaedit/ui/window.py" line="872"/>
         <source>📋 Copy Source</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="872"/>
+        <location filename="../src/linguaedit/ui/window.py" line="873"/>
         <source>Copy source text to translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="876"/>
+        <location filename="../src/linguaedit/ui/window.py" line="877"/>
         <source>💾 Apply TM #1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="877"/>
+        <location filename="../src/linguaedit/ui/window.py" line="878"/>
         <source>Apply best Translation Memory match</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="882"/>
+        <location filename="../src/linguaedit/ui/window.py" line="883"/>
         <source>🤖 Apply MT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="883"/>
+        <location filename="../src/linguaedit/ui/window.py" line="884"/>
         <source>Apply Machine Translation suggestion</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="888"/>
+        <location filename="../src/linguaedit/ui/window.py" line="889"/>
         <source>✅ Mark Reviewed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="889"/>
+        <location filename="../src/linguaedit/ui/window.py" line="890"/>
         <source>Mark current entry as reviewed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="893"/>
+        <location filename="../src/linguaedit/ui/window.py" line="894"/>
         <source>⚠️ Toggle Fuzzy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="894"/>
+        <location filename="../src/linguaedit/ui/window.py" line="895"/>
         <source>Toggle fuzzy/needs work flag</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3241,13 +3241,13 @@ This will replace the current text with:
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1322"/>
-        <location filename="../src/linguaedit/ui/window.py" line="6638"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6670"/>
         <source>Editor on Right</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/linguaedit/ui/window.py" line="1322"/>
-        <location filename="../src/linguaedit/ui/window.py" line="6638"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6670"/>
         <source>Editor Below</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3267,645 +3267,656 @@ This will replace the current text with:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3218"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3220"/>
         <source>Video file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3219"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3221"/>
         <source>Would you like to extract subtitles from this video?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3519"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3523"/>
         <source>translated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3563"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3567"/>
         <source> ⚠ long</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3565"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3569"/>
         <source> ⚠ short</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3568"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3572"/>
         <source>Words: %d | Chars: %d | Source: %dw%s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3964"/>
-        <location filename="../src/linguaedit/ui/window.py" line="3975"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3597"/>
+        <source>The file &apos;%s&apos; has unsaved changes.
+Do you want to save before closing?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/window.py" line="3598"/>
+        <source>Untitled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/window.py" line="3994"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4005"/>
         <source>Git Status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3964"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3994"/>
         <source>Not a git repository</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3983"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4013"/>
         <source>No changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3984"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4014"/>
         <source>Git Diff</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3991"/>
-        <location filename="../src/linguaedit/ui/window.py" line="6022"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4021"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6054"/>
         <source>Git Commit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3991"/>
-        <location filename="../src/linguaedit/ui/window.py" line="6023"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4021"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6055"/>
         <source>Commit message:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="3998"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4028"/>
         <source>Committed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4000"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4030"/>
         <source>Commit failed: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4009"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4039"/>
         <source>Git Branches</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4028"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4058"/>
         <source>Translated via %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4054"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4084"/>
         <source>Translation Engine</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4069"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4099"/>
         <source>Languages</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4072"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4278"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4287"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4298"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4102"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4308"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4317"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4328"/>
         <source>Source language:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4074"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4288"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4299"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4104"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4318"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4329"/>
         <source>Target language:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4077"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4107"/>
         <source>Options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4088"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4118"/>
         <source>Manage API Keys…</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4128"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4158"/>
         <source>Pre-translated %d entries via %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4134"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4164"/>
         <source>API Keys</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4186"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4216"/>
         <source>API keys saved</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4197"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4227"/>
         <source>Added %d entries to Translation Memory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4204"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4234"/>
         <source>No text to check</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4208"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4238"/>
         <source>✓ No spelling issues found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4214"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4244"/>
         <source>Spelling issues:
 %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4224"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4254"/>
         <source>File Header / Metadata</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4229"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4259"/>
         <source>Edit file header metadata. Changes are applied when you click Save.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4237"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4267"/>
         <source>Key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4237"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4267"/>
         <source>Value</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4252"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4282"/>
         <source>Add Field</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4253"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4283"/>
         <source>Remove Selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4277"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4307"/>
         <source>Language:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4286"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4316"/>
         <source>Version:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4297"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4327"/>
         <source>Format:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4305"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4335"/>
         <source>Locale:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4311"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4341"/>
         <source>Root key:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4351"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4381"/>
         <source>Metadata updated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4361"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4391"/>
         <source>Open Reference File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4395"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4425"/>
         <source>Error loading reference: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4398"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4428"/>
         <source>Loaded reference: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4416"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4446"/>
         <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4439"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4469"/>
         <source>GitHub PR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4452"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4482"/>
         <source>Update Available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4455"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4485"/>
         <source>Up to date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4464"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4494"/>
         <source>&lt;p&gt;LinguaEdit is free software.&lt;/p&gt;&lt;p&gt;If you find it useful, consider supporting development:&lt;/p&gt;&lt;p&gt;❤️ &lt;b&gt;GitHub Sponsors:&lt;/b&gt; &lt;a href=&apos;https://github.com/sponsors/yeager&apos;&gt;github.com/sponsors/yeager&lt;/a&gt;&lt;/p&gt;&lt;p&gt;🇸🇪 &lt;b&gt;Swish:&lt;/b&gt; +46702526206 — &lt;a href=&apos;swish://payment?payee=0702526206&amp;message=LinguaEdit&apos;&gt;Öppna Swish&lt;/a&gt;&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4486"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4517"/>
         <source>A translation file editor for PO, TS, JSON, XLIFF, Android, ARB, PHP, and YAML files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4488"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4519"/>
         <source>Developer:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4489"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4520"/>
         <source>License:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4490"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4521"/>
         <source>Website:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4588"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4598"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4622"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4620"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4630"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4654"/>
         <source>Compiled: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4601"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4633"/>
         <source>msgfmt error: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4604"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4636"/>
         <source>Cannot compile: install &apos;polib&apos; or &apos;gettext&apos; (msgfmt)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4607"/>
-        <location filename="../src/linguaedit/ui/window.py" line="4628"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4639"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4660"/>
         <source>Compile error: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4614"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4646"/>
         <source>Cannot compile: pyside6-lrelease or lrelease not found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4625"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4657"/>
         <source>lrelease error: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4631"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4663"/>
         <source>Compile not supported for %s files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4718"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4750"/>
         <source>Applied changes to %d entries</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4784"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4816"/>
         <source>Header updated</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4856"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4888"/>
         <source>%d translations applied</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4880"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4912"/>
         <source>Generate Report</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4885"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4917"/>
         <source>Report Options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4888"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4920"/>
         <source>Bilingual export (source + translation)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4891"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4923"/>
         <source>Include fuzzy entries</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4914"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4946"/>
         <source>HTML files (*.html);;PDF files (*.pdf)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4922"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4954"/>
         <source>Report saved: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4924"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4956"/>
         <source>Report error: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4955"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4987"/>
         <source>Total entries:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4956"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4988"/>
         <source>Translated:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4957"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4989"/>
         <source>Fuzzy:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="4958"/>
+        <location filename="../src/linguaedit/ui/window.py" line="4990"/>
         <source>Untranslated:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5027"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5059"/>
         <source>No translation selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5035"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5067"/>
         <source>No source text to review</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5045"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5077"/>
         <source>Translation updated from AI review</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5056"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5088"/>
         <source>Bookmark removed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5059"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5091"/>
         <source>Bookmark added</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5069"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5101"/>
         <source>Showing only bookmarked entries</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5071"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5103"/>
         <source>Showing all entries</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5078"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5110"/>
         <source>No bookmarks set</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5151"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5183"/>
         <source>Entry unpinned</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5154"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5186"/>
         <source>Entry pinned</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5164"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5196"/>
         <source>Showing pinned entries first</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5166"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5198"/>
         <source>Normal sorting order</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5248"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5280"/>
         <source>Loaded: {path.name}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5252"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5284"/>
         <source>Error loading {path.name}: {e}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5361"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5393"/>
         <source>Watch mode enabled - file changes will be detected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5369"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5401"/>
         <source>Watch mode disabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5381"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5413"/>
         <source>File reloaded (external change detected)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5386"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5418"/>
         <source>File Changed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5387"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5419"/>
         <source>The file has been changed externally. Reload?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5421"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5453"/>
         <source>Add Tag</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5422"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5454"/>
         <source>Select or enter tag:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5435"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5467"/>
         <source>Tag &apos;{tag}&apos; added</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5449"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5481"/>
         <source>Tag &apos;{tag}&apos; removed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5455"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5487"/>
         <source>Tag filter removed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5458"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5490"/>
         <source>Filtering by tag: {tag}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5516"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5548"/>
         <source>Review mode enabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5518"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5550"/>
         <source>Review mode disabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5542"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5574"/>
         <source>Status set to: {status}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5555"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5587"/>
         <source>Email Translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5568"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5600"/>
         <source>To:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5574"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5606"/>
         <source>Subject:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5579"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5611"/>
         <source>Message:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5582"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5614"/>
         <source>Attach current file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5603"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5635"/>
         <source>Email client opened</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5605"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5637"/>
         <source>Please enter recipient email</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5614"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5646"/>
         <source>Focus mode enabled - hiding completed translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5616"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5648"/>
         <source>Focus mode disabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5635"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5667"/>
         <source>{remaining}/{total} remaining</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5670"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5702"/>
         <source>Remove Bookmark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5672"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5704"/>
         <source>Add Bookmark</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5676"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5708"/>
         <source>📌 Unpin Entry</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5678"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5710"/>
         <source>📌 Pin Entry</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5693"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5725"/>
         <source>Add Tag...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5698"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5730"/>
         <source>Review</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5700"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5732"/>
         <source>Approve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5702"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5734"/>
         <source>Reject</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5704"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5736"/>
         <source>Needs Review</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5723"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5755"/>
         <source>No translation to preview</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5780"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5812"/>
         <source>Import TMX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5780"/>
-        <location filename="../src/linguaedit/ui/window.py" line="5806"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5812"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5838"/>
         <source>TMX Files (*.tmx)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5790"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5822"/>
         <source>Imported {} translation units</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5792"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5824"/>
         <source>
 
 Errors:
@@ -3913,327 +3924,328 @@ Errors:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5794"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5826"/>
         <source>TMX Import</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5798"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5830"/>
         <source>Import Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5799"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5831"/>
         <source>Failed to import TMX file: {}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5805"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5837"/>
         <source>Export TMX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5822"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5854"/>
         <source>TMX Export</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5823"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5855"/>
         <source>Exported {} translation units to {}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5830"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5862"/>
         <source>Export Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5831"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5863"/>
         <source>Failed to export TMX file: {}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5845"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5877"/>
         <source>Cannot split empty entry</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5882"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5914"/>
         <source>Entry split into 2 segments</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5888"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5920"/>
         <source>Select at least 2 entries to merge</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6805"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6837"/>
         <source>Sidebar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6819"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6851"/>
         <source>Customize Toolbar…</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6834"/>
+        <location filename="../src/linguaedit/ui/window.py" line="3596"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6866"/>
         <source>Unsaved Changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6835"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6867"/>
         <source>The current file has unsaved changes.
 Do you want to save before continuing?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5929"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5961"/>
         <source>Merged {} entries</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="5963"/>
+        <location filename="../src/linguaedit/ui/window.py" line="5995"/>
         <source>{} chars | {} words | Source: {} chars</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6024"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6056"/>
         <source>Updated {} translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6052"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6084"/>
         <source>Push Changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6053"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6085"/>
         <source>Commit successful. Push to remote?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6062"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6094"/>
         <source>Changes pushed successfully</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6064"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6096"/>
         <source>Changes committed locally</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6068"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6100"/>
         <source>Git Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6069"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6101"/>
         <source>Git operation failed: {}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6073"/>
-        <location filename="../src/linguaedit/ui/window.py" line="6593"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6105"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6625"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6074"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6106"/>
         <source>Git operation error: {}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6084"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6116"/>
         <source>Play Translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6098"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6130"/>
         <source>No text to play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6133"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6165"/>
         <source>Playing translation...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6137"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6169"/>
         <source>TTS Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6138"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6170"/>
         <source>Text-to-speech failed: {}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6158"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6190"/>
         <source>Stacked View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6163"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6195"/>
         <source>Side-by-Side View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6238"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6270"/>
         <source>MT translation failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6302"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6334"/>
         <source>Fullscreen mode - Press Escape to exit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6351"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6383"/>
         <source>Already recording a macro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6357"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6389"/>
         <source>Enter macro name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6366"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6398"/>
         <source>Macro Exists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6367"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6399"/>
         <source>A macro with this name already exists.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6374"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6406"/>
         <source>Recording macro &apos;{}&apos;...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6380"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6412"/>
         <source>No macros available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6385"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6417"/>
         <source>No enabled macros</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6390"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6422"/>
         <source>Select macro to play:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6397"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6429"/>
         <source>Failed to play macro</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6446"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6478"/>
         <source>Translation rolled back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6455"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6487"/>
         <source>Auto-compile enabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6479"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6511"/>
         <source>Translation History…</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6482"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6514"/>
         <source>🔊 Play Translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6531"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6563"/>
         <source>OCR extraction completed. {} strings extracted.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6537"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6569"/>
         <source>Crowdin OTA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6538"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6570"/>
         <source>Crowdin Over-The-Air functionality not yet implemented.
 This would pull latest translations using distribution hash.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6545"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6577"/>
         <source>No File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6545"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6577"/>
         <source>Please open a PO file first.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6549"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6581"/>
         <source>Wrong File Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6549"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6581"/>
         <source>This feature only works with PO files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6555"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6587"/>
         <source>Select POT File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6557"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6589"/>
         <source>POT Files (*.pot)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6572"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6604"/>
         <source>Success</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6573"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6605"/>
         <source>PO file merged successfully with POT file.
 Please reload the file to see changes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6580"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6612"/>
         <source>Msgmerge Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6581"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6613"/>
         <source>msgmerge failed:
 {}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6587"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6619"/>
         <source>Msgmerge Not Found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6588"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6620"/>
         <source>msgmerge command not found. Please install gettext tools.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/window.py" line="6594"/>
+        <location filename="../src/linguaedit/ui/window.py" line="6626"/>
         <source>Failed to run msgmerge:
 {}</source>
         <translation type="unfinished"></translation>
@@ -6456,48 +6468,58 @@ Saved to: %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="395"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="377"/>
+        <source>Extraherar förhandsgranskning…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="433"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="436"/>
         <source>Förhandsgranskning misslyckades: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="503"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="544"/>
         <source>Spara undertext som</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="509"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="550"/>
         <source>Klart</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="510"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="551"/>
         <source>Undertexten har sparats till:
 %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="529"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="570"/>
         <source>Extraherar undertexter…</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="530"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="378"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="571"/>
         <source>Avbryt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="534"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="382"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="575"/>
         <source>Extraherar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="563"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="430"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="604"/>
         <source>Fel vid extrahering</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="564"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="431"/>
+        <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="605"/>
         <source>Kunde inte extrahera undertexten:
 %s</source>
         <translation type="unfinished"></translation>

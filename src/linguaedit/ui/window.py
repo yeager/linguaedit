@@ -812,6 +812,7 @@ class LinguaEditWindow(QMainWindow):
         self._comment_view.setMaximumHeight(60)
         self._comment_view.setFrameShape(QFrame.StyledPanel)
         self._comment_view.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        self._comment_view.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
         self._comment_view.setPlaceholderText(self.tr("Add translator notes..."))
         self._comment_view.textChanged.connect(self._on_comment_changed)
         editor_layout.addWidget(self._comment_view)
@@ -910,8 +911,7 @@ class LinguaEditWindow(QMainWindow):
 
         # ── Right: side panel (TM, string info, concordance) ──
         self._side_panel = QTabWidget()
-        self._side_panel.setMinimumWidth(250)
-        self._side_panel.setMaximumWidth(400)
+        self._side_panel.setMinimumWidth(200)
 
         # String Information tab
         info_widget = QWidget()
@@ -2036,6 +2036,8 @@ class LinguaEditWindow(QMainWindow):
         self._plural_views: list[QTextEdit] = []
         for i in range(n_forms):
             tv = QTextEdit()
+            tv.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+            tv.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
             tv.setPlainText(entry.msgstr_plural.get(i, ""))
             self._plural_notebook.addTab(tv, f"msgstr[{i}]")
             self._plural_views.append(tv)
@@ -3333,7 +3335,8 @@ class LinguaEditWindow(QMainWindow):
             entry = self._file_data.entries[self._current_index]
             if entry.translation != text:
                 entry.translation = text
-                if text and entry.translation_type == "unfinished":
+                # Only auto-clear "unfinished" if the fuzzy checkbox is not checked
+                if text and entry.translation_type == "unfinished" and not self._fuzzy_check.isChecked():
                     entry.translation_type = ""
                 self._modified = True
         elif self._file_type == "json":
@@ -3350,7 +3353,8 @@ class LinguaEditWindow(QMainWindow):
             entry = self._file_data.entries[self._current_index]
             if entry.target != text:
                 entry.target = text
-                if text.strip():
+                # Only auto-confirm if the fuzzy checkbox is not checked
+                if text.strip() and not self._fuzzy_check.isChecked():
                     entry.confirmed = True
                 self._modified = True
         elif self._file_type in ("android", "arb", "php", "yaml"):
@@ -3578,6 +3582,32 @@ class LinguaEditWindow(QMainWindow):
     def _on_tab_close(self, index):
         if index < 0:
             return
+        # Check for unsaved changes in the tab being closed
+        if index in self._tabs:
+            td = self._tabs[index]
+            # If this is the current tab, check _modified directly
+            if index == self._tab_widget.currentIndex():
+                if self._modified:
+                    if not self._ask_save_changes():
+                        return
+            elif td.modified:
+                ret = QMessageBox.question(
+                    self,
+                    self.tr("Unsaved Changes"),
+                    self.tr("The file '%s' has unsaved changes.\nDo you want to save before closing?") % (
+                        Path(td.file_path).name if td.file_path else self.tr("Untitled")
+                    ),
+                    QMessageBox.Save | QMessageBox.Discard | QMessageBox.Cancel,
+                    QMessageBox.Save,
+                )
+                if ret == QMessageBox.Cancel:
+                    return
+                elif ret == QMessageBox.Save:
+                    # Switch to that tab, save, then close
+                    old_index = self._tab_widget.currentIndex()
+                    self._tab_widget.setCurrentIndex(index)
+                    self._on_save()
+                    self._tab_widget.setCurrentIndex(old_index)
         if index in self._tabs:
             del self._tabs[index]
         self._tab_widget.removeTab(index)

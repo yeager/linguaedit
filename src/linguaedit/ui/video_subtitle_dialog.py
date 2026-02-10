@@ -367,15 +367,48 @@ class VideoSubtitleDialog(QDialog):
         self._preview_track(0)
 
     def _preview_track(self, track_index: int):
-        """Extract track to temp file and show preview."""
+        """Extract track to temp file and show preview with progress."""
         if not self._video_path or track_index >= len(self._tracks):
             return
 
         track = self._tracks[track_index]
+
+        progress_dlg = QProgressDialog(
+            self.tr("Extraherar förhandsgranskning…"),
+            self.tr("Avbryt"),
+            0, 100,
+            self,
+        )
+        progress_dlg.setWindowTitle(self.tr("Extraherar"))
+        progress_dlg.setWindowModality(Qt.WindowModal)
+        progress_dlg.setMinimumDuration(0)
+        progress_dlg.setValue(0)
+        self._preview_cancelled = False
+
+        def _on_cancel():
+            self._preview_cancelled = True
+
+        progress_dlg.canceled.connect(_on_cancel)
+
+        def _on_progress(pct: float):
+            if self._preview_cancelled:
+                return
+            progress_dlg.setValue(int(pct * 100))
+            QApplication.processEvents()
+
         try:
             tmp = tempfile.NamedTemporaryFile(suffix=".srt", delete=False)
             tmp.close()
-            extract_subtitle(self._video_path, track, Path(tmp.name), ".srt")
+            extract_subtitle(
+                self._video_path, track, Path(tmp.name), ".srt",
+                progress_callback=_on_progress,
+                duration=self._duration,
+            )
+            progress_dlg.setValue(100)
+            progress_dlg.close()
+
+            if self._preview_cancelled:
+                return
 
             content = Path(tmp.name).read_text("utf-8", errors="replace")
             lines = content.strip().split("\n")
@@ -391,7 +424,15 @@ class VideoSubtitleDialog(QDialog):
             self._stop_btn.setEnabled(True)
             self._time_slider.setEnabled(True)
 
+        except RuntimeError as e:
+            progress_dlg.close()
+            QMessageBox.warning(
+                self, self.tr("Fel vid extrahering"),
+                self.tr("Kunde inte extrahera undertexten:\n%s") % str(e),
+            )
+            self._preview_label.setText(self.tr("Förhandsgranskning misslyckades: %s") % str(e))
         except Exception as e:
+            progress_dlg.close()
             self._preview_label.setText(self.tr("Förhandsgranskning misslyckades: %s") % str(e))
 
     def _parse_srt_for_preview(self, content: str) -> list:
