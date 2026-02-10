@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [1.5.0] — 2026-02-10
+
+### Added
+- **Save As…** (Ctrl+Shift+S) — file dialog with suggested filename and directory
+- **Simple Mode** (Ctrl+Shift+L) — minimal UI: hides sidebar, context panel, minimap, quick actions toolbar
+
+### Changed
+- **Default sort: Untranslated first** — entries now sorted by status (untranslated → errors → fuzzy → translated) by default
+- **Machine translation always marks fuzzy** — MT-applied entries are marked as "needs work" until manually approved
+
 ## [1.4.0] — 2026-02-10
 
 ### Added

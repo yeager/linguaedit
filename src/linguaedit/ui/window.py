@@ -440,7 +440,7 @@ class LinguaEditWindow(QMainWindow):
 
         # Filter & sort
         self._filter_mode = "all"
-        self._sort_mode = "file"
+        self._sort_mode = "status"
         self._sort_order: list[int] = []
         self._search_replace_visible = False
         self._search_match_count = 0
@@ -650,6 +650,7 @@ class LinguaEditWindow(QMainWindow):
             self.tr("Untranslated/errors first"), self.tr("By length"), self.tr("By reference"),
         ])
         self._sort_combo.setMinimumWidth(120)
+        self._sort_combo.setCurrentIndex(self._SORT_MODES.index(self._sort_mode))
         self._sort_combo.currentIndexChanged.connect(self._on_sort_changed)
         filter_bar.addWidget(self._sort_combo)
 
@@ -1194,6 +1195,10 @@ class LinguaEditWindow(QMainWindow):
         save_act.setShortcut(QKeySequence.Save)
         save_act.triggered.connect(self._on_save)
 
+        save_as_act = file_menu.addAction(self.tr("Save &As…"))
+        save_as_act.setShortcut(QKeySequence("Ctrl+Shift+S"))
+        save_as_act.triggered.connect(self._on_save_as)
+
         file_menu.addSeparator()
         self._recent_menu = file_menu.addMenu(self.tr("Recent Files"))
         self._rebuild_recent_menu()
@@ -1322,6 +1327,11 @@ class LinguaEditWindow(QMainWindow):
         self._layout_toggle_action = view_menu.addAction(
             self.tr("Editor on Right") if not self._editor_on_right else self.tr("Editor Below"),
             self._toggle_editor_layout)
+
+        # Simple Mode
+        self._simple_mode_action = view_menu.addAction(self.tr("Simple Mode"), self._toggle_simple_mode, QKeySequence("Ctrl+Shift+L"))
+        self._simple_mode_action.setCheckable(True)
+        self._simple_mode = False
 
         # Zen Mode
         view_menu.addAction(self.tr("Zen Mode"), self._toggle_zen_mode, QKeySequence("Ctrl+Shift+Z"))
@@ -3507,6 +3517,41 @@ class LinguaEditWindow(QMainWindow):
         finally:
             if self._file_data:
                 self._setup_file_monitor(self._file_data.path)
+
+    def _on_save_as(self):
+        """Save current file with a new filename via file dialog."""
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+        self._save_current_entry()
+        current_path = getattr(self._file_data, 'path', '') or getattr(self._file_data, 'file_path', '')
+        suggested_dir = str(Path(current_path).parent) if current_path else ""
+        suggested_name = Path(current_path).name if current_path else ""
+        filters = self.tr("All files (*)")
+        if self._file_type == "po":
+            filters = self.tr("PO files (*.po);;All files (*)")
+        elif self._file_type == "ts":
+            filters = self.tr("TS files (*.ts);;All files (*)")
+        elif self._file_type == "xliff":
+            filters = self.tr("XLIFF files (*.xlf *.xliff);;All files (*)")
+        elif self._file_type == "json":
+            filters = self.tr("JSON files (*.json);;All files (*)")
+
+        new_path, _ = QFileDialog.getSaveFileName(
+            self, self.tr("Save As…"), str(Path(suggested_dir) / suggested_name), filters,
+            options=QFileDialog.Option.DontUseNativeDialog)
+        if not new_path:
+            return
+        # Update the file path in data object and save
+        if hasattr(self._file_data, 'path'):
+            self._file_data.path = new_path
+        if hasattr(self._file_data, 'file_path'):
+            self._file_data.file_path = new_path
+        if hasattr(self._file_data, 'fpath'):
+            self._file_data.fpath = new_path
+        self._on_save()
+        self.setWindowTitle(f"LinguaEdit — {Path(new_path).name}")
+        self._show_toast(self.tr("Saved as %s") % Path(new_path).name)
 
     # ── Stats ─────────────────────────────────────────────────────
 
@@ -6262,26 +6307,31 @@ class LinguaEditWindow(QMainWindow):
                     self._trans_view.setPlainText(matches[0].target)
 
     def _qa_apply_mt(self):
-        """Apply the MT suggestion from the context panel."""
+        """Apply the MT suggestion from the context panel.
+        
+        Machine-translated entries are always marked fuzzy until
+        the user manually clears the flag.
+        """
+        text = None
         if self._context_panel:
             text = self._context_panel.get_mt_text()
-            if text:
-                self._trans_view.setPlainText(text)
-                return
-        # Fallback: translate directly
-        if self._current_index >= 0 and self._file_data:
+        if not text and self._current_index >= 0 and self._file_data:
             entries = self._get_entries()
             if self._current_index < len(entries):
                 try:
-                    result = translate(
+                    text = translate(
                         entries[self._current_index][0],
                         engine=self._trans_engine,
                         source=self._trans_source,
                         target=self._trans_target,
                     )
-                    self._trans_view.setPlainText(result)
                 except Exception:
                     self._show_toast(self.tr("MT translation failed"))
+                    return
+        if text:
+            self._trans_view.setPlainText(text)
+            # Always mark machine-translated entries as fuzzy
+            self._fuzzy_check.setChecked(True)
 
     def _update_quick_toolbar_state(self):
         """Enable/disable quick toolbar buttons based on current context."""
@@ -6697,6 +6747,52 @@ class LinguaEditWindow(QMainWindow):
             self._v_splitter.setSizes([400, 350])
 
     # ── 2. Zen Translation Mode ──────────────────────────────────
+
+    def _toggle_simple_mode(self):
+        """Toggle Simple Mode — a clean, minimal translation interface.
+
+        Hides sidebar, toolbar, status bar, context panel, minimap,
+        and other non-essential UI. Shows only the file list, source/target
+        editor, and glossary/TM panels.
+        """
+        self._simple_mode = not self._simple_mode
+        self._simple_mode_action.setChecked(self._simple_mode)
+        hide = self._simple_mode
+
+        # Hide sidebar
+        self._sidebar.setVisible(not hide)
+
+        # Hide status bar extras (keep progress)
+        if hasattr(self, '_sb_fuzzy'):
+            self._sb_fuzzy.setVisible(not hide)
+
+        # Hide context dock if shown
+        if self._context_dock:
+            self._context_dock.setVisible(not hide)
+
+        # Hide preview dock
+        if self._preview_dock:
+            self._preview_dock.setVisible(not hide)
+
+        # Hide minimap
+        if hasattr(self, '_minimap_widget') and self._minimap_widget:
+            self._minimap_widget.setVisible(not hide)
+
+        # Hide quick actions toolbar
+        if hasattr(self, '_quick_actions_toolbar') and self._quick_actions_toolbar:
+            self._quick_actions_toolbar.setVisible(not hide)
+
+        # Simplify tree columns — hide bookmark, tags in simple mode
+        header = self._tree.header()
+        if hide:
+            header.hideSection(1)  # bookmark
+            header.hideSection(4)  # tags
+        else:
+            header.showSection(1)
+            header.showSection(4)
+
+        mode_name = self.tr("Simple Mode") if hide else self.tr("Normal Mode")
+        self._show_toast(mode_name)
 
     def _toggle_zen_mode(self):
         """Enter or exit Zen translation mode."""
