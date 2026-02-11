@@ -112,7 +112,7 @@ from linguaedit.services.macros import get_macro_manager, MacroActionType
 from linguaedit.ui.plugin_dialog import PluginDialog
 from linguaedit.ui.history_dialog import HistoryDialog, FileHistoryDialog
 from linguaedit.ui.video_subtitle_dialog import VideoSubtitleDialog
-from linguaedit.ui.video_preview import VideoPreviewWidget
+from linguaedit.ui.video_preview import VideoPreviewWidget, VideoDockWidget
 from linguaedit.ui.zen_mode import ZenModeWidget
 from linguaedit.ui.entry_delegate import EntryItemDelegate
 from linguaedit.ui.collapsible_panel import CollapsibleSidePanel
@@ -418,6 +418,7 @@ class LinguaEditWindow(QMainWindow):
         self._current_index = -1
         self._modified = False
         self._video_preview = None
+        self._video_dock: Optional[VideoDockWidget] = None
         self._app_settings = Settings.get()
         self._spell_lang = "en_US"
         self._trans_engine = self._app_settings["default_engine"]
@@ -1099,7 +1100,7 @@ class LinguaEditWindow(QMainWindow):
         self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_FileDialogContentsView), self.tr("Search"), self._toggle_search_replace)
         self._sidebar.addSeparator()
         # Video subtitle extraction
-        self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_DriveDVDIcon), self.tr("Video"), self._on_video_subtitles)
+        self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_DriveDVDIcon), self.tr("Video"), self._on_open_video)
         self._sidebar.addSeparator()
         # Tools
         self._sidebar.addAction(style.standardIcon(style.StandardPixmap.SP_MessageBoxInformation), self.tr("Statistics"), self._show_statistics_dialog)
@@ -1332,6 +1333,7 @@ class LinguaEditWindow(QMainWindow):
         tools_menu.addAction(self.tr("Glossary…"), self._show_glossary_dialog)
         tools_menu.addAction(self.tr("Concordance Search…"), self._show_concordance_dialog, QKeySequence("Ctrl+Alt+K"))
         tools_menu.addSeparator()
+        tools_menu.addAction(self.tr("Open Video…"), self._on_open_video, QKeySequence("Ctrl+Shift+V"))
         tools_menu.addAction(self.tr("Extract Subtitles from Video…"), self._on_video_subtitles)
         
         # View
@@ -1796,9 +1798,11 @@ class LinguaEditWindow(QMainWindow):
             self._timestamp_edit.setText(f"{start} --> {end}")
 
             # Seek video preview to this timestamp
-            if hasattr(self, "_video_preview") and self._video_preview and self._video_preview.isVisible():
-                self._video_preview.seek_to_time(entry.start_time)
-                self._video_preview.show_subtitle(msgid)
+            if self._video_dock and self._video_dock.isVisible() and self._video_dock.player.has_video():
+                self._video_dock.player.seek_to_time(entry.start_time)
+                self._video_dock.player.set_segment(
+                    entry.start_time, entry.end_time, msgid, msgstr
+                )
         else:
             self._source_header.setText(f"<b>{self.tr('Source text')}</b>  <span style='color:gray'>({len(msgid.split())} {self.tr('words')})</span>")
             self._timestamp_frame.setVisible(False)
@@ -4636,13 +4640,8 @@ class LinguaEditWindow(QMainWindow):
         for ext in sorted(SUPPORTED_VIDEO_EXTENSIONS):
             candidate = parent / (stem + ext)
             if candidate.exists():
-                # Open video preview widget alongside editor
-                preview = VideoPreviewWidget(self)
-                preview.open_video(candidate)
-                preview.setWindowFlags(Qt.Window)
-                preview.resize(640, 400)
-                preview.show()
-                self._video_preview = preview  # Keep reference
+                self._ensure_video_dock()
+                self._video_dock.open_video(candidate)
                 return
 
     def _on_video_subtitles(self):
@@ -4650,6 +4649,27 @@ class LinguaEditWindow(QMainWindow):
         dlg = VideoSubtitleDialog(self)
         dlg.subtitle_extracted.connect(self._load_file)
         dlg.exec()
+
+    def _ensure_video_dock(self):
+        """Create the video dock widget if it doesn't exist yet."""
+        if not self._video_dock:
+            self._video_dock = VideoDockWidget(self)
+            self._video_dock.player.request_prev_segment.connect(lambda: self._navigate(-1))
+            self._video_dock.player.request_next_segment.connect(lambda: self._navigate(1))
+            self.addDockWidget(Qt.RightDockWidgetArea, self._video_dock)
+
+    def _on_open_video(self):
+        """Open a video file via file dialog."""
+        from PySide6.QtWidgets import QFileDialog
+        path, _ = QFileDialog.getOpenFileName(
+            self,
+            self.tr("Open Video"),
+            "",
+            self.tr("Video files (*.mkv *.mp4 *.avi *.mov *.webm *.flv *.wmv *.ogv);;All files (*)"),
+        )
+        if path:
+            self._ensure_video_dock()
+            self._video_dock.open_video(Path(path))
 
     def _update_compile_icon(self, success: bool):
         """Update compile action icon: green check = OK, red X = error."""
