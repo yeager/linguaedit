@@ -5974,8 +5974,8 @@ class LinguaEditWindow(QMainWindow):
             return
 
         entry = self._file_data.entries[self._current_index]
-        source = entry.msgid if hasattr(entry, 'msgid') else entry.source
-        target = entry.msgstr if hasattr(entry, 'msgstr') else entry.translation
+        source = entry.msgid if hasattr(entry, 'msgid') else getattr(entry, 'text', getattr(entry, 'source', ''))
+        target = entry.msgstr if hasattr(entry, 'msgstr') else getattr(entry, 'translation', '')
 
         if not source.strip():
             self._show_toast(self.tr("Cannot split empty entry"))
@@ -6031,8 +6031,8 @@ class LinguaEditWindow(QMainWindow):
         for idx in selected_indices:
             if idx < len(self._file_data.entries):
                 entry = self._file_data.entries[idx]
-                source = entry.msgid if hasattr(entry, 'msgid') else entry.source
-                target = entry.msgstr if hasattr(entry, 'msgstr') else entry.translation
+                source = entry.msgid if hasattr(entry, 'msgid') else getattr(entry, 'text', getattr(entry, 'source', ''))
+                target = entry.msgstr if hasattr(entry, 'msgstr') else getattr(entry, 'translation', '')
                 entries_to_merge.append((source, target))
 
         if len(entries_to_merge) < 2:
@@ -6089,8 +6089,8 @@ class LinguaEditWindow(QMainWindow):
             return
         
         entry = self._file_data.entries[self._current_index]
-        source = entry.msgid if hasattr(entry, 'msgid') else entry.source
-        target = entry.msgstr if hasattr(entry, 'msgstr') else entry.translation
+        source = entry.msgid if hasattr(entry, 'msgid') else getattr(entry, 'text', getattr(entry, 'source', ''))
+        target = entry.msgstr if hasattr(entry, 'msgstr') else getattr(entry, 'translation', '')
         
         char_count = len(target)
         word_count = len(target.split()) if target else 0
@@ -6115,7 +6115,7 @@ class LinguaEditWindow(QMainWindow):
         text = ""
         if self._current_index >= 0 and self._file_data:
             entry = self._file_data.entries[self._current_index]
-            text = entry.msgstr if hasattr(entry, 'msgstr') else entry.translation
+            text = entry.msgstr if hasattr(entry, 'msgstr') else getattr(entry, 'translation', '')
         
         dialog = UnicodeDialog(text, self)
         dialog.exec()
@@ -6228,7 +6228,7 @@ class LinguaEditWindow(QMainWindow):
             return
         
         entry = self._file_data.entries[self._current_index]
-        text = entry.msgstr if hasattr(entry, 'msgstr') else entry.translation
+        text = entry.msgstr if hasattr(entry, 'msgstr') else getattr(entry, 'translation', '')
         
         if not text.strip():
             self._show_toast(self.tr("No text to play"))
