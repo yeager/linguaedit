@@ -4865,16 +4865,23 @@ class LinguaEditWindow(QMainWindow):
         extract_ok = [False]
         extract_err = [None]
 
-        worker = _SubtitleExtractWorker(video_path, track, output_path, duration, self)
-        worker.progress.connect(progress2.setValue)
-        worker.finished.connect(lambda: (extract_ok.__setitem__(0, True), loop.quit()))
-        worker.error.connect(lambda msg: (extract_err.__setitem__(0, msg), loop.quit()))
-        progress2.canceled.connect(worker.cancel)
+        # Store worker on self to prevent premature GC (QThread crash)
+        self._extract_worker = _SubtitleExtractWorker(video_path, track, output_path, duration, self)
+        self._extract_worker.progress.connect(progress2.setValue)
+        self._extract_worker.finished.connect(lambda: (extract_ok.__setitem__(0, True), loop.quit()))
+        self._extract_worker.error.connect(lambda msg: (extract_err.__setitem__(0, msg), loop.quit()))
+        progress2.canceled.connect(self._extract_worker.cancel)
         progress2.canceled.connect(loop.quit)
 
-        worker.start()
+        self._extract_worker.start()
         loop.exec()
-        worker.wait()
+        self._extract_worker.wait()
+        # Disconnect signals before dropping reference to avoid dangling connections
+        self._extract_worker.progress.disconnect()
+        self._extract_worker.finished.disconnect()
+        self._extract_worker.error.disconnect()
+        self._extract_worker.deleteLater()
+        self._extract_worker = None
         progress2.close()
 
         if extract_err[0]:
