@@ -3548,9 +3548,13 @@ class LinguaEditWindow(QMainWindow):
             )
             if not path:
                 return
-            self._file_data.file_path = path
-            self._file_data.path = path
+            self._file_data.file_path = Path(path)
+            self._file_data.path = Path(path)
             self.setWindowTitle(f"LinguaEdit — {Path(path).name}")
+            # Update the tab label too
+            idx = self._tab_widget.currentIndex()
+            if idx >= 0:
+                self._tab_widget.setTabText(idx, Path(path).name)
 
         if self._file_watcher:
             files = self._file_watcher.files()
@@ -3632,6 +3636,8 @@ class LinguaEditWindow(QMainWindow):
             filters = self.tr("XLIFF files (*.xlf *.xliff);;All files (*)")
         elif self._file_type == "json":
             filters = self.tr("JSON files (*.json);;All files (*)")
+        elif self._file_type == "subtitles":
+            filters = self.tr("SRT files (*.srt);;VTT files (*.vtt);;All files (*)")
 
         new_path, _ = QFileDialog.getSaveFileName(
             self, self.tr("Save As…"), str(Path(suggested_dir) / suggested_name), filters,
@@ -3639,12 +3645,15 @@ class LinguaEditWindow(QMainWindow):
         if not new_path:
             return
         # Update the file path in data object and save
+        # Clear video extract flag so _on_save doesn't show another dialog
+        self._video_extract_suggested_path = None
+        new_path_obj = Path(new_path)
         if hasattr(self._file_data, 'path'):
-            self._file_data.path = new_path
+            self._file_data.path = new_path_obj
         if hasattr(self._file_data, 'file_path'):
-            self._file_data.file_path = new_path
+            self._file_data.file_path = new_path_obj
         if hasattr(self._file_data, 'fpath'):
-            self._file_data.fpath = new_path
+            self._file_data.fpath = new_path_obj
         self._on_save()
         self.setWindowTitle(f"LinguaEdit — {Path(new_path).name}")
         self._show_toast(self.tr("Saved as %s") % Path(new_path).name)
