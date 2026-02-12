@@ -2559,7 +2559,7 @@ class LinguaEditWindow(QMainWindow):
         elif self._file_type == "java_properties":
             return [(e.key, e.value, False) for e in self._file_data.entries]
         elif self._file_type == "subtitles":
-            return [(e.text, e.translation, False) for e in self._file_data.entries]
+            return [(e.text, e.translation, e.fuzzy) for e in self._file_data.entries]
         elif self._file_type in ("apple_strings", "unity_asset", "resx"):
             return [(e.msgid, e.msgstr, e.fuzzy) for e in self._file_data.entries]
         return []
@@ -3456,6 +3456,9 @@ class LinguaEditWindow(QMainWindow):
             entry = self._file_data.entries[self._current_index]
             if entry.translation != text:
                 entry.translation = text
+                # Auto-clear fuzzy when user edits translation
+                if entry.fuzzy and not self._fuzzy_check.isChecked():
+                    entry.fuzzy = False
                 self._modified = True
         elif self._file_type in ("apple_strings", "unity_asset", "resx"):
             entry = self._file_data.entries[self._current_index]
@@ -3524,6 +3527,10 @@ class LinguaEditWindow(QMainWindow):
                 entry.state = "translated"
                 if hasattr(entry, 'confirmation_level'):
                     entry.confirmation_level = "Translated"
+            self._modified = True
+        elif self._file_type == "subtitles":
+            entry = self._file_data.entries[self._current_index]
+            entry.fuzzy = checked
             self._modified = True
 
         # Update the current tree row visually
@@ -4862,6 +4869,14 @@ class LinguaEditWindow(QMainWindow):
 
         # Load the extracted subtitle file
         self._load_file(str(output_path))
+
+        # Copy source text to translation and mark as fuzzy (needs review)
+        if self._file_data and self._file_type == "subtitles":
+            for entry in self._file_data.entries:
+                entry.translation = entry.text
+                entry.fuzzy = True
+            self._modified = True
+            self._populate_list()
 
         # Also open video dock for preview
         self._ensure_video_dock()

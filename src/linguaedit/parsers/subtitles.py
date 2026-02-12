@@ -16,6 +16,7 @@ class SubtitleEntry:
     end_time: str
     text: str
     translation: str = ""  # Översättning av undertexten
+    fuzzy: bool = False    # Needs review / fuzzy flag
     cue_settings: str = ""  # För VTT
     note: str = ""  # För NOTE-kommentarer i VTT
     line_number: int = 0
@@ -271,6 +272,9 @@ def _save_srt(file_data: SubtitleFileData) -> None:
     lines = []
     
     for entry in file_data.entries:
+        # Only write translation — never fall back to source text
+        text = entry.translation or ""
+        
         # Index
         lines.append(str(entry.index))
         
@@ -279,8 +283,6 @@ def _save_srt(file_data: SubtitleFileData) -> None:
         end = _format_timestamp_srt(entry.end_time)
         lines.append(f"{start} --> {end}")
         
-        # Text (use translation if available, otherwise original)
-        text = entry.translation if entry.translation else entry.text
         lines.append(text)
         lines.append("")  # Tom rad mellan entries
     
@@ -315,8 +317,8 @@ def _save_vtt(file_data: SubtitleFileData) -> None:
             timing_line += f" {entry.cue_settings}"
         lines.append(timing_line)
         
-        # Text (use translation if available, otherwise original)
-        text = entry.translation if entry.translation else entry.text
+        # Only write translation — never fall back to source text
+        text = entry.translation or ""
         lines.append(text)
         lines.append("")  # Tom rad mellan cues
     
