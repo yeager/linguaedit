@@ -72,14 +72,17 @@ class MTSuggestionWidget(QFrame):
         self.setFrameShape(QFrame.StyledPanel)
         self.setStyleSheet("""
             MTSuggestionWidget {
-                background: palette(window);
+                background: palette(base);
                 border: 1px solid palette(mid);
                 border-radius: 4px;
                 padding: 4px;
             }
+            MTSuggestionWidget QLabel {
+                color: palette(text);
+            }
             QLabel#mt-header {
                 font-size: 10px;
-                color: palette(mid);
+                color: palette(light);
                 padding: 2px 0;
             }
         """)
@@ -96,7 +99,7 @@ class MTSuggestionWidget(QFrame):
         self._layout.addLayout(self._suggestions_layout)
 
         self._loading_label = QLabel(_("Loading…"))
-        self._loading_label.setStyleSheet("color: gray; font-style: italic; font-size: 11px;")
+        self._loading_label.setStyleSheet("color: palette(light); font-style: italic; font-size: 11px;")
         self._layout.addWidget(self._loading_label)
 
         self.setVisible(False)
@@ -113,20 +116,20 @@ class MTSuggestionWidget(QFrame):
 
         if not suggestions:
             lbl = QLabel(_("No suggestions available"))
-            lbl.setStyleSheet("color: gray; font-style: italic; font-size: 11px;")
+            lbl.setStyleSheet("color: palette(light); font-style: italic; font-size: 11px;")
             self._suggestions_layout.addWidget(lbl)
         else:
             for engine_name, text in suggestions[:3]:
                 row = QHBoxLayout()
                 row.setSpacing(4)
                 engine_lbl = QLabel(f"<b>{engine_name}:</b>")
-                engine_lbl.setStyleSheet("font-size: 10px; color: palette(mid);")
+                engine_lbl.setStyleSheet("font-size: 10px; color: palette(light);")
                 engine_lbl.setFixedWidth(80)
                 row.addWidget(engine_lbl)
 
                 text_lbl = QLabel(text[:200])
                 text_lbl.setWordWrap(True)
-                text_lbl.setStyleSheet("font-size: 11px;")
+                text_lbl.setStyleSheet("font-size: 11px; color: palette(text);")
                 row.addWidget(text_lbl, 1)
 
                 use_btn = QPushButton(_("Use"))

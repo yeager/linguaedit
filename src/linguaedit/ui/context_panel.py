@@ -82,21 +82,21 @@ class ContextPanel(QDockWidget):
         # TM section
         self._tm_section = _CollapsibleSection(self.tr("Translation Memory"))
         self._tm_empty = QLabel(self.tr("<i>No matches</i>"))
-        self._tm_empty.setStyleSheet("color: gray;")
+        self._tm_empty.setStyleSheet("color: palette(light);")
         self._tm_section.content_layout().addWidget(self._tm_empty)
         layout.addWidget(self._tm_section)
 
         # Glossary section
         self._glossary_section = _CollapsibleSection(self.tr("Glossary"))
         self._glossary_empty = QLabel(self.tr("<i>No matching terms</i>"))
-        self._glossary_empty.setStyleSheet("color: gray;")
+        self._glossary_empty.setStyleSheet("color: palette(light);")
         self._glossary_section.content_layout().addWidget(self._glossary_empty)
         layout.addWidget(self._glossary_section)
 
         # MT section
         self._mt_section = _CollapsibleSection(self.tr("Machine Translation"))
         self._mt_empty = QLabel(self.tr("<i>No suggestion</i>"))
-        self._mt_empty.setStyleSheet("color: gray;")
+        self._mt_empty.setStyleSheet("color: palette(light);")
         self._mt_section.content_layout().addWidget(self._mt_empty)
         layout.addWidget(self._mt_section)
 
@@ -136,7 +136,7 @@ class ContextPanel(QDockWidget):
 
         if not source.strip():
             self._tm_empty = QLabel(self.tr("<i>No matches</i>"))
-            self._tm_empty.setStyleSheet("color: gray;")
+            self._tm_empty.setStyleSheet("color: palette(light);")
             self._tm_section.content_layout().addWidget(self._tm_empty)
             return
 
@@ -145,7 +145,7 @@ class ContextPanel(QDockWidget):
 
         if not matches:
             lbl = QLabel(self.tr("<i>No matches</i>"))
-            lbl.setStyleSheet("color: gray;")
+            lbl.setStyleSheet("color: palette(light);")
             self._tm_section.content_layout().addWidget(lbl)
             return
 
@@ -161,7 +161,7 @@ class ContextPanel(QDockWidget):
 
         if not source.strip():
             lbl = QLabel(self.tr("<i>No matching terms</i>"))
-            lbl.setStyleSheet("color: gray;")
+            lbl.setStyleSheet("color: palette(light);")
             self._glossary_section.content_layout().addWidget(lbl)
             return
 
@@ -178,7 +178,7 @@ class ContextPanel(QDockWidget):
 
         if not found:
             lbl = QLabel(self.tr("<i>No matching terms</i>"))
-            lbl.setStyleSheet("color: gray;")
+            lbl.setStyleSheet("color: palette(light);")
             self._glossary_section.content_layout().addWidget(lbl)
             return
 
@@ -196,7 +196,7 @@ class ContextPanel(QDockWidget):
 
         if not source.strip():
             lbl = QLabel(self.tr("<i>No suggestion</i>"))
-            lbl.setStyleSheet("color: gray;")
+            lbl.setStyleSheet("color: palette(light);")
             self._mt_section.content_layout().addWidget(lbl)
             return
 
@@ -210,7 +210,7 @@ class ContextPanel(QDockWidget):
             self._last_mt_text = result
         except (TranslationError, Exception):
             lbl = QLabel(self.tr("<i>MT unavailable</i>"))
-            lbl.setStyleSheet("color: gray;")
+            lbl.setStyleSheet("color: palette(light);")
             self._mt_section.content_layout().addWidget(lbl)
             return
 
