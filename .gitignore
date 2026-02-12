@@ -11,4 +11,6 @@ build/
 !LinguaEdit-windows.spec
 !scripts/linguaedit.spec
 linguaedit_0.4.0_all.deb
+# Keep .qm files in src/linguaedit/translations/ (needed for pip install)
 *.qm
+!src/linguaedit/translations/*.qm
