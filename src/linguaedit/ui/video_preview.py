@@ -62,10 +62,13 @@ def _parse_time_to_ms(time_str: str) -> int:
 class _AspectRatioWidget(QWidget):
     """Container that maintains 16:9 aspect ratio for its child widget."""
 
-    def __init__(self, child: QWidget, parent: QWidget = None):
+    def __init__(self, child: QWidget, overlay: QWidget, parent: QWidget = None):
         super().__init__(parent)
         self._child = child
+        self._overlay = overlay
         self._child.setParent(self)
+        self._overlay.setParent(self)  # Overlay is sibling of video, not child
+        self._overlay.raise_()
         self.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
 
     def resizeEvent(self, event):
@@ -75,14 +78,15 @@ class _AspectRatioWidget(QWidget):
         # Target 16:9
         target_h = int(w * 9 / 16)
         if target_h <= h:
-            # Width-constrained
             y_offset = (h - target_h) // 2
             self._child.setGeometry(0, y_offset, w, target_h)
+            self._overlay.setGeometry(0, y_offset, w, target_h)
         else:
-            # Height-constrained
             target_w = int(h * 16 / 9)
             x_offset = (w - target_w) // 2
             self._child.setGeometry(x_offset, 0, target_w, h)
+            self._overlay.setGeometry(x_offset, 0, target_w, h)
+        self._overlay.raise_()
 
     def sizeHint(self):
         return QSize(480, 270)
@@ -221,8 +225,8 @@ class VideoPreviewWidget(QWidget):
         # Video widget inside 16:9 aspect ratio container
         self._video_widget = QVideoWidget()
         self._video_widget.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
-        self._subtitle_overlay = _SubtitleOverlay(self._video_widget)
-        self._aspect_container = _AspectRatioWidget(self._video_widget, self)
+        self._subtitle_overlay = _SubtitleOverlay(None)  # parented by aspect container
+        self._aspect_container = _AspectRatioWidget(self._video_widget, self._subtitle_overlay, self)
 
         main_layout.addWidget(self._aspect_container, 1)
 
@@ -542,10 +546,7 @@ class VideoPreviewWidget(QWidget):
 
     def resizeEvent(self, event):
         super().resizeEvent(event)
-        # Overlay fills the video widget
-        self._subtitle_overlay.setGeometry(
-            0, 0, self._video_widget.width(), self._video_widget.height()
-        )
+        # Overlay is managed by _AspectRatioWidget — no manual sizing needed
 
     def closeEvent(self, event):
         self._player.stop()
