@@ -9,12 +9,27 @@ SPDX-License-Identifier: GPL-3.0-or-later
 from __future__ import annotations
 
 import json
+import os
+import sys
 import shutil
 import subprocess
 import tempfile
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import List, Optional
+
+
+def _get_subprocess_kwargs() -> dict:
+    """Return platform-specific kwargs to hide console windows on Windows."""
+    kwargs: dict = {}
+    if sys.platform == "win32":
+        # CREATE_NO_WINDOW = 0x08000000
+        si = subprocess.STARTUPINFO()
+        si.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+        si.wShowWindow = 0  # SW_HIDE
+        kwargs["startupinfo"] = si
+        kwargs["creationflags"] = 0x08000000
+    return kwargs
 
 
 @dataclass
@@ -88,7 +103,7 @@ def get_subtitle_tracks(video_path: Path) -> List[SubtitleTrack]:
         str(video_path),
     ]
 
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60, **_get_subprocess_kwargs())
     if result.returncode != 0:
         raise RuntimeError(f"ffprobe failed: {result.stderr.strip()}")
 
@@ -148,6 +163,7 @@ def extract_subtitle(
         import re as _re
         proc = subprocess.Popen(
             cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+            **_get_subprocess_kwargs(),
         )
         for line in proc.stdout:
             m = _re.match(r'out_time_ms=(\d+)', line.strip())
@@ -156,15 +172,15 @@ def extract_subtitle(
                 pct = min(current_ms / (duration * 1_000_000), 1.0)
                 progress_callback(pct)
         try:
-            proc.wait(timeout=30)
+            proc.wait(timeout=300)
         except subprocess.TimeoutExpired:
             proc.kill()
-            raise RuntimeError("ffmpeg extraction timed out after 30 seconds")
+            raise RuntimeError("ffmpeg extraction timed out after 300 seconds")
         if proc.returncode != 0:
             stderr = proc.stderr.read() if proc.stderr else ""
             raise RuntimeError(f"ffmpeg extraction failed: {stderr.strip()}")
     else:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=300, **_get_subprocess_kwargs())
         if result.returncode != 0:
             raise RuntimeError(f"ffmpeg extraction failed: {result.stderr.strip()}")
 
@@ -185,7 +201,7 @@ def get_video_duration(video_path: Path) -> float:
         str(video_path),
     ]
 
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60, **_get_subprocess_kwargs())
     if result.returncode != 0:
         raise RuntimeError(f"ffprobe failed: {result.stderr.strip()}")
 

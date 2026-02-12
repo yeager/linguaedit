@@ -697,7 +697,7 @@ class LinguaEditWindow(QMainWindow):
         self._tree = QTreeWidget()
         self._tree.setRootIsDecorated(False)
         self._tree.setAlternatingRowColors(True)
-        self._tree.setSelectionMode(QAbstractItemView.ExtendedSelection)
+        self._tree.setSelectionMode(QAbstractItemView.SingleSelection)
         self._tree.setUniformRowHeights(True)
         self._tree.setHeaderLabels(["#", "⭐", self.tr("Source text"), self.tr("Translation"), self.tr("Tags"), ""])
         self._tree.setSortingEnabled(True)
@@ -3452,6 +3452,8 @@ class LinguaEditWindow(QMainWindow):
                     break
 
     def _on_fuzzy_toggled(self, checked):
+        if self._trans_block:
+            return
         if self._current_index < 0 or not self._file_data:
             return
         if self._file_type == "po":
@@ -3474,8 +3476,16 @@ class LinguaEditWindow(QMainWindow):
             self._modified = True
         elif self._file_type in ("sdlxliff", "mqxliff"):
             entry = self._file_data.entries[self._current_index]
-            if hasattr(entry, 'confirmation_level'):
-                entry.confirmation_level = "Draft" if checked else "Translated"
+            if checked:
+                entry.confirmed = False
+                entry.state = "needs-review-translation"
+                if hasattr(entry, 'confirmation_level'):
+                    entry.confirmation_level = "Draft"
+            else:
+                entry.confirmed = True
+                entry.state = "translated"
+                if hasattr(entry, 'confirmation_level'):
+                    entry.confirmation_level = "Translated"
             self._modified = True
 
         # Update the current tree row visually
@@ -4663,17 +4673,129 @@ class LinguaEditWindow(QMainWindow):
             self.addDockWidget(Qt.RightDockWidgetArea, self._video_dock)
 
     def _on_open_video(self):
-        """Open a video file via file dialog."""
+        """Open a video file — probe subtitle tracks, let user pick, extract."""
         from PySide6.QtWidgets import QFileDialog
+        from linguaedit.services.ffmpeg import (
+            is_ffmpeg_available, get_subtitle_tracks, get_video_duration,
+            extract_subtitle, SUPPORTED_VIDEO_EXTENSIONS,
+        )
+
+        if not is_ffmpeg_available():
+            from linguaedit.ui.video_subtitle_dialog import FFmpegMissingDialog
+            dlg = FFmpegMissingDialog(self)
+            if dlg.exec() != QDialog.Accepted:
+                return
+
         path, _ = QFileDialog.getOpenFileName(
             self,
             self.tr("Open Video"),
             "",
             self.tr("Video files (*.mkv *.mp4 *.avi *.mov *.webm *.flv *.wmv *.ogv);;All files (*)"),
         )
-        if path:
-            self._ensure_video_dock()
-            self._video_dock.open_video(Path(path))
+        if not path:
+            return
+
+        video_path = Path(path)
+
+        # Show progress while probing
+        progress = QProgressDialog(self.tr("Probing video for subtitle tracks…"), self.tr("Cancel"), 0, 0, self)
+        progress.setWindowTitle(self.tr("Video"))
+        progress.setWindowModality(Qt.WindowModal)
+        progress.setMinimumDuration(0)
+        progress.setValue(0)
+        QApplication.processEvents()
+
+        try:
+            tracks = get_subtitle_tracks(video_path)
+            duration = get_video_duration(video_path)
+        except Exception as e:
+            progress.close()
+            QMessageBox.critical(self, self.tr("Error"), self.tr("Could not read video file:\n%s") % str(e))
+            return
+        finally:
+            progress.close()
+
+        if not tracks:
+            QMessageBox.information(self, self.tr("No Subtitles"), self.tr("No embedded subtitle tracks found in this video file."))
+            return
+
+        # Let user pick a track
+        track_labels = [t.display_label for t in tracks]
+        chosen, ok = QInputDialog.getItem(
+            self, self.tr("Select Subtitle Track"),
+            self.tr("Found %d subtitle track(s). Select one:") % len(tracks),
+            track_labels, 0, False,
+        )
+        if not ok:
+            return
+        track = tracks[track_labels.index(chosen)]
+
+        # Extract with progress
+        import tempfile
+        tmp = tempfile.NamedTemporaryFile(suffix=".srt", delete=False)
+        tmp.close()
+        output_path = Path(tmp.name)
+
+        progress2 = QProgressDialog(self.tr("Extracting subtitles…"), self.tr("Cancel"), 0, 100, self)
+        progress2.setWindowTitle(self.tr("Extracting"))
+        progress2.setWindowModality(Qt.WindowModal)
+        progress2.setMinimumDuration(0)
+        progress2.setValue(0)
+        cancelled = False
+
+        def on_cancel():
+            nonlocal cancelled
+            cancelled = True
+        progress2.canceled.connect(on_cancel)
+
+        def on_progress(pct):
+            if not cancelled:
+                progress2.setValue(int(pct * 100))
+                QApplication.processEvents()
+
+        try:
+            extract_subtitle(video_path, track, output_path, ".srt",
+                             progress_callback=on_progress, duration=duration)
+            progress2.setValue(100)
+        except Exception as e:
+            progress2.close()
+            QMessageBox.critical(self, self.tr("Extraction Failed"), str(e))
+            return
+        finally:
+            progress2.close()
+
+        if cancelled:
+            return
+
+        # Bug 2e: If a file is already open, ask to save/close first
+        if self._file_data and self._modified:
+            answer = QMessageBox.question(
+                self, self.tr("Save Current File?"),
+                self.tr("A translation file is currently open with unsaved changes.\n"
+                         "Save before loading extracted subtitles?"),
+                QMessageBox.Save | QMessageBox.Discard | QMessageBox.Cancel,
+                QMessageBox.Save,
+            )
+            if answer == QMessageBox.Cancel:
+                return
+            if answer == QMessageBox.Save:
+                self._on_save()
+        elif self._file_data:
+            answer = QMessageBox.question(
+                self, self.tr("Close Current File?"),
+                self.tr("Close the current file and load extracted subtitles?"),
+                QMessageBox.Yes | QMessageBox.Cancel,
+                QMessageBox.Yes,
+            )
+            if answer == QMessageBox.Cancel:
+                return
+
+        # Load the extracted subtitle file
+        self._load_file(str(output_path))
+
+        # Also open video dock for preview
+        self._ensure_video_dock()
+        self._video_dock.open_video(video_path)
 
     def _update_compile_icon(self, success: bool):
         """Update compile action icon: green check = OK, red X = error."""
