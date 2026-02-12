@@ -436,7 +436,14 @@ class TranslationEditor(QPlainTextEdit):
         widget = self.get_mt_widget()
         widget.show_loading()
 
-        self._mt_thread = QThread()
+        # Clean up any previous MT thread before starting a new one
+        if self._mt_thread is not None:
+            self._mt_thread.quit()
+            self._mt_thread.wait()
+            self._mt_thread.deleteLater()
+            self._mt_thread = None
+
+        self._mt_thread = QThread(self)  # parent prevents premature GC
         self._mt_worker = _MTWorker(text, source, target, engines)
         self._mt_worker.moveToThread(self._mt_thread)
         self._mt_thread.started.connect(self._mt_worker.run)
