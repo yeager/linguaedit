@@ -3537,6 +3537,21 @@ class LinguaEditWindow(QMainWindow):
         if not self._file_data:
             return
 
+        # First save of extracted video subtitles → ask for filename
+        if getattr(self, '_video_extract_suggested_path', None):
+            suggested = self._video_extract_suggested_path
+            self._video_extract_suggested_path = None
+            path, _ = QFileDialog.getSaveFileName(
+                self, self.tr("Save Extracted Subtitles"),
+                suggested,
+                self.tr("SRT files (*.srt);;VTT files (*.vtt);;All files (*)"),
+            )
+            if not path:
+                return
+            self._file_data.file_path = path
+            self._file_data.path = path
+            self.setWindowTitle(f"LinguaEdit — {Path(path).name}")
+
         if self._file_watcher:
             files = self._file_watcher.files()
             if files:
@@ -4826,6 +4841,15 @@ class LinguaEditWindow(QMainWindow):
             )
             if answer == QMessageBox.Cancel:
                 return
+
+        # Build a suggested save path: video_name.lang.srt next to the video
+        lang_tag = track.language if track.language and track.language != "und" else ""
+        stem = video_path.stem
+        if lang_tag:
+            suggested_name = f"{stem}.{lang_tag}.srt"
+        else:
+            suggested_name = f"{stem}.srt"
+        self._video_extract_suggested_path = str(video_path.parent / suggested_name)
 
         # Load the extracted subtitle file
         self._load_file(str(output_path))
