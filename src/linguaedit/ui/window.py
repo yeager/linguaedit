@@ -4741,7 +4741,22 @@ class LinguaEditWindow(QMainWindow):
             self._video_dock.player.request_prev_segment.connect(lambda: self._navigate(-1))
             self._video_dock.player.request_next_segment.connect(lambda: self._navigate(1))
             self._video_dock.player.request_goto_current_time.connect(self._goto_subtitle_at_time)
+            self._video_dock.visibilityChanged.connect(self._on_video_dock_visibility)
             self.addDockWidget(Qt.RightDockWidgetArea, self._video_dock)
+
+    def _on_video_dock_visibility(self, visible: bool):
+        """Hide/restore context panel when video dock is shown/hidden."""
+        if self._context_panel is None:
+            return
+        if visible:
+            # Remember if context panel was visible, then hide it
+            self._context_was_visible = self._context_panel.isVisible()
+            if self._context_was_visible:
+                self._context_panel.hide()
+        else:
+            # Restore context panel if it was visible before
+            if getattr(self, '_context_was_visible', False):
+                self._context_panel.show()
 
     def _goto_subtitle_at_time(self, position_ms: int):
         """Navigate to the subtitle entry matching a playback position."""
