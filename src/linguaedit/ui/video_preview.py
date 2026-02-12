@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Optional
 
 from PySide6.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QPushButton,
+    QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QStackedLayout,
     QSlider, QLabel, QStyle, QSizePolicy, QDockWidget,
     QComboBox, QCheckBox, QFrame, QToolButton,
 )
@@ -53,13 +53,15 @@ def _parse_time_to_ms(time_str: str) -> int:
     return 0
 
 
-# ── Video widget with subtitle overlay built in ─────────────────
+# ── Subtitle overlay (transparent widget on top of video) ───────
 
-class _VideoWithSubtitles(QVideoWidget):
-    """QVideoWidget that paints subtitle text on top of the video."""
+class _SubtitleOverlay(QWidget):
+    """Transparent widget painted on top of the video surface."""
 
     def __init__(self, parent=None):
         super().__init__(parent)
+        self.setAttribute(Qt.WA_TransparentForMouseEvents)
+        self.setAttribute(Qt.WA_TranslucentBackground)
         self._source_text = ""
         self._translation_text = ""
         self._font_size = 18
@@ -74,7 +76,6 @@ class _VideoWithSubtitles(QVideoWidget):
         self.update()
 
     def paintEvent(self, event):
-        super().paintEvent(event)
         if not self._source_text and not self._translation_text:
             return
         p = QPainter(self)
@@ -105,24 +106,50 @@ class _VideoWithSubtitles(QVideoWidget):
         y = h - total_h - margin - 14
         for text, font, color, br in metrics:
             rect_h = br.height() + 12
-            # Background pill
             rx = margin
             rw = w - 2 * margin
             p.setPen(Qt.NoPen)
             p.setBrush(bg)
             p.drawRoundedRect(QRect(rx, int(y), rw, int(rect_h)), 6, 6)
             p.setFont(font)
-            # Text outline/shadow
             p.setPen(QColor(0, 0, 0, 220))
             for dx, dy in [(-1, -1), (-1, 1), (1, -1), (1, 1)]:
                 p.drawText(rx + 10 + dx, int(y + 6 + dy), rw - 20, int(rect_h - 12),
                            Qt.AlignCenter | Qt.TextWordWrap, text)
-            # Actual text
             p.setPen(color)
             p.drawText(rx + 10, int(y + 6), rw - 20, int(rect_h - 12),
                        Qt.AlignCenter | Qt.TextWordWrap, text)
             y += rect_h + 3
         p.end()
+
+
+# ── Video widget with subtitle overlay ──────────────────────────
+
+class _VideoWithSubtitles(QWidget):
+    """QVideoWidget + transparent subtitle overlay stacked together."""
+
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self._video_widget = QVideoWidget()
+        self._overlay = _SubtitleOverlay()
+
+        # Stack video and overlay on top of each other
+        layout = QStackedLayout(self)
+        layout.setStackingMode(QStackedLayout.StackAll)
+        layout.addWidget(self._video_widget)
+        layout.addWidget(self._overlay)
+        # Overlay on top
+        self._overlay.raise_()
+
+    @property
+    def video_widget(self) -> QVideoWidget:
+        return self._video_widget
+
+    def set_texts(self, source: str, translation: str):
+        self._overlay.set_texts(source, translation)
+
+    def set_font_size(self, size: int):
+        self._overlay.set_font_size(size)
 
 
 # ── Segment progress slider ────────────────────────────────────
@@ -424,7 +451,7 @@ class VideoPreviewWidget(QWidget):
         self._audio = QAudioOutput()
         self._audio.setVolume(0.8)
         self._player.setAudioOutput(self._audio)
-        self._player.setVideoOutput(self._video_widget)
+        self._player.setVideoOutput(self._video_widget.video_widget)
         self._player.positionChanged.connect(self._on_position_changed)
         self._player.durationChanged.connect(self._on_duration_changed)
         self._player.playbackStateChanged.connect(self._on_state_changed)
