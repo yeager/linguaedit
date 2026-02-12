@@ -742,8 +742,9 @@ class LinguaEditWindow(QMainWindow):
         header.setStretchLastSection(False)
         header.setSectionResizeMode(0, QHeaderView.ResizeToContents)  # #
         header.setSectionResizeMode(1, QHeaderView.ResizeToContents)  # ⭐ (bookmark)
-        header.setSectionResizeMode(2, QHeaderView.Stretch)           # Source text  
-        header.setSectionResizeMode(3, QHeaderView.Stretch)           # Translation
+        header.setSectionResizeMode(2, QHeaderView.Interactive)        # Source text (draggable)
+        header.setSectionResizeMode(3, QHeaderView.Stretch)           # Translation (fills remaining)
+        header.resizeSection(2, 320)
         header.setSectionResizeMode(4, QHeaderView.ResizeToContents)  # Tags
         header.setSectionResizeMode(5, QHeaderView.ResizeToContents)  # Status/flags
         self._tree.currentItemChanged.connect(self._on_tree_item_changed)
