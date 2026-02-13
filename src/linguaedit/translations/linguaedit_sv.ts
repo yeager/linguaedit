@@ -4458,11 +4458,11 @@ Lägg till en i Översättning → API-nycklar…</translation></message><messag
         </message>
         <message>
             <source>✗ Select an organization first</source>
-            <translation>✗ Välj en organisation först</translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>✗ Select a project first</source>
-            <translation>✗ Välj ett projekt först</translation>
+            <translation type="unfinished"></translation>
         </message>
         <message>
             <source>Select Organization</source>
