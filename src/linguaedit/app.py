@@ -16,8 +16,7 @@ from linguaedit.services.settings import Settings
 def _find_translations_dir() -> Path:
     """Find the translations directory, checking multiple locations."""
     candidates = [
-        Path(__file__).parent / "translations",                 # installed (inside package)
-        Path(__file__).parent.parent.parent / "translations",  # dev: repo root
+        Path(__file__).parent / "translations",                 # installed (inside package) & dev
         Path(sys.prefix) / "share" / "linguaedit" / "translations",
     ]
     for d in candidates:

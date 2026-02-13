@@ -1,11 +1,9 @@
-<?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="sv">
     <context>
         <name>AIReviewDialog</name>
         <message>
             <source>AI Translation Review</source>
-            <translation>AI Översättningsgranskning</translation>
+            <translation>Granskning av AI-översättning</translation>
         </message>
         <message>
             <source>Analysis</source>
@@ -17,7 +15,7 @@
         </message>
         <message>
             <source>Apply Suggestion</source>
-            <translation>Applicera förslag</translation>
+            <translation>Tillämpa förslag</translation>
         </message>
         <message>
             <source>Score:</source>
@@ -92,7 +90,7 @@
         </message>
         <message>
             <source>Early Bird</source>
-            <translation>Tidig fågel</translation>
+            <translation>Morgonpigg</translation>
         </message>
         <message>
             <source>First Steps</source>
@@ -100,7 +98,7 @@
         </message>
         <message>
             <source>Format Explorer</source>
-            <translation>Format Explorer</translation>
+            <translation>Formatutforskare</translation>
         </message>
         <message>
             <source>Fully translate a file (100% complete)</source>
@@ -297,15 +295,15 @@
         </message>
         <message>
             <source>Fuzzy Operations</source>
-            <translation>Fuzzy-operationer</translation>
+            <translation>Luddiga operationer</translation>
         </message>
         <message>
             <source>Fuzzy: </source>
-            <translation>Fuzzy: </translation>
+            <translation>Luddig: </translation>
         </message>
         <message>
             <source>Mark all translations as fuzzy</source>
-            <translation>Markera alla översättningar som fuzzy</translation>
+            <translation>Markera alla översättningar som luddiga</translation>
         </message>
         <message>
             <source>No</source>
@@ -635,8 +633,8 @@
             <translation>Oöversatt</translation>
         </message>
         <message>
-            <source>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style='color:green'&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:orange'&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:red'&gt;Untranslated: %d&lt;/span&gt;</source>
-            <translation>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style='color:green'&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:orange'&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:red'&gt;Untranslated: %d&lt;/span&gt;</translation>
+            <source>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style=&apos;color:green&apos;&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:orange&apos;&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:red&apos;&gt;Untranslated: %d&lt;/span&gt;</source>
+            <translation>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style=&apos;color:green&apos;&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:orange&apos;&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:red&apos;&gt;Untranslated: %d&lt;/span&gt;</translation>
         </message>
     </context>
     <context>
@@ -818,7 +816,7 @@
         </message>
         <message>
             <source>Not Found</source>
-            <translation>Ej hittad</translation>
+            <translation>Hittades inte</translation>
         </message>
         <message>
             <source>FFmpeg Required</source>
@@ -1234,8 +1232,8 @@
             <translation>Varning</translation>
         </message>
         <message>
-            <source>Delete term '%s' → '%s'?</source>
-            <translation>Radera term '%s' → '%s'?</translation>
+            <source>Delete term &apos;%s&apos; → &apos;%s&apos;?</source>
+            <translation>Radera term &apos;%s&apos; → &apos;%s&apos;?</translation>
         </message>
     </context>
     <context>
@@ -1626,7 +1624,7 @@
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation>&amp;Redigera</translation>
+            <translation>R&amp;edigera</translation>
         </message>
         <message>
             <source>&amp;File</source>
@@ -1638,7 +1636,7 @@
         </message>
         <message>
             <source>&amp;Go</source>
-            <translation>&amp;Gå</translation>
+            <translation>&amp;Kör</translation>
         </message>
         <message>
             <source>&amp;Help</source>
@@ -1646,7 +1644,7 @@
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation>&amp;Öppna…</translation>
+            <translation>Ö&amp;ppna…</translation>
         </message>
         <message>
             <source>&amp;Platforms</source>
@@ -1658,7 +1656,7 @@
         </message>
         <message>
             <source>&amp;Tools</source>
-            <translation>&amp;Verktyg</translation>
+            <translation>Ver&amp;ktyg</translation>
         </message>
         <message>
             <source>&amp;View</source>
@@ -1814,19 +1812,19 @@
         </message>
         <message>
             <source>Auto-propagate</source>
-            <translation>Automatisk spridning</translation>
+            <translation>Automatisk propagering</translation>
         </message>
         <message>
             <source>Auto-propagated %d entries</source>
-            <translation>Automatiskt spridda %d poster</translation>
+            <translation>Propagerade %d poster automatiskt</translation>
         </message>
         <message>
             <source>Batch Edit…</source>
-            <translation>Batchredigering…</translation>
+            <translation>Massredigering…</translation>
         </message>
         <message>
             <source>Batch Translate…</source>
-            <translation>Batchöversättning…</translation>
+            <translation>Massöversättning…</translation>
         </message>
         <message>
             <source>Bilingual export (source + translation)</source>
@@ -1846,7 +1844,7 @@
         </message>
         <message>
             <source>By reference</source>
-            <translation>Genom hänvisning</translation>
+            <translation>Efter referens</translation>
         </message>
         <message>
             <source>Cancel</source>
@@ -1882,11 +1880,11 @@
         </message>
         <message>
             <source>Clear</source>
-            <translation>Rensa</translation>
+            <translation>Töm</translation>
         </message>
         <message>
             <source>Clear translation</source>
-            <translation>Rensa översättning</translation>
+            <translation>Töm översättning</translation>
         </message>
         <message>
             <source>Close Current File?</source>
@@ -2014,7 +2012,7 @@
         </message>
         <message>
             <source>No Crowdin API key configured.\nPlease add one in Translation → API Keys…</source>
-            <translation>Ingen Crowdin API-nyckel konfigurerad.\nLägg till en under Översättning → API-nycklar…</translation>
+            <translation>Ingen Crowdin API-nyckel konfigurerad. Lägg till en i Översättning → API-nycklar...</translation>
         </message>
         <message>
             <source>Crowdin — %s</source>
@@ -2034,7 +2032,7 @@
         </message>
         <message>
             <source>Push Source</source>
-            <translation>Skicka källfil</translation>
+            <translation>Skicka källa</translation>
         </message>
         <message>
             <source>Current string has no translation to propagate.</source>
@@ -2094,7 +2092,7 @@
         </message>
         <message>
             <source>Editor Below</source>
-            <translation>Redigerare nedan</translation>
+            <translation>Redigerare nedanför</translation>
         </message>
         <message>
             <source>Editor on Right</source>
@@ -2126,15 +2124,15 @@
         </message>
         <message>
             <source>Entry pinned</source>
-            <translation>Inlägg fastnat</translation>
+            <translation>Post nålad</translation>
         </message>
         <message>
             <source>Entry split into 2 segments</source>
-            <translation>Inlägget är uppdelat i två delar</translation>
+            <translation>Posten är uppdelad i två delar</translation>
         </message>
         <message>
             <source>Entry unpinned</source>
-            <translation>Inlägget har tagits bort</translation>
+            <translation>Posten avnålad</translation>
         </message>
         <message>
             <source>Error</source>
@@ -2210,7 +2208,7 @@
         </message>
         <message>
             <source>File Changed</source>
-            <translation>Fil ändrad</translation>
+            <translation>Filen har ändrats</translation>
         </message>
         <message>
             <source>File Header / Metadata</source>
@@ -2282,35 +2280,35 @@
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation>Fuzzy</translation>
+            <translation>Luddig</translation>
         </message>
         <message>
             <source>Fuzzy / Needs work</source>
-            <translation>Otydligt / Behöver bearbetas</translation>
+            <translation>Luddiga / Behöver bearbetas</translation>
         </message>
         <message>
             <source>Fuzzy diff (previous → current)</source>
-            <translation>Fuzzy diff (tidigare → nuvarande)</translation>
+            <translation>Luddig diff (tidigare → nuvarande)</translation>
         </message>
         <message>
             <source>Fuzzy:</source>
-            <translation>Fuzzy:</translation>
+            <translation>Luddiga:</translation>
         </message>
         <message>
             <source>Fuzzy: %d</source>
-            <translation>Fuzzy: %d</translation>
+            <translation>Luddiga: %d</translation>
         </message>
         <message>
             <source>Fuzzy: 0</source>
-            <translation>Fuzzy: 0</translation>
+            <translation>Luddiga: 0</translation>
         </message>
         <message>
             <source>Generate Report</source>
-            <translation>Skapa rapport</translation>
+            <translation>Generera rapport</translation>
         </message>
         <message>
             <source>Generate Report…</source>
-            <translation>Skapa rapport…</translation>
+            <translation>Generera rapport…</translation>
         </message>
         <message>
             <source>Generated by LinguaEdit</source>
@@ -2326,11 +2324,11 @@
         </message>
         <message>
             <source>Git Commit</source>
-            <translation>Git-kommit</translation>
+            <translation>Git-commit</translation>
         </message>
         <message>
             <source>Git Diff</source>
-            <translation>Git Diff</translation>
+            <translation>Git-diff</translation>
         </message>
         <message>
             <source>Git Error</source>
@@ -2458,19 +2456,19 @@
         </message>
         <message>
             <source>Ln %d, Col %d</source>
-            <translation>Rad %d, kolumn %d</translation>
+            <translation>Rad %d, kol %d</translation>
         </message>
         <message>
             <source>Ln 1, Col 1</source>
-            <translation>Rad 1, kolumn 1</translation>
+            <translation>Rad 1, kol 1</translation>
         </message>
         <message>
             <source>Loaded reference: %s</source>
-            <translation>Laddad referens: %s</translation>
+            <translation>Läste in referens: %s</translation>
         </message>
         <message>
             <source>Locale:</source>
-            <translation>Språkkod:</translation>
+            <translation>Locale:</translation>
         </message>
         <message>
             <source>MT translation failed</source>
@@ -2690,11 +2688,11 @@
         </message>
         <message>
             <source>Open</source>
-            <translation>Öppen</translation>
+            <translation>Öppna</translation>
         </message>
         <message>
             <source>Open Project…</source>
-            <translation>Öppet projekt…</translation>
+            <translation>Öppna projekt…</translation>
         </message>
         <message>
             <source>Open Reference File</source>
@@ -2738,7 +2736,7 @@
         </message>
         <message>
             <source>Play Translation</source>
-            <translation>Spela översättning</translation>
+            <translation>Spela upp översättning</translation>
         </message>
         <message>
             <source>Playing translation...</source>
@@ -2782,7 +2780,7 @@
         </message>
         <message>
             <source>Previous entry</source>
-            <translation>Föregående inlägg</translation>
+            <translation>Föregående post</translation>
         </message>
         <message>
             <source>Previous untranslated</source>
@@ -2798,7 +2796,7 @@
         </message>
         <message>
             <source>Propagate Translation</source>
-            <translation>Sprid översättningen</translation>
+            <translation>Propagera översättning</translation>
         </message>
         <message>
             <source>Pull Latest</source>
@@ -2978,7 +2976,7 @@
         </message>
         <message>
             <source>Save error: %s</source>
-            <translation>Spara fel: %s</translation>
+            <translation>Fel vid sparning: %s</translation>
         </message>
         <message>
             <source>Saved as %s</source>
@@ -2994,7 +2992,7 @@
         </message>
         <message>
             <source>Search TM…</source>
-            <translation>Sök TM…</translation>
+            <translation>Sök i TM…</translation>
         </message>
         <message>
             <source>Search source and translation text…</source>
@@ -3010,7 +3008,7 @@
         </message>
         <message>
             <source>Select at least 2 entries to merge</source>
-            <translation>Välj minst två poster som ska slås samman.</translation>
+            <translation>Välj minst två poster som ska slås samman</translation>
         </message>
         <message>
             <source>Select macro to play:</source>
@@ -3050,7 +3048,7 @@
         </message>
         <message>
             <source>Side-by-Side View</source>
-            <translation>Sid-vid-sid-vy</translation>
+            <translation>Sida-vid-sida</translation>
         </message>
         <message>
             <source>Sidebar</source>
@@ -3058,7 +3056,7 @@
         </message>
         <message>
             <source>Simple Mode</source>
-            <translation>Enkel läge</translation>
+            <translation>Enkelt läge</translation>
         </message>
         <message>
             <source>Solarized Dark</source>
@@ -3102,7 +3100,7 @@
         </message>
         <message>
             <source>Split Entry…</source>
-            <translation>Delad ingång…</translation>
+            <translation>Uppdelad post…</translation>
         </message>
         <message>
             <source>Stacked View</source>
@@ -3134,7 +3132,7 @@
         </message>
         <message>
             <source>Success</source>
-            <translation>Framgång</translation>
+            <translation>Lyckades</translation>
         </message>
         <message>
             <source>Summary by Category</source>
@@ -3146,7 +3144,7 @@
         </message>
         <message>
             <source>System Default</source>
-            <translation>Systemets standardinställning</translation>
+            <translation>Systemets standard</translation>
         </message>
         <message>
             <source>TM / Suggestions</source>
@@ -3234,7 +3232,7 @@
         </message>
         <message>
             <source>Toggle fuzzy/needs work flag</source>
-            <translation>Växla mellan flaggan "oklar" och "behöver bearbetas"</translation>
+            <translation>Växla mellan flaggan &quot;luddig&quot; och &quot;behöver bearbetas&quot;</translation>
         </message>
         <message>
             <source>Total</source>
@@ -3242,7 +3240,7 @@
         </message>
         <message>
             <source>Total entries:</source>
-            <translation>Totalt antal bidrag:</translation>
+            <translation>Totalt antal poster:</translation>
         </message>
         <message>
             <source>Transifex</source>
@@ -3350,7 +3348,7 @@
         </message>
         <message>
             <source>Untitled</source>
-            <translation>Utan titel</translation>
+            <translation>Namnlös</translation>
         </message>
         <message>
             <source>Untranslated</source>
@@ -3498,11 +3496,11 @@
         </message>
         <message>
             <source>⚠️ Toggle Fuzzy</source>
-            <translation>⚠️ Växla mellan Fuzzy</translation>
+            <translation>⚠️ Växla luddig</translation>
         </message>
         <message>
             <source>✅ Mark Reviewed</source>
-            <translation>✅ Markerad som granskad</translation>
+            <translation>✅ Markera granskad</translation>
         </message>
         <message>
             <source>✓ No spelling issues found</source>
@@ -3522,11 +3520,11 @@
         </message>
         <message>
             <source>📌 Pin Entry</source>
-            <translation>📌 Fäst post</translation>
+            <translation>📌 Nåla post</translation>
         </message>
         <message>
             <source>📌 Unpin Entry</source>
-            <translation>📌 Lösgör post</translation>
+            <translation>📌 Avnåla post</translation>
         </message>
         <message>
             <source>🔊 Play Translation</source>
@@ -3578,7 +3576,7 @@
         </message>
         <message>
             <source>%d of %d entries (%d%%) have no translation.\n\nUntranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.\n\nSave anyway?</source>
-            <translation>%d av %d poster (%d%%) saknar översättning.\n\nOöversatta poster markeras och sparas med källtexten som reservtext, så de visas fortfarande vid uppspelning. När filen öppnas igen i LinguaEdit visas de korrekt som oöversatta.\n\nSpara ändå?</translation>
+            <translation>%d av %d poster (%d%%) har ingen översättning.\n\nOöversatta poster markeras och sparas med källtexten som reserv, så att de fortfarande visas under uppspelning. När de öppnas igen i LinguaEdit visas de korrekt som oöversatta.\n\nSpara ändå?</translation>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s</source>
@@ -3593,12 +3591,12 @@
             <translation>%d s kvar</translation>
         </message>
         <message>
-            <source>&lt;p&gt;LinguaEdit is free software.&lt;/p&gt;&lt;p&gt;If you find it useful, consider supporting development:&lt;/p&gt;&lt;p&gt;❤️ &lt;b&gt;GitHub Sponsors:&lt;/b&gt; &lt;a href='https://github.com/sponsors/yeager'&gt;github.com/sponsors/yeager&lt;/a&gt;&lt;/p&gt;&lt;p&gt;🇸🇪 &lt;b&gt;Swish:&lt;/b&gt; +46702526206 — &lt;a href='swish://payment?payee=0702526206&amp;message=LinguaEdit'&gt;Öppna Swish&lt;/a&gt;&lt;/p&gt;</source>
-            <translation>&lt;p&gt;LinguaEdit is free software.&lt;/p&gt;&lt;p&gt;If you find it useful, consider supporting development:&lt;/p&gt;&lt;p&gt;❤️ &lt;b&gt;GitHub Sponsors:&lt;/b&gt; &lt;a href='https://github.com/sponsors/yeager'&gt;github.com/sponsors/yeager&lt;/a&gt;&lt;/p&gt;&lt;p&gt;🇸🇪 &lt;b&gt;Swish:&lt;/b&gt; +46702526206 — &lt;a href='swish://payment?payee=0702526206&amp;message=LinguaEdit'&gt;Öppna Swish&lt;/a&gt;&lt;/p&gt;</translation>
+            <source>&lt;p&gt;LinguaEdit is free software.&lt;/p&gt;&lt;p&gt;If you find it useful, consider supporting development:&lt;/p&gt;&lt;p&gt;❤️ &lt;b&gt;GitHub Sponsors:&lt;/b&gt; &lt;a href=&apos;https://github.com/sponsors/yeager&apos;&gt;github.com/sponsors/yeager&lt;/a&gt;&lt;/p&gt;&lt;p&gt;🇸🇪 &lt;b&gt;Swish:&lt;/b&gt; +46702526206 — &lt;a href=&apos;swish://payment?payee=0702526206&amp;message=LinguaEdit&apos;&gt;Öppna Swish&lt;/a&gt;&lt;/p&gt;</source>
+            <translation>&lt;p&gt;LinguaEdit är fri programvara.&lt;/p&gt;&lt;p&gt;Om du tycker den är användbar, överväg att ge ditt stöd till utvecklingen:&lt;/p&gt;&lt;p&gt;❤️ &lt;b&gt;GitHub Sponsors:&lt;/b&gt; &lt;a href=&apos;https://github.com/sponsors/yeager&apos;&gt;github.com/sponsors/yeager&lt;/a&gt;&lt;/p&gt;&lt;p&gt;🇸🇪 &lt;b&gt;Swish:&lt;/b&gt; +46702526206 — &lt;a href=&apos;swish://payment?payee=0702526206&amp;message=LinguaEdit&apos;&gt;Öppna Swish&lt;/a&gt;&lt;/p&gt;</translation>
         </message>
         <message>
-            <source>Cannot compile: install 'polib' or 'gettext' (msgfmt)</source>
-            <translation>Kan inte kompilera: installera 'polib' eller 'gettext' (msgfmt)</translation>
+            <source>Cannot compile: install &apos;polib&apos; or &apos;gettext&apos; (msgfmt)</source>
+            <translation>Kan inte kompilera: installera &apos;polib&apos; eller &apos;gettext&apos; (msgfmt)</translation>
         </message>
         <message>
             <source>No untranslated entries</source>
@@ -3649,12 +3647,12 @@
             <translation>Stoppa</translation>
         </message>
         <message>
-            <source>Recording macro '{}'...</source>
-            <translation>Spelar in makro '{}'...</translation>
+            <source>Recording macro &apos;{}&apos;...</source>
+            <translation>Spelar in makro &apos;{}&apos;...</translation>
         </message>
         <message>
-            <source>The file '%s' has unsaved changes.\nDo you want to save before closing?</source>
-            <translation>The file '%s' has unsaved changes.\nDo you want to save before closing?</translation>
+            <source>The file &apos;%s&apos; has unsaved changes.\nDo you want to save before closing?</source>
+            <translation>The file &apos;%s&apos; has unsaved changes.\nDo you want to save before closing?</translation>
         </message>
         <message>
             <source>LinguaEdit — %s</source>
@@ -3665,8 +3663,8 @@
             <translation>Backend: %s</translation>
         </message>
         <message>
-            <source>Source: \"%s\"\n  Entries: %s\n  Translations: %s\n</source>
-            <translation>Källa: \"%s\"\n  Poster: %s\n  Översättningar: %s\n</translation>
+            <source>Source: \&quot;%s\&quot;\n  Entries: %s\n  Translations: %s\n</source>
+            <translation>Källa: \&quot;%s\&quot;\n  Poster: %s\n  Översättningar: %s\n</translation>
         </message>
     <message>
             <source>Source: %s\nTarget: %s</source>
@@ -3690,7 +3688,7 @@
         </message>
         <message>
             <source>No Weblate API key or server URL configured.\nPlease add them in Translation → API Keys…</source>
-            <translation>Ingen Weblate API-nyckel eller server-URL konfigurerad.\nLägg till dem under Översättning → API-nycklar…</translation>
+            <translation>Ingen Weblate API-nyckel eller server-URL har konfigurerats. Lägg till dem under Översättning → API-nycklar...</translation>
         </message>
         <message>
             <source>Weblate Error</source>
@@ -3706,13 +3704,15 @@
         </message>
         <message>
             <source>  (fuzzy: %d)</source>
-            <translation>  (fuzzy: %d)</translation>
+            <translation>  (luddig: %d)</translation>
         </message>
         <message>
             <source>Weblate Server URL:</source>
-            <translation>Weblate server-URL:</translation>
+            <translation>Server-URL för Weblate:</translation>
         </message>
-    </context>
+    <message><source>No API Key</source><translation>Ingen API-nyckel</translation></message><message><source>No Transifex API key configured.
+Please add one in Translation → API Keys…</source><translation>Ingen Transifex API-nyckel konfigurerad.
+Lägg till en i Översättning → API-nycklar…</translation></message><message><source>No language statistics found.</source><translation>Ingen språkstatistik hittades.</translation></message><message><source>No organizations found.</source><translation>Inga organisationer hittades.</translation></message><message><source>No projects found.</source><translation>Inga projekt hittades.</translation></message><message><source>Organization:</source><translation>Organisation:</translation></message><message><source>Project:</source><translation>Projekt:</translation></message><message><source>Select Organization</source><translation>Välj organisation</translation></message><message><source>Select Project</source><translation>Välj projekt</translation></message><message><source>Transifex Error</source><translation>Transifex-fel</translation></message><message><source>Transifex Statistics…</source><translation>Transifex-statistik…</translation></message><message><source>Transifex — %s</source><translation>Transifex — %s</translation></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation>Översättningsstatistik för &lt;b&gt;%s&lt;/b&gt;:</translation></message></context>
     <context>
         <name>Linter</name>
         <message>
@@ -3737,7 +3737,7 @@
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation>Fuzzy</translation>
+            <translation>Luddig</translation>
         </message>
         <message>
             <source>Glossary inconsistency: %s</source>
@@ -3808,11 +3808,11 @@
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation>Fuzzy</translation>
+            <translation>Luddig</translation>
         </message>
         <message>
             <source>Locale Files</source>
-            <translation>Lokala filer</translation>
+            <translation>Locale-filer</translation>
         </message>
         <message>
             <source>Minimal</source>
@@ -3903,11 +3903,11 @@
         </message>
         <message>
             <source>Delete</source>
-            <translation>Radera</translation>
+            <translation>Ta bort</translation>
         </message>
         <message>
             <source>Delete Failed</source>
-            <translation>Radering misslyckades</translation>
+            <translation>Borttagning misslyckades</translation>
         </message>
         <message>
             <source>Delete Macro</source>
@@ -3939,7 +3939,7 @@
         </message>
         <message>
             <source>Export</source>
-            <translation>Export</translation>
+            <translation>Exportera</translation>
         </message>
         <message>
             <source>Export Error</source>
@@ -3987,7 +3987,7 @@
         </message>
         <message>
             <source>Import</source>
-            <translation>Import</translation>
+            <translation>Importera</translation>
         </message>
         <message>
             <source>Import Error</source>
@@ -4079,7 +4079,7 @@
         </message>
         <message>
             <source>Rename Failed</source>
-            <translation>Omdöpning misslyckades</translation>
+            <translation>Namnbyte misslyckades</translation>
         </message>
         <message>
             <source>Rename Macro</source>
@@ -4102,16 +4102,16 @@
             <translation>🔴 Inspelning... ({} åtgärder)</translation>
         </message>
         <message>
-            <source>Are you sure you want to delete the macro '{}'?</source>
-            <translation>Är du säker på att du vill radera makrot '{}'?</translation>
+            <source>Are you sure you want to delete the macro &apos;{}&apos;?</source>
+            <translation>Är du säker på att du vill radera makrot &apos;{}&apos;?</translation>
         </message>
         <message>
-            <source>Failed to play macro '{}'.</source>
-            <translation>Kunde inte spela upp makro '{}'.</translation>
+            <source>Failed to play macro &apos;{}&apos;.</source>
+            <translation>Kunde inte spela upp makro &apos;{}&apos;.</translation>
         </message>
         <message>
-            <source>Macro '{}' has been saved successfully.</source>
-            <translation>Makro '{}' har sparats.</translation>
+            <source>Macro &apos;{}&apos; has been saved successfully.</source>
+            <translation>Makro &apos;{}&apos; har sparats.</translation>
         </message>
     </context>
     <context>
@@ -4276,7 +4276,7 @@
         </message>
         <message>
             <source>Remove Selected</source>
-            <translation>Ta bort valda</translation>
+            <translation>Ta bort markerade</translation>
         </message>
         <message>
             <source>Save PO File</source>
@@ -4284,7 +4284,7 @@
         </message>
         <message>
             <source>Select All</source>
-            <translation>Välj alla</translation>
+            <translation>Markera alla</translation>
         </message>
         <message>
             <source>Select Image</source>
@@ -4292,7 +4292,7 @@
         </message>
         <message>
             <source>Select None</source>
-            <translation>Välj Ingen</translation>
+            <translation>Avmarkera alla</translation>
         </message>
         <message>
             <source>Sparse text with OSD</source>
@@ -4304,7 +4304,7 @@
         </message>
         <message>
             <source>Success</source>
-            <translation>Framgång</translation>
+            <translation>Lyckades</translation>
         </message>
         <message>
             <source>Tesseract Required</source>
@@ -4332,7 +4332,7 @@
         </message>
         <message>
             <source>Image loaded: %1</source>
-            <translation>Bild laddad: %1</translation>
+            <translation>Bild inläst: %1</translation>
         </message>
         <message>
             <source>✓ OCR completed. Found %1 text strings.</source>
@@ -4477,11 +4477,11 @@
         </message>
         <message>
             <source>Author</source>
-            <translation>Författare</translation>
+            <translation>Upphovsperson</translation>
         </message>
         <message>
             <source>Author: {}</source>
-            <translation>Författare: {}</translation>
+            <translation>Upphovsperson: {}</translation>
         </message>
         <message>
             <source>Close</source>
@@ -4750,7 +4750,7 @@
         </message>
         <message>
             <source>Open</source>
-            <translation>Öppen</translation>
+            <translation>Öppna</translation>
         </message>
         <message>
             <source>Open a project folder to begin</source>
@@ -4770,7 +4770,7 @@
         </message>
         <message>
             <source>Progress</source>
-            <translation>Framsteg</translation>
+            <translation>Förlopp</translation>
         </message>
         <message>
             <source>Project</source>
@@ -4873,7 +4873,7 @@
         </message>
         <message>
             <source>📚 Apply glossary term</source>
-            <translation>📚 Använd ordlista</translation>
+            <translation>📚 Tillämpa ordlisteterm</translation>
         </message>
         <message>
             <source>🔤 Capitalize first letter</source>
@@ -5116,7 +5116,7 @@
         </message>
         <message>
             <source>Entry #</source>
-            <translation>Inlägg nr</translation>
+            <translation>Post #</translation>
         </message>
         <message>
             <source>Expansion ratio:</source>
@@ -5128,7 +5128,7 @@
         </message>
         <message>
             <source>Fuzzy/Needs work:</source>
-            <translation>Otydligt/Behöver bearbetas:</translation>
+            <translation>Luddig/Behöver bearbetas:</translation>
         </message>
         <message>
             <source>Length</source>
@@ -5140,7 +5140,7 @@
         </message>
         <message>
             <source>N/A</source>
-            <translation>Ej tillämpligt</translation>
+            <translation>Inte tillgänglig</translation>
         </message>
         <message>
             <source>No additional details available.</source>
@@ -5266,7 +5266,7 @@
         </message>
         <message>
             <source>Downloading…</source>
-            <translation>Nedladdning pågår...</translation>
+            <translation>Hämtar...</translation>
         </message>
         <message>
             <source>Enter a language code</source>
@@ -5278,7 +5278,7 @@
         </message>
         <message>
             <source>Loading resources…</source>
-            <translation>Laddar resurser...</translation>
+            <translation>Läser in resurser...</translation>
         </message>
         <message>
             <source>No file loaded to push</source>
@@ -5290,15 +5290,15 @@
         </message>
         <message>
             <source>Pull</source>
-            <translation>Dra</translation>
+            <translation>Hämta</translation>
         </message>
         <message>
             <source>Pull Translation</source>
-            <translation>Dra översättning</translation>
+            <translation>Hämta översättning</translation>
         </message>
         <message>
             <source>Push</source>
-            <translation>Tryck</translation>
+            <translation>Skicka</translation>
         </message>
         <message>
             <source>Push Translation</source>
@@ -5326,7 +5326,7 @@
         </message>
         <message>
             <source>Uploading…</source>
-            <translation>Laddar upp...</translation>
+            <translation>Skickar upp...</translation>
         </message>
         <message>
             <source>Weblate not configured. Open Platform Settings first.</source>
@@ -5388,15 +5388,15 @@
         </message>
         <message>
             <source>Char</source>
-            <translation>Char</translation>
+            <translation>Teck</translation>
         </message>
         <message>
             <source>Character Analysis</source>
-            <translation>Karaktärsanalys</translation>
+            <translation>Teckenanalys</translation>
         </message>
         <message>
             <source>Character Details</source>
-            <translation>Karaktärsdetaljer</translation>
+            <translation>Teckendetaljer</translation>
         </message>
         <message>
             <source>Clear</source>
@@ -5509,11 +5509,11 @@
         <name>VideoPreviewWidget</name>
         <message>
             <source>Back 1s (Shift+←)</source>
-            <translation>Tillbaka 1 (Skift+←)</translation>
+            <translation>Bakåt 1s (Skift+←)</translation>
         </message>
         <message>
             <source>Forward 1s (Shift+→)</source>
-            <translation>Vidarebefordra 1 (Skift+→)</translation>
+            <translation>Framåt 1s (Skift+→)</translation>
         </message>
         <message>
             <source>Go to current subtitle (G)</source>
@@ -5525,11 +5525,11 @@
         </message>
         <message>
             <source>Loop segment (L)</source>
-            <translation>Löpningssegment (L)</translation>
+            <translation>Loopa segment (L)</translation>
         </message>
         <message>
             <source>Mute (M)</source>
-            <translation>Ljud av (M)</translation>
+            <translation>Tyst (M)</translation>
         </message>
         <message>
             <source>Next entry (Ctrl+→)</source>
@@ -5561,7 +5561,7 @@
         </message>
         <message>
             <source>Stop (S)</source>
-            <translation>Stopp (S)</translation>
+            <translation>Stoppa (S)</translation>
         </message>
         <message>
             <source>Volume</source>
@@ -5795,7 +5795,7 @@
         </message>
         <message>
             <source>System default</source>
-            <translation>Systemets standardinställning</translation>
+            <translation>Systemets standard</translation>
         </message>
         <message>
             <source>Target language:</source>
@@ -5823,10 +5823,10 @@
         </message>
         <message>
             <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,\nAndroid XML, ARB, PHP, and YAML files.\n\nFeatures include AI-powered pre-translation, translation memory,\nquality assurance, spell checking, and platform integration.</source>
-            <translation>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,\nAndroid XML, ARB, PHP, and YAML files.\n\nFeatures include AI-powered pre-translation, translation memory,\nquality assurance, spell checking, and platform integration.</translation>
+            <translation>LinguaEdit är en modern översättningsredigerare för PO-, TS-, JSON-, XLIFF-, Android XML-, ARB-, PHP- och YAML-filer. Funktionerna inkluderar AI-driven föröversättning, översättningsminne, kvalitetssäkring, stavningskontroll och plattformsintegration.</translation>
         </message>
         <message>
-            <source>You're all set!</source>
+            <source>You&apos;re all set!</source>
             <translation>Du är redo!</translation>
         </message>
         <message>
@@ -5865,11 +5865,11 @@
         </message>
         <message>
             <source>Previous entry</source>
-            <translation>Föregående inlägg</translation>
+            <translation>Föregående post</translation>
         </message>
         <message>
             <source>Skip to next untranslated (Ctrl+Enter)</source>
-            <translation>Hoppa till nästa orättade (Ctrl+Enter)</translation>
+            <translation>Hoppa till nästa oöversatta (Ctrl+Enter)</translation>
         </message>
         <message>
             <source>&amp;Catalog</source>
@@ -5877,7 +5877,7 @@
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation>&amp;Redigera</translation>
+            <translation>R&amp;edigera</translation>
         </message>
         <message>
             <source>&amp;File</source>
@@ -5897,7 +5897,7 @@
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation>&amp;Öppna…</translation>
+            <translation>Ö&amp;ppna…</translation>
         </message>
         <message>
             <source>&amp;Platforms</source>
@@ -5909,7 +5909,7 @@
         </message>
         <message>
             <source>&amp;Tools</source>
-            <translation>&amp;Verktyg</translation>
+            <translation>Ver&amp;ktyg</translation>
         </message>
         <message>
             <source>&amp;View</source>
@@ -5989,7 +5989,7 @@
         </message>
         <message>
             <source>&lt;i&gt;MT unavailable&lt;/i&gt;</source>
-            <translation>&lt;i&gt;MT ej tillgänglig&lt;/i&gt;</translation>
+            <translation>&lt;i&gt;MT inte tillgänglig&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No matches&lt;/i&gt;</source>
@@ -6008,28 +6008,28 @@
             <translation>&lt;i&gt;Inga förslag&lt;/i&gt;</translation>
         </message>
         <message>
-            <source>Are you sure you want to delete the macro '{}'?</source>
-            <translation>Är du säker på att du vill radera makrot '{}'?</translation>
+            <source>Are you sure you want to delete the macro &apos;{}&apos;?</source>
+            <translation>Är du säker på att du vill radera makrot &apos;{}&apos;?</translation>
         </message>
         <message>
-            <source>Cannot compile: install 'polib' or 'gettext' (msgfmt)</source>
-            <translation>Kan inte kompilera: installera 'polib' eller 'gettext' (msgfmt)</translation>
+            <source>Cannot compile: install &apos;polib&apos; or &apos;gettext&apos; (msgfmt)</source>
+            <translation>Kan inte kompilera: installera &apos;polib&apos; eller &apos;gettext&apos; (msgfmt)</translation>
         </message>
         <message>
             <source>Click in the source text where you want to split, then press OK.</source>
             <translation>Klicka i källtexten där du vill dela, tryck sedan OK.</translation>
         </message>
         <message>
-            <source>Delete term '%s' → '%s'?</source>
-            <translation>Radera term '%s' → '%s'?</translation>
+            <source>Delete term &apos;%s&apos; → &apos;%s&apos;?</source>
+            <translation>Radera term &apos;%s&apos; → &apos;%s&apos;?</translation>
         </message>
         <message>
             <source>This video file contains no embedded subtitle tracks.</source>
             <translation>Denna videofil innehåller inga inbäddade undertextspår.</translation>
         </message>
         <message>
-            <source>Failed to play macro '{}'.</source>
-            <translation>Kunde inte spela upp makro '{}'.</translation>
+            <source>Failed to play macro &apos;{}&apos;.</source>
+            <translation>Kunde inte spela upp makro &apos;{}&apos;.</translation>
         </message>
         <message>
             <source>Find &amp; Replace</source>
@@ -6040,12 +6040,12 @@
             <translation>Sök och ersätt…</translation>
         </message>
         <message>
-            <source>Macro '{}' has been saved successfully.</source>
-            <translation>Makro '{}' har sparats.</translation>
+            <source>Macro &apos;{}&apos; has been saved successfully.</source>
+            <translation>Makro &apos;{}&apos; har sparats.</translation>
         </message>
         <message>
-            <source>Recording macro '{}'...</source>
-            <translation>Spelar in makro '{}'...</translation>
+            <source>Recording macro &apos;{}&apos;...</source>
+            <translation>Spelar in makro &apos;{}&apos;...</translation>
         </message>
         <message>
             <source>Save &amp;As…</source>
@@ -6060,15 +6060,15 @@
             <translation>Sök och ersätt</translation>
         </message>
         <message>
-            <source>The file '%s' has unsaved changes.\nDo you want to save before closing?</source>
-            <translation>Filen '%s' har osparade ändringar.\nVill du spara innan du stänger?</translation>
+            <source>The file &apos;%s&apos; has unsaved changes.\nDo you want to save before closing?</source>
+            <translation>Filen &apos;%s&apos; har osparade ändringar.\nVill du spara innan du stänger?</translation>
         </message>
         <message>
             <source>Total: {0} characters | Invisible: {1} | Suspicious: {2}</source>
             <translation>Totalt: {0} tecken | Osynliga: {1} | Misstänkta: {2}</translation>
         </message>
         <message>
-            <source>You're all set!</source>
+            <source>You&apos;re all set!</source>
             <translation>Du är redo!</translation>
         </message>
         <message>
@@ -6085,7 +6085,7 @@
         </message>
         <message>
             <source>%d of %d entries (%d%%) have no translation.\n\nUntranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.\n\nSave anyway?</source>
-            <translation>%d av %d poster (%d%%) saknar översättning.\n\nOöversatta poster markeras och sparas med källtexten som reservtext, så de visas fortfarande vid uppspelning. När filen öppnas igen i LinguaEdit visas de korrekt som oöversatta.\n\nSpara ändå?</translation>
+            <translation>%d av %d poster (%d%%) har ingen översättning.\n\nOöversatta poster markeras och sparas med källtexten som reserv, så att de fortfarande visas under uppspelning. När de öppnas igen i LinguaEdit visas de korrekt som oöversatta.\n\nSpara ändå?</translation>
         </message>
         <message>
             <source>A translation file is currently open with unsaved changes.\nSave before loading new subtitles?</source>
@@ -6168,7 +6168,7 @@
         </message>
         <message>
             <source>OVERFLOW: +%dpx</source>
-            <translation>ÖVERSKRIDANDE: +%dpx</translation>
+            <translation>ÖVERFLÖDE: +%dpx</translation>
         </message>
     </context>
     <context>
@@ -6179,12 +6179,12 @@
         </message>
         <message>
             <source>A new version of LinguaEdit is available!</source>
-            <translation>En ny version av LinguaEdit finns tillgänglig!</translation>
+            <translation>En ny version av LinguaEdit finns nu tillgänglig!</translation>
         </message>
         <message>
             <source>Current version: %s
 New version: %s</source>
-            <translation>Nuvarande version: %s
+            <translation>Aktuell version: %s
 Ny version: %s</translation>
         </message>
         <message>
@@ -6197,7 +6197,7 @@ Ny version: %s</translation>
         </message>
         <message>
             <source>Download</source>
-            <translation>Ladda ner</translation>
+            <translation>Hämta ner</translation>
         </message>
         <message>
             <source>Remind me later</source>
