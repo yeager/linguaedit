@@ -1122,7 +1122,7 @@
         </message>
         <message>
             <source>Search &amp; Filter</source>
-            <translation>Sök &amp;amp; filtrera</translation>
+            <translation>Sök &amp; filtrera</translation>
         </message>
         <message>
             <source>Search in source or target...</source>
@@ -1557,47 +1557,47 @@
         </message>
         <message>
             <source>&amp;Catalog</source>
-            <translation>&amp;amp;Katalog</translation>
+            <translation>&amp;Katalog</translation>
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation>&amp;amp;Redigera</translation>
+            <translation>&amp;Redigera</translation>
         </message>
         <message>
             <source>&amp;File</source>
-            <translation>Och arkivera</translation>
+            <translation>&amp;Arkiv</translation>
         </message>
         <message>
             <source>&amp;Git</source>
-            <translation>&amp;amp;Gå</translation>
+            <translation>Gi&amp;t</translation>
         </message>
         <message>
             <source>&amp;Go</source>
-            <translation>Och kör</translation>
+            <translation>&amp;Gå</translation>
         </message>
         <message>
             <source>&amp;Help</source>
-            <translation>&amp;amp;Hjälp</translation>
+            <translation>&amp;Hjälp</translation>
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation>&amp;amp;Öppen…</translation>
+            <translation>&amp;Öppna…</translation>
         </message>
         <message>
             <source>&amp;Platforms</source>
-            <translation>&amp;amp;Plattformar</translation>
+            <translation>&amp;Plattformar</translation>
         </message>
         <message>
             <source>&amp;Save</source>
-            <translation>&amp;amp;Spara</translation>
+            <translation>&amp;Spara</translation>
         </message>
         <message>
             <source>&amp;Tools</source>
-            <translation>&amp;amp;Verktyg</translation>
+            <translation>&amp;Verktyg</translation>
         </message>
         <message>
             <source>&amp;View</source>
-            <translation>&amp;amp;Visa</translation>
+            <translation>&amp;Visa</translation>
         </message>
         <message>
             <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
@@ -2869,7 +2869,7 @@
         </message>
         <message>
             <source>Save &amp;As…</source>
-            <translation>Spara som…</translation>
+            <translation>Spara s&amp;om…</translation>
         </message>
         <message>
             <source>Save As…</source>
