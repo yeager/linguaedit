@@ -1645,7 +1645,7 @@
         </message>
         <message>
             <source>A translation file is currently open with unsaved changes.\n</source>
-            <translation>En översättningsfil är för närvarande öppen med osparade ändringar.</translation>
+            <translation>En översättningsfil är öppen med osparade ändringar.\n</translation>
         </message>
         <message>
             <source>AI Review</source>
@@ -1945,7 +1945,7 @@
         </message>
         <message>
             <source>Crowdin Over-The-Air functionality not yet implemented.\n</source>
-            <translation>Crowdin Over-The-Air-funktionalitet är ännu inte implementerad.</translation>
+            <translation>Crowdin Over-The-Air-funktionalitet är ännu inte implementerad.\n</translation>
         </message>
         <message>
             <source>Current string has no translation to propagate.</source>
@@ -3109,7 +3109,7 @@
         </message>
         <message>
             <source>The current file has unsaved changes.\nDo you want to save before continuing?</source>
-            <translation>Den aktuella filen har osparade ändringar. Vill du spara innan du fortsätter?</translation>
+            <translation>Den aktuella filen har osparade ändringar.\nVill du spara innan du fortsätter?</translation>
         </message>
         <message>
             <source>The file </source>
@@ -3357,7 +3357,7 @@
         </message>
         <message>
             <source>\n\nErrors:\n{}</source>
-            <translation>Fel:</translation>
+            <translation>\n\nFel:\n{}</translation>
         </message>
         <message>
             <source>lrelease error: %s</source>
@@ -5697,6 +5697,54 @@
         <message>
             <source>Your credentials are securely stored in the system keychain.</source>
             <translation>Dina inloggningsuppgifter lagras säkert i systemets nyckelring.</translation>
+        </message>
+        <message>
+            <source>Are you sure you want to rollback to this version?\n\nThis will replace the current text with:\n{}</source>
+            <translation>Är du säker på att du vill återställa till denna version?\n\nDetta ersätter den nuvarande texten med:\n{}</translation>
+        </message>
+        <message>
+            <source>OCR functionality requires tesseract-ocr to be installed.\n\nInstall with:\n• macOS: brew install tesseract\n• Ubuntu: sudo apt install tesseract-ocr\n• Windows: download from GitHub</source>
+            <translation>OCR-funktionalitet kräver att tesseract-ocr är installerat.\n\nInstallera med:\n• macOS: brew install tesseract\n• Ubuntu: sudo apt install tesseract-ocr\n• Windows: ladda ner från GitHub</translation>
+        </message>
+        <message>
+            <source>%d of %d entries (%d%%) have no translation.\n\nUntranslated entries will be saved with empty text, which means those lines will be silent/blank during playback.\n\nSave anyway?</source>
+            <translation>%d av %d poster (%d%%) saknar översättning.\n\nOöversatta poster sparas med tom text, vilket innebär att dessa rader blir tysta/tomma vid uppspelning.\n\nSpara ändå?</translation>
+        </message>
+        <message>
+            <source>A translation file is currently open with unsaved changes.\nSave before loading new subtitles?</source>
+            <translation>En översättningsfil är öppen med osparade ändringar.\nSpara innan nya undertexter laddas?</translation>
+        </message>
+        <message>
+            <source>Crowdin Over-The-Air functionality not yet implemented.\nThis would pull latest translations from Crowdin.</source>
+            <translation>Crowdin Over-The-Air-funktionalitet är ännu inte implementerad.\nDetta skulle hämta senaste översättningarna från Crowdin.</translation>
+        </message>
+        <message>
+            <source>No untranslated entries</source>
+            <translation>Inga oöversatta poster</translation>
+        </message>
+        <message>
+            <source>Pre-translating…</source>
+            <translation>Föröversätter…</translation>
+        </message>
+        <message>
+            <source>Pre-translated %d entries via %s (%d errors)</source>
+            <translation>Föröversatte %d poster via %s (%d fel)</translation>
+        </message>
+        <message>
+            <source>%d of %d strings · %.1f strings/s · %s</source>
+            <translation>%d av %d strängar · %.1f strängar/s · %s</translation>
+        </message>
+        <message>
+            <source>%d min %d s remaining</source>
+            <translation>%d min %d s kvar</translation>
+        </message>
+        <message>
+            <source>%d s remaining</source>
+            <translation>%d s kvar</translation>
+        </message>
+        <message>
+            <source>Completed %d strings in %d s</source>
+            <translation>Slutförde %d strängar på %d s</translation>
         </message>
     </context>
 </TS>
