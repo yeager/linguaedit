@@ -1,3 +1,11 @@
+linguaedit (1.8.3) stable; urgency=medium
+
+  * CI: added lrelease step to compile translations in all GitHub Actions builds
+  * FFmpeg: fix Windows pipe deadlock by draining stderr in background thread
+  * FFmpeg: search common Windows install paths (Chocolatey, Scoop, Program Files)
+
+ -- Daniel Nylander <daniel@danielnylander.se>  Fri, 13 Feb 2026 10:07:00 +0100
+
 linguaedit (1.8.2) stable; urgency=medium
 
   * Video subtitle overlay: QGraphicsView + QGraphicsVideoItem (subtitles visible on video)

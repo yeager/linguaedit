@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [1.8.3] — 2026-02-13
+
+### Changed
+- **CI** — added `lrelease` step to compile translations in all GitHub Actions builds (macOS, Windows, Linux)
+
+### Fixed
+- **FFmpeg** — fix Windows pipe deadlock by draining stderr in background thread
+- **FFmpeg** — search common Windows install paths (Chocolatey, Scoop, Program Files) when not on PATH
+
 ## [1.8.2] — 2026-02-13
 
 ### Changed

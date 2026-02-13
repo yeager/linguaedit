@@ -1,5 +1,5 @@
 Name:           linguaedit
-Version:        1.8.2
+Version:        1.8.3
 Release:        1%{?dist}
 Summary:        Professional translation editor
 License:        GPL-3.0-or-later
