@@ -740,18 +740,12 @@ class LinguaEditWindow(QMainWindow):
         self._tree.setSortingEnabled(True)
         header = self._tree.header()
         header.setStretchLastSection(False)
-        header.setSectionResizeMode(0, QHeaderView.Interactive)          # #
-        header.setSectionResizeMode(1, QHeaderView.Interactive)          # ⭐ (bookmark)
-        header.setSectionResizeMode(2, QHeaderView.Interactive)          # Source text
-        header.setSectionResizeMode(3, QHeaderView.Stretch)              # Translation (fills remaining)
-        header.setSectionResizeMode(4, QHeaderView.Interactive)          # Tags
-        header.setSectionResizeMode(5, QHeaderView.Interactive)          # Status/flags
-        # Sensible default widths
-        header.resizeSection(0, 45)
-        header.resizeSection(1, 30)
-        header.resizeSection(2, 300)
-        header.resizeSection(4, 80)
-        header.resizeSection(5, 35)
+        header.setSectionResizeMode(0, QHeaderView.ResizeToContents)     # #
+        header.setSectionResizeMode(1, QHeaderView.ResizeToContents)     # ⭐ (bookmark)
+        header.setSectionResizeMode(2, QHeaderView.Stretch)              # Source text
+        header.setSectionResizeMode(3, QHeaderView.Stretch)              # Translation (equal to source)
+        header.setSectionResizeMode(4, QHeaderView.ResizeToContents)     # Tags
+        header.setSectionResizeMode(5, QHeaderView.ResizeToContents)     # Status/flags
         self._tree.currentItemChanged.connect(self._on_tree_item_changed)
         self._tree.setContextMenuPolicy(Qt.CustomContextMenu)
         self._tree.customContextMenuRequested.connect(self._show_tree_context_menu)
