@@ -2833,6 +2833,8 @@ class LinguaEditWindow(QMainWindow):
             self._file_data.entries[idx].target = text
         elif self._file_type in ("android", "arb", "php", "yaml"):
             self._file_data.entries[idx].value = text
+        elif self._file_type == "subtitles":
+            self._file_data.entries[idx].translation = text
 
     def _set_entry_fuzzy(self, idx: int, fuzzy: bool):
         if self._file_type == "po":
@@ -3483,6 +3485,7 @@ class LinguaEditWindow(QMainWindow):
                 if entry.fuzzy and not self._fuzzy_check.isChecked():
                     entry.fuzzy = False
                 self._modified = True
+                self._sync_subtitle_entries_to_video()
         elif self._file_type in ("apple_strings", "unity_asset", "resx"):
             entry = self._file_data.entries[self._current_index]
             if entry.msgstr != text:
