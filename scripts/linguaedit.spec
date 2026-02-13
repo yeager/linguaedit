@@ -1,5 +1,5 @@
 Name:           linguaedit
-Version:        1.8.3
+Version:        1.8.4
 Release:        1%{?dist}
 Summary:        Professional translation editor
 License:        GPL-3.0-or-later
@@ -63,6 +63,12 @@ update-mime-database /usr/share/mime 2>/dev/null || true
 %license LICENSE
 
 %changelog
+* Fri Feb 13 2026 Daniel Nylander <daniel@danielnylander.se> - 1.8.4-1
+- i18n: translate 51 missing strings
+- i18n: fix 50 DeepL mistranslations
+- i18n: fix accelerator translations mangled by DeepL
+- i18n: wrap 2 OCR dialog strings in self.tr()
+
 * Fri Feb 13 2026 Daniel Nylander <daniel@danielnylander.se> - 1.8.1-1
 - Complete Swedish translation (285 to 1323 strings)
 - Video subtitle overlay: translation-only yellow, source red when untranslated

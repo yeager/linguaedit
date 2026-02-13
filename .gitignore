@@ -14,3 +14,5 @@ linguaedit_0.4.0_all.deb
 # Keep .qm files in src/linguaedit/translations/ (needed for pip install)
 *.qm
 !src/linguaedit/translations/*.qm
+linguaedit-deb-build/
+*.deb
