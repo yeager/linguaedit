@@ -3712,7 +3712,8 @@
             <source>Weblate Server URL:</source>
             <translation type="unfinished" />
         </message>
-    </context>
+    <message><source>No API Key</source><translation type="unfinished" /></message><message><source>No Transifex API key configured.
+Please add one in Translation → API Keys…</source><translation type="unfinished" /></message><message><source>No language statistics found.</source><translation type="unfinished" /></message><message><source>No organizations found.</source><translation type="unfinished" /></message><message><source>No projects found.</source><translation type="unfinished" /></message><message><source>Organization:</source><translation type="unfinished" /></message><message><source>Project:</source><translation type="unfinished" /></message><message><source>Select Organization</source><translation type="unfinished" /></message><message><source>Select Project</source><translation type="unfinished" /></message><message><source>Transifex Error</source><translation type="unfinished" /></message><message><source>Transifex Statistics…</source><translation type="unfinished" /></message><message><source>Transifex — %s</source><translation type="unfinished" /></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation type="unfinished" /></message></context>
     <context>
         <name>Linter</name>
         <message>
