@@ -1,5 +1,5 @@
 Name:           linguaedit
-Version:        1.8.4
+Version:        1.8.5
 Release:        1%{?dist}
 Summary:        Professional translation editor
 License:        GPL-3.0-or-later
@@ -63,6 +63,17 @@ update-mime-database /usr/share/mime 2>/dev/null || true
 %license LICENSE
 
 %changelog
+* Fri Feb 13 2026 Daniel Nylander <daniel@danielnylander.se> - 1.8.5-1
+- Pre-translate: API error dialog with skip/continue/stop
+- Pre-translate: keep completed translations on cancel
+- Pre-translate: progress dialog with ETA and cancel button
+- Fix Lingva: update dead lingva.ml URL to translate.plausibility.cloud
+- i18n: move pre-translate strings to correct LinguaEditWindow context
+- i18n: fix context placement for 36 strings + add update_translations.py
+- i18n: fix 4 missing newlines in translations + add 12 new strings
+- i18n: Redaktör → Redigerare (editor)
+- keystore: remove -T '' flag from macOS Keychain storage
+
 * Fri Feb 13 2026 Daniel Nylander <daniel@danielnylander.se> - 1.8.4-1
 - i18n: translate 51 missing strings
 - i18n: fix 50 DeepL mistranslations

@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## [1.8.5] — 2026-02-13
+
+### Changed
+- **Pre-translate** — show API error dialog with skip/continue/stop options
+- **Pre-translate** — keep completed translations on cancel (don't discard)
+- **Pre-translate** — progress dialog with ETA and cancel button
+
+### Fixed
+- **Lingva** — update dead `lingva.ml` URL to working `translate.plausibility.cloud` instance
+- **i18n** — move pre-translate strings to correct `LinguaEditWindow` context
+- **i18n** — fix context placement for 36 strings + add `update_translations.py`
+- **i18n** — fix 4 missing `\n` in translations + add 12 new strings
+- **i18n** — Redaktör → Redigerare (editor)
+- **keystore** — remove `-T ''` flag from macOS Keychain storage (was blocking all apps)
+
 ## [1.8.4] — 2026-02-13
 
 ### Fixed
