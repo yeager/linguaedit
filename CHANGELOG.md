@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.8.9] — 2026-02-13
+
+### Fixed
+- **Flag icons on Windows** — use Segoe UI Emoji instead of Apple Color Emoji (Linux: Noto Color Emoji)
+- **Translations on Windows** — improved translations directory discovery (importlib.resources + Windows site-packages path)
+
 ## [1.8.8] — 2026-02-13
 
 ### Fixed

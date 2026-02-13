@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+import sys
 from pathlib import Path
 
 from PySide6.QtWidgets import (
@@ -35,7 +36,14 @@ def _flag_icon(code: str) -> QIcon:
     pix = QPixmap(24, 24)
     pix.fill(Qt.transparent)
     p = QPainter(pix)
-    p.setFont(QFont("Apple Color Emoji", 16))
+    # Use platform-appropriate emoji font
+    if sys.platform == "darwin":
+        font_name = "Apple Color Emoji"
+    elif sys.platform == "win32":
+        font_name = "Segoe UI Emoji"
+    else:
+        font_name = "Noto Color Emoji"
+    p.setFont(QFont(font_name, 16))
     p.drawText(pix.rect(), Qt.AlignCenter, flag)
     p.end()
     return QIcon(pix)

@@ -18,7 +18,15 @@ def _find_translations_dir() -> Path:
     candidates = [
         Path(__file__).parent / "translations",                 # installed (inside package) & dev
         Path(sys.prefix) / "share" / "linguaedit" / "translations",
+        Path(sys.prefix) / "Lib" / "site-packages" / "linguaedit" / "translations",  # Windows pip
     ]
+    # Also check relative to the package install location via importlib
+    try:
+        import importlib.resources as _res
+        pkg_dir = Path(_res.files("linguaedit").__fspath__())  # type: ignore[union-attr]
+        candidates.insert(1, pkg_dir / "translations")
+    except Exception:
+        pass
     for d in candidates:
         if d.is_dir():
             return d
