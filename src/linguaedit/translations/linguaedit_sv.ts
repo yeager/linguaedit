@@ -2005,11 +2005,11 @@
         </message>
         <message>
             <source>Editor Below</source>
-            <translation>Redaktör nedan</translation>
+            <translation>Redigerare nedan</translation>
         </message>
         <message>
             <source>Editor on Right</source>
-            <translation>Redaktör till höger</translation>
+            <translation>Redigerare till höger</translation>
         </message>
         <message>
             <source>Email Translation</source>
@@ -4338,7 +4338,7 @@
         </message>
         <message>
             <source>Editor font size:</source>
-            <translation>Redaktörens teckenstorlek:</translation>
+            <translation>Teckenstorlek i redigeraren:</translation>
         </message>
         <message>
             <source>Email:</source>
@@ -5382,7 +5382,7 @@
         </message>
         <message>
             <source>Editor font size:</source>
-            <translation>Redaktörens teckenstorlek:</translation>
+            <translation>Teckenstorlek i redigeraren:</translation>
         </message>
         <message>
             <source>Email:</source>
