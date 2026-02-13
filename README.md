@@ -1,12 +1,13 @@
 # LinguaEdit
 
-![Version](https://img.shields.io/badge/version-1.7.5-blue)
+![Version](https://img.shields.io/badge/version-1.8.6-blue)
 ![GitHub Release](https://img.shields.io/github/v/release/yeager/linguaedit)
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue)
 ![Python](https://img.shields.io/badge/python-3.10+-green)
 ![Qt6](https://img.shields.io/badge/Qt-6-green)
 ![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey)
 ![Swedish](https://img.shields.io/badge/svenska-100%25-yellow)
+[![Translate on Transifex](https://img.shields.io/badge/translate-Transifex-blue)](https://app.transifex.com/linguaedit/linguaedit/)
 
 **Professional translation editor built with PySide6/Qt6 — by a translator, for translators.**
 
@@ -246,7 +247,7 @@ Distraction-free translation workflow (Ctrl+Shift+Z):
 
 ### 🌐 Platform Integration
 
-- **Weblate / Crowdin / Transifex** — sync projects, pull/push translations
+- **Transifex** — community translations with daily GitHub Actions sync (18 languages)
 - **File associations** — double-click `.po`, `.ts`, `.xliff`, etc. to open (macOS + Linux)
 - macOS `.app` bundle with proper menu bar name and icon
 - Linux `.desktop` file with MIME type definitions
@@ -280,12 +281,14 @@ Distraction-free translation workflow (Ctrl+Shift+Z):
 
 ---
 
-## 🇸🇪 Translations
+## 🌍 Translations
 
-LinguaEdit is currently translated to:
-- **Swedish** — 100% (1023 strings)
+LinguaEdit is translated via [Transifex](https://app.transifex.com/linguaedit/linguaedit/) with **1,487 source strings** and 18 languages configured. Translations sync daily via GitHub Actions.
 
-Want to add your language? See [translations/README.md](translations/README.md) for instructions. Contributions via Pull Request are welcome!
+Currently translated:
+- **Swedish** — 100%
+
+**Help translate LinguaEdit into your language!** Join us on [Transifex](https://app.transifex.com/linguaedit/linguaedit/) — no coding required.
 
 ---
 
