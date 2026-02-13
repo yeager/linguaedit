@@ -90,7 +90,9 @@ def main():
     for context, strings in sorted(all_strings.items()):
         existing_strings = existing.get(context, {})
         for s in sorted(strings):
-            if s not in existing_strings:
+            # Normalize escaped newlines from Python source to real newlines (as in .ts XML)
+            normalized = s.replace("\\n", "\n")
+            if normalized not in existing_strings and s not in existing_strings:
                 new_count += 1
                 print(f"  NEW [{context}]: {s[:80]}")
 
