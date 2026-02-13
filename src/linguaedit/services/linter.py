@@ -260,8 +260,7 @@ def lint_entries(entries: list[dict]) -> LintResult:
         # Nummer-lokalisering
         number_issues = _check_number_localization(msgid, msgstr, target_locale)
         for issue_msg in number_issues:
-            issues.append(LintIssue("warning", issue_msg, idx, msgid))
-            penalty += 0.4
+            issues.append(LintIssue("info", issue_msg, idx, msgid))
         
         # Valuta-lokalisering
         currency_issues = _check_currency_localization(msgid, msgstr, target_locale)
