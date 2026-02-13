@@ -22,7 +22,7 @@ case "$ACTION" in
         echo "==> Pushing source strings to Transifex..."
         tx push --source --force
         echo "==> Pushing Swedish translations..."
-        tx push --translation --languages sv_SE --force
+        tx push --translation --languages sv --force
         ;;
     pull)
         echo "==> Pulling translations from Transifex..."

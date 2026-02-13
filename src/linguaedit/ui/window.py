@@ -1458,9 +1458,8 @@ class LinguaEditWindow(QMainWindow):
         
         # Transifex
         tools_menu.addAction(self.tr("Transifex Statistics…"), self._show_transifex_stats)
-        # Crowdin submenu
-        crowdin_menu = tools_menu.addMenu(self.tr("Crowdin"))
-        crowdin_menu.addAction(self.tr("Pull Latest"), self._crowdin_pull_latest)
+        tools_menu.addAction(self.tr("Weblate Statistics…"), self._show_weblate_stats)
+        tools_menu.addAction(self.tr("Crowdin Statistics…"), self._show_crowdin_stats)
         tools_menu.addSeparator()
         tools_menu.addAction(self.tr("Glossary…"), self._show_glossary_dialog)
         tools_menu.addAction(self.tr("Concordance Search…"), self._show_concordance_dialog, QKeySequence("Ctrl+Alt+K"))
@@ -4619,6 +4618,7 @@ class LinguaEditWindow(QMainWindow):
             ("google_cloud", "Google Cloud Translation"), ("microsoft_translator", "Microsoft Translator"),
             ("aws", "Amazon Translate"), ("huggingface", "HuggingFace (NLLB)"),
             ("libretranslate", "LibreTranslate"), ("transifex", "Transifex"),
+            ("weblate", "Weblate"),
         ]
         form = QFormLayout()
         rows = {}
@@ -4640,6 +4640,9 @@ class LinguaEditWindow(QMainWindow):
         form.addRow(self.tr("AWS Secret Key:"), aws_secret_edit)
         aws_region_edit = QLineEdit(ks_get("aws", "region") or "us-east-1")
         form.addRow(self.tr("AWS Region:"), aws_region_edit)
+        weblate_url_edit = QLineEdit(ks_get("weblate", "url") or "")
+        weblate_url_edit.setPlaceholderText("https://weblate.example.com")
+        form.addRow(self.tr("Weblate Server URL:"), weblate_url_edit)
         layout.addLayout(form)
 
         buttons = QDialogButtonBox(QDialogButtonBox.Save | QDialogButtonBox.Cancel)
@@ -4661,6 +4664,8 @@ class LinguaEditWindow(QMainWindow):
                 store_secret("aws", "region", aws_region_edit.text().strip())
             if ms_region_edit.text().strip():
                 store_secret("microsoft_translator", "region", ms_region_edit.text().strip())
+            if weblate_url_edit.text().strip():
+                store_secret("weblate", "url", weblate_url_edit.text().strip())
             self._show_toast(self.tr("API keys saved"))
 
     # ── Feed TM ───────────────────────────────────────────────────
@@ -7330,6 +7335,97 @@ class LinguaEditWindow(QMainWindow):
 
         for s in stats:
             row = QHBoxLayout()
+            lbl = QLabel(f"<b>{s['language']}</b>")
+            lbl.setFixedWidth(80)
+            row.addWidget(lbl)
+            bar = QProgressBar()
+            bar.setRange(0, 1000)
+            bar.setValue(int(s["pct"] * 10))
+            bar.setFormat(f"{s['pct']}%  ({s['translated']}/{s['total']})")
+            row.addWidget(bar)
+            clayout.addLayout(row)
+
+        clayout.addStretch()
+        scroll.setWidget(container)
+        lay.addWidget(scroll)
+
+        buttons = QDialogButtonBox(QDialogButtonBox.Close)
+        buttons.rejected.connect(dlg.reject)
+        lay.addWidget(buttons)
+        dlg.exec()
+
+    def _show_weblate_stats(self):
+        """Fetch Weblate projects and show translation statistics."""
+        from linguaedit.services.keystore import get_secret as ks_get
+        from linguaedit.services.weblate import (
+            fetch_projects, fetch_project_statistics, WeblateError,
+        )
+
+        api_key = ks_get("weblate", "api_key")
+        base_url = ks_get("weblate", "url")
+        if not api_key or not base_url:
+            QMessageBox.warning(
+                self,
+                self.tr("No API Key"),
+                self.tr("No Weblate API key or server URL configured.\nPlease add them in Translation → API Keys…"),
+            )
+            return
+
+        # Fetch projects
+        try:
+            QApplication.setOverrideCursor(Qt.WaitCursor)
+            projects = fetch_projects(base_url, api_key)
+        except WeblateError as e:
+            QApplication.restoreOverrideCursor()
+            QMessageBox.critical(self, self.tr("Weblate Error"), str(e))
+            return
+        finally:
+            QApplication.restoreOverrideCursor()
+
+        if not projects:
+            QMessageBox.information(self, self.tr("Weblate"), self.tr("No projects found."))
+            return
+
+        names = [p["name"] for p in projects]
+        name, ok = QInputDialog.getItem(
+            self, self.tr("Select Project"), self.tr("Project:"), names, 0, False,
+        )
+        if not ok:
+            return
+        proj = projects[names.index(name)]
+
+        # Fetch stats
+        try:
+            QApplication.setOverrideCursor(Qt.WaitCursor)
+            stats = fetch_project_statistics(base_url, api_key, proj["slug"])
+        except WeblateError as e:
+            QApplication.restoreOverrideCursor()
+            QMessageBox.critical(self, self.tr("Weblate Error"), str(e))
+            return
+        finally:
+            QApplication.restoreOverrideCursor()
+
+        if not stats:
+            QMessageBox.information(self, self.tr("Weblate"), self.tr("No language statistics found."))
+            return
+
+        # Show stats dialog
+        dlg = QDialog(self)
+        dlg.setWindowTitle(self.tr("Weblate — %s") % proj["name"])
+        dlg.resize(520, 450)
+        lay = QVBoxLayout(dlg)
+        lay.addWidget(QLabel(self.tr("Translation statistics for <b>%s</b>:") % proj["name"]))
+
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        container = QWidget()
+        clayout = QVBoxLayout(container)
+
+        for s in stats:
+            row = QHBoxLayout()
+            lang_text = s["language"]
+            if s.get("fuzzy"):
+                lang_text += self.tr("  (fuzzy: %d)") % s["fuzzy"]
             lbl = QLabel(f"<b>{s['language']}</b>")
             lbl.setFixedWidth(80)
             row.addWidget(lbl)
