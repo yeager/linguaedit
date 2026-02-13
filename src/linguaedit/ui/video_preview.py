@@ -15,11 +15,13 @@ from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QPushButton,
     QSlider, QLabel, QStyle, QSizePolicy, QDockWidget,
     QComboBox, QCheckBox, QFrame, QToolButton,
+    QGraphicsView, QGraphicsScene, QGraphicsRectItem,
+    QGraphicsSimpleTextItem,
 )
-from PySide6.QtCore import Qt, QUrl, Signal, QTimer, QSize, QRect
-from PySide6.QtGui import QKeySequence, QShortcut, QFont, QPainter, QColor, QPen
+from PySide6.QtCore import Qt, QUrl, Signal, QTimer, QSize, QRect, QRectF
+from PySide6.QtGui import QKeySequence, QShortcut, QFont, QPainter, QColor, QPen, QBrush
 from PySide6.QtMultimedia import QMediaPlayer, QAudioOutput
-from PySide6.QtMultimediaWidgets import QVideoWidget
+from PySide6.QtMultimediaWidgets import QVideoWidget, QGraphicsVideoItem
 
 
 # ── Helpers ──────────────────────────────────────────────────────
@@ -53,115 +55,156 @@ def _parse_time_to_ms(time_str: str) -> int:
     return 0
 
 
-# ── Subtitle overlay (transparent widget on top of video) ───────
+# ── Video container with subtitle overlay (QGraphicsView) ───────
 
-class _SubtitleOverlay(QWidget):
-    """Transparent widget painted on top of the video surface."""
+class _VideoWithSubtitles(QGraphicsView):
+    """QGraphicsView with QGraphicsVideoItem + text overlay.
 
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.setAttribute(Qt.WA_TransparentForMouseEvents)
-        self.setAttribute(Qt.WA_TranslucentBackground)
-        self._source_text = ""
-        self._translation_text = ""
-        self._font_size = 18
-
-    def set_texts(self, source: str, translation: str):
-        self._source_text = source
-        self._translation_text = translation
-        self.update()
-
-    def set_font_size(self, size: int):
-        self._font_size = max(10, min(48, size))
-        self.update()
-
-    def paintEvent(self, event):
-        if not self._source_text and not self._translation_text:
-            return
-        p = QPainter(self)
-        p.setRenderHint(QPainter.Antialiasing)
-        w, h = self.width(), self.height()
-        margin = 16
-        bg = QColor(0, 0, 0, 190)
-
-        lines = []
-        if self._translation_text:
-            # Show translation in yellow
-            lines.append((self._translation_text, self._font_size, QColor(255, 255, 60)))
-        elif self._source_text:
-            # No translation — show source in red to indicate untranslated
-            lines.append((self._source_text, self._font_size, QColor(255, 80, 80)))
-
-        total_h = 0
-        metrics = []
-        for text, size, color in lines:
-            font = QFont("Helvetica Neue", size)
-            font.setPixelSize(size)
-            font.setBold(True)
-            p.setFont(font)
-            fm = p.fontMetrics()
-            br = fm.boundingRect(0, 0, w - 2 * margin - 20, 0,
-                                 Qt.AlignCenter | Qt.TextWordWrap, text)
-            metrics.append((text, font, color, br))
-            total_h += br.height() + 8
-
-        y = h - total_h - margin - 14
-        for text, font, color, br in metrics:
-            rect_h = br.height() + 12
-            rx = margin
-            rw = w - 2 * margin
-            p.setPen(Qt.NoPen)
-            p.setBrush(bg)
-            p.drawRoundedRect(QRect(rx, int(y), rw, int(rect_h)), 6, 6)
-            p.setFont(font)
-            p.setPen(QColor(0, 0, 0, 220))
-            for dx, dy in [(-1, -1), (-1, 1), (1, -1), (1, 1)]:
-                p.drawText(rx + 10 + dx, int(y + 6 + dy), rw - 20, int(rect_h - 12),
-                           Qt.AlignCenter | Qt.TextWordWrap, text)
-            p.setPen(color)
-            p.drawText(rx + 10, int(y + 6), rw - 20, int(rect_h - 12),
-                       Qt.AlignCenter | Qt.TextWordWrap, text)
-            y += rect_h + 3
-        p.end()
-
-
-# ── Video container with subtitle overlay ───────────────────────
-
-class _VideoWithSubtitles(QWidget):
-    """Container that stacks a QVideoWidget and a subtitle overlay using QGridLayout.
-
-    QVideoWidget uses native platform rendering that paints over child widgets,
-    so we cannot parent the overlay to it. Instead we place both as siblings
-    in the same grid cell — the overlay sits on top with a transparent background.
+    QVideoWidget uses native platform rendering that paints over any
+    sibling or child widget. The only reliable solution is to render
+    everything in a QGraphicsScene: the video as a QGraphicsVideoItem
+    and subtitles as QGraphicsTextItem/SimpleTextItem on top.
     """
 
     def __init__(self, parent=None):
         super().__init__(parent)
-        from PySide6.QtWidgets import QGridLayout
-        layout = QGridLayout(self)
-        layout.setContentsMargins(0, 0, 0, 0)
-        layout.setSpacing(0)
+        self._scene = QGraphicsScene(self)
+        self.setScene(self._scene)
+        self.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.setFrameShape(QFrame.NoFrame)
+        self.setStyleSheet("background: black;")
+        self.setRenderHint(QPainter.Antialiasing)
 
-        self._video = QVideoWidget()
-        self._overlay = _SubtitleOverlay()
-        self._overlay.setAttribute(Qt.WA_TransparentForMouseEvents)
-        self._overlay.setAttribute(Qt.WA_TranslucentBackground)
+        # Video item
+        self._video_item = QGraphicsVideoItem()
+        self._scene.addItem(self._video_item)
 
-        # Both in cell (0,0) — overlay stacks on top
-        layout.addWidget(self._video, 0, 0)
-        layout.addWidget(self._overlay, 0, 0)
-        self._overlay.raise_()
+        # Subtitle background rect
+        self._sub_bg = QGraphicsRectItem()
+        self._sub_bg.setBrush(QBrush(QColor(0, 0, 0, 190)))
+        self._sub_bg.setPen(QPen(Qt.NoPen))
+        self._sub_bg.setZValue(10)
+        self._sub_bg.setVisible(False)
+        self._scene.addItem(self._sub_bg)
+
+        # Subtitle text (using QGraphicsSimpleTextItem for crisp rendering)
+        self._sub_text_item = QGraphicsSimpleTextItem()
+        self._sub_text_item.setZValue(11)
+        self._sub_text_item.setVisible(False)
+        self._scene.addItem(self._sub_text_item)
+
+        # Shadow text for outline effect
+        self._sub_shadow = QGraphicsSimpleTextItem()
+        self._sub_shadow.setZValue(10.5)
+        self._sub_shadow.setBrush(QBrush(QColor(0, 0, 0, 220)))
+        self._sub_shadow.setVisible(False)
+        self._scene.addItem(self._sub_shadow)
+
+        self._source_text = ""
+        self._translation_text = ""
+        self._font_size = 18
+
+        self._video_item.nativeSizeChanged.connect(self._on_native_size_changed)
 
     @property
-    def video_widget(self) -> QVideoWidget:
-        """Return the actual QVideoWidget for media player output."""
-        return self._video
+    def video_item(self) -> QGraphicsVideoItem:
+        """Return the QGraphicsVideoItem for media player output."""
+        return self._video_item
+
+    # Keep backward compat for code that calls .video_widget
+    @property
+    def video_widget(self):
+        return self._video_item
 
     def set_texts(self, source: str, translation: str):
-        self._overlay.set_texts(source, translation)
+        self._source_text = source
+        self._translation_text = translation
+        self._update_subtitle_display()
 
     def set_font_size(self, size: int):
-        self._overlay.set_font_size(size)
+        self._font_size = max(10, min(48, size))
+        self._update_subtitle_display()
+
+    def _update_subtitle_display(self):
+        text = ""
+        color = QColor(255, 255, 60)  # yellow for translation
+        if self._translation_text:
+            text = self._translation_text
+            color = QColor(255, 255, 60)
+        elif self._source_text:
+            text = self._source_text
+            color = QColor(255, 80, 80)  # red for untranslated
+
+        if not text:
+            self._sub_bg.setVisible(False)
+            self._sub_text_item.setVisible(False)
+            self._sub_shadow.setVisible(False)
+            return
+
+        font = QFont("Helvetica Neue", self._font_size)
+        font.setPixelSize(self._font_size)
+        font.setBold(True)
+
+        self._sub_text_item.setFont(font)
+        self._sub_text_item.setText(text)
+        self._sub_text_item.setBrush(QBrush(color))
+        self._sub_text_item.setVisible(True)
+
+        self._sub_shadow.setFont(font)
+        self._sub_shadow.setText(text)
+        self._sub_shadow.setVisible(True)
+
+        # Position at bottom of video
+        vr = self._video_item.boundingRect()
+        vpos = self._video_item.pos()
+        tb = self._sub_text_item.boundingRect()
+
+        margin = 16
+        # Center horizontally within video
+        tx = vpos.x() + (vr.width() - tb.width()) / 2
+        # Near bottom of video
+        ty = vpos.y() + vr.height() - tb.height() - margin - 10
+
+        self._sub_text_item.setPos(tx, ty)
+        self._sub_shadow.setPos(tx + 1, ty + 1)
+
+        # Background rect
+        pad_x, pad_y = 10, 6
+        self._sub_bg.setRect(QRectF(
+            tx - pad_x, ty - pad_y,
+            tb.width() + 2 * pad_x, tb.height() + 2 * pad_y
+        ))
+        self._sub_bg.setVisible(True)
+
+    def _on_native_size_changed(self, size):
+        self._fit_video()
+
+    def resizeEvent(self, event):
+        super().resizeEvent(event)
+        self._fit_video()
+
+    def _fit_video(self):
+        view_w = self.viewport().width()
+        view_h = self.viewport().height()
+        native = self._video_item.nativeSize()
+        if native.width() > 0 and native.height() > 0:
+            # Scale video to fit view while keeping aspect ratio
+            scale_w = view_w / native.width()
+            scale_h = view_h / native.height()
+            scale = min(scale_w, scale_h)
+            w = native.width() * scale
+            h = native.height() * scale
+            self._video_item.setSize(QSize(int(w), int(h)))
+            # Center
+            x = (view_w - w) / 2
+            y = (view_h - h) / 2
+            self._video_item.setPos(x, y)
+        else:
+            self._video_item.setSize(QSize(view_w, view_h))
+            self._video_item.setPos(0, 0)
+        self.setSceneRect(0, 0, view_w, view_h)
+        self._update_subtitle_display()
 
 
 # ── Segment progress slider ────────────────────────────────────
@@ -463,7 +506,7 @@ class VideoPreviewWidget(QWidget):
         self._audio = QAudioOutput()
         self._audio.setVolume(0.8)
         self._player.setAudioOutput(self._audio)
-        self._player.setVideoOutput(self._video_widget.video_widget)
+        self._player.setVideoOutput(self._video_widget.video_item)
         self._player.positionChanged.connect(self._on_position_changed)
         self._player.durationChanged.connect(self._on_duration_changed)
         self._player.playbackStateChanged.connect(self._on_state_changed)
