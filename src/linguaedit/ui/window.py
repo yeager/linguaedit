@@ -2489,7 +2489,7 @@ class LinguaEditWindow(QMainWindow):
             
             # Target text button
             btn = QPushButton(m.target[:80] + ("..." if len(m.target) > 80 else ""))
-            btn.setToolTip(f"Source: {m.source}\nTarget: {m.target}")
+            btn.setToolTip(self.tr("Source: %s\nTarget: %s") % (m.source, m.target))
             btn.setStyleSheet("text-align: left; padding: 4px;")
             btn.clicked.connect(lambda checked, t=m.target: self._apply_tm_match(t))
             row.addWidget(btn)
@@ -2511,7 +2511,7 @@ class LinguaEditWindow(QMainWindow):
         matches = lookup_tm(query, threshold=0.3, max_results=10)
         for m in matches:
             btn = QPushButton(f"[{m.similarity:.0%}] {m.target[:60]}")
-            btn.setToolTip(f"Source: {m.source}\nTarget: {m.target}")
+            btn.setToolTip(self.tr("Source: %s\nTarget: %s") % (m.source, m.target))
             btn.setStyleSheet("text-align: left; padding: 2px;")
             btn.clicked.connect(lambda checked, t=m.target: self._apply_tm_match(t))
             self._concordance_results.addWidget(btn)
@@ -3436,7 +3436,7 @@ class LinguaEditWindow(QMainWindow):
             self._show_toast(self.tr("Error loading file: %s") % str(e))
             return
 
-        self.setWindowTitle(f"LinguaEdit — {p.name}")
+        self.setWindowTitle(self.tr("LinguaEdit — %s") % p.name)
 
         idx = self._tab_widget.currentIndex()
         if idx >= 0:
@@ -3667,7 +3667,7 @@ class LinguaEditWindow(QMainWindow):
                 return
             self._file_data.file_path = Path(path)
             self._file_data.path = Path(path)
-            self.setWindowTitle(f"LinguaEdit — {Path(path).name}")
+            self.setWindowTitle(self.tr("LinguaEdit — %s") % Path(path).name)
             # Update the tab label too
             idx = self._tab_widget.currentIndex()
             if idx >= 0:
@@ -3793,7 +3793,7 @@ class LinguaEditWindow(QMainWindow):
         if hasattr(self._file_data, 'fpath'):
             self._file_data.fpath = new_path_obj
         self._on_save()
-        self.setWindowTitle(f"LinguaEdit — {Path(new_path).name}")
+        self.setWindowTitle(self.tr("LinguaEdit — %s") % Path(new_path).name)
         self._show_toast(self.tr("Saved as %s") % Path(new_path).name)
 
     # ── Stats ─────────────────────────────────────────────────────
@@ -3947,7 +3947,7 @@ class LinguaEditWindow(QMainWindow):
             self._populate_list()
             self._update_stats()
             name = Path(str(self._file_data.path)).name
-            self.setWindowTitle(f"LinguaEdit — {name}")
+            self.setWindowTitle(self.tr("LinguaEdit — %s") % name)
 
     def _create_tab_for_file(self, path: str):
         self._save_current_tab()
@@ -4007,12 +4007,14 @@ class LinguaEditWindow(QMainWindow):
             if len(translations) > 1:
                 indices = source_indices[source]
                 inconsistencies.append(
-                    f"Source: \"{source[:60]}\"\n"
-                    f"  Entries: {', '.join(f'#{i}' for i in indices)}\n"
-                    f"  Translations: {'; '.join(t[:40] for t in translations)}\n"
+                    self.tr("Source: \"%s\"\n  Entries: %s\n  Translations: %s\n") % (
+                        source[:60],
+                        ', '.join(f'#{i}' for i in indices),
+                        '; '.join(t[:40] for t in translations),
+                    )
                 )
         if inconsistencies:
-            msg = f"Found {len(inconsistencies)} inconsistencies:\n\n" + "\n".join(inconsistencies[:20])
+            msg = self.tr("Found %d inconsistencies:\n\n") % len(inconsistencies) + "\n".join(inconsistencies[:20])
         else:
             msg = self.tr("No inconsistencies found! ✓")
         self._show_dialog(self.tr("Consistency Check"), msg)
@@ -4024,7 +4026,7 @@ class LinguaEditWindow(QMainWindow):
         terms_text = "\n".join(f"• {t.source} → {t.target}" for t in terms[:20]) or self.tr("No terms defined")
         result = QMessageBox.question(
             self, self.tr("Glossary / Terminology"),
-            f"{terms_text}\n\nAdd a new term or check file?",
+            self.tr("%s\n\nAdd a new term or check file?") % terms_text,
             QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel
         )
         if result == QMessageBox.Yes:
@@ -4601,7 +4603,7 @@ class LinguaEditWindow(QMainWindow):
         dialog.setWindowTitle(self.tr("API Keys"))
         dialog.resize(400, 450)
         layout = QVBoxLayout(dialog)
-        layout.addWidget(QLabel(f"Backend: {backend_name()}"))
+        layout.addWidget(QLabel(self.tr("Backend: %s") % backend_name()))
 
         services = [
             ("openai", "OpenAI"), ("anthropic", "Anthropic"), ("deepl", "DeepL"),
@@ -4779,7 +4781,7 @@ class LinguaEditWindow(QMainWindow):
             layout.addLayout(form)
 
         else:
-            info = QLabel(f"File: {self._file_data.path.name}\nEntries: {self._file_data.total_count}")
+            info = QLabel(self.tr("File: %s\nEntries: %d") % (self._file_data.path.name, self._file_data.total_count))
             layout.addWidget(info)
 
         # Dialog buttons

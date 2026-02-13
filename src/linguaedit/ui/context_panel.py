@@ -151,7 +151,7 @@ class ContextPanel(QDockWidget):
 
         for i, m in enumerate(matches):
             btn = QPushButton(f"[{m.similarity:.0%}] {m.target[:70]}{'…' if len(m.target) > 70 else ''}")
-            btn.setToolTip(f"Source: {m.source}\nTarget: {m.target}")
+            btn.setToolTip(self.tr("Source: %s\nTarget: %s") % (m.source, m.target))
             btn.setStyleSheet("text-align: left; padding: 3px;")
             btn.clicked.connect(lambda checked, t=m.target: self.apply_tm_requested.emit(t))
             self._tm_section.content_layout().addWidget(btn)

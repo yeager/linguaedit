@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE TS>
 <TS version="2.1" language="sv_SE">
     <context>
         <name>AIReviewDialog</name>
@@ -450,7 +449,7 @@
             <source>Translation Settings</source>
             <translation>Översättningsinställningar</translation>
         </message>
-            <message>
+        <message>
             <source>%d min %d s remaining</source>
             <translation>%d min %d s kvar</translation>
         </message>
@@ -474,7 +473,7 @@
             <source>Completed %d strings in %d s</source>
             <translation>Slutförde %d strängar på %d s</translation>
         </message>
-</context>
+    </context>
     <context>
         <name>CollapsibleSidePanel</name>
         <message>
@@ -579,6 +578,10 @@
             <source>Translation Memory</source>
             <translation>Översättningsminne</translation>
         </message>
+        <message>
+            <source>Source: %s\nTarget: %s</source>
+            <translation>Källa: %s\nMål: %s</translation>
+        </message>
     </context>
     <context>
         <name>DashboardDialog</name>
@@ -630,11 +633,11 @@
             <source>Untranslated</source>
             <translation>Oöversatt</translation>
         </message>
-            <message>
+        <message>
             <source>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style='color:green'&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:orange'&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:red'&gt;Untranslated: %d&lt;/span&gt;</source>
             <translation>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style='color:green'&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:orange'&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:red'&gt;Untranslated: %d&lt;/span&gt;</translation>
         </message>
-</context>
+    </context>
     <context>
         <name>DiffDialog</name>
         <message>
@@ -789,6 +792,14 @@
             <source>Unsupported file format: %s</source>
             <translation>Filformat som inte stöds: %s</translation>
         </message>
+        <message>
+            <source>Source: %s</source>
+            <translation>Källa: %s</translation>
+        </message>
+        <message>
+            <source>Translation: %s</source>
+            <translation>Översättning: %s</translation>
+        </message>
     </context>
     <context>
         <name>FFmpegMissingDialog</name>
@@ -848,7 +859,7 @@
             <source>Open Download Page</source>
             <translation>Öppna hämtningssida</translation>
         </message>
-            <message>
+        <message>
             <source>&lt;b&gt;Ubuntu/Debian:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo apt install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Fedora:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo dnf install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Arch Linux:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo pacman -S ffmpeg&lt;/code&gt;</source>
             <translation>&lt;b&gt;Ubuntu/Debian:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo apt install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Fedora:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo dnf install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Arch Linux:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo pacman -S ffmpeg&lt;/code&gt;</translation>
         </message>
@@ -860,7 +871,7 @@
             <source>&lt;h3&gt;FFmpeg could not be found&lt;/h3&gt;&lt;p&gt;LinguaEdit needs &lt;b&gt;ffmpeg&lt;/b&gt; and &lt;b&gt;ffprobe&lt;/b&gt; to extract subtitles from video files.&lt;/p&gt;</source>
             <translation>&lt;h3&gt;FFmpeg kunde inte hittas&lt;/h3&gt;&lt;p&gt;LinguaEdit behöver &lt;b&gt;ffmpeg&lt;/b&gt; och &lt;b&gt;ffprobe&lt;/b&gt; för att extrahera undertexter från videofiler.&lt;/p&gt;</translation>
         </message>
-</context>
+    </context>
     <context>
         <name>FileHistoryDialog</name>
         <message>
@@ -1030,11 +1041,11 @@
             <source>⚠ Outdated</source>
             <translation>⚠ Föråldrad</translation>
         </message>
-            <message>
+        <message>
             <source>&lt;b&gt;Outdated translations&lt;/b&gt; — source changed but translation stayed the same.</source>
             <translation>&lt;b&gt;Outdated translations&lt;/b&gt; — source changed but translation stayed the same.</translation>
         </message>
-</context>
+    </context>
     <context>
         <name>GlossaryDialog</name>
         <message>
@@ -1221,11 +1232,11 @@
             <source>Warning</source>
             <translation>Varning</translation>
         </message>
-            <message>
+        <message>
             <source>Delete term '%s' → '%s'?</source>
             <translation>Radera term '%s' → '%s'?</translation>
         </message>
-</context>
+    </context>
     <context>
         <name>HeaderDialog</name>
         <message>
@@ -1491,11 +1502,11 @@
             <source>User</source>
             <translation>Användare</translation>
         </message>
-            <message>
+        <message>
             <source>Are you sure you want to rollback to this version?\n\nThis will replace the current text with:\n{}</source>
             <translation>Are you sure you want to rollback to this version?\n\nThis will replace the current text with:\n{}</translation>
         </message>
-</context>
+    </context>
     <context>
         <name>ImagePreviewLabel</name>
         <message>
@@ -3536,7 +3547,7 @@
             <source>Translation: %1</source>
             <translation>Översättning: %1</translation>
         </message>
-            <message>
+        <message>
             <source>%d min %d s remaining</source>
             <translation>%d min %d s kvar</translation>
         </message>
@@ -3620,7 +3631,35 @@
             <source>The file '%s' has unsaved changes.\nDo you want to save before closing?</source>
             <translation>The file '%s' has unsaved changes.\nDo you want to save before closing?</translation>
         </message>
-</context>
+        <message>
+            <source>LinguaEdit — %s</source>
+            <translation>LinguaEdit — %s</translation>
+        </message>
+        <message>
+            <source>Backend: %s</source>
+            <translation>Backend: %s</translation>
+        </message>
+        <message>
+            <source>Source: \"%s\"\n  Entries: %s\n  Translations: %s\n</source>
+            <translation>Källa: \"%s\"\n  Poster: %s\n  Översättningar: %s\n</translation>
+        </message>
+    <message>
+            <source>Source: %s\nTarget: %s</source>
+            <translation>Källa: %s\nMål: %s</translation>
+        </message>
+        <message>
+            <source>%s\n\nAdd a new term or check file?</source>
+            <translation>%s\n\nLägga till en ny term eller kontrollera fil?</translation>
+        </message>
+        <message>
+            <source>File: %s\nEntries: %d</source>
+            <translation>Fil: %s\nPoster: %d</translation>
+        </message>
+        <message>
+            <source>Found %d inconsistencies:\n\n</source>
+            <translation>Hittade %d inkonsekvenser:\n\n</translation>
+        </message>
+    </context>
     <context>
         <name>Linter</name>
         <message>
@@ -4009,7 +4048,7 @@
             <source>🔴 Recording... ({} actions)</source>
             <translation>🔴 Inspelning... ({} åtgärder)</translation>
         </message>
-            <message>
+        <message>
             <source>Are you sure you want to delete the macro '{}'?</source>
             <translation>Är du säker på att du vill radera makrot '{}'?</translation>
         </message>
@@ -4021,7 +4060,7 @@
             <source>Macro '{}' has been saved successfully.</source>
             <translation>Makro '{}' har sparats.</translation>
         </message>
-</context>
+    </context>
     <context>
         <name>MergePreviewDialog</name>
         <message>
@@ -4250,7 +4289,7 @@
             <source>✗ OCR failed: %1</source>
             <translation>✗ OCR misslyckades: %1</translation>
         </message>
-            <message>
+        <message>
             <source>OCR functionality requires tesseract-ocr to be installed.\n\nInstallation instructions:\n• macOS: brew install tesseract\n• Ubuntu/Debian: sudo apt install tesseract-ocr\n• Windows: Download from GitHub releases\n• Arch Linux: sudo pacman -S tesseract</source>
             <translation>OCR functionality requires tesseract-ocr to be installed.\n\nInstallation instructions:\n• macOS: brew install tesseract\n• Ubuntu/Debian: sudo apt install tesseract-ocr\n• Windows: Download from GitHub releases\n• Arch Linux: sudo pacman -S tesseract</translation>
         </message>
@@ -4262,7 +4301,7 @@
             <source>⚠ Tesseract not found. Please install tesseract-ocr.</source>
             <translation>⚠ Tesseract hittades inte. Installera tesseract-ocr.</translation>
         </message>
-</context>
+    </context>
     <context>
         <name>OCRWorker</name>
         <message>
@@ -4589,7 +4628,7 @@
             <source>Translation</source>
             <translation>Översättning</translation>
         </message>
-            <message>
+        <message>
             <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.\n\nFor better security, install:\n• macOS: Built-in (Keychain)\n• Windows: pip install keyring\n• Linux: pip install secretstorage</source>
             <translation>No system keychain detected. Credentials are stored in an encrypted file with a master password.\n\nFor better security, install:\n• macOS: Built-in (Keychain)\n• Windows: pip install keyring\n• Linux: pip install secretstorage</translation>
         </message>
@@ -4597,7 +4636,7 @@
             <source>Your credentials are securely stored in the system keychain.</source>
             <translation>Dina inloggningsuppgifter lagras säkert i systemets nyckelring.</translation>
         </message>
-</context>
+    </context>
     <context>
         <name>ProjectDockWidget</name>
         <message>
@@ -4724,6 +4763,50 @@
             <source>%1 files</source>
             <translation>%1 filer</translation>
         </message>
+        <message>
+            <source>0 files</source>
+            <translation>0 filer</translation>
+        </message>
+        <message>
+            <source>File: %s</source>
+            <translation>Fil: %s</translation>
+        </message>
+        <message>
+            <source>Path: %s</source>
+            <translation>Sökväg: %s</translation>
+        </message>
+        <message>
+            <source>Type: %s</source>
+            <translation>Typ: %s</translation>
+        </message>
+        <message>
+            <source>Size: %s bytes</source>
+            <translation>Storlek: %s byte</translation>
+        </message>
+        <message>
+            <source>Total entries: %d</source>
+            <translation>Totalt antal poster: %d</translation>
+        </message>
+        <message>
+            <source>Translated: %d</source>
+            <translation>Översatta: %d</translation>
+        </message>
+        <message>
+            <source>Fuzzy: %d</source>
+            <translation>Osäkra: %d</translation>
+        </message>
+        <message>
+            <source>Untranslated: %d</source>
+            <translation>Oöversatta: %d</translation>
+        </message>
+        <message>
+            <source>Progress: %.1f%%</source>
+            <translation>Förlopp: %.1f%%</translation>
+        </message>
+        <message>
+            <source>Modified: %s</source>
+            <translation>Ändrad: %s</translation>
+        </message>
     </context>
     <context>
         <name>QuickActionsMenu</name>
@@ -4824,6 +4907,10 @@
         <message>
             <source>Value</source>
             <translation>Värde</translation>
+        </message>
+        <message>
+            <source>Error: %s</source>
+            <translation>Fel: %s</translation>
         </message>
     </context>
     <context>
@@ -4939,11 +5026,11 @@
             <source>Target:</source>
             <translation>Mål:</translation>
         </message>
-            <message>
+        <message>
             <source>Click in the source text where you want to split, then press OK.</source>
             <translation>Klicka i källtexten där du vill dela, tryck sedan OK.</translation>
         </message>
-</context>
+    </context>
     <context>
         <name>StatisticsDialog</name>
         <message>
@@ -5302,11 +5389,11 @@
             <source>Unicode Inspector</source>
             <translation>Unicode-inspektör</translation>
         </message>
-            <message>
+        <message>
             <source>Total: {0} characters | Invisible: {1} | Suspicious: {2}</source>
             <translation>Totalt: {0} tecken | Osynliga: {1} | Misstänkta: {2}</translation>
         </message>
-</context>
+    </context>
     <context>
         <name>ValidationDialog</name>
         <message>
@@ -5550,11 +5637,39 @@
             <source>Select Video File</source>
             <translation>Välj videofil</translation>
         </message>
-            <message>
+        <message>
             <source>This video file contains no embedded subtitle tracks.</source>
             <translation>Denna videofil innehåller inga inbäddade undertextspår.</translation>
         </message>
-</context>
+        <message>
+            <source>SRT (.srt)</source>
+            <translation>SRT (.srt)</translation>
+        </message>
+        <message>
+            <source>WebVTT (.vtt)</source>
+            <translation>WebVTT (.vtt)</translation>
+        </message>
+        <message>
+            <source>ASS/SSA (.ass)</source>
+            <translation>ASS/SSA (.ass)</translation>
+        </message>
+        <message>
+            <source>SubRip (*.srt)</source>
+            <translation>SubRip (*.srt)</translation>
+        </message>
+        <message>
+            <source>WebVTT (*.vtt)</source>
+            <translation>WebVTT (*.vtt)</translation>
+        </message>
+        <message>
+            <source>Advanced SubStation Alpha (*.ass)</source>
+            <translation>Advanced SubStation Alpha (*.ass)</translation>
+        </message>
+        <message>
+            <source>Subtitle files (*.*)</source>
+            <translation>Undertextfiler (*.*)</translation>
+        </message>
+    </context>
     <context>
         <name>WelcomeDialog</name>
         <message>
@@ -5653,7 +5768,7 @@
             <source>You</source>
             <translation>Du</translation>
         </message>
-            <message>
+        <message>
             <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,\nAndroid XML, ARB, PHP, and YAML files.\n\nFeatures include AI-powered pre-translation, translation memory,\nquality assurance, spell checking, and platform integration.</source>
             <translation>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,\nAndroid XML, ARB, PHP, and YAML files.\n\nFeatures include AI-powered pre-translation, translation memory,\nquality assurance, spell checking, and platform integration.</translation>
         </message>
@@ -5661,7 +5776,11 @@
             <source>You're all set!</source>
             <translation>Du är redo!</translation>
         </message>
-</context>
+        <message>
+            <source>Version %s</source>
+            <translation>Version %s</translation>
+        </message>
+    </context>
     <context>
         <name>WorldMapWidget</name>
         <message>
@@ -5922,6 +6041,81 @@
         <message>
             <source>Crowdin Over-The-Air functionality not yet implemented.\nThis would pull latest translations from Crowdin.</source>
             <translation>Crowdin Over-The-Air-funktionalitet är ännu inte implementerad.\nDetta skulle hämta senaste översättningarna från Crowdin.</translation>
+        </message>
+    </context>
+    <context>
+        <name>AIReviewWorker</name>
+        <message>
+            <source>Translation is missing</source>
+            <translation>Översättning saknas</translation>
+        </message>
+        <message>
+            <source>Translation much longer than source</source>
+            <translation>Översättning mycket längre än källa</translation>
+        </message>
+        <message>
+            <source>Translation much shorter than source</source>
+            <translation>Översättning mycket kortare än källa</translation>
+        </message>
+        <message>
+            <source>Different number of format markers/tags</source>
+            <translation>Olika antal formatmarkörer/taggar</translation>
+        </message>
+        <message>
+            <source>Identical to source text</source>
+            <translation>Identisk med källtext</translation>
+        </message>
+        <message>
+            <source>All uppercase when source is not</source>
+            <translation>Alla versaler när källa inte är det</translation>
+        </message>
+        <message>
+            <source>No obvious problems found with this translation.</source>
+            <translation>Inga uppenbara problem hittade med denna översättning.</translation>
+        </message>
+        <message>
+            <source>Problems identified: </source>
+            <translation>Problem identifierade: </translation>
+        </message>
+    </context>
+    <context>
+        <name>BatchOperationThread</name>
+        <message>
+            <source>Error: %s</source>
+            <translation>Fel: %s</translation>
+        </message>
+    </context>
+    <context>
+        <name>FileAnalysisThread</name>
+        <message>
+            <source>Analyzing %s...</source>
+            <translation>Analyserar %s...</translation>
+        </message>
+    </context>
+    <context>
+        <name>GlossaryImportThread</name>
+        <message>
+            <source>Importing term %d/%d</source>
+            <translation>Importerar term %d/%d</translation>
+        </message>
+        <message>
+            <source>Row %d: %s</source>
+            <translation>Rad %d: %s</translation>
+        </message>
+        <message>
+            <source>File error: %s</source>
+            <translation>Filfel: %s</translation>
+        </message>
+    </context>
+    <context>
+        <name>TextRenderWidget</name>
+        <message>
+            <source>Width: %dpx</source>
+            <translation>Bredd: %dpx</translation>
+        </message>
+        <message>
+            <source>OVERFLOW: +%dpx</source>
+            <translation>ÖVERSKRIDANDE: +%dpx</translation>
         </message>
     </context>
 </TS>

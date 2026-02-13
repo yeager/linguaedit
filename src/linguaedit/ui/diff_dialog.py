@@ -539,12 +539,12 @@ class DiffDialog(QDialog):
         
         # Collect all changes for side by side display
         for item in results.get("modified", [])[:50]:  # Limit to first 50 for performance
-            file1_lines.append(f"Source: {item['msgid']}")
-            file1_lines.append(f"Translation: {item['file1']}")
+            file1_lines.append(self.tr("Source: %s") % item['msgid'])
+            file1_lines.append(self.tr("Translation: %s") % item['file1'])
             file1_lines.append("")
             
-            file2_lines.append(f"Source: {item['msgid']}")  
-            file2_lines.append(f"Translation: {item['file2']}")
+            file2_lines.append(self.tr("Source: %s") % item['msgid'])
+            file2_lines.append(self.tr("Translation: %s") % item['file2'])
             file2_lines.append("")
             
         self._left_text.setPlainText('\n'.join(file1_lines))

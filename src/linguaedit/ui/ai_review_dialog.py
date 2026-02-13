@@ -58,14 +58,14 @@ class AIReviewWorker(QThread):
         # Kontrollera längd
         if len(self.translation) == 0:
             score = 1
-            issues.append("Översättning saknas")
+            issues.append(self.tr("Translation is missing"))
             suggestion = self.source  # Föreslå källtext
         elif len(self.translation) > len(self.source) * 2:
             score -= 1
-            issues.append("Översättning mycket längre än källa")
+            issues.append(self.tr("Translation much longer than source"))
         elif len(self.translation) < len(self.source) * 0.3:
             score -= 1
-            issues.append("Översättning mycket kortare än källa")
+            issues.append(self.tr("Translation much shorter than source"))
         
         # Kontrollera formatmarkörer
         source_placeholders = re.findall(r'%[sdif]|\{[^}]+\}|<[^>]+>', self.source)
@@ -73,17 +73,17 @@ class AIReviewWorker(QThread):
         
         if len(source_placeholders) != len(trans_placeholders):
             score -= 1
-            issues.append("Olika antal formatmarkörer/taggar")
+            issues.append(self.tr("Different number of format markers/tags"))
         
         # Kontrollera om det är samma som källa (ofta dåligt)
         if self.source.strip().lower() == self.translation.strip().lower():
             score -= 1
-            issues.append("Identisk med källtext")
+            issues.append(self.tr("Identical to source text"))
         
         # Kontrollera teckensnitt
         if self.translation.isupper() and not self.source.isupper():
             score -= 1
-            issues.append("Alla versaler när källa inte är det")
+            issues.append(self.tr("All uppercase when source is not"))
         
         # Förbättra poäng för bra saker
         if len(self.translation) > 5 and self.translation != self.source:
@@ -92,9 +92,9 @@ class AIReviewWorker(QThread):
         score = max(1, min(5, score))
         
         if not issues:
-            explanation = "Ingen uppenbar problem hittade med denna översättning."
+            explanation = self.tr("No obvious problems found with this translation.")
         else:
-            explanation = "Problem identifierade: " + "; ".join(issues)
+            explanation = self.tr("Problems identified: ") + "; ".join(issues)
         
         return {
             "score": score,

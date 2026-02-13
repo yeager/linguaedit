@@ -46,7 +46,7 @@ class BatchOperationThread(QThread):
                 
         except Exception as e:
             results["errors"] = len(self.entries)
-            results["details"] = [f"Error: {str(e)}"]
+            results["details"] = [self.tr("Error: %s") % str(e)]
             
         self.operation_completed.emit(results)
         

@@ -210,9 +210,9 @@ class VideoSubtitleDialog(QDialog):
 
         format_layout.addWidget(QLabel(self.tr("Format:")))
         self._format_combo = QComboBox()
-        self._format_combo.addItem("SRT (.srt)", ".srt")
-        self._format_combo.addItem("WebVTT (.vtt)", ".vtt")
-        self._format_combo.addItem("ASS/SSA (.ass)", ".ass")
+        self._format_combo.addItem(self.tr("SRT (.srt)"), ".srt")
+        self._format_combo.addItem(self.tr("WebVTT (.vtt)"), ".vtt")
+        self._format_combo.addItem(self.tr("ASS/SSA (.ass)"), ".ass")
         format_layout.addWidget(self._format_combo)
         format_layout.addStretch()
 
@@ -535,10 +535,10 @@ class VideoSubtitleDialog(QDialog):
         """Extract subtitle and save to user-chosen location."""
         fmt = self._format_combo.currentData()
         ext_filter = {
-            ".srt": "SubRip (*.srt)",
-            ".vtt": "WebVTT (*.vtt)",
-            ".ass": "Advanced SubStation Alpha (*.ass)",
-        }.get(fmt, "Subtitle files (*.*)")
+            ".srt": self.tr("SubRip (*.srt)"),
+            ".vtt": self.tr("WebVTT (*.vtt)"),
+            ".ass": self.tr("Advanced SubStation Alpha (*.ass)"),
+        }.get(fmt, self.tr("Subtitle files (*.*)"))
 
         save_path, _ = QFileDialog.getSaveFileName(
             self, self.tr("Save Subtitle As"), "", ext_filter,

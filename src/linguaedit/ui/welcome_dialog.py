@@ -71,7 +71,7 @@ class WelcomeDialog(QDialog):
         title.setAlignment(Qt.AlignCenter)
         layout.addWidget(title)
 
-        version = QLabel(f"Version {__version__}")
+        version = QLabel(self.tr("Version %s") % __version__)
         version.setStyleSheet("color: gray;")
         version.setAlignment(Qt.AlignCenter)
         layout.addWidget(version)

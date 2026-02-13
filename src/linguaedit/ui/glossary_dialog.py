@@ -56,7 +56,7 @@ class GlossaryImportThread(QThread):
                 for i, row in enumerate(reader):
                     self.progress_updated.emit(
                         int(i * 100 / total_rows) if total_rows > 0 else 100,
-                        f"Importing term {i+1}/{total_rows}"
+                        self.tr("Importing term %d/%d") % (i+1, total_rows)
                     )
                     
                     try:
@@ -72,11 +72,11 @@ class GlossaryImportThread(QThread):
                                 
                     except Exception as e:
                         results["errors"] += 1
-                        results["details"].append(f"Row {i+1}: {str(e)}")
+                        results["details"].append(self.tr("Row %d: %s") % (i+1, str(e)))
                         
         except Exception as e:
             results["errors"] += 1
-            results["details"] = [f"File error: {str(e)}"]
+            results["details"] = [self.tr("File error: %s") % str(e)]
             
         self.import_completed.emit(results)
 

@@ -206,7 +206,7 @@ class RegexTesterDialog(QDialog):
             self._preview_edit.setPlainText(text)
             
         except Exception as e:
-            self._preview_edit.setPlainText(f"Error: {str(e)}")
+            self._preview_edit.setPlainText(self.tr("Error: %s") % str(e))
     
     def _copy_result(self):
         """Copy the preview result to clipboard."""

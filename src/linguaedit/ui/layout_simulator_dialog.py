@@ -69,13 +69,13 @@ class TextRenderWidget(QFrame):
         # Draw measurements
         painter.setPen(QColor(100, 100, 100))
         painter.drawText(text_x, text_y + text_height + 10, 
-                        f"Width: {text_width}px")
+                        self.tr("Width: %dpx") % text_width)
         
         if text_width > self._max_width:
             overflow = text_width - self._max_width
             painter.setPen(QColor(255, 0, 0))
             painter.drawText(text_x, text_y + text_height + 30,
-                           f"OVERFLOW: +{overflow}px")
+                           self.tr("OVERFLOW: +%dpx") % overflow)
 
 
 class LayoutSimulatorDialog(QDialog):

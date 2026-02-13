@@ -58,7 +58,7 @@ class FileAnalysisThread(QThread):
             for i, file_path in enumerate(translation_files):
                 self.progress_updated.emit(
                     int(i * 100 / total_files),
-                    f"Analyzing {file_path.name}..."
+                    self.tr("Analyzing %s...") % file_path.name
                 )
                 
                 try:
@@ -273,7 +273,7 @@ class ProjectDockWidget(QDockWidget):
         # Statistics summary
         stats_layout = QHBoxLayout()
         
-        self._total_files_label = QLabel("0 files")
+        self._total_files_label = QLabel(self.tr("0 files"))
         self._avg_progress_label = QLabel("0%")
         
         stats_layout.addWidget(QLabel(self.tr("Files:")))
@@ -493,21 +493,21 @@ class ProjectDockWidget(QDockWidget):
         from datetime import datetime
         
         props_text = []
-        props_text.append(f"File: {file_info['name']}")
-        props_text.append(f"Path: {file_info['path']}")
-        props_text.append(f"Type: {file_info['type'].upper()}")
-        props_text.append(f"Size: {file_info['size']:,} bytes")
+        props_text.append(self.tr("File: %s") % file_info['name'])
+        props_text.append(self.tr("Path: %s") % file_info['path'])
+        props_text.append(self.tr("Type: %s") % file_info['type'].upper())
+        props_text.append(self.tr("Size: %s bytes") % f"{file_info['size']:,}")
         props_text.append("")
-        props_text.append(f"Total entries: {file_info['total']}")
-        props_text.append(f"Translated: {file_info['translated']}")
-        props_text.append(f"Fuzzy: {file_info['fuzzy']}")
-        props_text.append(f"Untranslated: {file_info['untranslated']}")
-        props_text.append(f"Progress: {file_info['percentage']:.1f}%")
+        props_text.append(self.tr("Total entries: %d") % file_info['total'])
+        props_text.append(self.tr("Translated: %d") % file_info['translated'])
+        props_text.append(self.tr("Fuzzy: %d") % file_info['fuzzy'])
+        props_text.append(self.tr("Untranslated: %d") % file_info['untranslated'])
+        props_text.append(self.tr("Progress: %.1f%%") % file_info['percentage'])
         props_text.append("")
         
         # Modified date
         mod_time = datetime.fromtimestamp(file_info['modified'])
-        props_text.append(f"Modified: {mod_time.strftime('%Y-%m-%d %H:%M:%S')}")
+        props_text.append(self.tr("Modified: %s") % mod_time.strftime('%Y-%m-%d %H:%M:%S'))
         
         QMessageBox.information(
             self,
