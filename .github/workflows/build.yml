@@ -49,6 +49,7 @@ jobs:
         run: |
           pip install pyinstaller PySide6 polib requests PyYAML Pillow
       - name: Compile translations
+        shell: bash
         run: for ts in src/linguaedit/translations/linguaedit_*.ts; do [ -f "$ts" ] && pyside6-lrelease "$ts"; done
       - name: Create .ico
         run: |
