@@ -6119,4 +6119,36 @@
             <translation></translation>
         </message>
     </context>
+    <context>
+        <name>UpdateDialog</name>
+        <message>
+            <source>Update Available</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>A new version of LinguaEdit is available!</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Current version: %s
+New version: %s</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Release notes:</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Skip this version</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Download</source>
+            <translation></translation>
+        </message>
+        <message>
+            <source>Remind me later</source>
+            <translation></translation>
+        </message>
+    </context>
 </TS>

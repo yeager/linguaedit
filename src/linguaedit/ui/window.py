@@ -681,6 +681,11 @@ class LinguaEditWindow(QMainWindow):
         if vs:
             self._v_splitter.restoreState(vs)
 
+        # Startup update check (non-blocking, background thread)
+        from linguaedit.ui.update_checker import UpdateChecker
+        self._update_checker = UpdateChecker(self)
+        QTimer.singleShot(2000, self._update_checker.check)
+
     # ── Settings ──────────────────────────────────────────────────
 
     def _apply_settings(self):
@@ -1451,6 +1456,8 @@ class LinguaEditWindow(QMainWindow):
         tools_menu.addAction(self.tr("OCR Screenshot…"), self._show_ocr_dialog, QKeySequence("Ctrl+Shift+O"))
         tools_menu.addSeparator()
         
+        # Transifex
+        tools_menu.addAction(self.tr("Transifex Statistics…"), self._show_transifex_stats)
         # Crowdin submenu
         crowdin_menu = tools_menu.addMenu(self.tr("Crowdin"))
         crowdin_menu.addAction(self.tr("Pull Latest"), self._crowdin_pull_latest)
@@ -3684,8 +3691,10 @@ class LinguaEditWindow(QMainWindow):
                     self, self.tr("Incomplete Subtitles"),
                     self.tr(
                         "%d of %d entries (%d%%) have no translation.\n\n"
-                        "Untranslated entries will be saved with empty text, "
-                        "which means those lines will be silent/blank during playback.\n\n"
+                        "Untranslated entries will be marked and saved with the "
+                        "source text as fallback, so they will still display "
+                        "during playback. When reopened in LinguaEdit, they will "
+                        "be correctly shown as untranslated.\n\n"
                         "Save anyway?"
                     ) % (untranslated, total, pct),
                     QMessageBox.Save | QMessageBox.Cancel,
@@ -4609,7 +4618,7 @@ class LinguaEditWindow(QMainWindow):
             ("openai", "OpenAI"), ("anthropic", "Anthropic"), ("deepl", "DeepL"),
             ("google_cloud", "Google Cloud Translation"), ("microsoft_translator", "Microsoft Translator"),
             ("aws", "Amazon Translate"), ("huggingface", "HuggingFace (NLLB)"),
-            ("libretranslate", "LibreTranslate"),
+            ("libretranslate", "LibreTranslate"), ("transifex", "Transifex"),
         ]
         form = QFormLayout()
         rows = {}
@@ -7226,6 +7235,119 @@ class LinguaEditWindow(QMainWindow):
         if strings:
             # Could open the created PO file or show a notification
             self._show_toast(self.tr("OCR extraction completed. {} strings extracted.").format(len(strings)))
+
+    def _show_transifex_stats(self):
+        """Fetch Transifex projects and show translation statistics."""
+        from linguaedit.services.keystore import get_secret as ks_get
+        from linguaedit.services.transifex import (
+            fetch_organizations, fetch_projects, fetch_project_stats, TransifexError,
+        )
+
+        api_key = ks_get("transifex", "api_key")
+        if not api_key:
+            QMessageBox.warning(
+                self,
+                self.tr("No API Key"),
+                self.tr("No Transifex API key configured.\nPlease add one in Translation → API Keys…"),
+            )
+            return
+
+        # Fetch organizations
+        try:
+            QApplication.setOverrideCursor(Qt.WaitCursor)
+            orgs = fetch_organizations(api_key)
+        except TransifexError as e:
+            QApplication.restoreOverrideCursor()
+            QMessageBox.critical(self, self.tr("Transifex Error"), str(e))
+            return
+        finally:
+            QApplication.restoreOverrideCursor()
+
+        if not orgs:
+            QMessageBox.information(self, self.tr("Transifex"), self.tr("No organizations found."))
+            return
+
+        if len(orgs) == 1:
+            org = orgs[0]
+        else:
+            names = [o["name"] for o in orgs]
+            name, ok = QInputDialog.getItem(
+                self, self.tr("Select Organization"), self.tr("Organization:"), names, 0, False,
+            )
+            if not ok:
+                return
+            org = orgs[names.index(name)]
+
+        # Fetch projects
+        try:
+            QApplication.setOverrideCursor(Qt.WaitCursor)
+            projects = fetch_projects(api_key, org["slug"])
+        except TransifexError as e:
+            QApplication.restoreOverrideCursor()
+            QMessageBox.critical(self, self.tr("Transifex Error"), str(e))
+            return
+        finally:
+            QApplication.restoreOverrideCursor()
+
+        if not projects:
+            QMessageBox.information(self, self.tr("Transifex"), self.tr("No projects found."))
+            return
+
+        names = [p["name"] for p in projects]
+        name, ok = QInputDialog.getItem(
+            self, self.tr("Select Project"), self.tr("Project:"), names, 0, False,
+        )
+        if not ok:
+            return
+        proj = projects[names.index(name)]
+
+        # Fetch stats
+        try:
+            QApplication.setOverrideCursor(Qt.WaitCursor)
+            stats = fetch_project_stats(api_key, org["slug"], proj["slug"])
+        except TransifexError as e:
+            QApplication.restoreOverrideCursor()
+            QMessageBox.critical(self, self.tr("Transifex Error"), str(e))
+            return
+        finally:
+            QApplication.restoreOverrideCursor()
+
+        if not stats:
+            QMessageBox.information(self, self.tr("Transifex"), self.tr("No language statistics found."))
+            return
+
+        # Show stats dialog
+        dlg = QDialog(self)
+        dlg.setWindowTitle(self.tr("Transifex — %s") % proj["name"])
+        dlg.resize(520, 450)
+        lay = QVBoxLayout(dlg)
+        lay.addWidget(QLabel(self.tr("Translation statistics for <b>%s</b>:") % proj["name"]))
+
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        container = QWidget()
+        clayout = QVBoxLayout(container)
+
+        for s in stats:
+            row = QHBoxLayout()
+            lbl = QLabel(f"<b>{s['language']}</b>")
+            lbl.setFixedWidth(80)
+            row.addWidget(lbl)
+            bar = QProgressBar()
+            bar.setRange(0, 1000)
+            bar.setValue(int(s["pct"] * 10))
+            bar.setFormat(f"{s['pct']}%  ({s['translated']}/{s['total']})")
+            row.addWidget(bar)
+            clayout.addLayout(row)
+
+        clayout.addStretch()
+        scroll.setWidget(container)
+        lay.addWidget(scroll)
+
+        buttons = QDialogButtonBox(QDialogButtonBox.Close)
+        buttons.rejected.connect(dlg.reject)
+        lay.addWidget(buttons)
+        dlg.exec()
 
     def _crowdin_pull_latest(self):
         """Pull latest translations from Crowdin OTA."""

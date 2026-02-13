@@ -6119,4 +6119,37 @@
             <translation>ÖVERSKRIDANDE: +%dpx</translation>
         </message>
     </context>
+    <context>
+        <name>UpdateDialog</name>
+        <message>
+            <source>Update Available</source>
+            <translation>Uppdatering tillgänglig</translation>
+        </message>
+        <message>
+            <source>A new version of LinguaEdit is available!</source>
+            <translation>En ny version av LinguaEdit finns tillgänglig!</translation>
+        </message>
+        <message>
+            <source>Current version: %s
+New version: %s</source>
+            <translation>Nuvarande version: %s
+Ny version: %s</translation>
+        </message>
+        <message>
+            <source>Release notes:</source>
+            <translation>Versionsinformation:</translation>
+        </message>
+        <message>
+            <source>Skip this version</source>
+            <translation>Hoppa över denna version</translation>
+        </message>
+        <message>
+            <source>Download</source>
+            <translation>Ladda ner</translation>
+        </message>
+        <message>
+            <source>Remind me later</source>
+            <translation>Påminn mig senare</translation>
+        </message>
+    </context>
 </TS>
