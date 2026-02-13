@@ -19,6 +19,11 @@ jobs:
           curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
           sudo mv tx /usr/local/bin/
 
+      - name: Push source strings to Transifex
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+        run: tx push --source --force
+
       - name: Pull translations
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
