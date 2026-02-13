@@ -5494,5 +5494,209 @@
             <source>Skip to next untranslated (Ctrl+Enter)</source>
             <translation>Hoppa till nästa orättade (Ctrl+Enter)</translation>
         </message>
+        <message>
+            <source>&amp;Catalog</source>
+            <translation>&amp;Katalog</translation>
+        </message>
+        <message>
+            <source>&amp;Edit</source>
+            <translation>&amp;Redigera</translation>
+        </message>
+        <message>
+            <source>&amp;File</source>
+            <translation>&amp;Arkiv</translation>
+        </message>
+        <message>
+            <source>&amp;Git</source>
+            <translation>Gi&amp;t</translation>
+        </message>
+        <message>
+            <source>&amp;Go</source>
+            <translation>&amp;Gå</translation>
+        </message>
+        <message>
+            <source>&amp;Help</source>
+            <translation>&amp;Hjälp</translation>
+        </message>
+        <message>
+            <source>&amp;Open…</source>
+            <translation>&amp;Öppna…</translation>
+        </message>
+        <message>
+            <source>&amp;Platforms</source>
+            <translation>&amp;Plattformar</translation>
+        </message>
+        <message>
+            <source>&amp;Save</source>
+            <translation>&amp;Spara</translation>
+        </message>
+        <message>
+            <source>&amp;Tools</source>
+            <translation>&amp;Verktyg</translation>
+        </message>
+        <message>
+            <source>&amp;View</source>
+            <translation>&amp;Visa</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;%d&lt;/b&gt; untranslated strings out of &lt;b&gt;%d&lt;/b&gt; total.</source>
+            <translation>&lt;b&gt;%d&lt;/b&gt; oöversatta strängar av totalt &lt;b&gt;%d&lt;/b&gt;.</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Added strings:&lt;/b&gt; %d</source>
+            <translation>&lt;b&gt;Tillagda strängar:&lt;/b&gt; %d</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Changed source text:&lt;/b&gt; %d</source>
+            <translation>&lt;b&gt;Ändrad källtext:&lt;/b&gt; %d</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Changed translations:&lt;/b&gt; %d</source>
+            <translation>&lt;b&gt;Ändrade översättningar:&lt;/b&gt; %d</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
+            <translation>&lt;b&gt;Konkordanssökning&lt;/b&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Outdated translations&lt;/b&gt; — source changed but translation stayed the same.</source>
+            <translation>&lt;b&gt;Föråldrade översättningar&lt;/b&gt; — källan ändrades men översättningen behölls.</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Potentially outdated:&lt;/b&gt; %d</source>
+            <translation>&lt;b&gt;Potentiellt föråldrade:&lt;/b&gt; %d</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Reference source:&lt;/b&gt;</source>
+            <translation>&lt;b&gt;Referenskälla:&lt;/b&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Reference translation:&lt;/b&gt;</source>
+            <translation>&lt;b&gt;Referensöversättning:&lt;/b&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Removed strings:&lt;/b&gt; %d</source>
+            <translation>&lt;b&gt;Borttagna strängar:&lt;/b&gt; %d</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
+            <translation>&lt;b&gt;Källtext:&lt;/b&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Source text&lt;/b&gt;</source>
+            <translation>&lt;b&gt;Källtext&lt;/b&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
+            <translation>&lt;b&gt;Förslag&lt;/b&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
+            <translation>&lt;b&gt;Översättning:&lt;/b&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Translation&lt;/b&gt;</source>
+            <translation>&lt;b&gt;Översättning&lt;/b&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
+            <translation>&lt;b&gt;Översättarens kommentar:&lt;/b&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;h3&gt;Comparison Results&lt;/h3&gt;</source>
+            <translation>&lt;h3&gt;Jämförelseresultat&lt;/h3&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
+            <translation>&lt;i&gt;(ingen matchning i referensen)&lt;/i&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;i&gt;MT unavailable&lt;/i&gt;</source>
+            <translation>&lt;i&gt;MT ej tillgänglig&lt;/i&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;i&gt;No matches&lt;/i&gt;</source>
+            <translation>&lt;i&gt;Inga träffar&lt;/i&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;i&gt;No matching terms&lt;/i&gt;</source>
+            <translation>&lt;i&gt;Inga matchande termer&lt;/i&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;i&gt;No suggestion&lt;/i&gt;</source>
+            <translation>&lt;i&gt;Inget förslag&lt;/i&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;i&gt;No suggestions&lt;/i&gt;</source>
+            <translation>&lt;i&gt;Inga förslag&lt;/i&gt;</translation>
+        </message>
+        <message>
+            <source>Are you sure you want to delete the macro '{}'?</source>
+            <translation>Är du säker på att du vill radera makrot '{}'?</translation>
+        </message>
+        <message>
+            <source>Cannot compile: install 'polib' or 'gettext' (msgfmt)</source>
+            <translation>Kan inte kompilera: installera 'polib' eller 'gettext' (msgfmt)</translation>
+        </message>
+        <message>
+            <source>Click in the source text where you want to split, then press OK.</source>
+            <translation>Klicka i källtexten där du vill dela, tryck sedan OK.</translation>
+        </message>
+        <message>
+            <source>Delete term '%s' → '%s'?</source>
+            <translation>Radera term '%s' → '%s'?</translation>
+        </message>
+        <message>
+            <source>Denna videofil innehåller inga inbäddade undertextspår.</source>
+            <translation>Denna videofil innehåller inga inbäddade undertextspår.</translation>
+        </message>
+        <message>
+            <source>Failed to play macro '{}'.</source>
+            <translation>Kunde inte spela upp makro '{}'.</translation>
+        </message>
+        <message>
+            <source>Find &amp; Replace</source>
+            <translation>Sök och ersätt</translation>
+        </message>
+        <message>
+            <source>Find &amp;&amp; Replace…</source>
+            <translation>Sök och ersätt…</translation>
+        </message>
+        <message>
+            <source>Macro '{}' has been saved successfully.</source>
+            <translation>Makro '{}' har sparats.</translation>
+        </message>
+        <message>
+            <source>Recording macro '{}'...</source>
+            <translation>Spelar in makro '{}'...</translation>
+        </message>
+        <message>
+            <source>Save &amp;As…</source>
+            <translation>Spara s&amp;om…</translation>
+        </message>
+        <message>
+            <source>Search &amp; Filter</source>
+            <translation>Sök och filtrera</translation>
+        </message>
+        <message>
+            <source>Search &amp; Replace</source>
+            <translation>Sök och ersätt</translation>
+        </message>
+        <message>
+            <source>The file '%s' has unsaved changes.\nDo you want to save before closing?</source>
+            <translation>Filen '%s' har osparade ändringar.\nVill du spara innan du stänger?</translation>
+        </message>
+        <message>
+            <source>Total: {0} characters | Invisible: {1} | Suspicious: {2}</source>
+            <translation>Totalt: {0} tecken | Osynliga: {1} | Misstänkta: {2}</translation>
+        </message>
+        <message>
+            <source>You're all set!</source>
+            <translation>Du är redo!</translation>
+        </message>
+        <message>
+            <source>Your credentials are securely stored in the system keychain.</source>
+            <translation>Dina inloggningsuppgifter lagras säkert i systemets nyckelring.</translation>
+        </message>
     </context>
 </TS>
