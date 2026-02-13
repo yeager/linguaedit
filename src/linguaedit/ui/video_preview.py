@@ -125,19 +125,37 @@ class _SubtitleOverlay(QWidget):
         p.end()
 
 
-# ── Video widget with subtitle overlay ──────────────────────────
+# ── Video container with subtitle overlay ───────────────────────
 
-class _VideoWithSubtitles(QVideoWidget):
-    """QVideoWidget with a child overlay widget for subtitles."""
+class _VideoWithSubtitles(QWidget):
+    """Container that stacks a QVideoWidget and a subtitle overlay using QGridLayout.
+
+    QVideoWidget uses native platform rendering that paints over child widgets,
+    so we cannot parent the overlay to it. Instead we place both as siblings
+    in the same grid cell — the overlay sits on top with a transparent background.
+    """
 
     def __init__(self, parent=None):
         super().__init__(parent)
-        self._overlay = _SubtitleOverlay(self)
+        from PySide6.QtWidgets import QGridLayout
+        layout = QGridLayout(self)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(0)
+
+        self._video = QVideoWidget()
+        self._overlay = _SubtitleOverlay()
+        self._overlay.setAttribute(Qt.WA_TransparentForMouseEvents)
+        self._overlay.setAttribute(Qt.WA_TranslucentBackground)
+
+        # Both in cell (0,0) — overlay stacks on top
+        layout.addWidget(self._video, 0, 0)
+        layout.addWidget(self._overlay, 0, 0)
         self._overlay.raise_()
 
-    def resizeEvent(self, event):
-        super().resizeEvent(event)
-        self._overlay.setGeometry(self.rect())
+    @property
+    def video_widget(self) -> QVideoWidget:
+        """Return the actual QVideoWidget for media player output."""
+        return self._video
 
     def set_texts(self, source: str, translation: str):
         self._overlay.set_texts(source, translation)
@@ -445,7 +463,7 @@ class VideoPreviewWidget(QWidget):
         self._audio = QAudioOutput()
         self._audio.setVolume(0.8)
         self._player.setAudioOutput(self._audio)
-        self._player.setVideoOutput(self._video_widget)
+        self._player.setVideoOutput(self._video_widget.video_widget)
         self._player.positionChanged.connect(self._on_position_changed)
         self._player.durationChanged.connect(self._on_duration_changed)
         self._player.playbackStateChanged.connect(self._on_state_changed)
