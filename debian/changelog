@@ -1,3 +1,14 @@
+linguaedit (1.8.6) stable; urgency=medium
+
+  * Pre-translate runs in background QThread (UI no longer freezes)
+  * API key field added directly in Pre-translate dialog
+  * Source language auto-detection (Auto-detect option in dropdown)
+  * Transifex integration for community translations (18 languages, daily sync)
+  * All Swedish source strings in code replaced with English (proper i18n)
+  * .ts/.qm build automation in CI for all languages
+
+ -- Daniel Nylander <daniel@danielnylander.se>  Fri, 13 Feb 2026 12:00:00 +0100
+
 linguaedit (1.8.5) stable; urgency=medium
 
   * Pre-translate: show API error dialog with skip/continue/stop options

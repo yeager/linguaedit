@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [1.8.6] — 2026-02-13
+
+### Changed
+- **Pre-translate** — runs in background QThread (UI no longer freezes)
+- **Pre-translate** — API key field added directly in dialog (no need for separate dialog)
+- **Pre-translate** — source language auto-detection (Auto-detect option in dropdown)
+- **Transifex** — integration for community translations (18 languages, daily sync via GitHub Actions)
+- **i18n** — all Swedish source strings in code replaced with English (proper i18n)
+- **CI** — .ts/.qm build automation for all languages
+
 ## [1.8.5] — 2026-02-13
 
 ### Changed

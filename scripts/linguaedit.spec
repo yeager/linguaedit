@@ -1,5 +1,5 @@
 Name:           linguaedit
-Version:        1.8.5
+Version:        1.8.6
 Release:        1%{?dist}
 Summary:        Professional translation editor
 License:        GPL-3.0-or-later
@@ -63,6 +63,14 @@ update-mime-database /usr/share/mime 2>/dev/null || true
 %license LICENSE
 
 %changelog
+* Fri Feb 13 2026 Daniel Nylander <daniel@danielnylander.se> - 1.8.6-1
+- Pre-translate runs in background QThread (UI no longer freezes)
+- API key field added directly in Pre-translate dialog
+- Source language auto-detection (Auto-detect option)
+- Transifex integration for community translations (18 languages)
+- All Swedish source strings replaced with English (proper i18n)
+- .ts/.qm build automation in CI for all languages
+
 * Fri Feb 13 2026 Daniel Nylander <daniel@danielnylander.se> - 1.8.5-1
 - Pre-translate: API error dialog with skip/continue/stop
 - Pre-translate: keep completed translations on cancel
