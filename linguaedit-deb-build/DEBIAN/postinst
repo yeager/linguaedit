@@ -1,0 +1,23 @@
+#!/bin/bash
+set -e
+
+DEPS="PySide6 polib requests PyYAML pyenchant"
+
+# Try pip install with --break-system-packages (Python 3.11+/PEP 668),
+# fall back to regular pip, then pipx as last resort
+if python3 -m pip install --break-system-packages --quiet $DEPS 2>/dev/null; then
+    echo "LinguaEdit: Python dependencies installed via pip"
+elif python3 -m pip install --quiet $DEPS 2>/dev/null; then
+    echo "LinguaEdit: Python dependencies installed via pip"
+elif command -v pipx >/dev/null 2>&1; then
+    pipx install linguaedit 2>/dev/null || true
+    echo "LinguaEdit: Installed via pipx"
+else
+    echo ""
+    echo "=========================================="
+    echo "  LinguaEdit: Could not auto-install PySide6."
+    echo "  Please run manually:"
+    echo "    pip install PySide6 polib requests PyYAML pyenchant"
+    echo "=========================================="
+    echo ""
+fi
