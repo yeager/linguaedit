@@ -364,7 +364,7 @@ class OCRDialog(QDialog):
     
     def _show_tesseract_error(self):
         """Show tesseract installation error."""
-        self._status_label.setText("⚠ Tesseract not found. Please install tesseract-ocr.")
+        self._status_label.setText(self.tr("⚠ Tesseract not found. Please install tesseract-ocr."))
         self._status_label.setStyleSheet("color: red;")
         self._process_btn.setEnabled(False)
         
@@ -458,7 +458,7 @@ class OCRDialog(QDialog):
             # Enable PO creation
             self._create_po_btn.setEnabled(True)
         else:
-            self._status_label.setText("⚠ No text found in image.")
+            self._status_label.setText(self.tr("⚠ No text found in image."))
             self._status_label.setStyleSheet("color: orange;")
     
     def _on_ocr_error(self, error: str):

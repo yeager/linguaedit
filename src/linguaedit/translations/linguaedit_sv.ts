@@ -24,7 +24,7 @@
         </message>
         <message>
             <source>Fel</source>
-            <translation>Gilla</translation>
+            <translation>Fel</translation>
         </message>
         <message>
             <source>Fel vid analys: </source>
@@ -288,7 +288,7 @@
         </message>
         <message>
             <source>Entry</source>
-            <translation>Inträde</translation>
+            <translation>Post</translation>
         </message>
         <message>
             <source>Find:</source>
@@ -308,11 +308,11 @@
         </message>
         <message>
             <source>No</source>
-            <translation>Från</translation>
+            <translation>Nej</translation>
         </message>
         <message>
             <source>Operation</source>
-            <translation>Drift</translation>
+            <translation>Åtgärd</translation>
         </message>
         <message>
             <source>Options</source>
@@ -454,15 +454,15 @@
         <name>CollapsibleSidePanel</name>
         <message>
             <source>Ctx</source>
-            <translation>Anslutningsmöjligheter</translation>
+            <translation>Ktx</translation>
         </message>
         <message>
             <source>Info</source>
-            <translation>Information</translation>
+            <translation>Info</translation>
         </message>
         <message>
             <source>Pre</source>
-            <translation>För</translation>
+            <translation>Förh</translation>
         </message>
         <message>
             <source>Ref</source>
@@ -470,7 +470,7 @@
         </message>
         <message>
             <source>TM</source>
-            <translation>tamil</translation>
+            <translation>TM</translation>
         </message>
         <message>
             <source>Toggle side panel</source>
@@ -789,7 +789,7 @@
         </message>
         <message>
             <source>Fel</source>
-            <translation>Gilla</translation>
+            <translation>Fel</translation>
         </message>
         <message>
             <source>Försök igen</source>
@@ -832,7 +832,7 @@
         </message>
         <message>
             <source>Entry</source>
-            <translation>Inträde</translation>
+            <translation>Post</translation>
         </message>
         <message>
             <source>Field</source>
@@ -860,7 +860,7 @@
         </message>
         <message>
             <source>View Entry History</source>
-            <translation>Visa inloggningshistorik</translation>
+            <translation>Visa posthistorik</translation>
         </message>
     </context>
     <context>
@@ -1018,7 +1018,7 @@
         </message>
         <message>
             <source>Clear</source>
-            <translation>Tydligt</translation>
+            <translation>Rensa</translation>
         </message>
         <message>
             <source>Confirm Delete</source>
@@ -1110,11 +1110,11 @@
         </message>
         <message>
             <source>No terms to export.</source>
-            <translation>Inga villkor för export.</translation>
+            <translation>Inga termer att exportera.</translation>
         </message>
         <message>
             <source>Notes</source>
-            <translation>Anmärkningar</translation>
+            <translation>Anteckningar</translation>
         </message>
         <message>
             <source>Notes:</source>
@@ -1166,11 +1166,11 @@
         </message>
         <message>
             <source>Terms</source>
-            <translation>Villkor</translation>
+            <translation>Termer</translation>
         </message>
         <message>
             <source>Update</source>
-            <translation>Uppdatering</translation>
+            <translation>Uppdatera</translation>
         </message>
         <message>
             <source>Warning</source>
@@ -1289,7 +1289,7 @@
         </message>
         <message>
             <source>Romance (2 forms)</source>
-            <translation>Romantik (2 former)</translation>
+            <translation>Romanska (2 former)</translation>
         </message>
         <message>
             <source>Source Language:</source>
@@ -1454,7 +1454,7 @@
         <name>LayoutSimulatorDialog</name>
         <message>
             <source>Bold</source>
-            <translation>Boll</translation>
+            <translation>Fet</translation>
         </message>
         <message>
             <source>Close</source>
@@ -1498,7 +1498,7 @@
         </message>
         <message>
             <source>Size (pt):</source>
-            <translation>Till dig (pt):</translation>
+            <translation>Storlek (pt):</translation>
         </message>
         <message>
             <source>Source Text:</source>
@@ -1661,7 +1661,7 @@
         </message>
         <message>
             <source>About LinguaEdit</source>
-            <translation>Om språkRedigera</translation>
+            <translation>Om LinguaEdit</translation>
         </message>
         <message>
             <source>About Qt</source>
@@ -1817,11 +1817,11 @@
         </message>
         <message>
             <source>Clear</source>
-            <translation>Tydligt</translation>
+            <translation>Rensa</translation>
         </message>
         <message>
             <source>Clear translation</source>
-            <translation>Tydlig översättning</translation>
+            <translation>Rensa översättning</translation>
         </message>
         <message>
             <source>Close Current File?</source>
@@ -1853,11 +1853,11 @@
         </message>
         <message>
             <source>Committed!</source>
-            <translation>Engagerad!</translation>
+            <translation>Committat!</translation>
         </message>
         <message>
             <source>Commit…</source>
-            <translation>Åta sig...</translation>
+            <translation>Committa…</translation>
         </message>
         <message>
             <source>Compare Files…</source>
@@ -1889,7 +1889,7 @@
         </message>
         <message>
             <source>Concordance</source>
-            <translation>Överensstämmelse</translation>
+            <translation>Konkordans</translation>
         </message>
         <message>
             <source>Concordance Search…</source>
@@ -1941,7 +1941,7 @@
         </message>
         <message>
             <source>Crowdin OTA</source>
-            <translation>Crowd OTA</translation>
+            <translation>Crowdin OTA</translation>
         </message>
         <message>
             <source>Crowdin Over-The-Air functionality not yet implemented.\n</source>
@@ -1961,7 +1961,7 @@
         </message>
         <message>
             <source>Date</source>
-            <translation>Data</translation>
+            <translation>Datum</translation>
         </message>
         <message>
             <source>Developer</source>
@@ -2033,7 +2033,7 @@
         </message>
         <message>
             <source>Entry</source>
-            <translation>Inträde</translation>
+            <translation>Post</translation>
         </message>
         <message>
             <source>Entry pinned</source>
@@ -2229,7 +2229,7 @@
         </message>
         <message>
             <source>Git</source>
-            <translation>Gå</translation>
+            <translation>Git</translation>
         </message>
         <message>
             <source>Git Branches</source>
@@ -2365,7 +2365,7 @@
         </message>
         <message>
             <source>LinguaEdit</source>
-            <translation>Redigera språk</translation>
+            <translation>LinguaEdit</translation>
         </message>
         <message>
             <source>Ln %d, Col %d</source>
@@ -2381,7 +2381,7 @@
         </message>
         <message>
             <source>Locale:</source>
-            <translation>Plats:</translation>
+            <translation>Språkkod:</translation>
         </message>
         <message>
             <source>MT translation failed</source>
@@ -2573,7 +2573,7 @@
         </message>
         <message>
             <source>Nord</source>
-            <translation>Norr</translation>
+            <translation>Nord</translation>
         </message>
         <message>
             <source>Normal Mode</source>
@@ -2589,7 +2589,7 @@
         </message>
         <message>
             <source>Notes</source>
-            <translation>Anmärkningar</translation>
+            <translation>Anteckningar</translation>
         </message>
         <message>
             <source>OCR Screenshot…</source>
@@ -2717,7 +2717,7 @@
         </message>
         <message>
             <source>Pull from…</source>
-            <translation>Dra från…</translation>
+            <translation>Hämta från…</translation>
         </message>
         <message>
             <source>Push Changes</source>
@@ -2725,7 +2725,7 @@
         </message>
         <message>
             <source>Push to…</source>
-            <translation>Tryck på...</translation>
+            <translation>Pusha till…</translation>
         </message>
         <message>
             <source>QA Profile: %s</source>
@@ -2837,7 +2837,7 @@
         </message>
         <message>
             <source>Review</source>
-            <translation>Recension</translation>
+            <translation>Granska</translation>
         </message>
         <message>
             <source>Review Mode</source>
@@ -3065,7 +3065,7 @@
         </message>
         <message>
             <source>TMX</source>
-            <translation>Toronto-börsen</translation>
+            <translation>TMX</translation>
         </message>
         <message>
             <source>TMX Export</source>
@@ -3157,7 +3157,7 @@
         </message>
         <message>
             <source>Transifex</source>
-            <translation>Översätt</translation>
+            <translation>Transifex</translation>
         </message>
         <message>
             <source>Translated</source>
@@ -3405,7 +3405,7 @@
         </message>
         <message>
             <source>💬 Comment</source>
-            <translation>💬 Hur</translation>
+            <translation>💬 Kommentar</translation>
         </message>
         <message>
             <source>💾 Apply TM #1</source>
@@ -3417,11 +3417,11 @@
         </message>
         <message>
             <source>📌 Pin Entry</source>
-            <translation>📌 Pin-kod</translation>
+            <translation>📌 Fäst post</translation>
         </message>
         <message>
             <source>📌 Unpin Entry</source>
-            <translation>📌 Ta bort fästning</translation>
+            <translation>📌 Lösgör post</translation>
         </message>
         <message>
             <source>🔊 Play Translation</source>
@@ -3461,7 +3461,7 @@
         </message>
         <message>
             <source>State: %1</source>
-            <translation>Stat: %1</translation>
+            <translation>Status: %1</translation>
         </message>
         <message>
             <source>Translation: %1</source>
@@ -3674,7 +3674,7 @@
         </message>
         <message>
             <source>Disabled</source>
-            <translation>Funktionshindrad</translation>
+            <translation>Inaktiverad</translation>
         </message>
         <message>
             <source>Enabled:</source>
@@ -3975,7 +3975,7 @@
         </message>
         <message>
             <source>No Strings</source>
-            <translation>Inga förpliktelser</translation>
+            <translation>Inga strängar</translation>
         </message>
         <message>
             <source>No strings selected for PO file creation.</source>
@@ -4161,7 +4161,7 @@
         </message>
         <message>
             <source>Transifex</source>
-            <translation>Översätt</translation>
+            <translation>Transifex</translation>
         </message>
         <message>
             <source>Transifex API</source>
@@ -4374,7 +4374,7 @@
         </message>
         <message>
             <source>Personal</source>
-            <translation>Personal</translation>
+            <translation>Personligt</translation>
         </message>
         <message>
             <source>Preferences</source>
@@ -5071,7 +5071,7 @@
         </message>
         <message>
             <source>Clear</source>
-            <translation>Tydligt</translation>
+            <translation>Rensa</translation>
         </message>
         <message>
             <source>Close</source>
@@ -5134,7 +5134,7 @@
         </message>
         <message>
             <source>Info</source>
-            <translation>Information</translation>
+            <translation>Info</translation>
         </message>
         <message>
             <source>Message</source>
@@ -5275,7 +5275,7 @@
         </message>
         <message>
             <source>Fel</source>
-            <translation>Gilla</translation>
+            <translation>Fel</translation>
         </message>
         <message>
             <source>Fel vid extrahering</source>
@@ -5303,7 +5303,7 @@
         </message>
         <message>
             <source>Klart</source>
-            <translation>Tydligt</translation>
+            <translation>Klart</translation>
         </message>
         <message>
             <source>Kunde inte extrahera undertexten:\n%s</source>
