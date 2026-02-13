@@ -89,6 +89,11 @@ class PreferencesDialog(QDialog):
         available_codes = {"en"}  # English always present
         for qm in translations_dir.glob("linguaedit_*.qm"):
             code = qm.stem.replace("linguaedit_", "")
+            if code == "template":
+                continue
+            # Skip empty .qm files (no actual translations)
+            if qm.stat().st_size < 100:
+                continue
             available_codes.add(code)
 
         # Build lookup from SUPPORTED_LANGUAGES

@@ -31,10 +31,18 @@ jobs:
       - name: Install PySide6
         run: pip install PySide6
 
-      - name: Compile .qm files
+      - name: Compile .qm files (skip empty)
         run: |
           for ts in src/linguaedit/translations/linguaedit_*.ts; do
-            [ -f "$ts" ] && pyside6-lrelease "$ts"
+            [ -f "$ts" ] || continue
+            # Skip template
+            case "$ts" in *template*) continue;; esac
+            pyside6-lrelease "$ts"
+            qm="${ts%.ts}.qm"
+            # Remove .qm files with no real translations (< 100 bytes)
+            if [ -f "$qm" ] && [ "$(stat --format=%s "$qm" 2>/dev/null || stat -f%z "$qm")" -lt 100 ]; then
+              rm "$qm"
+            fi
           done
 
       - name: Commit and push

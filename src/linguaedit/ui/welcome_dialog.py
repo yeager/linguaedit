@@ -112,7 +112,10 @@ class WelcomeDialog(QDialog):
         translations_dir = _find_translations_dir()
         available_codes = {"en"}
         for qm in translations_dir.glob("linguaedit_*.qm"):
-            available_codes.add(qm.stem.replace("linguaedit_", ""))
+            code = qm.stem.replace("linguaedit_", "")
+            if code == "template" or qm.stat().st_size < 100:
+                continue
+            available_codes.add(code)
 
         lang_lookup = {code: label for code, label in SUPPORTED_LANGUAGES}
         self._available_langs = []
