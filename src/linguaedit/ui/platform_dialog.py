@@ -237,9 +237,13 @@ class PlatformSettingsDialog(QDialog):
 
     def _browse_tx_projects(self):
         fields = self._entries["transifex"]
+        org = fields["organization"].text().strip()
+        if not org:
+            self._tx_status.setText(self.tr("✗ Select an organization first"))
+            return
         config = TransifexConfig(
             api_token=fields["api_token"].text(),
-            organization=fields["organization"].text(),
+            organization=org,
             project="",
             base_url=fields["base_url"].text(),
         )
@@ -362,10 +366,14 @@ class PlatformSettingsDialog(QDialog):
 
     def _browse_wb_components(self):
         fields = self._entries["weblate"]
+        project = fields["project"].text().strip()
+        if not project:
+            self._wb_status.setText(self.tr("✗ Select a project first"))
+            return
         config = WeblateConfig(
             api_url=fields["api_url"].text(),
             api_key=fields["api_key"].text(),
-            project=fields["project"].text(),
+            project=project,
             component="",
         )
 

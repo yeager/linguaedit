@@ -172,7 +172,9 @@ class TransifexConfig:
 def transifex_list_projects(config: TransifexConfig) -> list[dict]:
     """List all projects the user has access to in the organization."""
     url = f"{config.base_url}/projects"
-    params = {"filter[organization]": f"o:{config.organization}"}
+    params = {}
+    if config.organization:
+        params["filter[organization]"] = f"o:{config.organization}"
     results = []
     while url:
         r = _request_with_retry("GET", url, headers=config.headers, params=params)

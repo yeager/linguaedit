@@ -4457,6 +4457,14 @@ Lägg till en i Översättning → API-nycklar…</translation></message><messag
             <translation>Laddar…</translation>
         </message>
         <message>
+            <source>✗ Select an organization first</source>
+            <translation>✗ Välj en organisation först</translation>
+        </message>
+        <message>
+            <source>✗ Select a project first</source>
+            <translation>✗ Välj ett projekt först</translation>
+        </message>
+        <message>
             <source>Select Organization</source>
             <translation>Välj organisation</translation>
         </message>
