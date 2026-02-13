@@ -4356,6 +4356,64 @@ Ladda om filen för att se ändringarna.</translation>
         <source>Glossary</source>
         <translation>Ordlista</translation>
     </message>
+    <message>
+        <source>Transifex Statistics…</source>
+        <translation>Transifex-statistik…</translation>
+    </message>
+    <message>
+        <source>No API Key</source>
+        <translation>Ingen API-nyckel</translation>
+    </message>
+    <message>
+        <source>No Transifex API key configured.
+Please add one in Translation → API Keys…</source>
+        <translation>Ingen Transifex API-nyckel konfigurerad.
+Lägg till en under Översättning → API-nycklar…</translation>
+    </message>
+    <message>
+        <source>Transifex Error</source>
+        <translation>Transifex-fel</translation>
+    </message>
+    <message>
+        <source>Transifex</source>
+        <translation>Transifex</translation>
+    </message>
+    <message>
+        <source>No organizations found.</source>
+        <translation>Inga organisationer hittades.</translation>
+    </message>
+    <message>
+        <source>Select Organization</source>
+        <translation>Välj organisation</translation>
+    </message>
+    <message>
+        <source>Organization:</source>
+        <translation>Organisation:</translation>
+    </message>
+    <message>
+        <source>No projects found.</source>
+        <translation>Inga projekt hittades.</translation>
+    </message>
+    <message>
+        <source>Select Project</source>
+        <translation>Välj projekt</translation>
+    </message>
+    <message>
+        <source>Project:</source>
+        <translation>Projekt:</translation>
+    </message>
+    <message>
+        <source>No language statistics found.</source>
+        <translation>Ingen språkstatistik hittades.</translation>
+    </message>
+    <message>
+        <source>Transifex — %s</source>
+        <translation>Transifex — %s</translation>
+    </message>
+    <message>
+        <source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source>
+        <translation>Översättningsstatistik för &lt;b&gt;%s&lt;/b&gt;:</translation>
+    </message>
 </context>
 <context>
     <name>Linter</name>

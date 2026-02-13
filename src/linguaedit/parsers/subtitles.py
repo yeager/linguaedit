@@ -27,6 +27,9 @@ class SubtitleEntry:
         return f"{self.start_time} --> {self.end_time}"
 
 
+UNTRANSLATED_MARKER = "[!LinguaEdit:untranslated]"
+
+
 @dataclass
 class SubtitleFileData:
     """Subtitle fildata."""
@@ -107,11 +110,20 @@ def _parse_srt_content(content: str) -> SubtitleFileData:
             # Text (resterande rader)
             text = '\n'.join(lines[2:])
             
+            # Check for untranslated marker
+            translation = ""
+            fuzzy = False
+            if text.startswith(UNTRANSLATED_MARKER):
+                text = text[len(UNTRANSLATED_MARKER):].lstrip('\n')
+                fuzzy = True
+            
             entry = SubtitleEntry(
                 index=index,
                 start_time=start_time,
                 end_time=end_time,
                 text=text,
+                translation=translation,
+                fuzzy=fuzzy,
                 line_number=block_num + 1
             )
             entries.append(entry)
@@ -195,6 +207,13 @@ def _parse_vtt_content(content: str) -> SubtitleFileData:
             
             text = '\n'.join(text_lines)
             
+            # Check for untranslated marker
+            translation = ""
+            fuzzy = False
+            if text.startswith(UNTRANSLATED_MARKER):
+                text = text[len(UNTRANSLATED_MARKER):].lstrip('\n')
+                fuzzy = True
+            
             # Använd entry index baserat på position
             index = len(entries) + 1
             
@@ -203,6 +222,8 @@ def _parse_vtt_content(content: str) -> SubtitleFileData:
                 start_time=start_time,
                 end_time=end_time,
                 text=text,
+                translation=translation,
+                fuzzy=fuzzy,
                 cue_settings=cue_settings,
                 line_number=i
             )
@@ -272,9 +293,6 @@ def _save_srt(file_data: SubtitleFileData) -> None:
     lines = []
     
     for entry in file_data.entries:
-        # Write translation if available, otherwise source text
-        text = entry.translation or entry.text or ""
-        
         # Index
         lines.append(str(entry.index))
         
@@ -283,7 +301,13 @@ def _save_srt(file_data: SubtitleFileData) -> None:
         end = _format_timestamp_srt(entry.end_time)
         lines.append(f"{start} --> {end}")
         
-        lines.append(text)
+        # Write translation if available, otherwise mark and use source text
+        if entry.translation and entry.translation.strip():
+            lines.append(entry.translation)
+        else:
+            source = entry.text or ""
+            lines.append(f"{UNTRANSLATED_MARKER}\n{source}")
+        
         lines.append("")  # Tom rad mellan entries
     
     content = '\n'.join(lines)
@@ -317,9 +341,13 @@ def _save_vtt(file_data: SubtitleFileData) -> None:
             timing_line += f" {entry.cue_settings}"
         lines.append(timing_line)
         
-        # Write translation if available, otherwise source text
-        text = entry.translation or entry.text or ""
-        lines.append(text)
+        # Write translation if available, otherwise mark and use source text
+        if entry.translation and entry.translation.strip():
+            lines.append(entry.translation)
+        else:
+            source = entry.text or ""
+            lines.append(f"{UNTRANSLATED_MARKER}\n{source}")
+        
         lines.append("")  # Tom rad mellan cues
     
     content = '\n'.join(lines)
