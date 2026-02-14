@@ -170,9 +170,10 @@ def _save_comments(data: dict) -> None:
 # ── Format specifier regex ───────────────────────────────────────────
 
 _FMT_RE = re.compile(
-    r'%[\d$]*[-+ #0]*\d*\.?\d*[hlLqjzt]*[sdiufxXoecpg%]'
-    r'|\{[^}]*\}'
-    r'|%\([^)]+\)[sdiufxXoecpg]'
+    r'%\d+\$[sdiufxXoecpg]'                          # Android/Java: %1$s, %2$d
+    r'|%[-+ #0]*\d*\.?\d*[hlLqjzt]*[sdiufxXoecpg%]'  # printf: %s, %02d
+    r'|\{[^}]*\}'                                      # Python: {0}, {name}
+    r'|%\([^)]+\)[sdiufxXoecpg]'                       # Python old: %(name)s
 )
 
 

@@ -39,7 +39,10 @@ class TranslationHighlighter(QSyntaxHighlighter):
         fmt_printf = QTextCharFormat()
         fmt_printf.setForeground(QColor("#E8A838"))
         fmt_printf.setFontWeight(QFont.Bold)
-        self._rules.append((re.compile(r'%[\d$]*[sdiufxXoecpg%]'), fmt_printf))
+        # Android/Java positional: %1$s, %2$d etc. (must come before general printf)
+        self._rules.append((re.compile(r'%\d+\$[sdiufxXoecpg]'), fmt_printf))
+        # General printf: %s, %d, %02d etc.
+        self._rules.append((re.compile(r'%[-+ #0]*\d*\.?\d*[hlLqjzt]*[sdiufxXoecpg%]'), fmt_printf))
 
         # Python format strings - orange
         fmt_python = QTextCharFormat()

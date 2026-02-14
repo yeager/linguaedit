@@ -49,7 +49,8 @@ class TranslationHighlighter(QSyntaxHighlighter):
             # HTML-taggar (inkluderar self-closing och med attribut)
             (r'<[^>]+/?>', self.html_format),
             
-            # Printf-style format strings
+            # Printf-style format strings (including Android/Java %1$s, %2$d etc.)
+            (r'%\d+\$[sdioxXeEfFgGaAcpn]', self.format_string_format),
             (r'%[-+0-9]*[sdioxXeEfFgGaAcpn%]', self.format_string_format),
             
             # Python format strings {0}, {name}, {0:d}

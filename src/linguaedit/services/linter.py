@@ -100,6 +100,14 @@ def _check_number_localization(source: str, target: str, target_locale: str) -> 
     return issues
 
 
+def _strip_format_variables(text: str) -> str:
+    """Ta bort Android/Java/printf format-variabler innan currency-check.
+
+    Mönster som %1$s, %2$d, %s, %-10.2f etc ska inte tolkas som valutasymboler.
+    """
+    return re.sub(r'%\d+\$[sdiufxXoecpg]|%[-+ #0]*\d*\.?\d*[hlLqjzt]*[sdiufxXoecpg%]', '', text)
+
+
 def _check_currency_localization(source: str, target: str, target_locale: str) -> list[str]:
     """Kontrollera valutasymboler."""
     issues = []
@@ -110,16 +118,20 @@ def _check_currency_localization(source: str, target: str, target_locale: str) -
     # Vanliga valutasymboler
     currency_symbols = ["$", "€", "£", "¥", "₹", "₽", "kr", "€", "CHF"]
     
+    # Ta bort format-variabler så att %1$s inte tolkas som $
+    clean_source = _strip_format_variables(source)
+    clean_target = _strip_format_variables(target)
+    
     # Hitta valutasymboler i source
     source_currencies = []
     for symbol in currency_symbols:
-        if symbol in source:
+        if symbol in clean_source:
             source_currencies.append(symbol)
     
     if source_currencies:
         # Kolla om samma symbol används i target
         for symbol in source_currencies:
-            if symbol in target and symbol != expected_currency:
+            if symbol in clean_target and symbol != expected_currency:
                 issues.append(QCoreApplication.translate("Linter", 
                     f"Currency symbol '{symbol}' should be localized to '{expected_currency}' for {target_locale}"))
     
@@ -202,8 +214,8 @@ def lint_entries(entries: list[dict]) -> LintResult:
             penalty += 0.3
 
         # Printf format specifier mismatch
-        src_fmt = set(re.findall(r'%[\d$]*[sdiufxXoecpg%]', msgid))
-        dst_fmt = set(re.findall(r'%[\d$]*[sdiufxXoecpg%]', msgstr))
+        src_fmt = set(re.findall(r'%\d+\$[sdiufxXoecpg]|%[-+ #0]*\d*\.?\d*[hlLqjzt]*[sdiufxXoecpg%]', msgid))
+        dst_fmt = set(re.findall(r'%\d+\$[sdiufxXoecpg]|%[-+ #0]*\d*\.?\d*[hlLqjzt]*[sdiufxXoecpg%]', msgstr))
         if src_fmt != dst_fmt:
             issues.append(LintIssue("error", QCoreApplication.translate("Linter", "Format specifier mismatch: %s vs %s") % (src_fmt, dst_fmt), idx, msgid))
             penalty += 2.0
