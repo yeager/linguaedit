@@ -240,7 +240,7 @@ class SyncDialog(QDialog):
             config = CrowdinConfig(**{k: v for k, v in cfg.items() if k in CrowdinConfig.__dataclass_fields__})
             build_id = crowdin_build_translations(config)
             url = crowdin_poll_build(config, build_id)
-            return crowdin_download_file(url)
+            return crowdin_download_file(url, language=language)
         raise PlatformError(self.tr("Unknown platform"))
 
     # ── Push ──────────────────────────────────────────────────────

@@ -243,7 +243,12 @@ def transifex_list_languages(config: TransifexConfig) -> list[dict]:
 
 def transifex_download(config: TransifexConfig, resource_id: str, language: str,
                        poll_interval: float = 2.0, max_wait: float = 120.0) -> bytes:
-    """Download a translation file from Transifex with async polling."""
+    """Download a translation file from Transifex with async polling.
+
+    Transifex v3 async downloads: POST creates a download job, then poll
+    the self link until the server returns a 303 redirect (which requests
+    follows automatically) or non-JSON content.
+    """
     url = f"{config.base_url}/resource_translations_async_downloads"
     payload = {
         "data": {
@@ -255,48 +260,64 @@ def transifex_download(config: TransifexConfig, resource_id: str, language: str,
             "type": "resource_translations_async_downloads",
         }
     }
-    r = _request_with_retry("POST", url, headers=config.headers, json=payload)
+    # Disable redirect following so we can detect 303 responses
+    r = _request_with_retry("POST", url, headers=config.headers, json=payload,
+                            allow_redirects=False)
     if r.status_code not in (200, 201, 202, 303):
-        raise PlatformError(_("Transifex download failed: {code}").format(code=r.status_code))
+        raise PlatformError(_("Transifex download failed: {code} {text}").format(
+            code=r.status_code, text=_clean_error(r)))
 
-    # If we get a redirect, follow it
-    if r.status_code == 303 or "Location" in r.headers:
-        download_url = r.headers.get("Location") or r.json().get("data", {}).get("links", {}).get("self")
-        if download_url:
-            dr = _request_with_retry("GET", download_url, headers={"Authorization": f"Bearer {config.api_token}"})
+    # If we get a redirect or non-JSON content, the download is ready
+    if r.status_code == 303:
+        redirect_url = r.headers.get("Location", "")
+        if redirect_url:
+            dr = _request_with_retry("GET", redirect_url,
+                                     headers={"Authorization": f"Bearer {config.api_token}"})
             return dr.content
 
-    # Poll for completion
-    download_url = r.json().get("data", {}).get("links", {}).get("self", "")
+    # Check if the response already contains the file content
+    ct = r.headers.get("Content-Type", "")
+    if "json" not in ct and r.content:
+        return r.content
+
+    # Extract polling URL from response
+    try:
+        resp_data = r.json()
+    except Exception:
+        return r.content
+
+    download_url = resp_data.get("data", {}).get("links", {}).get("self", "")
     if not download_url:
-        # Try to get from response ID
-        dl_id = r.json().get("data", {}).get("id", "")
+        dl_id = resp_data.get("data", {}).get("id", "")
         if dl_id:
             download_url = f"{config.base_url}/resource_translations_async_downloads/{dl_id}"
 
     if not download_url:
         raise PlatformError(_("Transifex: could not determine download URL"))
 
+    # Poll for completion
+    auth_headers = {"Authorization": f"Bearer {config.api_token}"}
     elapsed = 0.0
     while elapsed < max_wait:
         time.sleep(poll_interval)
         elapsed += poll_interval
-        pr = _request_with_retry("GET", download_url,
-                                 headers={"Authorization": f"Bearer {config.api_token}"})
+        pr = _request_with_retry("GET", download_url, headers=auth_headers,
+                                 allow_redirects=False)
+
+        if pr.status_code == 303:
+            redirect_url = pr.headers.get("Location", "")
+            if redirect_url:
+                fr = _request_with_retry("GET", redirect_url, headers=auth_headers)
+                return fr.content
+
         if pr.status_code == 200:
-            ct = pr.headers.get("Content-Type", "")
-            if "json" not in ct:
+            pct = pr.headers.get("Content-Type", "")
+            if "json" not in pct:
                 return pr.content
-            # Still pending
+            # Still pending — check for failure
             status = pr.json().get("data", {}).get("attributes", {}).get("status")
             if status == "failed":
                 raise PlatformError(_("Transifex download failed on server"))
-        elif pr.status_code == 303:
-            final_url = pr.headers.get("Location", "")
-            if final_url:
-                fr = _request_with_retry("GET", final_url,
-                                         headers={"Authorization": f"Bearer {config.api_token}"})
-                return fr.content
 
     raise PlatformTimeoutError(_("Transifex download timed out after {sec}s").format(sec=int(max_wait)))
 
@@ -441,6 +462,10 @@ class CrowdinConfig:
     api_token: str
     project_id: int
     base_url: str = "https://api.crowdin.com/api/v2"
+
+    def __post_init__(self):
+        # Ensure project_id is int (JSON config may store it as string)
+        self.project_id = int(self.project_id)
 
     @property
     def headers(self) -> dict:
@@ -604,9 +629,50 @@ def crowdin_download_build(config: CrowdinConfig, build_id: int) -> str:
     return r.json().get("data", {}).get("url", "")
 
 
-def crowdin_download_file(url: str) -> bytes:
-    """Download file content from a Crowdin build URL."""
+def crowdin_download_file(url: str, language: str = "") -> bytes:
+    """Download file content from a Crowdin build URL.
+
+    Crowdin builds produce ZIP archives. This function downloads the ZIP,
+    extracts the best matching translation file, and returns its content.
+    If *language* is provided, files matching that language code are preferred.
+    """
+    import zipfile
+    import io
+
     r = _request_with_retry("GET", url, timeout=60)
     if r.status_code != 200:
         raise PlatformError(_("Crowdin file download failed: {code}").format(code=r.status_code))
-    return r.content
+
+    content = r.content
+
+    # Check if it's a ZIP archive
+    if not content[:4] == b'PK\x03\x04':
+        # Not a ZIP — return raw content (single file download)
+        return content
+
+    try:
+        zf = zipfile.ZipFile(io.BytesIO(content))
+    except zipfile.BadZipFile:
+        return content
+
+    names = zf.namelist()
+    if not names:
+        raise PlatformError(_("Crowdin: downloaded ZIP is empty"))
+
+    # Filter to actual files (not directories)
+    file_names = [n for n in names if not n.endswith('/')]
+    if not file_names:
+        raise PlatformError(_("Crowdin: downloaded ZIP contains no files"))
+
+    # Try to find the best match based on language
+    chosen = file_names[0]
+    if language:
+        lang_lower = language.lower()
+        for name in file_names:
+            name_lower = name.lower()
+            # Match paths like "sv/file.po", "sv-SE/file.po", or "file.sv.po"
+            if f"/{lang_lower}/" in f"/{name_lower}" or f".{lang_lower}." in name_lower or name_lower.startswith(f"{lang_lower}/"):
+                chosen = name
+                break
+
+    return zf.read(chosen)
