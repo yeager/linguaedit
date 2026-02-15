@@ -1,0 +1,72 @@
+name: linguaedit
+version: '1.8.14'
+title: LinguaEdit
+summary: Professional translation editor for PO, TS, XLIFF, and more
+description: |
+  LinguaEdit is a Qt6/PySide6 translation file editor supporting PO, TS,
+  JSON, XLIFF, Android XML, ARB, PHP, YAML, and many more localization formats.
+  Features include translation memory, spell checking, search/replace,
+  and AI-assisted translation.
+license: GPL-3.0
+contact: po@danielnylander.se
+website: https://linguaedit.org
+source-code: https://github.com/yeager/linguaedit
+issues: https://github.com/yeager/linguaedit/issues
+
+grade: stable
+confinement: strict
+base: core24
+icon: data/linguaedit-256.png
+
+platforms:
+  amd64:
+    build-on: [amd64]
+    build-for: [amd64]
+
+apps:
+  linguaedit:
+    command: bin/linguaedit
+    extensions: [gnome]
+    plugs:
+      - home
+      - network
+      - desktop
+      - desktop-legacy
+      - wayland
+      - x11
+      - opengl
+      - removable-media
+    environment:
+      QTWEBENGINE_DISABLE_SANDBOX: "1"
+
+parts:
+  linguaedit:
+    plugin: python
+    source: .
+    python-packages:
+      - PySide6-Essentials>=6.5
+      - polib>=1.2
+      - requests>=2.28
+      - pyenchant>=3.2
+      - PyYAML>=6.0
+      - defusedxml>=0.7
+    stage-packages:
+      - libgl1
+      - libegl1
+      - libxkbcommon0
+      - libfontconfig1
+      - libfreetype6
+      - libxcb-cursor0
+      - libxcb-icccm4
+      - libxcb-keysyms1
+      - libxcb-shape0
+      - libenchant-2-2
+    override-build: |
+      craftctl default
+      # Install desktop file and icon
+      mkdir -p $CRAFT_PART_INSTALL/share/applications
+      cp data/io.github.yeager.linguaedit.desktop $CRAFT_PART_INSTALL/share/applications/
+      mkdir -p $CRAFT_PART_INSTALL/share/icons/hicolor/256x256/apps
+      cp data/linguaedit-256.png $CRAFT_PART_INSTALL/share/icons/hicolor/256x256/apps/io.github.yeager.linguaedit.png
+      mkdir -p $CRAFT_PART_INSTALL/share/icons/hicolor/scalable/apps
+      cp data/linguaedit.svg $CRAFT_PART_INSTALL/share/icons/hicolor/scalable/apps/io.github.yeager.linguaedit.svg
