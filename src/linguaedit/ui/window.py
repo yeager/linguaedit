@@ -5059,6 +5059,8 @@ class LinguaEditWindow(QMainWindow):
             "<p>" + self.tr("License:") + " GPL-3.0-or-later</p>"
             "<p>" + self.tr("Website:") + " <a href='https://www.linguaedit.org'>"
             "www.linguaedit.org</a></p>"
+            "<p>" + self.tr("Help translate:") + " <a href='https://app.transifex.com/danielnylander/linguaedit/'>"
+            + self.tr("Transifex") + "</a></p>"
             "<p>© 2026 Daniel Nylander</p>"
         )
         msg.exec()
