@@ -30,9 +30,7 @@ jobs:
           mkdir -p $DEST/usr/share/icons/hicolor/128x128/apps
           mkdir -p $DEST/usr/share/metainfo
 
-          cp src/linguaedit/*.py $DEST/usr/lib/python3/dist-packages/linguaedit/
-          cp -r resources $DEST/usr/lib/python3/dist-packages/linguaedit/ 2>/dev/null || true
-          cp -r ui $DEST/usr/lib/python3/dist-packages/linguaedit/ 2>/dev/null || true
+          cp -r src/linguaedit/* $DEST/usr/lib/python3/dist-packages/linguaedit/
 
           cat > $DEST/usr/bin/linguaedit << 'LAUNCHER'
           #!/usr/bin/env python3
