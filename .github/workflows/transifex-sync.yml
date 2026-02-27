@@ -27,7 +27,7 @@ jobs:
       - name: Pull translations
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
-        run: tx pull --all --force
+        run: tx pull --minimum-perc 20 --all --force
 
       - uses: actions/setup-python@v5
         with:
