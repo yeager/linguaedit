@@ -73,6 +73,62 @@
         <source>Kunde inte analysera översättning: </source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>AI Translation Review</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Analysis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Analysis error: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Analyzing translation...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Apply Suggestion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Could not analyze translation: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Explanation:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Improvement suggestions:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No specific suggestions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Score:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source text:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Text to Review</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translation:</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AchievementManager</name>
@@ -567,6 +623,22 @@
         <source>Done. %d translated, %d errors.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>%d min %d s remaining</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%d of %d strings · %.1f strings/s · %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%d s remaining</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Completed %d strings in %d s</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CollapsibleSidePanel</name>
@@ -699,6 +771,11 @@
     <message>
         <location filename="../src/linguaedit/ui/context_panel.py" line="212"/>
         <source>&lt;i&gt;MT unavailable&lt;/i&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source: %s
+Target: %s</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -971,6 +1048,14 @@
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Source: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translation: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FFmpegMissingDialog</name>
@@ -1062,6 +1147,66 @@
     <message>
         <location filename="../src/linguaedit/ui/video_subtitle_dialog.py" line="158"/>
         <source>FFmpeg kunde fortfarande inte hittas i systemets sökväg.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;h3&gt;FFmpeg could not be found&lt;/h3&gt;&lt;p&gt;LinguaEdit needs &lt;b&gt;ffmpeg&lt;/b&gt; and &lt;b&gt;ffprobe&lt;/b&gt; to extract subtitles from video files.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Browse for ffmpeg…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Could not run the selected file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Executable files (*)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FFmpeg Required</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FFmpeg could still not be found in the system path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Installation Instructions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Not Found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Download Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Retry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select ffmpeg binary</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The selected file does not appear to be ffmpeg.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4303,6 +4448,501 @@ Please reload the file to see changes.</source>
 {}</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>  (fuzzy: %d)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%d of %d entries (%d%%) have no translation.
+
+Untranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.
+
+Save anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%d of %d strings · %.1f strings/s · %s remaining</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%s
+
+Add a new term or check file?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>API key:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>AWS Region:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>AWS Secret Key:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Anthropic model:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Approved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Approved: %d%% (%d/%d)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Auto-detect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back-translating…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back-translation Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back-translation Verification</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Backend: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>By context</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Category</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Current File?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close the current file and load extracted subtitles?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Continue</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Could not read video file:
+%s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Count</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Crowdin Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Crowdin Statistics…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Crowdin — %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>DeepL formality:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter API key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error translating string %d of %d:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extracting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extracting subtitles…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extraction Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File: %s
+Entries: %d</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Found %d inconsistencies:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Found %d subtitle track(s). Select one:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Fuzzy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Generated by LinguaEdit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Help translate:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>ID: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Incomplete Subtitles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Issues</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Issues:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>LinguaEdit — %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>MS Azure region:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Made %d replacements</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Needs review</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No API Key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No Crowdin API key configured.
+Please add one in Translation → API Keys…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No Subtitles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No Transifex API key configured.
+Please add one in Translation → API Keys…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No Weblate API key or server URL configured.
+Please add them in Translation → API Keys…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No embedded subtitle tracks found in this video file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No entry selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No issues found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No language statistics found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No matches found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No organizations found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No projects found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No untranslated entries</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Not required for free engines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Video…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OpenAI model:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Organization:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pomodoro Timer…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pre-translate cancelled — no translations made</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pre-translated %d entries via %s (%d errors — last: %s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pre-translated %d of %d entries via %s (cancelled)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pre-translated %d of %d entries via %s (cancelled, %d errors — last: %s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pre-translating…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Probing video for subtitle tracks…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Project:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pull Translations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Push Source</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Quality Score</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Quality score:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Rejected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Review status: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Review status: Needs review</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SRT files (*.srt);;VTT files (*.vtt);;All files (*)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save Current File?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save Extracted Subtitles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select Organization</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select Subtitle Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Severity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Skip All Errors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source text is read-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source:
+%s
+
+Back-translation:
+%s
+
+Text similarity: %.0f%%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source: %s
+Target: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source: \"%s\"
+  Entries: %s
+  Translations: %s
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>State: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Summary by Category</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The current entry is untranslated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Time interval</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Total</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transifex Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transifex Statistics…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Transifex — %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translated: %d%% (%d/%d)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translation Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translation Report</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translation: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Verify with Back-translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Video files (*.mkv *.mp4 *.avi *.mov *.webm *.flv *.wmv *.ogv);;All files (*)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Warnings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Weblate Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Weblate Server URL:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Weblate Statistics…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Weblate — %s</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Linter</name>
@@ -4467,6 +5107,46 @@ Please reload the file to see changes.</source>
     <message>
         <location filename="../src/linguaedit/ui/locale_map_dialog.py" line="556"/>
         <source>No translation files found in project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Average progress</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Complete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Countries with translations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Fuzzy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Minimal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Missing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Partial</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Total strings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translation Statistics</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5028,6 +5708,30 @@ Installation instructions:
 {}</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Image loaded: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>⚠ No text found in image.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>⚠ Tesseract not found. Please install tesseract-ocr.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>✓ OCR completed. Found %1 text strings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>✓ Tesseract available: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>✗ OCR failed: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OCRWorker</name>
@@ -5184,6 +5888,34 @@ Installation instructions:
         <source>✗ Project ID must be a number</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Browse…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Loading…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select Component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select Organization</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>✗ Select a project first</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>✗ Select an organization first</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PluginDialog</name>
@@ -5298,6 +6030,14 @@ Installation instructions:
     <message>
         <location filename="../src/linguaedit/ui/plural_forms_editor.py" line="67"/>
         <source>Rensa alla</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Clear all</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sync from singular</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5463,6 +6203,14 @@ For better security, install:
         <source>Your credentials are securely stored in the system keychain.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Automatically reload watched files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reload external changes without asking while Watch File is enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ProjectDockWidget</name>
@@ -5622,6 +6370,54 @@ For better security, install:
         <source>File Properties</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>%1 files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>0 files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Fuzzy: %d</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Modified: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Path: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Progress: %.1f%%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Size: %s bytes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Total entries: %d</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translated: %d</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Type: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Untranslated: %d</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QuickActionsMenu</name>
@@ -5749,6 +6545,10 @@ For better security, install:
     <message>
         <location filename="../src/linguaedit/ui/regex_tester_dialog.py" line="223"/>
         <source>Could not copy to clipboard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error: %s</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5896,6 +6696,10 @@ For better security, install:
     <message>
         <location filename="../src/linguaedit/ui/segment_ops.py" line="99"/>
         <source>Place the cursor inside the source text to mark the split point.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Segment 1: \u201c{}\u201d  |  Segment 2: \u201c{}\u201d</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6411,6 +7215,66 @@ Saved to: %2</source>
         <source>Video Preview</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Back 1s (Shift+←)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Forward 1s (Shift+→)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to current subtitle (G)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Larger subtitles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Loop segment (L)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mute (M)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Next entry (Ctrl+→)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pause</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pause at segment end</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Play / Pause (Space)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Playback speed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Previous entry (Ctrl+←)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Smaller subtitles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Stop (S)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>VideoSubtitleDialog</name>
@@ -6577,6 +7441,157 @@ Saved to: %2</source>
 %s</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>%d subtitle tracks found. Duration: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>ASS/SSA (.ass)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Advanced SubStation Alpha (*.ass)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Browse…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Could not extract the subtitle:
+%s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Could not read the video file:
+%s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Done</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extract Subtitles from Video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extract and Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extract and Save As…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extracting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extracting preview…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extracting subtitles…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extraction Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No file selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No subtitle tracks found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Output Format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Play / Pause</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Preview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Preview failed: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SRT (.srt)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save Subtitle As</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select Video File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select a video file to preview subtitles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SubRip (*.srt)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Subtitle Tracks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Subtitle files (*.*)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The subtitle has been saved to:
+%s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This video file contains no embedded subtitle tracks.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Video File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Video files (%s);;All files (*)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>WebVTT (*.vtt)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>WebVTT (.vtt)</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>WelcomeDialog</name>
@@ -6714,6 +7729,10 @@ quality assurance, spell checking, and platform integration.</source>
         <source>Start translating!</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Version %s</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>WorldMapWidget</name>
@@ -6758,6 +7777,151 @@ quality assurance, spell checking, and platform integration.</source>
     <message>
         <location filename="../src/linguaedit/ui/zen_mode.py" line="108"/>
         <source>&lt;b&gt;Translation&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>AIReviewWorker</name>
+    <message>
+        <source>All uppercase when source is not</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Different number of format markers/tags</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Identical to source text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No obvious problems found with this translation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Problems identified: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translation is missing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translation much longer than source</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translation much shorter than source</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>BatchOperationThread</name>
+    <message>
+        <source>Error: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>FileAnalysisThread</name>
+    <message>
+        <source>Analyzing %s...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>GlossaryImportThread</name>
+    <message>
+        <source>File error: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Importing term %d/%d</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Row %d: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PomodoroDialog</name>
+    <message>
+        <source>Focus minutes:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pause</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pomodoro Timer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Resume</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Time for a break!</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TextRenderWidget</name>
+    <message>
+        <source>OVERFLOW: +%dpx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Width: %dpx</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>UpdateDialog</name>
+    <message>
+        <source>A new version of LinguaEdit is available!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Current version: %s
+New version: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Release notes:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remind me later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Skip this version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Update Available</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>VideoDockWidget</name>
+    <message>
+        <source>Video Preview</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -1,6 +1,6 @@
 # Supported Formats
 
-LinguaEdit supports eight translation file formats. Each format is parsed and saved using a dedicated parser that preserves file structure and metadata.
+LinguaEdit supports 18 translation formats. Each format is parsed and saved using a dedicated parser that preserves relevant structure and metadata.
 
 ## PO / POT (GNU gettext)
 
@@ -57,6 +57,20 @@ ARB files are the standard localisation format for Flutter/Dart applications.
 - **Features:** Associative array key-value pairs
 
 PHP translation files using `return ['key' => 'value']` syntax are supported. This format is used by frameworks such as Laravel.
+
+## Additional Formats
+
+- SDLXLIFF (`.sdlxliff`)
+- memoQ XLIFF (`.mqxliff`)
+- Java Properties (`.properties`)
+- Apple Strings and Stringsdict (`.strings`, `.stringsdict`)
+- Unity assets (`.asset`)
+- .NET RESX (`.resx`)
+- Chrome extension i18n (`messages.json`)
+- Godot translations (`.csv`, `.tres`)
+- SubRip and WebVTT subtitles (`.srt`, `.vtt`)
+
+TMX is supported specifically for translation-memory import and export under **Tools → TMX**; it is not an editable catalog format.
 
 ## Opening Files
 

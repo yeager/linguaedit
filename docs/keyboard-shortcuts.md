@@ -16,8 +16,9 @@
 | Ctrl+Z | Undo |
 | Ctrl+Shift+Z | Redo |
 | Ctrl+B | Copy source text to translation |
+| Ctrl+Alt+Shift+B | Toggle bookmark |
 | Ctrl+U | Toggle fuzzy / needs work |
-| Ctrl+Enter | Save current entry and advance to next |
+| Ctrl+Enter | Save current entry and advance to next untranslated |
 | Ctrl+, | Open Preferences |
 
 ## Navigation
@@ -28,6 +29,8 @@
 | Ctrl+Down | Next entry |
 | Ctrl+Shift+Up | Previous untranslated entry |
 | Ctrl+Shift+Down | Next untranslated entry |
+| Alt+Shift+Up | Previous fuzzy entry |
+| Alt+Shift+Down | Next fuzzy entry |
 
 ## Search
 
@@ -43,4 +46,6 @@
 | Ctrl+Shift+V | Validate (Lint) |
 | Ctrl+Shift+T | Pre-translate all |
 | Ctrl+Shift+B | Compile translation |
+| Ctrl+Alt+Z | Zen mode |
+| Ctrl+Alt+W | Toggle file watching |
 | F7 | Spell check current entry |

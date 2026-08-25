@@ -54,9 +54,15 @@ DEFAULTS: dict[str, Any] = {
     # Appearance
     "color_scheme": "default",  # default / light / dark
     "editor_font_size": 12,
+    "inline_editing_enabled": False,
+    "show_character_counter": True,
+    "character_limit": 280,
 
     # Build
     "auto_compile_on_save": False,
+
+    # Files
+    "auto_reload_on_change": False,
 
     # Internal
     "first_run_complete": False,

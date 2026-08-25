@@ -1,0 +1,71 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install project and test tools
+        run: pip install -e ".[dev]" build
+      - name: Run tests
+        run: pytest --cov=linguaedit --cov-report=term --cov-fail-under=29 -q
+      - name: Check critical Python errors
+        run: ruff check --select E9,F63,F7,F82 src tests build_backend.py translation_build.py
+      - name: Check translation catalogs are current
+        run: python scripts/update_translations.py --check
+      - name: Compile Python sources
+        run: python -m compileall -q src tests build_backend.py
+      - name: Build and verify wheel resources
+        run: |
+          python -m build --wheel
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          wheel = next(Path("dist").glob("*.whl"))
+          with ZipFile(wheel) as archive:
+              names = archive.namelist()
+          assert any(name.endswith("/linguaedit_sv.qm") for name in names)
+          assert not any(name.endswith(".ts") for name in names)
+          assert sum("/flags/" in name and name.endswith(".png") for name in names) >= 20
+          assert not list(Path("src/linguaedit/translations").glob("*.qm"))
+          PY
+
+  package-platforms:
+    name: Wheel (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install build tools
+        run: pip install build
+      - name: Build wheel
+        run: python -m build --wheel
+      - name: Verify generated translations
+        shell: python
+        run: |
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          wheel = next(Path("dist").glob("*.whl"))
+          with ZipFile(wheel) as archive:
+              names = archive.namelist()
+          assert any(name.endswith("/linguaedit_sv.qm") for name in names)
+          assert not any(name.endswith(".ts") for name in names)
+          assert not list(Path("src/linguaedit/translations").glob("*.qm"))

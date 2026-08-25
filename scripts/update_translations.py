@@ -9,12 +9,14 @@ Unlike pyside6-lupdate, this handles:
 Usage: python3 scripts/update_translations.py
 """
 
+import argparse
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from xml.sax.saxutils import escape
 
 SRC_DIR = Path("src/linguaedit")
-TS_FILE = SRC_DIR / "translations" / "linguaedit_sv.ts"
+TS_DIR = SRC_DIR / "translations"
 
 
 def extract_tr_strings(py_file: Path) -> list[tuple[str, str]]:
@@ -73,7 +75,50 @@ def parse_ts_file(ts_path: Path) -> dict[str, dict[str, str]]:
     return result
 
 
+def merge_catalog(ts_path: Path, all_strings: dict[str, set[str]]) -> int:
+    """Append missing messages while preserving the catalog's formatting."""
+    existing = parse_ts_file(ts_path)
+    additions = {
+        context: sorted(
+            text.replace("\\n", "\n") for text in strings
+            if text.replace("\\n", "\n") not in existing.get(context, {})
+        )
+        for context, strings in all_strings.items()
+    }
+    additions = {context: strings for context, strings in additions.items() if strings}
+    if not additions:
+        return 0
+
+    content = ts_path.read_text(encoding="utf-8")
+    for context, strings in sorted(additions.items()):
+        messages = "".join(
+            "    <message>\n"
+            f"        <source>{escape(source)}</source>\n"
+            "        <translation type=\"unfinished\"></translation>\n"
+            "    </message>\n"
+            for source in strings
+        )
+        marker = f"    <name>{escape(context)}</name>"
+        context_start = content.find(marker)
+        if context_start >= 0:
+            context_end = content.find("</context>", context_start)
+            content = content[:context_end] + messages + content[context_end:]
+        else:
+            block = f"<context>\n{marker}\n{messages}</context>\n"
+            content = content.replace("</TS>", block + "</TS>")
+
+    ts_path.write_text(content, encoding="utf-8")
+    return sum(len(strings) for strings in additions.values())
+
+
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--check", action="store_true",
+        help="report missing strings without changing catalogs",
+    )
+    args = parser.parse_args()
+
     # Extract all strings from source
     all_strings: dict[str, set[str]] = {}  # context -> set of source strings
     for py_file in sorted(SRC_DIR.rglob("*.py")):
@@ -82,8 +127,8 @@ def main():
         for cls, text in extract_tr_strings(py_file):
             all_strings.setdefault(cls, set()).add(text)
 
-    # Parse existing .ts file
-    existing = parse_ts_file(TS_FILE)
+    reference_file = TS_DIR / "linguaedit_sv.ts"
+    existing = parse_ts_file(reference_file)
 
     # Find new strings
     new_count = 0
@@ -105,7 +150,15 @@ def main():
     if new_count == 0:
         print("\n✓ All strings are in the .ts file!")
     else:
-        print(f"\n⚠ {new_count} strings need to be added to the .ts file")
+        print(f"\n⚠ {new_count} strings need to be added to the .ts files")
+        if args.check:
+            raise SystemExit(1)
+
+    if not args.check:
+        updated = 0
+        for ts_path in sorted(TS_DIR.glob("*.ts")):
+            updated += merge_catalog(ts_path, all_strings)
+        print(f"Updated {updated} catalog messages across all .ts files")
 
 
 if __name__ == "__main__":

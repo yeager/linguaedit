@@ -2,16 +2,15 @@
 
 from __future__ import annotations
 
-import re
 import sys
 from pathlib import Path
 
 from PySide6.QtWidgets import (
     QDialog, QVBoxLayout, QTabWidget, QWidget, QFormLayout,
-    QLineEdit, QComboBox, QSpinBox, QGroupBox, QDialogButtonBox,
+    QLineEdit, QComboBox, QSpinBox, QDialogButtonBox,
     QCheckBox, QLabel,
 )
-from PySide6.QtCore import Qt, QLocale
+from PySide6.QtCore import Qt
 from PySide6.QtGui import QIcon, QPixmap, QPainter, QFont
 
 from linguaedit.services.settings import Settings, SUPPORTED_LANGUAGES
@@ -37,7 +36,8 @@ def _find_flags_dir() -> Path:
     """Find the flags resource directory."""
     candidates = [
         Path(__file__).parent.parent.parent.parent / "resources" / "flags",  # dev
-        Path(__file__).parent.parent / "resources" / "flags",  # might be installed differently
+        Path(__file__).parent.parent / "resources" / "flags",  # bundled package
+        Path(sys.prefix) / "share" / "linguaedit" / "flags",  # wheel/Linux install
     ]
     # PyInstaller frozen bundle
     if getattr(sys, 'frozen', False):
@@ -177,6 +177,15 @@ class PreferencesDialog(QDialog):
         self._auto_compile_check.setToolTip(self.tr("Automatically compile .mo/.qm after saving"))
         form.addRow("", self._auto_compile_check)
 
+        self._auto_reload_check = QCheckBox(self.tr("Automatically reload watched files"))
+        self._auto_reload_check.setChecked(
+            self._settings.get_value("auto_reload_on_change", False)
+        )
+        self._auto_reload_check.setToolTip(
+            self.tr("Reload external changes without asking while Watch File is enabled")
+        )
+        form.addRow("", self._auto_reload_check)
+
         self._formality_combo = QComboBox()
         self._formality_combo.addItems([self.tr("Default"), self.tr("Formal"), self.tr("Informal")])
         formality_map = {"default": 0, "formal": 1, "informal": 2}
@@ -279,6 +288,7 @@ class PreferencesDialog(QDialog):
         s["target_language"] = self._target_edit.text().strip() or "sv"
 
         s["auto_compile_on_save"] = self._auto_compile_check.isChecked()
+        s["auto_reload_on_change"] = self._auto_reload_check.isChecked()
 
         formality_vals = ["default", "formal", "informal"]
         s["formality"] = formality_vals[self._formality_combo.currentIndex()]

@@ -17,16 +17,8 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: pip install pyinstaller PySide6 polib requests PyYAML
-      - name: Compile translations (skip empty)
-        run: |
-          rm -f src/linguaedit/translations/linguaedit_*.qm src/linguaedit/translations/linguaedit.qm
-          for ts in src/linguaedit/translations/linguaedit_*.ts; do
-            [ -f "$ts" ] || continue
-            case "$ts" in *template*) continue;; esac
-            pyside6-lrelease "$ts"
-            qm="${ts%.ts}.qm"
-            if [ -f "$qm" ] && [ "$(stat -f%z "$qm")" -lt 20480 ]; then rm "$qm"; fi
-          done
+      - name: Compile translations above 20 percent
+        run: python translation_build.py
       - name: Build .app
         run: |
           pyinstaller --windowed --name LinguaEdit \
@@ -56,26 +48,8 @@ jobs:
       - name: Install deps
         run: |
           pip install pyinstaller PySide6 polib requests PyYAML Pillow
-      - name: Compile translations (skip empty)
-        shell: bash
-        run: |
-          # Remove any stale .qm files first
-          rm -f src/linguaedit/translations/linguaedit_*.qm src/linguaedit/translations/linguaedit.qm
-          for ts in src/linguaedit/translations/linguaedit_*.ts; do
-            [ -f "$ts" ] || continue
-            case "$ts" in *template*) continue;; esac
-            pyside6-lrelease "$ts"
-            qm="${ts%.ts}.qm"
-            # Remove small .qm files (< 20 KB = no real translations)
-            if [ -f "$qm" ]; then
-              size=$(wc -c < "$qm")
-              if [ "$size" -lt 20480 ]; then
-                rm "$qm"
-              fi
-            fi
-          done
-          echo "Compiled .qm files:"
-          ls -lh src/linguaedit/translations/*.qm 2>/dev/null || echo "none"
+      - name: Compile translations above 20 percent
+        run: python translation_build.py
       - name: Create .ico
         run: |
           python -c "from PIL import Image; img=Image.open('resources/icon.png'); img.save('resources/icon.ico', sizes=[(16,16),(32,32),(48,48),(64,64),(128,128),(256,256)])"
@@ -106,16 +80,8 @@ jobs:
           python-version: '3.12'
       - name: Install PySide6 for lrelease
         run: pip install PySide6
-      - name: Compile translations (skip empty)
-        run: |
-          rm -f src/linguaedit/translations/linguaedit_*.qm src/linguaedit/translations/linguaedit.qm
-          for ts in src/linguaedit/translations/linguaedit_*.ts; do
-            [ -f "$ts" ] || continue
-            case "$ts" in *template*) continue;; esac
-            pyside6-lrelease "$ts"
-            qm="${ts%.ts}.qm"
-            if [ -f "$qm" ] && [ "$(stat --format=%s "$qm" 2>/dev/null || stat -f%z "$qm")" -lt 20480 ]; then rm "$qm"; fi
-          done
+      - name: Compile translations above 20 percent
+        run: python translation_build.py
       - name: Build .deb
         run: python3 .github/scripts/build_deb.py ${GITHUB_REF_NAME#v}
       - uses: actions/upload-artifact@v4

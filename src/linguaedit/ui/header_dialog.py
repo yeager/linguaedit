@@ -426,9 +426,21 @@ class HeaderDialog(QDialog):
             self._xliff_original.setText(self._file_data.original)
             
     def _load_generic_data(self):
-        """Load generic metadata.""" 
-        # For other file formats, metadata might be stored differently
-        pass
+        """Load metadata exposed by less structured file formats."""
+        metadata = getattr(self._file_data, "metadata", {}) or {}
+        if not isinstance(metadata, dict):
+            metadata = {}
+
+        self._original_data = metadata.copy()
+        self._generic_name.setText(str(metadata.get(
+            "name", getattr(self._file_data, "name", "") or ""
+        )))
+        self._generic_version.setText(str(metadata.get(
+            "version", getattr(self._file_data, "version", "") or ""
+        )))
+        self._generic_description.setPlainText(str(metadata.get(
+            "description", getattr(self._file_data, "description", "") or ""
+        )))
         
     def _set_defaults(self):
         """Set default values for all fields."""
@@ -475,6 +487,8 @@ class HeaderDialog(QDialog):
             self._save_ts_changes()
         elif self._file_type in ("xliff", "xlf"):
             self._save_xliff_changes()
+        else:
+            self._save_generic_changes()
             
         self.accept()
         
@@ -549,6 +563,26 @@ class HeaderDialog(QDialog):
             
         self._file_data.version = self._xliff_version.currentText()
         self._file_data.original = self._xliff_original.text()
+
+    def _save_generic_changes(self):
+        """Save generic fields without discarding format-specific metadata."""
+        metadata = getattr(self._file_data, "metadata", None)
+        if not isinstance(metadata, dict):
+            metadata = {}
+            self._file_data.metadata = metadata
+
+        values = {
+            "name": self._generic_name.text().strip(),
+            "version": self._generic_version.text().strip(),
+            "description": self._generic_description.toPlainText().strip(),
+        }
+        for key, value in values.items():
+            if value:
+                metadata[key] = value
+            else:
+                metadata.pop(key, None)
+            if hasattr(self._file_data, key):
+                setattr(self._file_data, key, value)
         
     def get_modified_data(self) -> Optional[Dict[str, Any]]:
         """Get the modified data (if any changes were made)."""

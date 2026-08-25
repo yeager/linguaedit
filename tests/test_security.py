@@ -6,6 +6,23 @@ from pathlib import Path
 import pytest
 
 
+def test_github_errors_do_not_expose_response_or_token(monkeypatch):
+    """Remote response bodies and credentials must not reach error messages."""
+    from linguaedit.services.github import GitHubConfig, GitHubError, fetch_pot_file
+
+    secret = "token-that-must-not-leak"
+    response = type("Response", (), {
+        "status_code": 403,
+        "text": f"server echoed {secret}",
+    })()
+    monkeypatch.setattr("linguaedit.services.github.requests.get", lambda *args, **kwargs: response)
+
+    with pytest.raises(GitHubError) as caught:
+        fetch_pot_file(GitHubConfig(secret, "owner", "repo"), "messages.pot")
+    assert secret not in str(caught.value)
+    assert response.text not in str(caught.value)
+
+
 class TestXXEProtection:
     """Test that safe_parse_xml blocks XXE attacks."""
 

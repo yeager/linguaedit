@@ -26,6 +26,22 @@ class ChromeI18nFileData:
     encoding: str = "utf-8"
     indent: int = 2
 
+    @property
+    def total_count(self) -> int:
+        return len(self.entries)
+
+    @property
+    def translated_count(self) -> int:
+        return sum(bool(entry.message.strip()) for entry in self.entries)
+
+    @property
+    def untranslated_count(self) -> int:
+        return self.total_count - self.translated_count
+
+    @property
+    def fuzzy_count(self) -> int:
+        return 0
+
 
 def parse_chrome_i18n(path: Union[str, Path]) -> ChromeI18nFileData:
     """Parsa Chrome extension i18n JSON-fil."""

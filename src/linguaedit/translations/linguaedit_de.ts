@@ -581,7 +581,12 @@
             <source>Source: %s\nTarget: %s</source>
             <translation type="unfinished"/>
         </message>
-    </context>
+        <message>
+        <source>Source: %s
+Target: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>DashboardDialog</name>
         <message>
@@ -1235,7 +1240,19 @@
             <source>Delete term &apos;%s&apos; → &apos;%s&apos;?</source>
             <translation type="unfinished"/>
         </message>
-    </context>
+        <message>
+        <source>Failed to export glossary:
+%s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Imported %d terms with %d errors.
+
+First errors:
+%s</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>HeaderDialog</name>
         <message>
@@ -1505,14 +1522,26 @@
             <source>Are you sure you want to rollback to this version?\n\nThis will replace the current text with:\n{}</source>
             <translation type="unfinished"/>
         </message>
-    </context>
+        <message>
+        <source>Are you sure you want to rollback to this version?
+
+This will replace the current text with:
+{}</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>ImagePreviewLabel</name>
         <message>
             <source>Click to select image\n(PNG, JPG, GIF)</source>
             <translation type="unfinished"/>
         </message>
-    </context>
+        <message>
+        <source>Click to select image
+(PNG, JPG, GIF)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>LayoutSimulatorDialog</name>
         <message>
@@ -3711,7 +3740,182 @@
             <translation type="unfinished"/>
         </message>
     <message><source>No API Key</source><translation type="unfinished"/></message><message><source>No Transifex API key configured.
-Please add one in Translation → API Keys…</source><translation type="unfinished"/></message><message><source>No language statistics found.</source><translation type="unfinished"/></message><message><source>No organizations found.</source><translation type="unfinished"/></message><message><source>No projects found.</source><translation type="unfinished"/></message><message><source>Organization:</source><translation type="unfinished"/></message><message><source>Project:</source><translation type="unfinished"/></message><message><source>Select Organization</source><translation type="unfinished"/></message><message><source>Select Project</source><translation type="unfinished"/></message><message><source>Transifex Error</source><translation type="unfinished"/></message><message><source>Transifex Statistics…</source><translation type="unfinished"/></message><message><source>Transifex — %s</source><translation type="unfinished"/></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation type="unfinished"/></message></context>
+Please add one in Translation → API Keys…</source><translation type="unfinished"/></message><message><source>No language statistics found.</source><translation type="unfinished"/></message><message><source>No organizations found.</source><translation type="unfinished"/></message><message><source>No projects found.</source><translation type="unfinished"/></message><message><source>Organization:</source><translation type="unfinished"/></message><message><source>Project:</source><translation type="unfinished"/></message><message><source>Select Organization</source><translation type="unfinished"/></message><message><source>Select Project</source><translation type="unfinished"/></message><message><source>Transifex Error</source><translation type="unfinished"/></message><message><source>Transifex Statistics…</source><translation type="unfinished"/></message><message><source>Transifex — %s</source><translation type="unfinished"/></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation type="unfinished"/></message>    <message>
+        <source>
+
+Errors:
+{}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%d of %d entries (%d%%) have no translation.
+
+Untranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.
+
+Save anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%s
+
+Add a new term or check file?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Approved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back-translating…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back-translation Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back-translation Verification</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>By context</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Could not read video file:
+%s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to run msgmerge:
+{}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File: %s
+Entries: %d</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Found %d inconsistencies:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Help translate:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Issues:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Made %d replacements</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Needs review</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No Crowdin API key configured.
+Please add one in Translation → API Keys…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No Weblate API key or server URL configured.
+Please add them in Translation → API Keys…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No entry selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No matches found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PO file merged successfully with POT file.
+Please reload the file to see changes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pomodoro Timer…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Quality score:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Rejected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Review status: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Review status: Needs review</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source text is read-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source:
+%s
+
+Back-translation:
+%s
+
+Text similarity: %.0f%%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source: %s
+Target: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source: \"%s\"
+  Entries: %s
+  Translations: %s
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Spelling issues:
+%s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The current entry is untranslated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The current file has unsaved changes.
+Do you want to save before continuing?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The file '%s' has unsaved changes.
+Do you want to save before closing?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Verify with Back-translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>msgmerge failed:
+{}</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>Linter</name>
         <message>
@@ -4353,7 +4557,27 @@ Please add one in Translation → API Keys…</source><translation type="unfinis
             <source>⚠ Tesseract not found. Please install tesseract-ocr.</source>
             <translation type="unfinished"/>
         </message>
-    </context>
+        <message>
+        <source>Failed to create PO file:
+{}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OCR functionality requires tesseract-ocr to be installed.
+
+Installation instructions:
+• macOS: brew install tesseract
+• Ubuntu/Debian: sudo apt install tesseract-ocr
+• Windows: Download from GitHub releases
+• Arch Linux: sudo pacman -S tesseract</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PO file created successfully:
+{}</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>OCRWorker</name>
         <message>
@@ -4467,7 +4691,35 @@ Please add one in Translation → API Keys…</source><translation type="unfinis
             <source>🔒 Tokens stored in %1</source>
             <translation type="unfinished"/>
         </message>
-    </context>
+        <message>
+        <source>Browse…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Loading…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select Component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select Organization</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>✗ Select a project first</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>✗ Select an organization first</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>PluginDialog</name>
         <message>
@@ -4688,7 +4940,24 @@ Please add one in Translation → API Keys…</source><translation type="unfinis
             <source>Your credentials are securely stored in the system keychain.</source>
             <translation type="unfinished"/>
         </message>
-    </context>
+        <message>
+        <source>Automatically reload watched files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.
+
+For better security, install:
+• macOS: Built-in (Keychain)
+• Windows: pip install keyring
+• Linux: pip install secretstorage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reload external changes without asking while Watch File is enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>ProjectDockWidget</name>
         <message>
@@ -5355,7 +5624,12 @@ Please add one in Translation → API Keys…</source><translation type="unfinis
             <source>✗ Push failed: %1</source>
             <translation type="unfinished"/>
         </message>
-    </context>
+        <message>
+        <source>✓ Downloaded at %1
+Saved to: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>ToolbarCustomizeDialog</name>
         <message>
@@ -5721,7 +5995,22 @@ Please add one in Translation → API Keys…</source><translation type="unfinis
             <source>Subtitle files (*.*)</source>
             <translation type="unfinished"/>
         </message>
-    </context>
+        <message>
+        <source>Could not extract the subtitle:
+%s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Could not read the video file:
+%s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The subtitle has been saved to:
+%s</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>WelcomeDialog</name>
         <message>
@@ -5832,7 +6121,15 @@ Please add one in Translation → API Keys…</source><translation type="unfinis
             <source>Version %s</source>
             <translation type="unfinished"/>
         </message>
-    </context>
+        <message>
+        <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,
+Android XML, ARB, PHP, and YAML files.
+
+Features include AI-powered pre-translation, translation memory,
+quality assurance, spell checking, and platform integration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>WorldMapWidget</name>
         <message>
@@ -6202,4 +6499,35 @@ New version: %s</source>
             <translation type="unfinished"/>
         </message>
     </context>
+<context>
+    <name>PomodoroDialog</name>
+    <message>
+        <source>Focus minutes:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pause</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pomodoro Timer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Resume</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Time for a break!</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import time
 from typing import Optional
 
@@ -17,6 +18,7 @@ from linguaedit import __version__
 
 GITHUB_API_URL = "https://api.github.com/repos/yeager/linguaedit/releases/latest"
 CHECK_INTERVAL_SECONDS = 86400  # once per day
+log = logging.getLogger(__name__)
 
 
 class _UpdateWorker(QThread):
@@ -49,8 +51,8 @@ class _UpdateWorker(QThread):
                     data.get("html_url", ""),
                     tag,
                 )
-        except Exception:
-            pass  # silently skip on any error
+        except Exception as exc:
+            log.info("Update check failed: %s", exc.__class__.__name__)
 
 
 class UpdateDialog(QDialog):

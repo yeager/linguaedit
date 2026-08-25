@@ -3,10 +3,9 @@
 from __future__ import annotations
 
 import re
-import threading
 from dataclasses import dataclass
-from typing import Optional, List, Dict, Any
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from typing import Dict, Any
+from concurrent.futures import ThreadPoolExecutor
 
 from PySide6.QtCore import QObject, Signal
 
@@ -183,9 +182,7 @@ class ConfidenceCalculator(QObject):
         if not terms:
             return 70.0
         
-        # Check if glossary terms are used correctly
-        # This would need integration with the glossary service
-        # For now, return a placeholder score
+        # Check whether every source term present uses its prescribed target.
         found_terms = 0
         expected_terms = 0
         
@@ -239,10 +236,21 @@ class ConfidenceCalculator(QObject):
         if not similar:
             return 60.0
         
-        # Compare with similar translations
-        # This would need a proper similarity service
-        # For now, return a placeholder score
-        return 70.0
+        from difflib import SequenceMatcher
+
+        scores = []
+        for candidate in similar:
+            candidate_target = (
+                candidate.get("target", "") if isinstance(candidate, dict)
+                else str(candidate)
+            )
+            if candidate_target:
+                scores.append(
+                    SequenceMatcher(
+                        None, target.casefold(), candidate_target.casefold()
+                    ).ratio() * 100
+                )
+        return max(scores) if scores else 60.0
     
     def get_color_for_score(self, score: float) -> str:
         """Get color name for score visualization."""

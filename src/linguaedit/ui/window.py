@@ -124,6 +124,7 @@ from linguaedit.ui.macro_dialog import MacroDialog
 from linguaedit.ui.concordance_dialog import ConcordanceDialog
 from linguaedit.ui.segment_ops import SplitDialog, MergePreviewDialog
 from linguaedit.ui.progress_ring import ProgressRing
+from linguaedit.ui.pomodoro_dialog import PomodoroDialog
 
 # ── Recent files helper ──────────────────────────────────────────────
 
@@ -182,10 +183,11 @@ _FMT_RE = re.compile(
 _ALL_EXTENSIONS = {
     ".po", ".pot", ".ts", ".json", ".xliff", ".xlf",
     ".xml", ".arb", ".php", ".yml", ".yaml",
-    ".sdlxliff", ".mqxliff",
+    ".sdlxliff", ".mqxliff", ".properties", ".srt", ".vtt",
+    ".strings", ".stringsdict", ".asset", ".resx", ".csv", ".tres",
 }
 
-_FILE_FILTER = "Translation files (*.po *.pot *.ts *.json *.xliff *.xlf *.xml *.arb *.php *.yml *.yaml *.csv *.tres *.properties *.srt *.vtt *.sdlxliff *.mqxliff);;CAT files (*.sdlxliff *.mqxliff);;Video files (*.mkv *.mp4 *.avi *.mov *.webm *.flv *.wmv *.ogv)"
+_FILE_FILTER = "Translation files (*.po *.pot *.ts *.json *.xliff *.xlf *.xml *.arb *.php *.yml *.yaml *.csv *.tres *.properties *.srt *.vtt *.sdlxliff *.mqxliff *.strings *.stringsdict *.asset *.resx);;CAT files (*.sdlxliff *.mqxliff);;Video files (*.mkv *.mp4 *.avi *.mov *.webm *.flv *.wmv *.ogv)"
 
 
 # ── Inline linting for a single entry ────────────────────────────────
@@ -358,6 +360,33 @@ class _PreTranslateWorker(QThread):
                         self._skip_errors = True
 
         self.finished.emit(count, errors, last_error, stopped)
+
+
+class _BackTranslationWorker(QThread):
+    """Translate a target string back to the source language off the UI thread."""
+
+    completed = Signal(str)
+    failed = Signal(str)
+
+    def __init__(self, text: str, engine: str, source: str, target: str, parent=None):
+        super().__init__(parent)
+        self._text = text
+        self._engine = engine
+        self._source = source
+        self._target = target
+
+    def run(self):
+        try:
+            from linguaedit.services.translator import translate
+            result = translate(
+                self._text,
+                engine=self._engine,
+                source=self._target,
+                target=self._source,
+            )
+            self.completed.emit(result)
+        except Exception as exc:
+            self.failed.emit(str(exc))
 
 
 # ── Tab data holder ──────────────────────────────────────────────────
@@ -579,6 +608,7 @@ class LinguaEditWindow(QMainWindow):
 
         # Tabs
         self._tabs: dict[int, TabData] = {}
+        self._active_tab_index = -1
 
         # Split view
         self._split_file_data = None
@@ -727,6 +757,8 @@ class LinguaEditWindow(QMainWindow):
         self._trans_engine = s["default_engine"]
         self._trans_source = s["source_language"]
         self._trans_target = s["target_language"]
+        if hasattr(self, "_tree") and self._file_data:
+            self._populate_list()
 
     def _on_preferences(self):
         from linguaedit.ui.preferences_dialog import PreferencesDialog
@@ -830,6 +862,7 @@ class LinguaEditWindow(QMainWindow):
         self._tree.setRootIsDecorated(False)
         self._tree.setAlternatingRowColors(True)
         self._tree.setSelectionMode(QAbstractItemView.ExtendedSelection)
+        self._tree.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self._tree.setUniformRowHeights(True)
         self._tree.setHeaderLabels(["#", "⭐", self.tr("Source text"), self.tr("Translation"), self.tr("Tags"), ""])
         self._tree.setSortingEnabled(True)
@@ -842,6 +875,8 @@ class LinguaEditWindow(QMainWindow):
         header.setSectionResizeMode(4, QHeaderView.ResizeToContents)     # Tags
         header.setSectionResizeMode(5, QHeaderView.ResizeToContents)     # Status/flags
         self._tree.currentItemChanged.connect(self._on_tree_item_changed)
+        self._tree.itemDoubleClicked.connect(self._on_inline_edit_requested)
+        self._tree.itemChanged.connect(self._on_inline_item_changed)
         self._tree.setContextMenuPolicy(Qt.CustomContextMenu)
         self._tree.customContextMenuRequested.connect(self._show_tree_context_menu)
         self._tree.setMouseTracking(True)
@@ -1057,6 +1092,25 @@ class LinguaEditWindow(QMainWindow):
 
         qt_layout.addStretch()
         editor_layout.addWidget(self._quick_toolbar)
+
+        self._review_toolbar = QFrame()
+        self._review_toolbar.setFrameShape(QFrame.StyledPanel)
+        review_layout = QHBoxLayout(self._review_toolbar)
+        review_layout.setContentsMargins(6, 3, 6, 3)
+        self._review_status_label = QLabel(self.tr("Review status: Needs review"))
+        review_layout.addWidget(self._review_status_label)
+        review_layout.addStretch()
+        approve_btn = QPushButton(self.tr("Approve"))
+        approve_btn.clicked.connect(lambda: self._set_review_status("approved"))
+        review_layout.addWidget(approve_btn)
+        reject_btn = QPushButton(self.tr("Reject"))
+        reject_btn.clicked.connect(lambda: self._set_review_status("rejected"))
+        review_layout.addWidget(reject_btn)
+        needs_review_btn = QPushButton(self.tr("Needs Review"))
+        needs_review_btn.clicked.connect(lambda: self._set_review_status("needs_review"))
+        review_layout.addWidget(needs_review_btn)
+        self._review_toolbar.setVisible(False)
+        editor_layout.addWidget(self._review_toolbar)
 
         # Info label (spellcheck results, etc.)
         self._info_label = QLabel()
@@ -1382,7 +1436,7 @@ class LinguaEditWindow(QMainWindow):
         edit_menu.addAction(self.tr("Copy source to translation"), self._copy_source_to_target, QKeySequence("Ctrl+B"))
         edit_menu.addAction(self.tr("Propagate Translation"), self._on_propagate_translation, QKeySequence("Ctrl+P"))
         edit_menu.addSeparator()
-        edit_menu.addAction(self.tr("Batch Edit…"), self._show_batch_edit_dialog, QKeySequence("Ctrl+Shift+B"))
+        edit_menu.addAction(self.tr("Batch Edit…"), self._show_batch_edit_dialog, QKeySequence("Ctrl+Alt+B"))
         edit_menu.addSeparator()
         # Feature 4: Segmentation
         edit_menu.addAction(self.tr("Split Entry…"), self._on_split_entry, QKeySequence("Ctrl+Alt+P"))
@@ -1429,6 +1483,7 @@ class LinguaEditWindow(QMainWindow):
         # Tools
         tools_menu = mb.addMenu(self.tr("&Tools"))
         tools_menu.addAction(self.tr("AI Review"), self._show_ai_review, QKeySequence("Ctrl+Shift+A"))
+        tools_menu.addAction(self.tr("Verify with Back-translation"), self._verify_back_translation)
         tools_menu.addSeparator()
         tools_menu.addAction(self.tr("Compare Files…"), self._show_diff_dialog)
         tools_menu.addAction(self.tr("Diff with Previous Version…"), self._show_git_diff_dialog, QKeySequence("Ctrl+Shift+D"))
@@ -1447,7 +1502,7 @@ class LinguaEditWindow(QMainWindow):
         tools_menu.addSeparator()
         # Feature 14: Macros
         macros_menu = tools_menu.addMenu(self.tr("Macros"))
-        macros_menu.addAction(self.tr("Record Macro"), self._on_record_macro, QKeySequence("Ctrl+Shift+M"))
+        macros_menu.addAction(self.tr("Record Macro"), self._on_record_macro, QKeySequence("Ctrl+Alt+R"))
         macros_menu.addAction(self.tr("Play Macro"), self._on_play_macro, QKeySequence("Ctrl+M"))
         macros_menu.addAction(self.tr("Manage Macros…"), self._show_macro_dialog)
         tools_menu.addSeparator()
@@ -1458,8 +1513,8 @@ class LinguaEditWindow(QMainWindow):
         git_integration_menu.addAction(self.tr("Diff"), self._on_git_diff)
         # New features
         tools_menu.addAction(self.tr("Regex Tester"), self._show_regex_tester, QKeySequence("Ctrl+Shift+X"))
-        tools_menu.addAction(self.tr("Layout Simulator"), self._show_layout_simulator, QKeySequence("Ctrl+Shift+L"))
-        tools_menu.addAction(self.tr("OCR Screenshot…"), self._show_ocr_dialog, QKeySequence("Ctrl+Shift+O"))
+        tools_menu.addAction(self.tr("Layout Simulator"), self._show_layout_simulator, QKeySequence("Ctrl+Alt+L"))
+        tools_menu.addAction(self.tr("OCR Screenshot…"), self._show_ocr_dialog, QKeySequence("Ctrl+Alt+O"))
         tools_menu.addSeparator()
         
         # Transifex
@@ -1470,8 +1525,9 @@ class LinguaEditWindow(QMainWindow):
         tools_menu.addAction(self.tr("Glossary…"), self._show_glossary_dialog)
         tools_menu.addAction(self.tr("Concordance Search…"), self._show_concordance_dialog, QKeySequence("Ctrl+Alt+K"))
         tools_menu.addSeparator()
-        tools_menu.addAction(self.tr("Open Video…"), self._on_open_video, QKeySequence("Ctrl+Shift+V"))
+        tools_menu.addAction(self.tr("Open Video…"), self._on_open_video, QKeySequence("Ctrl+Alt+V"))
         tools_menu.addAction(self.tr("Extract Subtitles from Video…"), self._on_video_subtitles)
+        tools_menu.addAction(self.tr("Pomodoro Timer…"), self._show_pomodoro)
         
         # View
         view_menu = mb.addMenu(self.tr("&View"))
@@ -1489,20 +1545,20 @@ class LinguaEditWindow(QMainWindow):
             self._toggle_editor_layout)
 
         # Simple Mode
-        self._simple_mode_action = view_menu.addAction(self.tr("Simple Mode"), self._toggle_simple_mode, QKeySequence("Ctrl+Shift+L"))
+        self._simple_mode_action = view_menu.addAction(self.tr("Simple Mode"), self._toggle_simple_mode, QKeySequence("Ctrl+Alt+S"))
         self._simple_mode_action.setCheckable(True)
         self._simple_mode = False
 
         # Zen Mode
-        view_menu.addAction(self.tr("Zen Mode"), self._toggle_zen_mode, QKeySequence("Ctrl+Shift+Z"))
+        view_menu.addAction(self.tr("Zen Mode"), self._toggle_zen_mode, QKeySequence("Ctrl+Alt+Z"))
 
         # Feature 13: Fullscreen Mode
         view_menu.addAction(self.tr("Fullscreen"), self._toggle_fullscreen, QKeySequence("F11"))
         view_menu.addSeparator()
         # Feature 10: Minimap
-        view_menu.addAction(self.tr("Minimap"), self._toggle_minimap, QKeySequence("Ctrl+Shift+M"))
+        view_menu.addAction(self.tr("Minimap"), self._toggle_minimap, QKeySequence("Ctrl+Alt+I"))
         # Feature 15: Watch Mode
-        view_menu.addAction(self.tr("Watch File"), self._toggle_watch_mode, QKeySequence("Ctrl+W"))
+        view_menu.addAction(self.tr("Watch File"), self._toggle_watch_mode, QKeySequence("Ctrl+Alt+W"))
         view_menu.addAction(self.tr("Translation Map…"), self._show_locale_map_dialog)
         view_menu.addSeparator()
         # Feature 10: Achievements
@@ -1632,14 +1688,13 @@ class LinguaEditWindow(QMainWindow):
 
     def _setup_shortcuts(self):
         # Poedit-style shortcuts
-        QShortcut(QKeySequence("Ctrl+Return"), self, self._copy_source_to_target)
         QShortcut(QKeySequence("Ctrl+U"), self, lambda: self._fuzzy_check.toggle())
         QShortcut(QKeySequence("Alt+Return"), self, lambda: self._navigate_untranslated(1))
-        QShortcut(QKeySequence("Ctrl+Shift+Up"), self, lambda: self._navigate_fuzzy(-1))
-        QShortcut(QKeySequence("Ctrl+Shift+Down"), self, lambda: self._navigate_fuzzy(1))
+        QShortcut(QKeySequence("Alt+Shift+Up"), self, lambda: self._navigate_fuzzy(-1))
+        QShortcut(QKeySequence("Alt+Shift+Down"), self, lambda: self._navigate_fuzzy(1))
 
         # Feature 6: Bokmärken
-        QShortcut(QKeySequence("Ctrl+B"), self, self._toggle_bookmark)
+        QShortcut(QKeySequence("Ctrl+Alt+Shift+B"), self, self._toggle_bookmark)
         QShortcut(QKeySequence("F2"), self, lambda: self._navigate_bookmarks(1))
         QShortcut(QKeySequence("Shift+F2"), self, lambda: self._navigate_bookmarks(-1))
 
@@ -1652,9 +1707,6 @@ class LinguaEditWindow(QMainWindow):
         # Feature 13: Quick Actions
         QShortcut(QKeySequence("Ctrl+."), self, self._show_quick_actions)
         
-        # Zen Mode
-        QShortcut(QKeySequence("Ctrl+Shift+Z"), self, self._toggle_zen_mode)
-
     def eventFilter(self, obj, event):
         """Handle Tab/Shift+Tab in translation editor and tree hover tooltips."""
         from PySide6.QtCore import QEvent
@@ -1782,7 +1834,10 @@ class LinguaEditWindow(QMainWindow):
             elif is_fuzzy:
                 status = "🔶"
             elif msgstr:
-                status = "✓"
+                confidence = get_confidence_calculator().calculate_confidence(
+                    str(orig_idx), msgid, msgstr
+                ).overall_score
+                status = f"✓ {confidence:.0f}%"
             else:
                 status = "●"
 
@@ -1809,6 +1864,8 @@ class LinguaEditWindow(QMainWindow):
                 tags_text = ", ".join(self._tags.get(orig_idx, []))
                 item = _SortableItem([str(orig_idx + 1), bookmark_icon, src_preview, trans_preview, tags_text, status])
             item.setData(0, Qt.UserRole, orig_idx)
+            if self._app_settings.get_value("inline_editing_enabled", False):
+                item.setFlags(item.flags() | Qt.ItemIsEditable)
 
             # Set delegate status for colored borders
             if has_warning:
@@ -1874,6 +1931,34 @@ class LinguaEditWindow(QMainWindow):
             # Smooth fade transition
             self._play_entry_fade()
             self._display_entry(idx)
+
+    def _translation_column(self) -> int:
+        if self._file_type == "subtitles" or self._show_context_col:
+            return 4
+        return 3
+
+    def _on_inline_edit_requested(self, item: QTreeWidgetItem, column: int):
+        """Start editing only for the translation column."""
+        if not self._app_settings.get_value("inline_editing_enabled", False):
+            return
+        if column == self._translation_column():
+            self._tree.editItem(item, column)
+
+    def _on_inline_item_changed(self, item: QTreeWidgetItem, column: int):
+        """Commit an inline translation edit to the active catalog."""
+        if column != self._translation_column() or not self._file_data:
+            return
+        idx = item.data(0, Qt.UserRole)
+        if idx is None:
+            return
+        self._set_entry_translation(idx, item.text(column).replace("⏎ ", "\n"))
+        self._modified = True
+        if idx == self._current_index:
+            self._trans_block = True
+            self._trans_view.setPlainText(item.text(column).replace("⏎ ", "\n"))
+            self._trans_block = False
+        self._lint_and_update_row(item, idx)
+        self._update_stats()
 
     def _navigate(self, delta: int):
         if not self._file_data:
@@ -1951,6 +2036,13 @@ class LinguaEditWindow(QMainWindow):
                 self._tree.scrollToItem(item)
                 break
 
+    def _refresh_tree(self):
+        """Rebuild the filtered tree while preserving the current entry."""
+        current_index = self._current_index
+        self._populate_list()
+        if current_index >= 0:
+            self._navigate_to_entry(current_index)
+
     # ══════════════════════════════════════════════════════════════
     #  ENTRY DISPLAY / EDITING
     # ══════════════════════════════════════════════════════════════
@@ -2012,6 +2104,7 @@ class LinguaEditWindow(QMainWindow):
         self._fuzzy_check.blockSignals(True)
         self._fuzzy_check.setChecked(is_fuzzy)
         self._fuzzy_check.blockSignals(False)
+        self._update_review_status_label()
 
         self._setup_plural_tabs(idx)
         self._clear_info_panel()
@@ -3432,8 +3525,14 @@ class LinguaEditWindow(QMainWindow):
                 self._file_data = parse_ts(p)
                 self._file_type = "ts"
             elif p.suffix == ".json":
-                self._file_data = parse_json(p)
-                self._file_type = "json"
+                # Chrome extension catalogs are also JSON, so detect them before
+                # falling back to the generic JSON parser.
+                if p.name == "messages.json" or p.parent.name == "_locales":
+                    self._file_data = parse_chrome_i18n(p)
+                    self._file_type = "chrome_i18n"
+                else:
+                    self._file_data = parse_json(p)
+                    self._file_type = "json"
             elif p.suffix in (".xliff", ".xlf"):
                 self._file_data = parse_xliff(p)
                 self._file_type = "xliff"
@@ -3466,10 +3565,6 @@ class LinguaEditWindow(QMainWindow):
                 self._file_type = "subtitles"
                 # Auto-detect matching video file
                 self._check_matching_video(p)
-            elif p.name == "messages.json" or p.parent.name == "_locales":
-                # Chrome extension i18n (heuristik)
-                self._file_data = parse_chrome_i18n(p)
-                self._file_type = "chrome_i18n"
             elif p.suffix in (".strings", ".stringsdict"):
                 self._file_data = parse_apple_strings(p)
                 self._file_type = "apple_strings"
@@ -3528,6 +3623,11 @@ class LinguaEditWindow(QMainWindow):
         self._lint_cache.clear()
         self._selected_indices.clear()
 
+        # Keep the current tab's data complete immediately. Previously it was
+        # only captured when another file was opened, so switching away and
+        # back could restore an empty tab.
+        self._save_current_tab()
+
         # Run linting on all entries at load time
         entries = self._get_entries()
         lint_input = []
@@ -3545,6 +3645,10 @@ class LinguaEditWindow(QMainWindow):
         # Select first entry
         if self._tree.topLevelItemCount() > 0:
             self._tree.setCurrentItem(self._tree.topLevelItem(0))
+        # Loading and selecting an entry updates editor widgets, but is not a
+        # user edit and must never dirty the newly opened catalog.
+        self._modified = False
+        self._save_current_tab()
 
     def _rebuild_recent_menu(self):
         self._recent_menu.clear()
@@ -3554,19 +3658,6 @@ class LinguaEditWindow(QMainWindow):
             act.triggered.connect(lambda checked, p=rp: self._load_file(p))
 
     # ── File monitoring ───────────────────────────────────────────
-
-    def _setup_file_monitor(self, path: Path):
-        if self._file_watcher:
-            files = self._file_watcher.files()
-            if files:
-                self._file_watcher.removePaths(files)
-        else:
-            self._file_watcher = QFileSystemWatcher()
-            self._file_watcher.fileChanged.connect(self._on_file_changed)
-        self._file_watcher.addPath(str(path))
-
-    def _on_file_changed(self, path):
-        self._reload_timer.start()
 
     def _reload_file(self):
         if not self._file_data:
@@ -3962,12 +4053,17 @@ class LinguaEditWindow(QMainWindow):
     # ── Tab management ────────────────────────────────────────────
 
     def _on_tab_changed(self, index):
+        previous = self._active_tab_index
+        if previous >= 0 and previous != index and previous in self._tabs:
+            self._save_tab(previous)
+        self._active_tab_index = index
         if index >= 0 and index in self._tabs:
             self._restore_tab(self._tabs[index])
 
     def _on_tab_close(self, index):
         if index < 0:
             return
+        self._save_current_tab()
         # Check for unsaved changes in the tab being closed
         if index in self._tabs:
             td = self._tabs[index]
@@ -3994,25 +4090,31 @@ class LinguaEditWindow(QMainWindow):
                     self._tab_widget.setCurrentIndex(index)
                     self._on_save()
                     self._tab_widget.setCurrentIndex(old_index)
-        if index in self._tabs:
-            del self._tabs[index]
+        self._tab_widget.blockSignals(True)
+        self._tabs.pop(index, None)
         self._tab_widget.removeTab(index)
-        new_tabs = {}
-        for i in range(self._tab_widget.count()):
-            for k, v in self._tabs.items():
-                if v.file_path and self._tab_widget.tabText(i) == Path(v.file_path).name:
-                    new_tabs[i] = v
-                    break
-        self._tabs = new_tabs
+        self._tabs = {
+            (old_index - 1 if old_index > index else old_index): tab
+            for old_index, tab in self._tabs.items()
+        }
+        self._tab_widget.blockSignals(False)
+        new_index = self._tab_widget.currentIndex()
+        self._active_tab_index = new_index
         if self._tab_widget.count() == 0:
             self._file_data = None
             self._file_type = None
             self._current_index = -1
             self._tree.clear()
             self.setWindowTitle(self.tr("LinguaEdit"))
+        elif new_index in self._tabs:
+            self._restore_tab(self._tabs[new_index])
 
     def _save_current_tab(self):
         index = self._tab_widget.currentIndex()
+        self._save_tab(index)
+
+    def _save_tab(self, index: int):
+        """Persist the live editor state into a specific tab."""
         if index < 0 or index not in self._tabs:
             return
         td = self._tabs[index]
@@ -4196,7 +4298,7 @@ class LinguaEditWindow(QMainWindow):
 
     # ── Generate Report (HTML/PDF) ───────────────────────────────
 
-    def _on_generate_report(self):
+    def _generate_standard_report(self):
         if not self._file_data:
             self._show_toast(self.tr("No file loaded"))
             return
@@ -5426,6 +5528,7 @@ class LinguaEditWindow(QMainWindow):
             self._search_replace_dialog = SearchReplaceDialog(self)
             self._search_replace_dialog.highlight_requested.connect(self._handle_search_highlight)
             self._search_replace_dialog.replace_requested.connect(self._handle_replace_request)
+            self._search_replace_dialog.navigation_requested.connect(self._handle_search_navigation)
             
         self._search_replace_dialog.show()
         self._search_replace_dialog.raise_()
@@ -5438,34 +5541,98 @@ class LinguaEditWindow(QMainWindow):
         if pattern:
             self._search_entry.setText(pattern)
             self._apply_filter()
+
+    @staticmethod
+    def _search_matches(text: str, pattern: str, case_sensitive: bool,
+                        whole_words: bool, is_regex: bool) -> bool:
+        """Return whether text matches the search options."""
+        flags = 0 if case_sensitive else re.IGNORECASE
+        expression = pattern if is_regex else re.escape(pattern)
+        if whole_words:
+            expression = rf"\b(?:{expression})\b"
+        try:
+            return re.search(expression, text, flags) is not None
+        except re.error:
+            return False
+
+    def _handle_search_navigation(self, pattern: str, case_sensitive: bool,
+                                  whole_words: bool, is_regex: bool,
+                                  scope: str, direction: int):
+        """Navigate cyclically between entries matching all search options."""
+        entries = self._get_entries() if self._file_data else []
+        matches = []
+        for index, (source, translation, _fuzzy) in enumerate(entries):
+            fields = []
+            if scope in ("source", "both"):
+                fields.append(source)
+            if scope in ("translation", "both"):
+                fields.append(translation)
+            if any(self._search_matches(value, pattern, case_sensitive,
+                                        whole_words, is_regex) for value in fields):
+                matches.append(index)
+
+        if not matches:
+            self._search_replace_dialog.set_match_count(0, 0)
+            self._show_toast(self.tr("No matches found"))
+            return
+
+        step = 1 if direction >= 0 else -1
+        if self._current_index in matches:
+            position = (matches.index(self._current_index) + step) % len(matches)
+        else:
+            position = 0 if step > 0 else len(matches) - 1
+        target = matches[position]
+        self._navigate_to_entry(target)
+        self._search_replace_dialog.set_match_count(position + 1, len(matches))
             
-    def _handle_replace_request(self, find_text: str, replace_text: str, case_sensitive: bool, is_regex: bool, scope: str, replace_all: bool):
+    @staticmethod
+    def _replace_matches(text: str, find_text: str, replace_text: str,
+                         case_sensitive: bool, whole_words: bool,
+                         is_regex: bool, count: int = 0) -> tuple[str, int]:
+        flags = 0 if case_sensitive else re.IGNORECASE
+        expression = find_text if is_regex else re.escape(find_text)
+        if whole_words:
+            expression = rf"\b(?:{expression})\b"
+        try:
+            return re.subn(expression, replace_text, text, count=count, flags=flags)
+        except re.error:
+            return text, 0
+
+    def _handle_replace_request(self, find_text: str, replace_text: str,
+                                case_sensitive: bool, whole_words: bool,
+                                is_regex: bool, scope: str, replace_all: bool):
         """Handle replace request."""
         if not self._file_data:
             return
-            
+
+        if scope == "source":
+            self._show_toast(self.tr("Source text is read-only"))
+            return
+
         if replace_all:
             count = 0
             entries = self._get_entries()
-            for i, (msgid, msgstr, is_fuzzy) in enumerate(entries):
-                if scope == "source" and find_text.lower() in msgid.lower():
-                    continue  # Can't replace in source
-                elif scope == "translation" or scope == "both":
-                    if find_text.lower() in msgstr.lower():
-                        new_text = msgstr.replace(find_text, replace_text)
-                        self._set_entry_translation(i, new_text)
-                        count += 1
-                        
+            for i, (_msgid, msgstr, _is_fuzzy) in enumerate(entries):
+                new_text, replacements = self._replace_matches(
+                    msgstr, find_text, replace_text, case_sensitive,
+                    whole_words, is_regex
+                )
+                if replacements:
+                    self._set_entry_translation(i, new_text)
+                    count += replacements
+
             if count > 0:
                 self._modified = True
                 self._populate_list()
-                self._show_toast(self.tr("Replaced in %d entries") % count)
+                self._show_toast(self.tr("Made %d replacements") % count)
         else:
-            # Replace current
             if self._current_index >= 0:
                 text = self._trans_view.toPlainText()
-                new_text = text.replace(find_text, replace_text, 1)
-                if new_text != text:
+                new_text, replacements = self._replace_matches(
+                    text, find_text, replace_text, case_sensitive,
+                    whole_words, is_regex, count=1
+                )
+                if replacements:
                     self._trans_view.setPlainText(new_text)
 
     def _show_batch_edit_dialog(self):
@@ -5731,7 +5898,7 @@ class LinguaEditWindow(QMainWindow):
         
         # Header
         file_name = Path(str(self._file_data.path)).name if self._file_data else "Unknown"
-        html_content.append(f"<h1>Translation Report: {file_name}</h1>")
+        html_content.append(f"<h1>Translation Report: {html_escape(file_name)}</h1>")
         
         # Statistics
         total = len(entries)
@@ -5741,9 +5908,33 @@ class LinguaEditWindow(QMainWindow):
         
         html_content.append("<h2>" + self.tr("Statistics") + "</h2>")
         html_content.append("<p>" + self.tr("Total entries:") + f" {total}</p>")
-        html_content.append("<p>" + self.tr("Translated:") + f" {translated} ({translated/total*100:.1f}%)</p>")
-        html_content.append("<p>" + self.tr("Fuzzy:") + f" {fuzzy} ({fuzzy/total*100:.1f}%)</p>")
-        html_content.append("<p>" + self.tr("Untranslated:") + f" {untranslated} ({untranslated/total*100:.1f}%)</p>")
+        translated_pct = translated / total * 100 if total else 0.0
+        fuzzy_pct = fuzzy / total * 100 if total else 0.0
+        untranslated_pct = untranslated / total * 100 if total else 0.0
+        html_content.append("<p>" + self.tr("Translated:") + f" {translated} ({translated_pct:.1f}%)</p>")
+        html_content.append("<p>" + self.tr("Fuzzy:") + f" {fuzzy} ({fuzzy_pct:.1f}%)</p>")
+        html_content.append("<p>" + self.tr("Untranslated:") + f" {untranslated} ({untranslated_pct:.1f}%)</p>")
+
+        lint_input = [
+            {"index": i, "msgid": msgid, "msgstr": msgstr,
+             "flags": ["fuzzy"] if is_fuzzy else []}
+            for i, (msgid, msgstr, is_fuzzy) in enumerate(entries)
+        ]
+        lint_result = lint_entries(lint_input)
+        html_content.append("<h2>" + self.tr("Quality") + "</h2>")
+        html_content.append(
+            "<p>" + self.tr("Quality score:") + f" {lint_result.score}% &mdash; "
+            + self.tr("Issues:") + f" {len(lint_result.issues)}</p>"
+        )
+        if lint_result.issues:
+            html_content.append("<ul>")
+            for issue in lint_result.issues:
+                message = html_escape(issue.message)
+                html_content.append(
+                    f"<li><strong>{html_escape(issue.severity.upper())}</strong> "
+                    f"#{issue.entry_index + 1}: {message}</li>"
+                )
+            html_content.append("</ul>")
         
         # Table
         html_content.append("<h2>Entries</h2>")
@@ -5774,12 +5965,12 @@ class LinguaEditWindow(QMainWindow):
             
             if bilingual:
                 # Escape HTML
-                source_html = msgid.replace('<', '&lt;').replace('>', '&gt;').replace('\n', '<br>')
-                translation_html = msgstr.replace('<', '&lt;').replace('>', '&gt;').replace('\n', '<br>')
+                source_html = html_escape(msgid).replace('\n', '<br>')
+                translation_html = html_escape(msgstr).replace('\n', '<br>')
                 html_content.append(f"<td>{source_html}</td>")
                 html_content.append(f"<td>{translation_html}</td>")
             else:
-                text_html = (msgstr or msgid).replace('<', '&lt;').replace('>', '&gt;').replace('\n', '<br>')
+                text_html = html_escape(msgstr or msgid).replace('\n', '<br>')
                 html_content.append(f"<td>{text_html}</td>")
                 
             html_content.append(f"<td>{status}</td>")
@@ -5788,9 +5979,18 @@ class LinguaEditWindow(QMainWindow):
         html_content.append("</table>")
         html_content.append("</body></html>")
         
-        # Write file
-        with open(file_path, 'w', encoding='utf-8') as f:
-            f.write('\n'.join(html_content))
+        html = '\n'.join(html_content)
+        if file_path.lower().endswith(".pdf"):
+            from PySide6.QtGui import QTextDocument
+            from PySide6.QtPrintSupport import QPrinter
+            document = QTextDocument()
+            document.setHtml(html)
+            printer = QPrinter(QPrinter.HighResolution)
+            printer.setOutputFormat(QPrinter.PdfFormat)
+            printer.setOutputFileName(file_path)
+            document.print_(printer)
+        else:
+            Path(file_path).write_text(html, encoding="utf-8")
 
     # ── Helpers ───────────────────────────────────────────────────
 
@@ -6004,11 +6204,7 @@ class LinguaEditWindow(QMainWindow):
     # ── Feature 12: Drag & Drop ─────────────────────────────────
     
     # Accepted translation file extensions for drag & drop
-    _TRANSLATION_EXTENSIONS = {
-        '.po', '.pot', '.ts', '.json', '.xliff', '.xlf', '.xml',
-        '.arb', '.php', '.yml', '.yaml', '.csv', '.tres',
-        '.properties', '.srt', '.vtt',
-    }
+    _TRANSLATION_EXTENSIONS = _ALL_EXTENSIONS
 
     def dragEnterEvent(self, event: QDragEnterEvent):
         """Hantera drag enter event."""
@@ -6302,12 +6498,11 @@ class LinguaEditWindow(QMainWindow):
         self._show_toast(self.tr("Watch mode disabled"))
     
     def _on_file_changed(self, path: str):
-        """Hantera när fil ändras externt."""
+        """Handle an external change to the currently watched file."""
         if not self._file_data or str(self._file_data.path) != path:
             return
-        
-        # Kolla om auto-reload är aktiverat
-        auto_reload = getattr(self._app_settings, 'auto_reload_on_change', False)
+
+        auto_reload = self._app_settings.get_value("auto_reload_on_change", False)
         
         if auto_reload:
             self._reload_current_file()
@@ -6324,9 +6519,12 @@ class LinguaEditWindow(QMainWindow):
             
             if reply == QMessageBox.Yes:
                 self._reload_current_file()
+            elif self._file_watcher and Path(path).exists():
+                # QFileSystemWatcher commonly drops a path after replacement.
+                self._file_watcher.addPath(path)
     
     def _setup_file_monitor(self, file_path: Path):
-        """Setup file monitoring för en fil."""
+        """Watch the current file when watch mode is enabled."""
         if self._watch_mode_enabled:
             if self._file_watcher is None:
                 self._file_watcher = QFileSystemWatcher(self)
@@ -6455,12 +6653,24 @@ class LinguaEditWindow(QMainWindow):
 
     def _update_editor_for_review_mode(self):
         """Uppdaterar editorn för review mode."""
-        if not hasattr(self, '_trans_view'):
+        if not hasattr(self, '_review_toolbar'):
             return
-        
-        # Här skulle vi lägga till review-knappar i editorn
-        # För nu, bara en enkel implementering
-        pass
+
+        self._review_toolbar.setVisible(self._review_mode)
+        self._update_review_status_label()
+
+    def _update_review_status_label(self):
+        if not hasattr(self, "_review_status_label"):
+            return
+        labels = {
+            "approved": self.tr("Approved"),
+            "rejected": self.tr("Rejected"),
+            "needs_review": self.tr("Needs review"),
+        }
+        status = self._review_status.get(self._current_index, "needs_review")
+        self._review_status_label.setText(
+            self.tr("Review status: %s") % labels.get(status, labels["needs_review"])
+        )
 
     def _set_review_status(self, status: str, comment: str = ""):
         """Sätter review-status för aktuell rad."""
@@ -6470,7 +6680,8 @@ class LinguaEditWindow(QMainWindow):
         self._review_status[self._current_index] = status
         if comment:
             self._review_comments[self._current_index] = comment
-        
+
+        self._update_review_status_label()
         self._refresh_tree()
         self._show_toast(self.tr(f"Status set to: {status}"))
 
@@ -6705,6 +6916,45 @@ class LinguaEditWindow(QMainWindow):
         """Show plugin management dialog."""
         dialog = PluginDialog(self)
         dialog.exec()
+
+    def _verify_back_translation(self):
+        """Back-translate the current target and compare it with its source."""
+        if self._current_index < 0 or not self._file_data:
+            self._show_toast(self.tr("No entry selected"))
+            return
+        source, target, _ = self._get_entries()[self._current_index]
+        if not target.strip():
+            self._show_toast(self.tr("The current entry is untranslated"))
+            return
+        self._show_toast(self.tr("Back-translating…"))
+        self._back_translation_worker = _BackTranslationWorker(
+            target, self._trans_engine, self._trans_source, self._trans_target, self
+        )
+
+        def show_result(back_translation: str):
+            from difflib import SequenceMatcher
+            similarity = SequenceMatcher(
+                None, source.casefold(), back_translation.casefold()
+            ).ratio() * 100
+            self._show_dialog(
+                self.tr("Back-translation Verification"),
+                self.tr("Source:\n%s\n\nBack-translation:\n%s\n\nText similarity: %.0f%%")
+                % (source, back_translation, similarity),
+            )
+
+        self._back_translation_worker.completed.connect(show_result)
+        self._back_translation_worker.failed.connect(
+            lambda error: self._show_dialog(self.tr("Back-translation Error"), error)
+        )
+        self._back_translation_worker.start()
+
+    def _show_pomodoro(self):
+        """Show the reusable focus timer."""
+        if not hasattr(self, "_pomodoro_dialog"):
+            self._pomodoro_dialog = PomodoroDialog(self)
+        self._pomodoro_dialog.show()
+        self._pomodoro_dialog.raise_()
+        self._pomodoro_dialog.activateWindow()
     
     # Feature 3: TMX Import/Export
     def _on_import_tmx(self):
@@ -6865,10 +7115,10 @@ class LinguaEditWindow(QMainWindow):
     
     # Feature 6: Inline Editing (requires QStyledItemDelegate)
     def _enable_inline_editing(self, enabled: bool):
-        """Enable or disable inline editing in the entry table."""
-        # This would require implementing a custom QStyledItemDelegate
-        # For now, just store the setting
+        """Enable or disable translation editing directly in the entry table."""
         self._inline_editing_enabled = enabled
+        self._app_settings.set_value("inline_editing_enabled", enabled)
+        self._populate_list()
     
     # Feature 7: Character Counter
     def _setup_character_counter(self):
@@ -6918,12 +7168,6 @@ class LinguaEditWindow(QMainWindow):
         
         dialog = UnicodeDialog(text, self)
         dialog.exec()
-    
-    # Feature 9: Burndown Chart (part of statistics dialog)
-    def _get_progress_data_for_chart(self):
-        """Get progress data for burndown chart."""
-        # This would integrate with the history service to get daily progress
-        return self._history_manager.get_statistics().get("daily_changes", [])
     
     # Feature 10: Achievements
     def _show_achievements_dialog(self):
@@ -7458,6 +7702,7 @@ class LinguaEditWindow(QMainWindow):
             project_path = str(Path(self._current_file).parent)
         
         dialog = LocaleMapDialog(self, project_path)
+        dialog.file_open_requested.connect(self._load_file)
         dialog.exec()
 
     def _show_ocr_dialog(self):

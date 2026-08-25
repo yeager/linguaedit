@@ -1,5 +1,4 @@
 """Shared fixtures for LinguaEdit tests."""
-import os
 import sys
 from pathlib import Path
 
@@ -20,6 +19,15 @@ def fixtures_dir():
 def tmp_out(tmp_path):
     """Temp directory for output files."""
     return tmp_path
+
+
+@pytest.fixture(scope="session")
+def qapp():
+    """Headless Qt application for GUI regression tests."""
+    pytest.importorskip("PySide6")
+    from PySide6.QtWidgets import QApplication
+    app = QApplication.instance() or QApplication([])
+    return app
 
 
 # Patch QCoreApplication.translate to avoid needing Qt runtime

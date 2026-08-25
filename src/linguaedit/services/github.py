@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
-import json
 import base64
+import json
 import requests
 from dataclasses import dataclass
 from pathlib import Path
@@ -35,7 +35,7 @@ def fetch_pot_file(config: GitHubConfig, pot_path: str, branch: str = "main") ->
     url = f"{config.base_url}/repos/{config.owner}/{config.repo}/contents/{pot_path}"
     r = requests.get(url, headers=config.headers, params={"ref": branch}, timeout=30)
     if r.status_code != 200:
-        raise GitHubError(f"Failed to fetch {pot_path}: {r.status_code} {r.text}")
+        raise GitHubError(f"Failed to fetch {pot_path}: HTTP {r.status_code}")
     content = r.json().get("content", "")
     return base64.b64decode(content).decode("utf-8")
 
@@ -54,7 +54,7 @@ def create_branch(config: GitHubConfig, branch_name: str, from_branch: str = "ma
     data = {"ref": f"refs/heads/{branch_name}", "sha": sha}
     r = requests.post(url, headers=config.headers, json=data, timeout=30)
     if r.status_code not in (200, 201):
-        raise GitHubError(f"Failed to create branch: {r.status_code} {r.text}")
+        raise GitHubError(f"Failed to create branch: HTTP {r.status_code}")
 
 
 def push_file(config: GitHubConfig, file_path: str, content: bytes,
@@ -76,7 +76,7 @@ def push_file(config: GitHubConfig, file_path: str, content: bytes,
 
     r = requests.put(url, headers=config.headers, json=data, timeout=30)
     if r.status_code not in (200, 201):
-        raise GitHubError(f"Failed to push file: {r.status_code} {r.text}")
+        raise GitHubError(f"Failed to push file: HTTP {r.status_code}")
 
 
 def create_pull_request(config: GitHubConfig, title: str, body: str,
@@ -86,5 +86,5 @@ def create_pull_request(config: GitHubConfig, title: str, body: str,
     data = {"title": title, "body": body, "head": head, "base": base}
     r = requests.post(url, headers=config.headers, json=data, timeout=30)
     if r.status_code not in (200, 201):
-        raise GitHubError(f"Failed to create PR: {r.status_code} {r.text}")
+        raise GitHubError(f"Failed to create PR: HTTP {r.status_code}")
     return r.json().get("html_url", "")

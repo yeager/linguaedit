@@ -150,7 +150,7 @@ linguaedit-gui
 
 ### 🧘 Zen Translation Mode
 
-Distraction-free translation workflow (Ctrl+Shift+Z):
+Distraction-free translation workflow (Ctrl+Alt+Z):
 - Source text (read-only) + translation (editable)
 - Progress bar at top
 - Tab = save + next untranslated
@@ -165,17 +165,20 @@ Distraction-free translation workflow (Ctrl+Shift+Z):
 | `Ctrl+H` | Search & Replace |
 | `Ctrl+U` | Toggle fuzzy |
 | `Alt+Enter` | Next untranslated |
-| `Ctrl+Shift+↑/↓` | Previous/next fuzzy |
-| `Ctrl+Enter` | Copy source to translation |
+| `Ctrl+Shift+↑/↓` | Previous/next untranslated |
+| `Alt+Shift+↑/↓` | Previous/next fuzzy |
+| `Ctrl+Enter` | Save + next untranslated |
+| `Ctrl+B` | Copy source to translation |
 | `Tab` | Save + next entry |
 | `Shift+Tab` | Save + previous entry |
-| `Ctrl+Shift+Z` | Zen Mode |
+| `Ctrl+Alt+Z` | Zen Mode |
 | `Ctrl+D` | Project Dashboard |
 | `Ctrl+Shift+D` | Git Diff |
 | `Ctrl+Alt+T` | Batch Translate |
 | `Ctrl+Shift+F` | Focus Mode (untranslated only) |
 | `F11` | Fullscreen |
-| `Ctrl+R` | Run linter |
+| `Ctrl+Shift+V` | Run linter |
+| `Ctrl+R` | Review Mode |
 | `Ctrl+Shift+A` | AI Review |
 
 ### 🧠 Translation Memory (TM)
@@ -274,7 +277,7 @@ Distraction-free translation workflow (Ctrl+Shift+Z):
 
 ### 🧪 Testing
 
-- **90 unit tests** covering parsers, linter, TM, settings, and security
+- **97 tests** covering parsers, linter, TM, settings, security, GUI regressions, and packaging invariants
 
 ### 🛠️ Advanced Tools
 
@@ -285,7 +288,6 @@ Distraction-free translation workflow (Ctrl+Shift+Z):
 - **TTS** — hear translations read aloud
 - **OCR** — extract text from images
 - **Locale map** — visual overview of project languages
-- **Burndown charts** — track translation progress over time
 - **QA profiles** — configurable validation rule sets
 
 ---
@@ -314,9 +316,12 @@ pip install -e .
 # Run
 linguaedit-gui
 
-# Compile translations
-pyside6-lrelease translations/linguaedit_sv.ts -qm translations/linguaedit_sv.qm
+# Build wheel (compiles .ts to .qm inside the artifact)
+python -m build --wheel
 ```
+
+Compiled `.qm` files are build artifacts and are not stored in the source tree.
+A language is included only when its `.ts` catalog is more than 20% translated.
 
 ### Dependencies
 

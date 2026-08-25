@@ -57,11 +57,11 @@ If you prefer working locally:
 
 ## Compiling Translations
 
-After editing locally, compile `.ts` → `.qm`:
-
-```bash
-pyside6-lrelease linguaedit_LANG.ts -qm linguaedit_LANG.qm
-```
+`.qm` files are generated from `.ts` during wheel and release builds. They are
+artifact contents, not source files, and must not be committed. To verify the
+packaged translations locally, run `python -m build --wheel` from the repository
+root and inspect the resulting wheel in `dist/`. Catalogs at or below 20%
+completion are skipped; compilation requires strictly more than 20% translated.
 
 ## Template
 

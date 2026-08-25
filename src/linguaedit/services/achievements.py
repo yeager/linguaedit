@@ -176,10 +176,6 @@ class AchievementManager(QObject):
             ),
         }
     
-    def tr(self, text: str) -> str:
-        """Translation helper."""
-        return text  # TODO: Implement proper translation
-    
     def _load_data(self):
         """Load achievements and stats from disk."""
         # Load achievements

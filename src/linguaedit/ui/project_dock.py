@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import logging
+
 import os
 from pathlib import Path
 from typing import List, Dict, Optional
@@ -25,6 +27,8 @@ from linguaedit.parsers.android_parser import parse_android
 from linguaedit.parsers.arb_parser import parse_arb
 from linguaedit.parsers.php_parser import parse_php
 from linguaedit.parsers.yaml_parser import parse_yaml
+
+log = logging.getLogger(__name__)
 
 
 class FileAnalysisThread(QThread):
@@ -120,7 +124,8 @@ class FileAnalysisThread(QThread):
                 "modified": file_path.stat().st_mtime
             }
             
-        except Exception:
+        except Exception as exc:
+            log.debug("Could not inspect translation file %s: %s", file_path, exc)
             return None
 
 
@@ -480,13 +485,13 @@ class ProjectDockWidget(QDockWidget):
         system = platform.system()
         try:
             if system == "Darwin":  # macOS
-                subprocess.run(["open", "-R", file_path])
+                subprocess.run(["open", "-R", file_path], check=False)
             elif system == "Windows":
-                subprocess.run(["explorer", "/select,", file_path])
+                subprocess.run(["explorer", "/select,", file_path], check=False)
             else:  # Linux
-                subprocess.run(["xdg-open", str(Path(file_path).parent)])
-        except Exception:
-            pass
+                subprocess.run(["xdg-open", str(Path(file_path).parent)], check=False)
+        except (OSError, subprocess.SubprocessError) as exc:
+            log.warning("Could not open file manager for %s: %s", file_path, exc)
             
     def _show_file_properties(self, file_info: Dict):
         """Show file properties dialog."""

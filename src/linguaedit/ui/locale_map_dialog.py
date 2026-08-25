@@ -210,6 +210,8 @@ class WorldMapWidget(QWidget):
 
 class LocaleMapDialog(QDialog):
     """Dialog showing translation progress on a world map."""
+
+    file_open_requested = Signal(str)
     
     def __init__(self, parent=None, project_path: str = ""):
         super().__init__(parent)
@@ -544,11 +546,8 @@ class LocaleMapDialog(QDialog):
         """Handle double-click on file item."""
         file_path = item.data(Qt.UserRole)
         if file_path:
-            # Emit signal to open file (would be connected by parent)
-            # For now, just show a message
-            from PySide6.QtWidgets import QMessageBox
-            QMessageBox.information(self, self.tr("Open File"), 
-                                  self.tr("Would open: {}").format(file_path))
+            self.file_open_requested.emit(str(Path(file_path).resolve()))
+            self.accept()
     
     def _update_summary(self):
         """Update project summary."""

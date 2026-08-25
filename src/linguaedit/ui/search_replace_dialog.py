@@ -22,7 +22,11 @@ class SearchReplaceDialog(QDialog):
     highlight_requested = Signal(str, bool, bool, str)  # pattern, case_sensitive, regex, scope
     
     # Signal emitted when replace operation is requested
-    replace_requested = Signal(str, str, bool, bool, str, bool)  # find, replace, case_sensitive, regex, scope, replace_all
+    # find, replace, case_sensitive, whole_words, regex, scope, replace_all
+    replace_requested = Signal(str, str, bool, bool, bool, str, bool)
+
+    # pattern, case_sensitive, whole_words, regex, scope, direction
+    navigation_requested = Signal(str, bool, bool, bool, str, int)
     
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -211,9 +215,14 @@ class SearchReplaceDialog(QDialog):
         if not search_text:
             return
             
-        # For now, just emit the search signal
-        # The parent window should handle actual navigation
-        self._perform_search()
+        self.navigation_requested.emit(
+            search_text,
+            self._case_sensitive_cb.isChecked(),
+            self._whole_words_cb.isChecked(),
+            self._regex_cb.isChecked(),
+            self._get_scope(),
+            1,
+        )
         
     def _find_previous(self):
         """Find previous occurrence."""
@@ -221,8 +230,14 @@ class SearchReplaceDialog(QDialog):
         if not search_text:
             return
             
-        # Similar to find_next, parent handles navigation
-        self._perform_search()
+        self.navigation_requested.emit(
+            search_text,
+            self._case_sensitive_cb.isChecked(),
+            self._whole_words_cb.isChecked(),
+            self._regex_cb.isChecked(),
+            self._get_scope(),
+            -1,
+        )
         
     def _find_all(self):
         """Find all occurrences."""
@@ -245,7 +260,10 @@ class SearchReplaceDialog(QDialog):
         is_regex = self._regex_cb.isChecked()
         scope = self._get_scope()
         
-        self.replace_requested.emit(search_text, replace_text, case_sensitive, is_regex, scope, False)
+        self.replace_requested.emit(
+            search_text, replace_text, case_sensitive,
+            self._whole_words_cb.isChecked(), is_regex, scope, False
+        )
         
     def _replace_all(self):
         """Replace all occurrences."""
@@ -259,7 +277,10 @@ class SearchReplaceDialog(QDialog):
         is_regex = self._regex_cb.isChecked()
         scope = self._get_scope()
         
-        self.replace_requested.emit(search_text, replace_text, case_sensitive, is_regex, scope, True)
+        self.replace_requested.emit(
+            search_text, replace_text, case_sensitive,
+            self._whole_words_cb.isChecked(), is_regex, scope, True
+        )
         
     def set_search_text(self, text: str):
         """Set the search field text."""
