@@ -584,7 +584,8 @@
         <message>
         <source>Source: %s
 Target: %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Källa: %s
+Mål: %s</translation>
     </message>
 </context>
     <context>
@@ -1243,14 +1244,18 @@ Target: %s</source>
         <message>
         <source>Failed to export glossary:
 %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Det gick inte att exportera ordlistan:
+%s</translation>
     </message>
     <message>
         <source>Imported %d terms with %d errors.
 
 First errors:
 %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Importerade %d termer med %d fel.
+
+Första felen:
+%s</translation>
     </message>
 </context>
     <context>
@@ -1527,7 +1532,10 @@ First errors:
 
 This will replace the current text with:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Vill du verkligen återställa till den här versionen?
+
+Detta ersätter den aktuella texten med:
+{}</translation>
     </message>
 </context>
     <context>
@@ -1539,7 +1547,8 @@ This will replace the current text with:
         <message>
         <source>Click to select image
 (PNG, JPG, GIF)</source>
-        <translation type="unfinished"></translation>
+        <translation>Klicka för att välja bild
+(PNG, JPG, GIF)</translation>
     </message>
 </context>
     <context>
@@ -3742,7 +3751,10 @@ Lägg till en i Översättning → API-nycklar…</translation></message><messag
 
 Errors:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+Fel:
+{}</translation>
     </message>
     <message>
         <source>%d of %d entries (%d%%) have no translation.
@@ -3750,117 +3762,131 @@ Errors:
 Untranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.
 
 Save anyway?</source>
-        <translation type="unfinished"></translation>
+        <translation>%d av %d poster (%d%%) saknar översättning.
+
+Oöversatta poster markeras och sparas med källtexten som reserv så att de fortfarande visas under uppspelning. När filen öppnas igen i LinguaEdit visas de korrekt som oöversatta.
+
+Spara ändå?</translation>
     </message>
     <message>
         <source>%s
 
 Add a new term or check file?</source>
-        <translation type="unfinished"></translation>
+        <translation>%s
+
+Lägg till en ny term eller kontrollera filen?</translation>
     </message>
     <message>
         <source>Approved</source>
-        <translation type="unfinished"></translation>
+        <translation>Godkänd</translation>
     </message>
     <message>
         <source>Back-translating…</source>
-        <translation type="unfinished"></translation>
+        <translation>Bakåtöversätter…</translation>
     </message>
     <message>
         <source>Back-translation Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Fel vid bakåtöversättning</translation>
     </message>
     <message>
         <source>Back-translation Verification</source>
-        <translation type="unfinished"></translation>
+        <translation>Verifiering med bakåtöversättning</translation>
     </message>
     <message>
         <source>By context</source>
-        <translation type="unfinished"></translation>
+        <translation>Efter sammanhang</translation>
     </message>
     <message>
         <source>Could not read video file:
 %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Det gick inte att läsa videofilen:
+%s</translation>
     </message>
     <message>
         <source>Failed to run msgmerge:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Det gick inte att köra msgmerge:
+{}</translation>
     </message>
     <message>
         <source>File: %s
 Entries: %d</source>
-        <translation type="unfinished"></translation>
+        <translation>Fil: %s
+Poster: %d</translation>
     </message>
     <message>
         <source>Found %d inconsistencies:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Hittade %d inkonsekvenser:
+
+</translation>
     </message>
     <message>
         <source>Help translate:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hjälp till att översätta:</translation>
     </message>
     <message>
         <source>Issues:</source>
-        <translation type="unfinished"></translation>
+        <translation>Problem:</translation>
     </message>
     <message>
         <source>Made %d replacements</source>
-        <translation type="unfinished"></translation>
+        <translation>Gjorde %d ersättningar</translation>
     </message>
     <message>
         <source>Needs review</source>
-        <translation type="unfinished"></translation>
+        <translation>Behöver granskas</translation>
     </message>
     <message>
         <source>No Crowdin API key configured.
 Please add one in Translation → API Keys…</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen API-nyckel för Crowdin har konfigurerats.
+Lägg till en under Översättning → API-nycklar…</translation>
     </message>
     <message>
         <source>No Weblate API key or server URL configured.
 Please add them in Translation → API Keys…</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen API-nyckel eller serveradress för Weblate har konfigurerats.
+Lägg till dem under Översättning → API-nycklar…</translation>
     </message>
     <message>
         <source>No entry selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen post har valts</translation>
     </message>
     <message>
         <source>No matches found</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga träffar hittades</translation>
     </message>
     <message>
         <source>PO file merged successfully with POT file.
 Please reload the file to see changes.</source>
-        <translation type="unfinished"></translation>
+        <translation>PO-filen sammanfogades med POT-filen.
+Läs in filen igen för att se ändringarna.</translation>
     </message>
     <message>
         <source>Pomodoro Timer…</source>
-        <translation type="unfinished"></translation>
+        <translation>Pomodoro-timer…</translation>
     </message>
     <message>
         <source>Quality score:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kvalitetspoäng:</translation>
     </message>
     <message>
         <source>Rejected</source>
-        <translation type="unfinished"></translation>
+        <translation>Avvisad</translation>
     </message>
     <message>
         <source>Review status: %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Granskningsstatus: %s</translation>
     </message>
     <message>
         <source>Review status: Needs review</source>
-        <translation type="unfinished"></translation>
+        <translation>Granskningsstatus: Behöver granskas</translation>
     </message>
     <message>
         <source>Source text is read-only</source>
-        <translation type="unfinished"></translation>
+        <translation>Källtexten är skrivskyddad</translation>
     </message>
     <message>
         <source>Source:
@@ -3870,73 +3896,89 @@ Back-translation:
 %s
 
 Text similarity: %.0f%%</source>
-        <translation type="unfinished"></translation>
+        <translation>Källa:
+%s
+
+Bakåtöversättning:
+%s
+
+Textlikhet: %.0f%%</translation>
     </message>
     <message>
         <source>Source: %s
 Target: %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Källa: %s
+Mål: %s</translation>
     </message>
     <message>
         <source>Source: \"%s\"
   Entries: %s
   Translations: %s
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Källa: \"%s\"
+  Poster: %s
+  Översättningar: %s
+</translation>
     </message>
     <message>
         <source>Spelling issues:
 %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Stavningsproblem:
+%s</translation>
     </message>
     <message>
         <source>The current entry is untranslated</source>
-        <translation type="unfinished"></translation>
+        <translation>Den aktuella posten är oöversatt</translation>
     </message>
     <message>
         <source>The current file has unsaved changes.
 Do you want to save before continuing?</source>
-        <translation type="unfinished"></translation>
+        <translation>Den aktuella filen har osparade ändringar.
+Vill du spara innan du fortsätter?</translation>
     </message>
     <message>
         <source>The file '%s' has unsaved changes.
 Do you want to save before closing?</source>
-        <translation type="unfinished"></translation>
+        <translation>Filen ”%s” har osparade ändringar.
+Vill du spara innan den stängs?</translation>
     </message>
     <message>
         <source>Verify with Back-translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Verifiera med bakåtöversättning</translation>
     </message>
     <message>
         <source>msgmerge failed:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>msgmerge misslyckades:
+{}</translation>
     </message>
     <message>
         <source>A newer local recovery snapshot exists. Restore it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Det finns en nyare lokal återställningskopia. Vill du återställa den?</translation>
     </message>
     <message>
         <source>Accessibility</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillgänglighet</translation>
     </message>
     <message>
         <source>Accessibility check</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillgänglighetskontroll</translation>
     </message>
     <message>
         <source>Automatic QA found %d errors. Save anyway?</source>
-        <translation type="unfinished"></translation>
+        <translation>Den automatiska kvalitetskontrollen hittade %d fel. Spara ändå?</translation>
     </message>
     <message>
         <source>Found %d issues:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Hittade %d problem:
+
+</translation>
     </message>
     <message>
         <source>Git Commit Blocked</source>
-        <translation type="unfinished"></translation>
+        <translation>Git-incheckning blockerad</translation>
     </message>
     <message>
         <source>Health: %.1f%%
@@ -3947,71 +3989,78 @@ Warnings: %d
 Terminology issues: %d
 Accessibility issues: %d
 Risks: %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Hälsa: %.1f%%
+Översatta: %d/%d
+Inaktuella: %d
+Fel: %d
+Varningar: %d
+Terminologiproblem: %d
+Tillgänglighetsproblem: %d
+Risker: %s</translation>
     </message>
     <message>
         <source>Inspect translation build</source>
-        <translation type="unfinished"></translation>
+        <translation>Inspektera översättningsbygge</translation>
     </message>
     <message>
         <source>No accessibility issues found! ✓</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga tillgänglighetsproblem hittades! ✓</translation>
     </message>
     <message>
         <source>No linguaedit_*.ts catalogs found</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga linguaedit_*.ts-kataloger hittades</translation>
     </message>
     <message>
         <source>Potential secrets were found. Nothing was staged.</source>
-        <translation type="unfinished"></translation>
+        <translation>Möjliga hemligheter hittades. Ingenting lades till i stagingområdet.</translation>
     </message>
     <message>
         <source>Project Health</source>
-        <translation type="unfinished"></translation>
+        <translation>Projekthälsa</translation>
     </message>
     <message>
         <source>Project health</source>
-        <translation type="unfinished"></translation>
+        <translation>Projekthälsa</translation>
     </message>
     <message>
         <source>Pseudolocalize current entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Pseudolokalisera aktuell post</translation>
     </message>
     <message>
         <source>Pseudolocalized current entry</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktuell post pseudolokaliserades</translation>
     </message>
     <message>
         <source>QA profile: Android</source>
-        <translation type="unfinished"></translation>
+        <translation>Kvalitetsprofil: Android</translation>
     </message>
     <message>
         <source>QA profile: Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>Kvalitetsprofil: Qt</translation>
     </message>
     <message>
         <source>QA profile: Subtitles</source>
-        <translation type="unfinished"></translation>
+        <translation>Kvalitetsprofil: Undertexter</translation>
     </message>
     <message>
         <source>Quality errors</source>
-        <translation type="unfinished"></translation>
+        <translation>Kvalitetsfel</translation>
     </message>
     <message>
         <source>Recover unsaved work</source>
-        <translation type="unfinished"></translation>
+        <translation>Återställ osparat arbete</translation>
     </message>
     <message>
         <source>Select translation catalog directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj katalog för översättningskataloger</translation>
     </message>
     <message>
         <source>Translation Build</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningsbygge</translation>
     </message>
     <message>
         <source>none</source>
-        <translation type="unfinished"></translation>
+        <translation>inga</translation>
     </message>
 </context>
     <context>
@@ -4658,7 +4707,8 @@ Risks: %s</source>
         <message>
         <source>Failed to create PO file:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Det gick inte att skapa PO-filen:
+{}</translation>
     </message>
     <message>
         <source>OCR functionality requires tesseract-ocr to be installed.
@@ -4668,12 +4718,19 @@ Installation instructions:
 • Ubuntu/Debian: sudo apt install tesseract-ocr
 • Windows: Download from GitHub releases
 • Arch Linux: sudo pacman -S tesseract</source>
-        <translation type="unfinished"></translation>
+        <translation>OCR-funktionen kräver att tesseract-ocr är installerat.
+
+Installationsanvisningar:
+• macOS: brew install tesseract
+• Ubuntu/Debian: sudo apt install tesseract-ocr
+• Windows: Hämta från GitHub-utgåvor
+• Arch Linux: sudo pacman -S tesseract</translation>
     </message>
     <message>
         <source>PO file created successfully:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>PO-filen skapades:
+{}</translation>
     </message>
 </context>
     <context>
@@ -4791,31 +4848,31 @@ Installation instructions:
         </message>
         <message>
         <source>Browse…</source>
-        <translation type="unfinished"></translation>
+        <translation>Bläddra…</translation>
     </message>
     <message>
         <source>Loading…</source>
-        <translation type="unfinished"></translation>
+        <translation>Läser in…</translation>
     </message>
     <message>
         <source>Select Component</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj komponent</translation>
     </message>
     <message>
         <source>Select Organization</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj organisation</translation>
     </message>
     <message>
         <source>Select Project</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj projekt</translation>
     </message>
     <message>
         <source>✗ Select a project first</source>
-        <translation type="unfinished"></translation>
+        <translation>✗ Välj ett projekt först</translation>
     </message>
     <message>
         <source>✗ Select an organization first</source>
-        <translation type="unfinished"></translation>
+        <translation>✗ Välj en organisation först</translation>
     </message>
 </context>
     <context>
@@ -5040,7 +5097,7 @@ Installation instructions:
         </message>
         <message>
         <source>Automatically reload watched files</source>
-        <translation type="unfinished"></translation>
+        <translation>Läs automatiskt in bevakade filer igen</translation>
     </message>
     <message>
         <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.
@@ -5049,11 +5106,16 @@ For better security, install:
 • macOS: Built-in (Keychain)
 • Windows: pip install keyring
 • Linux: pip install secretstorage</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen systemnyckelring hittades. Inloggningsuppgifter lagras i en krypterad fil med ett huvudlösenord.
+
+Installera följande för bättre säkerhet:
+• macOS: Inbyggt (Nyckelring)
+• Windows: pip install keyring
+• Linux: pip install secretstorage</translation>
     </message>
     <message>
         <source>Reload external changes without asking while Watch File is enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Läs in externa ändringar utan att fråga när filbevakning är aktiverad</translation>
     </message>
 </context>
     <context>
@@ -5725,7 +5787,8 @@ For better security, install:
         <message>
         <source>✓ Downloaded at %1
 Saved to: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>✓ Hämtad %1
+Sparad i: %2</translation>
     </message>
 </context>
     <context>
@@ -6096,17 +6159,20 @@ Saved to: %2</source>
         <message>
         <source>Could not extract the subtitle:
 %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Det gick inte att extrahera undertexten:
+%s</translation>
     </message>
     <message>
         <source>Could not read the video file:
 %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Det gick inte att läsa videofilen:
+%s</translation>
     </message>
     <message>
         <source>The subtitle has been saved to:
 %s</source>
-        <translation type="unfinished"></translation>
+        <translation>Undertexten har sparats i:
+%s</translation>
     </message>
 </context>
     <context>
@@ -6225,7 +6291,11 @@ Android XML, ARB, PHP, and YAML files.
 
 Features include AI-powered pre-translation, translation memory,
 quality assurance, spell checking, and platform integration.</source>
-        <translation type="unfinished"></translation>
+        <translation>LinguaEdit är en modern översättningsredigerare för PO-, TS-, JSON-, XLIFF-,
+Android XML-, ARB-, PHP- och YAML-filer.
+
+Funktionerna omfattar AI-baserad föröversättning, översättningsminne,
+kvalitetskontroll, stavningskontroll och plattformsintegration.</translation>
     </message>
 </context>
     <context>
@@ -6594,31 +6664,31 @@ Ny version: %s</translation>
     <name>PomodoroDialog</name>
     <message>
         <source>Focus minutes:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fokusminuter:</translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation type="unfinished"></translation>
+        <translation>Pausa</translation>
     </message>
     <message>
         <source>Pomodoro Timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Pomodoro-timer</translation>
     </message>
     <message>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Återställ</translation>
     </message>
     <message>
         <source>Resume</source>
-        <translation type="unfinished"></translation>
+        <translation>Fortsätt</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Starta</translation>
     </message>
     <message>
         <source>Time for a break!</source>
-        <translation type="unfinished"></translation>
+        <translation>Dags för en paus!</translation>
     </message>
 </context>
 </TS>
