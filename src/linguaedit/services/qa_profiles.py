@@ -38,6 +38,30 @@ class QAViolation:
 
 # Built-in profiles
 _BUILTIN_PROFILES = {
+    "qt": QAProfile(
+        name="qt",
+        description="Qt placeholders, rich text, and mnemonic conventions",
+        rules=[
+            QARule("literal-qt-placeholder", r"(?<!%)%[1-9]\d*", "Verify that every Qt placeholder matches the source", "info"),
+            QARule("multiple-mnemonics", r"(?<!&)&[^&].*(?<!&)&[^&]", "Translation contains multiple mnemonic markers"),
+        ],
+    ),
+    "android": QAProfile(
+        name="android",
+        description="Android resource conventions",
+        rules=[
+            QARule("unescaped-apostrophe", r"(?<!\\)'", "Android apostrophes may need escaping", "info"),
+            QARule("leading-at", r"^@", "Literal values beginning with @ must be escaped"),
+        ],
+    ),
+    "subtitles": QAProfile(
+        name="subtitles",
+        description="Readable subtitle lines",
+        rules=[
+            QARule("long-line", r"(?m)^.{43,}$", "Subtitle line exceeds 42 characters"),
+            QARule("three-lines", r"(?:.*\n){2,}", "Subtitle contains more than two lines"),
+        ],
+    ),
     "formal": QAProfile(
         name="formal",
         description="Formal language rules (Swedish)",

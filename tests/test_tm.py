@@ -78,3 +78,15 @@ class TestTranslationMemory:
         conn.close()
         assert len(rows) >= 1
         assert ("Hello", "Hej") in rows
+
+    def test_project_context_boosts_matching_origin(self, tmp_path):
+        from linguaedit.services.tm import add_to_tm, lookup_tm
+
+        project_file = tmp_path / "project" / "catalog.po"
+        project_file.parent.mkdir()
+        add_to_tm("Save changes", "Spara ändringar", "en", "sv", str(project_file))
+        matches = lookup_tm(
+            "Save changes", "en", "sv", project_path=str(project_file.parent)
+        )
+        assert matches[0].context_bonus == 0.05
+        assert matches[0].similarity == 1.0

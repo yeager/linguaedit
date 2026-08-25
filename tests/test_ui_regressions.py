@@ -17,6 +17,7 @@ def _window(qapp, monkeypatch, tmp_path):
     monkeypatch.setattr(settings_module, "_SETTINGS_FILE", tmp_path / "settings.json")
     settings_module.Settings.reset_instance()
     win = window_module.LinguaEditWindow()
+    win._recovery_journal = window_module.RecoveryJournal(tmp_path / "recovery")
     return win
 
 
@@ -142,6 +143,18 @@ def test_review_mode_shows_controls_and_updates_status(qapp, monkeypatch, tmp_pa
         win._set_review_status("approved")
         assert win._review_status[win._current_index] == "approved"
         assert "Approved" in win._review_status_label.text()
+    finally:
+        win._modified = False
+        win.close()
+
+
+def test_pseudolocalize_action_updates_current_translation(qapp, monkeypatch, tmp_path):
+    win = _window(qapp, monkeypatch, tmp_path)
+    try:
+        win._load_file(str(FIXTURES / "test.po"))
+        win._on_pseudolocalize_current()
+        assert win._trans_view.toPlainText().startswith("⟦")
+        assert win._modified
     finally:
         win._modified = False
         win.close()

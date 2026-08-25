@@ -7,7 +7,10 @@ import urllib.error
 import urllib.request
 from typing import Optional
 
+from linguaedit.services.security_policy import NetworkPolicy
+
 BASE = "https://rest.api.transifex.com"
+_NETWORK_POLICY = NetworkPolicy(frozenset({"rest.api.transifex.com"}))
 
 
 class TransifexError(Exception):
@@ -20,6 +23,7 @@ def _request(endpoint: str, api_key: str, params: Optional[dict] = None) -> dict
     if params:
         qs = "&".join(f"{k}={v}" for k, v in params.items())
         url = f"{url}?{qs}"
+    _NETWORK_POLICY.validate(url)
     req = urllib.request.Request(url, headers={
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/vnd.api+json",
@@ -40,6 +44,7 @@ def _paginate(endpoint: str, api_key: str, params: Optional[dict] = None) -> lis
     results.extend(data.get("data", []))
     while data.get("links", {}).get("next"):
         next_url = data["links"]["next"]
+        _NETWORK_POLICY.validate(next_url)
         req = urllib.request.Request(next_url, headers={
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/vnd.api+json",

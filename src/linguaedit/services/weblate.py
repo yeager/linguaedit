@@ -13,6 +13,9 @@ from __future__ import annotations
 import json
 import urllib.error
 import urllib.request
+from urllib.parse import urlparse
+
+from linguaedit.services.security_policy import NetworkPolicy
 
 
 class WeblateError(Exception):
@@ -37,6 +40,8 @@ def _request(
     *endpoint* – e.g. ``/api/projects/``
     """
     url = f"{base_url.rstrip('/')}{endpoint}"
+    host = (urlparse(base_url).hostname or "").lower()
+    NetworkPolicy(frozenset({host})).validate(url)
     headers = {
         "Authorization": f"Token {api_key}",
         "Accept": accept,

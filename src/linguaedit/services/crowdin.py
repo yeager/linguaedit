@@ -7,6 +7,9 @@ import json
 import urllib.error
 import urllib.request
 from typing import Optional
+from urllib.parse import urlparse
+
+from linguaedit.services.security_policy import NetworkPolicy
 
 BASE = "https://api.crowdin.com/api/v2"
 
@@ -25,6 +28,8 @@ def _request(endpoint: str, api_key: str, method: str = "GET",
     if params:
         qs = "&".join(f"{k}={v}" for k, v in params.items())
         url = f"{url}?{qs}"
+    host = (urlparse(base_url).hostname or "").lower()
+    NetworkPolicy(frozenset({host})).validate(url)
     headers = {
         "Authorization": f"Bearer {api_key}",
     }

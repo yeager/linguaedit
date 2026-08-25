@@ -185,6 +185,7 @@ Distraction-free translation workflow (Ctrl+Alt+Z):
 
 - SQLite-based, zero configuration
 - Fuzzy matching with configurable threshold
+- Project-origin context weighting and match provenance
 - Auto-learning from your translations
 - Autocomplete suggestions while typing
 - Import/export TMX files
@@ -195,7 +196,8 @@ Distraction-free translation workflow (Ctrl+Alt+Z):
 - Term management with source → target pairs
 - Domain tagging
 - Consistency checking across the project
-- Import/export CSV
+- Import/export CSV, TSV, and TBX
+- Approved variants and forbidden terminology
 - Real-time term highlighting in editor
 
 ### 🤖 AI & Machine Translation
@@ -225,6 +227,10 @@ Distraction-free translation workflow (Ctrl+Alt+Z):
 - **Regex tester** — validate format strings
 - **Layout simulator** — pixel width checking for UI text
 - **Unicode inspector** — detect invisible/suspicious characters
+- **Automatic save-time QA** — errors are shown before a catalog is written
+- **Format profiles** — dedicated Qt, Android, subtitle, formal, and informal rules
+- **Accessibility audit** — missing labels and duplicate mnemonic keys
+- **Project health** — explainable score covering coverage, stale text, QA, terminology, and accessibility
 
 ### 📊 Project Dashboard (Ctrl+D)
 
@@ -238,6 +244,7 @@ Distraction-free translation workflow (Ctrl+Alt+Z):
 - **Git Diff** (Ctrl+Shift+D) — compare with previous commits
 - Detect outdated translations (source changed, translation didn't)
 - Stage, commit, branch management from within the editor
+- Secret scanning before LinguaEdit stages a file
 - File change monitoring with auto-reload
 
 ### 🎬 Video Subtitle Translation
@@ -256,6 +263,15 @@ Distraction-free translation workflow (Ctrl+Alt+Z):
   - Linux: Secret Service (GNOME Keyring / KWallet)
   - Fallback: AES-encrypted file with master password (PBKDF2, 480k iterations)
 - Security status visible in Preferences → Security
+- Explicit HTTPS host policy, private-network blocking, redacted errors, and no credential persistence in project files
+
+### 🛟 Local Recovery & Build Inspection
+
+- Atomic crash-recovery snapshots every 30 seconds with user-only file permissions
+- Recovery prompt when a newer unsaved local snapshot exists
+- Placeholder-safe pseudolocalization for layout testing, including RTL wrapping
+- Translation build inspector explaining `BUILD`/`SKIP`, completion, and the strict 20% threshold
+- Compiled `.qm` files remain artifact-only and `.ts` files remain source-only
 
 ### 🌐 Platform Integration
 
@@ -277,12 +293,12 @@ Distraction-free translation workflow (Ctrl+Alt+Z):
 
 ### 🧪 Testing
 
-- **97 tests** covering parsers, linter, TM, settings, security, GUI regressions, and packaging invariants
+- **125+ tests** covering parsers, linter, TM, settings, security, GUI regressions, recovery, terminology, and packaging invariants
 
 ### 🛠️ Advanced Tools
 
 - **Macro recording** — record and replay translation actions
-- **Plugin system** — extend functionality
+- **Versioned plugin API 1.0** — extend linting, suggestions, and transformations with compatibility checks
 - **Gamification** — achievements and streaks
 - **Pomodoro timer** — built-in focus timer
 - **TTS** — hear translations read aloud

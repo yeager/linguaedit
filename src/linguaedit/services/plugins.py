@@ -14,6 +14,8 @@ from PySide6.QtCore import QObject, Signal
 
 from linguaedit.services.linter import LintIssue
 
+PLUGIN_API_VERSION = "1.0"
+
 
 @dataclass
 class PluginInfo:
@@ -29,6 +31,8 @@ class PluginInfo:
 
 class PluginBase:
     """Base class that plugins should inherit from (optional)."""
+
+    api_version = PLUGIN_API_VERSION
     
     @property
     def name(self) -> str:
@@ -148,6 +152,11 @@ class PluginManager(QObject):
         
         # Instantiate plugin
         plugin_instance = plugin_class()
+        if getattr(plugin_instance, "api_version", None) != PLUGIN_API_VERSION:
+            raise ValueError(
+                f"Unsupported plugin API version for {plugin_file.name}; "
+                f"expected {PLUGIN_API_VERSION}"
+            )
         
         # Create plugin info
         plugin_info = PluginInfo(

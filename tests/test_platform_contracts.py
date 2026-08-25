@@ -78,3 +78,19 @@ def test_confidence_reports_method_band_and_evidence(qapp):
     assert factors.confidence_band == "high"
     assert "heuristic" in calculator.get_badge_text(factors.overall_score)
     calculator._executor.shutdown(wait=True)
+
+
+def test_platform_clients_reject_private_or_untrusted_pagination(monkeypatch):
+    from linguaedit.services import crowdin, transifex, weblate
+
+    monkeypatch.setattr(
+        transifex,
+        "_request",
+        lambda *args, **kwargs: {"data": [], "links": {"next": "https://localhost/secrets"}},
+    )
+    with pytest.raises(ValueError):
+        transifex._paginate("/projects", "token")
+    with pytest.raises(ValueError):
+        weblate._request("https://localhost", "/api/projects/", "token")
+    with pytest.raises(ValueError):
+        crowdin._request("/projects", "token", base_url="https://127.0.0.1")

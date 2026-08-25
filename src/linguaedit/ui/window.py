@@ -148,10 +148,15 @@ from linguaedit.services.glossary import (
 )
 from linguaedit.services.history import get_history_manager
 from linguaedit.services.linter import LintIssue, lint_entries
+from linguaedit.services.localization_tools import pseudolocalize
 from linguaedit.services.macros import MacroActionType, get_macro_manager
+from linguaedit.services.package_inspector import inspect_catalogs
 from linguaedit.services.plugins import get_plugin_manager
+from linguaedit.services.project_health import calculate_health, check_accessibility
 from linguaedit.services.qa_profiles import check_profile
+from linguaedit.services.recovery import RecoveryJournal
 from linguaedit.services.report import generate_report
+from linguaedit.services.security_policy import scan_paths
 from linguaedit.services.settings import Settings
 from linguaedit.services.spellcheck import check_text
 from linguaedit.services.svlang_checker import run_svlang_checks
@@ -760,6 +765,12 @@ class LinguaEditWindow(QMainWindow):
         self._saved_flash_timer.setSingleShot(True)
         self._saved_flash_timer.setInterval(300)
         self._saved_flash_timer.timeout.connect(self._clear_saved_flash)
+
+        self._recovery_journal = RecoveryJournal()
+        self._recovery_timer = QTimer(self)
+        self._recovery_timer.setInterval(30_000)
+        self._recovery_timer.timeout.connect(self._write_recovery_snapshot)
+        self._recovery_timer.start()
 
         self._horizontal_split = self._app_settings.get_value("horizontal_split", False)
         self._context_panel = None
@@ -1540,6 +1551,11 @@ class LinguaEditWindow(QMainWindow):
         qa_menu.addAction(self.tr("Glossary…"), self._show_glossary_dialog)
         qa_menu.addAction(self.tr("QA profile: Formal"), lambda: self._on_qa_profile("formal"))
         qa_menu.addAction(self.tr("QA profile: Informal"), lambda: self._on_qa_profile("informal"))
+        qa_menu.addAction(self.tr("QA profile: Qt"), lambda: self._on_qa_profile("qt"))
+        qa_menu.addAction(self.tr("QA profile: Android"), lambda: self._on_qa_profile("android"))
+        qa_menu.addAction(self.tr("QA profile: Subtitles"), lambda: self._on_qa_profile("subtitles"))
+        qa_menu.addAction(self.tr("Accessibility check"), self._on_accessibility_check)
+        qa_menu.addAction(self.tr("Project health"), self._on_project_health)
         qa_menu.addAction(self.tr("Export report…"), self._on_export_report)
 
         # Go
@@ -1586,6 +1602,8 @@ class LinguaEditWindow(QMainWindow):
         # New features
         tools_menu.addAction(self.tr("Regex Tester"), self._show_regex_tester, QKeySequence("Ctrl+Shift+X"))
         tools_menu.addAction(self.tr("Layout Simulator"), self._show_layout_simulator, QKeySequence("Ctrl+Alt+L"))
+        tools_menu.addAction(self.tr("Pseudolocalize current entry"), self._on_pseudolocalize_current)
+        tools_menu.addAction(self.tr("Inspect translation build"), self._on_inspect_translation_build)
         tools_menu.addAction(self.tr("OCR Screenshot…"), self._show_ocr_dialog, QKeySequence("Ctrl+Alt+O"))
         tools_menu.addSeparator()
         
@@ -2883,6 +2901,134 @@ class LinguaEditWindow(QMainWindow):
             return [(e.msgid, e.msgstr, e.fuzzy) for e in self._file_data.entries]
         return []
 
+    def _set_entry_translation(self, index: int, text: str) -> None:
+        """Set an entry target consistently across supported parser models."""
+        entry = self._file_data.entries[index]
+        for attribute in ("msgstr", "translation", "target", "value", "message"):
+            if hasattr(entry, attribute):
+                setattr(entry, attribute, text)
+                return
+        if self._file_type == "godot" and self._file_data.languages:
+            entry.translations[self._file_data.languages[0]] = text
+
+    def _write_recovery_snapshot(self) -> None:
+        if not self._modified or not self._file_data:
+            return
+        path = getattr(self._file_data, "path", None) or getattr(self._file_data, "file_path", None)
+        if not path:
+            return
+        self._save_current_entry()
+        entries = [
+            {"index": index, "translation": target, "fuzzy": fuzzy}
+            for index, (_, target, fuzzy) in enumerate(self._get_entries())
+        ]
+        self._recovery_journal.save(path, entries)
+
+    def _offer_recovery(self, path: Path) -> None:
+        if not self._recovery_journal.needs_recovery(path):
+            return
+        snapshot = self._recovery_journal.load(path)
+        if snapshot is None:
+            return
+        answer = QMessageBox.question(
+            self,
+            self.tr("Recover unsaved work"),
+            self.tr("A newer local recovery snapshot exists. Restore it?"),
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.Yes,
+        )
+        if answer != QMessageBox.Yes:
+            self._recovery_journal.discard(path)
+            return
+        for recovered in snapshot.entries:
+            index = recovered.get("index", -1)
+            if 0 <= index < len(self._file_data.entries):
+                self._set_entry_translation(index, recovered.get("translation", ""))
+        self._restored_recovery = True
+        self._modified = True
+
+    def _on_pseudolocalize_current(self) -> None:
+        if self._current_index < 0 or not self._file_data:
+            self._show_toast(self.tr("No entry selected"))
+            return
+        source, _, _ = self._get_entries()[self._current_index]
+        self._trans_view.setPlainText(pseudolocalize(source))
+        self._save_current_entry()
+        self._show_toast(self.tr("Pseudolocalized current entry"))
+
+    def _lint_input(self) -> list[dict]:
+        return [
+            {
+                "index": index,
+                "msgid": source,
+                "msgstr": target,
+                "flags": ["fuzzy"] if fuzzy else [],
+            }
+            for index, (source, target, fuzzy) in enumerate(self._get_entries())
+        ]
+
+    def _on_accessibility_check(self) -> None:
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+        issues = check_accessibility(self._lint_input())
+        if not issues:
+            self._show_dialog(self.tr("Accessibility"), self.tr("No accessibility issues found! ✓"))
+            return
+        details = "\n".join(f"#{issue.entry_index}: {issue.message}" for issue in issues[:50])
+        self._show_dialog(self.tr("Accessibility"), self.tr("Found %d issues:\n\n") % len(issues) + details)
+
+    def _on_project_health(self) -> None:
+        if not self._file_data:
+            self._show_toast(self.tr("No file loaded"))
+            return
+        entries = self._lint_input()
+        lint = lint_entries(entries)
+        glossary = check_glossary(entries)
+        accessibility = check_accessibility(entries)
+        health = calculate_health(
+            entries,
+            lint_issues=lint.issues,
+            glossary_violations=glossary,
+            accessibility_issues=accessibility,
+        )
+        text = self.tr(
+            "Health: %.1f%%\nTranslated: %d/%d\nStale: %d\nErrors: %d\n"
+            "Warnings: %d\nTerminology issues: %d\nAccessibility issues: %d\nRisks: %s"
+        ) % (
+            health.score,
+            health.translated,
+            health.total,
+            health.stale,
+            health.errors,
+            health.warnings,
+            health.glossary_violations,
+            health.accessibility_issues,
+            ", ".join(health.risks) or self.tr("none"),
+        )
+        self._show_dialog(self.tr("Project Health"), text)
+
+    def _on_inspect_translation_build(self) -> None:
+        start = Path(str(self._file_data.path)).parent if self._file_data else Path.cwd()
+        directory = QFileDialog.getExistingDirectory(
+            self,
+            self.tr("Select translation catalog directory"),
+            str(start),
+            options=self._file_dialog_options(),
+        )
+        if not directory:
+            return
+        statuses = inspect_catalogs(directory)
+        if not statuses:
+            self._show_dialog(self.tr("Translation Build"), self.tr("No linguaedit_*.ts catalogs found"))
+            return
+        lines = [
+            f"{status.locale}: {'BUILD' if status.will_build else 'SKIP'} — {status.reason} "
+            f"({status.finished}/{status.total})"
+            for status in statuses
+        ]
+        self._show_dialog(self.tr("Translation Build"), "\n".join(lines))
+
     def _get_context(self, idx: int) -> str:
         """Get context/msgctxt for entry at index."""
         if not self._file_data or idx >= len(self._file_data.entries):
@@ -3577,6 +3723,7 @@ class LinguaEditWindow(QMainWindow):
 
     def _load_file(self, path: str):
         p = Path(path)
+        self._restored_recovery = False
         if not p.exists():
             self._show_toast(self.tr("File not found: %s") % str(p))
             return
@@ -3675,6 +3822,7 @@ class LinguaEditWindow(QMainWindow):
             self._show_toast(self.tr("Error loading file: %s") % str(e))
             return
 
+        self._offer_recovery(p)
         self.setWindowTitle(self.tr("LinguaEdit — %s") % p.name)
 
         idx = self._tab_widget.currentIndex()
@@ -3694,7 +3842,7 @@ class LinguaEditWindow(QMainWindow):
         
         self._populate_list()
         self._update_stats()
-        self._modified = False
+        self._modified = self._restored_recovery
         self._undo_stacks.clear()
         self._redo_stacks.clear()
         self._lint_cache.clear()
@@ -3724,7 +3872,7 @@ class LinguaEditWindow(QMainWindow):
             self._tree.setCurrentItem(self._tree.topLevelItem(0))
         # Loading and selecting an entry updates editor widgets, but is not a
         # user edit and must never dirty the newly opened catalog.
-        self._modified = False
+        self._modified = self._restored_recovery
         self._save_current_tab()
 
     def _rebuild_recent_menu(self):
@@ -3908,6 +4056,18 @@ class LinguaEditWindow(QMainWindow):
         self._save_current_entry()
         if not self._file_data:
             return
+        lint_result = lint_entries(self._lint_input())
+        blocking_issues = [issue for issue in lint_result.issues if issue.severity == "error"]
+        if blocking_issues:
+            answer = QMessageBox.warning(
+                self,
+                self.tr("Quality errors"),
+                self.tr("Automatic QA found %d errors. Save anyway?") % len(blocking_issues),
+                QMessageBox.Save | QMessageBox.Cancel,
+                QMessageBox.Cancel,
+            )
+            if answer == QMessageBox.Cancel:
+                return
 
         # First save of extracted video subtitles → ask for filename
         if getattr(self, '_video_extract_suggested_path', None):
@@ -3999,6 +4159,7 @@ class LinguaEditWindow(QMainWindow):
             elif self._file_type == "resx":
                 save_resx(self._file_data, self._file_data.file_path)
             self._modified = False
+            self._recovery_journal.discard(self._file_data.path)
             self._show_toast(self.tr("Saved!"))
             self._update_stats()
             self._populate_list()
@@ -4594,6 +4755,13 @@ class LinguaEditWindow(QMainWindow):
             text=f"Update translation: {Path(str(self._file_data.path)).name}"
         )
         if ok and msg:
+            findings = scan_paths([self._file_data.path], Path(self._file_data.path).parent)
+            if findings:
+                self._show_dialog(
+                    self.tr("Git Commit Blocked"),
+                    self.tr("Potential secrets were found. Nothing was staged."),
+                )
+                return
             stage_file(self._file_data.path)
             success, output = commit(self._file_data.path, msg)
             if success:
@@ -7285,6 +7453,13 @@ class LinguaEditWindow(QMainWindow):
             from pathlib import Path
             
             file_dir = Path(self._file_data.path).parent
+            findings = scan_paths([self._file_data.path], file_dir)
+            if findings:
+                self._show_dialog(
+                    self.tr("Git Commit Blocked"),
+                    self.tr("Potential secrets were found. Nothing was staged."),
+                )
+                return
             
             # Add current file
             subprocess.run(

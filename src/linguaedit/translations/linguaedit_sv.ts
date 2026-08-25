@@ -3912,6 +3912,107 @@ Do you want to save before closing?</source>
 {}</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>A newer local recovery snapshot exists. Restore it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Accessibility</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Accessibility check</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Automatic QA found %d errors. Save anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Found %d issues:
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Git Commit Blocked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Health: %.1f%%
+Translated: %d/%d
+Stale: %d
+Errors: %d
+Warnings: %d
+Terminology issues: %d
+Accessibility issues: %d
+Risks: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Inspect translation build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No accessibility issues found! ✓</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No linguaedit_*.ts catalogs found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Potential secrets were found. Nothing was staged.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Project Health</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Project health</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pseudolocalize current entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pseudolocalized current entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>QA profile: Android</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>QA profile: Qt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>QA profile: Subtitles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Quality errors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Recover unsaved work</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select translation catalog directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translation Build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>none</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
     <context>
         <name>Linter</name>

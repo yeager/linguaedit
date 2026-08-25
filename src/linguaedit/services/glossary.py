@@ -16,6 +16,8 @@ class GlossaryTerm:
     target: str
     notes: str = ""
     domain: str = ""
+    variants: tuple[str, ...] = ()
+    forbidden: bool = False
 
 
 @dataclass
@@ -49,10 +51,19 @@ def get_terms() -> list[GlossaryTerm]:
         target=t.get("target", ""),
         notes=t.get("notes", ""),
         domain=t.get("domain", ""),
+        variants=tuple(t.get("variants", [])),
+        forbidden=bool(t.get("forbidden", False)),
     ) for t in data]
 
 
-def add_term(source: str, target: str, notes: str = "", domain: str = "") -> None:
+def add_term(
+    source: str,
+    target: str,
+    notes: str = "",
+    domain: str = "",
+    variants: tuple[str, ...] = (),
+    forbidden: bool = False,
+) -> None:
     """Add or update a glossary term."""
     data = _load_glossary()
     for t in data:
@@ -60,9 +71,18 @@ def add_term(source: str, target: str, notes: str = "", domain: str = "") -> Non
             t["target"] = target
             t["notes"] = notes
             t["domain"] = domain
+            t["variants"] = list(variants)
+            t["forbidden"] = forbidden
             _save_glossary(data)
             return
-    data.append({"source": source, "target": target, "notes": notes, "domain": domain})
+    data.append({
+        "source": source,
+        "target": target,
+        "notes": notes,
+        "domain": domain,
+        "variants": list(variants),
+        "forbidden": forbidden,
+    })
     _save_glossary(data)
 
 
@@ -93,10 +113,19 @@ def check_glossary(entries: list[dict]) -> list[GlossaryViolation]:
             continue
         for term in terms:
             if term.source.lower() in msgid:
-                if term.target.lower() not in msgstr:
+                accepted = (term.target, *term.variants)
+                if term.forbidden and any(candidate.lower() in msgstr for candidate in accepted if candidate):
                     violations.append(GlossaryViolation(
                         term=term, entry_index=idx,
                         found_translation=entry.get("msgstr", ""),
-                        message=f"Expected '{term.target}' for '{term.source}', not found in translation",
+                        message=f"Forbidden terminology used for '{term.source}'",
+                    ))
+                elif not term.forbidden and not any(
+                    candidate.lower() in msgstr for candidate in accepted if candidate
+                ):
+                    violations.append(GlossaryViolation(
+                        term=term, entry_index=idx,
+                        found_translation=entry.get("msgstr", ""),
+                        message=f"Expected an approved term for '{term.source}', not found in translation",
                     ))
     return violations

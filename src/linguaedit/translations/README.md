@@ -54,7 +54,7 @@ If you prefer working locally:
 - **Source strings** are extracted from Python code into `linguaedit_template.ts`
 - **Transifex** hosts the translation platform with 18 languages configured
 - **GitHub Actions** syncs translations daily (pull from Transifex → commit `.ts` files)
-- **CI** compiles all `.ts` → `.qm` on every build
+- **CI** compiles qualifying `.ts` → `.qm` during builds (strictly above 20%)
 - **LinguaEdit** auto-discovers available `.qm` files and shows them in the language picker with flags
 
 ## Compiling Translations
@@ -67,7 +67,7 @@ completion are skipped; compilation requires strictly more than 20% translated.
 
 ## Template
 
-`linguaedit_template.ts` contains all 1,487 source strings. It is regenerated before each release using:
+`linguaedit_template.ts` contains about 1,600 catalog entries. It is regenerated before each release using:
 
 ```bash
 find src/linguaedit -name "*.py" | sort | xargs pyside6-lupdate -ts translations/linguaedit_template.ts

@@ -24,6 +24,7 @@ class TMMatch:
     similarity: float  # 0.0 – 1.0
     file_path: Optional[str] = None
     timestamp: Optional[str] = None
+    context_bonus: float = 0.0
 
 
 def _init_db() -> None:
@@ -71,8 +72,15 @@ def add_to_tm(source: str, target: str, source_lang: str = "en", target_lang: st
         """, (source, target, source_lang, target_lang, file_path, datetime.now().isoformat()))
 
 
-def lookup_tm(source: str, source_lang: str = "en", target_lang: str = "sv", threshold: float = 0.7, max_results: int = 5) -> List[TMMatch]:
-    """Find TM matches above threshold."""
+def lookup_tm(
+    source: str,
+    source_lang: str = "en",
+    target_lang: str = "sv",
+    threshold: float = 0.7,
+    max_results: int = 5,
+    project_path: Optional[str] = None,
+) -> List[TMMatch]:
+    """Find TM matches, preferring entries from the active project."""
     if not source.strip():
         return []
         
@@ -99,20 +107,27 @@ def lookup_tm(source: str, source_lang: str = "en", target_lang: str = "sv", thr
                 sim = SequenceMatcher(None, source.lower(), db_source.lower()).ratio()
                 
                 if sim >= threshold:
+                    context_bonus = 0.0
+                    if project_path and db_file:
+                        project = Path(project_path).resolve()
+                        candidate = Path(db_file).resolve()
+                        if candidate == project or project in candidate.parents or candidate.parent == project.parent:
+                            context_bonus = 0.05
                     matches.append(TMMatch(
                         source=db_source,
                         target=db_target, 
                         source_lang=db_src_lang,
                         target_lang=db_tgt_lang,
-                        similarity=sim,
+                        similarity=min(1.0, sim + context_bonus),
                         file_path=db_file,
-                        timestamp=db_timestamp
+                        timestamp=db_timestamp,
+                        context_bonus=context_bonus,
                     ))
     except Exception:
         return []
         
     # Sort by similarity (best matches first)
-    matches.sort(key=lambda m: m.similarity, reverse=True)
+    matches.sort(key=lambda m: (m.similarity, m.timestamp or ""), reverse=True)
     return matches[:max_results]
 
 
