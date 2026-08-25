@@ -6,13 +6,12 @@ from collections import defaultdict
 from pathlib import Path
 from types import SimpleNamespace
 
-
 FIXTURES = Path(__file__).parent / "fixtures"
 
 
 def _window(qapp, monkeypatch, tmp_path):
-    import linguaedit.ui.window as window_module
     import linguaedit.services.settings as settings_module
+    import linguaedit.ui.window as window_module
 
     monkeypatch.setattr(window_module, "_RECENT_FILE", tmp_path / "recent.json")
     monkeypatch.setattr(settings_module, "_SETTINGS_FILE", tmp_path / "settings.json")
@@ -151,6 +150,7 @@ def test_review_mode_shows_controls_and_updates_status(qapp, monkeypatch, tmp_pa
 def test_locale_map_double_click_requests_real_file(qapp, tmp_path):
     from PySide6.QtCore import Qt
     from PySide6.QtWidgets import QListWidgetItem
+
     from linguaedit.ui.locale_map_dialog import LocaleMapDialog
 
     locale_file = tmp_path / "messages.po"
@@ -191,15 +191,11 @@ def test_search_dialog_emits_navigation_direction(qapp):
     assert events[1][-1] == -1
 
 
-def test_search_and_replace_respects_options(qapp, monkeypatch, tmp_path):
-    win = _window(qapp, monkeypatch, tmp_path)
-    try:
-        assert win._search_matches("A cat", "cat", False, True, False)
-        assert not win._search_matches("catalog", "cat", False, True, False)
-        replaced, count = win._replace_matches(
-            "Cat catalog CAT", "cat", "dog", False, True, False
-        )
-        assert replaced == "dog catalog dog"
-        assert count == 2
-    finally:
-        win.close()
+def test_search_and_replace_respects_options():
+    from linguaedit.services.text_search import matches, replace
+
+    assert matches("A cat", "cat", whole_words=True)
+    assert not matches("catalog", "cat", whole_words=True)
+    replaced, count = replace("Cat catalog CAT", "cat", "dog", whole_words=True)
+    assert replaced == "dog catalog dog"
+    assert count == 2

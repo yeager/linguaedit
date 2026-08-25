@@ -4,8 +4,8 @@
 from __future__ import annotations
 
 import json
-import urllib.request
 import urllib.error
+import urllib.request
 from typing import Optional
 
 BASE = "https://api.crowdin.com/api/v2"
@@ -47,8 +47,7 @@ def _request(endpoint: str, api_key: str, method: str = "GET",
                 return json.loads(content.decode())
             return content
     except urllib.error.HTTPError as e:
-        body_text = e.read().decode() if e.fp else ""
-        raise CrowdinError(f"HTTP {e.code}: {body_text[:500]}") from e
+        raise CrowdinError(f"HTTP {e.code}") from e
     except Exception as e:
         raise CrowdinError(str(e)) from e
 

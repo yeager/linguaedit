@@ -200,7 +200,7 @@
         </message>
         <message>
             <source>All</source>
-            <translation type="unfinished"/>
+            <translation>Wszystkie</translation>
         </message>
         <message>
             <source>Close</source>
@@ -216,7 +216,7 @@
         </message>
         <message>
             <source>Statistics</source>
-            <translation type="unfinished"/>
+            <translation>Statystyki</translation>
         </message>
         <message>
             <source>Translations: {0} | Streak: {1} days | Languages: {2}</source>
@@ -275,7 +275,7 @@
         </message>
         <message>
             <source>Copy Source</source>
-            <translation type="unfinished"/>
+            <translation>Kopiuj źródło</translation>
         </message>
         <message>
             <source>Copy source text to empty translation fields.</source>
@@ -315,7 +315,7 @@
         </message>
         <message>
             <source>Options</source>
-            <translation type="unfinished"/>
+            <translation>Opcje</translation>
         </message>
         <message>
             <source>Please enter text to find.</source>
@@ -422,7 +422,7 @@
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>Język źródłowy:</translation>
         </message>
         <message>
             <source>Status</source>
@@ -430,7 +430,7 @@
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>Język docelowy:</translation>
         </message>
         <message>
             <source>Translate All</source>
@@ -442,11 +442,11 @@
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tłumaczenie</translation>
         </message>
         <message>
             <source>Translation Settings</source>
-            <translation type="unfinished"/>
+            <translation>Ustawienia tłumaczenia</translation>
         </message>
         <message>
             <source>%d min %d s remaining</source>
@@ -504,7 +504,7 @@
         <name>ConcordanceDialog</name>
         <message>
             <source>Concordance Search</source>
-            <translation type="unfinished"/>
+            <translation>Wyszukiwanie konkordancji</translation>
         </message>
         <message>
             <source>Double-click a row to copy translation to clipboard.</source>
@@ -532,7 +532,7 @@
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tłumaczenie</translation>
         </message>
         <message>
             <source>Translation copied to clipboard.</source>
@@ -575,7 +575,7 @@
         </message>
         <message>
             <source>Translation Memory</source>
-            <translation type="unfinished"/>
+            <translation>Pamięć tłumaczeń</translation>
         </message>
         <message>
             <source>Source: %s\nTarget: %s</source>
@@ -615,7 +615,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>Rozmyte</translation>
         </message>
         <message>
             <source>Per-Language Progress</source>
@@ -631,11 +631,11 @@ Target: %s</source>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>Przetłumaczone</translation>
         </message>
         <message>
             <source>Untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Nieprzetłumaczone</translation>
         </message>
         <message>
             <source>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style=&apos;color:green&apos;&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:orange&apos;&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:red&apos;&gt;Untranslated: %d&lt;/span&gt;</source>
@@ -908,7 +908,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>Nieznany</translation>
         </message>
         <message>
             <source>User</source>
@@ -1027,7 +1027,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tłumaczenie</translation>
         </message>
         <message>
             <source>Translation (new)</source>
@@ -1078,7 +1078,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished"/>
+            <translation>Wyczyść</translation>
         </message>
         <message>
             <source>Confirm Delete</source>
@@ -1086,7 +1086,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Copy Source</source>
-            <translation type="unfinished"/>
+            <translation>Kopiuj źródło</translation>
         </message>
         <message>
             <source>Copy Target</source>
@@ -1305,7 +1305,7 @@ First errors:
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>Język:</translation>
         </message>
         <message>
             <source>Last-Translator:</source>
@@ -1417,7 +1417,7 @@ First errors:
         </message>
         <message>
             <source>Version:</source>
-            <translation type="unfinished"/>
+            <translation>Wersja:</translation>
         </message>
         <message>
             <source>XLIFF Attributes</source>
@@ -1512,7 +1512,7 @@ First errors:
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>Nieznany</translation>
         </message>
         <message>
             <source>User</source>
@@ -1629,11 +1629,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>%d matches</source>
-            <translation type="unfinished"/>
+            <translation>%d dopasowań</translation>
         </message>
         <message>
             <source>%d strings</source>
-            <translation type="unfinished"/>
+            <translation>%d ciągów</translation>
         </message>
         <message>
             <source>%d strings — %d translated, %d fuzzy, %d untranslated</source>
@@ -1645,43 +1645,43 @@ This will replace the current text with:
         </message>
         <message>
             <source>%p% translated</source>
-            <translation type="unfinished"/>
+            <translation>%p% przetłumaczono</translation>
         </message>
         <message>
             <source>&amp;Catalog</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Katalog</translation>
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Edycja</translation>
         </message>
         <message>
             <source>&amp;File</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Plik</translation>
         </message>
         <message>
             <source>&amp;Git</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Git</translation>
         </message>
         <message>
             <source>&amp;Go</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Idź</translation>
         </message>
         <message>
             <source>&amp;Help</source>
-            <translation type="unfinished"/>
+            <translation>Pomo&amp;c</translation>
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Otwórz…</translation>
         </message>
         <message>
             <source>&amp;Platforms</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Platformy</translation>
         </message>
         <message>
             <source>&amp;Save</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Zapisz</translation>
         </message>
         <message>
             <source>&amp;Tools</source>
@@ -1689,31 +1689,31 @@ This will replace the current text with:
         </message>
         <message>
             <source>&amp;View</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Widok</translation>
         </message>
         <message>
             <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Wyszukiwanie konkordancji&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference source:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Źródło odniesienia:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Tłumaczenie odniesienia:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Tekst źródłowy:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Sugestie&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Tłumaczenie:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
@@ -1721,11 +1721,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;(brak dopasowania w odniesieniu)&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No suggestions&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;Brak sugestii&lt;/i&gt;</translation>
         </message>
         <message>
             <source>A macro with this name already exists.</source>
@@ -1745,19 +1745,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>API Keys</source>
-            <translation type="unfinished"/>
+            <translation>Klucze API</translation>
         </message>
         <message>
             <source>API keys saved</source>
-            <translation type="unfinished"/>
+            <translation>Klucze API zapisane</translation>
         </message>
         <message>
             <source>About LinguaEdit</source>
-            <translation type="unfinished"/>
+            <translation>O LinguaEdit</translation>
         </message>
         <message>
             <source>About Qt</source>
-            <translation type="unfinished"/>
+            <translation>O Qt</translation>
         </message>
         <message>
             <source>Achievements…</source>
@@ -1769,11 +1769,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Add Comment</source>
-            <translation type="unfinished"/>
+            <translation>Dodaj komentarz</translation>
         </message>
         <message>
             <source>Add Field</source>
-            <translation type="unfinished"/>
+            <translation>Dodaj pole</translation>
         </message>
         <message>
             <source>Add Tag</source>
@@ -1785,7 +1785,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Add Term</source>
-            <translation type="unfinished"/>
+            <translation>Dodaj termin</translation>
         </message>
         <message>
             <source>Add translator notes...</source>
@@ -1793,11 +1793,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Added %d entries to Translation Memory</source>
-            <translation type="unfinished"/>
+            <translation>Dodano %d wpisów do pamięci tłumaczeń</translation>
         </message>
         <message>
             <source>Added: %s → %s</source>
-            <translation type="unfinished"/>
+            <translation>Dodano: %s → %s</translation>
         </message>
         <message>
             <source>All files (*)</source>
@@ -1805,7 +1805,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>All strings</source>
-            <translation type="unfinished"/>
+            <translation>Wszystkie ciągi</translation>
         </message>
         <message>
             <source>Already recording a macro</source>
@@ -1841,11 +1841,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Auto-propagate</source>
-            <translation type="unfinished"/>
+            <translation>Autopropagacja</translation>
         </message>
         <message>
             <source>Auto-propagated %d entries</source>
-            <translation type="unfinished"/>
+            <translation>Autopropagowano %d wpisów</translation>
         </message>
         <message>
             <source>Batch Edit…</source>
@@ -1869,11 +1869,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>By length</source>
-            <translation type="unfinished"/>
+            <translation>Wg długości</translation>
         </message>
         <message>
             <source>By reference</source>
-            <translation type="unfinished"/>
+            <translation>Wg odniesienia</translation>
         </message>
         <message>
             <source>Cancel</source>
@@ -1885,7 +1885,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Cannot compile: pyside6-lrelease or lrelease not found</source>
-            <translation type="unfinished"/>
+            <translation>Nie można skompilować: nie znaleziono pyside6-lrelease ani lrelease</translation>
         </message>
         <message>
             <source>Cannot split empty entry</source>
@@ -1905,15 +1905,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Check for updates</source>
-            <translation type="unfinished"/>
+            <translation>Sprawdź aktualizacje</translation>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished"/>
+            <translation>Wyczyść</translation>
         </message>
         <message>
             <source>Clear translation</source>
-            <translation type="unfinished"/>
+            <translation>Wyczyść tłumaczenie</translation>
         </message>
         <message>
             <source>Close Current File?</source>
@@ -1921,7 +1921,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Close Tab</source>
-            <translation type="unfinished"/>
+            <translation>Zamknij kartę</translation>
         </message>
         <message>
             <source>Close the current file and load extracted subtitles?</source>
@@ -1933,11 +1933,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Commit failed: %s</source>
-            <translation type="unfinished"/>
+            <translation>Zatwierdzenie nie powiodło się: %s</translation>
         </message>
         <message>
             <source>Commit message:</source>
-            <translation type="unfinished"/>
+            <translation>Komunikat zatwierdzenia:</translation>
         </message>
         <message>
             <source>Commit successful. Push to remote?</source>
@@ -1945,11 +1945,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Committed!</source>
-            <translation type="unfinished"/>
+            <translation>Zatwierdzone!</translation>
         </message>
         <message>
             <source>Commit…</source>
-            <translation type="unfinished"/>
+            <translation>Zatwierdzenie…</translation>
         </message>
         <message>
             <source>Compare Files…</source>
@@ -1957,27 +1957,27 @@ This will replace the current text with:
         </message>
         <message>
             <source>Compare language…</source>
-            <translation type="unfinished"/>
+            <translation>Porównaj język…</translation>
         </message>
         <message>
             <source>Compile</source>
-            <translation type="unfinished"/>
+            <translation>Kompiluj</translation>
         </message>
         <message>
             <source>Compile error: %s</source>
-            <translation type="unfinished"/>
+            <translation>Błąd kompilacji: %s</translation>
         </message>
         <message>
             <source>Compile not supported for %s files</source>
-            <translation type="unfinished"/>
+            <translation>Kompilacja nie jest obsługiwana dla plików %s</translation>
         </message>
         <message>
             <source>Compile translation</source>
-            <translation type="unfinished"/>
+            <translation>Kompiluj tłumaczenie</translation>
         </message>
         <message>
             <source>Compiled: %s</source>
-            <translation type="unfinished"/>
+            <translation>Skompilowano: %s</translation>
         </message>
         <message>
             <source>Concordance</source>
@@ -1989,11 +1989,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Consistency Check</source>
-            <translation type="unfinished"/>
+            <translation>Sprawdzenie spójności</translation>
         </message>
         <message>
             <source>Consistency check</source>
-            <translation type="unfinished"/>
+            <translation>Sprawdzenie spójności</translation>
         </message>
         <message>
             <source>Context</source>
@@ -2001,11 +2001,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Copy Source</source>
-            <translation type="unfinished"/>
+            <translation>Kopiuj źródło</translation>
         </message>
         <message>
             <source>Copy source</source>
-            <translation type="unfinished"/>
+            <translation>Kopiuj źródło</translation>
         </message>
         <message>
             <source>Copy source text to translation</source>
@@ -2013,11 +2013,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Copy source text to translation (Ctrl+B)</source>
-            <translation type="unfinished"/>
+            <translation>Kopiuj tekst źródłowy do tłumaczenia (Ctrl+B)</translation>
         </message>
         <message>
             <source>Copy source to translation</source>
-            <translation type="unfinished"/>
+            <translation>Kopiuj źródło do tłumaczenia</translation>
         </message>
         <message>
             <source>Could not read video file:\n%s</source>
@@ -2029,7 +2029,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Crowdin</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin</translation>
         </message>
         <message>
             <source>Crowdin Statistics…</source>
@@ -2097,7 +2097,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Diff…</source>
-            <translation type="unfinished"/>
+            <translation>Różnice…</translation>
         </message>
         <message>
             <source>Documentation</source>
@@ -2105,11 +2105,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Donate ♥</source>
-            <translation type="unfinished"/>
+            <translation>Wspomóż ♥</translation>
         </message>
         <message>
             <source>Done and next (Ctrl+Enter)</source>
-            <translation type="unfinished"/>
+            <translation>Gotowe i następny (Ctrl+Enter)</translation>
         </message>
         <message>
             <source>Edit Header…</source>
@@ -2117,7 +2117,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Edit file header metadata. Changes are applied when you click Save.</source>
-            <translation type="unfinished"/>
+            <translation>Edytuj metadane nagłówka pliku. Zmiany zostaną zastosowane po kliknięciu Zapisz.</translation>
         </message>
         <message>
             <source>Editor Below</source>
@@ -2145,7 +2145,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Enter translator note:</source>
-            <translation type="unfinished"/>
+            <translation>Wprowadź notatkę tłumacza:</translation>
         </message>
         <message>
             <source>Entry</source>
@@ -2169,11 +2169,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Error loading file: %s</source>
-            <translation type="unfinished"/>
+            <translation>Błąd ładowania pliku: %s</translation>
         </message>
         <message>
             <source>Error loading reference: %s</source>
-            <translation type="unfinished"/>
+            <translation>Błąd ładowania odniesienia: %s</translation>
         </message>
         <message>
             <source>Export Error</source>
@@ -2189,7 +2189,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Export report…</source>
-            <translation type="unfinished"/>
+            <translation>Eksportuj raport…</translation>
         </message>
         <message>
             <source>Exported {} translation units to {}</source>
@@ -2229,7 +2229,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Feed file to TM</source>
-            <translation type="unfinished"/>
+            <translation>Dodaj plik do TM</translation>
         </message>
         <message>
             <source>File</source>
@@ -2241,23 +2241,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>File Header / Metadata</source>
-            <translation type="unfinished"/>
+            <translation>Nagłówek pliku / Metadane</translation>
         </message>
         <message>
             <source>File metadata…</source>
-            <translation type="unfinished"/>
+            <translation>Metadane pliku…</translation>
         </message>
         <message>
             <source>File not found: %s</source>
-            <translation type="unfinished"/>
+            <translation>Nie znaleziono pliku: %s</translation>
         </message>
         <message>
             <source>File order</source>
-            <translation type="unfinished"/>
+            <translation>Kolejność pliku</translation>
         </message>
         <message>
             <source>File reloaded (changed externally)</source>
-            <translation type="unfinished"/>
+            <translation>Plik przeładowany (zmieniony zewnętrznie)</translation>
         </message>
         <message>
             <source>File reloaded (external change detected)</source>
@@ -2265,15 +2265,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Find &amp;&amp; Replace…</source>
-            <translation type="unfinished"/>
+            <translation>Znajdź i zamień…</translation>
         </message>
         <message>
             <source>Find in translations…</source>
-            <translation type="unfinished"/>
+            <translation>Znajdź w tłumaczeniach…</translation>
         </message>
         <message>
             <source>Find…</source>
-            <translation type="unfinished"/>
+            <translation>Znajdź…</translation>
         </message>
         <message>
             <source>Flags</source>
@@ -2309,15 +2309,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>Rozmyte</translation>
         </message>
         <message>
             <source>Fuzzy / Needs work</source>
-            <translation type="unfinished"/>
+            <translation>Rozmyte / Wymaga pracy</translation>
         </message>
         <message>
             <source>Fuzzy diff (previous → current)</source>
-            <translation type="unfinished"/>
+            <translation>Rozmyte różnice (poprzedni → bieżący)</translation>
         </message>
         <message>
             <source>Fuzzy:</source>
@@ -2325,11 +2325,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Fuzzy: %d</source>
-            <translation type="unfinished"/>
+            <translation>Rozmyte: %d</translation>
         </message>
         <message>
             <source>Fuzzy: 0</source>
-            <translation type="unfinished"/>
+            <translation>Rozmyte: 0</translation>
         </message>
         <message>
             <source>Generate Report</source>
@@ -2345,19 +2345,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Git</source>
-            <translation type="unfinished"/>
+            <translation>Git</translation>
         </message>
         <message>
             <source>Git Branches</source>
-            <translation type="unfinished"/>
+            <translation>Gałęzie Git</translation>
         </message>
         <message>
             <source>Git Commit</source>
-            <translation type="unfinished"/>
+            <translation>Zatwierdzenie Git</translation>
         </message>
         <message>
             <source>Git Diff</source>
-            <translation type="unfinished"/>
+            <translation>Różnice Git</translation>
         </message>
         <message>
             <source>Git Error</source>
@@ -2365,7 +2365,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Git Status</source>
-            <translation type="unfinished"/>
+            <translation>Status Git</translation>
         </message>
         <message>
             <source>Git operation error: {}</source>
@@ -2377,15 +2377,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>GitHub PR</source>
-            <translation type="unfinished"/>
+            <translation>GitHub PR</translation>
         </message>
         <message>
             <source>GitHub PR…</source>
-            <translation type="unfinished"/>
+            <translation>GitHub PR…</translation>
         </message>
         <message>
             <source>GitHub Repository</source>
-            <translation type="unfinished"/>
+            <translation>Repozytorium GitHub</translation>
         </message>
         <message>
             <source>Glossary</source>
@@ -2393,15 +2393,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Glossary / Terminology</source>
-            <translation type="unfinished"/>
+            <translation>Słownik / Terminologia</translation>
         </message>
         <message>
             <source>Glossary Check</source>
-            <translation type="unfinished"/>
+            <translation>Sprawdzenie słownika</translation>
         </message>
         <message>
             <source>Glossary…</source>
-            <translation type="unfinished"/>
+            <translation>Słownik…</translation>
         </message>
         <message>
             <source>HTML (*.html);;PDF (*.pdf)</source>
@@ -2441,7 +2441,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Invalid regex</source>
-            <translation type="unfinished"/>
+            <translation>Nieprawidłowe wyrażenie regularne</translation>
         </message>
         <message>
             <source>Issues</source>
@@ -2453,7 +2453,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Key</source>
-            <translation type="unfinished"/>
+            <translation>Klucz</translation>
         </message>
         <message>
             <source>Language</source>
@@ -2461,11 +2461,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>Język:</translation>
         </message>
         <message>
             <source>Languages</source>
-            <translation type="unfinished"/>
+            <translation>Języki</translation>
         </message>
         <message>
             <source>Layout Simulator</source>
@@ -2485,19 +2485,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Ln %d, Col %d</source>
-            <translation type="unfinished"/>
+            <translation>Ln %d, Kol %d</translation>
         </message>
         <message>
             <source>Ln 1, Col 1</source>
-            <translation type="unfinished"/>
+            <translation>Ln 1, Kol 1</translation>
         </message>
         <message>
             <source>Loaded reference: %s</source>
-            <translation type="unfinished"/>
+            <translation>Załadowano odniesienie: %s</translation>
         </message>
         <message>
             <source>Locale:</source>
-            <translation type="unfinished"/>
+            <translation>Ustawienia regionalne:</translation>
         </message>
         <message>
             <source>MT translation failed</source>
@@ -2517,7 +2517,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Manage API Keys…</source>
-            <translation type="unfinished"/>
+            <translation>Zarządzaj kluczami API…</translation>
         </message>
         <message>
             <source>Manage Macros…</source>
@@ -2533,7 +2533,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Mark this string as fuzzy / needs review (Ctrl+U)</source>
-            <translation type="unfinished"/>
+            <translation>Oznacz ten ciąg jako rozmyty / wymaga przeglądu (Ctrl+U)</translation>
         </message>
         <message>
             <source>Max width:</source>
@@ -2561,7 +2561,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Metadata updated</source>
-            <translation type="unfinished"/>
+            <translation>Metadane zaktualizowane</translation>
         </message>
         <message>
             <source>Minimap</source>
@@ -2585,19 +2585,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Needs work</source>
-            <translation type="unfinished"/>
+            <translation>Wymaga pracy</translation>
         </message>
         <message>
             <source>Next</source>
-            <translation type="unfinished"/>
+            <translation>Dalej</translation>
         </message>
         <message>
             <source>Next entry</source>
-            <translation type="unfinished"/>
+            <translation>Następny wpis</translation>
         </message>
         <message>
             <source>Next untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Następny nieprzetłumaczony</translation>
         </message>
         <message>
             <source>No File</source>
@@ -2625,11 +2625,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>No file</source>
-            <translation type="unfinished"/>
+            <translation>Brak pliku</translation>
         </message>
         <message>
             <source>No file loaded</source>
-            <translation type="unfinished"/>
+            <translation>Nie załadowano pliku</translation>
         </message>
         <message>
             <source>No glossary violations found! ✓</source>
@@ -2657,7 +2657,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>No more untranslated strings</source>
-            <translation type="unfinished"/>
+            <translation>Nie ma więcej nieprzetłumaczonych ciągów</translation>
         </message>
         <message>
             <source>No screenshot available</source>
@@ -2673,7 +2673,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>No text to check</source>
-            <translation type="unfinished"/>
+            <translation>Brak tekstu do sprawdzenia</translation>
         </message>
         <message>
             <source>No text to play</source>
@@ -2701,7 +2701,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Not a git repository</source>
-            <translation type="unfinished"/>
+            <translation>To nie jest repozytorium Git</translation>
         </message>
         <message>
             <source>Notes</source>
@@ -2717,7 +2717,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Open</source>
-            <translation type="unfinished"/>
+            <translation>Otwórz</translation>
         </message>
         <message>
             <source>Open Project…</source>
@@ -2729,7 +2729,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Open Translation File</source>
-            <translation type="unfinished"/>
+            <translation>Otwórz plik tłumaczenia</translation>
         </message>
         <message>
             <source>Open Video</source>
@@ -2741,7 +2741,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Options</source>
-            <translation type="unfinished"/>
+            <translation>Opcje</translation>
         </message>
         <message>
             <source>PO file merged successfully with POT file.\nPlease reload the file to see changes.</source>
@@ -2757,7 +2757,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Platform settings…</source>
-            <translation type="unfinished"/>
+            <translation>Ustawienia platformy…</translation>
         </message>
         <message>
             <source>Play Macro</source>
@@ -2785,19 +2785,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Pre-translate</source>
-            <translation type="unfinished"/>
+            <translation>Wstępne tłumaczenie</translation>
         </message>
         <message>
             <source>Pre-translated %d entries via %s</source>
-            <translation type="unfinished"/>
+            <translation>Wstępnie przetłumaczono %d wpisów przez %s</translation>
         </message>
         <message>
             <source>Pre-translate…</source>
-            <translation type="unfinished"/>
+            <translation>Wstępnie przetłumacz…</translation>
         </message>
         <message>
             <source>Preferences…</source>
-            <translation type="unfinished"/>
+            <translation>Preferencje…</translation>
         </message>
         <message>
             <source>Preview</source>
@@ -2805,15 +2805,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Previous</source>
-            <translation type="unfinished"/>
+            <translation>Poprzedni</translation>
         </message>
         <message>
             <source>Previous entry</source>
-            <translation type="unfinished"/>
+            <translation>Poprzedni wpis</translation>
         </message>
         <message>
             <source>Previous untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Poprzedni nieprzetłumaczony</translation>
         </message>
         <message>
             <source>Probing video for subtitle tracks…</source>
@@ -2833,7 +2833,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Pull from…</source>
-            <translation type="unfinished"/>
+            <translation>Pobierz z…</translation>
         </message>
         <message>
             <source>Push Changes</source>
@@ -2841,23 +2841,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>Push to…</source>
-            <translation type="unfinished"/>
+            <translation>Wyślij do…</translation>
         </message>
         <message>
             <source>QA Profile: %s</source>
-            <translation type="unfinished"/>
+            <translation>Profil QA: %s</translation>
         </message>
         <message>
             <source>QA profile: Formal</source>
-            <translation type="unfinished"/>
+            <translation>Profil QA: Formalny</translation>
         </message>
         <message>
             <source>QA profile: Informal</source>
-            <translation type="unfinished"/>
+            <translation>Profil QA: Nieformalny</translation>
         </message>
         <message>
             <source>Quality</source>
-            <translation type="unfinished"/>
+            <translation>Jakość</translation>
         </message>
         <message>
             <source>Quality Score</source>
@@ -2865,11 +2865,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Quit</source>
-            <translation type="unfinished"/>
+            <translation>Zakończ</translation>
         </message>
         <message>
             <source>Recent Files</source>
-            <translation type="unfinished"/>
+            <translation>Ostatnie pliki</translation>
         </message>
         <message>
             <source>Record Macro</source>
@@ -2881,11 +2881,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Redo</source>
-            <translation type="unfinished"/>
+            <translation>Ponów</translation>
         </message>
         <message>
             <source>Reference</source>
-            <translation type="unfinished"/>
+            <translation>Odniesienie</translation>
         </message>
         <message>
             <source>References</source>
@@ -2893,7 +2893,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Regex</source>
-            <translation type="unfinished"/>
+            <translation>Regex</translation>
         </message>
         <message>
             <source>Regex Tester</source>
@@ -2909,23 +2909,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>Remove Selected</source>
-            <translation type="unfinished"/>
+            <translation>Usuń zaznaczone</translation>
         </message>
         <message>
             <source>Replace</source>
-            <translation type="unfinished"/>
+            <translation>Zamień</translation>
         </message>
         <message>
             <source>Replace All</source>
-            <translation type="unfinished"/>
+            <translation>Zamień wszystko</translation>
         </message>
         <message>
             <source>Replace with…</source>
-            <translation type="unfinished"/>
+            <translation>Zamień na…</translation>
         </message>
         <message>
             <source>Replaced in %d entries</source>
-            <translation type="unfinished"/>
+            <translation>Zamieniono w %d wpisach</translation>
         </message>
         <message>
             <source>Report Options</source>
@@ -2933,7 +2933,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Report a Bug</source>
-            <translation type="unfinished"/>
+            <translation>Zgłoś błąd</translation>
         </message>
         <message>
             <source>Report error: %s</source>
@@ -2945,7 +2945,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Report saved to %s</source>
-            <translation type="unfinished"/>
+            <translation>Raport zapisany w %s</translation>
         </message>
         <message>
             <source>Report saved: %s</source>
@@ -2973,7 +2973,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Root key:</source>
-            <translation type="unfinished"/>
+            <translation>Klucz główny:</translation>
         </message>
         <message>
             <source>SRT files (*.srt);;VTT files (*.vtt);;All files (*)</source>
@@ -2981,7 +2981,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished"/>
+            <translation>Zapisz</translation>
         </message>
         <message>
             <source>Save &amp;As…</source>
@@ -3005,7 +3005,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Save error: %s</source>
-            <translation type="unfinished"/>
+            <translation>Błąd zapisu: %s</translation>
         </message>
         <message>
             <source>Saved as %s</source>
@@ -3013,7 +3013,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Saved!</source>
-            <translation type="unfinished"/>
+            <translation>Zapisano!</translation>
         </message>
         <message>
             <source>Search</source>
@@ -3021,11 +3021,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Search TM…</source>
-            <translation type="unfinished"/>
+            <translation>Szukaj w TM…</translation>
         </message>
         <message>
             <source>Search source and translation text…</source>
-            <translation type="unfinished"/>
+            <translation>Szukaj w tekście źródłowym i tłumaczeniu…</translation>
         </message>
         <message>
             <source>Select POT File</source>
@@ -3097,23 +3097,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>Source A → Z</source>
-            <translation type="unfinished"/>
+            <translation>Źródło A → Z</translation>
         </message>
         <message>
             <source>Source Z → A</source>
-            <translation type="unfinished"/>
+            <translation>Źródło Z → A</translation>
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>Język źródłowy:</translation>
         </message>
         <message>
             <source>Source term:</source>
-            <translation type="unfinished"/>
+            <translation>Termin źródłowy:</translation>
         </message>
         <message>
             <source>Source text</source>
-            <translation type="unfinished"/>
+            <translation>Tekst źródłowy</translation>
         </message>
         <message>
             <source>Source:</source>
@@ -3121,7 +3121,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Spell check current</source>
-            <translation type="unfinished"/>
+            <translation>Sprawdź pisownię bieżącego</translation>
         </message>
         <message>
             <source>Spelling issues:\n%s</source>
@@ -3137,11 +3137,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Statistics</source>
-            <translation type="unfinished"/>
+            <translation>Statystyki</translation>
         </message>
         <message>
             <source>Statistics…</source>
-            <translation type="unfinished"/>
+            <translation>Statystyki…</translation>
         </message>
         <message>
             <source>Status</source>
@@ -3149,11 +3149,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Status…</source>
-            <translation type="unfinished"/>
+            <translation>Status…</translation>
         </message>
         <message>
             <source>String Info</source>
-            <translation type="unfinished"/>
+            <translation>Informacje o ciągu</translation>
         </message>
         <message>
             <source>Subject:</source>
@@ -3169,7 +3169,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Switch branch…</source>
-            <translation type="unfinished"/>
+            <translation>Zmień gałąź…</translation>
         </message>
         <message>
             <source>System Default</source>
@@ -3177,7 +3177,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>TM / Suggestions</source>
-            <translation type="unfinished"/>
+            <translation>TM / Sugestie</translation>
         </message>
         <message>
             <source>TMX</source>
@@ -3213,11 +3213,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>Język docelowy:</translation>
         </message>
         <message>
             <source>Target term:</source>
-            <translation type="unfinished"/>
+            <translation>Termin docelowy:</translation>
         </message>
         <message>
             <source>Text-to-speech failed: {}</source>
@@ -3273,15 +3273,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Transifex</source>
-            <translation type="unfinished"/>
+            <translation>Transifex</translation>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>Przetłumaczone</translation>
         </message>
         <message>
             <source>Translated via %s</source>
-            <translation type="unfinished"/>
+            <translation>Przetłumaczono przez %s</translation>
         </message>
         <message>
             <source>Translated:</source>
@@ -3289,23 +3289,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>Translated: %d</source>
-            <translation type="unfinished"/>
+            <translation>Przetłumaczone: %d</translation>
         </message>
         <message>
             <source>Translated: 0</source>
-            <translation type="unfinished"/>
+            <translation>Przetłumaczone: 0</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tłumaczenie</translation>
         </message>
         <message>
             <source>Translation A → Z</source>
-            <translation type="unfinished"/>
+            <translation>Tłumaczenie A → Z</translation>
         </message>
         <message>
             <source>Translation Engine</source>
-            <translation type="unfinished"/>
+            <translation>Silnik tłumaczenia</translation>
         </message>
         <message>
             <source>API key:</source>
@@ -3337,7 +3337,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Translation Z → A</source>
-            <translation type="unfinished"/>
+            <translation>Tłumaczenie Z → A</translation>
         </message>
         <message>
             <source>Translation preview will appear here</source>
@@ -3357,7 +3357,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Undo</source>
-            <translation type="unfinished"/>
+            <translation>Cofnij</translation>
         </message>
         <message>
             <source>Unicode Inspector</source>
@@ -3365,7 +3365,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>Nieznany</translation>
         </message>
         <message>
             <source>Unsaved Changes</source>
@@ -3373,7 +3373,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Unsupported file type: %s</source>
-            <translation type="unfinished"/>
+            <translation>Nieobsługiwany typ pliku: %s</translation>
         </message>
         <message>
             <source>Untitled</source>
@@ -3381,7 +3381,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Nieprzetłumaczone</translation>
         </message>
         <message>
             <source>Untranslated/errors first</source>
@@ -3393,19 +3393,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Untranslated: %d</source>
-            <translation type="unfinished"/>
+            <translation>Nieprzetłumaczone: %d</translation>
         </message>
         <message>
             <source>Untranslated: 0</source>
-            <translation type="unfinished"/>
+            <translation>Nieprzetłumaczone: 0</translation>
         </message>
         <message>
             <source>Up to date</source>
-            <translation type="unfinished"/>
+            <translation>Aktualne</translation>
         </message>
         <message>
             <source>Update Available</source>
-            <translation type="unfinished"/>
+            <translation>Dostępna aktualizacja</translation>
         </message>
         <message>
             <source>Updated {} translation</source>
@@ -3413,19 +3413,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Validate</source>
-            <translation type="unfinished"/>
+            <translation>Waliduj</translation>
         </message>
         <message>
             <source>Validate (Lint)</source>
-            <translation type="unfinished"/>
+            <translation>Waliduj (Lint)</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished"/>
+            <translation>Wartość</translation>
         </message>
         <message>
             <source>Version:</source>
-            <translation type="unfinished"/>
+            <translation>Wersja:</translation>
         </message>
         <message>
             <source>Video</source>
@@ -3441,7 +3441,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Warnings</source>
-            <translation type="unfinished"/>
+            <translation>Ostrzeżenia</translation>
         </message>
         <message>
             <source>Watch File</source>
@@ -3457,7 +3457,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Weblate</source>
-            <translation type="unfinished"/>
+            <translation>Weblate</translation>
         </message>
         <message>
             <source>Website:</source>
@@ -3465,7 +3465,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>With warnings</source>
-            <translation type="unfinished"/>
+            <translation>Z ostrzeżeniami</translation>
         </message>
         <message>
             <source>Words: %d | Chars: %d | Source: %dw%s</source>
@@ -3493,11 +3493,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>lrelease error: %s</source>
-            <translation type="unfinished"/>
+            <translation>Błąd lrelease: %s</translation>
         </message>
         <message>
             <source>msgfmt error: %s</source>
-            <translation type="unfinished"/>
+            <translation>Błąd msgfmt: %s</translation>
         </message>
         <message>
             <source>msgmerge command not found. Please install gettext tools.</source>
@@ -3513,7 +3513,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>words</source>
-            <translation type="unfinished"/>
+            <translation>słów</translation>
         </message>
         <message>
             <source>{} chars | {} words | Source: {} chars</source>
@@ -3533,11 +3533,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>✓ No spelling issues found</source>
-            <translation type="unfinished"/>
+            <translation>✓ Nie znaleziono błędów pisowni</translation>
         </message>
         <message>
             <source>💬 Comment</source>
-            <translation type="unfinished"/>
+            <translation>💬 Komentarz</translation>
         </message>
         <message>
             <source>💾 Apply TM #1</source>
@@ -3724,10 +3724,6 @@ This will replace the current text with:
             <translation type="unfinished"/>
         </message>
         <message>
-            <source>Weblate</source>
-            <translation type="unfinished"/>
-        </message>
-        <message>
             <source>Weblate — %s</source>
             <translation type="unfinished"/>
         </message>
@@ -3740,7 +3736,7 @@ This will replace the current text with:
             <translation type="unfinished"/>
         </message>
     <message><source>No API Key</source><translation type="unfinished"/></message><message><source>No Transifex API key configured.
-Please add one in Translation → API Keys…</source><translation type="unfinished"/></message><message><source>No language statistics found.</source><translation type="unfinished"/></message><message><source>No organizations found.</source><translation type="unfinished"/></message><message><source>No projects found.</source><translation type="unfinished"/></message><message><source>Organization:</source><translation type="unfinished"/></message><message><source>Project:</source><translation type="unfinished"/></message><message><source>Select Organization</source><translation type="unfinished"/></message><message><source>Select Project</source><translation type="unfinished"/></message><message><source>Transifex Error</source><translation type="unfinished"/></message><message><source>Transifex Statistics…</source><translation type="unfinished"/></message><message><source>Transifex — %s</source><translation type="unfinished"/></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation type="unfinished"/></message>    <message>
+Please add one in Translation → API Keys…</source><translation type="unfinished"/></message><message><source>No language statistics found.</source><translation type="unfinished"/></message><message><source>No organizations found.</source><translation type="unfinished"/></message><message><source>No projects found.</source><translation type="unfinished"/></message><message><source>Organization:</source><translation>Organizacja:</translation></message><message><source>Project:</source><translation>Projekt:</translation></message><message><source>Select Organization</source><translation type="unfinished"/></message><message><source>Select Project</source><translation type="unfinished"/></message><message><source>Transifex Error</source><translation type="unfinished"/></message><message><source>Transifex Statistics…</source><translation type="unfinished"/></message><message><source>Transifex — %s</source><translation type="unfinished"/></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation type="unfinished"/></message>    <message>
         <source>
 
 Errors:
@@ -3936,11 +3932,11 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Format specifier mismatch: %s vs %s</source>
-            <translation type="unfinished"/>
+            <translation>Niezgodność specyfikatorów formatu: %s vs %s</translation>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>Rozmyte</translation>
         </message>
         <message>
             <source>Glossary inconsistency: %s</source>
@@ -3952,7 +3948,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Leading whitespace mismatch</source>
-            <translation type="unfinished"/>
+            <translation>Niezgodność początkowych białych znaków</translation>
         </message>
         <message>
             <source>Missing HTML/XML tags in translation: %s</source>
@@ -3960,23 +3956,23 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Newline count mismatch (%s vs %s)</source>
-            <translation type="unfinished"/>
+            <translation>Niezgodność liczby nowych linii (%s vs %s)</translation>
         </message>
         <message>
             <source>Python format mismatch: %s vs %s</source>
-            <translation type="unfinished"/>
+            <translation>Niezgodność formatu Python: %s vs %s</translation>
         </message>
         <message>
             <source>Suspicious length ratio: %sx</source>
-            <translation type="unfinished"/>
+            <translation>Podejrzany stosunek długości: %sx</translation>
         </message>
         <message>
             <source>Trailing whitespace mismatch</source>
-            <translation type="unfinished"/>
+            <translation>Niezgodność końcowych białych znaków</translation>
         </message>
         <message>
             <source>Untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Nieprzetłumaczone</translation>
         </message>
     </context>
     <context>
@@ -4011,7 +4007,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>Rozmyte</translation>
         </message>
         <message>
             <source>Locale Files</source>
@@ -4047,7 +4043,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Project:</source>
-            <translation type="unfinished"/>
+            <translation>Projekt:</translation>
         </message>
         <message>
             <source>Refresh</source>
@@ -4063,7 +4059,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>Przetłumaczone</translation>
         </message>
         <message>
             <source>Translation Map</source>
@@ -4246,7 +4242,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Name:</source>
-            <translation type="unfinished"/>
+            <translation>Imię:</translation>
         </message>
         <message>
             <source>No actions recorded</source>
@@ -4431,7 +4427,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>Język:</translation>
         </message>
         <message>
             <source>No Strings</source>
@@ -4479,7 +4475,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Remove Selected</source>
-            <translation type="unfinished"/>
+            <translation>Usuń zaznaczone</translation>
         </message>
         <message>
             <source>Save PO File</source>
@@ -4597,75 +4593,75 @@ Installation instructions:
         <name>PlatformSettingsDialog</name>
         <message>
             <source>API Key:</source>
-            <translation type="unfinished"/>
+            <translation>Klucz API:</translation>
         </message>
         <message>
             <source>API Token:</source>
-            <translation type="unfinished"/>
+            <translation>Token API:</translation>
         </message>
         <message>
             <source>API URL:</source>
-            <translation type="unfinished"/>
+            <translation>URL API:</translation>
         </message>
         <message>
             <source>Base URL:</source>
-            <translation type="unfinished"/>
+            <translation>Bazowy URL:</translation>
         </message>
         <message>
             <source>Component:</source>
-            <translation type="unfinished"/>
+            <translation>Komponent:</translation>
         </message>
         <message>
             <source>Crowdin</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin</translation>
         </message>
         <message>
             <source>Crowdin API</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin API</translation>
         </message>
         <message>
             <source>Organization:</source>
-            <translation type="unfinished"/>
+            <translation>Organizacja:</translation>
         </message>
         <message>
             <source>Platform Settings</source>
-            <translation type="unfinished"/>
+            <translation>Ustawienia platformy</translation>
         </message>
         <message>
             <source>Project ID:</source>
-            <translation type="unfinished"/>
+            <translation>ID projektu:</translation>
         </message>
         <message>
             <source>Project:</source>
-            <translation type="unfinished"/>
+            <translation>Projekt:</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished"/>
+            <translation>Zapisz</translation>
         </message>
         <message>
             <source>Test Connection</source>
-            <translation type="unfinished"/>
+            <translation>Testuj połączenie</translation>
         </message>
         <message>
             <source>Testing…</source>
-            <translation type="unfinished"/>
+            <translation>Testowanie…</translation>
         </message>
         <message>
             <source>Transifex</source>
-            <translation type="unfinished"/>
+            <translation>Transifex</translation>
         </message>
         <message>
             <source>Transifex API</source>
-            <translation type="unfinished"/>
+            <translation>Transifex API</translation>
         </message>
         <message>
             <source>Weblate</source>
-            <translation type="unfinished"/>
+            <translation>Weblate</translation>
         </message>
         <message>
             <source>Weblate API</source>
-            <translation type="unfinished"/>
+            <translation>Weblate API</translation>
         </message>
         <message>
             <source>⚠️ No system keychain — tokens stored with basic obfuscation. </source>
@@ -4673,23 +4669,23 @@ Installation instructions:
         </message>
         <message>
             <source>✓ Connected: %1</source>
-            <translation type="unfinished"/>
+            <translation>✓ Połączono: %1</translation>
         </message>
         <message>
             <source>✓ Saved</source>
-            <translation type="unfinished"/>
+            <translation>✓ Zapisano</translation>
         </message>
         <message>
             <source>✗ %1</source>
-            <translation type="unfinished"/>
+            <translation>✗ %1</translation>
         </message>
         <message>
             <source>✗ Project ID must be a number</source>
-            <translation type="unfinished"/>
+            <translation>✗ ID projektu musi być liczbą</translation>
         </message>
         <message>
             <source>🔒 Tokens stored in %1</source>
-            <translation type="unfinished"/>
+            <translation>🔒 Tokeny przechowywane w %1</translation>
         </message>
         <message>
         <source>Browse…</source>
@@ -4822,15 +4818,15 @@ Installation instructions:
         </message>
         <message>
             <source>Appearance</source>
-            <translation type="unfinished"/>
+            <translation>Wygląd</translation>
         </message>
         <message>
             <source>Auto-compile on save</source>
-            <translation type="unfinished"/>
+            <translation>Automatyczna kompilacja przy zapisie</translation>
         </message>
         <message>
             <source>Automatically compile .mo/.qm after saving</source>
-            <translation type="unfinished"/>
+            <translation>Automatycznie kompiluj .mo/.qm po zapisaniu</translation>
         </message>
         <message>
             <source>Character limit:</source>
@@ -4850,7 +4846,7 @@ Installation instructions:
         </message>
         <message>
             <source>Default engine:</source>
-            <translation type="unfinished"/>
+            <translation>Domyślny silnik:</translation>
         </message>
         <message>
             <source>Double-click to edit translations directly in the list</source>
@@ -4858,11 +4854,11 @@ Installation instructions:
         </message>
         <message>
             <source>Editor font size:</source>
-            <translation type="unfinished"/>
+            <translation>Rozmiar czcionki edytora:</translation>
         </message>
         <message>
             <source>Email:</source>
-            <translation type="unfinished"/>
+            <translation>E-mail:</translation>
         </message>
         <message>
             <source>Enable inline editing</source>
@@ -4874,7 +4870,7 @@ Installation instructions:
         </message>
         <message>
             <source>Formality level:</source>
-            <translation type="unfinished"/>
+            <translation>Poziom formalności:</translation>
         </message>
         <message>
             <source>Informal</source>
@@ -4882,7 +4878,7 @@ Installation instructions:
         </message>
         <message>
             <source>Language / Locale:</source>
-            <translation type="unfinished"/>
+            <translation>Język / Ustawienia regionalne:</translation>
         </message>
         <message>
             <source>Light</source>
@@ -4890,15 +4886,15 @@ Installation instructions:
         </message>
         <message>
             <source>Name:</source>
-            <translation type="unfinished"/>
+            <translation>Imię:</translation>
         </message>
         <message>
             <source>Personal</source>
-            <translation type="unfinished"/>
+            <translation>Osobiste</translation>
         </message>
         <message>
             <source>Preferences</source>
-            <translation type="unfinished"/>
+            <translation>Preferencje</translation>
         </message>
         <message>
             <source>Security</source>
@@ -4910,7 +4906,7 @@ Installation instructions:
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>Język źródłowy:</translation>
         </message>
         <message>
             <source>System default</source>
@@ -4918,19 +4914,19 @@ Installation instructions:
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>Język docelowy:</translation>
         </message>
         <message>
             <source>Team:</source>
-            <translation type="unfinished"/>
+            <translation>Zespół:</translation>
         </message>
         <message>
             <source>Theme:</source>
-            <translation type="unfinished"/>
+            <translation>Motyw:</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tłumaczenie</translation>
         </message>
         <message>
             <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.\n\nFor better security, install:\n• macOS: Built-in (Keychain)\n• Windows: pip install keyring\n• Linux: pip install secretstorage</source>
@@ -5018,7 +5014,7 @@ For better security, install:
         </message>
         <message>
             <source>Open</source>
-            <translation type="unfinished"/>
+            <translation>Otwórz</translation>
         </message>
         <message>
             <source>Open a project folder to begin</source>
@@ -5070,7 +5066,7 @@ For better security, install:
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>Przetłumaczone</translation>
         </message>
         <message>
             <source>Type</source>
@@ -5110,15 +5106,15 @@ For better security, install:
         </message>
         <message>
             <source>Translated: %d</source>
-            <translation type="unfinished"/>
+            <translation>Przetłumaczone: %d</translation>
         </message>
         <message>
             <source>Fuzzy: %d</source>
-            <translation type="unfinished"/>
+            <translation>Rozmyte: %d</translation>
         </message>
         <message>
             <source>Untranslated: %d</source>
-            <translation type="unfinished"/>
+            <translation>Nieprzetłumaczone: %d</translation>
         </message>
         <message>
             <source>Progress: %.1f%%</source>
@@ -5227,7 +5223,7 @@ For better security, install:
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished"/>
+            <translation>Wartość</translation>
         </message>
         <message>
             <source>Error: %s</source>
@@ -5286,7 +5282,7 @@ For better security, install:
         </message>
         <message>
             <source>Options</source>
-            <translation type="unfinished"/>
+            <translation>Opcje</translation>
         </message>
         <message>
             <source>Regular expression</source>
@@ -5294,11 +5290,11 @@ For better security, install:
         </message>
         <message>
             <source>Replace</source>
-            <translation type="unfinished"/>
+            <translation>Zamień</translation>
         </message>
         <message>
             <source>Replace All</source>
-            <translation type="unfinished"/>
+            <translation>Zamień wszystko</translation>
         </message>
         <message>
             <source>Replace:</source>
@@ -5314,11 +5310,11 @@ For better security, install:
         </message>
         <message>
             <source>Source text</source>
-            <translation type="unfinished"/>
+            <translation>Tekst źródłowy</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tłumaczenie</translation>
         </message>
         <message>
             <source>Whole words</source>
@@ -5526,83 +5522,83 @@ For better security, install:
         <name>SyncDialog</name>
         <message>
             <source>%1 resources found</source>
-            <translation type="unfinished"/>
+            <translation>Znaleziono %1 zasobów</translation>
         </message>
         <message>
             <source>Crowdin not configured. Open Platform Settings first.</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin nie jest skonfigurowany. Najpierw otwórz ustawienia platformy.</translation>
         </message>
         <message>
             <source>Downloading…</source>
-            <translation type="unfinished"/>
+            <translation>Pobieranie…</translation>
         </message>
         <message>
             <source>Enter a language code</source>
-            <translation type="unfinished"/>
+            <translation>Wprowadź kod języka</translation>
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>Język:</translation>
         </message>
         <message>
             <source>Loading resources…</source>
-            <translation type="unfinished"/>
+            <translation>Ładowanie zasobów…</translation>
         </message>
         <message>
             <source>No file loaded to push</source>
-            <translation type="unfinished"/>
+            <translation>Nie załadowano pliku do wysłania</translation>
         </message>
         <message>
             <source>No resources found</source>
-            <translation type="unfinished"/>
+            <translation>Nie znaleziono zasobów</translation>
         </message>
         <message>
             <source>Pull</source>
-            <translation type="unfinished"/>
+            <translation>Pobierz</translation>
         </message>
         <message>
             <source>Pull Translation</source>
-            <translation type="unfinished"/>
+            <translation>Pobierz tłumaczenie</translation>
         </message>
         <message>
             <source>Push</source>
-            <translation type="unfinished"/>
+            <translation>Wyślij</translation>
         </message>
         <message>
             <source>Push Translation</source>
-            <translation type="unfinished"/>
+            <translation>Wyślij tłumaczenie</translation>
         </message>
         <message>
             <source>Resources</source>
-            <translation type="unfinished"/>
+            <translation>Zasoby</translation>
         </message>
         <message>
             <source>Select a resource first</source>
-            <translation type="unfinished"/>
+            <translation>Najpierw wybierz zasób</translation>
         </message>
         <message>
             <source>Transifex not configured. Open Platform Settings first.</source>
-            <translation type="unfinished"/>
+            <translation>Transifex nie jest skonfigurowany. Najpierw otwórz ustawienia platformy.</translation>
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>Nieznany</translation>
         </message>
         <message>
             <source>Unknown platform</source>
-            <translation type="unfinished"/>
+            <translation>Nieznana platforma</translation>
         </message>
         <message>
             <source>Uploading…</source>
-            <translation type="unfinished"/>
+            <translation>Wysyłanie…</translation>
         </message>
         <message>
             <source>Weblate not configured. Open Platform Settings first.</source>
-            <translation type="unfinished"/>
+            <translation>Weblate nie jest skonfigurowany. Najpierw otwórz ustawienia platformy.</translation>
         </message>
         <message>
             <source>e.g. sv, de, fr</source>
-            <translation type="unfinished"/>
+            <translation>np. sv, de, fr</translation>
         </message>
         <message>
             <source>✓ Downloaded at %1\nSaved to: %2</source>
@@ -5610,24 +5606,25 @@ For better security, install:
         </message>
         <message>
             <source>✓ Uploaded at %1</source>
-            <translation type="unfinished"/>
+            <translation>✓ Wysłano %1</translation>
         </message>
         <message>
             <source>✗ Error: %1</source>
-            <translation type="unfinished"/>
+            <translation>✗ Błąd: %1</translation>
         </message>
         <message>
             <source>✗ Pull failed: %1</source>
-            <translation type="unfinished"/>
+            <translation>✗ Pobieranie nie powiodło się: %1</translation>
         </message>
         <message>
             <source>✗ Push failed: %1</source>
-            <translation type="unfinished"/>
+            <translation>✗ Wysyłanie nie powiodło się: %1</translation>
         </message>
         <message>
         <source>✓ Downloaded at %1
 Saved to: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>✓ Pobrano %1
+Zapisano w: %2</translation>
     </message>
 </context>
     <context>
@@ -5673,7 +5670,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished"/>
+            <translation>Wyczyść</translation>
         </message>
         <message>
             <source>Close</source>
@@ -5760,15 +5757,15 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Source text</source>
-            <translation type="unfinished"/>
+            <translation>Tekst źródłowy</translation>
         </message>
         <message>
             <source>Validation Results</source>
-            <translation type="unfinished"/>
+            <translation>Wyniki walidacji</translation>
         </message>
         <message>
             <source>Warnings</source>
-            <translation type="unfinished"/>
+            <translation>Ostrzeżenia</translation>
         </message>
     </context>
     <context>
@@ -6015,11 +6012,11 @@ Saved to: %2</source>
         <name>WelcomeDialog</name>
         <message>
             <source>Appearance</source>
-            <translation type="unfinished"/>
+            <translation>Wygląd</translation>
         </message>
         <message>
             <source>Back</source>
-            <translation type="unfinished"/>
+            <translation>Wstecz</translation>
         </message>
         <message>
             <source>Dark</source>
@@ -6031,15 +6028,15 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Default engine:</source>
-            <translation type="unfinished"/>
+            <translation>Domyślny silnik:</translation>
         </message>
         <message>
             <source>Editor font size:</source>
-            <translation type="unfinished"/>
+            <translation>Rozmiar czcionki edytora:</translation>
         </message>
         <message>
             <source>Email:</source>
-            <translation type="unfinished"/>
+            <translation>E-mail:</translation>
         </message>
         <message>
             <source>Formal</source>
@@ -6047,7 +6044,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Formality level:</source>
-            <translation type="unfinished"/>
+            <translation>Poziom formalności:</translation>
         </message>
         <message>
             <source>Informal</source>
@@ -6055,7 +6052,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Language / Locale:</source>
-            <translation type="unfinished"/>
+            <translation>Język / Ustawienia regionalne:</translation>
         </message>
         <message>
             <source>Light</source>
@@ -6063,23 +6060,23 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Name:</source>
-            <translation type="unfinished"/>
+            <translation>Imię:</translation>
         </message>
         <message>
             <source>Next</source>
-            <translation type="unfinished"/>
+            <translation>Dalej</translation>
         </message>
         <message>
             <source>Personal Information</source>
-            <translation type="unfinished"/>
+            <translation>Informacje osobiste</translation>
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>Język źródłowy:</translation>
         </message>
         <message>
             <source>Start translating!</source>
-            <translation type="unfinished"/>
+            <translation>Zacznij tłumaczyć!</translation>
         </message>
         <message>
             <source>System default</source>
@@ -6087,23 +6084,23 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>Język docelowy:</translation>
         </message>
         <message>
             <source>Team (optional):</source>
-            <translation type="unfinished"/>
+            <translation>Zespół (opcjonalnie):</translation>
         </message>
         <message>
             <source>Theme:</source>
-            <translation type="unfinished"/>
+            <translation>Motyw:</translation>
         </message>
         <message>
             <source>Translation Settings</source>
-            <translation type="unfinished"/>
+            <translation>Ustawienia tłumaczenia</translation>
         </message>
         <message>
             <source>Welcome to LinguaEdit</source>
-            <translation type="unfinished"/>
+            <translation>Witamy w LinguaEdit</translation>
         </message>
         <message>
             <source>You</source>
@@ -6153,7 +6150,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>Next entry</source>
-            <translation type="unfinished"/>
+            <translation>Następny wpis</translation>
         </message>
         <message>
             <source>Next untranslated ▶▶</source>
@@ -6161,7 +6158,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>Previous entry</source>
-            <translation type="unfinished"/>
+            <translation>Poprzedni wpis</translation>
         </message>
         <message>
             <source>Skip to next untranslated (Ctrl+Enter)</source>
@@ -6169,39 +6166,39 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&amp;Catalog</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Katalog</translation>
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Edycja</translation>
         </message>
         <message>
             <source>&amp;File</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Plik</translation>
         </message>
         <message>
             <source>&amp;Git</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Git</translation>
         </message>
         <message>
             <source>&amp;Go</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Idź</translation>
         </message>
         <message>
             <source>&amp;Help</source>
-            <translation type="unfinished"/>
+            <translation>Pomo&amp;c</translation>
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Otwórz…</translation>
         </message>
         <message>
             <source>&amp;Platforms</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Platformy</translation>
         </message>
         <message>
             <source>&amp;Save</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Zapisz</translation>
         </message>
         <message>
             <source>&amp;Tools</source>
@@ -6209,7 +6206,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&amp;View</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Widok</translation>
         </message>
         <message>
             <source>&lt;b&gt;%d&lt;/b&gt; untranslated strings out of &lt;b&gt;%d&lt;/b&gt; total.</source>
@@ -6229,7 +6226,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Wyszukiwanie konkordancji&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Outdated translations&lt;/b&gt; — source changed but translation stayed the same.</source>
@@ -6241,11 +6238,11 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;Reference source:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Źródło odniesienia:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Tłumaczenie odniesienia:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Removed strings:&lt;/b&gt; %d</source>
@@ -6253,23 +6250,15 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
-        </message>
-        <message>
-            <source>&lt;b&gt;Source text&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Tekst źródłowy:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Sugestie&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
-        </message>
-        <message>
-            <source>&lt;b&gt;Translation&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Tłumaczenie:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
@@ -6281,7 +6270,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;(brak dopasowania w odniesieniu)&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;MT unavailable&lt;/i&gt;</source>
@@ -6301,7 +6290,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;i&gt;No suggestions&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;Brak sugestii&lt;/i&gt;</translation>
         </message>
         <message>
             <source>Are you sure you want to delete the macro &apos;{}&apos;?</source>
@@ -6333,7 +6322,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>Find &amp;&amp; Replace…</source>
-            <translation type="unfinished"/>
+            <translation>Znajdź i zamień…</translation>
         </message>
         <message>
             <source>Macro &apos;{}&apos; has been saved successfully.</source>
@@ -6471,7 +6460,7 @@ quality assurance, spell checking, and platform integration.</source>
         <name>UpdateDialog</name>
         <message>
             <source>Update Available</source>
-            <translation type="unfinished"/>
+            <translation>Dostępna aktualizacja</translation>
         </message>
         <message>
             <source>A new version of LinguaEdit is available!</source>

@@ -2,13 +2,22 @@
 
 from __future__ import annotations
 
-from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QScrollArea, QWidget,
-    QPushButton, QLabel, QProgressBar, QGroupBox, QGridLayout,
-    QFrame, QTextEdit, QTabWidget
-)
 from PySide6.QtCore import Qt, Slot
-from PySide6.QtGui import QFont, QPixmap, QPainter, QColor, QBrush
+from PySide6.QtGui import QFont
+from PySide6.QtWidgets import (
+    QDialog,
+    QFrame,
+    QGridLayout,
+    QGroupBox,
+    QHBoxLayout,
+    QLabel,
+    QProgressBar,
+    QPushButton,
+    QScrollArea,
+    QTabWidget,
+    QVBoxLayout,
+    QWidget,
+)
 
 from linguaedit.services.achievements import get_achievement_manager
 

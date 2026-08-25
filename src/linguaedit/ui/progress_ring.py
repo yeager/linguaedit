@@ -5,13 +5,22 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 from __future__ import annotations
 
-from PySide6.QtWidgets import QWidget
 from PySide6.QtCore import (
-    Qt, Property, QPropertyAnimation, QEasingCurve, QRectF, QPointF,
+    Property,
+    QEasingCurve,
+    QPointF,
+    QPropertyAnimation,
+    QRectF,
+    Qt,
 )
 from PySide6.QtGui import (
-    QPainter, QConicalGradient, QPen, QColor, QFont, QFontMetrics,
+    QColor,
+    QConicalGradient,
+    QFont,
+    QPainter,
+    QPen,
 )
+from PySide6.QtWidgets import QWidget
 
 
 class ProgressRing(QWidget):

@@ -11,8 +11,8 @@ jobs:
     env:
       QT_QPA_PLATFORM: offscreen
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Install Qt runtime libraries
@@ -22,9 +22,9 @@ jobs:
       - name: Install project and test tools
         run: pip install -e ".[dev]" build
       - name: Run tests
-        run: pytest --cov=linguaedit --cov-report=term --cov-fail-under=29 -q
-      - name: Check critical Python errors
-        run: ruff check --select E9,F63,F7,F82 src tests build_backend.py translation_build.py
+        run: pytest --cov=linguaedit --cov-report=term --cov-fail-under=30 -q
+      - name: Run Python lint checks
+        run: ruff check src tests scripts build_backend.py translation_build.py
       - name: Check translation catalogs are current
         run: python scripts/update_translations.py --check
       - name: Compile Python sources
@@ -53,8 +53,8 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Install build tools

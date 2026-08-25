@@ -5,14 +5,20 @@
 
 from __future__ import annotations
 
-from PySide6.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QTabWidget, QPushButton,
-    QFrame, QSizePolicy,
-)
 from PySide6.QtCore import (
-    Qt, QPropertyAnimation, QEasingCurve, Property, Signal,
+    QEasingCurve,
+    QPropertyAnimation,
+    Signal,
 )
 from PySide6.QtGui import QFont
+from PySide6.QtWidgets import (
+    QFrame,
+    QHBoxLayout,
+    QPushButton,
+    QTabWidget,
+    QVBoxLayout,
+    QWidget,
+)
 
 
 class CollapsibleSidePanel(QWidget):

@@ -5,23 +5,40 @@ from __future__ import annotations
 
 import threading
 
+from PySide6.QtCore import QObject, Qt, Signal
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QTabWidget, QWidget,
-    QFormLayout, QLineEdit, QPushButton, QLabel, QGroupBox,
-    QListWidget, QListWidgetItem, QDialogButtonBox,
+    QDialog,
+    QDialogButtonBox,
+    QFormLayout,
+    QGroupBox,
+    QHBoxLayout,
+    QLabel,
+    QLineEdit,
+    QListWidget,
+    QListWidgetItem,
+    QPushButton,
+    QTabWidget,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, Signal, QObject
 
-from linguaedit.services.platforms import (
-    load_platform_config, save_platform_config,
-    TransifexConfig, WeblateConfig, CrowdinConfig,
-    transifex_test_connection, weblate_test_connection, crowdin_test_connection,
-    transifex_list_organizations, transifex_list_projects,
-    weblate_list_projects, weblate_list_components,
-    crowdin_list_projects,
-    PlatformError,
-)
 from linguaedit.services.keystore import backend_name, is_secure_backend
+from linguaedit.services.platforms import (
+    CrowdinConfig,
+    PlatformError,
+    TransifexConfig,
+    WeblateConfig,
+    crowdin_list_projects,
+    crowdin_test_connection,
+    load_platform_config,
+    save_platform_config,
+    transifex_list_organizations,
+    transifex_list_projects,
+    transifex_test_connection,
+    weblate_list_components,
+    weblate_list_projects,
+    weblate_test_connection,
+)
 
 
 class _SignalHelper(QObject):

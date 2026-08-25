@@ -3,22 +3,39 @@
 from __future__ import annotations
 
 import csv
-from pathlib import Path
-from typing import List, Dict, Optional
+from typing import Dict, List, Optional
 
+from PySide6.QtCore import Qt, QThread, Signal
+from PySide6.QtGui import QAction, QKeySequence, QShortcut
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QGridLayout,
-    QLabel, QLineEdit, QPushButton, QTableWidget, QTableWidgetItem,
-    QHeaderView, QMessageBox, QFileDialog, QDialogButtonBox,
-    QGroupBox, QTextEdit, QComboBox, QProgressBar,
-    QAbstractItemView, QMenu, QFrame, QApplication
+    QAbstractItemView,
+    QApplication,
+    QComboBox,
+    QDialog,
+    QDialogButtonBox,
+    QFileDialog,
+    QFrame,
+    QGridLayout,
+    QGroupBox,
+    QHBoxLayout,
+    QHeaderView,
+    QLabel,
+    QLineEdit,
+    QMenu,
+    QMessageBox,
+    QProgressBar,
+    QPushButton,
+    QTableWidget,
+    QTableWidgetItem,
+    QTextEdit,
+    QVBoxLayout,
 )
-from PySide6.QtCore import Qt, Signal, QThread
-from PySide6.QtGui import QAction, QIcon, QKeySequence, QShortcut
 
 from linguaedit.services.glossary import (
-    get_terms, add_term, remove_term, GlossaryTerm,
-    _load_glossary, _save_glossary
+    GlossaryTerm,
+    add_term,
+    get_terms,
+    remove_term,
 )
 
 

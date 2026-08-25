@@ -6,13 +6,19 @@ pluralform enligt språkets CLDR-regler.
 
 from __future__ import annotations
 
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, Optional
+
+from PySide6.QtCore import Signal
 from PySide6.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QTabWidget, QPlainTextEdit,
-    QLabel, QGroupBox, QPushButton, QTextEdit
+    QGroupBox,
+    QHBoxLayout,
+    QLabel,
+    QPlainTextEdit,
+    QPushButton,
+    QTabWidget,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, Signal
-from PySide6.QtGui import QFont
 
 from linguaedit.parsers.po_parser import TranslationEntry
 

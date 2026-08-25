@@ -3726,10 +3726,6 @@ This will replace the current text with:
             <translation type="unfinished" />
         </message>
         <message>
-            <source>Weblate</source>
-            <translation type="unfinished" />
-        </message>
-        <message>
             <source>Weblate — %s</source>
             <translation type="unfinished" />
         </message>
@@ -6258,19 +6254,11 @@ quality assurance, spell checking, and platform integration.</source>
             <translation type="unfinished" />
         </message>
         <message>
-            <source>&lt;b&gt;Source text&lt;/b&gt;</source>
-            <translation type="unfinished" />
-        </message>
-        <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
             <translation type="unfinished" />
         </message>
         <message>
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
-            <translation type="unfinished" />
-        </message>
-        <message>
-            <source>&lt;b&gt;Translation&lt;/b&gt;</source>
             <translation type="unfinished" />
         </message>
         <message>

@@ -3,28 +3,41 @@
 
 from __future__ import annotations
 
-import threading
 import tempfile
+import threading
 from datetime import datetime
-from pathlib import Path
 
+from PySide6.QtCore import QObject, Qt, Signal
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QListWidget, QListWidgetItem, QLineEdit, QProgressBar,
+    QDialog,
     QGroupBox,
+    QHBoxLayout,
+    QLabel,
+    QLineEdit,
+    QListWidget,
+    QListWidgetItem,
+    QProgressBar,
+    QPushButton,
+    QVBoxLayout,
 )
-from PySide6.QtCore import Qt, Signal, QObject, QCoreApplication
 
 from linguaedit.services.platforms import (
-    load_platform_config,
-    TransifexConfig, WeblateConfig, CrowdinConfig,
-    transifex_list_resources, transifex_list_languages, transifex_download,
-    transifex_upload_translation,
-    weblate_list_translations, weblate_list_components, weblate_download, weblate_upload,
-    crowdin_list_files, crowdin_list_languages, crowdin_download_file,
-    crowdin_build_translations, crowdin_poll_build,
-    crowdin_upload_translation,
+    CrowdinConfig,
     PlatformError,
+    TransifexConfig,
+    WeblateConfig,
+    crowdin_build_translations,
+    crowdin_download_file,
+    crowdin_list_files,
+    crowdin_poll_build,
+    crowdin_upload_translation,
+    load_platform_config,
+    transifex_download,
+    transifex_list_resources,
+    transifex_upload_translation,
+    weblate_download,
+    weblate_list_translations,
+    weblate_upload,
 )
 
 

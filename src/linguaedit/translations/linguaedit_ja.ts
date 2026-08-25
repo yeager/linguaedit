@@ -200,7 +200,7 @@
         </message>
         <message>
             <source>All</source>
-            <translation type="unfinished"/>
+            <translation>すべて</translation>
         </message>
         <message>
             <source>Close</source>
@@ -216,7 +216,7 @@
         </message>
         <message>
             <source>Statistics</source>
-            <translation type="unfinished"/>
+            <translation>統計</translation>
         </message>
         <message>
             <source>Translations: {0} | Streak: {1} days | Languages: {2}</source>
@@ -275,7 +275,7 @@
         </message>
         <message>
             <source>Copy Source</source>
-            <translation type="unfinished"/>
+            <translation>原文をコピー</translation>
         </message>
         <message>
             <source>Copy source text to empty translation fields.</source>
@@ -315,7 +315,7 @@
         </message>
         <message>
             <source>Options</source>
-            <translation type="unfinished"/>
+            <translation>オプション</translation>
         </message>
         <message>
             <source>Please enter text to find.</source>
@@ -422,7 +422,7 @@
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>原文言語:</translation>
         </message>
         <message>
             <source>Status</source>
@@ -430,7 +430,7 @@
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>翻訳先言語:</translation>
         </message>
         <message>
             <source>Translate All</source>
@@ -442,11 +442,11 @@
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>翻訳</translation>
         </message>
         <message>
             <source>Translation Settings</source>
-            <translation type="unfinished"/>
+            <translation>翻訳設定</translation>
         </message>
         <message>
             <source>%d min %d s remaining</source>
@@ -504,7 +504,7 @@
         <name>ConcordanceDialog</name>
         <message>
             <source>Concordance Search</source>
-            <translation type="unfinished"/>
+            <translation>コンコーダンス検索</translation>
         </message>
         <message>
             <source>Double-click a row to copy translation to clipboard.</source>
@@ -532,7 +532,7 @@
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>翻訳</translation>
         </message>
         <message>
             <source>Translation copied to clipboard.</source>
@@ -575,7 +575,7 @@
         </message>
         <message>
             <source>Translation Memory</source>
-            <translation type="unfinished"/>
+            <translation>翻訳メモリ</translation>
         </message>
         <message>
             <source>Source: %s\nTarget: %s</source>
@@ -615,7 +615,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>あいまい</translation>
         </message>
         <message>
             <source>Per-Language Progress</source>
@@ -631,11 +631,11 @@ Target: %s</source>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>翻訳済み</translation>
         </message>
         <message>
             <source>Untranslated</source>
-            <translation type="unfinished"/>
+            <translation>未翻訳</translation>
         </message>
         <message>
             <source>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style=&apos;color:green&apos;&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:orange&apos;&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:red&apos;&gt;Untranslated: %d&lt;/span&gt;</source>
@@ -908,7 +908,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>不明</translation>
         </message>
         <message>
             <source>User</source>
@@ -1027,7 +1027,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>翻訳</translation>
         </message>
         <message>
             <source>Translation (new)</source>
@@ -1078,7 +1078,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished"/>
+            <translation>クリア</translation>
         </message>
         <message>
             <source>Confirm Delete</source>
@@ -1086,7 +1086,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Copy Source</source>
-            <translation type="unfinished"/>
+            <translation>原文をコピー</translation>
         </message>
         <message>
             <source>Copy Target</source>
@@ -1305,7 +1305,7 @@ First errors:
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>言語:</translation>
         </message>
         <message>
             <source>Last-Translator:</source>
@@ -1417,7 +1417,7 @@ First errors:
         </message>
         <message>
             <source>Version:</source>
-            <translation type="unfinished"/>
+            <translation>バージョン:</translation>
         </message>
         <message>
             <source>XLIFF Attributes</source>
@@ -1512,7 +1512,7 @@ First errors:
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>不明</translation>
         </message>
         <message>
             <source>User</source>
@@ -1629,11 +1629,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>%d matches</source>
-            <translation type="unfinished"/>
+            <translation>%d 件の一致</translation>
         </message>
         <message>
             <source>%d strings</source>
-            <translation type="unfinished"/>
+            <translation>%d 文字列</translation>
         </message>
         <message>
             <source>%d strings — %d translated, %d fuzzy, %d untranslated</source>
@@ -1645,43 +1645,43 @@ This will replace the current text with:
         </message>
         <message>
             <source>%p% translated</source>
-            <translation type="unfinished"/>
+            <translation>%p% 翻訳済み</translation>
         </message>
         <message>
             <source>&amp;Catalog</source>
-            <translation type="unfinished"/>
+            <translation>カタログ(&amp;C)</translation>
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation type="unfinished"/>
+            <translation>編集(&amp;E)</translation>
         </message>
         <message>
             <source>&amp;File</source>
-            <translation type="unfinished"/>
+            <translation>ファイル(&amp;F)</translation>
         </message>
         <message>
             <source>&amp;Git</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Git</translation>
         </message>
         <message>
             <source>&amp;Go</source>
-            <translation type="unfinished"/>
+            <translation>移動(&amp;G)</translation>
         </message>
         <message>
             <source>&amp;Help</source>
-            <translation type="unfinished"/>
+            <translation>ヘルプ(&amp;H)</translation>
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation type="unfinished"/>
+            <translation>開く(&amp;O)…</translation>
         </message>
         <message>
             <source>&amp;Platforms</source>
-            <translation type="unfinished"/>
+            <translation>プラットフォーム(&amp;P)</translation>
         </message>
         <message>
             <source>&amp;Save</source>
-            <translation type="unfinished"/>
+            <translation>保存(&amp;S)</translation>
         </message>
         <message>
             <source>&amp;Tools</source>
@@ -1689,31 +1689,31 @@ This will replace the current text with:
         </message>
         <message>
             <source>&amp;View</source>
-            <translation type="unfinished"/>
+            <translation>表示(&amp;V)</translation>
         </message>
         <message>
             <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;コンコーダンス検索&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference source:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;参照元:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;参照翻訳:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;原文:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;提案&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;翻訳:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
@@ -1721,11 +1721,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;(参照に一致なし)&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No suggestions&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;提案なし&lt;/i&gt;</translation>
         </message>
         <message>
             <source>A macro with this name already exists.</source>
@@ -1745,19 +1745,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>API Keys</source>
-            <translation type="unfinished"/>
+            <translation>APIキー</translation>
         </message>
         <message>
             <source>API keys saved</source>
-            <translation type="unfinished"/>
+            <translation>APIキーを保存しました</translation>
         </message>
         <message>
             <source>About LinguaEdit</source>
-            <translation type="unfinished"/>
+            <translation>LinguaEditについて</translation>
         </message>
         <message>
             <source>About Qt</source>
-            <translation type="unfinished"/>
+            <translation>Qtについて</translation>
         </message>
         <message>
             <source>Achievements…</source>
@@ -1769,11 +1769,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Add Comment</source>
-            <translation type="unfinished"/>
+            <translation>コメントを追加</translation>
         </message>
         <message>
             <source>Add Field</source>
-            <translation type="unfinished"/>
+            <translation>フィールドを追加</translation>
         </message>
         <message>
             <source>Add Tag</source>
@@ -1785,7 +1785,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Add Term</source>
-            <translation type="unfinished"/>
+            <translation>用語を追加</translation>
         </message>
         <message>
             <source>Add translator notes...</source>
@@ -1793,11 +1793,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Added %d entries to Translation Memory</source>
-            <translation type="unfinished"/>
+            <translation>翻訳メモリに %d 件のエントリを追加しました</translation>
         </message>
         <message>
             <source>Added: %s → %s</source>
-            <translation type="unfinished"/>
+            <translation>追加: %s → %s</translation>
         </message>
         <message>
             <source>All files (*)</source>
@@ -1805,7 +1805,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>All strings</source>
-            <translation type="unfinished"/>
+            <translation>すべての文字列</translation>
         </message>
         <message>
             <source>Already recording a macro</source>
@@ -1841,11 +1841,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Auto-propagate</source>
-            <translation type="unfinished"/>
+            <translation>自動伝播</translation>
         </message>
         <message>
             <source>Auto-propagated %d entries</source>
-            <translation type="unfinished"/>
+            <translation>%d 件のエントリを自動伝播しました</translation>
         </message>
         <message>
             <source>Batch Edit…</source>
@@ -1869,11 +1869,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>By length</source>
-            <translation type="unfinished"/>
+            <translation>長さ順</translation>
         </message>
         <message>
             <source>By reference</source>
-            <translation type="unfinished"/>
+            <translation>参照順</translation>
         </message>
         <message>
             <source>Cancel</source>
@@ -1885,7 +1885,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Cannot compile: pyside6-lrelease or lrelease not found</source>
-            <translation type="unfinished"/>
+            <translation>コンパイルできません: pyside6-lrelease または lrelease が見つかりません</translation>
         </message>
         <message>
             <source>Cannot split empty entry</source>
@@ -1905,15 +1905,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Check for updates</source>
-            <translation type="unfinished"/>
+            <translation>アップデートを確認</translation>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished"/>
+            <translation>クリア</translation>
         </message>
         <message>
             <source>Clear translation</source>
-            <translation type="unfinished"/>
+            <translation>翻訳をクリア</translation>
         </message>
         <message>
             <source>Close Current File?</source>
@@ -1921,7 +1921,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Close Tab</source>
-            <translation type="unfinished"/>
+            <translation>タブを閉じる</translation>
         </message>
         <message>
             <source>Close the current file and load extracted subtitles?</source>
@@ -1933,11 +1933,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Commit failed: %s</source>
-            <translation type="unfinished"/>
+            <translation>コミットに失敗しました: %s</translation>
         </message>
         <message>
             <source>Commit message:</source>
-            <translation type="unfinished"/>
+            <translation>コミットメッセージ:</translation>
         </message>
         <message>
             <source>Commit successful. Push to remote?</source>
@@ -1945,11 +1945,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Committed!</source>
-            <translation type="unfinished"/>
+            <translation>コミットしました！</translation>
         </message>
         <message>
             <source>Commit…</source>
-            <translation type="unfinished"/>
+            <translation>コミット…</translation>
         </message>
         <message>
             <source>Compare Files…</source>
@@ -1957,27 +1957,27 @@ This will replace the current text with:
         </message>
         <message>
             <source>Compare language…</source>
-            <translation type="unfinished"/>
+            <translation>言語を比較…</translation>
         </message>
         <message>
             <source>Compile</source>
-            <translation type="unfinished"/>
+            <translation>コンパイル</translation>
         </message>
         <message>
             <source>Compile error: %s</source>
-            <translation type="unfinished"/>
+            <translation>コンパイルエラー: %s</translation>
         </message>
         <message>
             <source>Compile not supported for %s files</source>
-            <translation type="unfinished"/>
+            <translation>%s ファイルのコンパイルはサポートされていません</translation>
         </message>
         <message>
             <source>Compile translation</source>
-            <translation type="unfinished"/>
+            <translation>翻訳をコンパイル</translation>
         </message>
         <message>
             <source>Compiled: %s</source>
-            <translation type="unfinished"/>
+            <translation>コンパイル完了: %s</translation>
         </message>
         <message>
             <source>Concordance</source>
@@ -1989,11 +1989,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Consistency Check</source>
-            <translation type="unfinished"/>
+            <translation>一貫性チェック</translation>
         </message>
         <message>
             <source>Consistency check</source>
-            <translation type="unfinished"/>
+            <translation>一貫性チェック</translation>
         </message>
         <message>
             <source>Context</source>
@@ -2001,11 +2001,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Copy Source</source>
-            <translation type="unfinished"/>
+            <translation>原文をコピー</translation>
         </message>
         <message>
             <source>Copy source</source>
-            <translation type="unfinished"/>
+            <translation>原文をコピー</translation>
         </message>
         <message>
             <source>Copy source text to translation</source>
@@ -2013,11 +2013,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Copy source text to translation (Ctrl+B)</source>
-            <translation type="unfinished"/>
+            <translation>原文を翻訳にコピー (Ctrl+B)</translation>
         </message>
         <message>
             <source>Copy source to translation</source>
-            <translation type="unfinished"/>
+            <translation>原文を翻訳にコピー</translation>
         </message>
         <message>
             <source>Could not read video file:\n%s</source>
@@ -2029,7 +2029,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Crowdin</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin</translation>
         </message>
         <message>
             <source>Crowdin Statistics…</source>
@@ -2097,7 +2097,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Diff…</source>
-            <translation type="unfinished"/>
+            <translation>差分…</translation>
         </message>
         <message>
             <source>Documentation</source>
@@ -2105,11 +2105,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Donate ♥</source>
-            <translation type="unfinished"/>
+            <translation>寄付 ♥</translation>
         </message>
         <message>
             <source>Done and next (Ctrl+Enter)</source>
-            <translation type="unfinished"/>
+            <translation>完了して次へ (Ctrl+Enter)</translation>
         </message>
         <message>
             <source>Edit Header…</source>
@@ -2117,7 +2117,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Edit file header metadata. Changes are applied when you click Save.</source>
-            <translation type="unfinished"/>
+            <translation>ファイルヘッダーのメタデータを編集します。変更は保存をクリックすると適用されます。</translation>
         </message>
         <message>
             <source>Editor Below</source>
@@ -2145,7 +2145,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Enter translator note:</source>
-            <translation type="unfinished"/>
+            <translation>翻訳者メモを入力:</translation>
         </message>
         <message>
             <source>Entry</source>
@@ -2169,11 +2169,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Error loading file: %s</source>
-            <translation type="unfinished"/>
+            <translation>ファイルの読み込みエラー: %s</translation>
         </message>
         <message>
             <source>Error loading reference: %s</source>
-            <translation type="unfinished"/>
+            <translation>参照の読み込みエラー: %s</translation>
         </message>
         <message>
             <source>Export Error</source>
@@ -2189,7 +2189,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Export report…</source>
-            <translation type="unfinished"/>
+            <translation>レポートをエクスポート…</translation>
         </message>
         <message>
             <source>Exported {} translation units to {}</source>
@@ -2229,7 +2229,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Feed file to TM</source>
-            <translation type="unfinished"/>
+            <translation>ファイルをTMに追加</translation>
         </message>
         <message>
             <source>File</source>
@@ -2241,23 +2241,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>File Header / Metadata</source>
-            <translation type="unfinished"/>
+            <translation>ファイルヘッダー / メタデータ</translation>
         </message>
         <message>
             <source>File metadata…</source>
-            <translation type="unfinished"/>
+            <translation>ファイルメタデータ…</translation>
         </message>
         <message>
             <source>File not found: %s</source>
-            <translation type="unfinished"/>
+            <translation>ファイルが見つかりません: %s</translation>
         </message>
         <message>
             <source>File order</source>
-            <translation type="unfinished"/>
+            <translation>ファイル順</translation>
         </message>
         <message>
             <source>File reloaded (changed externally)</source>
-            <translation type="unfinished"/>
+            <translation>ファイルを再読み込みしました（外部で変更）</translation>
         </message>
         <message>
             <source>File reloaded (external change detected)</source>
@@ -2265,15 +2265,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Find &amp;&amp; Replace…</source>
-            <translation type="unfinished"/>
+            <translation>検索と置換…</translation>
         </message>
         <message>
             <source>Find in translations…</source>
-            <translation type="unfinished"/>
+            <translation>翻訳内を検索…</translation>
         </message>
         <message>
             <source>Find…</source>
-            <translation type="unfinished"/>
+            <translation>検索…</translation>
         </message>
         <message>
             <source>Flags</source>
@@ -2309,15 +2309,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>あいまい</translation>
         </message>
         <message>
             <source>Fuzzy / Needs work</source>
-            <translation type="unfinished"/>
+            <translation>あいまい / 要修正</translation>
         </message>
         <message>
             <source>Fuzzy diff (previous → current)</source>
-            <translation type="unfinished"/>
+            <translation>あいまい差分（前 → 現在）</translation>
         </message>
         <message>
             <source>Fuzzy:</source>
@@ -2325,11 +2325,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Fuzzy: %d</source>
-            <translation type="unfinished"/>
+            <translation>あいまい: %d</translation>
         </message>
         <message>
             <source>Fuzzy: 0</source>
-            <translation type="unfinished"/>
+            <translation>あいまい: 0</translation>
         </message>
         <message>
             <source>Generate Report</source>
@@ -2345,19 +2345,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Git</source>
-            <translation type="unfinished"/>
+            <translation>Git</translation>
         </message>
         <message>
             <source>Git Branches</source>
-            <translation type="unfinished"/>
+            <translation>Gitブランチ</translation>
         </message>
         <message>
             <source>Git Commit</source>
-            <translation type="unfinished"/>
+            <translation>Gitコミット</translation>
         </message>
         <message>
             <source>Git Diff</source>
-            <translation type="unfinished"/>
+            <translation>Git差分</translation>
         </message>
         <message>
             <source>Git Error</source>
@@ -2365,7 +2365,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Git Status</source>
-            <translation type="unfinished"/>
+            <translation>Git状態</translation>
         </message>
         <message>
             <source>Git operation error: {}</source>
@@ -2377,15 +2377,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>GitHub PR</source>
-            <translation type="unfinished"/>
+            <translation>GitHub PR</translation>
         </message>
         <message>
             <source>GitHub PR…</source>
-            <translation type="unfinished"/>
+            <translation>GitHub PR…</translation>
         </message>
         <message>
             <source>GitHub Repository</source>
-            <translation type="unfinished"/>
+            <translation>GitHubリポジトリ</translation>
         </message>
         <message>
             <source>Glossary</source>
@@ -2393,15 +2393,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Glossary / Terminology</source>
-            <translation type="unfinished"/>
+            <translation>用語集 / 用語</translation>
         </message>
         <message>
             <source>Glossary Check</source>
-            <translation type="unfinished"/>
+            <translation>用語集チェック</translation>
         </message>
         <message>
             <source>Glossary…</source>
-            <translation type="unfinished"/>
+            <translation>用語集…</translation>
         </message>
         <message>
             <source>HTML (*.html);;PDF (*.pdf)</source>
@@ -2441,7 +2441,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Invalid regex</source>
-            <translation type="unfinished"/>
+            <translation>無効な正規表現</translation>
         </message>
         <message>
             <source>Issues</source>
@@ -2453,7 +2453,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Key</source>
-            <translation type="unfinished"/>
+            <translation>キー</translation>
         </message>
         <message>
             <source>Language</source>
@@ -2461,11 +2461,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>言語:</translation>
         </message>
         <message>
             <source>Languages</source>
-            <translation type="unfinished"/>
+            <translation>言語</translation>
         </message>
         <message>
             <source>Layout Simulator</source>
@@ -2485,19 +2485,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Ln %d, Col %d</source>
-            <translation type="unfinished"/>
+            <translation>%d行, %d列</translation>
         </message>
         <message>
             <source>Ln 1, Col 1</source>
-            <translation type="unfinished"/>
+            <translation>1行, 1列</translation>
         </message>
         <message>
             <source>Loaded reference: %s</source>
-            <translation type="unfinished"/>
+            <translation>参照を読み込みました: %s</translation>
         </message>
         <message>
             <source>Locale:</source>
-            <translation type="unfinished"/>
+            <translation>ロケール:</translation>
         </message>
         <message>
             <source>MT translation failed</source>
@@ -2517,7 +2517,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Manage API Keys…</source>
-            <translation type="unfinished"/>
+            <translation>APIキーを管理…</translation>
         </message>
         <message>
             <source>Manage Macros…</source>
@@ -2533,7 +2533,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Mark this string as fuzzy / needs review (Ctrl+U)</source>
-            <translation type="unfinished"/>
+            <translation>この文字列をあいまい / 要レビューとしてマーク (Ctrl+U)</translation>
         </message>
         <message>
             <source>Max width:</source>
@@ -2561,7 +2561,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Metadata updated</source>
-            <translation type="unfinished"/>
+            <translation>メタデータを更新しました</translation>
         </message>
         <message>
             <source>Minimap</source>
@@ -2585,19 +2585,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Needs work</source>
-            <translation type="unfinished"/>
+            <translation>要修正</translation>
         </message>
         <message>
             <source>Next</source>
-            <translation type="unfinished"/>
+            <translation>次へ</translation>
         </message>
         <message>
             <source>Next entry</source>
-            <translation type="unfinished"/>
+            <translation>次のエントリ</translation>
         </message>
         <message>
             <source>Next untranslated</source>
-            <translation type="unfinished"/>
+            <translation>次の未翻訳</translation>
         </message>
         <message>
             <source>No File</source>
@@ -2625,11 +2625,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>No file</source>
-            <translation type="unfinished"/>
+            <translation>ファイルなし</translation>
         </message>
         <message>
             <source>No file loaded</source>
-            <translation type="unfinished"/>
+            <translation>ファイルが読み込まれていません</translation>
         </message>
         <message>
             <source>No glossary violations found! ✓</source>
@@ -2657,7 +2657,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>No more untranslated strings</source>
-            <translation type="unfinished"/>
+            <translation>未翻訳の文字列はありません</translation>
         </message>
         <message>
             <source>No screenshot available</source>
@@ -2673,7 +2673,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>No text to check</source>
-            <translation type="unfinished"/>
+            <translation>チェックするテキストがありません</translation>
         </message>
         <message>
             <source>No text to play</source>
@@ -2701,7 +2701,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Not a git repository</source>
-            <translation type="unfinished"/>
+            <translation>Gitリポジトリではありません</translation>
         </message>
         <message>
             <source>Notes</source>
@@ -2717,7 +2717,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Open</source>
-            <translation type="unfinished"/>
+            <translation>開く</translation>
         </message>
         <message>
             <source>Open Project…</source>
@@ -2729,7 +2729,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Open Translation File</source>
-            <translation type="unfinished"/>
+            <translation>翻訳ファイルを開く</translation>
         </message>
         <message>
             <source>Open Video</source>
@@ -2741,7 +2741,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Options</source>
-            <translation type="unfinished"/>
+            <translation>オプション</translation>
         </message>
         <message>
             <source>PO file merged successfully with POT file.\nPlease reload the file to see changes.</source>
@@ -2757,7 +2757,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Platform settings…</source>
-            <translation type="unfinished"/>
+            <translation>プラットフォーム設定…</translation>
         </message>
         <message>
             <source>Play Macro</source>
@@ -2785,19 +2785,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Pre-translate</source>
-            <translation type="unfinished"/>
+            <translation>事前翻訳</translation>
         </message>
         <message>
             <source>Pre-translated %d entries via %s</source>
-            <translation type="unfinished"/>
+            <translation>%s 経由で %d 件のエントリを事前翻訳しました</translation>
         </message>
         <message>
             <source>Pre-translate…</source>
-            <translation type="unfinished"/>
+            <translation>事前翻訳…</translation>
         </message>
         <message>
             <source>Preferences…</source>
-            <translation type="unfinished"/>
+            <translation>設定…</translation>
         </message>
         <message>
             <source>Preview</source>
@@ -2805,15 +2805,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Previous</source>
-            <translation type="unfinished"/>
+            <translation>前へ</translation>
         </message>
         <message>
             <source>Previous entry</source>
-            <translation type="unfinished"/>
+            <translation>前のエントリ</translation>
         </message>
         <message>
             <source>Previous untranslated</source>
-            <translation type="unfinished"/>
+            <translation>前の未翻訳</translation>
         </message>
         <message>
             <source>Probing video for subtitle tracks…</source>
@@ -2833,7 +2833,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Pull from…</source>
-            <translation type="unfinished"/>
+            <translation>からプル…</translation>
         </message>
         <message>
             <source>Push Changes</source>
@@ -2841,23 +2841,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>Push to…</source>
-            <translation type="unfinished"/>
+            <translation>にプッシュ…</translation>
         </message>
         <message>
             <source>QA Profile: %s</source>
-            <translation type="unfinished"/>
+            <translation>QAプロファイル: %s</translation>
         </message>
         <message>
             <source>QA profile: Formal</source>
-            <translation type="unfinished"/>
+            <translation>QAプロファイル: フォーマル</translation>
         </message>
         <message>
             <source>QA profile: Informal</source>
-            <translation type="unfinished"/>
+            <translation>QAプロファイル: インフォーマル</translation>
         </message>
         <message>
             <source>Quality</source>
-            <translation type="unfinished"/>
+            <translation>品質</translation>
         </message>
         <message>
             <source>Quality Score</source>
@@ -2865,11 +2865,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Quit</source>
-            <translation type="unfinished"/>
+            <translation>終了</translation>
         </message>
         <message>
             <source>Recent Files</source>
-            <translation type="unfinished"/>
+            <translation>最近のファイル</translation>
         </message>
         <message>
             <source>Record Macro</source>
@@ -2881,11 +2881,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Redo</source>
-            <translation type="unfinished"/>
+            <translation>やり直す</translation>
         </message>
         <message>
             <source>Reference</source>
-            <translation type="unfinished"/>
+            <translation>リファレンス</translation>
         </message>
         <message>
             <source>References</source>
@@ -2893,7 +2893,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Regex</source>
-            <translation type="unfinished"/>
+            <translation>正規表現</translation>
         </message>
         <message>
             <source>Regex Tester</source>
@@ -2909,23 +2909,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>Remove Selected</source>
-            <translation type="unfinished"/>
+            <translation>選択を削除</translation>
         </message>
         <message>
             <source>Replace</source>
-            <translation type="unfinished"/>
+            <translation>置換</translation>
         </message>
         <message>
             <source>Replace All</source>
-            <translation type="unfinished"/>
+            <translation>すべて置換</translation>
         </message>
         <message>
             <source>Replace with…</source>
-            <translation type="unfinished"/>
+            <translation>置換…</translation>
         </message>
         <message>
             <source>Replaced in %d entries</source>
-            <translation type="unfinished"/>
+            <translation>%d 件のエントリで置換しました</translation>
         </message>
         <message>
             <source>Report Options</source>
@@ -2933,7 +2933,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Report a Bug</source>
-            <translation type="unfinished"/>
+            <translation>バグを報告</translation>
         </message>
         <message>
             <source>Report error: %s</source>
@@ -2945,7 +2945,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Report saved to %s</source>
-            <translation type="unfinished"/>
+            <translation>レポートを %s に保存しました</translation>
         </message>
         <message>
             <source>Report saved: %s</source>
@@ -2973,7 +2973,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Root key:</source>
-            <translation type="unfinished"/>
+            <translation>ルートキー:</translation>
         </message>
         <message>
             <source>SRT files (*.srt);;VTT files (*.vtt);;All files (*)</source>
@@ -2981,7 +2981,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished"/>
+            <translation>保存</translation>
         </message>
         <message>
             <source>Save &amp;As…</source>
@@ -3005,7 +3005,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Save error: %s</source>
-            <translation type="unfinished"/>
+            <translation>保存エラー: %s</translation>
         </message>
         <message>
             <source>Saved as %s</source>
@@ -3013,7 +3013,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Saved!</source>
-            <translation type="unfinished"/>
+            <translation>保存しました！</translation>
         </message>
         <message>
             <source>Search</source>
@@ -3021,11 +3021,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Search TM…</source>
-            <translation type="unfinished"/>
+            <translation>TMを検索…</translation>
         </message>
         <message>
             <source>Search source and translation text…</source>
-            <translation type="unfinished"/>
+            <translation>原文と翻訳テキストを検索…</translation>
         </message>
         <message>
             <source>Select POT File</source>
@@ -3097,23 +3097,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>Source A → Z</source>
-            <translation type="unfinished"/>
+            <translation>原文 A → Z</translation>
         </message>
         <message>
             <source>Source Z → A</source>
-            <translation type="unfinished"/>
+            <translation>原文 Z → A</translation>
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>原文言語:</translation>
         </message>
         <message>
             <source>Source term:</source>
-            <translation type="unfinished"/>
+            <translation>原文用語:</translation>
         </message>
         <message>
             <source>Source text</source>
-            <translation type="unfinished"/>
+            <translation>原文</translation>
         </message>
         <message>
             <source>Source:</source>
@@ -3121,7 +3121,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Spell check current</source>
-            <translation type="unfinished"/>
+            <translation>現在のスペルチェック</translation>
         </message>
         <message>
             <source>Spelling issues:\n%s</source>
@@ -3137,11 +3137,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Statistics</source>
-            <translation type="unfinished"/>
+            <translation>統計</translation>
         </message>
         <message>
             <source>Statistics…</source>
-            <translation type="unfinished"/>
+            <translation>統計…</translation>
         </message>
         <message>
             <source>Status</source>
@@ -3149,11 +3149,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Status…</source>
-            <translation type="unfinished"/>
+            <translation>状態…</translation>
         </message>
         <message>
             <source>String Info</source>
-            <translation type="unfinished"/>
+            <translation>文字列情報</translation>
         </message>
         <message>
             <source>Subject:</source>
@@ -3169,7 +3169,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Switch branch…</source>
-            <translation type="unfinished"/>
+            <translation>ブランチを切り替え…</translation>
         </message>
         <message>
             <source>System Default</source>
@@ -3177,7 +3177,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>TM / Suggestions</source>
-            <translation type="unfinished"/>
+            <translation>TM / 提案</translation>
         </message>
         <message>
             <source>TMX</source>
@@ -3213,11 +3213,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>翻訳先言語:</translation>
         </message>
         <message>
             <source>Target term:</source>
-            <translation type="unfinished"/>
+            <translation>翻訳先用語:</translation>
         </message>
         <message>
             <source>Text-to-speech failed: {}</source>
@@ -3273,15 +3273,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Transifex</source>
-            <translation type="unfinished"/>
+            <translation>Transifex</translation>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>翻訳済み</translation>
         </message>
         <message>
             <source>Translated via %s</source>
-            <translation type="unfinished"/>
+            <translation>%s 経由で翻訳済み</translation>
         </message>
         <message>
             <source>Translated:</source>
@@ -3289,23 +3289,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>Translated: %d</source>
-            <translation type="unfinished"/>
+            <translation>翻訳済み: %d</translation>
         </message>
         <message>
             <source>Translated: 0</source>
-            <translation type="unfinished"/>
+            <translation>翻訳済み: 0</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>翻訳</translation>
         </message>
         <message>
             <source>Translation A → Z</source>
-            <translation type="unfinished"/>
+            <translation>翻訳 A → Z</translation>
         </message>
         <message>
             <source>Translation Engine</source>
-            <translation type="unfinished"/>
+            <translation>翻訳エンジン</translation>
         </message>
         <message>
             <source>API key:</source>
@@ -3337,7 +3337,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Translation Z → A</source>
-            <translation type="unfinished"/>
+            <translation>翻訳 Z → A</translation>
         </message>
         <message>
             <source>Translation preview will appear here</source>
@@ -3357,7 +3357,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Undo</source>
-            <translation type="unfinished"/>
+            <translation>元に戻す</translation>
         </message>
         <message>
             <source>Unicode Inspector</source>
@@ -3365,7 +3365,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>不明</translation>
         </message>
         <message>
             <source>Unsaved Changes</source>
@@ -3373,7 +3373,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Unsupported file type: %s</source>
-            <translation type="unfinished"/>
+            <translation>サポートされていないファイルタイプ: %s</translation>
         </message>
         <message>
             <source>Untitled</source>
@@ -3381,7 +3381,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Untranslated</source>
-            <translation type="unfinished"/>
+            <translation>未翻訳</translation>
         </message>
         <message>
             <source>Untranslated/errors first</source>
@@ -3393,19 +3393,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Untranslated: %d</source>
-            <translation type="unfinished"/>
+            <translation>未翻訳: %d</translation>
         </message>
         <message>
             <source>Untranslated: 0</source>
-            <translation type="unfinished"/>
+            <translation>未翻訳: 0</translation>
         </message>
         <message>
             <source>Up to date</source>
-            <translation type="unfinished"/>
+            <translation>最新です</translation>
         </message>
         <message>
             <source>Update Available</source>
-            <translation type="unfinished"/>
+            <translation>アップデートが利用可能です</translation>
         </message>
         <message>
             <source>Updated {} translation</source>
@@ -3413,19 +3413,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Validate</source>
-            <translation type="unfinished"/>
+            <translation>検証</translation>
         </message>
         <message>
             <source>Validate (Lint)</source>
-            <translation type="unfinished"/>
+            <translation>検証 (Lint)</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished"/>
+            <translation>値</translation>
         </message>
         <message>
             <source>Version:</source>
-            <translation type="unfinished"/>
+            <translation>バージョン:</translation>
         </message>
         <message>
             <source>Video</source>
@@ -3441,7 +3441,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Warnings</source>
-            <translation type="unfinished"/>
+            <translation>警告</translation>
         </message>
         <message>
             <source>Watch File</source>
@@ -3457,7 +3457,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Weblate</source>
-            <translation type="unfinished"/>
+            <translation>Weblate</translation>
         </message>
         <message>
             <source>Website:</source>
@@ -3465,7 +3465,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>With warnings</source>
-            <translation type="unfinished"/>
+            <translation>警告あり</translation>
         </message>
         <message>
             <source>Words: %d | Chars: %d | Source: %dw%s</source>
@@ -3493,11 +3493,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>lrelease error: %s</source>
-            <translation type="unfinished"/>
+            <translation>lrelease エラー: %s</translation>
         </message>
         <message>
             <source>msgfmt error: %s</source>
-            <translation type="unfinished"/>
+            <translation>msgfmt エラー: %s</translation>
         </message>
         <message>
             <source>msgmerge command not found. Please install gettext tools.</source>
@@ -3513,7 +3513,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>words</source>
-            <translation type="unfinished"/>
+            <translation>語</translation>
         </message>
         <message>
             <source>{} chars | {} words | Source: {} chars</source>
@@ -3533,11 +3533,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>✓ No spelling issues found</source>
-            <translation type="unfinished"/>
+            <translation>✓ スペルの問題は見つかりませんでした</translation>
         </message>
         <message>
             <source>💬 Comment</source>
-            <translation type="unfinished"/>
+            <translation>💬 コメント</translation>
         </message>
         <message>
             <source>💾 Apply TM #1</source>
@@ -3724,10 +3724,6 @@ This will replace the current text with:
             <translation type="unfinished"/>
         </message>
         <message>
-            <source>Weblate</source>
-            <translation type="unfinished"/>
-        </message>
-        <message>
             <source>Weblate — %s</source>
             <translation type="unfinished"/>
         </message>
@@ -3740,7 +3736,7 @@ This will replace the current text with:
             <translation type="unfinished"/>
         </message>
     <message><source>No API Key</source><translation type="unfinished"/></message><message><source>No Transifex API key configured.
-Please add one in Translation → API Keys…</source><translation type="unfinished"/></message><message><source>No language statistics found.</source><translation type="unfinished"/></message><message><source>No organizations found.</source><translation type="unfinished"/></message><message><source>No projects found.</source><translation type="unfinished"/></message><message><source>Organization:</source><translation type="unfinished"/></message><message><source>Project:</source><translation type="unfinished"/></message><message><source>Select Organization</source><translation type="unfinished"/></message><message><source>Select Project</source><translation type="unfinished"/></message><message><source>Transifex Error</source><translation type="unfinished"/></message><message><source>Transifex Statistics…</source><translation type="unfinished"/></message><message><source>Transifex — %s</source><translation type="unfinished"/></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation type="unfinished"/></message>    <message>
+Please add one in Translation → API Keys…</source><translation type="unfinished"/></message><message><source>No language statistics found.</source><translation type="unfinished"/></message><message><source>No organizations found.</source><translation type="unfinished"/></message><message><source>No projects found.</source><translation type="unfinished"/></message><message><source>Organization:</source><translation>組織:</translation></message><message><source>Project:</source><translation>プロジェクト:</translation></message><message><source>Select Organization</source><translation type="unfinished"/></message><message><source>Select Project</source><translation type="unfinished"/></message><message><source>Transifex Error</source><translation type="unfinished"/></message><message><source>Transifex Statistics…</source><translation type="unfinished"/></message><message><source>Transifex — %s</source><translation type="unfinished"/></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation type="unfinished"/></message>    <message>
         <source>
 
 Errors:
@@ -3936,11 +3932,11 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Format specifier mismatch: %s vs %s</source>
-            <translation type="unfinished"/>
+            <translation>書式指定子の不一致: %s 対 %s</translation>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>あいまい</translation>
         </message>
         <message>
             <source>Glossary inconsistency: %s</source>
@@ -3952,7 +3948,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Leading whitespace mismatch</source>
-            <translation type="unfinished"/>
+            <translation>先頭の空白が一致しません</translation>
         </message>
         <message>
             <source>Missing HTML/XML tags in translation: %s</source>
@@ -3960,23 +3956,23 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Newline count mismatch (%s vs %s)</source>
-            <translation type="unfinished"/>
+            <translation>改行数の不一致 (%s 対 %s)</translation>
         </message>
         <message>
             <source>Python format mismatch: %s vs %s</source>
-            <translation type="unfinished"/>
+            <translation>Pythonフォーマットの不一致: %s 対 %s</translation>
         </message>
         <message>
             <source>Suspicious length ratio: %sx</source>
-            <translation type="unfinished"/>
+            <translation>疑わしい長さの比率: %sx</translation>
         </message>
         <message>
             <source>Trailing whitespace mismatch</source>
-            <translation type="unfinished"/>
+            <translation>末尾の空白が一致しません</translation>
         </message>
         <message>
             <source>Untranslated</source>
-            <translation type="unfinished"/>
+            <translation>未翻訳</translation>
         </message>
     </context>
     <context>
@@ -4011,7 +4007,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>あいまい</translation>
         </message>
         <message>
             <source>Locale Files</source>
@@ -4047,7 +4043,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Project:</source>
-            <translation type="unfinished"/>
+            <translation>プロジェクト:</translation>
         </message>
         <message>
             <source>Refresh</source>
@@ -4063,7 +4059,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>翻訳済み</translation>
         </message>
         <message>
             <source>Translation Map</source>
@@ -4246,7 +4242,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Name:</source>
-            <translation type="unfinished"/>
+            <translation>名前:</translation>
         </message>
         <message>
             <source>No actions recorded</source>
@@ -4431,7 +4427,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>言語:</translation>
         </message>
         <message>
             <source>No Strings</source>
@@ -4479,7 +4475,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Remove Selected</source>
-            <translation type="unfinished"/>
+            <translation>選択を削除</translation>
         </message>
         <message>
             <source>Save PO File</source>
@@ -4597,75 +4593,75 @@ Installation instructions:
         <name>PlatformSettingsDialog</name>
         <message>
             <source>API Key:</source>
-            <translation type="unfinished"/>
+            <translation>APIキー:</translation>
         </message>
         <message>
             <source>API Token:</source>
-            <translation type="unfinished"/>
+            <translation>APIトークン:</translation>
         </message>
         <message>
             <source>API URL:</source>
-            <translation type="unfinished"/>
+            <translation>API URL:</translation>
         </message>
         <message>
             <source>Base URL:</source>
-            <translation type="unfinished"/>
+            <translation>ベースURL:</translation>
         </message>
         <message>
             <source>Component:</source>
-            <translation type="unfinished"/>
+            <translation>コンポーネント:</translation>
         </message>
         <message>
             <source>Crowdin</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin</translation>
         </message>
         <message>
             <source>Crowdin API</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin API</translation>
         </message>
         <message>
             <source>Organization:</source>
-            <translation type="unfinished"/>
+            <translation>組織:</translation>
         </message>
         <message>
             <source>Platform Settings</source>
-            <translation type="unfinished"/>
+            <translation>プラットフォーム設定</translation>
         </message>
         <message>
             <source>Project ID:</source>
-            <translation type="unfinished"/>
+            <translation>プロジェクトID:</translation>
         </message>
         <message>
             <source>Project:</source>
-            <translation type="unfinished"/>
+            <translation>プロジェクト:</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished"/>
+            <translation>保存</translation>
         </message>
         <message>
             <source>Test Connection</source>
-            <translation type="unfinished"/>
+            <translation>接続テスト</translation>
         </message>
         <message>
             <source>Testing…</source>
-            <translation type="unfinished"/>
+            <translation>テスト中…</translation>
         </message>
         <message>
             <source>Transifex</source>
-            <translation type="unfinished"/>
+            <translation>Transifex</translation>
         </message>
         <message>
             <source>Transifex API</source>
-            <translation type="unfinished"/>
+            <translation>Transifex API</translation>
         </message>
         <message>
             <source>Weblate</source>
-            <translation type="unfinished"/>
+            <translation>Weblate</translation>
         </message>
         <message>
             <source>Weblate API</source>
-            <translation type="unfinished"/>
+            <translation>Weblate API</translation>
         </message>
         <message>
             <source>⚠️ No system keychain — tokens stored with basic obfuscation. </source>
@@ -4673,23 +4669,23 @@ Installation instructions:
         </message>
         <message>
             <source>✓ Connected: %1</source>
-            <translation type="unfinished"/>
+            <translation>✓ 接続済み: %1</translation>
         </message>
         <message>
             <source>✓ Saved</source>
-            <translation type="unfinished"/>
+            <translation>✓ 保存しました</translation>
         </message>
         <message>
             <source>✗ %1</source>
-            <translation type="unfinished"/>
+            <translation>✗ %1</translation>
         </message>
         <message>
             <source>✗ Project ID must be a number</source>
-            <translation type="unfinished"/>
+            <translation>✗ プロジェクトIDは数値でなければなりません</translation>
         </message>
         <message>
             <source>🔒 Tokens stored in %1</source>
-            <translation type="unfinished"/>
+            <translation>🔒 トークンは %1 に保存されています</translation>
         </message>
         <message>
         <source>Browse…</source>
@@ -4822,15 +4818,15 @@ Installation instructions:
         </message>
         <message>
             <source>Appearance</source>
-            <translation type="unfinished"/>
+            <translation>外観</translation>
         </message>
         <message>
             <source>Auto-compile on save</source>
-            <translation type="unfinished"/>
+            <translation>保存時に自動コンパイル</translation>
         </message>
         <message>
             <source>Automatically compile .mo/.qm after saving</source>
-            <translation type="unfinished"/>
+            <translation>保存後に自動的に .mo/.qm をコンパイル</translation>
         </message>
         <message>
             <source>Character limit:</source>
@@ -4850,7 +4846,7 @@ Installation instructions:
         </message>
         <message>
             <source>Default engine:</source>
-            <translation type="unfinished"/>
+            <translation>デフォルトエンジン:</translation>
         </message>
         <message>
             <source>Double-click to edit translations directly in the list</source>
@@ -4858,11 +4854,11 @@ Installation instructions:
         </message>
         <message>
             <source>Editor font size:</source>
-            <translation type="unfinished"/>
+            <translation>エディタのフォントサイズ:</translation>
         </message>
         <message>
             <source>Email:</source>
-            <translation type="unfinished"/>
+            <translation>メール:</translation>
         </message>
         <message>
             <source>Enable inline editing</source>
@@ -4874,7 +4870,7 @@ Installation instructions:
         </message>
         <message>
             <source>Formality level:</source>
-            <translation type="unfinished"/>
+            <translation>フォーマリティレベル:</translation>
         </message>
         <message>
             <source>Informal</source>
@@ -4882,7 +4878,7 @@ Installation instructions:
         </message>
         <message>
             <source>Language / Locale:</source>
-            <translation type="unfinished"/>
+            <translation>言語 / ロケール:</translation>
         </message>
         <message>
             <source>Light</source>
@@ -4890,15 +4886,15 @@ Installation instructions:
         </message>
         <message>
             <source>Name:</source>
-            <translation type="unfinished"/>
+            <translation>名前:</translation>
         </message>
         <message>
             <source>Personal</source>
-            <translation type="unfinished"/>
+            <translation>個人</translation>
         </message>
         <message>
             <source>Preferences</source>
-            <translation type="unfinished"/>
+            <translation>設定</translation>
         </message>
         <message>
             <source>Security</source>
@@ -4910,7 +4906,7 @@ Installation instructions:
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>原文言語:</translation>
         </message>
         <message>
             <source>System default</source>
@@ -4918,19 +4914,19 @@ Installation instructions:
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>翻訳先言語:</translation>
         </message>
         <message>
             <source>Team:</source>
-            <translation type="unfinished"/>
+            <translation>チーム:</translation>
         </message>
         <message>
             <source>Theme:</source>
-            <translation type="unfinished"/>
+            <translation>テーマ:</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>翻訳</translation>
         </message>
         <message>
             <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.\n\nFor better security, install:\n• macOS: Built-in (Keychain)\n• Windows: pip install keyring\n• Linux: pip install secretstorage</source>
@@ -5018,7 +5014,7 @@ For better security, install:
         </message>
         <message>
             <source>Open</source>
-            <translation type="unfinished"/>
+            <translation>開く</translation>
         </message>
         <message>
             <source>Open a project folder to begin</source>
@@ -5070,7 +5066,7 @@ For better security, install:
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>翻訳済み</translation>
         </message>
         <message>
             <source>Type</source>
@@ -5110,15 +5106,15 @@ For better security, install:
         </message>
         <message>
             <source>Translated: %d</source>
-            <translation type="unfinished"/>
+            <translation>翻訳済み: %d</translation>
         </message>
         <message>
             <source>Fuzzy: %d</source>
-            <translation type="unfinished"/>
+            <translation>あいまい: %d</translation>
         </message>
         <message>
             <source>Untranslated: %d</source>
-            <translation type="unfinished"/>
+            <translation>未翻訳: %d</translation>
         </message>
         <message>
             <source>Progress: %.1f%%</source>
@@ -5227,7 +5223,7 @@ For better security, install:
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished"/>
+            <translation>値</translation>
         </message>
         <message>
             <source>Error: %s</source>
@@ -5286,7 +5282,7 @@ For better security, install:
         </message>
         <message>
             <source>Options</source>
-            <translation type="unfinished"/>
+            <translation>オプション</translation>
         </message>
         <message>
             <source>Regular expression</source>
@@ -5294,11 +5290,11 @@ For better security, install:
         </message>
         <message>
             <source>Replace</source>
-            <translation type="unfinished"/>
+            <translation>置換</translation>
         </message>
         <message>
             <source>Replace All</source>
-            <translation type="unfinished"/>
+            <translation>すべて置換</translation>
         </message>
         <message>
             <source>Replace:</source>
@@ -5314,11 +5310,11 @@ For better security, install:
         </message>
         <message>
             <source>Source text</source>
-            <translation type="unfinished"/>
+            <translation>原文</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>翻訳</translation>
         </message>
         <message>
             <source>Whole words</source>
@@ -5526,83 +5522,83 @@ For better security, install:
         <name>SyncDialog</name>
         <message>
             <source>%1 resources found</source>
-            <translation type="unfinished"/>
+            <translation>%1 件のリソースが見つかりました</translation>
         </message>
         <message>
             <source>Crowdin not configured. Open Platform Settings first.</source>
-            <translation type="unfinished"/>
+            <translation>Crowdinが設定されていません。まずプラットフォーム設定を開いてください。</translation>
         </message>
         <message>
             <source>Downloading…</source>
-            <translation type="unfinished"/>
+            <translation>ダウンロード中…</translation>
         </message>
         <message>
             <source>Enter a language code</source>
-            <translation type="unfinished"/>
+            <translation>言語コードを入力してください</translation>
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>言語:</translation>
         </message>
         <message>
             <source>Loading resources…</source>
-            <translation type="unfinished"/>
+            <translation>リソースを読み込み中…</translation>
         </message>
         <message>
             <source>No file loaded to push</source>
-            <translation type="unfinished"/>
+            <translation>プッシュするファイルが読み込まれていません</translation>
         </message>
         <message>
             <source>No resources found</source>
-            <translation type="unfinished"/>
+            <translation>リソースが見つかりません</translation>
         </message>
         <message>
             <source>Pull</source>
-            <translation type="unfinished"/>
+            <translation>プル</translation>
         </message>
         <message>
             <source>Pull Translation</source>
-            <translation type="unfinished"/>
+            <translation>翻訳をプル</translation>
         </message>
         <message>
             <source>Push</source>
-            <translation type="unfinished"/>
+            <translation>プッシュ</translation>
         </message>
         <message>
             <source>Push Translation</source>
-            <translation type="unfinished"/>
+            <translation>翻訳をプッシュ</translation>
         </message>
         <message>
             <source>Resources</source>
-            <translation type="unfinished"/>
+            <translation>リソース</translation>
         </message>
         <message>
             <source>Select a resource first</source>
-            <translation type="unfinished"/>
+            <translation>まずリソースを選択してください</translation>
         </message>
         <message>
             <source>Transifex not configured. Open Platform Settings first.</source>
-            <translation type="unfinished"/>
+            <translation>Transifexが設定されていません。まずプラットフォーム設定を開いてください。</translation>
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>不明</translation>
         </message>
         <message>
             <source>Unknown platform</source>
-            <translation type="unfinished"/>
+            <translation>不明なプラットフォーム</translation>
         </message>
         <message>
             <source>Uploading…</source>
-            <translation type="unfinished"/>
+            <translation>アップロード中…</translation>
         </message>
         <message>
             <source>Weblate not configured. Open Platform Settings first.</source>
-            <translation type="unfinished"/>
+            <translation>Weblateが設定されていません。まずプラットフォーム設定を開いてください。</translation>
         </message>
         <message>
             <source>e.g. sv, de, fr</source>
-            <translation type="unfinished"/>
+            <translation>例: sv, de, fr</translation>
         </message>
         <message>
             <source>✓ Downloaded at %1\nSaved to: %2</source>
@@ -5610,24 +5606,25 @@ For better security, install:
         </message>
         <message>
             <source>✓ Uploaded at %1</source>
-            <translation type="unfinished"/>
+            <translation>✓ %1 にアップロードしました</translation>
         </message>
         <message>
             <source>✗ Error: %1</source>
-            <translation type="unfinished"/>
+            <translation>✗ エラー: %1</translation>
         </message>
         <message>
             <source>✗ Pull failed: %1</source>
-            <translation type="unfinished"/>
+            <translation>✗ プルに失敗しました: %1</translation>
         </message>
         <message>
             <source>✗ Push failed: %1</source>
-            <translation type="unfinished"/>
+            <translation>✗ プッシュに失敗しました: %1</translation>
         </message>
         <message>
         <source>✓ Downloaded at %1
 Saved to: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>✓ %1 にダウンロード
+保存先: %2</translation>
     </message>
 </context>
     <context>
@@ -5673,7 +5670,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished"/>
+            <translation>クリア</translation>
         </message>
         <message>
             <source>Close</source>
@@ -5760,15 +5757,15 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Source text</source>
-            <translation type="unfinished"/>
+            <translation>原文</translation>
         </message>
         <message>
             <source>Validation Results</source>
-            <translation type="unfinished"/>
+            <translation>検証結果</translation>
         </message>
         <message>
             <source>Warnings</source>
-            <translation type="unfinished"/>
+            <translation>警告</translation>
         </message>
     </context>
     <context>
@@ -6015,11 +6012,11 @@ Saved to: %2</source>
         <name>WelcomeDialog</name>
         <message>
             <source>Appearance</source>
-            <translation type="unfinished"/>
+            <translation>外観</translation>
         </message>
         <message>
             <source>Back</source>
-            <translation type="unfinished"/>
+            <translation>戻る</translation>
         </message>
         <message>
             <source>Dark</source>
@@ -6031,15 +6028,15 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Default engine:</source>
-            <translation type="unfinished"/>
+            <translation>デフォルトエンジン:</translation>
         </message>
         <message>
             <source>Editor font size:</source>
-            <translation type="unfinished"/>
+            <translation>エディタのフォントサイズ:</translation>
         </message>
         <message>
             <source>Email:</source>
-            <translation type="unfinished"/>
+            <translation>メール:</translation>
         </message>
         <message>
             <source>Formal</source>
@@ -6047,7 +6044,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Formality level:</source>
-            <translation type="unfinished"/>
+            <translation>フォーマリティレベル:</translation>
         </message>
         <message>
             <source>Informal</source>
@@ -6055,7 +6052,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Language / Locale:</source>
-            <translation type="unfinished"/>
+            <translation>言語 / ロケール:</translation>
         </message>
         <message>
             <source>Light</source>
@@ -6063,23 +6060,23 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Name:</source>
-            <translation type="unfinished"/>
+            <translation>名前:</translation>
         </message>
         <message>
             <source>Next</source>
-            <translation type="unfinished"/>
+            <translation>次へ</translation>
         </message>
         <message>
             <source>Personal Information</source>
-            <translation type="unfinished"/>
+            <translation>個人情報</translation>
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>原文言語:</translation>
         </message>
         <message>
             <source>Start translating!</source>
-            <translation type="unfinished"/>
+            <translation>翻訳を始めましょう！</translation>
         </message>
         <message>
             <source>System default</source>
@@ -6087,23 +6084,23 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>翻訳先言語:</translation>
         </message>
         <message>
             <source>Team (optional):</source>
-            <translation type="unfinished"/>
+            <translation>チーム（任意）:</translation>
         </message>
         <message>
             <source>Theme:</source>
-            <translation type="unfinished"/>
+            <translation>テーマ:</translation>
         </message>
         <message>
             <source>Translation Settings</source>
-            <translation type="unfinished"/>
+            <translation>翻訳設定</translation>
         </message>
         <message>
             <source>Welcome to LinguaEdit</source>
-            <translation type="unfinished"/>
+            <translation>LinguaEditへようこそ</translation>
         </message>
         <message>
             <source>You</source>
@@ -6153,7 +6150,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>Next entry</source>
-            <translation type="unfinished"/>
+            <translation>次のエントリ</translation>
         </message>
         <message>
             <source>Next untranslated ▶▶</source>
@@ -6161,7 +6158,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>Previous entry</source>
-            <translation type="unfinished"/>
+            <translation>前のエントリ</translation>
         </message>
         <message>
             <source>Skip to next untranslated (Ctrl+Enter)</source>
@@ -6169,39 +6166,39 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&amp;Catalog</source>
-            <translation type="unfinished"/>
+            <translation>カタログ(&amp;C)</translation>
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation type="unfinished"/>
+            <translation>編集(&amp;E)</translation>
         </message>
         <message>
             <source>&amp;File</source>
-            <translation type="unfinished"/>
+            <translation>ファイル(&amp;F)</translation>
         </message>
         <message>
             <source>&amp;Git</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Git</translation>
         </message>
         <message>
             <source>&amp;Go</source>
-            <translation type="unfinished"/>
+            <translation>移動(&amp;G)</translation>
         </message>
         <message>
             <source>&amp;Help</source>
-            <translation type="unfinished"/>
+            <translation>ヘルプ(&amp;H)</translation>
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation type="unfinished"/>
+            <translation>開く(&amp;O)…</translation>
         </message>
         <message>
             <source>&amp;Platforms</source>
-            <translation type="unfinished"/>
+            <translation>プラットフォーム(&amp;P)</translation>
         </message>
         <message>
             <source>&amp;Save</source>
-            <translation type="unfinished"/>
+            <translation>保存(&amp;S)</translation>
         </message>
         <message>
             <source>&amp;Tools</source>
@@ -6209,7 +6206,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&amp;View</source>
-            <translation type="unfinished"/>
+            <translation>表示(&amp;V)</translation>
         </message>
         <message>
             <source>&lt;b&gt;%d&lt;/b&gt; untranslated strings out of &lt;b&gt;%d&lt;/b&gt; total.</source>
@@ -6229,7 +6226,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;コンコーダンス検索&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Outdated translations&lt;/b&gt; — source changed but translation stayed the same.</source>
@@ -6241,11 +6238,11 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;Reference source:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;参照元:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;参照翻訳:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Removed strings:&lt;/b&gt; %d</source>
@@ -6253,23 +6250,15 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
-        </message>
-        <message>
-            <source>&lt;b&gt;Source text&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;原文:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;提案&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
-        </message>
-        <message>
-            <source>&lt;b&gt;Translation&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;翻訳:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
@@ -6281,7 +6270,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;(参照に一致なし)&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;MT unavailable&lt;/i&gt;</source>
@@ -6301,7 +6290,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;i&gt;No suggestions&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;提案なし&lt;/i&gt;</translation>
         </message>
         <message>
             <source>Are you sure you want to delete the macro &apos;{}&apos;?</source>
@@ -6333,7 +6322,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>Find &amp;&amp; Replace…</source>
-            <translation type="unfinished"/>
+            <translation>検索と置換…</translation>
         </message>
         <message>
             <source>Macro &apos;{}&apos; has been saved successfully.</source>
@@ -6471,7 +6460,7 @@ quality assurance, spell checking, and platform integration.</source>
         <name>UpdateDialog</name>
         <message>
             <source>Update Available</source>
-            <translation type="unfinished"/>
+            <translation>アップデートが利用可能です</translation>
         </message>
         <message>
             <source>A new version of LinguaEdit is available!</source>

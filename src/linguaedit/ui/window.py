@@ -19,112 +19,183 @@ UI layout inspired by POedit and Qt Linguist:
 
 from __future__ import annotations
 
-import sys
 import json
 import re
 import shutil
 import subprocess
-from difflib import SequenceMatcher, unified_diff, ndiff
+import sys
+from difflib import SequenceMatcher
+from html import escape as html_escape
 from pathlib import Path
 from typing import Optional
-from html import escape as html_escape
 
-from PySide6.QtWidgets import (
-    QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QSplitter,
-    QTreeWidget, QTreeWidgetItem, QHeaderView,
-    QTextEdit, QPlainTextEdit,
-    QLabel, QPushButton, QCheckBox, QComboBox, QLineEdit,
-    QProgressBar, QMenu, QStatusBar, QTabWidget,
-    QToolBar, QFrame, QScrollArea, QGroupBox, QTableWidget, QTableWidgetItem,
-    QDialog, QDialogButtonBox, QFormLayout, QFileDialog,
-    QMessageBox, QInputDialog, QApplication, QToolButton, QProgressDialog,
-    QAbstractItemView, QSpinBox, QDockWidget, QStyledItemDelegate,
+from PySide6.QtCore import (
+    QEasingCurve,
+    QFileSystemWatcher,
+    QPropertyAnimation,
+    QSettings,
+    Qt,
+    QThread,
+    QTimer,
+    QUrl,
+    Signal,
 )
-from PySide6.QtCore import Qt, QTimer, QFileSystemWatcher, Signal, Slot, QPropertyAnimation, QEasingCurve, QSettings, QThread
 from PySide6.QtGui import (
-    QAction, QKeySequence, QFont, QColor, QIcon, QBrush,
-    QDragEnterEvent, QDropEvent, QPalette, QShortcut, QDesktopServices,
+    QBrush,
+    QColor,
+    QDesktopServices,
+    QDragEnterEvent,
+    QDropEvent,
+    QFont,
+    QIcon,
+    QKeySequence,
+    QPalette,
+    QShortcut,
 )
-from PySide6.QtWidgets import QGraphicsOpacityEffect
-from PySide6.QtCore import QUrl
+from PySide6.QtWidgets import (
+    QAbstractItemView,
+    QApplication,
+    QCheckBox,
+    QComboBox,
+    QDialog,
+    QDialogButtonBox,
+    QDockWidget,
+    QFileDialog,
+    QFormLayout,
+    QFrame,
+    QGraphicsOpacityEffect,
+    QGroupBox,
+    QHBoxLayout,
+    QHeaderView,
+    QInputDialog,
+    QLabel,
+    QLineEdit,
+    QMainWindow,
+    QMenu,
+    QMessageBox,
+    QProgressBar,
+    QProgressDialog,
+    QPushButton,
+    QScrollArea,
+    QSpinBox,
+    QSplitter,
+    QTableWidget,
+    QTableWidgetItem,
+    QTabWidget,
+    QTextEdit,
+    QToolBar,
+    QTreeWidget,
+    QTreeWidgetItem,
+    QVBoxLayout,
+    QWidget,
+)
 
-from linguaedit import APP_ID, __version__
-from linguaedit.parsers.po_parser import parse_po, save_po, POFileData, TranslationEntry
-from linguaedit.parsers.ts_parser import parse_ts, save_ts, TSFileData
-from linguaedit.parsers.json_parser import parse_json, save_json, JSONFileData
-from linguaedit.parsers.xliff_parser import parse_xliff, save_xliff, XLIFFFileData
-from linguaedit.parsers.android_parser import parse_android, save_android, AndroidFileData
-from linguaedit.parsers.arb_parser import parse_arb, save_arb, ARBFileData
-from linguaedit.parsers.php_parser import parse_php, save_php, PHPFileData
-from linguaedit.parsers.yaml_parser import parse_yaml, save_yaml, YAMLFileData
-from linguaedit.parsers.godot import parse_godot, save_godot, GodotFileData
-from linguaedit.parsers.chrome_i18n import parse_chrome_i18n, save_chrome_i18n, ChromeI18nFileData
-from linguaedit.parsers.java_properties import parse_java_properties, save_java_properties, JavaPropertiesFileData
-from linguaedit.parsers.subtitles import parse_subtitles, save_subtitles, SubtitleFileData
-from linguaedit.parsers.apple_strings import parse_apple_strings, save_apple_strings, AppleStringsData
-from linguaedit.parsers.unity_asset import parse_unity_asset, save_unity_asset, UnityAssetData
-from linguaedit.parsers.resx import parse_resx, save_resx, RESXData
-from linguaedit.parsers.sdlxliff_parser import parse_sdlxliff, save_sdlxliff, SDLXLIFFFileData
-from linguaedit.parsers.mqxliff_parser import parse_mqxliff, save_mqxliff, MQXLIFFFileData
-from linguaedit.services.linter import lint_entries, LintResult, LintIssue
-from linguaedit.services.svlang_checker import run_svlang_checks
-from linguaedit.services.spellcheck import check_text, available_languages
-from linguaedit.services.translator import translate, ENGINES, TranslationError
-from linguaedit.services.tm import lookup_tm, add_to_tm, feed_file_to_tm
-from linguaedit.services.glossary import get_terms, add_term, remove_term, check_glossary
-from linguaedit.services.qa_profiles import get_profiles, check_profile
-from linguaedit.services.report import generate_report
-from linguaedit.services.git_integration import (
-    get_status, get_diff, stage_file, commit, get_branches, switch_branch, create_branch,
-    get_file_at_commit, get_commits_for_file,
+from linguaedit import __version__
+from linguaedit.parsers.android_parser import (
+    parse_android,
+    save_android,
 )
-from linguaedit.ui.platform_dialog import PlatformSettingsDialog
-from linguaedit.ui.sync_dialog import SyncDialog
-from linguaedit.ui.search_replace_dialog import SearchReplaceDialog
-from linguaedit.ui.batch_edit_dialog import BatchEditDialog
-from linguaedit.ui.glossary_dialog import GlossaryDialog
-from linguaedit.ui.statistics_dialog import StatisticsDialog
-from linguaedit.ui.header_dialog import HeaderDialog
-from linguaedit.ui.diff_dialog import DiffDialog, GitDiffDialog
-from linguaedit.ui.dashboard_dialog import DashboardDialog
-from linguaedit.ui.batch_translate_dialog import BatchTranslateDialog
-from linguaedit.ui.project_dock import ProjectDockWidget
+from linguaedit.parsers.apple_strings import (
+    parse_apple_strings,
+    save_apple_strings,
+)
+from linguaedit.parsers.arb_parser import parse_arb, save_arb
+from linguaedit.parsers.chrome_i18n import (
+    parse_chrome_i18n,
+    save_chrome_i18n,
+)
+from linguaedit.parsers.godot import parse_godot, save_godot
+from linguaedit.parsers.java_properties import (
+    parse_java_properties,
+    save_java_properties,
+)
+from linguaedit.parsers.json_parser import parse_json, save_json
+from linguaedit.parsers.mqxliff_parser import (
+    parse_mqxliff,
+    save_mqxliff,
+)
+from linguaedit.parsers.php_parser import parse_php, save_php
+from linguaedit.parsers.po_parser import parse_po, save_po
+from linguaedit.parsers.resx import parse_resx, save_resx
+from linguaedit.parsers.sdlxliff_parser import (
+    parse_sdlxliff,
+    save_sdlxliff,
+)
+from linguaedit.parsers.subtitles import (
+    parse_subtitles,
+    save_subtitles,
+)
+from linguaedit.parsers.ts_parser import parse_ts, save_ts
+from linguaedit.parsers.unity_asset import (
+    parse_unity_asset,
+    save_unity_asset,
+)
+from linguaedit.parsers.xliff_parser import parse_xliff, save_xliff
+from linguaedit.parsers.yaml_parser import parse_yaml, save_yaml
+from linguaedit.services.achievements import get_achievement_manager
+from linguaedit.services.confidence import get_confidence_calculator
+from linguaedit.services.git_integration import (
+    commit,
+    get_branches,
+    get_diff,
+    get_status,
+    stage_file,
+)
+from linguaedit.services.glossary import (
+    add_term,
+    check_glossary,
+    get_terms,
+)
+from linguaedit.services.history import get_history_manager
+from linguaedit.services.linter import LintIssue, lint_entries
+from linguaedit.services.macros import MacroActionType, get_macro_manager
+from linguaedit.services.plugins import get_plugin_manager
+from linguaedit.services.qa_profiles import check_profile
+from linguaedit.services.report import generate_report
+from linguaedit.services.settings import Settings
+from linguaedit.services.spellcheck import check_text
+from linguaedit.services.svlang_checker import run_svlang_checks
+from linguaedit.services.text_search import matches as text_matches
+from linguaedit.services.text_search import replace as replace_text_matches
+from linguaedit.services.tm import add_to_tm, feed_file_to_tm, lookup_tm
+from linguaedit.services.tmx import TMXService
+from linguaedit.services.translator import ENGINES, TranslationError, translate
+from linguaedit.ui.achievements_dialog import AchievementsDialog
 from linguaedit.ui.ai_review_dialog import AIReviewDialog
-from linguaedit.ui.translation_editor import TranslationEditor
-from linguaedit.ui.plural_forms_editor import PluralFormsEditor
-from linguaedit.ui.minimap import MinimapWidget
-from linguaedit.ui.quick_actions import QuickActionsMenu
-from linguaedit.ui.regex_tester_dialog import RegexTesterDialog
+from linguaedit.ui.batch_edit_dialog import BatchEditDialog
+from linguaedit.ui.batch_translate_dialog import BatchTranslateDialog
+from linguaedit.ui.collapsible_panel import CollapsibleSidePanel
+from linguaedit.ui.concordance_dialog import ConcordanceDialog
+from linguaedit.ui.context_panel import ContextPanel
+from linguaedit.ui.dashboard_dialog import DashboardDialog
+from linguaedit.ui.diff_dialog import DiffDialog, GitDiffDialog
+from linguaedit.ui.entry_delegate import EntryItemDelegate
+from linguaedit.ui.glossary_dialog import GlossaryDialog
+from linguaedit.ui.header_dialog import HeaderDialog
+from linguaedit.ui.history_dialog import HistoryDialog
 from linguaedit.ui.layout_simulator_dialog import LayoutSimulatorDialog
 from linguaedit.ui.locale_map_dialog import LocaleMapDialog
-from linguaedit.ui.ocr_dialog import OCRDialog
-from linguaedit.ui.context_panel import ContextPanel
-from linguaedit.services.settings import Settings
-from linguaedit.services.context_lookup import get_context_service
-from linguaedit.services.terminology import get_terminology_service
-from linguaedit.services.confidence import get_confidence_calculator
-from linguaedit.services.source_context import get_source_context_service
-from linguaedit.services.plugins import get_plugin_manager
-from linguaedit.services.history import get_history_manager
-from linguaedit.services.tmx import TMXService
-from linguaedit.services.segmenter import EntrySegmenter, TextSegmenter
-from linguaedit.services.achievements import get_achievement_manager
-from linguaedit.services.macros import get_macro_manager, MacroActionType
-from linguaedit.ui.plugin_dialog import PluginDialog
-from linguaedit.ui.history_dialog import HistoryDialog, FileHistoryDialog
-from linguaedit.ui.video_subtitle_dialog import VideoSubtitleDialog
-from linguaedit.ui.video_preview import VideoPreviewWidget, VideoDockWidget
-from linguaedit.ui.zen_mode import ZenModeWidget
-from linguaedit.ui.entry_delegate import EntryItemDelegate
-from linguaedit.ui.collapsible_panel import CollapsibleSidePanel
-from linguaedit.ui.toolbar_customizer import ToolbarCustomizeDialog
-from linguaedit.ui.unicode_dialog import UnicodeDialog
-from linguaedit.ui.achievements_dialog import AchievementsDialog
 from linguaedit.ui.macro_dialog import MacroDialog
-from linguaedit.ui.concordance_dialog import ConcordanceDialog
-from linguaedit.ui.segment_ops import SplitDialog, MergePreviewDialog
-from linguaedit.ui.progress_ring import ProgressRing
+from linguaedit.ui.minimap import MinimapWidget
+from linguaedit.ui.ocr_dialog import OCRDialog
+from linguaedit.ui.platform_dialog import PlatformSettingsDialog
+from linguaedit.ui.plugin_dialog import PluginDialog
+from linguaedit.ui.plural_forms_editor import PluralFormsEditor
 from linguaedit.ui.pomodoro_dialog import PomodoroDialog
+from linguaedit.ui.progress_ring import ProgressRing
+from linguaedit.ui.project_dock import ProjectDockWidget
+from linguaedit.ui.quick_actions import QuickActionsMenu
+from linguaedit.ui.regex_tester_dialog import RegexTesterDialog
+from linguaedit.ui.search_replace_dialog import SearchReplaceDialog
+from linguaedit.ui.segment_ops import MergePreviewDialog, SplitDialog
+from linguaedit.ui.statistics_dialog import StatisticsDialog
+from linguaedit.ui.sync_dialog import SyncDialog
+from linguaedit.ui.toolbar_customizer import ToolbarCustomizeDialog
+from linguaedit.ui.translation_editor import TranslationEditor
+from linguaedit.ui.unicode_dialog import UnicodeDialog
+from linguaedit.ui.video_preview import VideoDockWidget
+from linguaedit.ui.video_subtitle_dialog import VideoSubtitleDialog
+from linguaedit.ui.zen_mode import ZenModeWidget
 
 # ── Recent files helper ──────────────────────────────────────────────
 
@@ -308,8 +379,9 @@ class _PreTranslateWorker(QThread):
         self._pause_for_error = False
 
     def run(self):
-        from linguaedit.services.translator import translate, TranslationError
         import time
+
+        from linguaedit.services.translator import TranslationError, translate
 
         total = len(self._to_translate)
         count = 0
@@ -1618,7 +1690,7 @@ class LinguaEditWindow(QMainWindow):
 
         def _make_arrow_icon(direction: str, color: str = "#8ab4f8") -> QIcon:
             """Create a modern rounded arrow icon."""
-            from PySide6.QtGui import QPixmap, QPainter, QPen, QPainterPath
+            from PySide6.QtGui import QPainter, QPainterPath, QPen, QPixmap
             px = QPixmap(24, 24)
             px.fill(QColor(0, 0, 0, 0))
             p = QPainter(px)
@@ -2123,7 +2195,7 @@ class LinguaEditWindow(QMainWindow):
                 self._msgctxt_label.setText(e.msgctxt)
                 self._msgctxt_row.setVisible(True)
             if e.occurrences:
-                refs = ", ".join(f"{f}:{l}" for f, l in e.occurrences[:8])
+                refs = ", ".join(f"{file_name}:{line}" for file_name, line in e.occurrences[:8])
                 if len(e.occurrences) > 8:
                     refs += f" (+{len(e.occurrences) - 8} more)"
                 self._references_label.setText(refs)
@@ -2208,7 +2280,7 @@ class LinguaEditWindow(QMainWindow):
         # Source references (where the string appears in code)
         if self._file_type == "po" and hasattr(self._file_data.entries[idx], 'occurrences') and self._file_data.entries[idx].occurrences:
             refs = self._file_data.entries[idx].occurrences
-            ref_parts = [f"📍 {f}:{l}" for f, l in refs[:10]]
+            ref_parts = [f"📍 {file_name}:{line}" for file_name, line in refs[:10]]
             if len(refs) > 10:
                 ref_parts.append(self.tr("… and %d more") % (len(refs) - 10))
             self._source_refs_label.setText("  ".join(ref_parts))
@@ -2270,7 +2342,12 @@ class LinguaEditWindow(QMainWindow):
             return
         
         # Visa bekräftelsedialog
-        from PySide6.QtWidgets import QDialog, QVBoxLayout, QHBoxLayout, QCheckBox, QDialogButtonBox
+        from PySide6.QtWidgets import (
+            QCheckBox,
+            QDialog,
+            QDialogButtonBox,
+            QVBoxLayout,
+        )
         
         dialog = QDialog(self)
         dialog.setWindowTitle(self.tr("Propagate Translation"))
@@ -4490,11 +4567,11 @@ class LinguaEditWindow(QMainWindow):
             return
         msg = f"Branch: {status.branch}\n"
         if status.modified_files:
-            msg += f"\nModified:\n" + "\n".join(f"  {f}" for f in status.modified_files)
+            msg += "\nModified:\n" + "\n".join(f"  {f}" for f in status.modified_files)
         if status.staged_files:
-            msg += f"\nStaged:\n" + "\n".join(f"  {f}" for f in status.staged_files)
+            msg += "\nStaged:\n" + "\n".join(f"  {f}" for f in status.staged_files)
         if status.untracked_files:
-            msg += f"\nUntracked:\n" + "\n".join(f"  {f}" for f in status.untracked_files)
+            msg += "\nUntracked:\n" + "\n".join(f"  {f}" for f in status.untracked_files)
         if not status.has_changes:
             msg += "\nWorking tree clean ✓"
         self._show_dialog(self.tr("Git Status"), msg)
@@ -4578,7 +4655,8 @@ class LinguaEditWindow(QMainWindow):
     }
 
     def _show_pretranslate_dialog(self):
-        from linguaedit.services.keystore import get_secret as ks_get, store_secret
+        from linguaedit.services.keystore import get_secret as ks_get
+        from linguaedit.services.keystore import store_secret
 
         dialog = QDialog(self)
         dialog.setWindowTitle(self.tr("Pre-translate"))
@@ -4792,7 +4870,8 @@ class LinguaEditWindow(QMainWindow):
         worker.start()
 
     def _show_api_keys_dialog(self):
-        from linguaedit.services.keystore import store_secret, get_secret as ks_get, backend_name
+        from linguaedit.services.keystore import backend_name, store_secret
+        from linguaedit.services.keystore import get_secret as ks_get
 
         dialog = QDialog(self)
         dialog.setWindowTitle(self.tr("API Keys"))
@@ -5288,9 +5367,11 @@ class LinguaEditWindow(QMainWindow):
     def _on_open_video(self):
         """Open a video file — probe subtitle tracks, let user pick, extract."""
         from PySide6.QtWidgets import QFileDialog
+
         from linguaedit.services.ffmpeg import (
-            is_ffmpeg_available, get_subtitle_tracks, get_video_duration,
-            extract_subtitle, SUPPORTED_VIDEO_EXTENSIONS,
+            get_subtitle_tracks,
+            get_video_duration,
+            is_ffmpeg_available,
         )
 
         if not is_ffmpeg_available():
@@ -5431,7 +5512,7 @@ class LinguaEditWindow(QMainWindow):
         """Update compile action icon: green check = OK, red X = error."""
         if not hasattr(self, '_compile_action'):
             return
-        from PySide6.QtGui import QPixmap, QPainter
+        from PySide6.QtGui import QPainter, QPixmap
         px = QPixmap(32, 32)
         px.fill(QColor(0, 0, 0, 0))
         painter = QPainter(px)
@@ -5542,19 +5623,6 @@ class LinguaEditWindow(QMainWindow):
             self._search_entry.setText(pattern)
             self._apply_filter()
 
-    @staticmethod
-    def _search_matches(text: str, pattern: str, case_sensitive: bool,
-                        whole_words: bool, is_regex: bool) -> bool:
-        """Return whether text matches the search options."""
-        flags = 0 if case_sensitive else re.IGNORECASE
-        expression = pattern if is_regex else re.escape(pattern)
-        if whole_words:
-            expression = rf"\b(?:{expression})\b"
-        try:
-            return re.search(expression, text, flags) is not None
-        except re.error:
-            return False
-
     def _handle_search_navigation(self, pattern: str, case_sensitive: bool,
                                   whole_words: bool, is_regex: bool,
                                   scope: str, direction: int):
@@ -5567,8 +5635,10 @@ class LinguaEditWindow(QMainWindow):
                 fields.append(source)
             if scope in ("translation", "both"):
                 fields.append(translation)
-            if any(self._search_matches(value, pattern, case_sensitive,
-                                        whole_words, is_regex) for value in fields):
+            if any(text_matches(
+                value, pattern, case_sensitive=case_sensitive,
+                whole_words=whole_words, regex=is_regex,
+            ) for value in fields):
                 matches.append(index)
 
         if not matches:
@@ -5585,19 +5655,6 @@ class LinguaEditWindow(QMainWindow):
         self._navigate_to_entry(target)
         self._search_replace_dialog.set_match_count(position + 1, len(matches))
             
-    @staticmethod
-    def _replace_matches(text: str, find_text: str, replace_text: str,
-                         case_sensitive: bool, whole_words: bool,
-                         is_regex: bool, count: int = 0) -> tuple[str, int]:
-        flags = 0 if case_sensitive else re.IGNORECASE
-        expression = find_text if is_regex else re.escape(find_text)
-        if whole_words:
-            expression = rf"\b(?:{expression})\b"
-        try:
-            return re.subn(expression, replace_text, text, count=count, flags=flags)
-        except re.error:
-            return text, 0
-
     def _handle_replace_request(self, find_text: str, replace_text: str,
                                 case_sensitive: bool, whole_words: bool,
                                 is_regex: bool, scope: str, replace_all: bool):
@@ -5613,9 +5670,10 @@ class LinguaEditWindow(QMainWindow):
             count = 0
             entries = self._get_entries()
             for i, (_msgid, msgstr, _is_fuzzy) in enumerate(entries):
-                new_text, replacements = self._replace_matches(
-                    msgstr, find_text, replace_text, case_sensitive,
-                    whole_words, is_regex
+                new_text, replacements = replace_text_matches(
+                    msgstr, find_text, replace_text,
+                    case_sensitive=case_sensitive,
+                    whole_words=whole_words, regex=is_regex,
                 )
                 if replacements:
                     self._set_entry_translation(i, new_text)
@@ -5628,9 +5686,10 @@ class LinguaEditWindow(QMainWindow):
         else:
             if self._current_index >= 0:
                 text = self._trans_view.toPlainText()
-                new_text, replacements = self._replace_matches(
-                    text, find_text, replace_text, case_sensitive,
-                    whole_words, is_regex, count=1
+                new_text, replacements = replace_text_matches(
+                    text, find_text, replace_text,
+                    case_sensitive=case_sensitive,
+                    whole_words=whole_words, regex=is_regex, count=1,
                 )
                 if replacements:
                     self._trans_view.setPlainText(new_text)
@@ -5827,7 +5886,13 @@ class LinguaEditWindow(QMainWindow):
             self._show_toast(self.tr("No file loaded"))
             return
 
-        from PySide6.QtWidgets import QCheckBox, QVBoxLayout, QDialog, QDialogButtonBox, QGroupBox
+        from PySide6.QtWidgets import (
+            QCheckBox,
+            QDialog,
+            QDialogButtonBox,
+            QGroupBox,
+            QVBoxLayout,
+        )
         
         # Custom dialog for report options
         dialog = QDialog(self)
@@ -6264,8 +6329,9 @@ class LinguaEditWindow(QMainWindow):
     def _handle_dropped_video(self, video_path: Path):
         """Handle a video file dropped onto the window — extract subtitles."""
         from linguaedit.services.ffmpeg import (
-            is_ffmpeg_available, get_subtitle_tracks, get_video_duration,
-            extract_subtitle,
+            get_subtitle_tracks,
+            get_video_duration,
+            is_ffmpeg_available,
         )
 
         if not is_ffmpeg_available():
@@ -6545,7 +6611,7 @@ class LinguaEditWindow(QMainWindow):
         
         # Fördefinierade taggar
         predefined_tags = ["UI", "error", "tooltip", "menu", "dialog", "help"]
-        existing_tags = self._tags.get(self._current_index, [])
+        self._tags.get(self._current_index, [])
         
         # Visa input dialog
         tag, ok = QInputDialog.getItem(
@@ -6693,7 +6759,13 @@ class LinguaEditWindow(QMainWindow):
             self._show_toast(self.tr("No file loaded"))
             return
         
-        from PySide6.QtWidgets import QDialog, QFormLayout, QLineEdit, QTextEdit, QCheckBox
+        from PySide6.QtWidgets import (
+            QCheckBox,
+            QDialog,
+            QFormLayout,
+            QLineEdit,
+            QTextEdit,
+        )
         
         dialog = QDialog(self)
         dialog.setWindowTitle(self.tr("Email Translation"))
@@ -7278,9 +7350,8 @@ class LinguaEditWindow(QMainWindow):
             return
         
         try:
-            import subprocess
-            import sys
             import platform
+            import subprocess
             
             # Stop any existing TTS
             if self._tts_process and self._tts_process.poll() is None:
@@ -7721,7 +7792,10 @@ class LinguaEditWindow(QMainWindow):
         """Fetch Transifex projects and show translation statistics."""
         from linguaedit.services.keystore import get_secret as ks_get
         from linguaedit.services.transifex import (
-            fetch_organizations, fetch_projects, fetch_project_stats, TransifexError,
+            TransifexError,
+            fetch_organizations,
+            fetch_project_stats,
+            fetch_projects,
         )
 
         api_key = ks_get("transifex", "api_key")
@@ -7845,7 +7919,9 @@ class LinguaEditWindow(QMainWindow):
         """Fetch Weblate projects and show translation statistics."""
         from linguaedit.services.keystore import get_secret as ks_get
         from linguaedit.services.weblate import (
-            fetch_projects, fetch_project_statistics, WeblateError,
+            WeblateError,
+            fetch_project_statistics,
+            fetch_projects,
         )
 
         api_key = ks_get("weblate", "api_key")
@@ -7945,10 +8021,12 @@ class LinguaEditWindow(QMainWindow):
 
     def _show_crowdin_stats(self):
         """Fetch Crowdin projects and show translation statistics."""
-        from linguaedit.services.keystore import get_secret as ks_get
         from linguaedit.services.crowdin import (
-            fetch_projects, fetch_project_progress, CrowdinError,
+            CrowdinError,
+            fetch_project_progress,
+            fetch_projects,
         )
+        from linguaedit.services.keystore import get_secret as ks_get
 
         api_key = ks_get("crowdin", "api_key")
         if not api_key:
@@ -8351,7 +8429,6 @@ class LinguaEditWindow(QMainWindow):
 
     def _update_toolbar_visibility(self):
         """Hide quality/tools actions when no file is loaded."""
-        has_file = self._file_data is not None
         # The sidebar has quality/tools actions that should be hidden
         for i in range(self._sidebar.layout().count() if self._sidebar.layout() else 0):
             pass  # Sidebar actions are always visible for now

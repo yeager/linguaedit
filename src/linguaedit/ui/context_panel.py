@@ -6,15 +6,21 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 from __future__ import annotations
 
+from PySide6.QtCore import Signal, Slot
 from PySide6.QtWidgets import (
-    QDockWidget, QWidget, QVBoxLayout, QLabel, QPushButton,
-    QGroupBox, QScrollArea, QFrame, QSizePolicy,
+    QDockWidget,
+    QFrame,
+    QGroupBox,
+    QLabel,
+    QPushButton,
+    QScrollArea,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, Signal, Slot
 
-from linguaedit.services.tm import lookup_tm
 from linguaedit.services.glossary import get_terms
-from linguaedit.services.translator import translate, ENGINES, TranslationError
+from linguaedit.services.tm import lookup_tm
+from linguaedit.services.translator import TranslationError, translate
 
 
 class _CollapsibleSection(QGroupBox):

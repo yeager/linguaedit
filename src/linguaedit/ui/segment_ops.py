@@ -5,11 +5,13 @@
 from __future__ import annotations
 
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QTextEdit,
-    QPushButton, QDialogButtonBox, QMessageBox, QPlainTextEdit,
+    QDialog,
+    QDialogButtonBox,
+    QLabel,
+    QMessageBox,
+    QPlainTextEdit,
+    QVBoxLayout,
 )
-from PySide6.QtCore import Qt
-from PySide6.QtGui import QTextCursor
 
 
 class SplitDialog(QDialog):

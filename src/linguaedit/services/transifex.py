@@ -3,8 +3,8 @@
 from __future__ import annotations
 
 import json
-import urllib.request
 import urllib.error
+import urllib.request
 from typing import Optional
 
 BASE = "https://rest.api.transifex.com"
@@ -28,8 +28,7 @@ def _request(endpoint: str, api_key: str, params: Optional[dict] = None) -> dict
         with urllib.request.urlopen(req, timeout=30) as resp:
             return json.loads(resp.read().decode())
     except urllib.error.HTTPError as e:
-        body = e.read().decode() if e.fp else ""
-        raise TransifexError(f"HTTP {e.code}: {body[:500]}") from e
+        raise TransifexError(f"HTTP {e.code}") from e
     except Exception as e:
         raise TransifexError(str(e)) from e
 
@@ -41,8 +40,6 @@ def _paginate(endpoint: str, api_key: str, params: Optional[dict] = None) -> lis
     results.extend(data.get("data", []))
     while data.get("links", {}).get("next"):
         next_url = data["links"]["next"]
-        # next is a full URL, strip base
-        suffix = next_url.replace(BASE, "")
         req = urllib.request.Request(next_url, headers={
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/vnd.api+json",

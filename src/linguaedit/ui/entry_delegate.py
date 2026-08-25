@@ -5,10 +5,9 @@
 
 from __future__ import annotations
 
-from PySide6.QtWidgets import QStyledItemDelegate, QStyleOptionViewItem, QTreeWidgetItem
-from PySide6.QtCore import Qt, QRect, QModelIndex
-from PySide6.QtGui import QPainter, QColor, QPen, QBrush, QIcon
-
+from PySide6.QtCore import QModelIndex, QRect, Qt
+from PySide6.QtGui import QBrush, QColor, QPainter, QPen
+from PySide6.QtWidgets import QStyledItemDelegate, QStyleOptionViewItem
 
 # Border colors
 _BORDER_UNTRANSLATED = QColor(220, 50, 50)

@@ -11,9 +11,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
 from __future__ import annotations
 
 import json
-import urllib.request
 import urllib.error
-from typing import Optional
+import urllib.request
 
 
 class WeblateError(Exception):
@@ -53,8 +52,7 @@ def _request(
                 return body
             return json.loads(body.decode())
     except urllib.error.HTTPError as e:
-        detail = e.read().decode()[:500] if e.fp else ""
-        raise WeblateError(f"HTTP {e.code}: {detail}") from e
+        raise WeblateError(f"HTTP {e.code}") from e
     except Exception as e:
         raise WeblateError(str(e)) from e
 

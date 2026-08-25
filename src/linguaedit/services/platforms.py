@@ -5,13 +5,16 @@ from __future__ import annotations
 
 import json
 import time
-import requests
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
-def _(s): return s  # no-op; UI handles translation
 
-from linguaedit.services.keystore import store_secret, get_secret, delete_secret
+import requests
+
+from linguaedit.services.keystore import delete_secret, get_secret, store_secret
+
+
+def _(s): return s  # no-op; UI handles translation
 
 # ── Configuration persistence ─────────────────────────────────────────
 #
@@ -118,7 +121,6 @@ def _clean_error(response) -> str:
 def _request_with_retry(method: str, url: str, max_retries: int = 3,
                         timeout: int = 30, **kwargs) -> requests.Response:
     """Make an HTTP request with retry logic."""
-    last_exc = None
     for attempt in range(max_retries):
         try:
             r = requests.request(method, url, timeout=timeout, **kwargs)
@@ -137,13 +139,11 @@ def _request_with_retry(method: str, url: str, max_retries: int = 3,
                 continue
             return r
         except requests.Timeout as e:
-            last_exc = e
             if attempt < max_retries - 1:
                 time.sleep(2 ** attempt)
                 continue
             raise PlatformTimeoutError(_("Request timed out after {n} attempts").format(n=max_retries)) from e
         except requests.ConnectionError as e:
-            last_exc = e
             if attempt < max_retries - 1:
                 time.sleep(2 ** attempt)
                 continue
@@ -636,8 +636,8 @@ def crowdin_download_file(url: str, language: str = "") -> bytes:
     extracts the best matching translation file, and returns its content.
     If *language* is provided, files matching that language code are preferred.
     """
-    import zipfile
     import io
+    import zipfile
 
     r = _request_with_retry("GET", url, timeout=60)
     if r.status_code != 200:

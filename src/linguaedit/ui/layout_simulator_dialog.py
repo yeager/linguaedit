@@ -2,15 +2,21 @@
 
 from __future__ import annotations
 
-from typing import Optional
-
+from PySide6.QtGui import QColor, QFont, QFontMetrics, QPainter, QPalette
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QTextEdit, QSpinBox, QComboBox, QFormLayout, QGroupBox,
-    QFrame, QSizePolicy, QSlider, QCheckBox
+    QCheckBox,
+    QComboBox,
+    QDialog,
+    QFormLayout,
+    QFrame,
+    QGroupBox,
+    QHBoxLayout,
+    QLabel,
+    QPushButton,
+    QSpinBox,
+    QTextEdit,
+    QVBoxLayout,
 )
-from PySide6.QtCore import Qt, Signal
-from PySide6.QtGui import QFont, QFontMetrics, QPainter, QColor, QPalette
 
 
 class TextRenderWidget(QFrame):

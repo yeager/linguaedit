@@ -2,15 +2,25 @@
 
 from __future__ import annotations
 
+from PySide6.QtCore import Qt, Signal, Slot
+from PySide6.QtGui import QFont, QSyntaxHighlighter, QTextCharFormat, QTextDocument
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QTableWidget, QTableWidgetItem,
-    QPushButton, QLabel, QTextEdit, QSplitter, QGroupBox, 
-    QHeaderView, QMessageBox, QAbstractItemView, QFrame
+    QAbstractItemView,
+    QDialog,
+    QGroupBox,
+    QHBoxLayout,
+    QHeaderView,
+    QLabel,
+    QMessageBox,
+    QPushButton,
+    QSplitter,
+    QTableWidget,
+    QTableWidgetItem,
+    QTextEdit,
+    QVBoxLayout,
 )
-from PySide6.QtCore import Qt, Slot, Signal
-from PySide6.QtGui import QFont, QTextCharFormat, QSyntaxHighlighter, QTextDocument
 
-from linguaedit.services.history import get_history_manager, HistoryEntry
+from linguaedit.services.history import get_history_manager
 
 
 class DiffHighlighter(QSyntaxHighlighter):

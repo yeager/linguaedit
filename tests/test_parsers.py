@@ -1,6 +1,4 @@
 """Tests for all LinguaEdit file format parsers."""
-import json
-import shutil
 from pathlib import Path
 
 import pytest
@@ -332,7 +330,10 @@ class TestAppleStringsParser:
         assert len(data.entries) >= 3
 
     def test_roundtrip(self, tmp_path):
-        from linguaedit.parsers.apple_strings import parse_apple_strings, save_apple_strings
+        from linguaedit.parsers.apple_strings import (
+            parse_apple_strings,
+            save_apple_strings,
+        )
         data = parse_apple_strings(FIXTURES / "test.strings")
         out = tmp_path / "out.strings"
         save_apple_strings(data, str(out))
@@ -340,7 +341,10 @@ class TestAppleStringsParser:
         assert len(data2.entries) == len(data.entries)
 
     def test_modify(self, tmp_path):
-        from linguaedit.parsers.apple_strings import parse_apple_strings, save_apple_strings
+        from linguaedit.parsers.apple_strings import (
+            parse_apple_strings,
+            save_apple_strings,
+        )
         data = parse_apple_strings(FIXTURES / "test.strings")
         for e in data.entries:
             if e.msgid == "cancel":
@@ -413,7 +417,10 @@ class TestJavaPropertiesParser:
         assert len(keys) >= 4
 
     def test_roundtrip(self, tmp_path):
-        from linguaedit.parsers.java_properties import parse_java_properties, save_java_properties
+        from linguaedit.parsers.java_properties import (
+            parse_java_properties,
+            save_java_properties,
+        )
         data = parse_java_properties(FIXTURES / "test.properties")
         out = tmp_path / "out.properties"
         save_java_properties(data, out)
@@ -423,7 +430,10 @@ class TestJavaPropertiesParser:
         assert len(new_keys) == len(orig_keys)
 
     def test_modify(self, tmp_path):
-        from linguaedit.parsers.java_properties import parse_java_properties, save_java_properties
+        from linguaedit.parsers.java_properties import (
+            parse_java_properties,
+            save_java_properties,
+        )
         data = parse_java_properties(FIXTURES / "test.properties")
         for e in data.entries:
             if e.key == "cancel":

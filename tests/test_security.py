@@ -1,7 +1,4 @@
 """Tests for security features."""
-import os
-import tempfile
-from pathlib import Path
 
 import pytest
 

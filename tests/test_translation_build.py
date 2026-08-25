@@ -1,8 +1,11 @@
 """Tests for build-time TS completion filtering."""
 
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 import translation_build
+
+TRANSLATIONS = Path("src/linguaedit/translations")
 
 
 def _write_ts(path: Path, finished: int, total: int):
@@ -45,3 +48,24 @@ def test_build_requires_strictly_more_than_twenty_percent(tmp_path, monkeypatch)
     assert generated == [above_threshold.with_suffix(".qm")]
     assert not at_threshold.with_suffix(".qm").exists()
     assert above_threshold.with_suffix(".qm").exists()
+
+
+def test_source_catalogs_are_valid_and_have_no_duplicate_messages():
+    catalogs = sorted(TRANSLATIONS.glob("*.ts"))
+    assert catalogs
+
+    for catalog in catalogs:
+        root = ET.parse(catalog).getroot()
+        for context in root.findall("context"):
+            seen = set()
+            for message in context.findall("message"):
+                key = (
+                    message.findtext("source", default=""),
+                    message.findtext("comment", default=""),
+                )
+                assert key not in seen, f"duplicate message in {catalog}: {key!r}"
+                seen.add(key)
+
+
+def test_source_tree_does_not_contain_compiled_translations():
+    assert not list(TRANSLATIONS.glob("*.qm"))

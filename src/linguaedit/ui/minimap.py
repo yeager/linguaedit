@@ -5,11 +5,15 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 from __future__ import annotations
 
-from PySide6.QtWidgets import QWidget
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtGui import (
-    QPainter, QColor, QPen, QBrush, QMouseEvent,
+    QBrush,
+    QColor,
+    QMouseEvent,
+    QPainter,
+    QPen,
 )
+from PySide6.QtWidgets import QWidget
 
 
 class MinimapWidget(QWidget):

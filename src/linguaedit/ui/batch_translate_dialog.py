@@ -7,18 +7,28 @@ from __future__ import annotations
 
 from typing import Optional
 
+from PySide6.QtCore import QElapsedTimer, Qt, QThread, Signal
+from PySide6.QtGui import QBrush, QColor
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QProgressBar, QGroupBox, QComboBox, QCheckBox,
-    QDialogButtonBox, QTableWidget, QTableWidgetItem,
-    QHeaderView, QAbstractItemView, QFormLayout, QLineEdit,
-    QMessageBox, QApplication,
+    QAbstractItemView,
+    QCheckBox,
+    QComboBox,
+    QDialog,
+    QFormLayout,
+    QGroupBox,
+    QHBoxLayout,
+    QHeaderView,
+    QLabel,
+    QLineEdit,
+    QMessageBox,
+    QProgressBar,
+    QPushButton,
+    QTableWidget,
+    QTableWidgetItem,
+    QVBoxLayout,
 )
-from PySide6.QtCore import Qt, QThread, Signal, QElapsedTimer
-from PySide6.QtGui import QColor, QBrush
 
-from linguaedit.services.translator import translate, ENGINES, TranslationError
-
+from linguaedit.services.translator import ENGINES, translate
 
 # ── Worker thread ────────────────────────────────────────────────────
 

@@ -3,13 +3,24 @@
 from __future__ import annotations
 
 import unicodedata
-from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QTableWidget, QTableWidgetItem,
-    QPushButton, QLabel, QTextEdit, QLineEdit, QGroupBox,
-    QHeaderView, QAbstractItemView, QCheckBox, QSplitter
-)
+
 from PySide6.QtCore import Qt, Slot
-from PySide6.QtGui import QFont, QColor
+from PySide6.QtGui import QColor, QFont
+from PySide6.QtWidgets import (
+    QAbstractItemView,
+    QCheckBox,
+    QDialog,
+    QGroupBox,
+    QHBoxLayout,
+    QHeaderView,
+    QLabel,
+    QPushButton,
+    QSplitter,
+    QTableWidget,
+    QTableWidgetItem,
+    QTextEdit,
+    QVBoxLayout,
+)
 
 
 class UnicodeDialog(QDialog):

@@ -200,7 +200,7 @@
         </message>
         <message>
             <source>All</source>
-            <translation type="unfinished"/>
+            <translation>Alle</translation>
         </message>
         <message>
             <source>Close</source>
@@ -275,7 +275,7 @@
         </message>
         <message>
             <source>Copy Source</source>
-            <translation type="unfinished"/>
+            <translation>Kopier kilde</translation>
         </message>
         <message>
             <source>Copy source text to empty translation fields.</source>
@@ -422,7 +422,7 @@
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>Kildespråk:</translation>
         </message>
         <message>
             <source>Status</source>
@@ -430,7 +430,7 @@
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>Målspråk:</translation>
         </message>
         <message>
             <source>Translate All</source>
@@ -442,11 +442,11 @@
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Oversettelse</translation>
         </message>
         <message>
             <source>Translation Settings</source>
-            <translation type="unfinished"/>
+            <translation>Oversettelsesinnstillinger</translation>
         </message>
         <message>
             <source>%d min %d s remaining</source>
@@ -504,7 +504,7 @@
         <name>ConcordanceDialog</name>
         <message>
             <source>Concordance Search</source>
-            <translation type="unfinished"/>
+            <translation>Konkordanssøk</translation>
         </message>
         <message>
             <source>Double-click a row to copy translation to clipboard.</source>
@@ -532,7 +532,7 @@
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Oversettelse</translation>
         </message>
         <message>
             <source>Translation copied to clipboard.</source>
@@ -575,7 +575,7 @@
         </message>
         <message>
             <source>Translation Memory</source>
-            <translation type="unfinished"/>
+            <translation>Oversettelsesminne</translation>
         </message>
         <message>
             <source>Source: %s\nTarget: %s</source>
@@ -615,7 +615,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>Uklar</translation>
         </message>
         <message>
             <source>Per-Language Progress</source>
@@ -631,11 +631,11 @@ Target: %s</source>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>Oversatte</translation>
         </message>
         <message>
             <source>Untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Uoversatt</translation>
         </message>
         <message>
             <source>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style=&apos;color:green&apos;&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:orange&apos;&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:red&apos;&gt;Untranslated: %d&lt;/span&gt;</source>
@@ -908,7 +908,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>Ukjent</translation>
         </message>
         <message>
             <source>User</source>
@@ -1027,7 +1027,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Oversettelse</translation>
         </message>
         <message>
             <source>Translation (new)</source>
@@ -1078,7 +1078,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished"/>
+            <translation>Tøm</translation>
         </message>
         <message>
             <source>Confirm Delete</source>
@@ -1086,7 +1086,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Copy Source</source>
-            <translation type="unfinished"/>
+            <translation>Kopier kilde</translation>
         </message>
         <message>
             <source>Copy Target</source>
@@ -1305,7 +1305,7 @@ First errors:
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>Språk:</translation>
         </message>
         <message>
             <source>Last-Translator:</source>
@@ -1417,7 +1417,7 @@ First errors:
         </message>
         <message>
             <source>Version:</source>
-            <translation type="unfinished"/>
+            <translation>Versjon:</translation>
         </message>
         <message>
             <source>XLIFF Attributes</source>
@@ -1512,7 +1512,7 @@ First errors:
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>Ukjent</translation>
         </message>
         <message>
             <source>User</source>
@@ -1629,11 +1629,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>%d matches</source>
-            <translation type="unfinished"/>
+            <translation>%d treff</translation>
         </message>
         <message>
             <source>%d strings</source>
-            <translation type="unfinished"/>
+            <translation>%d strenger</translation>
         </message>
         <message>
             <source>%d strings — %d translated, %d fuzzy, %d untranslated</source>
@@ -1645,43 +1645,43 @@ This will replace the current text with:
         </message>
         <message>
             <source>%p% translated</source>
-            <translation type="unfinished"/>
+            <translation>%p% oversatt</translation>
         </message>
         <message>
             <source>&amp;Catalog</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Katalog</translation>
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Rediger</translation>
         </message>
         <message>
             <source>&amp;File</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Fil</translation>
         </message>
         <message>
             <source>&amp;Git</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Git</translation>
         </message>
         <message>
             <source>&amp;Go</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Gå</translation>
         </message>
         <message>
             <source>&amp;Help</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Hjelp</translation>
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Åpne…</translation>
         </message>
         <message>
             <source>&amp;Platforms</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Plattformer</translation>
         </message>
         <message>
             <source>&amp;Save</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Lagre</translation>
         </message>
         <message>
             <source>&amp;Tools</source>
@@ -1689,31 +1689,31 @@ This will replace the current text with:
         </message>
         <message>
             <source>&amp;View</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Vis</translation>
         </message>
         <message>
             <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Konkordanssøk&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference source:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Referansekilde:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Referanseoversettelse:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Kildetekst:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Forslag&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Oversettelse:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
@@ -1721,11 +1721,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;(ingen treff i referanse)&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No suggestions&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;Ingen forslag&lt;/i&gt;</translation>
         </message>
         <message>
             <source>A macro with this name already exists.</source>
@@ -1745,19 +1745,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>API Keys</source>
-            <translation type="unfinished"/>
+            <translation>API-nøkler</translation>
         </message>
         <message>
             <source>API keys saved</source>
-            <translation type="unfinished"/>
+            <translation>API-nøkler lagret</translation>
         </message>
         <message>
             <source>About LinguaEdit</source>
-            <translation type="unfinished"/>
+            <translation>Om LinguaEdit</translation>
         </message>
         <message>
             <source>About Qt</source>
-            <translation type="unfinished"/>
+            <translation>Om Qt</translation>
         </message>
         <message>
             <source>Achievements…</source>
@@ -1769,11 +1769,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Add Comment</source>
-            <translation type="unfinished"/>
+            <translation>Legg til kommentar</translation>
         </message>
         <message>
             <source>Add Field</source>
-            <translation type="unfinished"/>
+            <translation>Legg til felt</translation>
         </message>
         <message>
             <source>Add Tag</source>
@@ -1785,7 +1785,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Add Term</source>
-            <translation type="unfinished"/>
+            <translation>Legg til term</translation>
         </message>
         <message>
             <source>Add translator notes...</source>
@@ -1793,11 +1793,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Added %d entries to Translation Memory</source>
-            <translation type="unfinished"/>
+            <translation>La til %d poster i oversettelsesminnet</translation>
         </message>
         <message>
             <source>Added: %s → %s</source>
-            <translation type="unfinished"/>
+            <translation>Lagt til: %s → %s</translation>
         </message>
         <message>
             <source>All files (*)</source>
@@ -1805,7 +1805,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>All strings</source>
-            <translation type="unfinished"/>
+            <translation>Alle strenger</translation>
         </message>
         <message>
             <source>Already recording a macro</source>
@@ -1841,11 +1841,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Auto-propagate</source>
-            <translation type="unfinished"/>
+            <translation>Autopropager</translation>
         </message>
         <message>
             <source>Auto-propagated %d entries</source>
-            <translation type="unfinished"/>
+            <translation>Autopropagerte %d poster</translation>
         </message>
         <message>
             <source>Batch Edit…</source>
@@ -1869,11 +1869,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>By length</source>
-            <translation type="unfinished"/>
+            <translation>Etter lengde</translation>
         </message>
         <message>
             <source>By reference</source>
-            <translation type="unfinished"/>
+            <translation>Etter referanse</translation>
         </message>
         <message>
             <source>Cancel</source>
@@ -1885,7 +1885,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Cannot compile: pyside6-lrelease or lrelease not found</source>
-            <translation type="unfinished"/>
+            <translation>Kan ikke kompilere: pyside6-lrelease eller lrelease ble ikke funnet</translation>
         </message>
         <message>
             <source>Cannot split empty entry</source>
@@ -1905,15 +1905,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Check for updates</source>
-            <translation type="unfinished"/>
+            <translation>Søk etter oppdateringer</translation>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished"/>
+            <translation>Tøm</translation>
         </message>
         <message>
             <source>Clear translation</source>
-            <translation type="unfinished"/>
+            <translation>Tøm oversettelse</translation>
         </message>
         <message>
             <source>Close Current File?</source>
@@ -1921,7 +1921,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Close Tab</source>
-            <translation type="unfinished"/>
+            <translation>Lukk fane</translation>
         </message>
         <message>
             <source>Close the current file and load extracted subtitles?</source>
@@ -1933,11 +1933,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Commit failed: %s</source>
-            <translation type="unfinished"/>
+            <translation>Commit mislyktes: %s</translation>
         </message>
         <message>
             <source>Commit message:</source>
-            <translation type="unfinished"/>
+            <translation>Commit-melding:</translation>
         </message>
         <message>
             <source>Commit successful. Push to remote?</source>
@@ -1945,11 +1945,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Committed!</source>
-            <translation type="unfinished"/>
+            <translation>Committet!</translation>
         </message>
         <message>
             <source>Commit…</source>
-            <translation type="unfinished"/>
+            <translation>Commit…</translation>
         </message>
         <message>
             <source>Compare Files…</source>
@@ -1957,27 +1957,27 @@ This will replace the current text with:
         </message>
         <message>
             <source>Compare language…</source>
-            <translation type="unfinished"/>
+            <translation>Sammenlign språk…</translation>
         </message>
         <message>
             <source>Compile</source>
-            <translation type="unfinished"/>
+            <translation>Kompiler</translation>
         </message>
         <message>
             <source>Compile error: %s</source>
-            <translation type="unfinished"/>
+            <translation>Kompileringsfeil: %s</translation>
         </message>
         <message>
             <source>Compile not supported for %s files</source>
-            <translation type="unfinished"/>
+            <translation>Kompilering støttes ikke for %s-filer</translation>
         </message>
         <message>
             <source>Compile translation</source>
-            <translation type="unfinished"/>
+            <translation>Kompiler oversettelse</translation>
         </message>
         <message>
             <source>Compiled: %s</source>
-            <translation type="unfinished"/>
+            <translation>Kompilert: %s</translation>
         </message>
         <message>
             <source>Concordance</source>
@@ -1989,11 +1989,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Consistency Check</source>
-            <translation type="unfinished"/>
+            <translation>Konsistenssjekk</translation>
         </message>
         <message>
             <source>Consistency check</source>
-            <translation type="unfinished"/>
+            <translation>Konsistenssjekk</translation>
         </message>
         <message>
             <source>Context</source>
@@ -2001,11 +2001,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Copy Source</source>
-            <translation type="unfinished"/>
+            <translation>Kopier kilde</translation>
         </message>
         <message>
             <source>Copy source</source>
-            <translation type="unfinished"/>
+            <translation>Kopier kilde</translation>
         </message>
         <message>
             <source>Copy source text to translation</source>
@@ -2013,11 +2013,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Copy source text to translation (Ctrl+B)</source>
-            <translation type="unfinished"/>
+            <translation>Kopier kildetekst til oversettelse (Ctrl+B)</translation>
         </message>
         <message>
             <source>Copy source to translation</source>
-            <translation type="unfinished"/>
+            <translation>Kopier kilde til oversettelse</translation>
         </message>
         <message>
             <source>Could not read video file:\n%s</source>
@@ -2029,7 +2029,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Crowdin</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin</translation>
         </message>
         <message>
             <source>Crowdin Statistics…</source>
@@ -2097,7 +2097,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Diff…</source>
-            <translation type="unfinished"/>
+            <translation>Diff…</translation>
         </message>
         <message>
             <source>Documentation</source>
@@ -2105,11 +2105,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Donate ♥</source>
-            <translation type="unfinished"/>
+            <translation>Doner ♥</translation>
         </message>
         <message>
             <source>Done and next (Ctrl+Enter)</source>
-            <translation type="unfinished"/>
+            <translation>Ferdig og neste (Ctrl+Enter)</translation>
         </message>
         <message>
             <source>Edit Header…</source>
@@ -2117,7 +2117,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Edit file header metadata. Changes are applied when you click Save.</source>
-            <translation type="unfinished"/>
+            <translation>Rediger filhodets metadata. Endringer brukes når du klikker Lagre.</translation>
         </message>
         <message>
             <source>Editor Below</source>
@@ -2145,7 +2145,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Enter translator note:</source>
-            <translation type="unfinished"/>
+            <translation>Skriv inn oversetternotat:</translation>
         </message>
         <message>
             <source>Entry</source>
@@ -2169,11 +2169,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Error loading file: %s</source>
-            <translation type="unfinished"/>
+            <translation>Feil ved lasting av fil: %s</translation>
         </message>
         <message>
             <source>Error loading reference: %s</source>
-            <translation type="unfinished"/>
+            <translation>Feil ved lasting av referanse: %s</translation>
         </message>
         <message>
             <source>Export Error</source>
@@ -2189,7 +2189,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Export report…</source>
-            <translation type="unfinished"/>
+            <translation>Eksporter rapport…</translation>
         </message>
         <message>
             <source>Exported {} translation units to {}</source>
@@ -2229,7 +2229,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Feed file to TM</source>
-            <translation type="unfinished"/>
+            <translation>Legg fil til TM</translation>
         </message>
         <message>
             <source>File</source>
@@ -2241,23 +2241,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>File Header / Metadata</source>
-            <translation type="unfinished"/>
+            <translation>Filhode / Metadata</translation>
         </message>
         <message>
             <source>File metadata…</source>
-            <translation type="unfinished"/>
+            <translation>Filmetadata…</translation>
         </message>
         <message>
             <source>File not found: %s</source>
-            <translation type="unfinished"/>
+            <translation>Filen ble ikke funnet: %s</translation>
         </message>
         <message>
             <source>File order</source>
-            <translation type="unfinished"/>
+            <translation>Filrekkefølge</translation>
         </message>
         <message>
             <source>File reloaded (changed externally)</source>
-            <translation type="unfinished"/>
+            <translation>Filen ble lastet inn på nytt (endret eksternt)</translation>
         </message>
         <message>
             <source>File reloaded (external change detected)</source>
@@ -2265,15 +2265,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Find &amp;&amp; Replace…</source>
-            <translation type="unfinished"/>
+            <translation>Finn og erstatt…</translation>
         </message>
         <message>
             <source>Find in translations…</source>
-            <translation type="unfinished"/>
+            <translation>Finn i oversettelser…</translation>
         </message>
         <message>
             <source>Find…</source>
-            <translation type="unfinished"/>
+            <translation>Finn…</translation>
         </message>
         <message>
             <source>Flags</source>
@@ -2309,15 +2309,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>Uklar</translation>
         </message>
         <message>
             <source>Fuzzy / Needs work</source>
-            <translation type="unfinished"/>
+            <translation>Uklar / Trenger arbeid</translation>
         </message>
         <message>
             <source>Fuzzy diff (previous → current)</source>
-            <translation type="unfinished"/>
+            <translation>Uklar diff (forrige → nåværende)</translation>
         </message>
         <message>
             <source>Fuzzy:</source>
@@ -2325,7 +2325,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Fuzzy: %d</source>
-            <translation type="unfinished"/>
+            <translation>Uklare: %d</translation>
         </message>
         <message>
             <source>Fuzzy: 0</source>
@@ -2345,7 +2345,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Git</source>
-            <translation type="unfinished"/>
+            <translation>Git</translation>
         </message>
         <message>
             <source>Git Branches</source>
@@ -2381,7 +2381,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>GitHub PR…</source>
-            <translation type="unfinished"/>
+            <translation>GitHub PR…</translation>
         </message>
         <message>
             <source>GitHub Repository</source>
@@ -2401,7 +2401,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Glossary…</source>
-            <translation type="unfinished"/>
+            <translation>Ordliste…</translation>
         </message>
         <message>
             <source>HTML (*.html);;PDF (*.pdf)</source>
@@ -2453,7 +2453,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Key</source>
-            <translation type="unfinished"/>
+            <translation>Nøkkel</translation>
         </message>
         <message>
             <source>Language</source>
@@ -2461,7 +2461,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>Språk:</translation>
         </message>
         <message>
             <source>Languages</source>
@@ -2497,7 +2497,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Locale:</source>
-            <translation type="unfinished"/>
+            <translation>Locale:</translation>
         </message>
         <message>
             <source>MT translation failed</source>
@@ -2589,15 +2589,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Next</source>
-            <translation type="unfinished"/>
+            <translation>Neste</translation>
         </message>
         <message>
             <source>Next entry</source>
-            <translation type="unfinished"/>
+            <translation>Neste post</translation>
         </message>
         <message>
             <source>Next untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Neste uoversatte</translation>
         </message>
         <message>
             <source>No File</source>
@@ -2625,11 +2625,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>No file</source>
-            <translation type="unfinished"/>
+            <translation>Ingen fil</translation>
         </message>
         <message>
             <source>No file loaded</source>
-            <translation type="unfinished"/>
+            <translation>Ingen fil lastet inn</translation>
         </message>
         <message>
             <source>No glossary violations found! ✓</source>
@@ -2717,7 +2717,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Open</source>
-            <translation type="unfinished"/>
+            <translation>Åpne</translation>
         </message>
         <message>
             <source>Open Project…</source>
@@ -2729,7 +2729,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Open Translation File</source>
-            <translation type="unfinished"/>
+            <translation>Åpne oversettelsesfil</translation>
         </message>
         <message>
             <source>Open Video</source>
@@ -2757,7 +2757,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Platform settings…</source>
-            <translation type="unfinished"/>
+            <translation>Plattforminnstillinger…</translation>
         </message>
         <message>
             <source>Play Macro</source>
@@ -2785,7 +2785,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Pre-translate</source>
-            <translation type="unfinished"/>
+            <translation>Forhåndsoversett</translation>
         </message>
         <message>
             <source>Pre-translated %d entries via %s</source>
@@ -2793,11 +2793,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Pre-translate…</source>
-            <translation type="unfinished"/>
+            <translation>Forhåndsoversett…</translation>
         </message>
         <message>
             <source>Preferences…</source>
-            <translation type="unfinished"/>
+            <translation>Innstillinger…</translation>
         </message>
         <message>
             <source>Preview</source>
@@ -2805,15 +2805,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Previous</source>
-            <translation type="unfinished"/>
+            <translation>Forrige</translation>
         </message>
         <message>
             <source>Previous entry</source>
-            <translation type="unfinished"/>
+            <translation>Forrige post</translation>
         </message>
         <message>
             <source>Previous untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Forrige uoversatte</translation>
         </message>
         <message>
             <source>Probing video for subtitle tracks…</source>
@@ -2833,7 +2833,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Pull from…</source>
-            <translation type="unfinished"/>
+            <translation>Hent fra…</translation>
         </message>
         <message>
             <source>Push Changes</source>
@@ -2841,7 +2841,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Push to…</source>
-            <translation type="unfinished"/>
+            <translation>Send til…</translation>
         </message>
         <message>
             <source>QA Profile: %s</source>
@@ -2849,15 +2849,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>QA profile: Formal</source>
-            <translation type="unfinished"/>
+            <translation>QA-profil: Formell</translation>
         </message>
         <message>
             <source>QA profile: Informal</source>
-            <translation type="unfinished"/>
+            <translation>QA-profil: Uformell</translation>
         </message>
         <message>
             <source>Quality</source>
-            <translation type="unfinished"/>
+            <translation>Kvalitet</translation>
         </message>
         <message>
             <source>Quality Score</source>
@@ -2865,11 +2865,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Quit</source>
-            <translation type="unfinished"/>
+            <translation>Avslutt</translation>
         </message>
         <message>
             <source>Recent Files</source>
-            <translation type="unfinished"/>
+            <translation>Nylige filer</translation>
         </message>
         <message>
             <source>Record Macro</source>
@@ -2881,7 +2881,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Redo</source>
-            <translation type="unfinished"/>
+            <translation>Gjør om</translation>
         </message>
         <message>
             <source>Reference</source>
@@ -2893,7 +2893,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Regex</source>
-            <translation type="unfinished"/>
+            <translation>Regex</translation>
         </message>
         <message>
             <source>Regex Tester</source>
@@ -2909,19 +2909,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Remove Selected</source>
-            <translation type="unfinished"/>
+            <translation>Fjern valgte</translation>
         </message>
         <message>
             <source>Replace</source>
-            <translation type="unfinished"/>
+            <translation>Erstatt</translation>
         </message>
         <message>
             <source>Replace All</source>
-            <translation type="unfinished"/>
+            <translation>Erstatt alle</translation>
         </message>
         <message>
             <source>Replace with…</source>
-            <translation type="unfinished"/>
+            <translation>Erstatt med…</translation>
         </message>
         <message>
             <source>Replaced in %d entries</source>
@@ -2973,7 +2973,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Root key:</source>
-            <translation type="unfinished"/>
+            <translation>Rotnøkkel:</translation>
         </message>
         <message>
             <source>SRT files (*.srt);;VTT files (*.vtt);;All files (*)</source>
@@ -2981,7 +2981,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished"/>
+            <translation>Lagre</translation>
         </message>
         <message>
             <source>Save &amp;As…</source>
@@ -3013,7 +3013,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Saved!</source>
-            <translation type="unfinished"/>
+            <translation>Lagret!</translation>
         </message>
         <message>
             <source>Search</source>
@@ -3021,7 +3021,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Search TM…</source>
-            <translation type="unfinished"/>
+            <translation>Søk i TM…</translation>
         </message>
         <message>
             <source>Search source and translation text…</source>
@@ -3105,7 +3105,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>Kildespråk:</translation>
         </message>
         <message>
             <source>Source term:</source>
@@ -3121,7 +3121,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Spell check current</source>
-            <translation type="unfinished"/>
+            <translation>Stavekontroll</translation>
         </message>
         <message>
             <source>Spelling issues:\n%s</source>
@@ -3141,7 +3141,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Statistics…</source>
-            <translation type="unfinished"/>
+            <translation>Statistikk…</translation>
         </message>
         <message>
             <source>Status</source>
@@ -3149,7 +3149,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Status…</source>
-            <translation type="unfinished"/>
+            <translation>Status…</translation>
         </message>
         <message>
             <source>String Info</source>
@@ -3169,7 +3169,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Switch branch…</source>
-            <translation type="unfinished"/>
+            <translation>Bytt gren…</translation>
         </message>
         <message>
             <source>System Default</source>
@@ -3213,7 +3213,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>Målspråk:</translation>
         </message>
         <message>
             <source>Target term:</source>
@@ -3273,11 +3273,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Transifex</source>
-            <translation type="unfinished"/>
+            <translation>Transifex</translation>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>Oversatte</translation>
         </message>
         <message>
             <source>Translated via %s</source>
@@ -3297,7 +3297,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Oversettelse</translation>
         </message>
         <message>
             <source>Translation A → Z</source>
@@ -3357,7 +3357,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Undo</source>
-            <translation type="unfinished"/>
+            <translation>Angre</translation>
         </message>
         <message>
             <source>Unicode Inspector</source>
@@ -3365,7 +3365,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>Ukjent</translation>
         </message>
         <message>
             <source>Unsaved Changes</source>
@@ -3381,7 +3381,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Uoversatt</translation>
         </message>
         <message>
             <source>Untranslated/errors first</source>
@@ -3413,19 +3413,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Validate</source>
-            <translation type="unfinished"/>
+            <translation>Valider</translation>
         </message>
         <message>
             <source>Validate (Lint)</source>
-            <translation type="unfinished"/>
+            <translation>Valider (Lint)</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished"/>
+            <translation>Verdi</translation>
         </message>
         <message>
             <source>Version:</source>
-            <translation type="unfinished"/>
+            <translation>Versjon:</translation>
         </message>
         <message>
             <source>Video</source>
@@ -3441,7 +3441,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Warnings</source>
-            <translation type="unfinished"/>
+            <translation>Advarsler</translation>
         </message>
         <message>
             <source>Watch File</source>
@@ -3457,7 +3457,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Weblate</source>
-            <translation type="unfinished"/>
+            <translation>Weblate</translation>
         </message>
         <message>
             <source>Website:</source>
@@ -3724,10 +3724,6 @@ This will replace the current text with:
             <translation type="unfinished"/>
         </message>
         <message>
-            <source>Weblate</source>
-            <translation type="unfinished"/>
-        </message>
-        <message>
             <source>Weblate — %s</source>
             <translation type="unfinished"/>
         </message>
@@ -3740,7 +3736,7 @@ This will replace the current text with:
             <translation type="unfinished"/>
         </message>
     <message><source>No API Key</source><translation type="unfinished"/></message><message><source>No Transifex API key configured.
-Please add one in Translation → API Keys…</source><translation type="unfinished"/></message><message><source>No language statistics found.</source><translation type="unfinished"/></message><message><source>No organizations found.</source><translation type="unfinished"/></message><message><source>No projects found.</source><translation type="unfinished"/></message><message><source>Organization:</source><translation type="unfinished"/></message><message><source>Project:</source><translation type="unfinished"/></message><message><source>Select Organization</source><translation type="unfinished"/></message><message><source>Select Project</source><translation type="unfinished"/></message><message><source>Transifex Error</source><translation type="unfinished"/></message><message><source>Transifex Statistics…</source><translation type="unfinished"/></message><message><source>Transifex — %s</source><translation type="unfinished"/></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation type="unfinished"/></message>    <message>
+Please add one in Translation → API Keys…</source><translation type="unfinished"/></message><message><source>No language statistics found.</source><translation type="unfinished"/></message><message><source>No organizations found.</source><translation type="unfinished"/></message><message><source>No projects found.</source><translation type="unfinished"/></message><message><source>Organization:</source><translation>Organisasjon:</translation></message><message><source>Project:</source><translation>Prosjekt:</translation></message><message><source>Select Organization</source><translation type="unfinished"/></message><message><source>Select Project</source><translation type="unfinished"/></message><message><source>Transifex Error</source><translation type="unfinished"/></message><message><source>Transifex Statistics…</source><translation type="unfinished"/></message><message><source>Transifex — %s</source><translation type="unfinished"/></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation type="unfinished"/></message>    <message>
         <source>
 
 Errors:
@@ -3936,11 +3932,11 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Format specifier mismatch: %s vs %s</source>
-            <translation type="unfinished"/>
+            <translation>Formatspesifikasjon stemmer ikke: %s mot %s</translation>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>Uklar</translation>
         </message>
         <message>
             <source>Glossary inconsistency: %s</source>
@@ -3952,7 +3948,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Leading whitespace mismatch</source>
-            <translation type="unfinished"/>
+            <translation>Innledende mellomrom stemmer ikke</translation>
         </message>
         <message>
             <source>Missing HTML/XML tags in translation: %s</source>
@@ -3960,23 +3956,23 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Newline count mismatch (%s vs %s)</source>
-            <translation type="unfinished"/>
+            <translation>Antall linjeskift stemmer ikke (%s mot %s)</translation>
         </message>
         <message>
             <source>Python format mismatch: %s vs %s</source>
-            <translation type="unfinished"/>
+            <translation>Python-format stemmer ikke: %s mot %s</translation>
         </message>
         <message>
             <source>Suspicious length ratio: %sx</source>
-            <translation type="unfinished"/>
+            <translation>Mistenkelig lengdeforhold: %sx</translation>
         </message>
         <message>
             <source>Trailing whitespace mismatch</source>
-            <translation type="unfinished"/>
+            <translation>Avsluttende mellomrom stemmer ikke</translation>
         </message>
         <message>
             <source>Untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Uoversatt</translation>
         </message>
     </context>
     <context>
@@ -4011,7 +4007,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>Uklar</translation>
         </message>
         <message>
             <source>Locale Files</source>
@@ -4047,7 +4043,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Project:</source>
-            <translation type="unfinished"/>
+            <translation>Prosjekt:</translation>
         </message>
         <message>
             <source>Refresh</source>
@@ -4063,7 +4059,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>Oversatte</translation>
         </message>
         <message>
             <source>Translation Map</source>
@@ -4246,7 +4242,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Name:</source>
-            <translation type="unfinished"/>
+            <translation>Navn:</translation>
         </message>
         <message>
             <source>No actions recorded</source>
@@ -4431,7 +4427,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>Språk:</translation>
         </message>
         <message>
             <source>No Strings</source>
@@ -4479,7 +4475,7 @@ Do you want to save before closing?</source>
         </message>
         <message>
             <source>Remove Selected</source>
-            <translation type="unfinished"/>
+            <translation>Fjern valgte</translation>
         </message>
         <message>
             <source>Save PO File</source>
@@ -4597,75 +4593,75 @@ Installation instructions:
         <name>PlatformSettingsDialog</name>
         <message>
             <source>API Key:</source>
-            <translation type="unfinished"/>
+            <translation>API-nøkkel:</translation>
         </message>
         <message>
             <source>API Token:</source>
-            <translation type="unfinished"/>
+            <translation>API-nøkkel:</translation>
         </message>
         <message>
             <source>API URL:</source>
-            <translation type="unfinished"/>
+            <translation>API-URL:</translation>
         </message>
         <message>
             <source>Base URL:</source>
-            <translation type="unfinished"/>
+            <translation>Basis-URL:</translation>
         </message>
         <message>
             <source>Component:</source>
-            <translation type="unfinished"/>
+            <translation>Komponent:</translation>
         </message>
         <message>
             <source>Crowdin</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin</translation>
         </message>
         <message>
             <source>Crowdin API</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin API</translation>
         </message>
         <message>
             <source>Organization:</source>
-            <translation type="unfinished"/>
+            <translation>Organisasjon:</translation>
         </message>
         <message>
             <source>Platform Settings</source>
-            <translation type="unfinished"/>
+            <translation>Plattforminnstillinger</translation>
         </message>
         <message>
             <source>Project ID:</source>
-            <translation type="unfinished"/>
+            <translation>Prosjekt-ID:</translation>
         </message>
         <message>
             <source>Project:</source>
-            <translation type="unfinished"/>
+            <translation>Prosjekt:</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished"/>
+            <translation>Lagre</translation>
         </message>
         <message>
             <source>Test Connection</source>
-            <translation type="unfinished"/>
+            <translation>Test tilkobling</translation>
         </message>
         <message>
             <source>Testing…</source>
-            <translation type="unfinished"/>
+            <translation>Tester…</translation>
         </message>
         <message>
             <source>Transifex</source>
-            <translation type="unfinished"/>
+            <translation>Transifex</translation>
         </message>
         <message>
             <source>Transifex API</source>
-            <translation type="unfinished"/>
+            <translation>Transifex API</translation>
         </message>
         <message>
             <source>Weblate</source>
-            <translation type="unfinished"/>
+            <translation>Weblate</translation>
         </message>
         <message>
             <source>Weblate API</source>
-            <translation type="unfinished"/>
+            <translation>Weblate API</translation>
         </message>
         <message>
             <source>⚠️ No system keychain — tokens stored with basic obfuscation. </source>
@@ -4673,23 +4669,23 @@ Installation instructions:
         </message>
         <message>
             <source>✓ Connected: %1</source>
-            <translation type="unfinished"/>
+            <translation>✓ Tilkoblet: %1</translation>
         </message>
         <message>
             <source>✓ Saved</source>
-            <translation type="unfinished"/>
+            <translation>✓ Lagret</translation>
         </message>
         <message>
             <source>✗ %1</source>
-            <translation type="unfinished"/>
+            <translation>✗ %1</translation>
         </message>
         <message>
             <source>✗ Project ID must be a number</source>
-            <translation type="unfinished"/>
+            <translation>✗ Prosjekt-ID må være et tall</translation>
         </message>
         <message>
             <source>🔒 Tokens stored in %1</source>
-            <translation type="unfinished"/>
+            <translation>🔒 Nøkler lagret i %1</translation>
         </message>
         <message>
         <source>Browse…</source>
@@ -4822,15 +4818,15 @@ Installation instructions:
         </message>
         <message>
             <source>Appearance</source>
-            <translation type="unfinished"/>
+            <translation>Utseende</translation>
         </message>
         <message>
             <source>Auto-compile on save</source>
-            <translation type="unfinished"/>
+            <translation>Kompiler automatisk ved lagring</translation>
         </message>
         <message>
             <source>Automatically compile .mo/.qm after saving</source>
-            <translation type="unfinished"/>
+            <translation>Kompiler .mo/.qm automatisk etter lagring</translation>
         </message>
         <message>
             <source>Character limit:</source>
@@ -4850,7 +4846,7 @@ Installation instructions:
         </message>
         <message>
             <source>Default engine:</source>
-            <translation type="unfinished"/>
+            <translation>Standardmotor:</translation>
         </message>
         <message>
             <source>Double-click to edit translations directly in the list</source>
@@ -4858,11 +4854,11 @@ Installation instructions:
         </message>
         <message>
             <source>Editor font size:</source>
-            <translation type="unfinished"/>
+            <translation>Skriftstørrelse i editoren:</translation>
         </message>
         <message>
             <source>Email:</source>
-            <translation type="unfinished"/>
+            <translation>E-post:</translation>
         </message>
         <message>
             <source>Enable inline editing</source>
@@ -4874,7 +4870,7 @@ Installation instructions:
         </message>
         <message>
             <source>Formality level:</source>
-            <translation type="unfinished"/>
+            <translation>Formalitetsnivå:</translation>
         </message>
         <message>
             <source>Informal</source>
@@ -4882,7 +4878,7 @@ Installation instructions:
         </message>
         <message>
             <source>Language / Locale:</source>
-            <translation type="unfinished"/>
+            <translation>Språk / Locale:</translation>
         </message>
         <message>
             <source>Light</source>
@@ -4890,15 +4886,15 @@ Installation instructions:
         </message>
         <message>
             <source>Name:</source>
-            <translation type="unfinished"/>
+            <translation>Navn:</translation>
         </message>
         <message>
             <source>Personal</source>
-            <translation type="unfinished"/>
+            <translation>Personlig</translation>
         </message>
         <message>
             <source>Preferences</source>
-            <translation type="unfinished"/>
+            <translation>Innstillinger</translation>
         </message>
         <message>
             <source>Security</source>
@@ -4910,7 +4906,7 @@ Installation instructions:
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>Kildespråk:</translation>
         </message>
         <message>
             <source>System default</source>
@@ -4918,19 +4914,19 @@ Installation instructions:
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>Målspråk:</translation>
         </message>
         <message>
             <source>Team:</source>
-            <translation type="unfinished"/>
+            <translation>Team:</translation>
         </message>
         <message>
             <source>Theme:</source>
-            <translation type="unfinished"/>
+            <translation>Tema:</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Oversettelse</translation>
         </message>
         <message>
             <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.\n\nFor better security, install:\n• macOS: Built-in (Keychain)\n• Windows: pip install keyring\n• Linux: pip install secretstorage</source>
@@ -5018,7 +5014,7 @@ For better security, install:
         </message>
         <message>
             <source>Open</source>
-            <translation type="unfinished"/>
+            <translation>Åpne</translation>
         </message>
         <message>
             <source>Open a project folder to begin</source>
@@ -5070,7 +5066,7 @@ For better security, install:
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>Oversatte</translation>
         </message>
         <message>
             <source>Type</source>
@@ -5114,7 +5110,7 @@ For better security, install:
         </message>
         <message>
             <source>Fuzzy: %d</source>
-            <translation type="unfinished"/>
+            <translation>Uklare: %d</translation>
         </message>
         <message>
             <source>Untranslated: %d</source>
@@ -5227,7 +5223,7 @@ For better security, install:
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished"/>
+            <translation>Verdi</translation>
         </message>
         <message>
             <source>Error: %s</source>
@@ -5294,11 +5290,11 @@ For better security, install:
         </message>
         <message>
             <source>Replace</source>
-            <translation type="unfinished"/>
+            <translation>Erstatt</translation>
         </message>
         <message>
             <source>Replace All</source>
-            <translation type="unfinished"/>
+            <translation>Erstatt alle</translation>
         </message>
         <message>
             <source>Replace:</source>
@@ -5318,7 +5314,7 @@ For better security, install:
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Oversettelse</translation>
         </message>
         <message>
             <source>Whole words</source>
@@ -5526,83 +5522,83 @@ For better security, install:
         <name>SyncDialog</name>
         <message>
             <source>%1 resources found</source>
-            <translation type="unfinished"/>
+            <translation>%1 ressurser funnet</translation>
         </message>
         <message>
             <source>Crowdin not configured. Open Platform Settings first.</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin er ikke konfigurert. Åpne plattforminnstillingene først.</translation>
         </message>
         <message>
             <source>Downloading…</source>
-            <translation type="unfinished"/>
+            <translation>Laster ned…</translation>
         </message>
         <message>
             <source>Enter a language code</source>
-            <translation type="unfinished"/>
+            <translation>Skriv inn en språkkode</translation>
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>Språk:</translation>
         </message>
         <message>
             <source>Loading resources…</source>
-            <translation type="unfinished"/>
+            <translation>Laster ressurser…</translation>
         </message>
         <message>
             <source>No file loaded to push</source>
-            <translation type="unfinished"/>
+            <translation>Ingen fil lastet inn for sending</translation>
         </message>
         <message>
             <source>No resources found</source>
-            <translation type="unfinished"/>
+            <translation>Ingen ressurser funnet</translation>
         </message>
         <message>
             <source>Pull</source>
-            <translation type="unfinished"/>
+            <translation>Hent</translation>
         </message>
         <message>
             <source>Pull Translation</source>
-            <translation type="unfinished"/>
+            <translation>Hent oversettelse</translation>
         </message>
         <message>
             <source>Push</source>
-            <translation type="unfinished"/>
+            <translation>Send</translation>
         </message>
         <message>
             <source>Push Translation</source>
-            <translation type="unfinished"/>
+            <translation>Send oversettelse</translation>
         </message>
         <message>
             <source>Resources</source>
-            <translation type="unfinished"/>
+            <translation>Ressurser</translation>
         </message>
         <message>
             <source>Select a resource first</source>
-            <translation type="unfinished"/>
+            <translation>Velg en ressurs først</translation>
         </message>
         <message>
             <source>Transifex not configured. Open Platform Settings first.</source>
-            <translation type="unfinished"/>
+            <translation>Transifex er ikke konfigurert. Åpne plattforminnstillingene først.</translation>
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>Ukjent</translation>
         </message>
         <message>
             <source>Unknown platform</source>
-            <translation type="unfinished"/>
+            <translation>Ukjent plattform</translation>
         </message>
         <message>
             <source>Uploading…</source>
-            <translation type="unfinished"/>
+            <translation>Laster opp…</translation>
         </message>
         <message>
             <source>Weblate not configured. Open Platform Settings first.</source>
-            <translation type="unfinished"/>
+            <translation>Weblate er ikke konfigurert. Åpne plattforminnstillingene først.</translation>
         </message>
         <message>
             <source>e.g. sv, de, fr</source>
-            <translation type="unfinished"/>
+            <translation>f.eks. sv, de, fr</translation>
         </message>
         <message>
             <source>✓ Downloaded at %1\nSaved to: %2</source>
@@ -5610,24 +5606,25 @@ For better security, install:
         </message>
         <message>
             <source>✓ Uploaded at %1</source>
-            <translation type="unfinished"/>
+            <translation>✓ Lastet opp %1</translation>
         </message>
         <message>
             <source>✗ Error: %1</source>
-            <translation type="unfinished"/>
+            <translation>✗ Feil: %1</translation>
         </message>
         <message>
             <source>✗ Pull failed: %1</source>
-            <translation type="unfinished"/>
+            <translation>✗ Henting mislyktes: %1</translation>
         </message>
         <message>
             <source>✗ Push failed: %1</source>
-            <translation type="unfinished"/>
+            <translation>✗ Sending mislyktes: %1</translation>
         </message>
         <message>
         <source>✓ Downloaded at %1
 Saved to: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>✓ Lastet ned %1
+Lagret i: %2</translation>
     </message>
 </context>
     <context>
@@ -5673,7 +5670,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished"/>
+            <translation>Tøm</translation>
         </message>
         <message>
             <source>Close</source>
@@ -5768,7 +5765,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Warnings</source>
-            <translation type="unfinished"/>
+            <translation>Advarsler</translation>
         </message>
     </context>
     <context>
@@ -6015,11 +6012,11 @@ Saved to: %2</source>
         <name>WelcomeDialog</name>
         <message>
             <source>Appearance</source>
-            <translation type="unfinished"/>
+            <translation>Utseende</translation>
         </message>
         <message>
             <source>Back</source>
-            <translation type="unfinished"/>
+            <translation>Tilbake</translation>
         </message>
         <message>
             <source>Dark</source>
@@ -6031,15 +6028,15 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Default engine:</source>
-            <translation type="unfinished"/>
+            <translation>Standardmotor:</translation>
         </message>
         <message>
             <source>Editor font size:</source>
-            <translation type="unfinished"/>
+            <translation>Skriftstørrelse i editoren:</translation>
         </message>
         <message>
             <source>Email:</source>
-            <translation type="unfinished"/>
+            <translation>E-post:</translation>
         </message>
         <message>
             <source>Formal</source>
@@ -6047,7 +6044,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Formality level:</source>
-            <translation type="unfinished"/>
+            <translation>Formalitetsnivå:</translation>
         </message>
         <message>
             <source>Informal</source>
@@ -6055,7 +6052,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Language / Locale:</source>
-            <translation type="unfinished"/>
+            <translation>Språk / Locale:</translation>
         </message>
         <message>
             <source>Light</source>
@@ -6063,23 +6060,23 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Name:</source>
-            <translation type="unfinished"/>
+            <translation>Navn:</translation>
         </message>
         <message>
             <source>Next</source>
-            <translation type="unfinished"/>
+            <translation>Neste</translation>
         </message>
         <message>
             <source>Personal Information</source>
-            <translation type="unfinished"/>
+            <translation>Personlig informasjon</translation>
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>Kildespråk:</translation>
         </message>
         <message>
             <source>Start translating!</source>
-            <translation type="unfinished"/>
+            <translation>Begynn å oversette!</translation>
         </message>
         <message>
             <source>System default</source>
@@ -6087,23 +6084,23 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>Målspråk:</translation>
         </message>
         <message>
             <source>Team (optional):</source>
-            <translation type="unfinished"/>
+            <translation>Team (valgfritt):</translation>
         </message>
         <message>
             <source>Theme:</source>
-            <translation type="unfinished"/>
+            <translation>Tema:</translation>
         </message>
         <message>
             <source>Translation Settings</source>
-            <translation type="unfinished"/>
+            <translation>Oversettelsesinnstillinger</translation>
         </message>
         <message>
             <source>Welcome to LinguaEdit</source>
-            <translation type="unfinished"/>
+            <translation>Velkommen til LinguaEdit</translation>
         </message>
         <message>
             <source>You</source>
@@ -6153,7 +6150,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>Next entry</source>
-            <translation type="unfinished"/>
+            <translation>Neste post</translation>
         </message>
         <message>
             <source>Next untranslated ▶▶</source>
@@ -6161,7 +6158,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>Previous entry</source>
-            <translation type="unfinished"/>
+            <translation>Forrige post</translation>
         </message>
         <message>
             <source>Skip to next untranslated (Ctrl+Enter)</source>
@@ -6169,39 +6166,39 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&amp;Catalog</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Katalog</translation>
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Rediger</translation>
         </message>
         <message>
             <source>&amp;File</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Fil</translation>
         </message>
         <message>
             <source>&amp;Git</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Git</translation>
         </message>
         <message>
             <source>&amp;Go</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Gå</translation>
         </message>
         <message>
             <source>&amp;Help</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Hjelp</translation>
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Åpne…</translation>
         </message>
         <message>
             <source>&amp;Platforms</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Plattformer</translation>
         </message>
         <message>
             <source>&amp;Save</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Lagre</translation>
         </message>
         <message>
             <source>&amp;Tools</source>
@@ -6209,7 +6206,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&amp;View</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Vis</translation>
         </message>
         <message>
             <source>&lt;b&gt;%d&lt;/b&gt; untranslated strings out of &lt;b&gt;%d&lt;/b&gt; total.</source>
@@ -6229,7 +6226,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Konkordanssøk&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Outdated translations&lt;/b&gt; — source changed but translation stayed the same.</source>
@@ -6241,11 +6238,11 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;Reference source:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Referansekilde:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Referanseoversettelse:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Removed strings:&lt;/b&gt; %d</source>
@@ -6253,23 +6250,15 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
-        </message>
-        <message>
-            <source>&lt;b&gt;Source text&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Kildetekst:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Forslag&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
-        </message>
-        <message>
-            <source>&lt;b&gt;Translation&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Oversettelse:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
@@ -6281,7 +6270,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;(ingen treff i referanse)&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;MT unavailable&lt;/i&gt;</source>
@@ -6301,7 +6290,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;i&gt;No suggestions&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;Ingen forslag&lt;/i&gt;</translation>
         </message>
         <message>
             <source>Are you sure you want to delete the macro &apos;{}&apos;?</source>
@@ -6333,7 +6322,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>Find &amp;&amp; Replace…</source>
-            <translation type="unfinished"/>
+            <translation>Finn og erstatt…</translation>
         </message>
         <message>
             <source>Macro &apos;{}&apos; has been saved successfully.</source>

@@ -3,11 +3,12 @@
 from __future__ import annotations
 
 import sqlite3
+from contextlib import closing
 from dataclasses import dataclass
 from datetime import datetime
 from difflib import SequenceMatcher
 from pathlib import Path
-from typing import Optional, List
+from typing import List, Optional
 
 TM_DIR = Path.home() / ".local" / "share" / "linguaedit"
 TM_DB = TM_DIR / "tm.db"
@@ -29,7 +30,7 @@ def _init_db() -> None:
     """Initialize the TM database."""
     TM_DIR.mkdir(parents=True, exist_ok=True)
     
-    with sqlite3.connect(TM_DB) as conn:
+    with closing(sqlite3.connect(TM_DB)) as conn, conn:
         conn.execute("""
             CREATE TABLE IF NOT EXISTS translation_memory (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -62,7 +63,7 @@ def add_to_tm(source: str, target: str, source_lang: str = "en", target_lang: st
         
     _init_db()
     
-    with sqlite3.connect(TM_DB) as conn:
+    with closing(sqlite3.connect(TM_DB)) as conn, conn:
         conn.execute("""
             INSERT OR REPLACE INTO translation_memory 
             (source, target, source_lang, target_lang, file_path, timestamp)
@@ -83,7 +84,7 @@ def lookup_tm(source: str, source_lang: str = "en", target_lang: str = "sv", thr
     matches = []
     
     try:
-        with sqlite3.connect(TM_DB) as conn:
+        with closing(sqlite3.connect(TM_DB)) as conn:
             # Get all entries for the language pair
             cursor = conn.execute("""
                 SELECT source, target, source_lang, target_lang, file_path, timestamp
@@ -123,7 +124,7 @@ def feed_file_to_tm(entries: List[tuple[str, str]], source_lang: str = "en", tar
     _init_db()
     count = 0
     
-    with sqlite3.connect(TM_DB) as conn:
+    with closing(sqlite3.connect(TM_DB)) as conn, conn:
         for src, tgt in entries:
             if src.strip() and tgt.strip():
                 try:
@@ -146,7 +147,7 @@ def get_tm_stats() -> dict:
     except Exception:
         return {"total": 0, "languages": []}
         
-    with sqlite3.connect(TM_DB) as conn:
+    with closing(sqlite3.connect(TM_DB)) as conn:
         # Total entries
         cursor = conn.execute("SELECT COUNT(*) FROM translation_memory")
         total = cursor.fetchone()[0]
@@ -177,7 +178,7 @@ def concordance_search(query: str, source_lang: str = "", target_lang: str = "",
     pattern = f"%{query}%"
 
     try:
-        with sqlite3.connect(TM_DB) as conn:
+        with closing(sqlite3.connect(TM_DB)) as conn:
             if source_lang and target_lang:
                 cursor = conn.execute("""
                     SELECT source, target, source_lang, target_lang, file_path, timestamp
@@ -227,7 +228,7 @@ def clear_tm() -> int:
     except Exception:
         return 0
         
-    with sqlite3.connect(TM_DB) as conn:
+    with closing(sqlite3.connect(TM_DB)) as conn, conn:
         cursor = conn.execute("SELECT COUNT(*) FROM translation_memory")
         count = cursor.fetchone()[0]
         conn.execute("DELETE FROM translation_memory")
@@ -246,7 +247,7 @@ def export_tm(file_path: str, source_lang: str = "", target_lang: str = "") -> i
         
     count = 0
     
-    with sqlite3.connect(TM_DB) as conn:
+    with closing(sqlite3.connect(TM_DB)) as conn:
         if source_lang and target_lang:
             cursor = conn.execute("""
                 SELECT source, target, source_lang, target_lang, file_path, timestamp
@@ -285,7 +286,7 @@ def import_tm(file_path: str) -> int:
     with open(file_path, 'r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         
-        with sqlite3.connect(TM_DB) as conn:
+        with closing(sqlite3.connect(TM_DB)) as conn, conn:
             for row in reader:
                 try:
                     conn.execute("""

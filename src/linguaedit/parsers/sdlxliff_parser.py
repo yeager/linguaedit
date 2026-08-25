@@ -10,14 +10,12 @@ SDLXLIFF is XLIFF 1.2 with SDL-specific extensions including:
 
 from __future__ import annotations
 
-import re
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 
 from linguaedit.parsers import safe_parse_xml
-
 
 _NS_XLIFF = "urn:oasis:names:tc:xliff:document:1.2"
 _NS_SDL = "http://sdl.com/FileTypes/SdlXliff/1.0"
@@ -259,7 +257,11 @@ def save_sdlxliff(data: SDLXLIFFFileData, path: Optional[str | Path] = None) -> 
         data._tree.write(str(out), encoding="utf-8", xml_declaration=True)
     else:
         # Fallback: write as standard XLIFF 1.2
-        from linguaedit.parsers.xliff_parser import XLIFFFileData, XLIFFEntry, save_xliff
+        from linguaedit.parsers.xliff_parser import (
+            XLIFFEntry,
+            XLIFFFileData,
+            save_xliff,
+        )
         xliff_entries = [
             XLIFFEntry(id=e.id, source=e.source, target=e.target,
                        note=e.note, state=e.state)

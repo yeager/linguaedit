@@ -2,18 +2,27 @@
 
 from __future__ import annotations
 
+from PySide6.QtCore import QSize, Qt
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QStackedWidget, QComboBox, QLineEdit, QSpinBox, QWidget,
-    QFormLayout, QGroupBox,
+    QComboBox,
+    QDialog,
+    QFormLayout,
+    QGroupBox,
+    QHBoxLayout,
+    QLabel,
+    QLineEdit,
+    QPushButton,
+    QSpinBox,
+    QStackedWidget,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, QSize
 
 from linguaedit import __version__
-from linguaedit.services.settings import Settings, SUPPORTED_LANGUAGES, DEFAULTS
-from linguaedit.services.translator import ENGINES
 from linguaedit.app import _find_translations_dir
-from linguaedit.ui.preferences_dialog import _flag_icon, _FLAG_MAP
+from linguaedit.services.settings import SUPPORTED_LANGUAGES, Settings
+from linguaedit.services.translator import ENGINES
+from linguaedit.ui.preferences_dialog import _flag_icon
 
 
 class WelcomeDialog(QDialog):

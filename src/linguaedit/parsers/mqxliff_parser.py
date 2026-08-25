@@ -17,7 +17,6 @@ from typing import Optional
 
 from linguaedit.parsers import safe_parse_xml
 
-
 _NS_XLIFF = "urn:oasis:names:tc:xliff:document:1.2"
 _NS_MQ = "MQXliff"
 
@@ -119,7 +118,6 @@ def _detect_mq_namespace(root: ET.Element) -> str:
         pass  # not needed, just check root attributes
     # Check all namespace declarations
     # ET doesn't directly expose xmlns, so check common patterns
-    tag = root.tag
     # Try known memoQ namespace patterns
     for attr_name, attr_val in root.attrib.items():
         if "MQXliff" in attr_val or "mq" in attr_name.lower():
@@ -276,7 +274,11 @@ def save_mqxliff(data: MQXLIFFFileData, path: Optional[str | Path] = None) -> No
         data._tree.write(str(out), encoding="utf-8", xml_declaration=True)
     else:
         # Fallback: write as standard XLIFF 1.2
-        from linguaedit.parsers.xliff_parser import XLIFFFileData, XLIFFEntry, save_xliff
+        from linguaedit.parsers.xliff_parser import (
+            XLIFFEntry,
+            XLIFFFileData,
+            save_xliff,
+        )
         xliff_entries = [
             XLIFFEntry(id=e.id, source=e.source, target=e.target,
                        note=e.note, state=e.state)

@@ -16,19 +16,34 @@ import tempfile
 from pathlib import Path
 from typing import Optional
 
+from PySide6.QtCore import Qt, QTimer, QUrl, Signal
+from PySide6.QtGui import QDesktopServices
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QComboBox, QFileDialog, QMessageBox, QGroupBox,
-    QProgressBar, QProgressDialog, QSlider, QWidget, QDialogButtonBox,
-    QApplication, QStyle,
+    QApplication,
+    QComboBox,
+    QDialog,
+    QFileDialog,
+    QGroupBox,
+    QHBoxLayout,
+    QLabel,
+    QMessageBox,
+    QProgressBar,
+    QProgressDialog,
+    QPushButton,
+    QSlider,
+    QStyle,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, QUrl, QTimer, Signal
-from PySide6.QtGui import QDesktopServices, QIcon
 
 from linguaedit.services.ffmpeg import (
-    is_ffmpeg_available, find_ffmpeg, get_subtitle_tracks,
-    extract_subtitle, get_video_duration, SubtitleTrack,
-    SUBTITLE_FORMATS, SUPPORTED_VIDEO_EXTENSIONS,
+    SUPPORTED_VIDEO_EXTENSIONS,
+    SubtitleTrack,
+    extract_subtitle,
+    find_ffmpeg,
+    get_subtitle_tracks,
+    get_video_duration,
+    is_ffmpeg_available,
 )
 
 

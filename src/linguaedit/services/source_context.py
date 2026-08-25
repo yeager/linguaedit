@@ -3,11 +3,11 @@
 from __future__ import annotations
 
 import re
-import requests
-from pathlib import Path
-from typing import Optional, Dict, List, Tuple
 from dataclasses import dataclass
+from pathlib import Path
+from typing import List, Optional, Tuple
 
+import requests
 from PySide6.QtCore import QObject, Signal
 
 

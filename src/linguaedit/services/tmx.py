@@ -6,10 +6,8 @@ import sqlite3
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
-from typing import Iterator
 
 from linguaedit.parsers import safe_parse_xml
-
 from linguaedit.services.tm import TM_DB
 
 

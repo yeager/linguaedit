@@ -111,6 +111,38 @@ def merge_catalog(ts_path: Path, all_strings: dict[str, set[str]]) -> int:
     return sum(len(strings) for strings in additions.values())
 
 
+def deduplicate_catalog(ts_path: Path) -> int:
+    """Remove exact duplicate source/comment messages within a Qt context."""
+    content = ts_path.read_text(encoding="utf-8")
+    removed = 0
+
+    def clean_context(context_match: re.Match[str]) -> str:
+        nonlocal removed
+        context = context_match.group(0)
+        seen: set[tuple[str, str]] = set()
+
+        def clean_message(message_match: re.Match[str]) -> str:
+            nonlocal removed
+            message = message_match.group(0)
+            source = re.search(r"<source>(.*?)</source>", message, re.DOTALL)
+            comment = re.search(r"<comment>(.*?)</comment>", message, re.DOTALL)
+            if source is None:
+                return message
+            key = (source.group(1), comment.group(1) if comment else "")
+            if key in seen:
+                removed += 1
+                return ""
+            seen.add(key)
+            return message
+
+        return re.sub(r"\s*<message(?:\s[^>]*)?>.*?</message>", clean_message, context, flags=re.DOTALL)
+
+    updated = re.sub(r"<context>.*?</context>", clean_context, content, flags=re.DOTALL)
+    if removed:
+        ts_path.write_text(updated, encoding="utf-8")
+    return removed
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -156,9 +188,12 @@ def main():
 
     if not args.check:
         updated = 0
+        duplicates = 0
         for ts_path in sorted(TS_DIR.glob("*.ts")):
             updated += merge_catalog(ts_path, all_strings)
+            duplicates += deduplicate_catalog(ts_path)
         print(f"Updated {updated} catalog messages across all .ts files")
+        print(f"Removed {duplicates} duplicate catalog messages")
 
 
 if __name__ == "__main__":

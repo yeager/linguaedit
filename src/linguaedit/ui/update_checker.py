@@ -7,11 +7,16 @@ import logging
 import time
 from typing import Optional
 
-from PySide6.QtCore import QThread, Signal, QSettings, QUrl
+from PySide6.QtCore import QSettings, QThread, QUrl, Signal
 from PySide6.QtGui import QDesktopServices
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QCheckBox,
+    QCheckBox,
+    QDialog,
+    QHBoxLayout,
+    QLabel,
+    QPushButton,
     QTextEdit,
+    QVBoxLayout,
 )
 
 from linguaedit import __version__

@@ -5,7 +5,7 @@ from __future__ import annotations
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Union
+from typing import Any, Dict, List, Union
 
 from linguaedit.parsers import safe_parse_xml
 from linguaedit.parsers.po_parser import TranslationEntry

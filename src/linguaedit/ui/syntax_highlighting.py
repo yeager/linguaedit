@@ -9,10 +9,11 @@ from __future__ import annotations
 
 import re
 
-from PySide6.QtCore import Qt
 from PySide6.QtGui import (
-    QSyntaxHighlighter, QTextCharFormat, QColor, QFont,
-    QTextFormat,
+    QColor,
+    QFont,
+    QSyntaxHighlighter,
+    QTextCharFormat,
 )
 
 

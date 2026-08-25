@@ -9,7 +9,6 @@ from PySide6.QtCore import QCoreApplication
 
 from linguaedit.services.glossary import check_glossary
 
-
 # CLDR locale data for validation
 LOCALE_FORMATS = {
     # Date formats (DD/MM vs MM/DD vs YYYY-MM-DD)
@@ -88,7 +87,7 @@ def _check_number_localization(source: str, target: str, target_locale: str) -> 
     
     locale_format = _get_locale_format(target_locale)
     expected_thousands = locale_format["thousands_separator"]
-    expected_decimal = locale_format["decimal_separator"]
+    locale_format["decimal_separator"]
     
     for num in source_numbers:
         # Kontrollera om detta tal finns i target i fel format

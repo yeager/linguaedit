@@ -204,7 +204,7 @@ Distraction-free translation workflow (Ctrl+Alt+Z):
 - **Batch Machine Translate** (Ctrl+Alt+T) — translate all untranslated at once
 - **AI Review** (Ctrl+Shift+A) — quality scoring with heuristic fallback
 - **Back-translation verification** — detect meaning drift
-- **Confidence scores** per entry with visual indicators
+- **Heuristic confidence estimates** per entry, labelled with method and evidence level
 - Supported engines: DeepL, OpenAI, Google, Lingva, MyMemory
 
 ### ✅ Quality Assurance
@@ -294,7 +294,7 @@ Distraction-free translation workflow (Ctrl+Alt+Z):
 
 ## 🌍 Translations
 
-LinguaEdit is translated via [Transifex](https://app.transifex.com/danielnylander/linguaedit/) with **1,487 source strings** and 18 languages configured. Translations sync daily via GitHub Actions.
+LinguaEdit is translated via [Transifex](https://app.transifex.com/danielnylander/linguaedit/) with **about 1,600 catalog entries** and 18 languages configured. Translations sync daily via GitHub Actions.
 
 Currently translated:
 - **Swedish** — 100%
@@ -394,7 +394,7 @@ This app is translated via Transifex. Help translate it into your language!
 
 **[→ Translate on Transifex](https://app.transifex.com/danielnylander/linguaedit/)**
 
-Currently supported: Swedish (sv). More languages welcome!
+Builds currently include Swedish, Danish, Japanese, Korean, Polish, and Simplified Chinese. Additional languages are included automatically as soon as their catalog is more than 20% translated.
 
 ### For Translators
 1. Create a free account at [Transifex](https://www.transifex.com)

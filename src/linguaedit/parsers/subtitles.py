@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, List, Optional, Any, Union
+from typing import List, Optional, Union
 
 
 @dataclass
@@ -194,9 +194,8 @@ def _parse_vtt_content(content: str) -> SubtitleFileData:
             cue_settings = line[timing_match.end():].strip()
             
             # Cue ID (föregående rad om den inte innehöll timing)
-            cue_id = ""
             if i > 1 and not re.search(r'\d{2}:\d{2}:\d{2}\.\d{3}', lines[i-1]):
-                cue_id = lines[i-1].strip()
+                lines[i-1].strip()
             
             # Text (följande rader tills tom rad)
             i += 1

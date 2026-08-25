@@ -80,7 +80,6 @@ def _escape_properties_value(value: str) -> str:
 
 def _parse_properties_line(line: str) -> tuple[Optional[str], Optional[str], Optional[str]]:
     """Parsa en rad från properties-fil. Returnerar (key, value, comment)."""
-    original_line = line
     line = line.strip()
     
     # Tomma rader

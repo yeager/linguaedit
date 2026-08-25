@@ -9,20 +9,30 @@ suggestions from DeepL/OpenAI and spell check with red underlines.
 from __future__ import annotations
 
 from typing import List, Optional
-from PySide6.QtWidgets import (
-    QPlainTextEdit, QCompleter, QAbstractItemView, QWidget,
-    QLabel, QVBoxLayout, QHBoxLayout, QPushButton, QFrame, QMenu,
-    QApplication,
-)
-from PySide6.QtCore import Qt, Signal, QStringListModel, QTimer, QObject, Slot
+
+from PySide6.QtCore import QObject, QStringListModel, Qt, QTimer, Signal, Slot
 from PySide6.QtGui import (
-    QKeyEvent, QTextCursor, QTextCharFormat, QColor, QFont,
-    QAction, QTextFormat, QPalette,
+    QAction,
+    QFont,
+    QKeyEvent,
+    QTextCursor,
+)
+from PySide6.QtWidgets import (
+    QApplication,
+    QCompleter,
+    QFrame,
+    QHBoxLayout,
+    QLabel,
+    QPlainTextEdit,
+    QPushButton,
+    QVBoxLayout,
+    QWidget,
 )
 
-from linguaedit.services.tm import lookup_tm
 from linguaedit.services.settings import Settings
+from linguaedit.services.tm import lookup_tm
 from linguaedit.ui.syntax_highlighting import TranslationHighlighter
+
 
 # i18n helper
 def _(s: str) -> str:
@@ -438,7 +448,7 @@ class TranslationEditor(QPlainTextEdit):
             results = []
             for engine in engines:
                 try:
-                    from linguaedit.services.translator import translate, ENGINES
+                    from linguaedit.services.translator import ENGINES, translate
                     result = translate(text, engine=engine,
                                        source=source, target=target)
                     if result and result.strip():

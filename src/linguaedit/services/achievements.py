@@ -3,10 +3,10 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime, date
-from pathlib import Path
-from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
+from datetime import date, datetime
+from pathlib import Path
+from typing import Any, Dict, List, Optional
 
 from PySide6.QtCore import QObject, Signal
 

@@ -4,18 +4,31 @@ from __future__ import annotations
 
 import subprocess
 import tempfile
-import shutil
 from pathlib import Path
-from typing import List, Optional, Tuple
+from typing import List
 
+from PySide6.QtCore import Qt, QThread, Signal
+from PySide6.QtGui import QFont, QPixmap
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QTextEdit, QLineEdit, QFileDialog, QMessageBox, QProgressBar,
-    QGroupBox, QListWidget, QListWidgetItem, QSplitter,
-    QCheckBox, QComboBox, QSpinBox, QFormLayout, QWidget
+    QCheckBox,
+    QComboBox,
+    QDialog,
+    QFileDialog,
+    QFormLayout,
+    QGroupBox,
+    QHBoxLayout,
+    QLabel,
+    QLineEdit,
+    QListWidget,
+    QListWidgetItem,
+    QMessageBox,
+    QProgressBar,
+    QPushButton,
+    QSplitter,
+    QTextEdit,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, Signal, QThread, QTimer
-from PySide6.QtGui import QPixmap, QFont, QIcon
 
 
 class OCRWorker(QThread):

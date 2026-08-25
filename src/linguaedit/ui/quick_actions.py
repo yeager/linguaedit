@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-from PySide6.QtWidgets import QMenu, QWidget
 from PySide6.QtCore import QPoint, Signal
-from PySide6.QtGui import QKeySequence, QAction
+from PySide6.QtGui import QAction
+from PySide6.QtWidgets import QMenu, QWidget
 
-from linguaedit.services.tm import lookup_tm
 from linguaedit.services.glossary import get_terms
+from linguaedit.services.tm import lookup_tm
 
 
 class QuickActionsMenu(QMenu):

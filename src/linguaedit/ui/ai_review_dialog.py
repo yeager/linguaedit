@@ -8,15 +8,21 @@ from __future__ import annotations
 
 import json
 import re
-from typing import Optional
 
-from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QTextEdit, QProgressBar, QGroupBox, QCheckBox, QComboBox,
-    QDialogButtonBox, QApplication, QMessageBox, QSpinBox
-)
-from PySide6.QtCore import Qt, QThread, Signal, QTimer
+from PySide6.QtCore import QThread, Signal
 from PySide6.QtGui import QFont
+from PySide6.QtWidgets import (
+    QDialog,
+    QDialogButtonBox,
+    QGroupBox,
+    QHBoxLayout,
+    QLabel,
+    QMessageBox,
+    QProgressBar,
+    QPushButton,
+    QTextEdit,
+    QVBoxLayout,
+)
 
 from linguaedit.services.settings import Settings
 
@@ -139,7 +145,7 @@ Svara med JSON:
             else:
                 raise ValueError("Ogiltigt svar från OpenAI")
                 
-        except Exception as e:
+        except Exception:
             # Fallback till heuristik
             return self._heuristic_review()
     
@@ -178,7 +184,7 @@ Svara med JSON:
             else:
                 raise ValueError("Ogiltigt svar från Anthropic")
                 
-        except Exception as e:
+        except Exception:
             # Fallback till heuristik
             return self._heuristic_review()
 

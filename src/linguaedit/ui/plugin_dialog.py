@@ -2,15 +2,26 @@
 
 from __future__ import annotations
 
-from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QTableWidget, QTableWidgetItem,
-    QPushButton, QLabel, QTextEdit, QSplitter, QGroupBox, QCheckBox,
-    QHeaderView, QMessageBox, QFileDialog, QAbstractItemView
-)
 from PySide6.QtCore import Qt, Slot
 from PySide6.QtGui import QFont
+from PySide6.QtWidgets import (
+    QAbstractItemView,
+    QCheckBox,
+    QDialog,
+    QGroupBox,
+    QHBoxLayout,
+    QHeaderView,
+    QLabel,
+    QMessageBox,
+    QPushButton,
+    QSplitter,
+    QTableWidget,
+    QTableWidgetItem,
+    QTextEdit,
+    QVBoxLayout,
+)
 
-from linguaedit.services.plugins import get_plugin_manager, PluginInfo
+from linguaedit.services.plugins import get_plugin_manager
 
 
 class PluginDialog(QDialog):
@@ -278,7 +289,7 @@ class PluginDialog(QDialog):
     @Slot()
     def _on_open_plugin_folder(self):
         """Open the plugin folder in the system file manager."""
-        from PySide6.QtGui import QDesktopServices
         from PySide6.QtCore import QUrl
+        from PySide6.QtGui import QDesktopServices
         
         QDesktopServices.openUrl(QUrl.fromLocalFile(str(self._plugin_manager._plugin_dir)))

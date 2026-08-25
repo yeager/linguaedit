@@ -2,25 +2,40 @@
 
 from __future__ import annotations
 
-from difflib import SequenceMatcher, unified_diff
+from difflib import SequenceMatcher
 from pathlib import Path
-from typing import List, Dict, Tuple, Optional
+from typing import Dict, List
 
+from PySide6.QtCore import Qt, QThread, Signal
+from PySide6.QtGui import QBrush, QColor
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QGridLayout,
-    QLabel, QPushButton, QFileDialog, QComboBox,
-    QTextEdit, QSplitter, QGroupBox, QTableWidget,
-    QTableWidgetItem, QHeaderView, QDialogButtonBox,
-    QProgressBar, QTabWidget, QWidget, QCheckBox,
-    QAbstractItemView, QFrame
+    QAbstractItemView,
+    QCheckBox,
+    QComboBox,
+    QDialog,
+    QDialogButtonBox,
+    QFileDialog,
+    QGridLayout,
+    QGroupBox,
+    QHBoxLayout,
+    QHeaderView,
+    QLabel,
+    QProgressBar,
+    QPushButton,
+    QSplitter,
+    QTableWidget,
+    QTableWidgetItem,
+    QTabWidget,
+    QTextEdit,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, Signal, QThread
-from PySide6.QtGui import QFont, QColor, QTextCharFormat, QTextCursor, QBrush
+
+from linguaedit.parsers.json_parser import parse_json
 
 # Import parsers (assuming they exist)
 from linguaedit.parsers.po_parser import parse_po
-from linguaedit.parsers.ts_parser import parse_ts  
-from linguaedit.parsers.json_parser import parse_json
+from linguaedit.parsers.ts_parser import parse_ts
 from linguaedit.parsers.xliff_parser import parse_xliff
 
 
@@ -680,7 +695,8 @@ class GitDiffDialog(QDialog):
 
     def _parse_content(self, content: str):
         """Parse file content string into entries list."""
-        import tempfile, os
+        import os
+        import tempfile
         suffix = "." + self._file_type if self._file_type else ".po"
         # Map file_type to actual extension
         ext_map = {"po": ".po", "ts": ".ts", "json": ".json", "xliff": ".xliff"}

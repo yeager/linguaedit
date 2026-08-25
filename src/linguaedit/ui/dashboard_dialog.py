@@ -6,19 +6,21 @@ SPDX-License-Identifier: GPL-3.0-or-later
 from __future__ import annotations
 
 import csv
-import math
-from pathlib import Path
-from typing import Optional
 
+from PySide6.QtCore import QRectF, Qt
+from PySide6.QtGui import QBrush, QColor, QFont, QPainter, QPen
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QProgressBar, QScrollArea, QWidget, QGroupBox,
-    QFileDialog, QDialogButtonBox, QTableWidget, QTableWidgetItem,
-    QHeaderView, QAbstractItemView, QFrame,
+    QDialog,
+    QFileDialog,
+    QGroupBox,
+    QHBoxLayout,
+    QLabel,
+    QProgressBar,
+    QPushButton,
+    QScrollArea,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, QRectF
-from PySide6.QtGui import QPainter, QColor, QFont, QPen, QBrush
-
 
 # ── Chart widget (QPainter-based) ────────────────────────────────────
 

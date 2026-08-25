@@ -3,9 +3,9 @@
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass
-from typing import Dict, Any
 from concurrent.futures import ThreadPoolExecutor
+from dataclasses import dataclass
+from typing import Any, Dict
 
 from PySide6.QtCore import QObject, Signal
 
@@ -19,6 +19,8 @@ class ConfidenceFactors:
     glossary_terms: float = 0.0  # Glossary terms used correctly
     ai_score: float = 0.0  # AI-based quality assessment
     consistency: float = 0.0  # Consistency with similar translations
+    evidence_ratio: float = 0.5  # Fraction backed by supplied TM/glossary/context evidence
+    method: str = "heuristic-v1"
     
     @property
     def overall_score(self) -> float:
@@ -42,6 +44,15 @@ class ConfidenceFactors:
         )
         
         return min(100.0, max(0.0, score))
+
+    @property
+    def confidence_band(self) -> str:
+        """Return a deliberately coarse band for a heuristic estimate."""
+        if self.overall_score >= 80 and self.evidence_ratio >= 0.5:
+            return "high"
+        if self.overall_score >= 55:
+            return "medium"
+        return "low"
 
 
 class ConfidenceCalculator(QObject):
@@ -73,6 +84,9 @@ class ConfidenceCalculator(QObject):
         factors.glossary_terms = self._calculate_glossary_score(source, target, context)
         factors.ai_score = self._calculate_ai_score(source, target, context)
         factors.consistency = self._calculate_consistency_score(source, target, context)
+        supplied = context or {}
+        evidence_keys = ("tm_match", "glossary_terms", "similar_translations")
+        factors.evidence_ratio = sum(key in supplied for key in evidence_keys) / len(evidence_keys)
         
         self._cache[cache_key] = factors
         return factors
@@ -202,9 +216,7 @@ class ConfidenceCalculator(QObject):
         return usage_ratio * 100
     
     def _calculate_ai_score(self, source: str, target: str, context: Dict[str, Any]) -> float:
-        """Calculate AI-based quality score (0-100)."""
-        # This would integrate with an AI quality assessment service
-        # For now, use some heuristics
+        """Calculate a local linguistic heuristic (0-100), without an AI call."""
         
         # Basic quality indicators
         score = 70.0  # Start with moderate score
@@ -263,7 +275,7 @@ class ConfidenceCalculator(QObject):
     
     def get_badge_text(self, score: float) -> str:
         """Get badge text for score display."""
-        return f"{score:.0f}%"
+        return f"{score:.0f}% heuristic"
 
 
 # Global instance

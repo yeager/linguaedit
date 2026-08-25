@@ -5,11 +5,15 @@
 
 from __future__ import annotations
 
-from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QListWidget, QListWidgetItem,
-    QPushButton, QDialogButtonBox, QLabel, QCheckBox,
-)
 from PySide6.QtCore import Qt
+from PySide6.QtWidgets import (
+    QDialog,
+    QDialogButtonBox,
+    QLabel,
+    QListWidget,
+    QListWidgetItem,
+    QVBoxLayout,
+)
 
 
 class ToolbarCustomizeDialog(QDialog):

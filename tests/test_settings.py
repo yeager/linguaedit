@@ -1,6 +1,4 @@
 """Tests for Settings service."""
-import json
-from pathlib import Path
 
 import pytest
 
@@ -25,7 +23,7 @@ class TestSettings:
         assert s1 is s2
 
     def test_defaults(self):
-        from linguaedit.services.settings import Settings, DEFAULTS
+        from linguaedit.services.settings import DEFAULTS, Settings
         s = Settings.get()
         for key, default_val in DEFAULTS.items():
             val = s.get_value(key)

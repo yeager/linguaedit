@@ -3,29 +3,40 @@
 from __future__ import annotations
 
 import logging
-
 import os
 from pathlib import Path
-from typing import List, Dict, Optional
+from typing import Dict, List, Optional
 
+from PySide6.QtCore import QFileSystemWatcher, Qt, QThread, Signal
+from PySide6.QtGui import QAction, QBrush, QColor
 from PySide6.QtWidgets import (
-    QDockWidget, QWidget, QVBoxLayout, QHBoxLayout,
-    QTreeWidget, QTreeWidgetItem, QLabel, QPushButton,
-    QLineEdit, QComboBox, QProgressBar, QMenu,
-    QHeaderView, QAbstractItemView, QFileDialog,
-    QMessageBox, QToolButton, QFrame, QApplication
+    QApplication,
+    QComboBox,
+    QDockWidget,
+    QFileDialog,
+    QFrame,
+    QHBoxLayout,
+    QHeaderView,
+    QLabel,
+    QMenu,
+    QMessageBox,
+    QProgressBar,
+    QToolButton,
+    QTreeWidget,
+    QTreeWidgetItem,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, Signal, QThread, QFileSystemWatcher
-from PySide6.QtGui import QAction, QIcon, QBrush, QColor, QPixmap
+
+from linguaedit.parsers.android_parser import parse_android
+from linguaedit.parsers.arb_parser import parse_arb
+from linguaedit.parsers.json_parser import parse_json
+from linguaedit.parsers.php_parser import parse_php
 
 # Import parsers for statistics
 from linguaedit.parsers.po_parser import parse_po
 from linguaedit.parsers.ts_parser import parse_ts
-from linguaedit.parsers.json_parser import parse_json
 from linguaedit.parsers.xliff_parser import parse_xliff
-from linguaedit.parsers.android_parser import parse_android
-from linguaedit.parsers.arb_parser import parse_arb
-from linguaedit.parsers.php_parser import parse_php
 from linguaedit.parsers.yaml_parser import parse_yaml
 
 log = logging.getLogger(__name__)
@@ -69,11 +80,11 @@ class FileAnalysisThread(QThread):
                     file_info = self._analyze_file(file_path)
                     if file_info:
                         self.file_analyzed.emit(file_info)
-                except Exception as e:
+                except Exception:
                     # Skip files that can't be analyzed
                     pass
                     
-        except Exception as e:
+        except Exception:
             pass
             
         self.analysis_completed.emit()
@@ -479,8 +490,8 @@ class ProjectDockWidget(QDockWidget):
         
     def _show_in_file_manager(self, file_path: str):
         """Show file in the system file manager."""
-        import subprocess
         import platform
+        import subprocess
         
         system = platform.system()
         try:

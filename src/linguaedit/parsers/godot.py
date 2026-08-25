@@ -106,7 +106,6 @@ def _parse_tres_content(content: str) -> GodotFileData:
     
     # TRES format: [resource] följt av locale/key = "value" par
     lines = content.splitlines()
-    current_key = None
     
     for line_num, line in enumerate(lines, 1):
         line = line.strip()

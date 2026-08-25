@@ -5,8 +5,8 @@ from __future__ import annotations
 from linguaedit.services.linter import LintIssue
 
 try:
-    from svlang.checkers.svengelska import SvengelskaChecker
     from svlang.checkers.consistency import ConsistencyChecker
+    from svlang.checkers.svengelska import SvengelskaChecker
     HAS_SVLANG = True
 except ImportError:
     HAS_SVLANG = False

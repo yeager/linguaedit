@@ -2,16 +2,29 @@
 
 from __future__ import annotations
 
-from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QListWidget, QListWidgetItem,
-    QPushButton, QLabel, QLineEdit, QTextEdit, QSplitter, QGroupBox,
-    QMessageBox, QInputDialog, QFileDialog, QKeySequenceEdit,
-    QCheckBox, QFormLayout
-)
-from PySide6.QtCore import Qt, Slot, QTimer
+from PySide6.QtCore import Qt, QTimer, Slot
 from PySide6.QtGui import QFont, QKeySequence
+from PySide6.QtWidgets import (
+    QCheckBox,
+    QDialog,
+    QFileDialog,
+    QFormLayout,
+    QGroupBox,
+    QHBoxLayout,
+    QInputDialog,
+    QKeySequenceEdit,
+    QLabel,
+    QLineEdit,
+    QListWidget,
+    QListWidgetItem,
+    QMessageBox,
+    QPushButton,
+    QSplitter,
+    QTextEdit,
+    QVBoxLayout,
+)
 
-from linguaedit.services.macros import get_macro_manager, MacroActionType
+from linguaedit.services.macros import MacroActionType, get_macro_manager
 
 
 class MacroDialog(QDialog):

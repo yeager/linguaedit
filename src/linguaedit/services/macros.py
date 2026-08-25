@@ -3,14 +3,13 @@
 from __future__ import annotations
 
 import json
+from dataclasses import dataclass
 from datetime import datetime
-from pathlib import Path
-from typing import List, Dict, Any, Optional
-from dataclasses import dataclass, asdict
 from enum import Enum
+from pathlib import Path
+from typing import Any, Dict, List, Optional
 
 from PySide6.QtCore import QObject, Signal
-from PySide6.QtGui import QKeySequence
 
 
 class MacroActionType(Enum):
@@ -227,7 +226,7 @@ class MacroPlayer(QObject):
     def _execute_insert_text(self, target_widget, params):
         """Execute insert text action."""
         text = params.get("text", "")
-        position = params.get("position", -1)  # -1 = at cursor
+        params.get("position", -1)  # -1 = at cursor
         
         if hasattr(target_widget, 'insert_text_at_cursor'):
             target_widget.insert_text_at_cursor(text)

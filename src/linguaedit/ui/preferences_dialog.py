@@ -5,19 +5,26 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QTabWidget, QWidget, QFormLayout,
-    QLineEdit, QComboBox, QSpinBox, QDialogButtonBox,
-    QCheckBox, QLabel,
-)
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QIcon, QPixmap, QPainter, QFont
+from PySide6.QtGui import QFont, QIcon, QPainter, QPixmap
+from PySide6.QtWidgets import (
+    QCheckBox,
+    QComboBox,
+    QDialog,
+    QDialogButtonBox,
+    QFormLayout,
+    QLabel,
+    QLineEdit,
+    QSpinBox,
+    QTabWidget,
+    QVBoxLayout,
+    QWidget,
+)
 
-from linguaedit.services.settings import Settings, SUPPORTED_LANGUAGES
-from linguaedit.services.translator import ENGINES
-from linguaedit.services import keystore
 from linguaedit.app import _find_translations_dir
-
+from linguaedit.services import keystore
+from linguaedit.services.settings import SUPPORTED_LANGUAGES, Settings
+from linguaedit.services.translator import ENGINES
 
 # Flag icons from FlagKit (MIT license, https://github.com/madebybowtie/FlagKit)
 # PNG files in resources/flags/<lang_code>.png

@@ -10,8 +10,7 @@ import json
 import re
 import time
 from pathlib import Path
-from typing import Dict, List, Optional, NamedTuple
-from urllib.parse import quote_plus
+from typing import List, NamedTuple, Optional
 
 import requests
 

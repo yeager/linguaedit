@@ -6,12 +6,10 @@ för att hitta hur samma sträng översatts i andra projekt.
 
 from __future__ import annotations
 
-import json
 import sqlite3
 import time
 from pathlib import Path
-from typing import Dict, List, Optional, NamedTuple
-from urllib.parse import quote_plus
+from typing import List, NamedTuple
 
 import requests
 

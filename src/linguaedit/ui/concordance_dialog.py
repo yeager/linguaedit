@@ -4,16 +4,19 @@
 
 from __future__ import annotations
 
-import re
-from html import escape as html_escape
-
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLineEdit, QPushButton,
-    QTableWidget, QTableWidgetItem, QHeaderView, QLabel, QApplication,
     QAbstractItemView,
+    QApplication,
+    QDialog,
+    QHBoxLayout,
+    QHeaderView,
+    QLabel,
+    QLineEdit,
+    QPushButton,
+    QTableWidget,
+    QTableWidgetItem,
+    QVBoxLayout,
 )
-from PySide6.QtCore import Qt
-from PySide6.QtGui import QKeySequence, QShortcut
 
 from linguaedit.services.tm import concordance_search
 

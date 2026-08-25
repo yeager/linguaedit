@@ -11,18 +11,27 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Optional
 
+from PySide6.QtCore import QRectF, QSize, Qt, QTimer, QUrl, Signal
+from PySide6.QtGui import QBrush, QColor, QFont, QKeySequence, QPainter, QPen, QShortcut
+from PySide6.QtMultimedia import QAudioOutput, QMediaPlayer
+from PySide6.QtMultimediaWidgets import QGraphicsVideoItem
 from PySide6.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QPushButton,
-    QSlider, QLabel, QStyle, QSizePolicy, QDockWidget,
-    QComboBox, QCheckBox, QFrame, QToolButton,
-    QGraphicsView, QGraphicsScene, QGraphicsRectItem,
+    QCheckBox,
+    QComboBox,
+    QDockWidget,
+    QFrame,
+    QGraphicsRectItem,
+    QGraphicsScene,
     QGraphicsSimpleTextItem,
+    QGraphicsView,
+    QHBoxLayout,
+    QLabel,
+    QPushButton,
+    QSizePolicy,
+    QSlider,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, QUrl, Signal, QTimer, QSize, QRect, QRectF
-from PySide6.QtGui import QKeySequence, QShortcut, QFont, QPainter, QColor, QPen, QBrush
-from PySide6.QtMultimedia import QMediaPlayer, QAudioOutput
-from PySide6.QtMultimediaWidgets import QVideoWidget, QGraphicsVideoItem
-
 
 # ── Helpers ──────────────────────────────────────────────────────
 

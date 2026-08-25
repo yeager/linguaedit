@@ -9,7 +9,9 @@ LinguaEdit uses Qt's translation system (`.ts` files) and [Transifex](https://ap
 | English | `en` | ✅ Source language |
 | Swedish | `sv` | ✅ 100% |
 
-More languages are available on Transifex — contributions welcome!
+Swedish, Danish, Japanese, Korean, Polish, and Simplified Chinese currently
+clear the build threshold. More languages are available on Transifex —
+contributions welcome!
 
 ## How to Contribute
 

@@ -6,7 +6,6 @@ matches source strings in the corresponding .ts files, and fills in
 translations that are currently empty/unfinished.
 """
 
-import ast
 import re
 import sys
 from pathlib import Path
@@ -146,7 +145,7 @@ def main():
     print("Extracting translations from generate_translations.py...")
     all_translations = extract_dicts_from_file(gen_file)
     
-    print(f"\nInjecting into .ts files...")
+    print("\nInjecting into .ts files...")
     total_filled = 0
     for gen_key, ts_lang in LANG_MAP.items():
         if gen_key not in all_translations:

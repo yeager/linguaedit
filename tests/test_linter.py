@@ -1,5 +1,4 @@
 """Tests for the LinguaEdit linter."""
-import pytest
 
 
 def _make_entry(msgid, msgstr, flags=None, index=0):

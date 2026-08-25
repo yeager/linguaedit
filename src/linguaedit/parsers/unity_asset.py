@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 
-import yaml
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Union
+from typing import Any, Dict, List, Union
+
+import yaml
 
 from linguaedit.parsers.po_parser import TranslationEntry
 
@@ -26,7 +27,6 @@ def parse_unity_asset(file_path: Union[str, Path]) -> UnityAssetData:
     entries = []
     metadata = {}
     unity_version = ""
-    guid = ""
     
     with open(path, 'r', encoding='utf-8') as f:
         content = f.read()

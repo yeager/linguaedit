@@ -6,7 +6,7 @@ import plistlib
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Union
+from typing import Any, Dict, List, Union
 
 from linguaedit.parsers.po_parser import TranslationEntry
 

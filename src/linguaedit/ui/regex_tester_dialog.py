@@ -3,15 +3,25 @@
 from __future__ import annotations
 
 import re
-from typing import Optional
 
+from PySide6.QtCore import Qt
+from PySide6.QtGui import QFont
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QTextEdit, QLineEdit, QFormLayout, QGroupBox, QMessageBox,
-    QScrollArea, QWidget, QListWidget, QListWidgetItem, QSplitter
+    QDialog,
+    QFormLayout,
+    QGroupBox,
+    QHBoxLayout,
+    QLineEdit,
+    QListWidget,
+    QListWidgetItem,
+    QMessageBox,
+    QPushButton,
+    QScrollArea,
+    QSplitter,
+    QTextEdit,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, Signal
-from PySide6.QtGui import QFont, QClipboard
 
 
 class RegexTesterDialog(QDialog):
@@ -172,7 +182,7 @@ class RegexTesterDialog(QDialog):
     def _on_format_selected(self, current, previous):
         """Handle format string selection."""
         if current:
-            format_str = current.data(Qt.UserRole)
+            current.data(Qt.UserRole)
             # Could highlight the format string in text editor
             
     def _on_value_changed(self):
@@ -211,7 +221,7 @@ class RegexTesterDialog(QDialog):
     def _copy_result(self):
         """Copy the preview result to clipboard."""
         result = self._preview_edit.toPlainText()
-        clipboard = self.parent().parent().app.clipboard() if hasattr(self.parent().parent(), 'app') else None
+        self.parent().parent().app.clipboard() if hasattr(self.parent().parent(), 'app') else None
         
         try:
             from PySide6.QtWidgets import QApplication

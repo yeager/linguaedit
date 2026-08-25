@@ -2,16 +2,25 @@
 
 from __future__ import annotations
 
-from typing import List, Dict, Tuple
 from dataclasses import dataclass
+from typing import Dict, List, Tuple
 
-from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QGridLayout,
-    QLabel, QProgressBar, QGroupBox, QTableWidget, QTableWidgetItem,
-    QHeaderView, QDialogButtonBox, QFrame, QTextEdit
-)
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QFont
+from PySide6.QtWidgets import (
+    QDialog,
+    QDialogButtonBox,
+    QFrame,
+    QGridLayout,
+    QGroupBox,
+    QHBoxLayout,
+    QHeaderView,
+    QLabel,
+    QProgressBar,
+    QTableWidget,
+    QTableWidgetItem,
+    QTextEdit,
+    QVBoxLayout,
+)
 
 
 @dataclass 

@@ -1,8 +1,5 @@
 """Tests for Translation Memory service."""
-import os
 import sqlite3
-from pathlib import Path
-from unittest.mock import patch
 
 import pytest
 
@@ -73,8 +70,7 @@ class TestTranslationMemory:
         assert matches[0].target == "Spara"
 
     def test_persistence(self, isolate_tm):
-        from linguaedit.services.tm import add_to_tm, _init_db
-        import sqlite3
+        from linguaedit.services.tm import add_to_tm
         add_to_tm("Hello", "Hej", "en", "sv")
         # Verify data is in DB file
         conn = sqlite3.connect(isolate_tm)

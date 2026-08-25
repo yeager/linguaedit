@@ -3,17 +3,29 @@
 from __future__ import annotations
 
 import re
-from typing import List, Tuple, Dict, Any
+from typing import Dict, List
 
+from PySide6.QtCore import QThread, Signal
+from PySide6.QtGui import QBrush, QColor
 from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QGridLayout,
-    QLabel, QLineEdit, QCheckBox, QPushButton, QComboBox,
-    QTextEdit, QTabWidget, QWidget, QGroupBox, QRadioButton,
-    QButtonGroup, QTreeWidget, QTreeWidgetItem, QHeaderView,
-    QDialogButtonBox, QProgressBar, QMessageBox, QFrame
+    QCheckBox,
+    QDialog,
+    QDialogButtonBox,
+    QGridLayout,
+    QGroupBox,
+    QHBoxLayout,
+    QHeaderView,
+    QLabel,
+    QLineEdit,
+    QMessageBox,
+    QProgressBar,
+    QPushButton,
+    QTabWidget,
+    QTreeWidget,
+    QTreeWidgetItem,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, Signal, QThread
-from PySide6.QtGui import QFont, QBrush, QColor
 
 
 class BatchOperationThread(QThread):

@@ -7,10 +7,10 @@ Paid engines (API key required): OpenAI, Anthropic, DeepL, Google Cloud, Microso
 
 from __future__ import annotations
 
-import json
 import time
-import requests
 from typing import Optional
+
+import requests
 
 from linguaedit.services.keystore import get_secret
 
@@ -245,7 +245,7 @@ def translate_deepl(text: str, source: str = "en", target: str = "sv",
         translations = data.get("translations", [])
         if translations:
             return translations[0].get("text", "")
-        raise TranslationError(f"DeepL: empty response")
+        raise TranslationError("DeepL: empty response")
     except TranslationError:
         raise
     except Exception as e:

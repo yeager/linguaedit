@@ -5,12 +5,19 @@
 
 from __future__ import annotations
 
+from PySide6.QtCore import Qt, Signal
+from PySide6.QtGui import QFont, QKeySequence, QShortcut
 from PySide6.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QPlainTextEdit, QTextEdit,
-    QLabel, QPushButton, QProgressBar, QFrame,
+    QFrame,
+    QHBoxLayout,
+    QLabel,
+    QPlainTextEdit,
+    QProgressBar,
+    QPushButton,
+    QTextEdit,
+    QVBoxLayout,
+    QWidget,
 )
-from PySide6.QtCore import Qt, Signal, QTimer
-from PySide6.QtGui import QFont, QKeySequence, QShortcut, QColor
 
 
 class ZenModeWidget(QWidget):

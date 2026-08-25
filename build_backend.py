@@ -6,8 +6,8 @@ from contextlib import contextmanager
 from pathlib import Path
 
 from setuptools import build_meta as _setuptools_backend
-from translation_build import compile_translations
 
+from translation_build import compile_translations
 
 _TRANSLATIONS = Path(__file__).parent / "src" / "linguaedit" / "translations"
 

@@ -2,17 +2,23 @@
 
 from __future__ import annotations
 
-import re
-from typing import Optional
-
-from PySide6.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QGridLayout,
-    QLineEdit, QCheckBox, QPushButton, QLabel, QComboBox,
-    QTextEdit, QFrame, QProgressBar, QDialogButtonBox,
-    QGroupBox, QRadioButton, QButtonGroup
-)
-from PySide6.QtCore import Qt, Signal, QTimer
+from PySide6.QtCore import QTimer, Signal
 from PySide6.QtGui import QKeySequence, QShortcut
+from PySide6.QtWidgets import (
+    QButtonGroup,
+    QCheckBox,
+    QDialog,
+    QFrame,
+    QGridLayout,
+    QGroupBox,
+    QHBoxLayout,
+    QLabel,
+    QLineEdit,
+    QProgressBar,
+    QPushButton,
+    QRadioButton,
+    QVBoxLayout,
+)
 
 
 class SearchReplaceDialog(QDialog):

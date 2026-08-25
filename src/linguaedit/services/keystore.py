@@ -480,7 +480,7 @@ def _fallback_load() -> dict:
     if not _FALLBACK_PATH.exists():
         return {}
     try:
-        from cryptography.fernet import Fernet, InvalidToken
+        from cryptography.fernet import Fernet
     except ImportError:
         # If cryptography is not available, try legacy XOR format
         return _legacy_fallback_load()

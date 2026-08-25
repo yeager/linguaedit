@@ -2,14 +2,12 @@
 
 from __future__ import annotations
 
-import json
 import platform
-import sys
-import requests
 from typing import Optional
 
-from linguaedit import __version__
+import requests
 
+from linguaedit import __version__
 
 GITHUB_RELEASES_URL = "https://api.github.com/repos/yeager/linguaedit/releases/latest"
 

@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 
-import polib
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
+
+import polib
 
 
 @dataclass
