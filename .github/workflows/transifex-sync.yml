@@ -44,7 +44,17 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && inputs.push_translations
         env:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
-        run: tx push --translation --all --force
+        run: |
+          for attempt in 1 2 3; do
+            if tx push --translation --all --force --workers 1; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              echo "Transifex upload conflicted; retrying in 30 seconds"
+              sleep 30
+            fi
+          done
+          exit 1
 
       - name: Pull translations
         env:
