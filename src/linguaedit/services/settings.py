@@ -51,6 +51,7 @@ DEFAULTS: dict[str, Any] = {
     "source_language": "en",
     "target_language": "sv",
     "formality": "default",  # default / formal / informal
+    "opennmt_model": "",
 
     # Appearance
     "color_scheme": "default",  # default / light / dark

@@ -19,6 +19,8 @@ Translate untranslated entries automatically using one of the supported engines:
 ### Free Engines
 - **Lingva Translate** — No API key required
 - **MyMemory** — No API key required
+- **Argos Translate** — Runs locally with an installed language package
+- **OpenNMT-py** — Runs locally with a compatible model file
 
 ### Paid Engines (API Key Required)
 - **OpenAI** (GPT-4o-mini, etc.)
@@ -33,6 +35,8 @@ Translate untranslated entries automatically using one of the supported engines:
 - **LibreTranslate** — Self-hosted option
 
 Configure engines via **Catalog → Pre-translate** (Ctrl+Shift+T) or manage API keys in the pre-translate dialog.
+OpenNMT-py also requires `onmt_translate` on `PATH`; configure its model under
+**Preferences → Translation**.
 
 ## Translation Memory (TM)
 

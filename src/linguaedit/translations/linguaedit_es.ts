@@ -4062,6 +4062,14 @@ Riesgos:%s</translation>
         <source>none</source>
         <translation>ninguno</translation>
     </message>
+    <message>
+        <source>OpenNMT model:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Path to an OpenNMT-py model file</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
     <context>
         <name>Linter</name>
@@ -5116,6 +5124,14 @@ Para una mejor seguridad, instale:
     <message>
         <source>Reload external changes without asking while Watch File is enabled</source>
         <translation>Recargar los cambios externos sin preguntar mientras el archivo de reloj está habilitado</translation>
+    </message>
+    <message>
+        <source>OpenNMT model:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Path to an OpenNMT-py model file</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
     <context>

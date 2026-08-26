@@ -1,13 +1,19 @@
 """Pre-translation services for LinguaEdit.
 
-Free engines: Lingva, MyMemory, LibreTranslate, Argos Translate, Apertium, NLLB (Meta).
+Free engines: Lingva, MyMemory, LibreTranslate, Argos Translate, OpenNMT,
+Apertium, NLLB (Meta).
 Paid engines (API key required): OpenAI, Anthropic, DeepL, Google Cloud, Microsoft, Amazon.
 """
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 from __future__ import annotations
 
+import os
+import shutil
+import subprocess
+import tempfile
 import time
+from pathlib import Path
 from typing import Optional
 
 import requests
@@ -103,6 +109,69 @@ def translate_argos(text: str, source: str = "en", target: str = "sv", **kw) -> 
         raise
     except Exception as e:
         raise TranslationError(f"Argos Translate: {e}")
+
+
+def translate_opennmt(text: str, source: str = "en", target: str = "sv", **kw) -> str:
+    """Translate locally with an OpenNMT-py model and ``onmt_translate``.
+
+    OpenNMT models define their own language pair. ``source`` and ``target``
+    are accepted for the common engine interface but are not passed to the
+    CLI. Set ``opennmt_model`` or the ``OPENNMT_MODEL`` environment variable.
+    """
+    del source, target
+    model_value = kw.get("opennmt_model") or os.environ.get("OPENNMT_MODEL", "")
+    if not model_value:
+        raise TranslationError(
+            "OpenNMT: model not configured. Set opennmt_model or OPENNMT_MODEL."
+        )
+    model_path = Path(model_value).expanduser()
+    if not model_path.is_file():
+        raise TranslationError(f"OpenNMT: model not found: {model_path}")
+
+    requested_command = kw.get("opennmt_command", "onmt_translate")
+    command = shutil.which(requested_command)
+    if not command:
+        raise TranslationError(
+            "OpenNMT-py is not installed or onmt_translate is not on PATH."
+        )
+
+    extra_args = kw.get("opennmt_args", ())
+    if not isinstance(extra_args, (list, tuple)) or not all(
+        isinstance(arg, str) for arg in extra_args
+    ):
+        raise TranslationError("OpenNMT: opennmt_args must be a list of strings.")
+
+    try:
+        with tempfile.TemporaryDirectory(prefix="linguaedit-opennmt-") as temp_dir:
+            source_path = Path(temp_dir) / "source.txt"
+            output_path = Path(temp_dir) / "translation.txt"
+            source_path.write_text(text, encoding="utf-8")
+            result = subprocess.run(
+                [
+                    command,
+                    "-model", str(model_path),
+                    "-src", str(source_path),
+                    "-output", str(output_path),
+                    *extra_args,
+                ],
+                capture_output=True,
+                text=True,
+                timeout=float(kw.get("timeout", 300)),
+                check=False,
+            )
+            if result.returncode != 0:
+                detail = (result.stderr or result.stdout or "unknown error").strip()
+                raise TranslationError(f"OpenNMT: {detail[-1000:]}")
+            translated = output_path.read_text(encoding="utf-8").rstrip("\n")
+            if not translated:
+                raise TranslationError("OpenNMT returned an empty translation.")
+            return translated
+    except TranslationError:
+        raise
+    except subprocess.TimeoutExpired as exc:
+        raise TranslationError("OpenNMT translation timed out.") from exc
+    except OSError as exc:
+        raise TranslationError(f"OpenNMT: {exc}") from exc
 
 
 def translate_apertium(text: str, source: str = "en", target: str = "sv", **kw) -> str:
@@ -325,6 +394,7 @@ ENGINES = {
     "mymemory":        {"fn": translate_mymemory,        "free": True,  "name": "MyMemory"},
     "libretranslate":  {"fn": translate_libretranslate,  "free": True,  "name": "LibreTranslate"},
     "argos":           {"fn": translate_argos,           "free": True,  "name": "Argos Translate (offline)"},
+    "opennmt":         {"fn": translate_opennmt,         "free": True,  "name": "OpenNMT-py (offline)"},
     "apertium":        {"fn": translate_apertium,        "free": True,  "name": "Apertium"},
     "nllb":            {"fn": translate_nllb,            "free": True,  "name": "NLLB (Meta)"},
     # Paid

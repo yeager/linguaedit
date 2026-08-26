@@ -31,7 +31,7 @@
 ### `linguaedit.services.translator`
 
 - `translate(text, engine, **kwargs) → str` — Translate text
-- Engines: `lingva`, `mymemory`, `openai`, `anthropic`
+- Engines include `lingva`, `mymemory`, `argos`, `opennmt`, `openai`, and `anthropic`
 
 ### `linguaedit.services.spellcheck`
 

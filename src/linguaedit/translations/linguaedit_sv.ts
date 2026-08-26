@@ -4062,6 +4062,14 @@ Risker: %s</translation>
         <source>none</source>
         <translation>inga</translation>
     </message>
+    <message>
+        <source>OpenNMT model:</source>
+        <translation>OpenNMT-modell:</translation>
+    </message>
+    <message>
+        <source>Path to an OpenNMT-py model file</source>
+        <translation>Sökväg till en OpenNMT-py-modellfil</translation>
+    </message>
 </context>
     <context>
         <name>Linter</name>
@@ -5116,6 +5124,14 @@ Installera följande för bättre säkerhet:
     <message>
         <source>Reload external changes without asking while Watch File is enabled</source>
         <translation>Läs in externa ändringar utan att fråga när filbevakning är aktiverad</translation>
+    </message>
+    <message>
+        <source>OpenNMT model:</source>
+        <translation>OpenNMT-modell:</translation>
+    </message>
+    <message>
+        <source>Path to an OpenNMT-py model file</source>
+        <translation>Sökväg till en OpenNMT-py-modellfil</translation>
     </message>
 </context>
     <context>

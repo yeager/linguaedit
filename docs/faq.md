@@ -18,7 +18,10 @@ Open an issue on [GitHub](https://github.com/yeager/linguaedit/issues).
 
 ### Which pre-translation engines are free?
 
-**Lingva Translate** and **MyMemory** require no API key and are free to use. All other engines (OpenAI, Anthropic, DeepL, Google Cloud, Microsoft, Amazon, HuggingFace, LibreTranslate) require an API key and may incur costs.
+**Lingva Translate** and **MyMemory** require no API key. **Argos Translate**
+and **OpenNMT-py** also require no API key and run locally, but need an
+installed language package or model. Hosted engines may require an API key and
+may incur costs.
 
 ### Where are API keys stored?
 

@@ -4065,7 +4065,15 @@ Risks: %s</source>
             <source>none</source>
             <translation>아무 것도</translation>
         </message>
-    </context>
+        <message>
+        <source>OpenNMT model:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Path to an OpenNMT-py model file</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>Linter</name>
         <message>
@@ -5107,7 +5115,15 @@ For better security, install:
             <source>Reload external changes without asking while Watch File is enabled</source>
             <translation>워치 파일이 활성화되어 있는 동안 외부 변경 사항을 요청하지 않고 다시 로드하십시오</translation>
         </message>
-    </context>
+        <message>
+        <source>OpenNMT model:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Path to an OpenNMT-py model file</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>ProjectDockWidget</name>
         <message>

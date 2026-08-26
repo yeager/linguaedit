@@ -4807,6 +4807,14 @@ class LinguaEditWindow(QMainWindow):
             kw["model"] = self._openai_model
         if self._trans_engine == "anthropic" and hasattr(self, "_anthropic_model"):
             kw["model"] = self._anthropic_model
+        if self._trans_engine == "opennmt":
+            model = getattr(
+                self,
+                "_opennmt_model",
+                self._app_settings.get_value("opennmt_model", ""),
+            )
+            if model:
+                kw["opennmt_model"] = model
         return kw
 
     def _on_pretranslate_all(self):
@@ -4911,6 +4919,15 @@ class LinguaEditWindow(QMainWindow):
         opt_form.addRow(self.tr("OpenAI model:"), openai_edit)
         anthropic_edit = QLineEdit(getattr(self, "_anthropic_model", "claude-sonnet-4-20260514"))
         opt_form.addRow(self.tr("Anthropic model:"), anthropic_edit)
+        opennmt_edit = QLineEdit(
+            getattr(
+                self,
+                "_opennmt_model",
+                self._app_settings.get_value("opennmt_model", ""),
+            )
+        )
+        opennmt_edit.setPlaceholderText(self.tr("Path to an OpenNMT-py model file"))
+        opt_form.addRow(self.tr("OpenNMT model:"), opennmt_edit)
         layout.addWidget(options_group)
 
         keys_btn = QPushButton(self.tr("Manage API Keys…"))
@@ -4944,6 +4961,9 @@ class LinguaEditWindow(QMainWindow):
             self._deepl_formality = formality_vals[formality_combo.currentIndex()]
             self._openai_model = openai_edit.text().strip() or "gpt-4o-mini"
             self._anthropic_model = anthropic_edit.text().strip() or "claude-sonnet-4-20260514"
+            self._opennmt_model = opennmt_edit.text().strip()
+            self._app_settings.set_value("opennmt_model", self._opennmt_model)
+            self._app_settings.save()
             self._do_pretranslate_all()
 
     def _do_pretranslate_all(self):

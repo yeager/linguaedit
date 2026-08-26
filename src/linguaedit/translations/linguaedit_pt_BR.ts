@@ -4071,7 +4071,15 @@ Risks: %s</source>
             <source>none</source>
             <translation>Não há</translation>
         </message>
-    </context>
+        <message>
+        <source>OpenNMT model:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Path to an OpenNMT-py model file</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>Linter</name>
         <message>
@@ -5113,7 +5121,15 @@ For better security, install:
             <source>Reload external changes without asking while Watch File is enabled</source>
             <translation>Reload alterações externas sem pedir enquanto o arquivo de observação está habilitado</translation>
         </message>
-    </context>
+        <message>
+        <source>OpenNMT model:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Path to an OpenNMT-py model file</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
     <context>
         <name>ProjectDockWidget</name>
         <message>

@@ -207,7 +207,9 @@ Distraction-free translation workflow (Ctrl+Alt+Z):
 - **AI Review** (Ctrl+Shift+A) — quality scoring with heuristic fallback
 - **Back-translation verification** — detect meaning drift
 - **Heuristic confidence estimates** per entry, labelled with method and evidence level
-- Supported engines: DeepL, OpenAI, Google, Lingva, MyMemory
+- Supported engines include DeepL, OpenAI, Google, Lingva, MyMemory, Argos
+  Translate and OpenNMT-py. Argos and OpenNMT run locally without API keys;
+  OpenNMT requires a compatible model file and `onmt_translate` on `PATH`.
 
 ### ✅ Quality Assurance
 

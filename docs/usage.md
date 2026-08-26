@@ -24,7 +24,7 @@ linguaedit translations/sv.po
 
 ## Pre-Translation
 
-LinguaEdit supports four translation engines:
+LinguaEdit supports both online services and offline translation engines:
 
 | Engine    | Cost | API Key Required |
 |-----------|------|-----------------|
@@ -32,6 +32,12 @@ LinguaEdit supports four translation engines:
 | MyMemory  | Free | No (email optional) |
 | OpenAI    | Paid | Yes             |
 | Anthropic | Paid | Yes             |
+| Argos Translate | Local | No        |
+| OpenNMT-py | Local | No             |
+
+For OpenNMT-py, install OpenNMT-py so `onmt_translate` is available and set
+the model path under **Preferences → Translation → OpenNMT model**. The model
+determines the language pair.
 
 - **Single entry:** Click "Pre-translate" below the editor
 - **All untranslated:** Menu → Pre-translate all

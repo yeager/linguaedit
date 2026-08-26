@@ -179,6 +179,14 @@ class PreferencesDialog(QDialog):
         self._target_edit = QLineEdit(self._settings["target_language"])
         form.addRow(self.tr("Target language:"), self._target_edit)
 
+        self._opennmt_model_edit = QLineEdit(
+            self._settings.get_value("opennmt_model", "")
+        )
+        self._opennmt_model_edit.setPlaceholderText(
+            self.tr("Path to an OpenNMT-py model file")
+        )
+        form.addRow(self.tr("OpenNMT model:"), self._opennmt_model_edit)
+
         self._auto_compile_check = QCheckBox(self.tr("Auto-compile on save"))
         self._auto_compile_check.setChecked(self._settings.get_value("auto_compile_on_save", False))
         self._auto_compile_check.setToolTip(self.tr("Automatically compile .mo/.qm after saving"))
@@ -293,6 +301,7 @@ class PreferencesDialog(QDialog):
 
         s["source_language"] = self._source_edit.text().strip() or "en"
         s["target_language"] = self._target_edit.text().strip() or "sv"
+        s["opennmt_model"] = self._opennmt_model_edit.text().strip()
 
         s["auto_compile_on_save"] = self._auto_compile_check.isChecked()
         s["auto_reload_on_change"] = self._auto_reload_check.isChecked()
