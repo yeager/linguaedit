@@ -1,202 +1,203 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ko">
+<?xml version='1.0' encoding='utf-8'?>
+<TS version="2.1" language="ko">
     <context>
         <name>AIReviewDialog</name>
         <message>
             <source>AI Translation Review</source>
-            <translation type="unfinished"/>
+            <translation>인공지능 번역 리뷰</translation>
         </message>
         <message>
             <source>Analysis</source>
-            <translation type="unfinished"/>
+            <translation>분석</translation>
         </message>
         <message>
             <source>Analyzing translation...</source>
-            <translation type="unfinished"/>
+            <translation>번역을 분석하고...</translation>
         </message>
         <message>
             <source>Apply Suggestion</source>
-            <translation type="unfinished"/>
+            <translation>제안 을 적용 하십시오</translation>
         </message>
         <message>
             <source>Score:</source>
-            <translation type="unfinished"/>
+            <translation>점수:</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>오류</translation>
         </message>
         <message>
             <source>Analysis error: </source>
-            <translation type="unfinished"/>
+            <translation>분석 오류: </translation>
         </message>
         <message>
             <source>Improvement suggestions:</source>
-            <translation type="unfinished"/>
+            <translation>개선 제안:</translation>
         </message>
         <message>
             <source>Explanation:</source>
-            <translation type="unfinished"/>
+            <translation>설명:</translation>
         </message>
         <message>
             <source>No specific suggestions.</source>
-            <translation type="unfinished"/>
+            <translation>구체적인 제안은 없습니다.</translation>
         </message>
         <message>
             <source>Could not analyze translation: </source>
-            <translation type="unfinished"/>
+            <translation>번역을 분석할 수 없었습니다.</translation>
         </message>
         <message>
             <source>Source text:</source>
-            <translation type="unfinished"/>
+            <translation>출처 텍스트:</translation>
         </message>
         <message>
             <source>Text to Review</source>
-            <translation type="unfinished"/>
+            <translation>검토 의 문장</translation>
         </message>
         <message>
             <source>Translation:</source>
-            <translation type="unfinished"/>
+            <translation>번역:</translation>
         </message>
     </context>
     <context>
         <name>AchievementManager</name>
         <message>
             <source>Complete 10 translations</source>
-            <translation type="unfinished"/>
+            <translation>10개의 번역본이 완성되었습니다.</translation>
         </message>
         <message>
             <source>Complete 100 translations</source>
-            <translation type="unfinished"/>
+            <translation>100번 번역본을 완성</translation>
         </message>
         <message>
             <source>Complete 1000 translations</source>
-            <translation type="unfinished"/>
+            <translation>1000번 번역본을 완성</translation>
         </message>
         <message>
             <source>Complete 50 translations without using auto-translate</source>
-            <translation type="unfinished"/>
+            <translation>자동 번역을 사용하지 않고 50개의 번역을 완료합니다.</translation>
         </message>
         <message>
             <source>Complete your first translation</source>
-            <translation type="unfinished"/>
+            <translation>첫번역을 완성하세요</translation>
         </message>
         <message>
             <source>Completionist</source>
-            <translation type="unfinished"/>
+            <translation>완성주의자</translation>
         </message>
         <message>
             <source>Dedicated Translator</source>
-            <translation type="unfinished"/>
+            <translation>헌신적 인 번역자</translation>
         </message>
         <message>
             <source>Early Bird</source>
-            <translation type="unfinished"/>
+            <translation>초기의 새</translation>
         </message>
         <message>
             <source>First Steps</source>
-            <translation type="unfinished"/>
+            <translation>첫 번째 단계</translation>
         </message>
         <message>
             <source>Format Explorer</source>
-            <translation type="unfinished"/>
+            <translation>형식 탐색기</translation>
         </message>
         <message>
             <source>Fully translate a file (100% complete)</source>
-            <translation type="unfinished"/>
+            <translation>파일의 완전한 번역 (100% 완료)</translation>
         </message>
         <message>
             <source>Getting Into Rhythm</source>
-            <translation type="unfinished"/>
+            <translation>리듬 에 들어오는 것</translation>
         </message>
         <message>
             <source>Getting Started</source>
-            <translation type="unfinished"/>
+            <translation>시작</translation>
         </message>
         <message>
             <source>Linguistic Expert</source>
-            <translation type="unfinished"/>
+            <translation>언어 전문가</translation>
         </message>
         <message>
             <source>Night Owl</source>
-            <translation type="unfinished"/>
+            <translation>밤새 새우</translation>
         </message>
         <message>
             <source>Perfectionist</source>
-            <translation type="unfinished"/>
+            <translation>완벽주의자</translation>
         </message>
         <message>
             <source>Polyglot</source>
-            <translation type="unfinished"/>
+            <translation>다국어</translation>
         </message>
         <message>
             <source>Speed Demon</source>
-            <translation type="unfinished"/>
+            <translation>스피드 데몬</translation>
         </message>
         <message>
             <source>Translate 50 strings in one hour</source>
-            <translation type="unfinished"/>
+            <translation>한 시간 동안 50개의 문자열을 번역</translation>
         </message>
         <message>
             <source>Translate after 10 PM</source>
-            <translation type="unfinished"/>
+            <translation>오후 10시 이후에 번역</translation>
         </message>
         <message>
             <source>Translate before 8 AM</source>
-            <translation type="unfinished"/>
+            <translation>오전 8시 전에 번역</translation>
         </message>
         <message>
             <source>Translate for 3 days in a row</source>
-            <translation type="unfinished"/>
+            <translation>3일 연속 번역</translation>
         </message>
         <message>
             <source>Translate for 30 days in a row</source>
-            <translation type="unfinished"/>
+            <translation>30일 연속 번역</translation>
         </message>
         <message>
             <source>Translate for 7 days in a row</source>
-            <translation type="unfinished"/>
+            <translation>7일 연속 번역</translation>
         </message>
         <message>
             <source>Translation Master</source>
-            <translation type="unfinished"/>
+            <translation>번역장</translation>
         </message>
         <message>
             <source>Unstoppable</source>
-            <translation type="unfinished"/>
+            <translation>막지 못할 것</translation>
         </message>
         <message>
             <source>Week Warrior</source>
-            <translation type="unfinished"/>
+            <translation>주 전사</translation>
         </message>
         <message>
             <source>Work with 3 different languages</source>
-            <translation type="unfinished"/>
+            <translation>3개의 다른 언어로 작업</translation>
         </message>
         <message>
             <source>Work with 5 different file formats</source>
-            <translation type="unfinished"/>
+            <translation>5개의 파일 형식으로 작업</translation>
         </message>
         <message>
             <source>Work with 5 different languages</source>
-            <translation type="unfinished"/>
+            <translation>5개의 다른 언어로 작업</translation>
         </message>
     </context>
     <context>
         <name>AchievementWidget</name>
         <message>
             <source>Unlocked: {}</source>
-            <translation type="unfinished"/>
+            <translation>잠금 해제: {}</translation>
         </message>
     </context>
     <context>
         <name>AchievementsDialog</name>
         <message>
             <source>Achievement Progress</source>
-            <translation type="unfinished"/>
+            <translation>성취 진출</translation>
         </message>
         <message>
             <source>Achievements</source>
-            <translation type="unfinished"/>
+            <translation>성취</translation>
         </message>
         <message>
             <source>All</source>
@@ -204,15 +205,15 @@
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Locked</source>
-            <translation type="unfinished"/>
+            <translation>잠금</translation>
         </message>
         <message>
             <source>Overall Progress:</source>
-            <translation type="unfinished"/>
+            <translation>전체적 진보:</translation>
         </message>
         <message>
             <source>Statistics</source>
@@ -220,58 +221,58 @@
         </message>
         <message>
             <source>Translations: {0} | Streak: {1} days | Languages: {2}</source>
-            <translation type="unfinished"/>
+            <translation>번역: {0}  스트릭: {1} 언어: {2}</translation>
         </message>
         <message>
             <source>Unlocked</source>
-            <translation type="unfinished"/>
+            <translation>잠금 해제</translation>
         </message>
     </context>
     <context>
         <name>BatchEditDialog</name>
         <message>
             <source>Accept all fuzzy translations</source>
-            <translation type="unfinished"/>
+            <translation>모든 미묘한 번역을 받아들여</translation>
         </message>
         <message>
             <source>After</source>
-            <translation type="unfinished"/>
+            <translation>그 후</translation>
         </message>
         <message>
             <source>Apply Changes</source>
-            <translation type="unfinished"/>
+            <translation>변화 를 적용 하십시오</translation>
         </message>
         <message>
             <source>Apply changes to %d entries?</source>
-            <translation type="unfinished"/>
+            <translation>%d 항목에 변경 사항을 적용합니까?</translation>
         </message>
         <message>
             <source>Batch Edit</source>
-            <translation type="unfinished"/>
+            <translation>배트 편집</translation>
         </message>
         <message>
             <source>Before</source>
-            <translation type="unfinished"/>
+            <translation>이전</translation>
         </message>
         <message>
             <source>Case sensitive</source>
-            <translation type="unfinished"/>
+            <translation>사건에 민감한</translation>
         </message>
         <message>
             <source>Clear fuzzy flag from all translations</source>
-            <translation type="unfinished"/>
+            <translation>모든 번역판에서 뚜렷한 뚜렷한 깃발</translation>
         </message>
         <message>
             <source>Completed successfully. %d entries modified.</source>
-            <translation type="unfinished"/>
+            <translation>성공적으로 완료되었습니다. %d 항목 변경되었습니다.</translation>
         </message>
         <message>
             <source>Completed with %d errors. %d entries modified.</source>
-            <translation type="unfinished"/>
+            <translation>%d 오류가 완료되었습니다. %d 항목을 수정했습니다.</translation>
         </message>
         <message>
             <source>Confirm Changes</source>
-            <translation type="unfinished"/>
+            <translation>변화 를 확인 하십시오</translation>
         </message>
         <message>
             <source>Copy Source</source>
@@ -279,39 +280,39 @@
         </message>
         <message>
             <source>Copy source text to empty translation fields.</source>
-            <translation type="unfinished"/>
+            <translation>번역 필드에 소스 텍스트를 복사합니다.</translation>
         </message>
         <message>
             <source>Copy source to empty translations</source>
-            <translation type="unfinished"/>
+            <translation>빈 번역판에 복사본</translation>
         </message>
         <message>
             <source>Entry</source>
-            <translation type="unfinished"/>
+            <translation>출입</translation>
         </message>
         <message>
             <source>Find:</source>
-            <translation type="unfinished"/>
+            <translation>찾아:</translation>
         </message>
         <message>
             <source>Fuzzy Operations</source>
-            <translation type="unfinished"/>
+            <translation>미더러운 운영</translation>
         </message>
         <message>
             <source>Fuzzy: </source>
-            <translation type="unfinished"/>
+            <translation>:</translation>
         </message>
         <message>
             <source>Mark all translations as fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>모든 번역판을 미묘한 것으로 표시</translation>
         </message>
         <message>
             <source>No</source>
-            <translation type="unfinished"/>
+            <translation>아니</translation>
         </message>
         <message>
             <source>Operation</source>
-            <translation type="unfinished"/>
+            <translation>운영</translation>
         </message>
         <message>
             <source>Options</source>
@@ -319,106 +320,106 @@
         </message>
         <message>
             <source>Please enter text to find.</source>
-            <translation type="unfinished"/>
+            <translation>검색을 위해 문자 입력해 주세요.</translation>
         </message>
         <message>
             <source>Preview</source>
-            <translation type="unfinished"/>
+            <translation>미리보기</translation>
         </message>
         <message>
             <source>Processing...</source>
-            <translation type="unfinished"/>
+            <translation>처리...</translation>
         </message>
         <message>
             <source>Regular expression</source>
-            <translation type="unfinished"/>
+            <translation>규칙적인 표현</translation>
         </message>
         <message>
             <source>Replace:</source>
-            <translation type="unfinished"/>
+            <translation>대체:</translation>
         </message>
         <message>
             <source>Search &amp; Replace</source>
-            <translation type="unfinished"/>
+            <translation>검색 및 교체</translation>
         </message>
         <message>
             <source>Source Copy</source>
-            <translation type="unfinished"/>
+            <translation>출처 복사본</translation>
         </message>
         <message>
             <source>Text change</source>
-            <translation type="unfinished"/>
+            <translation>텍스트 변경</translation>
         </message>
         <message>
             <source>Warning</source>
-            <translation type="unfinished"/>
+            <translation>경고</translation>
         </message>
         <message>
             <source>Yes</source>
-            <translation type="unfinished"/>
+            <translation>그래</translation>
         </message>
     </context>
     <context>
         <name>BatchTranslateDialog</name>
         <message>
             <source> (API key)</source>
-            <translation type="unfinished"/>
+            <translation>(API 키)</translation>
         </message>
         <message>
             <source>%v / %m</source>
-            <translation type="unfinished"/>
+            <translation>%v / %m</translation>
         </message>
         <message>
             <source>All entries are already translated.</source>
-            <translation type="unfinished"/>
+            <translation>모든 항목은 이미 번역되었습니다.</translation>
         </message>
         <message>
             <source>Apply Results</source>
-            <translation type="unfinished"/>
+            <translation>결과 를 적용 하십시오</translation>
         </message>
         <message>
             <source>Batch Machine Translate</source>
-            <translation type="unfinished"/>
+            <translation>배트 기계 번역</translation>
         </message>
         <message>
             <source>Cancel Translation</source>
-            <translation type="unfinished"/>
+            <translation>번역을 취소</translation>
         </message>
         <message>
             <source>Cancelling…</source>
-            <translation type="unfinished"/>
+            <translation>취소...</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Done. %d translated, %d errors.</source>
-            <translation type="unfinished"/>
+            <translation>%d 번역, %d 오류</translation>
         </message>
         <message>
             <source>Engine:</source>
-            <translation type="unfinished"/>
+            <translation>엔진:</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>오류</translation>
         </message>
         <message>
             <source>Mark results as fuzzy / needs work</source>
-            <translation type="unfinished"/>
+            <translation>이 / 작업이 필요하다는 결과를 표시하십시오</translation>
         </message>
         <message>
             <source>Nothing to Translate</source>
-            <translation type="unfinished"/>
+            <translation>번역할 필요 없는 것</translation>
         </message>
         <message>
             <source>Pending</source>
-            <translation type="unfinished"/>
+            <translation>대기 중</translation>
         </message>
         <message>
             <source>Source</source>
-            <translation type="unfinished"/>
+            <translation>출처</translation>
         </message>
         <message>
             <source>Source language:</source>
@@ -426,7 +427,7 @@
         </message>
         <message>
             <source>Status</source>
-            <translation type="unfinished"/>
+            <translation>상태</translation>
         </message>
         <message>
             <source>Target language:</source>
@@ -434,11 +435,11 @@
         </message>
         <message>
             <source>Translate All</source>
-            <translation type="unfinished"/>
+            <translation>모든 것을 번역</translation>
         </message>
         <message>
             <source>Translating…</source>
-            <translation type="unfinished"/>
+            <translation>번역...</translation>
         </message>
         <message>
             <source>Translation</source>
@@ -450,54 +451,54 @@
         </message>
         <message>
             <source>%d min %d s remaining</source>
-            <translation type="unfinished"/>
+            <translation>%d min %d의 나머지</translation>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s</source>
-            <translation type="unfinished"/>
+            <translation>%d의 %d 문자열 · %.1f 문자열/s · %s</translation>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s remaining</source>
-            <translation type="unfinished"/>
+            <translation>%d의 %d 문자열 · %.1f 문자열/s · %s의 나머지</translation>
         </message>
         <message>
             <source>%d s remaining</source>
-            <translation type="unfinished"/>
+            <translation>%d의 나머지</translation>
         </message>
         <message>
             <source>&lt;b&gt;%d&lt;/b&gt; untranslated strings out of &lt;b&gt;%d&lt;/b&gt; total.</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Completed %d strings in %d s</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
     </context>
     <context>
         <name>CollapsibleSidePanel</name>
         <message>
             <source>Ctx</source>
-            <translation type="unfinished"/>
+            <translation>Ctx</translation>
         </message>
         <message>
             <source>Info</source>
-            <translation type="unfinished"/>
+            <translation>정보</translation>
         </message>
         <message>
             <source>Pre</source>
-            <translation type="unfinished"/>
+            <translation>전</translation>
         </message>
         <message>
             <source>Ref</source>
-            <translation type="unfinished"/>
+            <translation>심판</translation>
         </message>
         <message>
             <source>TM</source>
-            <translation type="unfinished"/>
+            <translation>TM</translation>
         </message>
         <message>
             <source>Toggle side panel</source>
-            <translation type="unfinished"/>
+            <translation>변판을 이동</translation>
         </message>
     </context>
     <context>
@@ -508,27 +509,27 @@
         </message>
         <message>
             <source>Double-click a row to copy translation to clipboard.</source>
-            <translation type="unfinished"/>
+            <translation>2차 클릭하여 번역을 클립보드로 복사합니다.</translation>
         </message>
         <message>
             <source>Enter word or phrase to search in TM…</source>
-            <translation type="unfinished"/>
+            <translation>단어나 문장을 입력해서 TM로 검색해 보세요.</translation>
         </message>
         <message>
             <source>File</source>
-            <translation type="unfinished"/>
+            <translation>파일</translation>
         </message>
         <message>
             <source>Score</source>
-            <translation type="unfinished"/>
+            <translation>점수</translation>
         </message>
         <message>
             <source>Search</source>
-            <translation type="unfinished"/>
+            <translation>검색</translation>
         </message>
         <message>
             <source>Source</source>
-            <translation type="unfinished"/>
+            <translation>출처</translation>
         </message>
         <message>
             <source>Translation</source>
@@ -536,42 +537,42 @@
         </message>
         <message>
             <source>Translation copied to clipboard.</source>
-            <translation type="unfinished"/>
+            <translation>번역판을 클립보드로 복사합니다.</translation>
         </message>
         <message>
             <source>{} results found for </source>
-            <translation type="unfinished"/>
+            <translation>{} 결과로 발견되었습니다</translation>
         </message>
     </context>
     <context>
         <name>ContextPanel</name>
         <message>
             <source>&lt;i&gt;MT unavailable&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;MT 가 사용할 수 없습니다&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No matches&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>&lt;i&gt;No matching terms&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>&lt;i&gt;No suggestion&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Context</source>
-            <translation type="unfinished"/>
+            <translation>맥락</translation>
         </message>
         <message>
             <source>Glossary</source>
-            <translation type="unfinished"/>
+            <translation>문장</translation>
         </message>
         <message>
             <source>Machine Translation</source>
-            <translation type="unfinished"/>
+            <translation>기계 번역</translation>
         </message>
         <message>
             <source>Translation Memory</source>
@@ -579,39 +580,39 @@
         </message>
         <message>
             <source>Source: %s\nTarget: %s</source>
-            <translation type="unfinished"/>
+            <translation>출처: %s\n목적: %s</translation>
         </message>
         <message>
-        <source>Source: %s
+            <source>Source: %s
 Target: %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>출처: %s 목표: %s</translation>
+        </message>
+    </context>
     <context>
         <name>DashboardDialog</name>
         <message>
             <source>CSV files (*.csv)</source>
-            <translation type="unfinished"/>
+            <translation>CSV 파일 (*.csv)</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Export Complete</source>
-            <translation type="unfinished"/>
+            <translation>수출 완료</translation>
         </message>
         <message>
             <source>Export Statistics as CSV</source>
-            <translation type="unfinished"/>
+            <translation>CSV로 수출 통계는</translation>
         </message>
         <message>
             <source>Export as CSV…</source>
-            <translation type="unfinished"/>
+            <translation>CSV로 수출...</translation>
         </message>
         <message>
             <source>F:%d U:%d</source>
-            <translation type="unfinished"/>
+            <translation>F:%d U:%d</translation>
         </message>
         <message>
             <source>Fuzzy</source>
@@ -619,15 +620,15 @@ Target: %s</source>
         </message>
         <message>
             <source>Per-Language Progress</source>
-            <translation type="unfinished"/>
+            <translation>각 언어 에 대한 발전</translation>
         </message>
         <message>
             <source>Project Dashboard</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트 대시보드</translation>
         </message>
         <message>
             <source>Statistics exported to %s</source>
-            <translation type="unfinished"/>
+            <translation>%s에 수출된 통계는</translation>
         </message>
         <message>
             <source>Translated</source>
@@ -638,273 +639,273 @@ Target: %s</source>
             <translation>미번역</translation>
         </message>
         <message>
-            <source>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style=&apos;color:green&apos;&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:orange&apos;&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:red&apos;&gt;Untranslated: %d&lt;/span&gt;</source>
-            <translation type="unfinished"/>
+            <source>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style='color:green'&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:orange'&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:red'&gt;Untranslated: %d&lt;/span&gt;</source>
+            <translation>&lt;h2&gt; 프로젝트 개요&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style='color:green'&gt; 번역: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:orange'&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:red'&gt;Untranslated: %d&lt;/span&gt;</translation>
         </message>
     </context>
     <context>
         <name>DiffDialog</name>
         <message>
             <source>Added Only</source>
-            <translation type="unfinished"/>
+            <translation>추가만</translation>
         </message>
         <message>
             <source>Added:</source>
-            <translation type="unfinished"/>
+            <translation>추가:</translation>
         </message>
         <message>
             <source>All Changes</source>
-            <translation type="unfinished"/>
+            <translation>모든 변화</translation>
         </message>
         <message>
             <source>Browse...</source>
-            <translation type="unfinished"/>
+            <translation>- 브루즈...</translation>
         </message>
         <message>
             <source>Change</source>
-            <translation type="unfinished"/>
+            <translation>변화</translation>
         </message>
         <message>
             <source>Changes</source>
-            <translation type="unfinished"/>
+            <translation>변화</translation>
         </message>
         <message>
             <source>Compare Files</source>
-            <translation type="unfinished"/>
+            <translation>파일 비교</translation>
         </message>
         <message>
             <source>Compare Translation Files</source>
-            <translation type="unfinished"/>
+            <translation>번역 파일 을 비교 해 보십시오</translation>
         </message>
         <message>
             <source>Comparison</source>
-            <translation type="unfinished"/>
+            <translation>비교</translation>
         </message>
         <message>
             <source>Comparison File</source>
-            <translation type="unfinished"/>
+            <translation>비교 파일</translation>
         </message>
         <message>
             <source>Comparison File:</source>
-            <translation type="unfinished"/>
+            <translation>비교 파일:</translation>
         </message>
         <message>
             <source>Comparison Options</source>
-            <translation type="unfinished"/>
+            <translation>비교 옵션</translation>
         </message>
         <message>
             <source>Comparison Statistics</source>
-            <translation type="unfinished"/>
+            <translation>비교 통계</translation>
         </message>
         <message>
             <source>Comparison complete. %d changes found.</source>
-            <translation type="unfinished"/>
+            <translation>비교 완료 %d 변경이 발견되었습니다.</translation>
         </message>
         <message>
             <source>Comparison failed: %s</source>
-            <translation type="unfinished"/>
+            <translation>비교 실패: %s</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>오류</translation>
         </message>
         <message>
             <source>Failed to load file: %s</source>
-            <translation type="unfinished"/>
+            <translation>파일 로딩 실패: %s</translation>
         </message>
         <message>
             <source>Ignore case</source>
-            <translation type="unfinished"/>
+            <translation>사건에 대해 무시</translation>
         </message>
         <message>
             <source>Ignore whitespace</source>
-            <translation type="unfinished"/>
+            <translation>백공간을 무시</translation>
         </message>
         <message>
             <source>Modified Only</source>
-            <translation type="unfinished"/>
+            <translation>수정된 것 만</translation>
         </message>
         <message>
             <source>Modified:</source>
-            <translation type="unfinished"/>
+            <translation>수정된:</translation>
         </message>
         <message>
             <source>No file selected</source>
-            <translation type="unfinished"/>
+            <translation>선택된 파일은 없습니다</translation>
         </message>
         <message>
             <source>Original</source>
-            <translation type="unfinished"/>
+            <translation>본래</translation>
         </message>
         <message>
             <source>Original File</source>
-            <translation type="unfinished"/>
+            <translation>원본 파일</translation>
         </message>
         <message>
             <source>Original File:</source>
-            <translation type="unfinished"/>
+            <translation>오리지널 파일:</translation>
         </message>
         <message>
             <source>Removed Only</source>
-            <translation type="unfinished"/>
+            <translation>제거 한 것 만</translation>
         </message>
         <message>
             <source>Removed:</source>
-            <translation type="unfinished"/>
+            <translation>삭제:</translation>
         </message>
         <message>
             <source>Select Files to Compare</source>
-            <translation type="unfinished"/>
+            <translation>비교 하기 위한 파일 을 선택</translation>
         </message>
         <message>
             <source>Select Translation File</source>
-            <translation type="unfinished"/>
+            <translation>번역 파일 을 선택</translation>
         </message>
         <message>
             <source>Show unchanged</source>
-            <translation type="unfinished"/>
+            <translation>변하지 않은 표시</translation>
         </message>
         <message>
             <source>Show:</source>
-            <translation type="unfinished"/>
+            <translation>쇼:</translation>
         </message>
         <message>
             <source>Side by Side</source>
-            <translation type="unfinished"/>
+            <translation>한쪽 한쪽</translation>
         </message>
         <message>
             <source>Source Text</source>
-            <translation type="unfinished"/>
+            <translation>출처 문장</translation>
         </message>
         <message>
             <source>Summary</source>
-            <translation type="unfinished"/>
+            <translation>요약</translation>
         </message>
         <message>
             <source>Total entries:</source>
-            <translation type="unfinished"/>
+            <translation>전체 항목:</translation>
         </message>
         <message>
             <source>Translation files (*.po *.pot *.ts *.json *.xliff *.xlf);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>번역 파일 (*.po *.pot *.ts *.json *.xliff *.xlf);;모든 파일 (*)</translation>
         </message>
         <message>
             <source>Unchanged:</source>
-            <translation type="unfinished"/>
+            <translation>변하지 않은 상태:</translation>
         </message>
         <message>
             <source>Unsupported file format: %s</source>
-            <translation type="unfinished"/>
+            <translation>지원되지 않는 파일 형식: %s</translation>
         </message>
         <message>
             <source>Source: %s</source>
-            <translation type="unfinished"/>
+            <translation>출처: %s</translation>
         </message>
         <message>
             <source>Translation: %s</source>
-            <translation type="unfinished"/>
+            <translation>번역: %s</translation>
         </message>
     </context>
     <context>
         <name>FFmpegMissingDialog</name>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished"/>
+            <translation>취소</translation>
         </message>
         <message>
             <source>Browse for ffmpeg…</source>
-            <translation type="unfinished"/>
+            <translation>ffmpeg를 검색해 보세요...</translation>
         </message>
         <message>
             <source>The selected file does not appear to be ffmpeg.</source>
-            <translation type="unfinished"/>
+            <translation>선택된 파일은 ffmpeg가 아닌 것으로 보인다.</translation>
         </message>
         <message>
             <source>Not Found</source>
-            <translation type="unfinished"/>
+            <translation>발견되지 않았다</translation>
         </message>
         <message>
             <source>FFmpeg Required</source>
-            <translation type="unfinished"/>
+            <translation>FFmpeg 요구</translation>
         </message>
         <message>
             <source>FFmpeg could still not be found in the system path.</source>
-            <translation type="unfinished"/>
+            <translation>FFmpeg은 여전히 시스템 경로에서 찾을 수 없었습니다.</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>오류</translation>
         </message>
         <message>
             <source>Retry</source>
-            <translation type="unfinished"/>
+            <translation>다시 시도해 보세요</translation>
         </message>
         <message>
             <source>Installation Instructions</source>
-            <translation type="unfinished"/>
+            <translation>설치 지침</translation>
         </message>
         <message>
             <source>Could not run the selected file.</source>
-            <translation type="unfinished"/>
+            <translation>선택된 파일을 실행할 수 없었습니다.</translation>
         </message>
         <message>
             <source>Executable files (*)</source>
-            <translation type="unfinished"/>
+            <translation>실행 파일 (*)</translation>
         </message>
         <message>
             <source>Invalid File</source>
-            <translation type="unfinished"/>
+            <translation>유효하지 않은 파일</translation>
         </message>
         <message>
             <source>Select ffmpeg binary</source>
-            <translation type="unfinished"/>
+            <translation>ffmpeg 바이너리를 선택</translation>
         </message>
         <message>
             <source>Open Download Page</source>
-            <translation type="unfinished"/>
+            <translation>다운로드 페이지를 열</translation>
         </message>
         <message>
             <source>&lt;b&gt;Ubuntu/Debian:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo apt install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Fedora:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo dnf install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Arch Linux:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo pacman -S ffmpeg&lt;/code&gt;</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>&lt;b&gt;macOS (Homebrew):&lt;/b&gt;&lt;br&gt;&lt;code&gt;brew install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;macOS (MacPorts):&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo port install ffmpeg&lt;/code&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;macOS (홈브루):&lt;/b&gt;&lt;br&gt;&lt;code&gt;Zbrew 설치 ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;macOS (MacPorts):&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo 포트 설치 ffmpeg&lt;/code&gt;</translation>
         </message>
         <message>
             <source>&lt;h3&gt;FFmpeg could not be found&lt;/h3&gt;&lt;p&gt;LinguaEdit needs &lt;b&gt;ffmpeg&lt;/b&gt; and &lt;b&gt;ffprobe&lt;/b&gt; to extract subtitles from video files.&lt;/p&gt;</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
     </context>
     <context>
         <name>FileHistoryDialog</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Date/Time</source>
-            <translation type="unfinished"/>
+            <translation>날짜/시간</translation>
         </message>
         <message>
             <source>Entry</source>
-            <translation type="unfinished"/>
+            <translation>출입</translation>
         </message>
         <message>
             <source>Field</source>
-            <translation type="unfinished"/>
+            <translation>현장</translation>
         </message>
         <message>
             <source>File History</source>
-            <translation type="unfinished"/>
+            <translation>파일 역사</translation>
         </message>
         <message>
             <source>Recent changes in: {}</source>
-            <translation type="unfinished"/>
+            <translation>최근 변경 사항: {}</translation>
         </message>
         <message>
             <source>Summary</source>
-            <translation type="unfinished"/>
+            <translation>요약</translation>
         </message>
         <message>
             <source>Unknown</source>
@@ -912,118 +913,118 @@ Target: %s</source>
         </message>
         <message>
             <source>User</source>
-            <translation type="unfinished"/>
+            <translation>사용자</translation>
         </message>
         <message>
             <source>View Entry History</source>
-            <translation type="unfinished"/>
+            <translation>출입 역사 를 참조</translation>
         </message>
     </context>
     <context>
         <name>GitDiffDialog</name>
         <message>
             <source>&lt;b&gt;Added strings:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Added strings:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Changed source text:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;변경된 출처 텍스트:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Changed translations:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;번역 변경:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Potentially outdated:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt; 잠재적으로 오래된: &lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Removed strings:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt; 제거된 문자열:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;h3&gt;Comparison Results&lt;/h3&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;h3&gt; 비교 결과&lt;/h3&gt;</translation>
         </message>
         <message>
             <source>Added</source>
-            <translation type="unfinished"/>
+            <translation>추가</translation>
         </message>
         <message>
             <source>Changes</source>
-            <translation type="unfinished"/>
+            <translation>변화</translation>
         </message>
         <message>
             <source>Compare</source>
-            <translation type="unfinished"/>
+            <translation>비교</translation>
         </message>
         <message>
             <source>Compare with commit:</source>
-            <translation type="unfinished"/>
+            <translation>위약과 비교:</translation>
         </message>
         <message>
             <source>Comparing %d old vs %d current entries…</source>
-            <translation type="unfinished"/>
+            <translation>%d 이전과 %d 현재의 항목을 비교하는 것...</translation>
         </message>
         <message>
             <source>Comparison complete.</source>
-            <translation type="unfinished"/>
+            <translation>비교가 완료</translation>
         </message>
         <message>
             <source>Could not parse old version</source>
-            <translation type="unfinished"/>
+            <translation>오래된 버전을 분석할 수 없었습니다</translation>
         </message>
         <message>
             <source>Diff with Previous Version</source>
-            <translation type="unfinished"/>
+            <translation>이전 버전과 차이가 있다</translation>
         </message>
         <message>
             <source>Failed to get file at commit %s</source>
-            <translation type="unfinished"/>
+            <translation>%s에서 파일을 얻을 수 없습니다</translation>
         </message>
         <message>
             <source>Modified</source>
-            <translation type="unfinished"/>
+            <translation>수정</translation>
         </message>
         <message>
             <source>New Source</source>
-            <translation type="unfinished"/>
+            <translation>새로운 출처</translation>
         </message>
         <message>
             <source>No git history found</source>
-            <translation type="unfinished"/>
+            <translation>기트 기록은 발견되지 않았습니다</translation>
         </message>
         <message>
             <source>Old Source</source>
-            <translation type="unfinished"/>
+            <translation>고대 문자</translation>
         </message>
         <message>
             <source>Outdated</source>
-            <translation type="unfinished"/>
+            <translation>오래된</translation>
         </message>
         <message>
             <source>Removed</source>
-            <translation type="unfinished"/>
+            <translation>제거</translation>
         </message>
         <message>
             <source>Source (new)</source>
-            <translation type="unfinished"/>
+            <translation>출처 (새로운)</translation>
         </message>
         <message>
             <source>Source (old)</source>
-            <translation type="unfinished"/>
+            <translation>출처 (옛)</translation>
         </message>
         <message>
             <source>Source changed</source>
-            <translation type="unfinished"/>
+            <translation>출처 변경</translation>
         </message>
         <message>
             <source>Status</source>
-            <translation type="unfinished"/>
+            <translation>상태</translation>
         </message>
         <message>
             <source>Summary</source>
-            <translation type="unfinished"/>
+            <translation>요약</translation>
         </message>
         <message>
             <source>Translation</source>
@@ -1031,50 +1032,50 @@ Target: %s</source>
         </message>
         <message>
             <source>Translation (new)</source>
-            <translation type="unfinished"/>
+            <translation>번역 (새번)</translation>
         </message>
         <message>
             <source>Translation (old)</source>
-            <translation type="unfinished"/>
+            <translation>번역 (옛)</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished"/>
+            <translation>유형</translation>
         </message>
         <message>
             <source>⚠ Outdated</source>
-            <translation type="unfinished"/>
+            <translation> 오래된</translation>
         </message>
         <message>
             <source>&lt;b&gt;Outdated translations&lt;/b&gt; — source changed but translation stayed the same.</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;O의 최신 번역 &lt;/b&gt;  출처 변경되었지만 번역은 동일하게 유지되었습니다.</translation>
         </message>
     </context>
     <context>
         <name>GlossaryDialog</name>
         <message>
             <source>%d terms</source>
-            <translation type="unfinished"/>
+            <translation>%d 용어</translation>
         </message>
         <message>
             <source>A term with this source text already exists. Update it?</source>
-            <translation type="unfinished"/>
+            <translation>이 소스 텍스트가 이미 사용된 용어입니다. 업데이트하세요?</translation>
         </message>
         <message>
             <source>Add</source>
-            <translation type="unfinished"/>
+            <translation>추가</translation>
         </message>
         <message>
             <source>All domains</source>
-            <translation type="unfinished"/>
+            <translation>모든 도메인</translation>
         </message>
         <message>
             <source>CSV Import Format</source>
-            <translation type="unfinished"/>
+            <translation>CSV 수입 형식</translation>
         </message>
         <message>
             <source>CSV files (*.csv);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>CSV 파일 (*.csv);;모든 파일 (*)</translation>
         </message>
         <message>
             <source>Clear</source>
@@ -1082,7 +1083,7 @@ Target: %s</source>
         </message>
         <message>
             <source>Confirm Delete</source>
-            <translation type="unfinished"/>
+            <translation>삭제 확인</translation>
         </message>
         <message>
             <source>Copy Source</source>
@@ -1090,218 +1091,218 @@ Target: %s</source>
         </message>
         <message>
             <source>Copy Target</source>
-            <translation type="unfinished"/>
+            <translation>표적을 복사</translation>
         </message>
         <message>
             <source>Delete</source>
-            <translation type="unfinished"/>
+            <translation>삭제</translation>
         </message>
         <message>
             <source>Delete term </source>
-            <translation type="unfinished"/>
+            <translation>용어를 삭제합니다</translation>
         </message>
         <message>
             <source>Domain</source>
-            <translation type="unfinished"/>
+            <translation>도메인</translation>
         </message>
         <message>
             <source>Domain:</source>
-            <translation type="unfinished"/>
+            <translation>도메인:</translation>
         </message>
         <message>
             <source>Duplicate Term</source>
-            <translation type="unfinished"/>
+            <translation>두 번 째 용어</translation>
         </message>
         <message>
             <source>Edit</source>
-            <translation type="unfinished"/>
+            <translation>편집</translation>
         </message>
         <message>
             <source>Edit Term</source>
-            <translation type="unfinished"/>
+            <translation>편집 용어</translation>
         </message>
         <message>
             <source>Expected CSV format:\nsource,target,notes,domain\n\n</source>
-            <translation type="unfinished"/>
+            <translation>CSV 포맷:\n소원, 목표, 메모, 도메인\n\n</translation>
         </message>
         <message>
             <source>Export CSV...</source>
-            <translation type="unfinished"/>
+            <translation>CSV를 수출...</translation>
         </message>
         <message>
             <source>Export Completed</source>
-            <translation type="unfinished"/>
+            <translation>수출 완료</translation>
         </message>
         <message>
             <source>Export Error</source>
-            <translation type="unfinished"/>
+            <translation>수출 오류</translation>
         </message>
         <message>
             <source>Export Glossary to CSV</source>
-            <translation type="unfinished"/>
+            <translation>CSV에 수출 글자리</translation>
         </message>
         <message>
             <source>Exported %d terms to %s</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Failed to export glossary:\n%s</source>
-            <translation type="unfinished"/>
+            <translation>수출 문장:\n%s</translation>
         </message>
         <message>
             <source>Glossary Management</source>
-            <translation type="unfinished"/>
+            <translation>글래서 관리</translation>
         </message>
         <message>
             <source>Import CSV...</source>
-            <translation type="unfinished"/>
+            <translation>CSV를 수입...</translation>
         </message>
         <message>
             <source>Import Completed</source>
-            <translation type="unfinished"/>
+            <translation>수입 완료</translation>
         </message>
         <message>
             <source>Import Glossary from CSV</source>
-            <translation type="unfinished"/>
+            <translation>CSV에서 수입 글자리</translation>
         </message>
         <message>
             <source>Imported %d terms with %d errors.\n\nFirst errors:\n%s</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>No terms to export.</source>
-            <translation type="unfinished"/>
+            <translation>수출 조건이 없습니다.</translation>
         </message>
         <message>
             <source>Notes</source>
-            <translation type="unfinished"/>
+            <translation>참고</translation>
         </message>
         <message>
             <source>Notes:</source>
-            <translation type="unfinished"/>
+            <translation>참고:</translation>
         </message>
         <message>
             <source>Search &amp; Filter</source>
-            <translation type="unfinished"/>
+            <translation>검색 및 필터</translation>
         </message>
         <message>
             <source>Search in source or target...</source>
-            <translation type="unfinished"/>
+            <translation>소스나 목표에 검색해</translation>
         </message>
         <message>
             <source>Search:</source>
-            <translation type="unfinished"/>
+            <translation>검색:</translation>
         </message>
         <message>
             <source>Showing %d of %d terms</source>
-            <translation type="unfinished"/>
+            <translation>%d의 %d 용어를 표시</translation>
         </message>
         <message>
             <source>Source</source>
-            <translation type="unfinished"/>
+            <translation>출처</translation>
         </message>
         <message>
             <source>Source text cannot be empty.</source>
-            <translation type="unfinished"/>
+            <translation>소스 텍스트는 빈이 될 수 없습니다.</translation>
         </message>
         <message>
             <source>Source:</source>
-            <translation type="unfinished"/>
+            <translation>출처:</translation>
         </message>
         <message>
             <source>Successfully imported %d terms.</source>
-            <translation type="unfinished"/>
+            <translation>%d 용어를 성공적으로 수입했습니다.</translation>
         </message>
         <message>
             <source>Target</source>
-            <translation type="unfinished"/>
+            <translation>목표</translation>
         </message>
         <message>
             <source>Target text cannot be empty.</source>
-            <translation type="unfinished"/>
+            <translation>표적 텍스트는 빈 게 될 수 없습니다.</translation>
         </message>
         <message>
             <source>Target:</source>
-            <translation type="unfinished"/>
+            <translation>목표:</translation>
         </message>
         <message>
             <source>Terms</source>
-            <translation type="unfinished"/>
+            <translation>조건</translation>
         </message>
         <message>
             <source>Update</source>
-            <translation type="unfinished"/>
+            <translation>업데이트</translation>
         </message>
         <message>
             <source>Warning</source>
-            <translation type="unfinished"/>
+            <translation>경고</translation>
         </message>
         <message>
-            <source>Delete term &apos;%s&apos; → &apos;%s&apos;?</source>
-            <translation type="unfinished"/>
+            <source>Delete term '%s' → '%s'?</source>
+            <translation>"%s" → "%s"라는 용어를 삭제하세요?</translation>
         </message>
         <message>
-        <source>Failed to export glossary:
+            <source>Failed to export glossary:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Imported %d terms with %d errors.
+            <translation>수출 문장: %s</translation>
+        </message>
+        <message>
+            <source>Imported %d terms with %d errors.
 
 First errors:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>%d 오류를 가진 %d 용어를 수입했습니다. 첫 번째 오류: %s</translation>
+        </message>
+    </context>
     <context>
         <name>HeaderDialog</name>
         <message>
             <source>Additional Metadata</source>
-            <translation type="unfinished"/>
+            <translation>추가 메타데이터</translation>
         </message>
         <message>
             <source>Charset:</source>
-            <translation type="unfinished"/>
+            <translation>카리스트:</translation>
         </message>
         <message>
             <source>Comment:</source>
-            <translation type="unfinished"/>
+            <translation>댓글:</translation>
         </message>
         <message>
             <source>Content-Transfer-Encoding:</source>
-            <translation type="unfinished"/>
+            <translation>내용 전송 암호화:</translation>
         </message>
         <message>
             <source>Data Type:</source>
-            <translation type="unfinished"/>
+            <translation>데이터 타입:</translation>
         </message>
         <message>
             <source>Define how plural forms work for this language.</source>
-            <translation type="unfinished"/>
+            <translation>이 언어에 대해 다수 형태가 어떻게 작동하는지 정의하십시오.</translation>
         </message>
         <message>
             <source>Description:</source>
-            <translation type="unfinished"/>
+            <translation>설명:</translation>
         </message>
         <message>
             <source>Edit File Header</source>
-            <translation type="unfinished"/>
+            <translation>파일 헤더를 편집</translation>
         </message>
         <message>
             <source>English (2 forms)</source>
-            <translation type="unfinished"/>
+            <translation>영어 (2개 양식)</translation>
         </message>
         <message>
             <source>File Metadata</source>
-            <translation type="unfinished"/>
+            <translation>파일 메타데이터</translation>
         </message>
         <message>
             <source>Germanic (2 forms)</source>
-            <translation type="unfinished"/>
+            <translation>독일어 (2 형태)</translation>
         </message>
         <message>
             <source>Language-Team:</source>
-            <translation type="unfinished"/>
+            <translation>언어 팀:</translation>
         </message>
         <message>
             <source>Language:</source>
@@ -1309,111 +1310,111 @@ First errors:
         </message>
         <message>
             <source>Last-Translator:</source>
-            <translation type="unfinished"/>
+            <translation>마지막 번역자:</translation>
         </message>
         <message>
             <source>Metadata</source>
-            <translation type="unfinished"/>
+            <translation>메타데이터</translation>
         </message>
         <message>
             <source>Original File:</source>
-            <translation type="unfinished"/>
+            <translation>오리지널 파일:</translation>
         </message>
         <message>
             <source>PO Headers</source>
-            <translation type="unfinished"/>
+            <translation>PO 헤더</translation>
         </message>
         <message>
             <source>PO-Revision-Date:</source>
-            <translation type="unfinished"/>
+            <translation>PO-심판 날짜:</translation>
         </message>
         <message>
             <source>POT-Creation-Date:</source>
-            <translation type="unfinished"/>
+            <translation>POT-창조 날짜:</translation>
         </message>
         <message>
             <source>Package:</source>
-            <translation type="unfinished"/>
+            <translation>패키지:</translation>
         </message>
         <message>
             <source>Plural Forms</source>
-            <translation type="unfinished"/>
+            <translation>다수 형태</translation>
         </message>
         <message>
             <source>Project Information</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트 정보</translation>
         </message>
         <message>
             <source>Project Name:</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트 이름:</translation>
         </message>
         <message>
             <source>Project-Id-Version:</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트-ID 버전:</translation>
         </message>
         <message>
             <source>Report-Msgid-Bugs-To:</source>
-            <translation type="unfinished"/>
+            <translation>보고-Msgid-Bugs-To:</translation>
         </message>
         <message>
             <source>Restore Defaults</source>
-            <translation type="unfinished"/>
+            <translation>기본값을 복구</translation>
         </message>
         <message>
             <source>Restore all fields to default values?</source>
-            <translation type="unfinished"/>
+            <translation>모든 필드를 기본값으로 복원합니까?</translation>
         </message>
         <message>
             <source>Romance (2 forms)</source>
-            <translation type="unfinished"/>
+            <translation>로맨스 (2개 형태)</translation>
         </message>
         <message>
             <source>Source Language:</source>
-            <translation type="unfinished"/>
+            <translation>출처 언어:</translation>
         </message>
         <message>
             <source>TS Attributes</source>
-            <translation type="unfinished"/>
+            <translation>TS 속성</translation>
         </message>
         <message>
             <source>TS File Attributes</source>
-            <translation type="unfinished"/>
+            <translation>TS 파일 속성</translation>
         </message>
         <message>
             <source>TS Version:</source>
-            <translation type="unfinished"/>
+            <translation>TS 버전:</translation>
         </message>
         <message>
             <source>Target Language:</source>
-            <translation type="unfinished"/>
+            <translation>대상 언어:</translation>
         </message>
         <message>
             <source>Technical Information</source>
-            <translation type="unfinished"/>
+            <translation>기술 정보</translation>
         </message>
         <message>
             <source>Tool ID:</source>
-            <translation type="unfinished"/>
+            <translation>도구 ID:</translation>
         </message>
         <message>
             <source>Tool Information</source>
-            <translation type="unfinished"/>
+            <translation>도구 정보</translation>
         </message>
         <message>
             <source>Tool Name:</source>
-            <translation type="unfinished"/>
+            <translation>도구 이름:</translation>
         </message>
         <message>
             <source>Tool Version:</source>
-            <translation type="unfinished"/>
+            <translation>도구 버전:</translation>
         </message>
         <message>
             <source>Translation Information</source>
-            <translation type="unfinished"/>
+            <translation>번역 정보</translation>
         </message>
         <message>
             <source>Translator:</source>
-            <translation type="unfinished"/>
+            <translation>번역가:</translation>
         </message>
         <message>
             <source>Version:</source>
@@ -1421,94 +1422,94 @@ First errors:
         </message>
         <message>
             <source>XLIFF Attributes</source>
-            <translation type="unfinished"/>
+            <translation>XLIFF 속성</translation>
         </message>
         <message>
             <source>XLIFF File Attributes</source>
-            <translation type="unfinished"/>
+            <translation>XLIFF 파일 속성</translation>
         </message>
         <message>
             <source>XLIFF Version:</source>
-            <translation type="unfinished"/>
+            <translation>XLIFF 버전:</translation>
         </message>
     </context>
     <context>
         <name>HistoryDialog</name>
         <message>
             <source>Added</source>
-            <translation type="unfinished"/>
+            <translation>추가</translation>
         </message>
         <message>
             <source>After:</source>
-            <translation type="unfinished"/>
+            <translation>다음으로:</translation>
         </message>
         <message>
             <source>Before:</source>
-            <translation type="unfinished"/>
+            <translation>이전:</translation>
         </message>
         <message>
             <source>Change History</source>
-            <translation type="unfinished"/>
+            <translation>역사 를 변화 시키</translation>
         </message>
         <message>
             <source>Change Type</source>
-            <translation type="unfinished"/>
+            <translation>타입 변경</translation>
         </message>
         <message>
             <source>Changes</source>
-            <translation type="unfinished"/>
+            <translation>변화</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Confirm Rollback</source>
-            <translation type="unfinished"/>
+            <translation>롤백을 확인</translation>
         </message>
         <message>
             <source>Date/Time</source>
-            <translation type="unfinished"/>
+            <translation>날짜/시간</translation>
         </message>
         <message>
             <source>Deleted</source>
-            <translation type="unfinished"/>
+            <translation>삭제</translation>
         </message>
         <message>
             <source>Diff:</source>
-            <translation type="unfinished"/>
+            <translation>차이:</translation>
         </message>
         <message>
             <source>Field</source>
-            <translation type="unfinished"/>
+            <translation>현장</translation>
         </message>
         <message>
             <source>History for entry {0} in {1}</source>
-            <translation type="unfinished"/>
+            <translation>{1}에 입력된 {0}의 역사</translation>
         </message>
         <message>
             <source>Modified</source>
-            <translation type="unfinished"/>
+            <translation>수정</translation>
         </message>
         <message>
             <source>No changes</source>
-            <translation type="unfinished"/>
+            <translation>변경 사항은 없습니다</translation>
         </message>
         <message>
             <source>No history available</source>
-            <translation type="unfinished"/>
+            <translation>유통된 기록이 없습니다</translation>
         </message>
         <message>
             <source>Rollback to This Version</source>
-            <translation type="unfinished"/>
+            <translation>이 버전으로 돌아갑니다</translation>
         </message>
         <message>
             <source>Select a history entry to see changes</source>
-            <translation type="unfinished"/>
+            <translation>변경 사항을 표시하기 위해 역사 항목을 선택</translation>
         </message>
         <message>
             <source>Translation History</source>
-            <translation type="unfinished"/>
+            <translation>번역 역사</translation>
         </message>
         <message>
             <source>Unknown</source>
@@ -1516,116 +1517,116 @@ First errors:
         </message>
         <message>
             <source>User</source>
-            <translation type="unfinished"/>
+            <translation>사용자</translation>
         </message>
         <message>
             <source>Are you sure you want to rollback to this version?\n\nThis will replace the current text with:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>이 버전으로 다시 돌아가고 싶다는 확신이 있습니까?</translation>
         </message>
         <message>
-        <source>Are you sure you want to rollback to this version?
+            <source>Are you sure you want to rollback to this version?
 
 This will replace the current text with:
 {}</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>이 버전으로 다시 돌아가고 싶으신가요? 이것은 현재의 텍스트를</translation>
+        </message>
+    </context>
     <context>
         <name>ImagePreviewLabel</name>
         <message>
             <source>Click to select image\n(PNG, JPG, GIF)</source>
-            <translation type="unfinished"/>
+            <translation>이미지\n(PNG, JPG, GIF를 선택하기 위해 클릭하십시오)</translation>
         </message>
         <message>
-        <source>Click to select image
+            <source>Click to select image
 (PNG, JPG, GIF)</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>이미지를 선택하기 위해 클릭 (PNG, JPG, GIF)</translation>
+        </message>
+    </context>
     <context>
         <name>LayoutSimulatorDialog</name>
         <message>
             <source>Bold</source>
-            <translation type="unfinished"/>
+            <translation>용기</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Dialog Button</source>
-            <translation type="unfinished"/>
+            <translation>대화 버튼</translation>
         </message>
         <message>
             <source>Font Family:</source>
-            <translation type="unfinished"/>
+            <translation>글꼴 가족:</translation>
         </message>
         <message>
             <source>Font Settings</source>
-            <translation type="unfinished"/>
+            <translation>글꼴 설정</translation>
         </message>
         <message>
             <source>Highlight Overflow</source>
-            <translation type="unfinished"/>
+            <translation>과잉 흐름을 강조</translation>
         </message>
         <message>
             <source>Layout Simulator</source>
-            <translation type="unfinished"/>
+            <translation>레이아웃 시뮬레이터</translation>
         </message>
         <message>
             <source>Max Width:</source>
-            <translation type="unfinished"/>
+            <translation>맥스 와이드:</translation>
         </message>
         <message>
             <source>Menu Item</source>
-            <translation type="unfinished"/>
+            <translation>메뉴 항목</translation>
         </message>
         <message>
             <source>Mobile Button</source>
-            <translation type="unfinished"/>
+            <translation>이동 버튼</translation>
         </message>
         <message>
             <source>Presets:</source>
-            <translation type="unfinished"/>
+            <translation>미리 설정:</translation>
         </message>
         <message>
             <source>Size (pt):</source>
-            <translation type="unfinished"/>
+            <translation>크기는 (pt):</translation>
         </message>
         <message>
             <source>Source Text:</source>
-            <translation type="unfinished"/>
+            <translation>출처 문장:</translation>
         </message>
         <message>
             <source>Source: {0}px | Translation: {1}px | Difference: {2}px ({3:.1f}%)</source>
-            <translation type="unfinished"/>
+            <translation>[중고] [중고] [중고] [중고] [중고] [중고] [중고] [중고] [중고] [중고] [중고] [중고] [중고] [중고] [중고] [</translation>
         </message>
         <message>
             <source>Tablet</source>
-            <translation type="unfinished"/>
+            <translation>태블릿</translation>
         </message>
         <message>
             <source>Text Comparison</source>
-            <translation type="unfinished"/>
+            <translation>텍스트 비교</translation>
         </message>
         <message>
             <source>Translation Text:</source>
-            <translation type="unfinished"/>
+            <translation>번역 문장:</translation>
         </message>
         <message>
             <source>Width Constraints</source>
-            <translation type="unfinished"/>
+            <translation>폭 제한</translation>
         </message>
     </context>
     <context>
         <name>LinguaEditWindow</name>
         <message>
             <source> ⚠ long</source>
-            <translation type="unfinished"/>
+            <translation> 긴</translation>
         </message>
         <message>
             <source> ⚠ short</source>
-            <translation type="unfinished"/>
+            <translation> 짧은</translation>
         </message>
         <message>
             <source>%d matches</source>
@@ -1637,11 +1638,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>%d strings — %d translated, %d fuzzy, %d untranslated</source>
-            <translation type="unfinished"/>
+            <translation>%d 문자열  %d 번역, %d 미묘, %d 번역되지 않은</translation>
         </message>
         <message>
             <source>%d translations applied</source>
-            <translation type="unfinished"/>
+            <translation>%d 번역이 적용되었습니다</translation>
         </message>
         <message>
             <source>%p% translated</source>
@@ -1685,7 +1686,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>&amp;Tools</source>
-            <translation type="unfinished"/>
+            <translation>&amp; 도구</translation>
         </message>
         <message>
             <source>&amp;View</source>
@@ -1717,7 +1718,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;번역자 댓글:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
@@ -1729,19 +1730,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>A macro with this name already exists.</source>
-            <translation type="unfinished"/>
+            <translation>이 이름의 매크로가 이미 존재합니다.</translation>
         </message>
         <message>
             <source>A translation file editor for PO, TS, JSON, XLIFF, </source>
-            <translation type="unfinished"/>
+            <translation>PO, TS, JSON, XLIFF에 대한 번역 파일 편집기</translation>
         </message>
         <message>
             <source>A translation file is currently open with unsaved changes.\n</source>
-            <translation type="unfinished"/>
+            <translation>현재 저장되지 않은 변경사항으로 번역 파일이 열중입니다.</translation>
         </message>
         <message>
             <source>AI Review</source>
-            <translation type="unfinished"/>
+            <translation>인공지능 검토</translation>
         </message>
         <message>
             <source>API Keys</source>
@@ -1761,11 +1762,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Achievements…</source>
-            <translation type="unfinished"/>
+            <translation>성취...</translation>
         </message>
         <message>
             <source>Add Bookmark</source>
-            <translation type="unfinished"/>
+            <translation>북마크를 추가</translation>
         </message>
         <message>
             <source>Add Comment</source>
@@ -1777,11 +1778,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Add Tag</source>
-            <translation type="unfinished"/>
+            <translation>태그 추가</translation>
         </message>
         <message>
             <source>Add Tag...</source>
-            <translation type="unfinished"/>
+            <translation>태그 추가...</translation>
         </message>
         <message>
             <source>Add Term</source>
@@ -1789,7 +1790,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Add translator notes...</source>
-            <translation type="unfinished"/>
+            <translation>번역가 메모를 추가해...</translation>
         </message>
         <message>
             <source>Added %d entries to Translation Memory</source>
@@ -1801,7 +1802,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>모든 파일 (*)</translation>
         </message>
         <message>
             <source>All strings</source>
@@ -1809,35 +1810,35 @@ This will replace the current text with:
         </message>
         <message>
             <source>Already recording a macro</source>
-            <translation type="unfinished"/>
+            <translation>이미 매크로를 기록하고 있습니다</translation>
         </message>
         <message>
             <source>Applied changes to %d entries</source>
-            <translation type="unfinished"/>
+            <translation>%d 항목에 적용된 변경 사항</translation>
         </message>
         <message>
             <source>Apply Machine Translation suggestion</source>
-            <translation type="unfinished"/>
+            <translation>기계 번역 제안 을 적용 하십시오</translation>
         </message>
         <message>
             <source>Apply best Translation Memory match</source>
-            <translation type="unfinished"/>
+            <translation>가장 좋은 번역 메모리 짝을 적용</translation>
         </message>
         <message>
             <source>Approve</source>
-            <translation type="unfinished"/>
+            <translation>승인</translation>
         </message>
         <message>
             <source>Attach current file</source>
-            <translation type="unfinished"/>
+            <translation>현재 파일을 첨부</translation>
         </message>
         <message>
             <source>Auto-compile enabled</source>
-            <translation type="unfinished"/>
+            <translation>자동 컴파일 가능</translation>
         </message>
         <message>
             <source>Auto-compiled after save</source>
-            <translation type="unfinished"/>
+            <translation>저장 후 자동 컴파일</translation>
         </message>
         <message>
             <source>Auto-propagate</source>
@@ -1849,23 +1850,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>Batch Edit…</source>
-            <translation type="unfinished"/>
+            <translation>배트 편집...</translation>
         </message>
         <message>
             <source>Batch Translate…</source>
-            <translation type="unfinished"/>
+            <translation>배트 번역...</translation>
         </message>
         <message>
             <source>Bilingual export (source + translation)</source>
-            <translation type="unfinished"/>
+            <translation>양국식 수출 (원자 + 번역)</translation>
         </message>
         <message>
             <source>Bookmark added</source>
-            <translation type="unfinished"/>
+            <translation>부크마크 추가</translation>
         </message>
         <message>
             <source>Bookmark removed</source>
-            <translation type="unfinished"/>
+            <translation>책표 삭제</translation>
         </message>
         <message>
             <source>By length</source>
@@ -1877,11 +1878,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished"/>
+            <translation>취소</translation>
         </message>
         <message>
             <source>Cannot compile: install </source>
-            <translation type="unfinished"/>
+            <translation>컴파일 할 수 없습니다: 설치</translation>
         </message>
         <message>
             <source>Cannot compile: pyside6-lrelease or lrelease not found</source>
@@ -1889,19 +1890,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Cannot split empty entry</source>
-            <translation type="unfinished"/>
+            <translation>빈 항목을 분할할할 수 없습니다</translation>
         </message>
         <message>
             <source>Category</source>
-            <translation type="unfinished"/>
+            <translation>분류</translation>
         </message>
         <message>
             <source>Changes committed locally</source>
-            <translation type="unfinished"/>
+            <translation>지역적으로 시행된 변경 사항</translation>
         </message>
         <message>
             <source>Changes pushed successfully</source>
-            <translation type="unfinished"/>
+            <translation>변화 를 성공적으로 추진</translation>
         </message>
         <message>
             <source>Check for updates</source>
@@ -1917,7 +1918,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Close Current File?</source>
-            <translation type="unfinished"/>
+            <translation>현재 파일을 닫는 것?</translation>
         </message>
         <message>
             <source>Close Tab</source>
@@ -1925,11 +1926,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Close the current file and load extracted subtitles?</source>
-            <translation type="unfinished"/>
+            <translation>현재 파일을 닫고 추출된 자막을 로드하세요?</translation>
         </message>
         <message>
             <source>Comments</source>
-            <translation type="unfinished"/>
+            <translation>의견</translation>
         </message>
         <message>
             <source>Commit failed: %s</source>
@@ -1941,7 +1942,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Commit successful. Push to remote?</source>
-            <translation type="unfinished"/>
+            <translation>성공적 인 약속. 원격으로 밀어?</translation>
         </message>
         <message>
             <source>Committed!</source>
@@ -1953,7 +1954,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Compare Files…</source>
-            <translation type="unfinished"/>
+            <translation>파일 비교...</translation>
         </message>
         <message>
             <source>Compare language…</source>
@@ -1981,11 +1982,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Concordance</source>
-            <translation type="unfinished"/>
+            <translation>조화</translation>
         </message>
         <message>
             <source>Concordance Search…</source>
-            <translation type="unfinished"/>
+            <translation>협동성 검색...</translation>
         </message>
         <message>
             <source>Consistency Check</source>
@@ -1997,7 +1998,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Context</source>
-            <translation type="unfinished"/>
+            <translation>맥락</translation>
         </message>
         <message>
             <source>Copy Source</source>
@@ -2009,7 +2010,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Copy source text to translation</source>
-            <translation type="unfinished"/>
+            <translation>번역으로 원본 텍스트를 복사</translation>
         </message>
         <message>
             <source>Copy source text to translation (Ctrl+B)</source>
@@ -2021,11 +2022,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Could not read video file:\n%s</source>
-            <translation type="unfinished"/>
+            <translation>비디오 파일을 읽을 수 없습니다:\n%s</translation>
         </message>
         <message>
             <source>Count</source>
-            <translation type="unfinished"/>
+            <translation>백작</translation>
         </message>
         <message>
             <source>Crowdin</source>
@@ -2033,67 +2034,67 @@ This will replace the current text with:
         </message>
         <message>
             <source>Crowdin Statistics…</source>
-            <translation type="unfinished"/>
+            <translation>크라우딘 통계학...</translation>
         </message>
         <message>
             <source>Crowdin Error</source>
-            <translation type="unfinished"/>
+            <translation>크라우딘 오류</translation>
         </message>
         <message>
             <source>No Crowdin API key configured.\nPlease add one in Translation → API Keys…</source>
-            <translation type="unfinished"/>
+            <translation>크라우딘 API 키가 구성되지 않았습니다.</translation>
         </message>
         <message>
             <source>Crowdin — %s</source>
-            <translation type="unfinished"/>
+            <translation>크라우딘  %s</translation>
         </message>
         <message>
             <source>Translated: %d%% (%d/%d)</source>
-            <translation type="unfinished"/>
+            <translation>번역: %d%% (%d/%d)</translation>
         </message>
         <message>
             <source>Approved: %d%% (%d/%d)</source>
-            <translation type="unfinished"/>
+            <translation>승인: %d%% (%d/%d)</translation>
         </message>
         <message>
             <source>Pull Translations</source>
-            <translation type="unfinished"/>
+            <translation>번역을 끌어내</translation>
         </message>
         <message>
             <source>Push Source</source>
-            <translation type="unfinished"/>
+            <translation>푸시 원천</translation>
         </message>
         <message>
             <source>Current string has no translation to propagate.</source>
-            <translation type="unfinished"/>
+            <translation>현재 문자열은 퍼지기 위해 번역이 없습니다.</translation>
         </message>
         <message>
             <source>Customize Toolbar…</source>
-            <translation type="unfinished"/>
+            <translation>도구 표시줄을 사용자 정의...</translation>
         </message>
         <message>
             <source>Dark</source>
-            <translation type="unfinished"/>
+            <translation>어둠</translation>
         </message>
         <message>
             <source>Date</source>
-            <translation type="unfinished"/>
+            <translation>날짜</translation>
         </message>
         <message>
             <source>Developer</source>
-            <translation type="unfinished"/>
+            <translation>개발자</translation>
         </message>
         <message>
             <source>Developer:</source>
-            <translation type="unfinished"/>
+            <translation>개발자:</translation>
         </message>
         <message>
             <source>Diff</source>
-            <translation type="unfinished"/>
+            <translation>차이</translation>
         </message>
         <message>
             <source>Diff with Previous Version…</source>
-            <translation type="unfinished"/>
+            <translation>이전 버전과 차이가...</translation>
         </message>
         <message>
             <source>Diff…</source>
@@ -2101,7 +2102,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Documentation</source>
-            <translation type="unfinished"/>
+            <translation>문서화</translation>
         </message>
         <message>
             <source>Donate ♥</source>
@@ -2113,7 +2114,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Edit Header…</source>
-            <translation type="unfinished"/>
+            <translation>헤더를 편집해</translation>
         </message>
         <message>
             <source>Edit file header metadata. Changes are applied when you click Save.</source>
@@ -2121,27 +2122,27 @@ This will replace the current text with:
         </message>
         <message>
             <source>Editor Below</source>
-            <translation type="unfinished"/>
+            <translation>편집자 아래</translation>
         </message>
         <message>
             <source>Editor on Right</source>
-            <translation type="unfinished"/>
+            <translation>오른쪽 편집자</translation>
         </message>
         <message>
             <source>Email Translation</source>
-            <translation type="unfinished"/>
+            <translation>이메일 번역</translation>
         </message>
         <message>
             <source>Email Translation…</source>
-            <translation type="unfinished"/>
+            <translation>이메일 번역...</translation>
         </message>
         <message>
             <source>Email client opened</source>
-            <translation type="unfinished"/>
+            <translation>이메일 클라이언트 열리</translation>
         </message>
         <message>
             <source>Enter macro name:</source>
-            <translation type="unfinished"/>
+            <translation>매크로 이름을 입력합니다:</translation>
         </message>
         <message>
             <source>Enter translator note:</source>
@@ -2149,23 +2150,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>Entry</source>
-            <translation type="unfinished"/>
+            <translation>출입</translation>
         </message>
         <message>
             <source>Entry pinned</source>
-            <translation type="unfinished"/>
+            <translation>입구 봉쇄</translation>
         </message>
         <message>
             <source>Entry split into 2 segments</source>
-            <translation type="unfinished"/>
+            <translation>2개의 세그먼트로 나뉘어</translation>
         </message>
         <message>
             <source>Entry unpinned</source>
-            <translation type="unfinished"/>
+            <translation>출입이 비착된</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>오류</translation>
         </message>
         <message>
             <source>Error loading file: %s</source>
@@ -2177,15 +2178,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Export Error</source>
-            <translation type="unfinished"/>
+            <translation>수출 오류</translation>
         </message>
         <message>
             <source>Export TMX</source>
-            <translation type="unfinished"/>
+            <translation>TMX 수출</translation>
         </message>
         <message>
             <source>Export TMX…</source>
-            <translation type="unfinished"/>
+            <translation>TMX를 수출...</translation>
         </message>
         <message>
             <source>Export report…</source>
@@ -2193,39 +2194,39 @@ This will replace the current text with:
         </message>
         <message>
             <source>Exported {} translation units to {}</source>
-            <translation type="unfinished"/>
+            <translation>{}에 수출된 {} 번역 단위</translation>
         </message>
         <message>
             <source>Extract Subtitles from Video…</source>
-            <translation type="unfinished"/>
+            <translation>영상에서 자막을 추출합니다.</translation>
         </message>
         <message>
             <source>Extracting</source>
-            <translation type="unfinished"/>
+            <translation>추출</translation>
         </message>
         <message>
             <source>Extracting subtitles…</source>
-            <translation type="unfinished"/>
+            <translation>자막을 추출하는 것...</translation>
         </message>
         <message>
             <source>Extraction Failed</source>
-            <translation type="unfinished"/>
+            <translation>추출 실패</translation>
         </message>
         <message>
             <source>Failed to export TMX file: {}</source>
-            <translation type="unfinished"/>
+            <translation>TMX 파일을 수출하지 못했습니다: {}</translation>
         </message>
         <message>
             <source>Failed to import TMX file: {}</source>
-            <translation type="unfinished"/>
+            <translation>TMX 파일을 가져오지 못했습니다: {}</translation>
         </message>
         <message>
             <source>Failed to play macro</source>
-            <translation type="unfinished"/>
+            <translation>매크로 재생 실패</translation>
         </message>
         <message>
             <source>Failed to run msgmerge:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>msgmerge를 실행하지 못했어요</translation>
         </message>
         <message>
             <source>Feed file to TM</source>
@@ -2233,11 +2234,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>File</source>
-            <translation type="unfinished"/>
+            <translation>파일</translation>
         </message>
         <message>
             <source>File Changed</source>
-            <translation type="unfinished"/>
+            <translation>파일 변경</translation>
         </message>
         <message>
             <source>File Header / Metadata</source>
@@ -2261,7 +2262,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>File reloaded (external change detected)</source>
-            <translation type="unfinished"/>
+            <translation>파일 로드 (외변이 감지)</translation>
         </message>
         <message>
             <source>Find &amp;&amp; Replace…</source>
@@ -2277,35 +2278,35 @@ This will replace the current text with:
         </message>
         <message>
             <source>Flags</source>
-            <translation type="unfinished"/>
+            <translation>국기</translation>
         </message>
         <message>
             <source>Focus Mode</source>
-            <translation type="unfinished"/>
+            <translation>집중 모드</translation>
         </message>
         <message>
             <source>Focus mode disabled</source>
-            <translation type="unfinished"/>
+            <translation>집중 모드 비활성화</translation>
         </message>
         <message>
             <source>Focus mode enabled - hiding completed translations</source>
-            <translation type="unfinished"/>
+            <translation>포커스 모드가 가능 - 완료된 번역을 숨기기</translation>
         </message>
         <message>
             <source>Format:</source>
-            <translation type="unfinished"/>
+            <translation>형식:</translation>
         </message>
         <message>
             <source>Found %d subtitle track(s). Select one:</source>
-            <translation type="unfinished"/>
+            <translation>%d 자막 트랙을 찾았습니다. 하나를 선택하세요:</translation>
         </message>
         <message>
             <source>Fullscreen</source>
-            <translation type="unfinished"/>
+            <translation>전체 화면</translation>
         </message>
         <message>
             <source>Fullscreen mode - Press Escape to exit</source>
-            <translation type="unfinished"/>
+            <translation>풀스크린 모드 - 탈출을 누르면 출력</translation>
         </message>
         <message>
             <source>Fuzzy</source>
@@ -2321,7 +2322,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Fuzzy:</source>
-            <translation type="unfinished"/>
+            <translation>퓨지:</translation>
         </message>
         <message>
             <source>Fuzzy: %d</source>
@@ -2333,15 +2334,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Generate Report</source>
-            <translation type="unfinished"/>
+            <translation>보고서를 생성</translation>
         </message>
         <message>
             <source>Generate Report…</source>
-            <translation type="unfinished"/>
+            <translation>보고서를 생성...</translation>
         </message>
         <message>
             <source>Generated by LinguaEdit</source>
-            <translation type="unfinished"/>
+            <translation>랭구아에서 생성된</translation>
         </message>
         <message>
             <source>Git</source>
@@ -2361,7 +2362,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Git Error</source>
-            <translation type="unfinished"/>
+            <translation>Git 오류</translation>
         </message>
         <message>
             <source>Git Status</source>
@@ -2369,11 +2370,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Git operation error: {}</source>
-            <translation type="unfinished"/>
+            <translation>Git 동작 오류: {}</translation>
         </message>
         <message>
             <source>Git operation failed: {}</source>
-            <translation type="unfinished"/>
+            <translation>Git 동작이 실패: {}</translation>
         </message>
         <message>
             <source>GitHub PR</source>
@@ -2389,7 +2390,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Glossary</source>
-            <translation type="unfinished"/>
+            <translation>문장</translation>
         </message>
         <message>
             <source>Glossary / Terminology</source>
@@ -2405,39 +2406,39 @@ This will replace the current text with:
         </message>
         <message>
             <source>HTML (*.html);;PDF (*.pdf)</source>
-            <translation type="unfinished"/>
+            <translation>HTML (*.html);;PDF (*.pdf)</translation>
         </message>
         <message>
             <source>HTML files (*.html);;PDF files (*.pdf)</source>
-            <translation type="unfinished"/>
+            <translation>HTML 파일 (*.html);;PDF 파일 (*.pdf)</translation>
         </message>
         <message>
             <source>Header updated</source>
-            <translation type="unfinished"/>
+            <translation>헤더 업데이트</translation>
         </message>
         <message>
             <source>Import Error</source>
-            <translation type="unfinished"/>
+            <translation>수입 오류</translation>
         </message>
         <message>
             <source>Import TMX</source>
-            <translation type="unfinished"/>
+            <translation>TMX 수입</translation>
         </message>
         <message>
             <source>Import TMX…</source>
-            <translation type="unfinished"/>
+            <translation>TMX를 수입해</translation>
         </message>
         <message>
             <source>Imported {} translation units</source>
-            <translation type="unfinished"/>
+            <translation>수입된 {} 번역 단위</translation>
         </message>
         <message>
             <source>Include fuzzy entries</source>
-            <translation type="unfinished"/>
+            <translation>미묘한 항목을 포함합니다</translation>
         </message>
         <message>
             <source>Incomplete Subtitles</source>
-            <translation type="unfinished"/>
+            <translation>미완성 자막</translation>
         </message>
         <message>
             <source>Invalid regex</source>
@@ -2445,11 +2446,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Issues</source>
-            <translation type="unfinished"/>
+            <translation>문제</translation>
         </message>
         <message>
             <source>JSON files (*.json);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>JSON 파일 (*.json);;모든 파일 (*)</translation>
         </message>
         <message>
             <source>Key</source>
@@ -2457,7 +2458,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Language</source>
-            <translation type="unfinished"/>
+            <translation>언어</translation>
         </message>
         <message>
             <source>Language:</source>
@@ -2469,19 +2470,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Layout Simulator</source>
-            <translation type="unfinished"/>
+            <translation>레이아웃 시뮬레이터</translation>
         </message>
         <message>
             <source>License:</source>
-            <translation type="unfinished"/>
+            <translation>면허:</translation>
         </message>
         <message>
             <source>Light</source>
-            <translation type="unfinished"/>
+            <translation>빛</translation>
         </message>
         <message>
             <source>LinguaEdit</source>
-            <translation type="unfinished"/>
+            <translation>언어[편집]</translation>
         </message>
         <message>
             <source>Ln %d, Col %d</source>
@@ -2501,19 +2502,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>MT translation failed</source>
-            <translation type="unfinished"/>
+            <translation>MT 번역 실패</translation>
         </message>
         <message>
             <source>Macro Exists</source>
-            <translation type="unfinished"/>
+            <translation>맥로 존재</translation>
         </message>
         <message>
             <source>Macros</source>
-            <translation type="unfinished"/>
+            <translation>매크로</translation>
         </message>
         <message>
             <source>Main</source>
-            <translation type="unfinished"/>
+            <translation>주요</translation>
         </message>
         <message>
             <source>Manage API Keys…</source>
@@ -2521,15 +2522,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Manage Macros…</source>
-            <translation type="unfinished"/>
+            <translation>매크로 관리...</translation>
         </message>
         <message>
             <source>Manage Plugins…</source>
-            <translation type="unfinished"/>
+            <translation>플러그인을 관리하세요...</translation>
         </message>
         <message>
             <source>Mark current entry as reviewed</source>
-            <translation type="unfinished"/>
+            <translation>재검토된 현재 항목을 표시</translation>
         </message>
         <message>
             <source>Mark this string as fuzzy / needs review (Ctrl+U)</source>
@@ -2537,27 +2538,27 @@ This will replace the current text with:
         </message>
         <message>
             <source>Max width:</source>
-            <translation type="unfinished"/>
+            <translation>최대 너비:</translation>
         </message>
         <message>
             <source>Merge Entries…</source>
-            <translation type="unfinished"/>
+            <translation>합병 항목...</translation>
         </message>
         <message>
             <source>Merge with POT…</source>
-            <translation type="unfinished"/>
+            <translation>포트와 합병해...</translation>
         </message>
         <message>
             <source>Merged {} entries</source>
-            <translation type="unfinished"/>
+            <translation>합병된 {} 항목</translation>
         </message>
         <message>
             <source>Message</source>
-            <translation type="unfinished"/>
+            <translation>메시지</translation>
         </message>
         <message>
             <source>Message:</source>
-            <translation type="unfinished"/>
+            <translation>메시지:</translation>
         </message>
         <message>
             <source>Metadata updated</source>
@@ -2565,23 +2566,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>Minimap</source>
-            <translation type="unfinished"/>
+            <translation>미니맵</translation>
         </message>
         <message>
             <source>Monokai</source>
-            <translation type="unfinished"/>
+            <translation>모노카이</translation>
         </message>
         <message>
             <source>Msgmerge Error</source>
-            <translation type="unfinished"/>
+            <translation>Msgmerge 오류</translation>
         </message>
         <message>
             <source>Msgmerge Not Found</source>
-            <translation type="unfinished"/>
+            <translation>Msgmerge 발견되지 않았습니다</translation>
         </message>
         <message>
             <source>Needs Review</source>
-            <translation type="unfinished"/>
+            <translation>검토 필요</translation>
         </message>
         <message>
             <source>Needs work</source>
@@ -2601,27 +2602,27 @@ This will replace the current text with:
         </message>
         <message>
             <source>No File</source>
-            <translation type="unfinished"/>
+            <translation>파일 없네요</translation>
         </message>
         <message>
             <source>No Subtitles</source>
-            <translation type="unfinished"/>
+            <translation>자막이 없습니다</translation>
         </message>
         <message>
             <source>No bookmarks set</source>
-            <translation type="unfinished"/>
+            <translation>부크마크 설정이 없습니다</translation>
         </message>
         <message>
             <source>No changes</source>
-            <translation type="unfinished"/>
+            <translation>변경 사항은 없습니다</translation>
         </message>
         <message>
             <source>No embedded subtitle tracks found in this video file.</source>
-            <translation type="unfinished"/>
+            <translation>이 비디오 파일에는 삽입된 자막 트랙이 없습니다.</translation>
         </message>
         <message>
             <source>No enabled macros</source>
-            <translation type="unfinished"/>
+            <translation>마크로가 활성화되지 않습니다</translation>
         </message>
         <message>
             <source>No file</source>
@@ -2633,27 +2634,27 @@ This will replace the current text with:
         </message>
         <message>
             <source>No glossary violations found! ✓</source>
-            <translation type="unfinished"/>
+            <translation>글래서 위반은 발견되지 않았습니다! ✓</translation>
         </message>
         <message>
             <source>No identical source strings found.</source>
-            <translation type="unfinished"/>
+            <translation>동일한 소스 문자열이 발견되지 않았습니다.</translation>
         </message>
         <message>
             <source>No inconsistencies found! ✓</source>
-            <translation type="unfinished"/>
+            <translation>일치 없는 결과도 발견되지 않았습니다! ✓</translation>
         </message>
         <message>
             <source>No issues found</source>
-            <translation type="unfinished"/>
+            <translation>문제 발견되지 않았습니다</translation>
         </message>
         <message>
             <source>No macros available</source>
-            <translation type="unfinished"/>
+            <translation>사용 가능한 매크로가 없습니다</translation>
         </message>
         <message>
             <source>No more fuzzy strings</source>
-            <translation type="unfinished"/>
+            <translation>더 이상 한 줄이 없어</translation>
         </message>
         <message>
             <source>No more untranslated strings</source>
@@ -2661,15 +2662,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>No screenshot available</source>
-            <translation type="unfinished"/>
+            <translation>화면 촬영이 없습니다</translation>
         </message>
         <message>
             <source>No source text to review</source>
-            <translation type="unfinished"/>
+            <translation>검토할 수 있는 소스 텍스트는 없습니다</translation>
         </message>
         <message>
             <source>No terms defined</source>
-            <translation type="unfinished"/>
+            <translation>정의된 용어 없습니다</translation>
         </message>
         <message>
             <source>No text to check</source>
@@ -2677,27 +2678,27 @@ This will replace the current text with:
         </message>
         <message>
             <source>No text to play</source>
-            <translation type="unfinished"/>
+            <translation>재생할 문자 없습니다</translation>
         </message>
         <message>
             <source>No translation selected</source>
-            <translation type="unfinished"/>
+            <translation>번역 선택은 없습니다</translation>
         </message>
         <message>
             <source>No translation to preview</source>
-            <translation type="unfinished"/>
+            <translation>사전 예전에 번역이 없습니다</translation>
         </message>
         <message>
             <source>Nord</source>
-            <translation type="unfinished"/>
+            <translation>북쪽</translation>
         </message>
         <message>
             <source>Normal Mode</source>
-            <translation type="unfinished"/>
+            <translation>정상 모드</translation>
         </message>
         <message>
             <source>Normal sorting order</source>
-            <translation type="unfinished"/>
+            <translation>정상 분류 순서</translation>
         </message>
         <message>
             <source>Not a git repository</source>
@@ -2705,15 +2706,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Notes</source>
-            <translation type="unfinished"/>
+            <translation>참고</translation>
         </message>
         <message>
             <source>OCR Screenshot…</source>
-            <translation type="unfinished"/>
+            <translation>OCR 스크린샷...</translation>
         </message>
         <message>
             <source>OCR extraction completed. {} strings extracted.</source>
-            <translation type="unfinished"/>
+            <translation>OCR 추출 완료. {} 문자열 추출.</translation>
         </message>
         <message>
             <source>Open</source>
@@ -2721,11 +2722,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Open Project…</source>
-            <translation type="unfinished"/>
+            <translation>오픈 프로젝트...</translation>
         </message>
         <message>
             <source>Open Reference File</source>
-            <translation type="unfinished"/>
+            <translation>참고 파일 열기</translation>
         </message>
         <message>
             <source>Open Translation File</source>
@@ -2733,11 +2734,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Open Video</source>
-            <translation type="unfinished"/>
+            <translation>비디오 를 열</translation>
         </message>
         <message>
             <source>Open Video…</source>
-            <translation type="unfinished"/>
+            <translation>비디오 오픈...</translation>
         </message>
         <message>
             <source>Options</source>
@@ -2745,15 +2746,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>PO file merged successfully with POT file.\nPlease reload the file to see changes.</source>
-            <translation type="unfinished"/>
+            <translation>POT 파일과 성공적으로 통합되었습니다. 변경 사항을 보기 위해 파일을 다시 로드하십시오.</translation>
         </message>
         <message>
             <source>PO files (*.po);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>PO 파일 (*.po);;모든 파일 (*)</translation>
         </message>
         <message>
             <source>POT Files (*.pot)</source>
-            <translation type="unfinished"/>
+            <translation>POT 파일 (*.pot)</translation>
         </message>
         <message>
             <source>Platform settings…</source>
@@ -2761,27 +2762,27 @@ This will replace the current text with:
         </message>
         <message>
             <source>Play Macro</source>
-            <translation type="unfinished"/>
+            <translation>맥로 플레이</translation>
         </message>
         <message>
             <source>Play Translation</source>
-            <translation type="unfinished"/>
+            <translation>번역 게임</translation>
         </message>
         <message>
             <source>Playing translation...</source>
-            <translation type="unfinished"/>
+            <translation>번역을 연주하는 것...</translation>
         </message>
         <message>
             <source>Please enter recipient email</source>
-            <translation type="unfinished"/>
+            <translation>수신자 이메일 입력하시기 바랍니다</translation>
         </message>
         <message>
             <source>Please open a PO file first.</source>
-            <translation type="unfinished"/>
+            <translation>먼저 포스트 파일을 열어 주세요.</translation>
         </message>
         <message>
             <source>Plural: %s</source>
-            <translation type="unfinished"/>
+            <translation>복수: %s</translation>
         </message>
         <message>
             <source>Pre-translate</source>
@@ -2801,7 +2802,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Preview</source>
-            <translation type="unfinished"/>
+            <translation>미리보기</translation>
         </message>
         <message>
             <source>Previous</source>
@@ -2817,19 +2818,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Probing video for subtitle tracks…</source>
-            <translation type="unfinished"/>
+            <translation>자막 트랙을 찾아내는 비디오...</translation>
         </message>
         <message>
             <source>Project Dashboard</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트 대시보드</translation>
         </message>
         <message>
             <source>Propagate Translation</source>
-            <translation type="unfinished"/>
+            <translation>번역 을 전파 하라</translation>
         </message>
         <message>
             <source>Pull Latest</source>
-            <translation type="unfinished"/>
+            <translation>최신을 추출</translation>
         </message>
         <message>
             <source>Pull from…</source>
@@ -2837,7 +2838,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Push Changes</source>
-            <translation type="unfinished"/>
+            <translation>변화 를 추진 해</translation>
         </message>
         <message>
             <source>Push to…</source>
@@ -2861,7 +2862,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Quality Score</source>
-            <translation type="unfinished"/>
+            <translation>품질 점수</translation>
         </message>
         <message>
             <source>Quit</source>
@@ -2873,11 +2874,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Record Macro</source>
-            <translation type="unfinished"/>
+            <translation>기록 매크로</translation>
         </message>
         <message>
             <source>Recording macro </source>
-            <translation type="unfinished"/>
+            <translation>매크로 기록</translation>
         </message>
         <message>
             <source>Redo</source>
@@ -2889,7 +2890,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>References</source>
-            <translation type="unfinished"/>
+            <translation>참고자료</translation>
         </message>
         <message>
             <source>Regex</source>
@@ -2897,15 +2898,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Regex Tester</source>
-            <translation type="unfinished"/>
+            <translation>레지렉스 테스트</translation>
         </message>
         <message>
             <source>Reject</source>
-            <translation type="unfinished"/>
+            <translation>거절</translation>
         </message>
         <message>
             <source>Remove Bookmark</source>
-            <translation type="unfinished"/>
+            <translation>북마크를 제거</translation>
         </message>
         <message>
             <source>Remove Selected</source>
@@ -2929,7 +2930,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Report Options</source>
-            <translation type="unfinished"/>
+            <translation>보고 선택</translation>
         </message>
         <message>
             <source>Report a Bug</source>
@@ -2937,11 +2938,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Report error: %s</source>
-            <translation type="unfinished"/>
+            <translation>보고 오류: %s</translation>
         </message>
         <message>
             <source>Report saved</source>
-            <translation type="unfinished"/>
+            <translation>저장된 보고</translation>
         </message>
         <message>
             <source>Report saved to %s</source>
@@ -2949,27 +2950,27 @@ This will replace the current text with:
         </message>
         <message>
             <source>Report saved: %s</source>
-            <translation type="unfinished"/>
+            <translation>저장된 보고서는: %s</translation>
         </message>
         <message>
             <source>Review</source>
-            <translation type="unfinished"/>
+            <translation>검토</translation>
         </message>
         <message>
             <source>Review Mode</source>
-            <translation type="unfinished"/>
+            <translation>검토 모드</translation>
         </message>
         <message>
             <source>Review mode disabled</source>
-            <translation type="unfinished"/>
+            <translation>검토 모드 비활성화</translation>
         </message>
         <message>
             <source>Review mode enabled</source>
-            <translation type="unfinished"/>
+            <translation>검토 모드가 활성화</translation>
         </message>
         <message>
             <source>Reviewed</source>
-            <translation type="unfinished"/>
+            <translation>검토</translation>
         </message>
         <message>
             <source>Root key:</source>
@@ -2977,7 +2978,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>SRT files (*.srt);;VTT files (*.vtt);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>SRT 파일 (*.srt);;VTT 파일 (*.vtt);; 모든 파일 (*)</translation>
         </message>
         <message>
             <source>Save</source>
@@ -2985,23 +2986,23 @@ This will replace the current text with:
         </message>
         <message>
             <source>Save &amp;As…</source>
-            <translation type="unfinished"/>
+            <translation>구하고...</translation>
         </message>
         <message>
             <source>Save As…</source>
-            <translation type="unfinished"/>
+            <translation>구해줘요</translation>
         </message>
         <message>
             <source>Save Current File?</source>
-            <translation type="unfinished"/>
+            <translation>현재 파일을 저장하세요?</translation>
         </message>
         <message>
             <source>Save Extracted Subtitles</source>
-            <translation type="unfinished"/>
+            <translation>추출된 자막을 저장</translation>
         </message>
         <message>
             <source>Save Report</source>
-            <translation type="unfinished"/>
+            <translation>저장 보고</translation>
         </message>
         <message>
             <source>Save error: %s</source>
@@ -3009,7 +3010,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Saved as %s</source>
-            <translation type="unfinished"/>
+            <translation>%s로 저장</translation>
         </message>
         <message>
             <source>Saved!</source>
@@ -3017,7 +3018,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Search</source>
-            <translation type="unfinished"/>
+            <translation>검색</translation>
         </message>
         <message>
             <source>Search TM…</source>
@@ -3029,71 +3030,71 @@ This will replace the current text with:
         </message>
         <message>
             <source>Select POT File</source>
-            <translation type="unfinished"/>
+            <translation>POT 파일 선택</translation>
         </message>
         <message>
             <source>Select Subtitle Track</source>
-            <translation type="unfinished"/>
+            <translation>자막 트랙을 선택</translation>
         </message>
         <message>
             <source>Select at least 2 entries to merge</source>
-            <translation type="unfinished"/>
+            <translation>통합하기 위해 최소 2개의 항목을 선택</translation>
         </message>
         <message>
             <source>Select macro to play:</source>
-            <translation type="unfinished"/>
+            <translation>재생하기 위한 매크로를 선택하세요:</translation>
         </message>
         <message>
             <source>Select or enter tag:</source>
-            <translation type="unfinished"/>
+            <translation>태그를 선택하거나 입력합니다:</translation>
         </message>
         <message>
             <source>Settings</source>
-            <translation type="unfinished"/>
+            <translation>설정</translation>
         </message>
         <message>
             <source>Severity</source>
-            <translation type="unfinished"/>
+            <translation>중성</translation>
         </message>
         <message>
             <source>Show Bookmarked Only</source>
-            <translation type="unfinished"/>
+            <translation>책표만 표시</translation>
         </message>
         <message>
             <source>Show Pinned First</source>
-            <translation type="unfinished"/>
+            <translation>먼저  을 표시</translation>
         </message>
         <message>
             <source>Showing all entries</source>
-            <translation type="unfinished"/>
+            <translation>모든 항목을 표시</translation>
         </message>
         <message>
             <source>Showing only bookmarked entries</source>
-            <translation type="unfinished"/>
+            <translation>책표된 항목만 표시</translation>
         </message>
         <message>
             <source>Showing pinned entries first</source>
-            <translation type="unfinished"/>
+            <translation>먼저 된 항목을 표시</translation>
         </message>
         <message>
             <source>Side-by-Side View</source>
-            <translation type="unfinished"/>
+            <translation>옆면 한쪽</translation>
         </message>
         <message>
             <source>Sidebar</source>
-            <translation type="unfinished"/>
+            <translation>사이드바</translation>
         </message>
         <message>
             <source>Simple Mode</source>
-            <translation type="unfinished"/>
+            <translation>간단한 모드</translation>
         </message>
         <message>
             <source>Solarized Dark</source>
-            <translation type="unfinished"/>
+            <translation>태양광 어둠</translation>
         </message>
         <message>
             <source>Source</source>
-            <translation type="unfinished"/>
+            <translation>출처</translation>
         </message>
         <message>
             <source>Source A → Z</source>
@@ -3117,7 +3118,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Source:</source>
-            <translation type="unfinished"/>
+            <translation>출처:</translation>
         </message>
         <message>
             <source>Spell check current</source>
@@ -3125,15 +3126,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Spelling issues:\n%s</source>
-            <translation type="unfinished"/>
+            <translation>글쓰기 문제: \n%s</translation>
         </message>
         <message>
             <source>Split Entry…</source>
-            <translation type="unfinished"/>
+            <translation>분산 입구...</translation>
         </message>
         <message>
             <source>Stacked View</source>
-            <translation type="unfinished"/>
+            <translation>겹겹의 시각</translation>
         </message>
         <message>
             <source>Statistics</source>
@@ -3145,7 +3146,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Status</source>
-            <translation type="unfinished"/>
+            <translation>상태</translation>
         </message>
         <message>
             <source>Status…</source>
@@ -3157,15 +3158,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Subject:</source>
-            <translation type="unfinished"/>
+            <translation>주제는:</translation>
         </message>
         <message>
             <source>Success</source>
-            <translation type="unfinished"/>
+            <translation>성공</translation>
         </message>
         <message>
             <source>Summary by Category</source>
-            <translation type="unfinished"/>
+            <translation>분류별 요약</translation>
         </message>
         <message>
             <source>Switch branch…</source>
@@ -3173,7 +3174,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>System Default</source>
-            <translation type="unfinished"/>
+            <translation>시스템 기본 설정</translation>
         </message>
         <message>
             <source>TM / Suggestions</source>
@@ -3181,35 +3182,35 @@ This will replace the current text with:
         </message>
         <message>
             <source>TMX</source>
-            <translation type="unfinished"/>
+            <translation>TMX</translation>
         </message>
         <message>
             <source>TMX Export</source>
-            <translation type="unfinished"/>
+            <translation>TMX 수출</translation>
         </message>
         <message>
             <source>TMX Files (*.tmx)</source>
-            <translation type="unfinished"/>
+            <translation>TMX 파일 (*.tmx)</translation>
         </message>
         <message>
             <source>TMX Import</source>
-            <translation type="unfinished"/>
+            <translation>TMX 수입</translation>
         </message>
         <message>
             <source>TS files (*.ts);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>TS 파일 (*.ts);;모든 파일 (*)</translation>
         </message>
         <message>
             <source>TTS Error</source>
-            <translation type="unfinished"/>
+            <translation>TTS 오류</translation>
         </message>
         <message>
             <source>Tag filter removed</source>
-            <translation type="unfinished"/>
+            <translation>태그 필터 제거</translation>
         </message>
         <message>
             <source>Tags</source>
-            <translation type="unfinished"/>
+            <translation>태그</translation>
         </message>
         <message>
             <source>Target language:</source>
@@ -3221,55 +3222,55 @@ This will replace the current text with:
         </message>
         <message>
             <source>Text-to-speech failed: {}</source>
-            <translation type="unfinished"/>
+            <translation>문자-언어 실패: {}</translation>
         </message>
         <message>
             <source>The current file has unsaved changes.\nDo you want to save before continuing?</source>
-            <translation type="unfinished"/>
+            <translation>현재 파일에는 저장되지 않은 변경 사항이 있습니다. 계속하기 전에 저장하고 싶습니까?</translation>
         </message>
         <message>
             <source>The file </source>
-            <translation type="unfinished"/>
+            <translation>파일</translation>
         </message>
         <message>
             <source>The file has been changed externally. Reload?</source>
-            <translation type="unfinished"/>
+            <translation>파일은 외부로 변경됐어</translation>
         </message>
         <message>
             <source>Theme</source>
-            <translation type="unfinished"/>
+            <translation>주제</translation>
         </message>
         <message>
             <source>Theme changed to %s</source>
-            <translation type="unfinished"/>
+            <translation>주제는 %s로 변경되었습니다</translation>
         </message>
         <message>
             <source>This feature only works with PO files.</source>
-            <translation type="unfinished"/>
+            <translation>이 기능은 PO 파일에서만 작동합니다.</translation>
         </message>
         <message>
             <source>Time interval</source>
-            <translation type="unfinished"/>
+            <translation>시간 간격</translation>
         </message>
         <message>
             <source>Time:</source>
-            <translation type="unfinished"/>
+            <translation>시간:</translation>
         </message>
         <message>
             <source>To:</source>
-            <translation type="unfinished"/>
+            <translation>이 부문:</translation>
         </message>
         <message>
             <source>Toggle fuzzy/needs work flag</source>
-            <translation type="unfinished"/>
+            <translation>이/필요한 작업 플래그를 돌리십시오</translation>
         </message>
         <message>
             <source>Total</source>
-            <translation type="unfinished"/>
+            <translation>전체</translation>
         </message>
         <message>
             <source>Total entries:</source>
-            <translation type="unfinished"/>
+            <translation>전체 항목:</translation>
         </message>
         <message>
             <source>Transifex</source>
@@ -3285,7 +3286,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Translated:</source>
-            <translation type="unfinished"/>
+            <translation>번역:</translation>
         </message>
         <message>
             <source>Translated: %d</source>
@@ -3309,31 +3310,31 @@ This will replace the current text with:
         </message>
         <message>
             <source>API key:</source>
-            <translation type="unfinished"/>
+            <translation>API 키:</translation>
         </message>
         <message>
             <source>Auto-detect</source>
-            <translation type="unfinished"/>
+            <translation>자동 탐지</translation>
         </message>
         <message>
             <source>Enter API key</source>
-            <translation type="unfinished"/>
+            <translation>API 키를 입력</translation>
         </message>
         <message>
             <source>Not required for free engines</source>
-            <translation type="unfinished"/>
+            <translation>무료 엔진에 필요한 것은 아닙니다.</translation>
         </message>
         <message>
             <source>Translation History…</source>
-            <translation type="unfinished"/>
+            <translation>번역 역사...</translation>
         </message>
         <message>
             <source>Translation Map…</source>
-            <translation type="unfinished"/>
+            <translation>번역 지도...</translation>
         </message>
         <message>
             <source>Translation Report</source>
-            <translation type="unfinished"/>
+            <translation>번역 보고</translation>
         </message>
         <message>
             <source>Translation Z → A</source>
@@ -3341,19 +3342,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>Translation preview will appear here</source>
-            <translation type="unfinished"/>
+            <translation>번역 사전 예시는 여기 표시됩니다</translation>
         </message>
         <message>
             <source>Translation rolled back</source>
-            <translation type="unfinished"/>
+            <translation>번역이 뒤집어</translation>
         </message>
         <message>
             <source>Translation updated from AI review</source>
-            <translation type="unfinished"/>
+            <translation>인공지능 검토에서 업데이트 된 번역</translation>
         </message>
         <message>
             <source>Translation:</source>
-            <translation type="unfinished"/>
+            <translation>번역:</translation>
         </message>
         <message>
             <source>Undo</source>
@@ -3361,7 +3362,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Unicode Inspector</source>
-            <translation type="unfinished"/>
+            <translation>유니코드 검사</translation>
         </message>
         <message>
             <source>Unknown</source>
@@ -3369,7 +3370,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Unsaved Changes</source>
-            <translation type="unfinished"/>
+            <translation>구원 받지 않은 변화</translation>
         </message>
         <message>
             <source>Unsupported file type: %s</source>
@@ -3377,7 +3378,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Untitled</source>
-            <translation type="unfinished"/>
+            <translation>제목이 없는</translation>
         </message>
         <message>
             <source>Untranslated</source>
@@ -3385,11 +3386,11 @@ This will replace the current text with:
         </message>
         <message>
             <source>Untranslated/errors first</source>
-            <translation type="unfinished"/>
+            <translation>번역되지 않은 경우 먼저 오류</translation>
         </message>
         <message>
             <source>Untranslated:</source>
-            <translation type="unfinished"/>
+            <translation>번역되지 않은</translation>
         </message>
         <message>
             <source>Untranslated: %d</source>
@@ -3409,7 +3410,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Updated {} translation</source>
-            <translation type="unfinished"/>
+            <translation>업데이트 된 {} 번역</translation>
         </message>
         <message>
             <source>Validate</source>
@@ -3429,15 +3430,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Video</source>
-            <translation type="unfinished"/>
+            <translation>비디오</translation>
         </message>
         <message>
             <source>Video file</source>
-            <translation type="unfinished"/>
+            <translation>비디오 파일</translation>
         </message>
         <message>
             <source>Video files (*.mkv *.mp4 *.avi *.mov *.webm *.flv *.wmv *.ogv);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>비디오 파일 (*.mkv *.mp4 *.avi *.mov *.webm *.flv *.wmv *.ogv);;모든 파일 (*)</translation>
         </message>
         <message>
             <source>Warnings</source>
@@ -3445,15 +3446,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>Watch File</source>
-            <translation type="unfinished"/>
+            <translation>시청 파일</translation>
         </message>
         <message>
             <source>Watch mode disabled</source>
-            <translation type="unfinished"/>
+            <translation>시계를 비활성화</translation>
         </message>
         <message>
             <source>Watch mode enabled - file changes will be detected</source>
-            <translation type="unfinished"/>
+            <translation>감시 모드가 활성화되어 - 파일 변경이 감지됩니다</translation>
         </message>
         <message>
             <source>Weblate</source>
@@ -3461,7 +3462,7 @@ This will replace the current text with:
         </message>
         <message>
             <source>Website:</source>
-            <translation type="unfinished"/>
+            <translation>웹사이트:</translation>
         </message>
         <message>
             <source>With warnings</source>
@@ -3469,27 +3470,27 @@ This will replace the current text with:
         </message>
         <message>
             <source>Words: %d | Chars: %d | Source: %dw%s</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Would you like to extract subtitles from this video?</source>
-            <translation type="unfinished"/>
+            <translation>이 비디오에서 자막을 추출하고 싶으세요?</translation>
         </message>
         <message>
             <source>Wrong File Type</source>
-            <translation type="unfinished"/>
+            <translation>잘못된 파일 타입</translation>
         </message>
         <message>
             <source>XLIFF files (*.xlf *.xliff);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>XLIFF 파일 (*.xlf *.xliff);;모든 파일 (*)</translation>
         </message>
         <message>
             <source>Zen Mode</source>
-            <translation type="unfinished"/>
+            <translation>젠 모드</translation>
         </message>
         <message>
             <source>\n\nErrors:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>실수:</translation>
         </message>
         <message>
             <source>lrelease error: %s</source>
@@ -3501,15 +3502,15 @@ This will replace the current text with:
         </message>
         <message>
             <source>msgmerge command not found. Please install gettext tools.</source>
-            <translation type="unfinished"/>
+            <translation>msgmerge 명령어 발견되지 않았습니다. Gettext 도구를 설치하시기 바랍니다.</translation>
         </message>
         <message>
             <source>msgmerge failed:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>msgmerge 실패:</translation>
         </message>
         <message>
             <source>translated</source>
-            <translation type="unfinished"/>
+            <translation>번역</translation>
         </message>
         <message>
             <source>words</source>
@@ -3517,19 +3518,19 @@ This will replace the current text with:
         </message>
         <message>
             <source>{} chars | {} words | Source: {} chars</source>
-            <translation type="unfinished"/>
+            <translation>어 어 어 어</translation>
         </message>
         <message>
             <source>… and %d more</source>
-            <translation type="unfinished"/>
+            <translation>... 그리고 %d 더</translation>
         </message>
         <message>
             <source>⚠️ Toggle Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>️ zzy를 돌봐</translation>
         </message>
         <message>
             <source>✅ Mark Reviewed</source>
-            <translation type="unfinished"/>
+            <translation>✅ 마크 리뷰</translation>
         </message>
         <message>
             <source>✓ No spelling issues found</source>
@@ -3541,404 +3542,456 @@ This will replace the current text with:
         </message>
         <message>
             <source>💾 Apply TM #1</source>
-            <translation type="unfinished"/>
+            <translation> TM#1을 적용하세요</translation>
         </message>
         <message>
             <source>📋 Copy Source</source>
-            <translation type="unfinished"/>
+            <translation> 복사 출처</translation>
         </message>
         <message>
             <source>📌 Pin Entry</source>
-            <translation type="unfinished"/>
+            <translation>📌 핀 입력</translation>
         </message>
         <message>
             <source>📌 Unpin Entry</source>
-            <translation type="unfinished"/>
+            <translation>📌      </translation>
         </message>
         <message>
             <source>🔊 Play Translation</source>
-            <translation type="unfinished"/>
+            <translation> 번역 놀이</translation>
         </message>
         <message>
             <source>🤖 Apply MT</source>
-            <translation type="unfinished"/>
+            <translation> MT를 적용</translation>
         </message>
         <message>
             <source>DeepL formality:</source>
-            <translation type="unfinished"/>
+            <translation>심오한 공식성:</translation>
         </message>
         <message>
             <source>OpenAI model:</source>
-            <translation type="unfinished"/>
+            <translation>오픈AI 모델:</translation>
         </message>
         <message>
             <source>Anthropic model:</source>
-            <translation type="unfinished"/>
+            <translation>인류 모델:</translation>
         </message>
         <message>
             <source>MS Azure region:</source>
-            <translation type="unfinished"/>
+            <translation>MS Azure 지역:</translation>
         </message>
         <message>
             <source>AWS Secret Key:</source>
-            <translation type="unfinished"/>
+            <translation>AWS 비밀 키:</translation>
         </message>
         <message>
             <source>AWS Region:</source>
-            <translation type="unfinished"/>
+            <translation>AWS 지역:</translation>
         </message>
         <message>
             <source>ID: %1</source>
-            <translation type="unfinished"/>
+            <translation>신분: %1</translation>
         </message>
         <message>
             <source>State: %1</source>
-            <translation type="unfinished"/>
+            <translation>국가: %1</translation>
         </message>
         <message>
             <source>Translation: %1</source>
-            <translation type="unfinished"/>
+            <translation>번역: %1</translation>
         </message>
         <message>
             <source>%d min %d s remaining</source>
-            <translation type="unfinished"/>
+            <translation>%d min %d의 나머지</translation>
         </message>
         <message>
             <source>%d of %d entries (%d%%) have no translation.\n\nUntranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.\n\nSave anyway?</source>
-            <translation type="unfinished"/>
+            <translation>%d의 %d 항목 (%d%%) 은 번역이 없습니다.\n\nUntranslated 항목은 원본 텍스트와 함께 표시되어 백업으로 저장됩니다. 그래서 재생 중에 여전히 표시됩니다. LinguaEdit에서 다시 열면, 그들은 올바르게 번역되지 않은 것으로 표시됩니다.\n\nSave 어쨌든?</translation>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s</source>
-            <translation type="unfinished"/>
+            <translation>%d의 %d 문자열 · %.1f 문자열/s · %s</translation>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s remaining</source>
-            <translation type="unfinished"/>
+            <translation>%d의 %d 문자열 · %.1f 문자열/s · %s의 나머지</translation>
         </message>
         <message>
             <source>%d s remaining</source>
-            <translation type="unfinished"/>
+            <translation>%d의 나머지</translation>
         </message>
         <message>
-            <source>&lt;p&gt;LinguaEdit is free software.&lt;/p&gt;&lt;p&gt;If you find it useful, consider supporting development:&lt;/p&gt;&lt;p&gt;❤️ &lt;b&gt;GitHub Sponsors:&lt;/b&gt; &lt;a href=&apos;https://github.com/sponsors/yeager&apos;&gt;github.com/sponsors/yeager&lt;/a&gt;&lt;/p&gt;&lt;p&gt;🇸🇪 &lt;b&gt;Swish:&lt;/b&gt; +46702526206 — &lt;a href=&apos;swish://payment?payee=0702526206&amp;message=LinguaEdit&apos;&gt;Öppna Swish&lt;/a&gt;&lt;/p&gt;</source>
-            <translation type="unfinished"/>
+            <source>&lt;p&gt;LinguaEdit is free software.&lt;/p&gt;&lt;p&gt;If you find it useful, consider supporting development:&lt;/p&gt;&lt;p&gt;❤️ &lt;b&gt;GitHub Sponsors:&lt;/b&gt; &lt;a href='https://github.com/sponsors/yeager'&gt;github.com/sponsors/yeager&lt;/a&gt;&lt;/p&gt;&lt;p&gt;🇸🇪 &lt;b&gt;Swish:&lt;/b&gt; +46702526206 — &lt;a href='swish://payment?payee=0702526206&amp;message=LinguaEdit'&gt;Öppna Swish&lt;/a&gt;&lt;/p&gt;</source>
+            <translation type="unfinished" />
         </message>
         <message>
-            <source>Cannot compile: install &apos;polib&apos; or &apos;gettext&apos; (msgfmt)</source>
-            <translation type="unfinished"/>
+            <source>Cannot compile: install 'polib' or 'gettext' (msgfmt)</source>
+            <translation>컴파일 할 수 없습니다: 'polib' 또는 'gettext' (msgfmt) 를 설치합니다</translation>
         </message>
         <message>
             <source>No untranslated entries</source>
-            <translation type="unfinished"/>
+            <translation>번역되지 않은 항목은 없습니다</translation>
         </message>
         <message>
             <source>Pre-translated %d entries via %s (%d errors)</source>
-            <translation type="unfinished"/>
+            <translation>%d 항목을 %s (%d 오류) 를 통해 사전 번역</translation>
         </message>
         <message>
             <source>Pre-translated %d entries via %s (%d errors — last: %s)</source>
-            <translation type="unfinished"/>
+            <translation>%d 항목을 %s (%d 오류  마지막: %s)</translation>
         </message>
         <message>
             <source>Pre-translated %d of %d entries via %s (cancelled)</source>
-            <translation type="unfinished"/>
+            <translation>%d를 %d로 이전 번역한 %s 항목 ( 취소)</translation>
         </message>
         <message>
             <source>Pre-translated %d of %d entries via %s (cancelled, %d errors — last: %s)</source>
-            <translation type="unfinished"/>
+            <translation>%d 항목의 %s를 통해 %d를 미리 번역 ( 취소, %d 오류  마지막: %s)</translation>
         </message>
         <message>
             <source>Pre-translate cancelled — no translations made</source>
-            <translation type="unfinished"/>
+            <translation>사전 번역 취소  번역이 이루어지지 않았습니다</translation>
         </message>
         <message>
             <source>Pre-translating…</source>
-            <translation type="unfinished"/>
+            <translation>사전 번역...</translation>
         </message>
         <message>
             <source>Translation Error</source>
-            <translation type="unfinished"/>
+            <translation>번역 오류</translation>
         </message>
         <message>
             <source>Error translating string %d of %d:</source>
-            <translation type="unfinished"/>
+            <translation>%d의 문자열 %d의 번역 오류:</translation>
         </message>
         <message>
             <source>Skip All Errors</source>
-            <translation type="unfinished"/>
+            <translation>모든 실수 를 생략</translation>
         </message>
         <message>
             <source>Continue</source>
-            <translation type="unfinished"/>
+            <translation>계속</translation>
         </message>
         <message>
             <source>Stop</source>
-            <translation type="unfinished"/>
+            <translation>그만해</translation>
         </message>
         <message>
-            <source>Recording macro &apos;{}&apos;...</source>
-            <translation type="unfinished"/>
+            <source>Recording macro '{}'...</source>
+            <translation>매크로 '{}'를 녹음...</translation>
         </message>
         <message>
-            <source>The file &apos;%s&apos; has unsaved changes.\nDo you want to save before closing?</source>
-            <translation type="unfinished"/>
+            <source>The file '%s' has unsaved changes.\nDo you want to save before closing?</source>
+            <translation>파일 '%s'에는 저장되지 않은 변경 사항이 있습니다.</translation>
         </message>
         <message>
             <source>LinguaEdit — %s</source>
-            <translation type="unfinished"/>
+            <translation>언어편집  %s</translation>
         </message>
         <message>
             <source>Backend: %s</source>
-            <translation type="unfinished"/>
+            <translation>백엔드: %s</translation>
         </message>
         <message>
-            <source>Source: \&quot;%s\&quot;\n  Entries: %s\n  Translations: %s\n</source>
-            <translation type="unfinished"/>
+            <source>Source: \"%s\"\n  Entries: %s\n  Translations: %s\n</source>
+            <translation>출처: \"%s\"\n 항목: %s\n 번역: %s\n</translation>
         </message>
-    <message>
+        <message>
             <source>Source: %s\nTarget: %s</source>
-            <translation type="unfinished"/>
+            <translation>출처: %s\n목적: %s</translation>
         </message>
         <message>
             <source>%s\n\nAdd a new term or check file?</source>
-            <translation type="unfinished"/>
+            <translation>%s\n\n새기 용어 추가 또는 체크파일?</translation>
         </message>
         <message>
             <source>File: %s\nEntries: %d</source>
-            <translation type="unfinished"/>
+            <translation>파일: %s\n입장: %d</translation>
         </message>
         <message>
             <source>Found %d inconsistencies:\n\n</source>
-            <translation type="unfinished"/>
+            <translation>%d의 불합성을 발견했습니다.</translation>
         </message>
         <message>
             <source>Weblate Statistics…</source>
-            <translation type="unfinished"/>
+            <translation>웹레이트 통계...</translation>
         </message>
         <message>
             <source>No Weblate API key or server URL configured.\nPlease add them in Translation → API Keys…</source>
-            <translation type="unfinished"/>
+            <translation>웹레이트 API 키나 서버 URL가 구성되지 않았습니다.</translation>
         </message>
         <message>
             <source>Weblate Error</source>
-            <translation type="unfinished"/>
+            <translation>웹레이트 오류</translation>
         </message>
         <message>
             <source>Weblate — %s</source>
-            <translation type="unfinished"/>
+            <translation>웹레이트  %s</translation>
         </message>
         <message>
             <source>  (fuzzy: %d)</source>
-            <translation type="unfinished"/>
+            <translation>(무조한: %d)</translation>
         </message>
         <message>
             <source>Weblate Server URL:</source>
-            <translation type="unfinished"/>
+            <translation>웹레이트 서버 URL:</translation>
         </message>
-    <message><source>No API Key</source><translation type="unfinished"/></message><message><source>No Transifex API key configured.
-Please add one in Translation → API Keys…</source><translation type="unfinished"/></message><message><source>No language statistics found.</source><translation type="unfinished"/></message><message><source>No organizations found.</source><translation type="unfinished"/></message><message><source>No projects found.</source><translation type="unfinished"/></message><message><source>Organization:</source><translation>조직:</translation></message><message><source>Project:</source><translation>프로젝트:</translation></message><message><source>Select Organization</source><translation type="unfinished"/></message><message><source>Select Project</source><translation type="unfinished"/></message><message><source>Transifex Error</source><translation type="unfinished"/></message><message><source>Transifex Statistics…</source><translation type="unfinished"/></message><message><source>Transifex — %s</source><translation type="unfinished"/></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation type="unfinished"/></message>    <message>
-        <source>
+        <message>
+            <source>No API Key</source>
+            <translation>API 키가 없습니다</translation>
+        </message>
+        <message>
+            <source>No Transifex API key configured.
+Please add one in Translation → API Keys…</source>
+            <translation>트랜시페엑스 API 키가 구성되지 않았습니다. 번역 → API 키에 하나 추가하시기 바랍니다.</translation>
+        </message>
+        <message>
+            <source>No language statistics found.</source>
+            <translation>언어 통계 자료는 발견되지 않았습니다.</translation>
+        </message>
+        <message>
+            <source>No organizations found.</source>
+            <translation>조직은 발견되지 않았습니다.</translation>
+        </message>
+        <message>
+            <source>No projects found.</source>
+            <translation>프로젝트가 발견되지 않았습니다.</translation>
+        </message>
+        <message>
+            <source>Organization:</source>
+            <translation>조직:</translation>
+        </message>
+        <message>
+            <source>Project:</source>
+            <translation>프로젝트:</translation>
+        </message>
+        <message>
+            <source>Select Organization</source>
+            <translation>조직 을 선택 하십시오</translation>
+        </message>
+        <message>
+            <source>Select Project</source>
+            <translation>프로젝트 선택</translation>
+        </message>
+        <message>
+            <source>Transifex Error</source>
+            <translation>트랜시페엑스 오류</translation>
+        </message>
+        <message>
+            <source>Transifex Statistics…</source>
+            <translation>트랜시페크스 통계는...</translation>
+        </message>
+        <message>
+            <source>Transifex — %s</source>
+            <translation>트랜시페엑스  %s</translation>
+        </message>
+        <message>
+            <source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source>
+            <translation>&lt;b&gt;%s&lt;/b&gt;의 번역 통계는:</translation>
+        </message>
+        <message>
+            <source>
 
 Errors:
 {}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>%d of %d entries (%d%%) have no translation.
+            <translation>오류: {}</translation>
+        </message>
+        <message>
+            <source>%d of %d entries (%d%%) have no translation.
 
 Untranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.
 
 Save anyway?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>%s
+            <translation>%d의 %d 항목 (%d%%) 은 번역이 없습니다. 번역되지 않은 항목은 원본 텍스트로 표시되어 백업으로 저장됩니다. 따라서 재생 중에 여전히 표시됩니다. LinguaEdit에서 다시 열면 번역되지 않은 것으로 올바르게 표시됩니다. 어쨌든 저장하십시오.</translation>
+        </message>
+        <message>
+            <source>%s
 
 Add a new term or check file?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Approved</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Back-translating…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Back-translation Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Back-translation Verification</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>By context</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Could not read video file:
+            <translation>%s 새로운 용어 추가 또는 체크 파일?</translation>
+        </message>
+        <message>
+            <source>Approved</source>
+            <translation>승인</translation>
+        </message>
+        <message>
+            <source>Back-translating…</source>
+            <translation>다시 번역해...</translation>
+        </message>
+        <message>
+            <source>Back-translation Error</source>
+            <translation>역 번역 오류</translation>
+        </message>
+        <message>
+            <source>Back-translation Verification</source>
+            <translation>후 번역 검증</translation>
+        </message>
+        <message>
+            <source>By context</source>
+            <translation>맥락별로</translation>
+        </message>
+        <message>
+            <source>Could not read video file:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Failed to run msgmerge:
+            <translation>비디오 파일을 읽을 수 없습니다: %s</translation>
+        </message>
+        <message>
+            <source>Failed to run msgmerge:
 {}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>File: %s
+            <translation>msgmerge를 실행하지 못함: {}</translation>
+        </message>
+        <message>
+            <source>File: %s
 Entries: %d</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Found %d inconsistencies:
+            <translation>파일: %s 항목: %d</translation>
+        </message>
+        <message>
+            <source>Found %d inconsistencies:
 
 </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Help translate:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Issues:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Made %d replacements</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Needs review</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No Crowdin API key configured.
+            <translation>%d의 불일치성 발견: </translation>
+        </message>
+        <message>
+            <source>Help translate:</source>
+            <translation>번역 도움말:</translation>
+        </message>
+        <message>
+            <source>Issues:</source>
+            <translation>문제:</translation>
+        </message>
+        <message>
+            <source>Made %d replacements</source>
+            <translation>%d를 대체하는 제조품</translation>
+        </message>
+        <message>
+            <source>Needs review</source>
+            <translation>검토 필요성</translation>
+        </message>
+        <message>
+            <source>No Crowdin API key configured.
 Please add one in Translation → API Keys…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No Weblate API key or server URL configured.
+            <translation>크라우딘 API 키가 구성되지 않았습니다. 번역 → API 키에 하나 추가하시기 바랍니다.</translation>
+        </message>
+        <message>
+            <source>No Weblate API key or server URL configured.
 Please add them in Translation → API Keys…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No entry selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No matches found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>PO file merged successfully with POT file.
+            <translation>웹레이트 API 키나 서버 URL가 구성되어 있지 않습니다. 번역 → API 키에 추가하시기 바랍니다.</translation>
+        </message>
+        <message>
+            <source>No entry selected</source>
+            <translation>선택된 항목은 없습니다</translation>
+        </message>
+        <message>
+            <source>No matches found</source>
+            <translation>일치된 것 없습니다</translation>
+        </message>
+        <message>
+            <source>PO file merged successfully with POT file.
 Please reload the file to see changes.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Pomodoro Timer…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Quality score:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Rejected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Review status: %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Review status: Needs review</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Source text is read-only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Source:
+            <translation>POT 파일과 성공적으로 통합되었습니다. 변경 사항을 보기 위해 파일을 다시 로드하십시오.</translation>
+        </message>
+        <message>
+            <source>Pomodoro Timer…</source>
+            <translation>포모도로 타이머</translation>
+        </message>
+        <message>
+            <source>Quality score:</source>
+            <translation>품질 점수는:</translation>
+        </message>
+        <message>
+            <source>Rejected</source>
+            <translation>거절당</translation>
+        </message>
+        <message>
+            <source>Review status: %s</source>
+            <translation>검토 상태: %s</translation>
+        </message>
+        <message>
+            <source>Review status: Needs review</source>
+            <translation>검토 상태: 검토 필요</translation>
+        </message>
+        <message>
+            <source>Source text is read-only</source>
+            <translation>출처 텍스트는 읽기 전용</translation>
+        </message>
+        <message>
+            <source>Source:
 %s
 
 Back-translation:
 %s
 
 Text similarity: %.0f%%</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Source: %s
+            <translation>출처: %s 역 번역: %s 텍스트 유사성: %.0f%%</translation>
+        </message>
+        <message>
+            <source>Source: %s
 Target: %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Source: \"%s\"
+            <translation>출처: %s 목표: %s</translation>
+        </message>
+        <message>
+            <source>Source: \"%s\"
   Entries: %s
   Translations: %s
 </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Spelling issues:
+            <translation>출처: \"%s\" 항목: %s 번역: %s </translation>
+        </message>
+        <message>
+            <source>Spelling issues:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The current entry is untranslated</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The current file has unsaved changes.
+            <translation>철자문제: %s</translation>
+        </message>
+        <message>
+            <source>The current entry is untranslated</source>
+            <translation>현재 항목은 번역되지 않았습니다</translation>
+        </message>
+        <message>
+            <source>The current file has unsaved changes.
 Do you want to save before continuing?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The file '%s' has unsaved changes.
+            <translation>현재 파일에는 저장되지 않은 변경 사항이 있습니다. 계속하기 전에 저장하고 싶습니까?</translation>
+        </message>
+        <message>
+            <source>The file '%s' has unsaved changes.
 Do you want to save before closing?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Verify with Back-translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>msgmerge failed:
+            <translation>파일 '%s'에는 저장되지 않은 변경 사항이 있습니다. 닫기 전에 저장하고 싶습니까?</translation>
+        </message>
+        <message>
+            <source>Verify with Back-translation</source>
+            <translation>백 번역으로 확인</translation>
+        </message>
+        <message>
+            <source>msgmerge failed:
 {}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>A newer local recovery snapshot exists. Restore it?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Accessibility</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Accessibility check</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Automatic QA found %d errors. Save anyway?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Found %d issues:
+            <translation>msgmerge 실패: {}</translation>
+        </message>
+        <message>
+            <source>A newer local recovery snapshot exists. Restore it?</source>
+            <translation>새로운 로컬 복구 스냅샷이 있습니다.</translation>
+        </message>
+        <message>
+            <source>Accessibility</source>
+            <translation>접근성</translation>
+        </message>
+        <message>
+            <source>Accessibility check</source>
+            <translation>접근성 검증</translation>
+        </message>
+        <message>
+            <source>Automatic QA found %d errors. Save anyway?</source>
+            <translation>자동검사는 %d 오류를 발견했지</translation>
+        </message>
+        <message>
+            <source>Found %d issues:
 
 </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Git Commit Blocked</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Health: %.1f%%
+            <translation>%d 문제점을 찾았습니다: </translation>
+        </message>
+        <message>
+            <source>Git Commit Blocked</source>
+            <translation>Git 컴백 차단</translation>
+        </message>
+        <message>
+            <source>Health: %.1f%%
 Translated: %d/%d
 Stale: %d
 Errors: %d
@@ -3946,90 +3999,90 @@ Warnings: %d
 Terminology issues: %d
 Accessibility issues: %d
 Risks: %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Inspect translation build</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No accessibility issues found! ✓</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No linguaedit_*.ts catalogs found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Potential secrets were found. Nothing was staged.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Project Health</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Project health</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Pseudolocalize current entry</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Pseudolocalized current entry</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>QA profile: Android</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>QA profile: Qt</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>QA profile: Subtitles</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Quality errors</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Recover unsaved work</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select translation catalog directory</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Translation Build</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>none</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>건강: %.1f%% 번역: %d/%d 상태: %d 오류: %d 경고: %d 용어 문제: %d 접근성 문제: %d 위험: %s</translation>
+        </message>
+        <message>
+            <source>Inspect translation build</source>
+            <translation>번역 구조를 검사</translation>
+        </message>
+        <message>
+            <source>No accessibility issues found! ✓</source>
+            <translation>접근성 문제도 발견되지 않았습니다! ✓</translation>
+        </message>
+        <message>
+            <source>No linguaedit_*.ts catalogs found</source>
+            <translation>언어edit_*.ts 카탈로그가 발견되지 않았다</translation>
+        </message>
+        <message>
+            <source>Potential secrets were found. Nothing was staged.</source>
+            <translation>잠재적인 비밀이 발견됐습니다. 무작위도 없었어요.</translation>
+        </message>
+        <message>
+            <source>Project Health</source>
+            <translation>프로젝트 건강</translation>
+        </message>
+        <message>
+            <source>Project health</source>
+            <translation>프로젝트 건강</translation>
+        </message>
+        <message>
+            <source>Pseudolocalize current entry</source>
+            <translation>현재 항목을 Pseudolocalize</translation>
+        </message>
+        <message>
+            <source>Pseudolocalized current entry</source>
+            <translation>사이드 로컬라이즈된 현재 항목</translation>
+        </message>
+        <message>
+            <source>QA profile: Android</source>
+            <translation>QA 프로필: 안드로이드</translation>
+        </message>
+        <message>
+            <source>QA profile: Qt</source>
+            <translation>QA 프로필: Qt</translation>
+        </message>
+        <message>
+            <source>QA profile: Subtitles</source>
+            <translation>QA 프로필: 자막</translation>
+        </message>
+        <message>
+            <source>Quality errors</source>
+            <translation>품질 오류</translation>
+        </message>
+        <message>
+            <source>Recover unsaved work</source>
+            <translation>저장되지 않은 작업을 복구</translation>
+        </message>
+        <message>
+            <source>Select translation catalog directory</source>
+            <translation>번역 카탈로그 디렉토리를 선택</translation>
+        </message>
+        <message>
+            <source>Translation Build</source>
+            <translation>번역 을 구축</translation>
+        </message>
+        <message>
+            <source>none</source>
+            <translation>아무 것도</translation>
+        </message>
+    </context>
     <context>
         <name>Linter</name>
         <message>
             <source>Accelerator key mismatch: source has %d, translation has %d</source>
-            <translation type="unfinished"/>
+            <translation>가속기 키 부합: 소스는 %d, 번역은 %d</translation>
         </message>
         <message>
             <source>Case mismatch: source starts with </source>
-            <translation type="unfinished"/>
+            <translation>사건의 일치가 안되는 경우: </translation>
         </message>
         <message>
             <source>Ending </source>
-            <translation type="unfinished"/>
+            <translation>끝나는</translation>
         </message>
         <message>
             <source>Extra HTML/XML tags in translation: %s</source>
-            <translation type="unfinished"/>
+            <translation>번역의 추가 HTML/XML 태그: %s</translation>
         </message>
         <message>
             <source>Format specifier mismatch: %s vs %s</source>
@@ -4041,11 +4094,11 @@ Risks: %s</source>
         </message>
         <message>
             <source>Glossary inconsistency: %s</source>
-            <translation type="unfinished"/>
+            <translation>글래스카리 불일치성: %s</translation>
         </message>
         <message>
             <source>Inconsistent translation for </source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Leading whitespace mismatch</source>
@@ -4053,7 +4106,7 @@ Risks: %s</source>
         </message>
         <message>
             <source>Missing HTML/XML tags in translation: %s</source>
-            <translation type="unfinished"/>
+            <translation>번역에서 HTML/XML 태그가 없어진 것: %s</translation>
         </message>
         <message>
             <source>Newline count mismatch (%s vs %s)</source>
@@ -4080,31 +4133,31 @@ Risks: %s</source>
         <name>LocaleMapDialog</name>
         <message>
             <source>Average progress</source>
-            <translation type="unfinished"/>
+            <translation>평균 진전</translation>
         </message>
         <message>
             <source>Browse...</source>
-            <translation type="unfinished"/>
+            <translation>- 브루즈...</translation>
         </message>
         <message>
             <source>Click on a country to see details</source>
-            <translation type="unfinished"/>
+            <translation>자세한 사항 을 보기 위해 국가 를 클릭 하십시오</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Complete</source>
-            <translation type="unfinished"/>
+            <translation>완전함</translation>
         </message>
         <message>
             <source>Countries with translations</source>
-            <translation type="unfinished"/>
+            <translation>번역을 하는 나라</translation>
         </message>
         <message>
             <source>Country Details</source>
-            <translation type="unfinished"/>
+            <translation>국가 세부 사항</translation>
         </message>
         <message>
             <source>Fuzzy</source>
@@ -4112,35 +4165,35 @@ Risks: %s</source>
         </message>
         <message>
             <source>Locale Files</source>
-            <translation type="unfinished"/>
+            <translation>지역 파일</translation>
         </message>
         <message>
             <source>Minimal</source>
-            <translation type="unfinished"/>
+            <translation>최소</translation>
         </message>
         <message>
             <source>Missing</source>
-            <translation type="unfinished"/>
+            <translation>실종</translation>
         </message>
         <message>
             <source>No translation data</source>
-            <translation type="unfinished"/>
+            <translation>번역 자료가 없습니다</translation>
         </message>
         <message>
             <source>No translation files found in project.</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트에서 번역 파일은 발견되지 않았습니다.</translation>
         </message>
         <message>
             <source>Open File</source>
-            <translation type="unfinished"/>
+            <translation>파일 열기</translation>
         </message>
         <message>
             <source>Partial</source>
-            <translation type="unfinished"/>
+            <translation>부분</translation>
         </message>
         <message>
             <source>Project Summary</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트 요약</translation>
         </message>
         <message>
             <source>Project:</source>
@@ -4148,15 +4201,15 @@ Risks: %s</source>
         </message>
         <message>
             <source>Refresh</source>
-            <translation type="unfinished"/>
+            <translation>신선함</translation>
         </message>
         <message>
             <source>Select Project Directory</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트 디렉토리를 선택</translation>
         </message>
         <message>
             <source>Total strings</source>
-            <translation type="unfinished"/>
+            <translation>전체 문자열</translation>
         </message>
         <message>
             <source>Translated</source>
@@ -4164,182 +4217,182 @@ Risks: %s</source>
         </message>
         <message>
             <source>Translation Map</source>
-            <translation type="unfinished"/>
+            <translation>번역 지도</translation>
         </message>
         <message>
             <source>Translation Progress by Region</source>
-            <translation type="unfinished"/>
+            <translation>지역별 번역 진전</translation>
         </message>
         <message>
             <source>Translation Statistics</source>
-            <translation type="unfinished"/>
+            <translation>번역 통계</translation>
         </message>
         <message>
             <source>Would open: {}</source>
-            <translation type="unfinished"/>
+            <translation>열리겠네</translation>
         </message>
     </context>
     <context>
         <name>MacroDialog</name>
         <message>
             <source>A macro with this name already exists. Please choose a different name.</source>
-            <translation type="unfinished"/>
+            <translation>이 이름의 매크로가 이미 존재합니다. 다른 이름을 선택하세요.</translation>
         </message>
         <message>
             <source>Actions:</source>
-            <translation type="unfinished"/>
+            <translation>행동:</translation>
         </message>
         <message>
             <source>Are you sure you want to delete the macro </source>
-            <translation type="unfinished"/>
+            <translation>매크로를 삭제하고 싶다는 확신이 있습니까?</translation>
         </message>
         <message>
             <source>Cannot find main window for macro playback.</source>
-            <translation type="unfinished"/>
+            <translation>매크로 재생을 위한 메인 윈도우는 찾을 수 없습니다.</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Delete</source>
-            <translation type="unfinished"/>
+            <translation>삭제</translation>
         </message>
         <message>
             <source>Delete Failed</source>
-            <translation type="unfinished"/>
+            <translation>삭제 실패</translation>
         </message>
         <message>
             <source>Delete Macro</source>
-            <translation type="unfinished"/>
+            <translation>매크로 삭제</translation>
         </message>
         <message>
             <source>Description:</source>
-            <translation type="unfinished"/>
+            <translation>설명:</translation>
         </message>
         <message>
             <source>Disabled</source>
-            <translation type="unfinished"/>
+            <translation>장애인</translation>
         </message>
         <message>
             <source>Enabled:</source>
-            <translation type="unfinished"/>
+            <translation>활성화:</translation>
         </message>
         <message>
             <source>Enter macro description (optional):</source>
-            <translation type="unfinished"/>
+            <translation>매크로 설명 (선택) 을 입력합니다.</translation>
         </message>
         <message>
             <source>Enter macro name:</source>
-            <translation type="unfinished"/>
+            <translation>매크로 이름을 입력합니다:</translation>
         </message>
         <message>
             <source>Enter new name:</source>
-            <translation type="unfinished"/>
+            <translation>새 이름을 입력하세요:</translation>
         </message>
         <message>
             <source>Export</source>
-            <translation type="unfinished"/>
+            <translation>수출</translation>
         </message>
         <message>
             <source>Export Error</source>
-            <translation type="unfinished"/>
+            <translation>수출 오류</translation>
         </message>
         <message>
             <source>Export Failed</source>
-            <translation type="unfinished"/>
+            <translation>수출 실패</translation>
         </message>
         <message>
             <source>Export Macro</source>
-            <translation type="unfinished"/>
+            <translation>수출 매크로</translation>
         </message>
         <message>
             <source>Export Successful</source>
-            <translation type="unfinished"/>
+            <translation>수출 성공</translation>
         </message>
         <message>
             <source>Failed to delete macro.</source>
-            <translation type="unfinished"/>
+            <translation>매크로 삭제 실패</translation>
         </message>
         <message>
             <source>Failed to export macro.</source>
-            <translation type="unfinished"/>
+            <translation>매크로 수출 실패</translation>
         </message>
         <message>
             <source>Failed to export macro: {}</source>
-            <translation type="unfinished"/>
+            <translation>{} 매크로를 수출하지 못함</translation>
         </message>
         <message>
             <source>Failed to import macro: {}</source>
-            <translation type="unfinished"/>
+            <translation>매크로 수입 실패: {}</translation>
         </message>
         <message>
             <source>Failed to play macro </source>
-            <translation type="unfinished"/>
+            <translation>매크로 플레이 안 해 </translation>
         </message>
         <message>
             <source>Failed to rename macro. The new name may already exist.</source>
-            <translation type="unfinished"/>
+            <translation>매크로 이름을 변경하지 못했어요. 새 이름은 이미 존재할 수도 있습니다.</translation>
         </message>
         <message>
             <source>Failed to save the macro. No actions were recorded.</source>
-            <translation type="unfinished"/>
+            <translation>매크로 저장하지 못했고, 기록된 액션도 없었습니다.</translation>
         </message>
         <message>
             <source>Import</source>
-            <translation type="unfinished"/>
+            <translation>수입</translation>
         </message>
         <message>
             <source>Import Error</source>
-            <translation type="unfinished"/>
+            <translation>수입 오류</translation>
         </message>
         <message>
             <source>Import Failed</source>
-            <translation type="unfinished"/>
+            <translation>수입 실패</translation>
         </message>
         <message>
             <source>Import Macro</source>
-            <translation type="unfinished"/>
+            <translation>매크로 수입</translation>
         </message>
         <message>
             <source>Import Successful</source>
-            <translation type="unfinished"/>
+            <translation>수입 성공</translation>
         </message>
         <message>
             <source>JSON Files (*.json)</source>
-            <translation type="unfinished"/>
+            <translation>JSON 파일 (*.json)</translation>
         </message>
         <message>
             <source>Macro </source>
-            <translation type="unfinished"/>
+            <translation>매크로 </translation>
         </message>
         <message>
             <source>Macro Description</source>
-            <translation type="unfinished"/>
+            <translation>매크로 설명</translation>
         </message>
         <message>
             <source>Macro Details</source>
-            <translation type="unfinished"/>
+            <translation>매크로 세부 사항</translation>
         </message>
         <message>
             <source>Macro Exists</source>
-            <translation type="unfinished"/>
+            <translation>맥로 존재</translation>
         </message>
         <message>
             <source>Macro Saved</source>
-            <translation type="unfinished"/>
+            <translation>매크로 저장</translation>
         </message>
         <message>
             <source>Macro exported to {}</source>
-            <translation type="unfinished"/>
+            <translation>{}에 수출된 매크로</translation>
         </message>
         <message>
             <source>Macros</source>
-            <translation type="unfinished"/>
+            <translation>매크로</translation>
         </message>
         <message>
             <source>Manage Macros</source>
-            <translation type="unfinished"/>
+            <translation>매크로 관리</translation>
         </message>
         <message>
             <source>Name:</source>
@@ -4347,184 +4400,184 @@ Risks: %s</source>
         </message>
         <message>
             <source>No actions recorded</source>
-            <translation type="unfinished"/>
+            <translation>기록된 행위가 없습니다</translation>
         </message>
         <message>
             <source>Play</source>
-            <translation type="unfinished"/>
+            <translation>놀아</translation>
         </message>
         <message>
             <source>Playback Error</source>
-            <translation type="unfinished"/>
+            <translation>재생 오류</translation>
         </message>
         <message>
             <source>Ready to record</source>
-            <translation type="unfinished"/>
+            <translation>녹화 준비</translation>
         </message>
         <message>
             <source>Record Macro</source>
-            <translation type="unfinished"/>
+            <translation>기록 매크로</translation>
         </message>
         <message>
             <source>Record New Macro</source>
-            <translation type="unfinished"/>
+            <translation>새 매크로 기록</translation>
         </message>
         <message>
             <source>Recording Failed</source>
-            <translation type="unfinished"/>
+            <translation>녹음 실패</translation>
         </message>
         <message>
             <source>Rename</source>
-            <translation type="unfinished"/>
+            <translation>이름 변경</translation>
         </message>
         <message>
             <source>Rename Failed</source>
-            <translation type="unfinished"/>
+            <translation>이름 변경 실패</translation>
         </message>
         <message>
             <source>Rename Macro</source>
-            <translation type="unfinished"/>
+            <translation>매크로로로 명칭 변경</translation>
         </message>
         <message>
             <source>Shortcut:</source>
-            <translation type="unfinished"/>
+            <translation>단축:</translation>
         </message>
         <message>
             <source>Stop Recording</source>
-            <translation type="unfinished"/>
+            <translation>녹음 그만</translation>
         </message>
         <message>
             <source>🔴 Recording in progress...</source>
-            <translation type="unfinished"/>
+            <translation>🔴 녹음 진행 중입니다...</translation>
         </message>
         <message>
             <source>🔴 Recording... ({} actions)</source>
-            <translation type="unfinished"/>
+            <translation>🔴 녹음... ({} 행동)</translation>
         </message>
         <message>
-            <source>Are you sure you want to delete the macro &apos;{}&apos;?</source>
-            <translation type="unfinished"/>
+            <source>Are you sure you want to delete the macro '{}'?</source>
+            <translation>'{}' 매크로를 삭제하고 싶다는 확신이 있습니까?</translation>
         </message>
         <message>
-            <source>Failed to play macro &apos;{}&apos;.</source>
-            <translation type="unfinished"/>
+            <source>Failed to play macro '{}'.</source>
+            <translation>매크로 '{}'를 재생하지 못했습니다.</translation>
         </message>
         <message>
-            <source>Macro &apos;{}&apos; has been saved successfully.</source>
-            <translation type="unfinished"/>
+            <source>Macro '{}' has been saved successfully.</source>
+            <translation>매크로 '{}'는 성공적으로 저장되었습니다.</translation>
         </message>
     </context>
     <context>
         <name>MergePreviewDialog</name>
         <message>
             <source>Merge Entries</source>
-            <translation type="unfinished"/>
+            <translation>합병 항목</translation>
         </message>
         <message>
             <source>Original segments:</source>
-            <translation type="unfinished"/>
+            <translation>원본 세그먼트:</translation>
         </message>
         <message>
             <source>Preview of merged entry ({} segments):</source>
-            <translation type="unfinished"/>
+            <translation>통합 항목 ({} 세그먼트) 의 미리보기:</translation>
         </message>
         <message>
             <source>Source:</source>
-            <translation type="unfinished"/>
+            <translation>출처:</translation>
         </message>
         <message>
             <source>Translation:</source>
-            <translation type="unfinished"/>
+            <translation>번역:</translation>
         </message>
     </context>
     <context>
         <name>MinimapWidget</name>
         <message>
             <source>Minimap – click to jump</source>
-            <translation type="unfinished"/>
+            <translation>미니맵  클릭하여 점프</translation>
         </message>
     </context>
     <context>
         <name>OCRDialog</name>
         <message>
             <source>Apply image preprocessing to improve OCR accuracy</source>
-            <translation type="unfinished"/>
+            <translation>OCR 정확성을 높이기 위해 이미지의 사전 처리를 적용</translation>
         </message>
         <message>
             <source>Apply preprocessing</source>
-            <translation type="unfinished"/>
+            <translation>사전 처리를 적용</translation>
         </message>
         <message>
             <source>Assume a single column of text of variable sizes</source>
-            <translation type="unfinished"/>
+            <translation>변수 크기의 단일 텍스트 열을 가정합니다</translation>
         </message>
         <message>
             <source>Assume a single uniform block of text</source>
-            <translation type="unfinished"/>
+            <translation>하나의 유니폼 텍스트 블록을 가정합니다</translation>
         </message>
         <message>
             <source>Assume a single uniform block of vertically aligned text</source>
-            <translation type="unfinished"/>
+            <translation>수직적으로 조선된 텍스트의 단일 균일 블록을 가정합니다</translation>
         </message>
         <message>
             <source>Automatic page segmentation with OSD</source>
-            <translation type="unfinished"/>
+            <translation>OSD로 자동 페이지 세그먼트</translation>
         </message>
         <message>
             <source>Automatic page segmentation, but no OSD, or OCR</source>
-            <translation type="unfinished"/>
+            <translation>자동 페이지 세그먼트, 하지만 OSD, OCR가 없습니다</translation>
         </message>
         <message>
             <source>Browse Image...</source>
-            <translation type="unfinished"/>
+            <translation>이미지 탐색...</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Could not load image.</source>
-            <translation type="unfinished"/>
+            <translation>이미지 로드 할 수 없었습니다.</translation>
         </message>
         <message>
             <source>Create PO from Extracted Strings</source>
-            <translation type="unfinished"/>
+            <translation>추출된 문자열에서 PO를 생성</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>오류</translation>
         </message>
         <message>
             <source>Extract Text</source>
-            <translation type="unfinished"/>
+            <translation>추출 문장</translation>
         </message>
         <message>
             <source>Extracted Text</source>
-            <translation type="unfinished"/>
+            <translation>추출 된 문장</translation>
         </message>
         <message>
             <source>Failed to create PO file:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>PO 파일을 생성하지 못했습니다:\n{}</translation>
         </message>
         <message>
             <source>Filter extracted strings...</source>
-            <translation type="unfinished"/>
+            <translation>필터 추출된 문자열...</translation>
         </message>
         <message>
             <source>Filter:</source>
-            <translation type="unfinished"/>
+            <translation>필터:</translation>
         </message>
         <message>
             <source>Fully automatic page segmentation, but no OSD</source>
-            <translation type="unfinished"/>
+            <translation>완전히 자동 페이지 세그먼트, 하지만 OSD가 없습니다</translation>
         </message>
         <message>
             <source>Image</source>
-            <translation type="unfinished"/>
+            <translation>이미지</translation>
         </message>
         <message>
             <source>Image Files (*.png *.jpg *.jpeg *.gif *.bmp *.tiff)</source>
-            <translation type="unfinished"/>
+            <translation>이미지 파일 (*.png *.jpg *.jpeg *.gif *.bmp *.tiff)</translation>
         </message>
         <message>
             <source>Language:</source>
@@ -4532,47 +4585,47 @@ Risks: %s</source>
         </message>
         <message>
             <source>No Strings</source>
-            <translation type="unfinished"/>
+            <translation>줄이 없는 것</translation>
         </message>
         <message>
             <source>No strings selected for PO file creation.</source>
-            <translation type="unfinished"/>
+            <translation>PO 파일 생성에 대한 문자열이 선택되지 않았습니다.</translation>
         </message>
         <message>
             <source>OCR Error</source>
-            <translation type="unfinished"/>
+            <translation>OCR 오류</translation>
         </message>
         <message>
             <source>OCR Screenshot</source>
-            <translation type="unfinished"/>
+            <translation>OCR 스크린샷</translation>
         </message>
         <message>
             <source>OCR Settings</source>
-            <translation type="unfinished"/>
+            <translation>OCR 설정</translation>
         </message>
         <message>
             <source>Orientation and script detection (OSD) only</source>
-            <translation type="unfinished"/>
+            <translation>오리엔테이션 및 스크립트 탐지 (OSD) 만</translation>
         </message>
         <message>
             <source>PO Files (*.po)</source>
-            <translation type="unfinished"/>
+            <translation>PO 파일 (*.po)</translation>
         </message>
         <message>
             <source>PO file created successfully:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>PO 파일은 성공적으로 생성되었습니다:\n{}</translation>
         </message>
         <message>
             <source>Page Segmentation:</source>
-            <translation type="unfinished"/>
+            <translation>페이지 세그먼트:</translation>
         </message>
         <message>
             <source>Raw OCR Output</source>
-            <translation type="unfinished"/>
+            <translation>원료 OCR 출력</translation>
         </message>
         <message>
             <source>Raw line. Treat the image as a single text line, bypassing hacks</source>
-            <translation type="unfinished"/>
+            <translation>화면을 하나의 텍스트 라인으로 취급하고 해킹을 우회하는</translation>
         </message>
         <message>
             <source>Remove Selected</source>
@@ -4580,114 +4633,114 @@ Risks: %s</source>
         </message>
         <message>
             <source>Save PO File</source>
-            <translation type="unfinished"/>
+            <translation>PO 파일 저장</translation>
         </message>
         <message>
             <source>Select All</source>
-            <translation type="unfinished"/>
+            <translation>모든 것 을 선택</translation>
         </message>
         <message>
             <source>Select Image</source>
-            <translation type="unfinished"/>
+            <translation>이미지 선택</translation>
         </message>
         <message>
             <source>Select None</source>
-            <translation type="unfinished"/>
+            <translation>선택함</translation>
         </message>
         <message>
             <source>Sparse text with OSD</source>
-            <translation type="unfinished"/>
+            <translation>OSD로 문자 소모</translation>
         </message>
         <message>
             <source>Sparse text. Find as much text as possible in no particular order</source>
-            <translation type="unfinished"/>
+            <translation>텍스트를 줄여서, 가능한 한 많은 텍스트를 특정 순서로 찾아내지 마십시오</translation>
         </message>
         <message>
             <source>Success</source>
-            <translation type="unfinished"/>
+            <translation>성공</translation>
         </message>
         <message>
             <source>Tesseract Required</source>
-            <translation type="unfinished"/>
+            <translation>테세라크트 의 필요성</translation>
         </message>
         <message>
             <source>Treat the image as a single character</source>
-            <translation type="unfinished"/>
+            <translation>이미지를 하나의 캐릭터로 취급하라</translation>
         </message>
         <message>
             <source>Treat the image as a single text line</source>
-            <translation type="unfinished"/>
+            <translation>이미지를 하나의 텍스트 라인으로 처리</translation>
         </message>
         <message>
             <source>Treat the image as a single word</source>
-            <translation type="unfinished"/>
+            <translation>이미지를 하나의 단어로 취급하라</translation>
         </message>
         <message>
             <source>Treat the image as a single word in a circle</source>
-            <translation type="unfinished"/>
+            <translation>그림은 하나의 단어로 회로로 대접해</translation>
         </message>
         <message>
             <source>✓ Tesseract available: %1</source>
-            <translation type="unfinished"/>
+            <translation>✓ 테세라크트 사용 가능: %1</translation>
         </message>
         <message>
             <source>Image loaded: %1</source>
-            <translation type="unfinished"/>
+            <translation>이미지가 로드: %1</translation>
         </message>
         <message>
             <source>✓ OCR completed. Found %1 text strings.</source>
-            <translation type="unfinished"/>
+            <translation>✓ OCR 완료. %1 텍스트 문자열을 찾았습니다.</translation>
         </message>
         <message>
             <source>✗ OCR failed: %1</source>
-            <translation type="unfinished"/>
+            <translation> OCR 실패: %1</translation>
         </message>
         <message>
             <source>OCR functionality requires tesseract-ocr to be installed.\n\nInstallation instructions:\n• macOS: brew install tesseract\n• Ubuntu/Debian: sudo apt install tesseract-ocr\n• Windows: Download from GitHub releases\n• Arch Linux: sudo pacman -S tesseract</source>
-            <translation type="unfinished"/>
+            <translation>OCR 기능에 테세라크트-오크르 설치가 필요합니다.\n\n 설치 지침:\n• macOS: brew install tesseract\n• Ubuntu/Debian: sudo apt install tesseract-ocr\n• Windows: GitHub 버전에서 다운로드\n• Arch Linux: sudo pacman -S tesseract</translation>
         </message>
         <message>
             <source>⚠ No text found in image.</source>
-            <translation type="unfinished"/>
+            <translation> 이미지에는 텍스트가 없습니다.</translation>
         </message>
         <message>
             <source>⚠ Tesseract not found. Please install tesseract-ocr.</source>
-            <translation type="unfinished"/>
+            <translation> 테세라크트는 발견되지 않았습니다. 테세라크트-오크를 설치하시기 바랍니다.</translation>
         </message>
         <message>
-        <source>Failed to create PO file:
+            <source>Failed to create PO file:
 {}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>OCR functionality requires tesseract-ocr to be installed.
+            <translation>PO 파일을 생성하지 못함: {}</translation>
+        </message>
+        <message>
+            <source>OCR functionality requires tesseract-ocr to be installed.
 
 Installation instructions:
 • macOS: brew install tesseract
 • Ubuntu/Debian: sudo apt install tesseract-ocr
 • Windows: Download from GitHub releases
 • Arch Linux: sudo pacman -S tesseract</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>PO file created successfully:
+            <translation>OCR 기능에 테세라크트-오크르 설치가 필요합니다. 설치 지침: • macOS: brew 설치 테세라크트 • Ubuntu/Debian: sudo apt 설치 테세라크트-오크르 • Windows: GitHub 버전에서 다운로드 • Arch Linux: sudo pacman -S 테세라크트</translation>
+        </message>
+        <message>
+            <source>PO file created successfully:
 {}</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>성공적으로 생성된 PO 파일: {}</translation>
+        </message>
+    </context>
     <context>
         <name>OCRWorker</name>
         <message>
             <source>Checking tesseract installation...</source>
-            <translation type="unfinished"/>
+            <translation>테세라크트 설치 확인...</translation>
         </message>
         <message>
             <source>Processing image...</source>
-            <translation type="unfinished"/>
+            <translation>이미지 처리...</translation>
         </message>
         <message>
             <source>Tesseract not installed. Please install tesseract-ocr.</source>
-            <translation type="unfinished"/>
+            <translation>테세라크트가 설치되지 않았습니다. 테세라크트-오크를 설치하시기 바랍니다.</translation>
         </message>
     </context>
     <context>
@@ -4766,7 +4819,7 @@ Installation instructions:
         </message>
         <message>
             <source>⚠️ No system keychain — tokens stored with basic obfuscation. </source>
-            <translation type="unfinished"/>
+            <translation>️ 시스템 키 체인  토큰은 기본 오브스커션으로 저장되지 않습니다. </translation>
         </message>
         <message>
             <source>✓ Connected: %1</source>
@@ -4789,133 +4842,133 @@ Installation instructions:
             <translation>🔒 토큰이 %1에 저장됨</translation>
         </message>
         <message>
-        <source>Browse…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Loading…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select Component</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select Organization</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select Project</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>✗ Select a project first</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>✗ Select an organization first</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <source>Browse…</source>
+            <translation>- 브루즈...</translation>
+        </message>
+        <message>
+            <source>Loading…</source>
+            <translation>로딩...</translation>
+        </message>
+        <message>
+            <source>Select Component</source>
+            <translation>구성 요소를 선택</translation>
+        </message>
+        <message>
+            <source>Select Organization</source>
+            <translation>조직 을 선택 하십시오</translation>
+        </message>
+        <message>
+            <source>Select Project</source>
+            <translation>프로젝트 선택</translation>
+        </message>
+        <message>
+            <source>✗ Select a project first</source>
+            <translation> 우선 프로젝트를 선택하세요</translation>
+        </message>
+        <message>
+            <source>✗ Select an organization first</source>
+            <translation> 먼저 조직을 선택하세요</translation>
+        </message>
+    </context>
     <context>
         <name>PluginDialog</name>
         <message>
             <source>All plugins have been reloaded successfully.</source>
-            <translation type="unfinished"/>
+            <translation>모든 플러그인이 성공적으로 로드되었습니다.</translation>
         </message>
         <message>
             <source>Author</source>
-            <translation type="unfinished"/>
+            <translation>저자</translation>
         </message>
         <message>
             <source>Author: {}</source>
-            <translation type="unfinished"/>
+            <translation>저자: {}</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Disable</source>
-            <translation type="unfinished"/>
+            <translation>비활성화</translation>
         </message>
         <message>
             <source>Enable</source>
-            <translation type="unfinished"/>
+            <translation>활성화</translation>
         </message>
         <message>
             <source>Enabled</source>
-            <translation type="unfinished"/>
+            <translation>허용</translation>
         </message>
         <message>
             <source>Failed to reload plugins: {}</source>
-            <translation type="unfinished"/>
+            <translation>플러그인을 다시 충전하지 못했어요</translation>
         </message>
         <message>
             <source>Installed Plugins</source>
-            <translation type="unfinished"/>
+            <translation>설치 된 플러그인</translation>
         </message>
         <message>
             <source>Manage Plugins</source>
-            <translation type="unfinished"/>
+            <translation>플러그인을 관리</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished"/>
+            <translation>이름</translation>
         </message>
         <message>
             <source>Open Plugin Folder</source>
-            <translation type="unfinished"/>
+            <translation>플러그인 폴더를 열</translation>
         </message>
         <message>
             <source>Plugin Details</source>
-            <translation type="unfinished"/>
+            <translation>플러그인 세부 사항</translation>
         </message>
         <message>
             <source>Plugins Reloaded</source>
-            <translation type="unfinished"/>
+            <translation>플러그인 로딩</translation>
         </message>
         <message>
             <source>Plugins are loaded from: {}</source>
-            <translation type="unfinished"/>
+            <translation>플러그인은 다음에서 로드됩니다: {}</translation>
         </message>
         <message>
             <source>Reload Failed</source>
-            <translation type="unfinished"/>
+            <translation>재충전 실패</translation>
         </message>
         <message>
             <source>Reload Plugins</source>
-            <translation type="unfinished"/>
+            <translation>플러그인을 다시 로드</translation>
         </message>
         <message>
             <source>Version</source>
-            <translation type="unfinished"/>
+            <translation>버전</translation>
         </message>
         <message>
             <source>Version: {}</source>
-            <translation type="unfinished"/>
+            <translation>버전: {}</translation>
         </message>
     </context>
     <context>
         <name>PluralFormsEditor</name>
         <message>
             <source>Plural rules</source>
-            <translation type="unfinished"/>
+            <translation>다수규칙</translation>
         </message>
         <message>
             <source>Clear all</source>
-            <translation type="unfinished"/>
+            <translation>모든 것을 정리해</translation>
         </message>
         <message>
             <source>Sync from singular</source>
-            <translation type="unfinished"/>
+            <translation>단위에서 동기화</translation>
         </message>
     </context>
     <context>
         <name>PreferencesDialog</name>
         <message>
             <source> characters</source>
-            <translation type="unfinished"/>
+            <translation>문자</translation>
         </message>
         <message>
             <source>Appearance</source>
@@ -4931,19 +4984,19 @@ Installation instructions:
         </message>
         <message>
             <source>Character limit:</source>
-            <translation type="unfinished"/>
+            <translation>캐릭터 제한:</translation>
         </message>
         <message>
             <source>Credential storage:</source>
-            <translation type="unfinished"/>
+            <translation>자격증 저장:</translation>
         </message>
         <message>
             <source>Dark</source>
-            <translation type="unfinished"/>
+            <translation>어둠</translation>
         </message>
         <message>
             <source>Default</source>
-            <translation type="unfinished"/>
+            <translation>기본</translation>
         </message>
         <message>
             <source>Default engine:</source>
@@ -4951,7 +5004,7 @@ Installation instructions:
         </message>
         <message>
             <source>Double-click to edit translations directly in the list</source>
-            <translation type="unfinished"/>
+            <translation>이중 클릭하여 목록에서 직접 번역을 편집합니다</translation>
         </message>
         <message>
             <source>Editor font size:</source>
@@ -4963,11 +5016,11 @@ Installation instructions:
         </message>
         <message>
             <source>Enable inline editing</source>
-            <translation type="unfinished"/>
+            <translation>직렬 편집을 활성화</translation>
         </message>
         <message>
             <source>Formal</source>
-            <translation type="unfinished"/>
+            <translation>공식적인</translation>
         </message>
         <message>
             <source>Formality level:</source>
@@ -4975,7 +5028,7 @@ Installation instructions:
         </message>
         <message>
             <source>Informal</source>
-            <translation type="unfinished"/>
+            <translation>비공식</translation>
         </message>
         <message>
             <source>Language / Locale:</source>
@@ -4983,7 +5036,7 @@ Installation instructions:
         </message>
         <message>
             <source>Light</source>
-            <translation type="unfinished"/>
+            <translation>빛</translation>
         </message>
         <message>
             <source>Name:</source>
@@ -4999,11 +5052,11 @@ Installation instructions:
         </message>
         <message>
             <source>Security</source>
-            <translation type="unfinished"/>
+            <translation>안전</translation>
         </message>
         <message>
             <source>Show character counter</source>
-            <translation type="unfinished"/>
+            <translation>캐릭터 카운터를 표시</translation>
         </message>
         <message>
             <source>Source language:</source>
@@ -5011,7 +5064,7 @@ Installation instructions:
         </message>
         <message>
             <source>System default</source>
-            <translation type="unfinished"/>
+            <translation>시스템 기본</translation>
         </message>
         <message>
             <source>Target language:</source>
@@ -5031,87 +5084,87 @@ Installation instructions:
         </message>
         <message>
             <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.\n\nFor better security, install:\n• macOS: Built-in (Keychain)\n• Windows: pip install keyring\n• Linux: pip install secretstorage</source>
-            <translation type="unfinished"/>
+            <translation>시스템 키 체인 발견되지 않았습니다. 인증서는 마스터 비밀번호로 암호화된 파일에 저장됩니다. 더 나은 보안을 위해: macOS: 내장 (키 체인) Windows: pip install keyring</translation>
         </message>
         <message>
             <source>Your credentials are securely stored in the system keychain.</source>
-            <translation type="unfinished"/>
+            <translation>신분증은 시스템 키 체인에서 안전하게 저장되어 있습니다.</translation>
         </message>
         <message>
-        <source>Automatically reload watched files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.
+            <source>Automatically reload watched files</source>
+            <translation>자동으로 보고된 파일을 로드</translation>
+        </message>
+        <message>
+            <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.
 
 For better security, install:
 • macOS: Built-in (Keychain)
 • Windows: pip install keyring
 • Linux: pip install secretstorage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Reload external changes without asking while Watch File is enabled</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>시스템 키 체인 발견되지 않았습니다. 인증서는 마스터 비밀번호로 암호화 된 파일에 저장됩니다. 더 나은 보안을 위해 설치: • macOS: 내장 (키 체인) • Windows: pip install keyring • Linux: pip install secretstorage</translation>
+        </message>
+        <message>
+            <source>Reload external changes without asking while Watch File is enabled</source>
+            <translation>워치 파일이 활성화되어 있는 동안 외부 변경 사항을 요청하지 않고 다시 로드하십시오</translation>
+        </message>
+    </context>
     <context>
         <name>ProjectDockWidget</name>
         <message>
             <source>All files</source>
-            <translation type="unfinished"/>
+            <translation>모든 파일</translation>
         </message>
         <message>
             <source>Analyzing project...</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트 분석...</translation>
         </message>
         <message>
             <source>Avg:</source>
-            <translation type="unfinished"/>
+            <translation>아비:</translation>
         </message>
         <message>
             <source>Complete</source>
-            <translation type="unfinished"/>
+            <translation>완전함</translation>
         </message>
         <message>
             <source>Copy Path</source>
-            <translation type="unfinished"/>
+            <translation>복사 경로</translation>
         </message>
         <message>
             <source>File</source>
-            <translation type="unfinished"/>
+            <translation>파일</translation>
         </message>
         <message>
             <source>File Properties</source>
-            <translation type="unfinished"/>
+            <translation>파일 속성</translation>
         </message>
         <message>
             <source>Files:</source>
-            <translation type="unfinished"/>
+            <translation>파일:</translation>
         </message>
         <message>
             <source>Filter:</source>
-            <translation type="unfinished"/>
+            <translation>필터:</translation>
         </message>
         <message>
             <source>Found %d translation files</source>
-            <translation type="unfinished"/>
+            <translation>%d 번역 파일은 발견되었습니다</translation>
         </message>
         <message>
             <source>Incomplete</source>
-            <translation type="unfinished"/>
+            <translation>미완성</translation>
         </message>
         <message>
             <source>JSON files</source>
-            <translation type="unfinished"/>
+            <translation>JSON 파일</translation>
         </message>
         <message>
             <source>No project</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트가 없습니다</translation>
         </message>
         <message>
             <source>No translation files found in this folder</source>
-            <translation type="unfinished"/>
+            <translation>이 폴더에서 번역 파일은 발견되지 않았습니다</translation>
         </message>
         <message>
             <source>Open</source>
@@ -5119,51 +5172,51 @@ For better security, install:
         </message>
         <message>
             <source>Open a project folder to begin</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트 폴더를 열기 시작</translation>
         </message>
         <message>
             <source>Open project folder</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트 폴더를 열</translation>
         </message>
         <message>
             <source>Open...</source>
-            <translation type="unfinished"/>
+            <translation>열어요</translation>
         </message>
         <message>
             <source>PO files</source>
-            <translation type="unfinished"/>
+            <translation>PO 파일</translation>
         </message>
         <message>
             <source>Progress</source>
-            <translation type="unfinished"/>
+            <translation>진전</translation>
         </message>
         <message>
             <source>Project</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트</translation>
         </message>
         <message>
             <source>Properties</source>
-            <translation type="unfinished"/>
+            <translation>재산</translation>
         </message>
         <message>
             <source>Refresh</source>
-            <translation type="unfinished"/>
+            <translation>신선함</translation>
         </message>
         <message>
             <source>Refresh project files</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트 파일을 업데이트</translation>
         </message>
         <message>
             <source>Select Project Folder</source>
-            <translation type="unfinished"/>
+            <translation>프로젝트 폴더를 선택</translation>
         </message>
         <message>
             <source>Show in File Manager</source>
-            <translation type="unfinished"/>
+            <translation>파일 관리자에서 표시</translation>
         </message>
         <message>
             <source>TS files</source>
-            <translation type="unfinished"/>
+            <translation>TS 파일</translation>
         </message>
         <message>
             <source>Translated</source>
@@ -5171,39 +5224,39 @@ For better security, install:
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished"/>
+            <translation>유형</translation>
         </message>
         <message>
             <source>XLIFF files</source>
-            <translation type="unfinished"/>
+            <translation>XLIFF 파일</translation>
         </message>
         <message>
             <source>%1 files</source>
-            <translation type="unfinished"/>
+            <translation>%1 파일</translation>
         </message>
         <message>
             <source>0 files</source>
-            <translation type="unfinished"/>
+            <translation>0 파일</translation>
         </message>
         <message>
             <source>File: %s</source>
-            <translation type="unfinished"/>
+            <translation>파일: %s</translation>
         </message>
         <message>
             <source>Path: %s</source>
-            <translation type="unfinished"/>
+            <translation>경로: %s</translation>
         </message>
         <message>
             <source>Type: %s</source>
-            <translation type="unfinished"/>
+            <translation>종류: %s</translation>
         </message>
         <message>
             <source>Size: %s bytes</source>
-            <translation type="unfinished"/>
+            <translation>크기는: %s 바이트</translation>
         </message>
         <message>
             <source>Total entries: %d</source>
-            <translation type="unfinished"/>
+            <translation>전체 항목: %d</translation>
         </message>
         <message>
             <source>Translated: %d</source>
@@ -5219,108 +5272,108 @@ For better security, install:
         </message>
         <message>
             <source>Progress: %.1f%%</source>
-            <translation type="unfinished"/>
+            <translation>진전: %.1f%%</translation>
         </message>
         <message>
             <source>Modified: %s</source>
-            <translation type="unfinished"/>
+            <translation>수정: %s</translation>
         </message>
     </context>
     <context>
         <name>QuickActionsMenu</name>
         <message>
             <source>Quick Actions</source>
-            <translation type="unfinished"/>
+            <translation>신속 한 행동</translation>
         </message>
         <message>
             <source>📋 Copy source</source>
-            <translation type="unfinished"/>
+            <translation> 복사 출처</translation>
         </message>
         <message>
             <source>📚 Apply glossary term</source>
-            <translation type="unfinished"/>
+            <translation> 문장 용어를 적용</translation>
         </message>
         <message>
             <source>🔤 Capitalize first letter</source>
-            <translation type="unfinished"/>
+            <translation> 첫 글자를 크게 적어</translation>
         </message>
         <message>
             <source>🔤 Lowercase first letter</source>
-            <translation type="unfinished"/>
+            <translation> 작자 첫 글자</translation>
         </message>
         <message>
             <source>🧠 Apply TM suggestion</source>
-            <translation type="unfinished"/>
+            <translation> TM 제안을 적용하세요</translation>
         </message>
     </context>
     <context>
         <name>RecordMacroDialog</name>
         <message>
             <source>Recording Macro</source>
-            <translation type="unfinished"/>
+            <translation>매크로 녹음</translation>
         </message>
         <message>
             <source>Stop Recording</source>
-            <translation type="unfinished"/>
+            <translation>녹음 그만</translation>
         </message>
         <message>
             <source>🔴 Recording macro...</source>
-            <translation type="unfinished"/>
+            <translation>🔴 매크로 녹음...</translation>
         </message>
     </context>
     <context>
         <name>RegexTesterDialog</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Copied</source>
-            <translation type="unfinished"/>
+            <translation>복사</translation>
         </message>
         <message>
             <source>Copy Result</source>
-            <translation type="unfinished"/>
+            <translation>복사 결과</translation>
         </message>
         <message>
             <source>Could not copy to clipboard.</source>
-            <translation type="unfinished"/>
+            <translation>클립보드에 복사할 수 없었어요</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>오류</translation>
         </message>
         <message>
             <source>Format Strings Found</source>
-            <translation type="unfinished"/>
+            <translation>형식 문자열 발견</translation>
         </message>
         <message>
             <source>Input Text</source>
-            <translation type="unfinished"/>
+            <translation>입력 텍스트</translation>
         </message>
         <message>
             <source>Live Preview</source>
-            <translation type="unfinished"/>
+            <translation>라이브 프리뷰</translation>
         </message>
         <message>
             <source>Regex Tester</source>
-            <translation type="unfinished"/>
+            <translation>레지렉스 테스트</translation>
         </message>
         <message>
             <source>Result copied to clipboard.</source>
-            <translation type="unfinished"/>
+            <translation>결과로 클립보드에 복사합니다.</translation>
         </message>
         <message>
             <source>Sample text</source>
-            <translation type="unfinished"/>
+            <translation>샘플 텍스트</translation>
         </message>
         <message>
             <source>Test Values</source>
-            <translation type="unfinished"/>
+            <translation>시험 값</translation>
         </message>
         <message>
             <source>Test value</source>
-            <translation type="unfinished"/>
+            <translation>시험 값</translation>
         </message>
         <message>
             <source>Value</source>
@@ -5328,58 +5381,58 @@ For better security, install:
         </message>
         <message>
             <source>Error: %s</source>
-            <translation type="unfinished"/>
+            <translation>오류: %s</translation>
         </message>
     </context>
     <context>
         <name>SearchReplaceDialog</name>
         <message>
             <source>%d of %d matches</source>
-            <translation type="unfinished"/>
+            <translation>%d의 %d</translation>
         </message>
         <message>
             <source>Both</source>
-            <translation type="unfinished"/>
+            <translation>둘 다</translation>
         </message>
         <message>
             <source>Case sensitive</source>
-            <translation type="unfinished"/>
+            <translation>사건에 민감한</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Enter replacement text...</source>
-            <translation type="unfinished"/>
+            <translation>대체 텍스트를 입력하세요...</translation>
         </message>
         <message>
             <source>Enter search text...</source>
-            <translation type="unfinished"/>
+            <translation>검색 텍스트를 입력하세요...</translation>
         </message>
         <message>
             <source>Find &amp; Replace</source>
-            <translation type="unfinished"/>
+            <translation>검색 및 교체</translation>
         </message>
         <message>
             <source>Find All</source>
-            <translation type="unfinished"/>
+            <translation>모든 것을 찾아</translation>
         </message>
         <message>
             <source>Find Next</source>
-            <translation type="unfinished"/>
+            <translation>다음을 찾아</translation>
         </message>
         <message>
             <source>Find Previous</source>
-            <translation type="unfinished"/>
+            <translation>이전 검색</translation>
         </message>
         <message>
             <source>Find:</source>
-            <translation type="unfinished"/>
+            <translation>찾아:</translation>
         </message>
         <message>
             <source>No matches found</source>
-            <translation type="unfinished"/>
+            <translation>일치된 것 없습니다</translation>
         </message>
         <message>
             <source>Options</source>
@@ -5387,7 +5440,7 @@ For better security, install:
         </message>
         <message>
             <source>Regular expression</source>
-            <translation type="unfinished"/>
+            <translation>규칙적인 표현</translation>
         </message>
         <message>
             <source>Replace</source>
@@ -5399,15 +5452,15 @@ For better security, install:
         </message>
         <message>
             <source>Replace:</source>
-            <translation type="unfinished"/>
+            <translation>대체:</translation>
         </message>
         <message>
             <source>Search</source>
-            <translation type="unfinished"/>
+            <translation>검색</translation>
         </message>
         <message>
             <source>Search in:</source>
-            <translation type="unfinished"/>
+            <translation>검색:</translation>
         </message>
         <message>
             <source>Source text</source>
@@ -5419,204 +5472,204 @@ For better security, install:
         </message>
         <message>
             <source>Whole words</source>
-            <translation type="unfinished"/>
+            <translation>전체 단어</translation>
         </message>
     </context>
     <context>
         <name>SplitDialog</name>
         <message>
             <source>Place the cursor inside the source text to mark the split point.</source>
-            <translation type="unfinished"/>
+            <translation>커서를 소스 텍스트 안에 배치하여 분할점을 표시하십시오.</translation>
         </message>
         <message>
             <source>Segment 1: \u201c{}\u201d  |  Segment 2: \u201c{}\u201d</source>
-            <translation type="unfinished"/>
+            <translation>세그먼트 1: U201c{\displaystyle U201c}</translation>
         </message>
         <message>
             <source>Source:</source>
-            <translation type="unfinished"/>
+            <translation>출처:</translation>
         </message>
         <message>
             <source>Split Entry</source>
-            <translation type="unfinished"/>
+            <translation>분산 입력</translation>
         </message>
         <message>
             <source>Target:</source>
-            <translation type="unfinished"/>
+            <translation>목표:</translation>
         </message>
         <message>
             <source>Click in the source text where you want to split, then press OK.</source>
-            <translation type="unfinished"/>
+            <translation>분할하려는 소스 텍스트를 클릭하고 OK를 누르십시오.</translation>
         </message>
     </context>
     <context>
         <name>StatisticsDialog</name>
         <message>
             <source>(text contracted)</source>
-            <translation type="unfinished"/>
+            <translation>(문서 계약)</translation>
         </message>
         <message>
             <source>(text expanded)</source>
-            <translation type="unfinished"/>
+            <translation>(문서 확장)</translation>
         </message>
         <message>
             <source>Additional Details</source>
-            <translation type="unfinished"/>
+            <translation>추가 사항</translation>
         </message>
         <message>
             <source>Average source length</source>
-            <translation type="unfinished"/>
+            <translation>평균 원천 길이는</translation>
         </message>
         <message>
             <source>Average translation length</source>
-            <translation type="unfinished"/>
+            <translation>평균 번역 길이는</translation>
         </message>
         <message>
             <source>Average words per entry</source>
-            <translation type="unfinished"/>
+            <translation>입력당 평균 단어</translation>
         </message>
         <message>
             <source>Characters:</source>
-            <translation type="unfinished"/>
+            <translation>캐릭터:</translation>
         </message>
         <message>
             <source>Entry #</source>
-            <translation type="unfinished"/>
+            <translation># 입구</translation>
         </message>
         <message>
             <source>Expansion ratio:</source>
-            <translation type="unfinished"/>
+            <translation>확장 비율:</translation>
         </message>
         <message>
             <source>File:</source>
-            <translation type="unfinished"/>
+            <translation>파일:</translation>
         </message>
         <message>
             <source>Fuzzy/Needs work:</source>
-            <translation type="unfinished"/>
+            <translation>지/일 필요:</translation>
         </message>
         <message>
             <source>Length</source>
-            <translation type="unfinished"/>
+            <translation>길이는</translation>
         </message>
         <message>
             <source>Longest Source Strings</source>
-            <translation type="unfinished"/>
+            <translation>가장 긴 원천 줄</translation>
         </message>
         <message>
             <source>N/A</source>
-            <translation type="unfinished"/>
+            <translation>N/A</translation>
         </message>
         <message>
             <source>No additional details available.</source>
-            <translation type="unfinished"/>
+            <translation>추가적인 정보는 없습니다.</translation>
         </message>
         <message>
             <source>Overview</source>
-            <translation type="unfinished"/>
+            <translation>전체적인 설명</translation>
         </message>
         <message>
             <source>Source text:</source>
-            <translation type="unfinished"/>
+            <translation>출처 텍스트:</translation>
         </message>
         <message>
             <source>Text Preview</source>
-            <translation type="unfinished"/>
+            <translation>본문 예제</translation>
         </message>
         <message>
             <source>Text Statistics</source>
-            <translation type="unfinished"/>
+            <translation>텍스트 통계</translation>
         </message>
         <message>
             <source>Total entries:</source>
-            <translation type="unfinished"/>
+            <translation>전체 항목:</translation>
         </message>
         <message>
             <source>Translated:</source>
-            <translation type="unfinished"/>
+            <translation>번역:</translation>
         </message>
         <message>
             <source>Translation Progress:</source>
-            <translation type="unfinished"/>
+            <translation>번역 진행:</translation>
         </message>
         <message>
             <source>Translation Statistics</source>
-            <translation type="unfinished"/>
+            <translation>번역 통계</translation>
         </message>
         <message>
             <source>Translation completion</source>
-            <translation type="unfinished"/>
+            <translation>번역 완료</translation>
         </message>
         <message>
             <source>Translation:</source>
-            <translation type="unfinished"/>
+            <translation>번역:</translation>
         </message>
         <message>
             <source>Untranslated:</source>
-            <translation type="unfinished"/>
+            <translation>번역되지 않은</translation>
         </message>
         <message>
             <source>Words:</source>
-            <translation type="unfinished"/>
+            <translation>말:</translation>
         </message>
         <message>
             <source>characters</source>
-            <translation type="unfinished"/>
+            <translation>문자</translation>
         </message>
         <message>
             <source>translated</source>
-            <translation type="unfinished"/>
+            <translation>번역</translation>
         </message>
     </context>
     <context>
         <name>StatsWidget</name>
         <message>
             <source>Auto Translations</source>
-            <translation type="unfinished"/>
+            <translation>자동 번역</translation>
         </message>
         <message>
             <source>Best Streak</source>
-            <translation type="unfinished"/>
+            <translation>최고의 스트레이크</translation>
         </message>
         <message>
             <source>Current Streak</source>
-            <translation type="unfinished"/>
+            <translation>현재 스트레이크</translation>
         </message>
         <message>
             <source>Details</source>
-            <translation type="unfinished"/>
+            <translation>세부 사항</translation>
         </message>
         <message>
             <source>File Formats</source>
-            <translation type="unfinished"/>
+            <translation>파일 형식</translation>
         </message>
         <message>
             <source>Files Completed</source>
-            <translation type="unfinished"/>
+            <translation>파일 완료</translation>
         </message>
         <message>
             <source>Formats: {}</source>
-            <translation type="unfinished"/>
+            <translation>형식: {}</translation>
         </message>
         <message>
             <source>Languages Used</source>
-            <translation type="unfinished"/>
+            <translation>사용 된 언어</translation>
         </message>
         <message>
             <source>Languages: {}</source>
-            <translation type="unfinished"/>
+            <translation>언어: {}</translation>
         </message>
         <message>
             <source>Manual Translations</source>
-            <translation type="unfinished"/>
+            <translation>수동 번역</translation>
         </message>
         <message>
             <source>Total Translations</source>
-            <translation type="unfinished"/>
+            <translation>전체 번역</translation>
         </message>
         <message>
             <source>Translation Statistics</source>
-            <translation type="unfinished"/>
+            <translation>번역 통계</translation>
         </message>
     </context>
     <context>
@@ -5703,7 +5756,7 @@ For better security, install:
         </message>
         <message>
             <source>✓ Downloaded at %1\nSaved to: %2</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>✓ Uploaded at %1</source>
@@ -5722,52 +5775,52 @@ For better security, install:
             <translation>✗ 푸시 실패: %1</translation>
         </message>
         <message>
-        <source>✓ Downloaded at %1
+            <source>✓ Downloaded at %1
 Saved to: %2</source>
-        <translation>✓ %1에 다운로드
+            <translation>✓ %1에 다운로드
 저장 위치: %2</translation>
-    </message>
-</context>
+        </message>
+    </context>
     <context>
         <name>ToolbarCustomizeDialog</name>
         <message>
             <source>Check actions to show in toolbar:</source>
-            <translation type="unfinished"/>
+            <translation>도구 표시줄에서 표시되는 동작을 확인합니다.</translation>
         </message>
         <message>
             <source>Customize Toolbar</source>
-            <translation type="unfinished"/>
+            <translation>도구 표시줄을 사용자 정의</translation>
         </message>
     </context>
     <context>
         <name>UnicodeDialog</name>
         <message>
             <source> | ⚠️ Check highlighted characters</source>
-            <translation type="unfinished"/>
+            <translation>️ ️ 강조된 캐릭터를 확인하세요</translation>
         </message>
         <message>
             <source>Analyze</source>
-            <translation type="unfinished"/>
+            <translation>분석</translation>
         </message>
         <message>
             <source>Block</source>
-            <translation type="unfinished"/>
+            <translation>블록</translation>
         </message>
         <message>
             <source>Category</source>
-            <translation type="unfinished"/>
+            <translation>분류</translation>
         </message>
         <message>
             <source>Char</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Character Analysis</source>
-            <translation type="unfinished"/>
+            <translation>성격 분석</translation>
         </message>
         <message>
             <source>Character Details</source>
-            <translation type="unfinished"/>
+            <translation>캐릭터 세부 사항</translation>
         </message>
         <message>
             <source>Clear</source>
@@ -5775,86 +5828,86 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Code Point</source>
-            <translation type="unfinished"/>
+            <translation>코드 포인트</translation>
         </message>
         <message>
             <source>Copy Analysis</source>
-            <translation type="unfinished"/>
+            <translation>복사 분석</translation>
         </message>
         <message>
             <source>Enter or paste text to analyze...</source>
-            <translation type="unfinished"/>
+            <translation>분석하기 위해 텍스트를 입력하거나 붙여넣습니다.</translation>
         </message>
         <message>
             <source>Enter text to analyze Unicode characters</source>
-            <translation type="unfinished"/>
+            <translation>유니코드 문자를 분석하기 위해 텍스트를 입력</translation>
         </message>
         <message>
             <source>Highlight suspicious characters</source>
-            <translation type="unfinished"/>
+            <translation>의심스러운 인물을 강조</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished"/>
+            <translation>이름</translation>
         </message>
         <message>
             <source>Pos</source>
-            <translation type="unfinished"/>
+            <translation>포스</translation>
         </message>
         <message>
             <source>Text to Analyze</source>
-            <translation type="unfinished"/>
+            <translation>분석 할 수 있는 문장</translation>
         </message>
         <message>
             <source>Unicode Inspector</source>
-            <translation type="unfinished"/>
+            <translation>유니코드 검사</translation>
         </message>
         <message>
             <source>Total: {0} characters | Invisible: {1} | Suspicious: {2}</source>
-            <translation type="unfinished"/>
+            <translation>전체: {0} 캐릭터</translation>
         </message>
     </context>
     <context>
         <name>ValidationDialog</name>
         <message>
             <source>#</source>
-            <translation type="unfinished"/>
+            <translation>#</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>Errors</source>
-            <translation type="unfinished"/>
+            <translation>오류</translation>
         </message>
         <message>
             <source>Errors: %d | Warnings: %d</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Info</source>
-            <translation type="unfinished"/>
+            <translation>정보</translation>
         </message>
         <message>
             <source>Message</source>
-            <translation type="unfinished"/>
+            <translation>메시지</translation>
         </message>
         <message>
             <source>Quality score: %s%%</source>
-            <translation type="unfinished"/>
+            <translation>품질 점수: %s%%</translation>
         </message>
         <message>
             <source>Re-validate</source>
-            <translation type="unfinished"/>
+            <translation>재확인</translation>
         </message>
         <message>
             <source>Severity</source>
-            <translation type="unfinished"/>
+            <translation>중성</translation>
         </message>
         <message>
             <source>Source text</source>
@@ -5873,242 +5926,242 @@ Saved to: %2</source>
         <name>VideoDockWidget</name>
         <message>
             <source>Video Preview</source>
-            <translation type="unfinished"/>
+            <translation>비디오 미리보기</translation>
         </message>
     </context>
     <context>
         <name>VideoPreviewWidget</name>
         <message>
             <source>Back 1s (Shift+←)</source>
-            <translation type="unfinished"/>
+            <translation>1s (Shift+←)</translation>
         </message>
         <message>
             <source>Forward 1s (Shift+→)</source>
-            <translation type="unfinished"/>
+            <translation>앞면 1s (Shift+→)</translation>
         </message>
         <message>
             <source>Go to current subtitle (G)</source>
-            <translation type="unfinished"/>
+            <translation>현재 자막 (G) 로 이동</translation>
         </message>
         <message>
             <source>Larger subtitles</source>
-            <translation type="unfinished"/>
+            <translation>더 큰 자막</translation>
         </message>
         <message>
             <source>Loop segment (L)</source>
-            <translation type="unfinished"/>
+            <translation>루프 세그먼트 (L)</translation>
         </message>
         <message>
             <source>Mute (M)</source>
-            <translation type="unfinished"/>
+            <translation>무성 (M)</translation>
         </message>
         <message>
             <source>Next entry (Ctrl+→)</source>
-            <translation type="unfinished"/>
+            <translation>다음 항목 (Ctrl+→)</translation>
         </message>
         <message>
             <source>Pause</source>
-            <translation type="unfinished"/>
+            <translation>휴식</translation>
         </message>
         <message>
             <source>Pause at segment end</source>
-            <translation type="unfinished"/>
+            <translation>세그먼트 끝에서 휴식</translation>
         </message>
         <message>
             <source>Play / Pause (Space)</source>
-            <translation type="unfinished"/>
+            <translation>재생 / 휴식 (공간)</translation>
         </message>
         <message>
             <source>Playback speed</source>
-            <translation type="unfinished"/>
+            <translation>재생 속도</translation>
         </message>
         <message>
             <source>Previous entry (Ctrl+←)</source>
-            <translation type="unfinished"/>
+            <translation>이전 항목 (Ctrl+←)</translation>
         </message>
         <message>
             <source>Smaller subtitles</source>
-            <translation type="unfinished"/>
+            <translation>작은 자막</translation>
         </message>
         <message>
             <source>Stop (S)</source>
-            <translation type="unfinished"/>
+            <translation>정지 (S)</translation>
         </message>
         <message>
             <source>Volume</source>
-            <translation type="unfinished"/>
+            <translation>수량</translation>
         </message>
     </context>
     <context>
         <name>VideoSubtitleDialog</name>
         <message>
             <source>%d subtitle tracks found. Duration: %s</source>
-            <translation type="unfinished"/>
+            <translation>%d 자막 트랙 발견. 기간: %s</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished"/>
+            <translation>취소</translation>
         </message>
         <message>
             <source>Browse…</source>
-            <translation type="unfinished"/>
+            <translation>- 브루즈...</translation>
         </message>
         <message>
             <source>Extract and Save As…</source>
-            <translation type="unfinished"/>
+            <translation>추출하고 저장하는 것...</translation>
         </message>
         <message>
             <source>Extract and Open</source>
-            <translation type="unfinished"/>
+            <translation>추출 및 열</translation>
         </message>
         <message>
             <source>Extract Subtitles from Video</source>
-            <translation type="unfinished"/>
+            <translation>비디오에서 자막을 추출</translation>
         </message>
         <message>
             <source>Extracting</source>
-            <translation type="unfinished"/>
+            <translation>추출</translation>
         </message>
         <message>
             <source>Extracting preview…</source>
-            <translation type="unfinished"/>
+            <translation>미리보기 추출...</translation>
         </message>
         <message>
             <source>Extracting subtitles…</source>
-            <translation type="unfinished"/>
+            <translation>자막을 추출하는 것...</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>오류</translation>
         </message>
         <message>
             <source>Extraction Error</source>
-            <translation type="unfinished"/>
+            <translation>추출 오류</translation>
         </message>
         <message>
             <source>Format:</source>
-            <translation type="unfinished"/>
+            <translation>형식:</translation>
         </message>
         <message>
             <source>Preview</source>
-            <translation type="unfinished"/>
+            <translation>미리보기</translation>
         </message>
         <message>
             <source>Preview failed: %s</source>
-            <translation type="unfinished"/>
+            <translation>미리보기 실패: %s</translation>
         </message>
         <message>
             <source>No subtitle tracks found</source>
-            <translation type="unfinished"/>
+            <translation>자막 트랙은 발견되지 않았습니다</translation>
         </message>
         <message>
             <source>No file selected</source>
-            <translation type="unfinished"/>
+            <translation>선택된 파일은 없습니다</translation>
         </message>
         <message>
             <source>Done</source>
-            <translation type="unfinished"/>
+            <translation>완료</translation>
         </message>
         <message>
             <source>Could not extract the subtitle:\n%s</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Could not read the video file:\n%s</source>
-            <translation type="unfinished"/>
+            <translation>비디오 파일을 읽을 수 없었습니다:\n%s</translation>
         </message>
         <message>
             <source>Save Subtitle As</source>
-            <translation type="unfinished"/>
+            <translation>자막을 저장</translation>
         </message>
         <message>
             <source>Play / Pause</source>
-            <translation type="unfinished"/>
+            <translation>재생 / 휴식</translation>
         </message>
         <message>
             <source>Stop</source>
-            <translation type="unfinished"/>
+            <translation>그만해</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>가까이</translation>
         </message>
         <message>
             <source>The subtitle has been saved to:\n%s</source>
-            <translation type="unfinished"/>
+            <translation>자막은 저장되어 있습니다:\n%s</translation>
         </message>
         <message>
             <source>Subtitle Tracks</source>
-            <translation type="unfinished"/>
+            <translation>자막 트랙</translation>
         </message>
         <message>
             <source>Output Format</source>
-            <translation type="unfinished"/>
+            <translation>출력 형식</translation>
         </message>
         <message>
             <source>Video File</source>
-            <translation type="unfinished"/>
+            <translation>비디오 파일</translation>
         </message>
         <message>
             <source>Video files (%s);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>비디오 파일 (%s); 모든 파일 (*)</translation>
         </message>
         <message>
             <source>Select a video file to preview subtitles</source>
-            <translation type="unfinished"/>
+            <translation>자막을 미리 보기 위해 비디오 파일을 선택</translation>
         </message>
         <message>
             <source>Select Video File</source>
-            <translation type="unfinished"/>
+            <translation>비디오 파일 을 선택</translation>
         </message>
         <message>
             <source>This video file contains no embedded subtitle tracks.</source>
-            <translation type="unfinished"/>
+            <translation>이 비디오 파일에는 삽입된 자막 트랙이 없습니다.</translation>
         </message>
         <message>
             <source>SRT (.srt)</source>
-            <translation type="unfinished"/>
+            <translation>SRT (.srt)</translation>
         </message>
         <message>
             <source>WebVTT (.vtt)</source>
-            <translation type="unfinished"/>
+            <translation>WebVTT (.vtt)</translation>
         </message>
         <message>
             <source>ASS/SSA (.ass)</source>
-            <translation type="unfinished"/>
+            <translation>ASS/SSA (.ass)</translation>
         </message>
         <message>
             <source>SubRip (*.srt)</source>
-            <translation type="unfinished"/>
+            <translation>SubRip (*.srt)</translation>
         </message>
         <message>
             <source>WebVTT (*.vtt)</source>
-            <translation type="unfinished"/>
+            <translation>웹VTT (*.vtt)</translation>
         </message>
         <message>
             <source>Advanced SubStation Alpha (*.ass)</source>
-            <translation type="unfinished"/>
+            <translation>고급 하위역 알파 (*.ass)</translation>
         </message>
         <message>
             <source>Subtitle files (*.*)</source>
-            <translation type="unfinished"/>
+            <translation>자막 파일 (**)</translation>
         </message>
         <message>
-        <source>Could not extract the subtitle:
+            <source>Could not extract the subtitle:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Could not read the video file:
+            <translation>자막을 추출할 수 없습니다: %s</translation>
+        </message>
+        <message>
+            <source>Could not read the video file:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The subtitle has been saved to:
+            <translation>비디오 파일을 읽을 수 없었습니다: %s</translation>
+        </message>
+        <message>
+            <source>The subtitle has been saved to:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>자막은 %s로 저장되었습니다</translation>
+        </message>
+    </context>
     <context>
         <name>WelcomeDialog</name>
         <message>
@@ -6121,11 +6174,11 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Dark</source>
-            <translation type="unfinished"/>
+            <translation>어둠</translation>
         </message>
         <message>
             <source>Default</source>
-            <translation type="unfinished"/>
+            <translation>기본</translation>
         </message>
         <message>
             <source>Default engine:</source>
@@ -6141,7 +6194,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Formal</source>
-            <translation type="unfinished"/>
+            <translation>공식적인</translation>
         </message>
         <message>
             <source>Formality level:</source>
@@ -6149,7 +6202,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Informal</source>
-            <translation type="unfinished"/>
+            <translation>비공식</translation>
         </message>
         <message>
             <source>Language / Locale:</source>
@@ -6157,7 +6210,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>Light</source>
-            <translation type="unfinished"/>
+            <translation>빛</translation>
         </message>
         <message>
             <source>Name:</source>
@@ -6181,7 +6234,7 @@ Saved to: %2</source>
         </message>
         <message>
             <source>System default</source>
-            <translation type="unfinished"/>
+            <translation>시스템 기본</translation>
         </message>
         <message>
             <source>Target language:</source>
@@ -6205,49 +6258,49 @@ Saved to: %2</source>
         </message>
         <message>
             <source>You</source>
-            <translation type="unfinished"/>
+            <translation>- 네</translation>
         </message>
         <message>
             <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,\nAndroid XML, ARB, PHP, and YAML files.\n\nFeatures include AI-powered pre-translation, translation memory,\nquality assurance, spell checking, and platform integration.</source>
-            <translation type="unfinished"/>
+            <translation>LinguaEdit은 PO, TS, JSON, XLIFF,\nAndroid XML, ARB, PHP, YAML 파일의 현대 번역 편집기입니다.</translation>
         </message>
         <message>
-            <source>You&apos;re all set!</source>
-            <translation type="unfinished"/>
+            <source>You're all set!</source>
+            <translation>다 준비됐어!</translation>
         </message>
         <message>
             <source>Version %s</source>
-            <translation type="unfinished"/>
+            <translation>버전 %s</translation>
         </message>
         <message>
-        <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,
+            <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,
 Android XML, ARB, PHP, and YAML files.
 
 Features include AI-powered pre-translation, translation memory,
 quality assurance, spell checking, and platform integration.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>랭구 에디트는 PO, TS, JSON, XLIFF, Android XML, ARB, PHP, YAML 파일의 현대적인 번역 편집기입니다. AI 기반의 사전 번역, 번역 메모리, 품질 보장, જોડ જોડ જોડ જોડણી 검사 및 플랫폼 통합이 특징입니다.</translation>
+        </message>
+    </context>
     <context>
         <name>WorldMapWidget</name>
         <message>
             <source>Translation Progress</source>
-            <translation type="unfinished"/>
+            <translation>번역 진전</translation>
         </message>
     </context>
     <context>
         <name>ZenModeWidget</name>
         <message>
             <source>&lt;b&gt;Source text&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt; 출처 텍스트&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translation&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt; 번역&lt;/b&gt;</translation>
         </message>
         <message>
             <source>Exit Zen</source>
-            <translation type="unfinished"/>
+            <translation>진 출구</translation>
         </message>
         <message>
             <source>Next entry</source>
@@ -6255,7 +6308,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>Next untranslated ▶▶</source>
-            <translation type="unfinished"/>
+            <translation>다음 번역되지 않은 ▶ ▶</translation>
         </message>
         <message>
             <source>Previous entry</source>
@@ -6263,7 +6316,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>Skip to next untranslated (Ctrl+Enter)</source>
-            <translation type="unfinished"/>
+            <translation>다음 번역되지 않은 (Ctrl+Enter)</translation>
         </message>
         <message>
             <source>&amp;Catalog</source>
@@ -6303,7 +6356,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&amp;Tools</source>
-            <translation type="unfinished"/>
+            <translation>&amp; 도구</translation>
         </message>
         <message>
             <source>&amp;View</source>
@@ -6311,19 +6364,19 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;%d&lt;/b&gt; untranslated strings out of &lt;b&gt;%d&lt;/b&gt; total.</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>&lt;b&gt;Added strings:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Added strings:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Changed source text:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;변경된 출처 텍스트:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Changed translations:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;번역 변경:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
@@ -6331,11 +6384,11 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;Outdated translations&lt;/b&gt; — source changed but translation stayed the same.</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;O의 최신 번역 &lt;/b&gt;  출처 변경되었지만 번역은 동일하게 유지되었습니다.</translation>
         </message>
         <message>
             <source>&lt;b&gt;Potentially outdated:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt; 잠재적으로 오래된: &lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference source:&lt;/b&gt;</source>
@@ -6347,7 +6400,7 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;Removed strings:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt; 제거된 문자열:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
@@ -6363,11 +6416,11 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;번역자 댓글:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;h3&gt;Comparison Results&lt;/h3&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;h3&gt; 비교 결과&lt;/h3&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
@@ -6375,186 +6428,186 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>&lt;i&gt;MT unavailable&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;MT 가 사용할 수 없습니다&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No matches&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>&lt;i&gt;No matching terms&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>&lt;i&gt;No suggestion&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>&lt;i&gt;No suggestions&lt;/i&gt;</source>
             <translation>&lt;i&gt;제안 없음&lt;/i&gt;</translation>
         </message>
         <message>
-            <source>Are you sure you want to delete the macro &apos;{}&apos;?</source>
-            <translation type="unfinished"/>
+            <source>Are you sure you want to delete the macro '{}'?</source>
+            <translation>'{}' 매크로를 삭제하고 싶다는 확신이 있습니까?</translation>
         </message>
         <message>
-            <source>Cannot compile: install &apos;polib&apos; or &apos;gettext&apos; (msgfmt)</source>
-            <translation type="unfinished"/>
+            <source>Cannot compile: install 'polib' or 'gettext' (msgfmt)</source>
+            <translation>컴파일 할 수 없습니다: 'polib' 또는 'gettext' (msgfmt) 를 설치합니다</translation>
         </message>
         <message>
             <source>Click in the source text where you want to split, then press OK.</source>
-            <translation type="unfinished"/>
+            <translation>분할하려는 소스 텍스트를 클릭하고 OK를 누르십시오.</translation>
         </message>
         <message>
-            <source>Delete term &apos;%s&apos; → &apos;%s&apos;?</source>
-            <translation type="unfinished"/>
+            <source>Delete term '%s' → '%s'?</source>
+            <translation>"%s" → "%s"라는 용어를 삭제하세요?</translation>
         </message>
         <message>
             <source>This video file contains no embedded subtitle tracks.</source>
-            <translation type="unfinished"/>
+            <translation>이 비디오 파일에는 삽입된 자막 트랙이 없습니다.</translation>
         </message>
         <message>
-            <source>Failed to play macro &apos;{}&apos;.</source>
-            <translation type="unfinished"/>
+            <source>Failed to play macro '{}'.</source>
+            <translation>매크로 '{}'를 재생하지 못했습니다.</translation>
         </message>
         <message>
             <source>Find &amp; Replace</source>
-            <translation type="unfinished"/>
+            <translation>검색 및 교체</translation>
         </message>
         <message>
             <source>Find &amp;&amp; Replace…</source>
             <translation>찾기 및 바꾸기…</translation>
         </message>
         <message>
-            <source>Macro &apos;{}&apos; has been saved successfully.</source>
-            <translation type="unfinished"/>
+            <source>Macro '{}' has been saved successfully.</source>
+            <translation>매크로 '{}'는 성공적으로 저장되었습니다.</translation>
         </message>
         <message>
-            <source>Recording macro &apos;{}&apos;...</source>
-            <translation type="unfinished"/>
+            <source>Recording macro '{}'...</source>
+            <translation>매크로 '{}'를 녹음...</translation>
         </message>
         <message>
             <source>Save &amp;As…</source>
-            <translation type="unfinished"/>
+            <translation>구하고...</translation>
         </message>
         <message>
             <source>Search &amp; Filter</source>
-            <translation type="unfinished"/>
+            <translation>검색 및 필터</translation>
         </message>
         <message>
             <source>Search &amp; Replace</source>
-            <translation type="unfinished"/>
+            <translation>검색 및 교체</translation>
         </message>
         <message>
-            <source>The file &apos;%s&apos; has unsaved changes.\nDo you want to save before closing?</source>
-            <translation type="unfinished"/>
+            <source>The file '%s' has unsaved changes.\nDo you want to save before closing?</source>
+            <translation>파일 '%s'에는 저장되지 않은 변경 사항이 있습니다.</translation>
         </message>
         <message>
             <source>Total: {0} characters | Invisible: {1} | Suspicious: {2}</source>
-            <translation type="unfinished"/>
+            <translation>전체: {0} 캐릭터</translation>
         </message>
         <message>
-            <source>You&apos;re all set!</source>
-            <translation type="unfinished"/>
+            <source>You're all set!</source>
+            <translation>다 준비됐어!</translation>
         </message>
         <message>
             <source>Your credentials are securely stored in the system keychain.</source>
-            <translation type="unfinished"/>
+            <translation>신분증은 시스템 키 체인에서 안전하게 저장되어 있습니다.</translation>
         </message>
         <message>
             <source>Are you sure you want to rollback to this version?\n\nThis will replace the current text with:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>이 버전으로 다시 돌아가고 싶다는 확신이 있습니까?</translation>
         </message>
         <message>
             <source>OCR functionality requires tesseract-ocr to be installed.\n\nInstall with:\n• macOS: brew install tesseract\n• Ubuntu: sudo apt install tesseract-ocr\n• Windows: download from GitHub</source>
-            <translation type="unfinished"/>
+            <translation>OCR 기능에 tesseract-ocr 설치가 필요합니다.\n\nMacOS: brew install tesseract\n• Ubuntu: sudo apt install tesseract-ocr\n• Windows: GitHub에서 다운로드</translation>
         </message>
         <message>
             <source>%d of %d entries (%d%%) have no translation.\n\nUntranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.\n\nSave anyway?</source>
-            <translation type="unfinished"/>
+            <translation>%d의 %d 항목 (%d%%) 은 번역이 없습니다.\n\nUntranslated 항목은 원본 텍스트와 함께 표시되어 백업으로 저장됩니다. 그래서 재생 중에 여전히 표시됩니다. LinguaEdit에서 다시 열면, 그들은 올바르게 번역되지 않은 것으로 표시됩니다.\n\nSave 어쨌든?</translation>
         </message>
         <message>
             <source>A translation file is currently open with unsaved changes.\nSave before loading new subtitles?</source>
-            <translation type="unfinished"/>
+            <translation>현재 저장되지 않은 변경사항으로 번역 파일이 열중입니다. 새 자막을 로드하기 전에 저장하세요?</translation>
         </message>
         <message>
             <source>Crowdin Over-The-Air functionality not yet implemented.\nThis would pull latest translations from Crowdin.</source>
-            <translation type="unfinished"/>
+            <translation>크라우딘 오브 더 에어 기능은 아직 구현되지 않았습니다. 이것은 크라우딘에서 최신 번역을 끌어낼 것입니다.</translation>
         </message>
     </context>
     <context>
         <name>AIReviewWorker</name>
         <message>
             <source>Translation is missing</source>
-            <translation type="unfinished"/>
+            <translation>번역이 없어</translation>
         </message>
         <message>
             <source>Translation much longer than source</source>
-            <translation type="unfinished"/>
+            <translation>번역은 출처보다 훨씬 길습니다</translation>
         </message>
         <message>
             <source>Translation much shorter than source</source>
-            <translation type="unfinished"/>
+            <translation>번역본보다 훨씬 짧습니다</translation>
         </message>
         <message>
             <source>Different number of format markers/tags</source>
-            <translation type="unfinished"/>
+            <translation>형식 표시자/표의 다른 수</translation>
         </message>
         <message>
             <source>Identical to source text</source>
-            <translation type="unfinished"/>
+            <translation>소스 텍스트와 동일</translation>
         </message>
         <message>
             <source>All uppercase when source is not</source>
-            <translation type="unfinished"/>
+            <translation>출처가 없는 경우 대문자</translation>
         </message>
         <message>
             <source>No obvious problems found with this translation.</source>
-            <translation type="unfinished"/>
+            <translation>이 번역판에 있어서 명백한 문제가 발견되지 않았습니다.</translation>
         </message>
         <message>
             <source>Problems identified: </source>
-            <translation type="unfinished"/>
+            <translation>확인된 문제: </translation>
         </message>
     </context>
     <context>
         <name>BatchOperationThread</name>
         <message>
             <source>Error: %s</source>
-            <translation type="unfinished"/>
+            <translation>오류: %s</translation>
         </message>
     </context>
     <context>
         <name>FileAnalysisThread</name>
         <message>
             <source>Analyzing %s...</source>
-            <translation type="unfinished"/>
+            <translation>%s를 분석하고...</translation>
         </message>
     </context>
     <context>
         <name>GlossaryImportThread</name>
         <message>
             <source>Importing term %d/%d</source>
-            <translation type="unfinished"/>
+            <translation>수입 용어 %d/%d</translation>
         </message>
         <message>
             <source>Row %d: %s</source>
-            <translation type="unfinished"/>
+            <translation>행 %d: %s</translation>
         </message>
         <message>
             <source>File error: %s</source>
-            <translation type="unfinished"/>
+            <translation>파일 오류: %s</translation>
         </message>
     </context>
     <context>
         <name>TextRenderWidget</name>
         <message>
             <source>Width: %dpx</source>
-            <translation type="unfinished"/>
+            <translation>너비: %dpx</translation>
         </message>
         <message>
             <source>OVERFLOW: +%dpx</source>
-            <translation type="unfinished"/>
+            <translation>과류: +%dpx</translation>
         </message>
     </context>
     <context>
@@ -6565,59 +6618,59 @@ quality assurance, spell checking, and platform integration.</source>
         </message>
         <message>
             <source>A new version of LinguaEdit is available!</source>
-            <translation type="unfinished"/>
+            <translation>새로운 버전의 LinguaEdit이 사용 가능합니다!</translation>
         </message>
         <message>
             <source>Current version: %s
 New version: %s</source>
-            <translation type="unfinished"/>
+            <translation>현재 버전: %s 새 버전: %s</translation>
         </message>
         <message>
             <source>Release notes:</source>
-            <translation type="unfinished"/>
+            <translation>발매 메모:</translation>
         </message>
         <message>
             <source>Skip this version</source>
-            <translation type="unfinished"/>
+            <translation>이 버전을 건너뛰어</translation>
         </message>
         <message>
             <source>Download</source>
-            <translation type="unfinished"/>
+            <translation>다운로드</translation>
         </message>
         <message>
             <source>Remind me later</source>
-            <translation type="unfinished"/>
+            <translation>나중에 상기시켜</translation>
         </message>
     </context>
-<context>
-    <name>PomodoroDialog</name>
-    <message>
-        <source>Focus minutes:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Pause</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Pomodoro Timer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Resume</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Start</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Time for a break!</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+    <context>
+        <name>PomodoroDialog</name>
+        <message>
+            <source>Focus minutes:</source>
+            <translation>집중 분자:</translation>
+        </message>
+        <message>
+            <source>Pause</source>
+            <translation>휴식</translation>
+        </message>
+        <message>
+            <source>Pomodoro Timer</source>
+            <translation>포모도로 타이머</translation>
+        </message>
+        <message>
+            <source>Reset</source>
+            <translation>다시 설정</translation>
+        </message>
+        <message>
+            <source>Resume</source>
+            <translation>재개정</translation>
+        </message>
+        <message>
+            <source>Start</source>
+            <translation>시작</translation>
+        </message>
+        <message>
+            <source>Time for a break!</source>
+            <translation>휴식 시간!</translation>
+        </message>
+    </context>
 </TS>

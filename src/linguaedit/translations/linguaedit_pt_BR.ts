@@ -1,3944 +1,4003 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="pt_BR">
+<?xml version='1.0' encoding='utf-8'?>
+<TS version="2.1" language="pt_BR">
     <context>
         <name>AIReviewDialog</name>
         <message>
             <source>AI Translation Review</source>
-            <translation type="unfinished"/>
+            <translation>Revisão de tradução por IA</translation>
         </message>
         <message>
             <source>Analysis</source>
-            <translation type="unfinished"/>
+            <translation>Análise</translation>
         </message>
         <message>
             <source>Analyzing translation...</source>
-            <translation type="unfinished"/>
+            <translation>Analisar tradução...</translation>
         </message>
         <message>
             <source>Apply Suggestion</source>
-            <translation type="unfinished"/>
+            <translation>Aplique a sugestão</translation>
         </message>
         <message>
             <source>Score:</source>
-            <translation type="unfinished"/>
+            <translation>- O resultado:</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro</translation>
         </message>
         <message>
             <source>Analysis error: </source>
-            <translation type="unfinished"/>
+            <translation>Erro de análise: </translation>
         </message>
         <message>
             <source>Improvement suggestions:</source>
-            <translation type="unfinished"/>
+            <translation>Sugestões de melhoria:</translation>
         </message>
         <message>
             <source>Explanation:</source>
-            <translation type="unfinished"/>
+            <translation>Explicação:</translation>
         </message>
         <message>
             <source>No specific suggestions.</source>
-            <translation type="unfinished"/>
+            <translation>Não há sugestões específicas.</translation>
         </message>
         <message>
             <source>Could not analyze translation: </source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu analisar a tradução: </translation>
         </message>
         <message>
             <source>Source text:</source>
-            <translation type="unfinished"/>
+            <translation>Texto fonte:</translation>
         </message>
         <message>
             <source>Text to Review</source>
-            <translation type="unfinished"/>
+            <translation>Texto para Revisão</translation>
         </message>
         <message>
             <source>Translation:</source>
-            <translation type="unfinished"/>
+            <translation>Tradução:</translation>
         </message>
     </context>
     <context>
         <name>AchievementManager</name>
         <message>
             <source>Complete 10 translations</source>
-            <translation type="unfinished"/>
+            <translation>10 traduções completas</translation>
         </message>
         <message>
             <source>Complete 100 translations</source>
-            <translation type="unfinished"/>
+            <translation>100 traduções completas</translation>
         </message>
         <message>
             <source>Complete 1000 translations</source>
-            <translation type="unfinished"/>
+            <translation>Completa 1000 traduções</translation>
         </message>
         <message>
             <source>Complete 50 translations without using auto-translate</source>
-            <translation type="unfinished"/>
+            <translation>Completar 50 traduções sem usar tradução automática</translation>
         </message>
         <message>
             <source>Complete your first translation</source>
-            <translation type="unfinished"/>
+            <translation>Completar a sua primeira tradução</translation>
         </message>
         <message>
             <source>Completionist</source>
-            <translation type="unfinished"/>
+            <translation>Completador</translation>
         </message>
         <message>
             <source>Dedicated Translator</source>
-            <translation type="unfinished"/>
+            <translation>Traductor dedicado</translation>
         </message>
         <message>
             <source>Early Bird</source>
-            <translation type="unfinished"/>
+            <translation>Aves de Rapaz</translation>
         </message>
         <message>
             <source>First Steps</source>
-            <translation type="unfinished"/>
+            <translation>Primeiros Pasos</translation>
         </message>
         <message>
             <source>Format Explorer</source>
-            <translation type="unfinished"/>
+            <translation>Formatar o Explorer</translation>
         </message>
         <message>
             <source>Fully translate a file (100% complete)</source>
-            <translation type="unfinished"/>
+            <translation>Traduzir completamente um arquivo (100% completo)</translation>
         </message>
         <message>
             <source>Getting Into Rhythm</source>
-            <translation type="unfinished"/>
+            <translation>Começando o ritmo</translation>
         </message>
         <message>
             <source>Getting Started</source>
-            <translation type="unfinished"/>
+            <translation>Começando</translation>
         </message>
         <message>
             <source>Linguistic Expert</source>
-            <translation type="unfinished"/>
+            <translation>Especialista em Linguística</translation>
         </message>
         <message>
             <source>Night Owl</source>
-            <translation type="unfinished"/>
+            <translation>Oulha de noite</translation>
         </message>
         <message>
             <source>Perfectionist</source>
-            <translation type="unfinished"/>
+            <translation>Perfeccionista</translation>
         </message>
         <message>
             <source>Polyglot</source>
-            <translation type="unfinished"/>
+            <translation>Polínglo</translation>
         </message>
         <message>
             <source>Speed Demon</source>
-            <translation type="unfinished"/>
+            <translation>Demon de velocidade</translation>
         </message>
         <message>
             <source>Translate 50 strings in one hour</source>
-            <translation type="unfinished"/>
+            <translation>Traduzir 50 cordas em uma hora</translation>
         </message>
         <message>
             <source>Translate after 10 PM</source>
-            <translation type="unfinished"/>
+            <translation>Tradução após as 22h</translation>
         </message>
         <message>
             <source>Translate before 8 AM</source>
-            <translation type="unfinished"/>
+            <translation>Traduzir antes das 8 da manhã</translation>
         </message>
         <message>
             <source>Translate for 3 days in a row</source>
-            <translation type="unfinished"/>
+            <translation>Traduzir 3 dias seguidos</translation>
         </message>
         <message>
             <source>Translate for 30 days in a row</source>
-            <translation type="unfinished"/>
+            <translation>Traduzir 30 dias seguidos</translation>
         </message>
         <message>
             <source>Translate for 7 days in a row</source>
-            <translation type="unfinished"/>
+            <translation>Traduzir durante 7 dias seguidos</translation>
         </message>
         <message>
             <source>Translation Master</source>
-            <translation type="unfinished"/>
+            <translation>Mestre de Tradução</translation>
         </message>
         <message>
             <source>Unstoppable</source>
-            <translation type="unfinished"/>
+            <translation>Não pode ser detido</translation>
         </message>
         <message>
             <source>Week Warrior</source>
-            <translation type="unfinished"/>
+            <translation>Guerra da Semana</translation>
         </message>
         <message>
             <source>Work with 3 different languages</source>
-            <translation type="unfinished"/>
+            <translation>Trabalhar com 3 línguas diferentes</translation>
         </message>
         <message>
             <source>Work with 5 different file formats</source>
-            <translation type="unfinished"/>
+            <translation>Trabalhar com 5 formatos de arquivo diferentes</translation>
         </message>
         <message>
             <source>Work with 5 different languages</source>
-            <translation type="unfinished"/>
+            <translation>Trabalhar com 5 línguas diferentes</translation>
         </message>
     </context>
     <context>
         <name>AchievementWidget</name>
         <message>
             <source>Unlocked: {}</source>
-            <translation type="unfinished"/>
+            <translation>Desbloqueado: {}</translation>
         </message>
     </context>
     <context>
         <name>AchievementsDialog</name>
         <message>
             <source>Achievement Progress</source>
-            <translation type="unfinished"/>
+            <translation>Progresso na realização</translation>
         </message>
         <message>
             <source>Achievements</source>
-            <translation type="unfinished"/>
+            <translation>Consequências</translation>
         </message>
         <message>
             <source>All</source>
-            <translation type="unfinished"/>
+            <translation>Todos</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Locked</source>
-            <translation type="unfinished"/>
+            <translation>Fechado</translation>
         </message>
         <message>
             <source>Overall Progress:</source>
-            <translation type="unfinished"/>
+            <translation>Progresso geral:</translation>
         </message>
         <message>
             <source>Statistics</source>
-            <translation type="unfinished"/>
+            <translation>Estatísticas</translation>
         </message>
         <message>
             <source>Translations: {0} | Streak: {1} days | Languages: {2}</source>
-            <translation type="unfinished"/>
+            <translation>Traduções: {0} \ Streak: {1} Linguagens: {2}</translation>
         </message>
         <message>
             <source>Unlocked</source>
-            <translation type="unfinished"/>
+            <translation>Desbloqueado</translation>
         </message>
     </context>
     <context>
         <name>BatchEditDialog</name>
         <message>
             <source>Accept all fuzzy translations</source>
-            <translation type="unfinished"/>
+            <translation>Aceitar todas as traduções confusas</translation>
         </message>
         <message>
             <source>After</source>
-            <translation type="unfinished"/>
+            <translation>Depois</translation>
         </message>
         <message>
             <source>Apply Changes</source>
-            <translation type="unfinished"/>
+            <translation>Aplique as mudanças</translation>
         </message>
         <message>
             <source>Apply changes to %d entries?</source>
-            <translation type="unfinished"/>
+            <translation>Aplicar alterações às entradas %d?</translation>
         </message>
         <message>
             <source>Batch Edit</source>
-            <translation type="unfinished"/>
+            <translation>Batch Edição</translation>
         </message>
         <message>
             <source>Before</source>
-            <translation type="unfinished"/>
+            <translation>Antes</translation>
         </message>
         <message>
             <source>Case sensitive</source>
-            <translation type="unfinished"/>
+            <translation>Caso sensível</translation>
         </message>
         <message>
             <source>Clear fuzzy flag from all translations</source>
-            <translation type="unfinished"/>
+            <translation>Bandera clara e confusa de todas as traduções</translation>
         </message>
         <message>
             <source>Completed successfully. %d entries modified.</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Completed with %d errors. %d entries modified.</source>
-            <translation type="unfinished"/>
+            <translation>Completado com erros %d. As entradas %d modificadas.</translation>
         </message>
         <message>
             <source>Confirm Changes</source>
-            <translation type="unfinished"/>
+            <translation>Confirme as mudanças</translation>
         </message>
         <message>
             <source>Copy Source</source>
-            <translation type="unfinished"/>
+            <translation>Cópia de fonte</translation>
         </message>
         <message>
             <source>Copy source text to empty translation fields.</source>
-            <translation type="unfinished"/>
+            <translation>Copiar o texto fonte para campos vazios de tradução.</translation>
         </message>
         <message>
             <source>Copy source to empty translations</source>
-            <translation type="unfinished"/>
+            <translation>Cópia de fonte para traduções vazias</translation>
         </message>
         <message>
             <source>Entry</source>
-            <translation type="unfinished"/>
+            <translation>Entrada</translation>
         </message>
         <message>
             <source>Find:</source>
-            <translation type="unfinished"/>
+            <translation>Encontrar:</translation>
         </message>
         <message>
             <source>Fuzzy Operations</source>
-            <translation type="unfinished"/>
+            <translation>Operações de Fusso</translation>
         </message>
         <message>
             <source>Fuzzy: </source>
-            <translation type="unfinished"/>
+            <translation>- Não .</translation>
         </message>
         <message>
             <source>Mark all translations as fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>Marque todas as traduções como confusas</translation>
         </message>
         <message>
             <source>No</source>
-            <translation type="unfinished"/>
+            <translation>Não, não.</translation>
         </message>
         <message>
             <source>Operation</source>
-            <translation type="unfinished"/>
+            <translation>Operação</translation>
         </message>
         <message>
             <source>Options</source>
-            <translation type="unfinished"/>
+            <translation>Opções</translation>
         </message>
         <message>
             <source>Please enter text to find.</source>
-            <translation type="unfinished"/>
+            <translation>Por favor, insira texto para encontrar.</translation>
         </message>
         <message>
             <source>Preview</source>
-            <translation type="unfinished"/>
+            <translation>Previsão</translation>
         </message>
         <message>
             <source>Processing...</source>
-            <translation type="unfinished"/>
+            <translation>Processamento...</translation>
         </message>
         <message>
             <source>Regular expression</source>
-            <translation type="unfinished"/>
+            <translation>Expressão regular</translation>
         </message>
         <message>
             <source>Replace:</source>
-            <translation type="unfinished"/>
+            <translation>Substituição:</translation>
         </message>
         <message>
             <source>Search &amp; Replace</source>
-            <translation type="unfinished"/>
+            <translation>Buscar e substituir</translation>
         </message>
         <message>
             <source>Source Copy</source>
-            <translation type="unfinished"/>
+            <translation>Cópia de fonte</translation>
         </message>
         <message>
             <source>Text change</source>
-            <translation type="unfinished"/>
+            <translation>Mudança de texto</translation>
         </message>
         <message>
             <source>Warning</source>
-            <translation type="unfinished"/>
+            <translation>Aviso</translation>
         </message>
         <message>
             <source>Yes</source>
-            <translation type="unfinished"/>
+            <translation>Sim, sim.</translation>
         </message>
     </context>
     <context>
         <name>BatchTranslateDialog</name>
         <message>
             <source> (API key)</source>
-            <translation type="unfinished"/>
+            <translation>(chave API)</translation>
         </message>
         <message>
             <source>%v / %m</source>
-            <translation type="unfinished"/>
+            <translation>% v / % m</translation>
         </message>
         <message>
             <source>All entries are already translated.</source>
-            <translation type="unfinished"/>
+            <translation>Todas as entradas já foram traduzidas.</translation>
         </message>
         <message>
             <source>Apply Results</source>
-            <translation type="unfinished"/>
+            <translation>Aplicar os resultados</translation>
         </message>
         <message>
             <source>Batch Machine Translate</source>
-            <translation type="unfinished"/>
+            <translation>Tradução de batches</translation>
         </message>
         <message>
             <source>Cancel Translation</source>
-            <translation type="unfinished"/>
+            <translation>Cancelar a tradução</translation>
         </message>
         <message>
             <source>Cancelling…</source>
-            <translation type="unfinished"/>
+            <translation>- Cancelar...</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Done. %d translated, %d errors.</source>
-            <translation type="unfinished"/>
+            <translation>%d traduzido, %d erros.</translation>
         </message>
         <message>
             <source>Engine:</source>
-            <translation type="unfinished"/>
+            <translation>Motor:</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro</translation>
         </message>
         <message>
             <source>Mark results as fuzzy / needs work</source>
-            <translation type="unfinished"/>
+            <translation>Marque os resultados como trabalho confuso / necessidades</translation>
         </message>
         <message>
             <source>Nothing to Translate</source>
-            <translation type="unfinished"/>
+            <translation>Nada para traduzir</translation>
         </message>
         <message>
             <source>Pending</source>
-            <translation type="unfinished"/>
+            <translation>A espera</translation>
         </message>
         <message>
             <source>Source</source>
-            <translation type="unfinished"/>
+            <translation>Fonte:</translation>
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua fonte:</translation>
         </message>
         <message>
             <source>Status</source>
-            <translation type="unfinished"/>
+            <translation>Estatuto</translation>
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua alvo:</translation>
         </message>
         <message>
             <source>Translate All</source>
-            <translation type="unfinished"/>
+            <translation>Traduzir tudo</translation>
         </message>
         <message>
             <source>Translating…</source>
-            <translation type="unfinished"/>
+            <translation>Traduzindo...</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tradução</translation>
         </message>
         <message>
             <source>Translation Settings</source>
-            <translation type="unfinished"/>
+            <translation>Configurações de tradução</translation>
         </message>
         <message>
             <source>%d min %d s remaining</source>
-            <translation type="unfinished"/>
+            <translation>%d min %d s restante</translation>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s</source>
-            <translation type="unfinished"/>
+            <translation>%d de cordas %d · %.1f cordas/s · %s</translation>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s remaining</source>
-            <translation type="unfinished"/>
+            <translation>%d das cordas %d · %.1f de cordas/s · restante %s</translation>
         </message>
         <message>
             <source>%d s remaining</source>
-            <translation type="unfinished"/>
+            <translation>Resíduos de %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;%d&lt;/b&gt; untranslated strings out of &lt;b&gt;%d&lt;/b&gt; total.</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Completed %d strings in %d s</source>
-            <translation type="unfinished"/>
+            <translation>As cadeias %d completas em %d s</translation>
         </message>
     </context>
     <context>
         <name>CollapsibleSidePanel</name>
         <message>
             <source>Ctx</source>
-            <translation type="unfinished"/>
+            <translation>Ctx</translation>
         </message>
         <message>
             <source>Info</source>
-            <translation type="unfinished"/>
+            <translation>Informações</translation>
         </message>
         <message>
             <source>Pre</source>
-            <translation type="unfinished"/>
+            <translation>Pre</translation>
         </message>
         <message>
             <source>Ref</source>
-            <translation type="unfinished"/>
+            <translation>Refere</translation>
         </message>
         <message>
             <source>TM</source>
-            <translation type="unfinished"/>
+            <translation>T.M.</translation>
         </message>
         <message>
             <source>Toggle side panel</source>
-            <translation type="unfinished"/>
+            <translation>Parâmetro lateral</translation>
         </message>
     </context>
     <context>
         <name>ConcordanceDialog</name>
         <message>
             <source>Concordance Search</source>
-            <translation type="unfinished"/>
+            <translation>Busca de Concordância</translation>
         </message>
         <message>
             <source>Double-click a row to copy translation to clipboard.</source>
-            <translation type="unfinished"/>
+            <translation>Clique duas vezes numa fila para copiar a tradução para o clipboard.</translation>
         </message>
         <message>
             <source>Enter word or phrase to search in TM…</source>
-            <translation type="unfinished"/>
+            <translation>Digite uma palavra ou frase para procurar em TM...</translation>
         </message>
         <message>
             <source>File</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo</translation>
         </message>
         <message>
             <source>Score</source>
-            <translation type="unfinished"/>
+            <translation>Resultados</translation>
         </message>
         <message>
             <source>Search</source>
-            <translation type="unfinished"/>
+            <translation>Busca</translation>
         </message>
         <message>
             <source>Source</source>
-            <translation type="unfinished"/>
+            <translation>Fonte:</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tradução</translation>
         </message>
         <message>
             <source>Translation copied to clipboard.</source>
-            <translation type="unfinished"/>
+            <translation>Tradução copiada para clipboard.</translation>
         </message>
         <message>
             <source>{} results found for </source>
-            <translation type="unfinished"/>
+            <translation>Resultados encontrados para</translation>
         </message>
     </context>
     <context>
         <name>ContextPanel</name>
         <message>
             <source>&lt;i&gt;MT unavailable&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;MT não disponível&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No matches&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;N Não correspondem&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No matching terms&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;N Não existem termos correspondentes &lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No suggestion&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;N Não há sugestão&lt;/i&gt;</translation>
         </message>
         <message>
             <source>Context</source>
-            <translation type="unfinished"/>
+            <translation>Contexto</translation>
         </message>
         <message>
             <source>Glossary</source>
-            <translation type="unfinished"/>
+            <translation>Glossário</translation>
         </message>
         <message>
             <source>Machine Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tradução automática</translation>
         </message>
         <message>
             <source>Translation Memory</source>
-            <translation type="unfinished"/>
+            <translation>Memória de tradução</translation>
         </message>
         <message>
             <source>Source: %s\nTarget: %s</source>
-            <translation type="unfinished"/>
+            <translation>Fonte: %s\nObjetivo: %s</translation>
         </message>
         <message>
-        <source>Source: %s
+            <source>Source: %s
 Target: %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>Fonte: %s Alvo: %s</translation>
+        </message>
+    </context>
     <context>
         <name>DashboardDialog</name>
         <message>
             <source>CSV files (*.csv)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos CSV (*.csv)</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Export Complete</source>
-            <translation type="unfinished"/>
+            <translation>Exportação completa</translation>
         </message>
         <message>
             <source>Export Statistics as CSV</source>
-            <translation type="unfinished"/>
+            <translation>Estatísticas das exportações em CSV</translation>
         </message>
         <message>
             <source>Export as CSV…</source>
-            <translation type="unfinished"/>
+            <translation>Exportação como CSV...</translation>
         </message>
         <message>
             <source>F:%d U:%d</source>
-            <translation type="unfinished"/>
+            <translation>F:%d U:%d</translation>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>- Não .</translation>
         </message>
         <message>
             <source>Per-Language Progress</source>
-            <translation type="unfinished"/>
+            <translation>Progresso por língua</translation>
         </message>
         <message>
             <source>Project Dashboard</source>
-            <translation type="unfinished"/>
+            <translation>Planejamento de projetos</translation>
         </message>
         <message>
             <source>Statistics exported to %s</source>
-            <translation type="unfinished"/>
+            <translation>Estatísticas exportadas para a %s</translation>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>Tradução</translation>
         </message>
         <message>
             <source>Untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Não traduzido</translation>
         </message>
         <message>
-            <source>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style=&apos;color:green&apos;&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:orange&apos;&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:red&apos;&gt;Untranslated: %d&lt;/span&gt;</source>
-            <translation type="unfinished"/>
+            <source>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style='color:green'&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:orange'&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:red'&gt;Untranslated: %d&lt;/span&gt;</source>
+            <translation>&lt;h2&gt;Projeto Resumo&lt;/h2&gt;&lt;b&gt;Total de cordas:&lt;/b&gt; %d &amp;nbsp; &lt;span style='color:green'&gt;Traduzido: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:orange'&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style='color:red'&gt;Untraduzido: %d&lt;/span&gt;</translation>
         </message>
     </context>
     <context>
         <name>DiffDialog</name>
         <message>
             <source>Added Only</source>
-            <translation type="unfinished"/>
+            <translation>Somente adicionados</translation>
         </message>
         <message>
             <source>Added:</source>
-            <translation type="unfinished"/>
+            <translation>Adicionado:</translation>
         </message>
         <message>
             <source>All Changes</source>
-            <translation type="unfinished"/>
+            <translation>Todas as mudanças</translation>
         </message>
         <message>
             <source>Browse...</source>
-            <translation type="unfinished"/>
+            <translation>- Não, não.</translation>
         </message>
         <message>
             <source>Change</source>
-            <translation type="unfinished"/>
+            <translation>Mudança</translation>
         </message>
         <message>
             <source>Changes</source>
-            <translation type="unfinished"/>
+            <translation>Mudanças</translation>
         </message>
         <message>
             <source>Compare Files</source>
-            <translation type="unfinished"/>
+            <translation>Compare arquivos</translation>
         </message>
         <message>
             <source>Compare Translation Files</source>
-            <translation type="unfinished"/>
+            <translation>Compare arquivos de tradução</translation>
         </message>
         <message>
             <source>Comparison</source>
-            <translation type="unfinished"/>
+            <translation>Comparativo</translation>
         </message>
         <message>
             <source>Comparison File</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo de comparação</translation>
         </message>
         <message>
             <source>Comparison File:</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo de comparação:</translation>
         </message>
         <message>
             <source>Comparison Options</source>
-            <translation type="unfinished"/>
+            <translation>Opções de comparação</translation>
         </message>
         <message>
             <source>Comparison Statistics</source>
-            <translation type="unfinished"/>
+            <translation>Estatísticas de comparação</translation>
         </message>
         <message>
             <source>Comparison complete. %d changes found.</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Comparison failed: %s</source>
-            <translation type="unfinished"/>
+            <translation>Comparador falhado: %s</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro</translation>
         </message>
         <message>
             <source>Failed to load file: %s</source>
-            <translation type="unfinished"/>
+            <translation>Falha em carregar arquivo: %s</translation>
         </message>
         <message>
             <source>Ignore case</source>
-            <translation type="unfinished"/>
+            <translation>Ignorar o caso</translation>
         </message>
         <message>
             <source>Ignore whitespace</source>
-            <translation type="unfinished"/>
+            <translation>Ignorar o espaço branco</translation>
         </message>
         <message>
             <source>Modified Only</source>
-            <translation type="unfinished"/>
+            <translation>Apenas modificados</translation>
         </message>
         <message>
             <source>Modified:</source>
-            <translation type="unfinished"/>
+            <translation>Modificado:</translation>
         </message>
         <message>
             <source>No file selected</source>
-            <translation type="unfinished"/>
+            <translation>Nenhum arquivo selecionado</translation>
         </message>
         <message>
             <source>Original</source>
-            <translation type="unfinished"/>
+            <translation>Original</translation>
         </message>
         <message>
             <source>Original File</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo original</translation>
         </message>
         <message>
             <source>Original File:</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo original:</translation>
         </message>
         <message>
             <source>Removed Only</source>
-            <translation type="unfinished"/>
+            <translation>Só removido</translation>
         </message>
         <message>
             <source>Removed:</source>
-            <translation type="unfinished"/>
+            <translation>Removido:</translation>
         </message>
         <message>
             <source>Select Files to Compare</source>
-            <translation type="unfinished"/>
+            <translation>Selecionar arquivos para comparar</translation>
         </message>
         <message>
             <source>Select Translation File</source>
-            <translation type="unfinished"/>
+            <translation>Selecionar Arquivo de Tradução</translation>
         </message>
         <message>
             <source>Show unchanged</source>
-            <translation type="unfinished"/>
+            <translation>Mostra inalterado</translation>
         </message>
         <message>
             <source>Show:</source>
-            <translation type="unfinished"/>
+            <translation>- O que é que é ?</translation>
         </message>
         <message>
             <source>Side by Side</source>
-            <translation type="unfinished"/>
+            <translation>Lado a lado</translation>
         </message>
         <message>
             <source>Source Text</source>
-            <translation type="unfinished"/>
+            <translation>Texto da fonte</translation>
         </message>
         <message>
             <source>Summary</source>
-            <translation type="unfinished"/>
+            <translation>Resumo</translation>
         </message>
         <message>
             <source>Total entries:</source>
-            <translation type="unfinished"/>
+            <translation>Total das entradas:</translation>
         </message>
         <message>
             <source>Translation files (*.po *.pot *.ts *.json *.xliff *.xlf);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos de tradução (*.po *.pot *.ts *.json *.xliff *.xlf);;Todos os arquivos (*)</translation>
         </message>
         <message>
             <source>Unchanged:</source>
-            <translation type="unfinished"/>
+            <translation>Não modificado:</translation>
         </message>
         <message>
             <source>Unsupported file format: %s</source>
-            <translation type="unfinished"/>
+            <translation>Formatos de arquivo não suportados: %s</translation>
         </message>
         <message>
             <source>Source: %s</source>
-            <translation type="unfinished"/>
+            <translation>Fonte: %s</translation>
         </message>
         <message>
             <source>Translation: %s</source>
-            <translation type="unfinished"/>
+            <translation>Tradução: %s</translation>
         </message>
     </context>
     <context>
         <name>FFmpegMissingDialog</name>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished"/>
+            <translation>Cancelar</translation>
         </message>
         <message>
             <source>Browse for ffmpeg…</source>
-            <translation type="unfinished"/>
+            <translation>Procure por FFmpeg...</translation>
         </message>
         <message>
             <source>The selected file does not appear to be ffmpeg.</source>
-            <translation type="unfinished"/>
+            <translation>O arquivo selecionado não parece ser ffmpeg.</translation>
         </message>
         <message>
             <source>Not Found</source>
-            <translation type="unfinished"/>
+            <translation>Não encontrados</translation>
         </message>
         <message>
             <source>FFmpeg Required</source>
-            <translation type="unfinished"/>
+            <translation>FFmpeg Requerido</translation>
         </message>
         <message>
             <source>FFmpeg could still not be found in the system path.</source>
-            <translation type="unfinished"/>
+            <translation>FFmpeg ainda não foi encontrado no caminho do sistema.</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro</translation>
         </message>
         <message>
             <source>Retry</source>
-            <translation type="unfinished"/>
+            <translation>Tente novamente</translation>
         </message>
         <message>
             <source>Installation Instructions</source>
-            <translation type="unfinished"/>
+            <translation>Instruções de instalação</translation>
         </message>
         <message>
             <source>Could not run the selected file.</source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu executar o arquivo selecionado.</translation>
         </message>
         <message>
             <source>Executable files (*)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos executáveis (*)</translation>
         </message>
         <message>
             <source>Invalid File</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo inválido</translation>
         </message>
         <message>
             <source>Select ffmpeg binary</source>
-            <translation type="unfinished"/>
+            <translation>Selecionar binário ffmpeg</translation>
         </message>
         <message>
             <source>Open Download Page</source>
-            <translation type="unfinished"/>
+            <translation>Abre a página de download</translation>
         </message>
         <message>
             <source>&lt;b&gt;Ubuntu/Debian:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo apt install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Fedora:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo dnf install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Arch Linux:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo pacman -S ffmpeg&lt;/code&gt;</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>&lt;b&gt;macOS (Homebrew):&lt;/b&gt;&lt;br&gt;&lt;code&gt;brew install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;macOS (MacPorts):&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo port install ffmpeg&lt;/code&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;macOS (Homebrew):&lt;/b&gt;&lt;br&gt;&lt;code&gt;brew instalar ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;macOS (MacPorts):&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo porta de instalação ffmpeg&lt;/code&gt;</translation>
         </message>
         <message>
             <source>&lt;h3&gt;FFmpeg could not be found&lt;/h3&gt;&lt;p&gt;LinguaEdit needs &lt;b&gt;ffmpeg&lt;/b&gt; and &lt;b&gt;ffprobe&lt;/b&gt; to extract subtitles from video files.&lt;/p&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;h3&gt;FFmpeg não foi encontrado&lt;/h3&gt;&lt;p&gt;LinguaEditar precisa de &lt;b&gt;ffmpeg&lt;/b&gt; e &lt;b&gt;ffprobe&lt;/b&gt; para extrair legendas de arquivos de vídeo.&lt;/p&gt;</translation>
         </message>
     </context>
     <context>
         <name>FileHistoryDialog</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Date/Time</source>
-            <translation type="unfinished"/>
+            <translation>Data/hora</translation>
         </message>
         <message>
             <source>Entry</source>
-            <translation type="unfinished"/>
+            <translation>Entrada</translation>
         </message>
         <message>
             <source>Field</source>
-            <translation type="unfinished"/>
+            <translation>Campo</translation>
         </message>
         <message>
             <source>File History</source>
-            <translation type="unfinished"/>
+            <translation>História de arquivos</translation>
         </message>
         <message>
             <source>Recent changes in: {}</source>
-            <translation type="unfinished"/>
+            <translation>Mudanças recentes em: {}</translation>
         </message>
         <message>
             <source>Summary</source>
-            <translation type="unfinished"/>
+            <translation>Resumo</translation>
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>Não conhecido</translation>
         </message>
         <message>
             <source>User</source>
-            <translation type="unfinished"/>
+            <translation>Utilizador</translation>
         </message>
         <message>
             <source>View Entry History</source>
-            <translation type="unfinished"/>
+            <translation>Veja História de entrada</translation>
         </message>
     </context>
     <context>
         <name>GitDiffDialog</name>
         <message>
             <source>&lt;b&gt;Added strings:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Added strings:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Changed source text:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Texto de fonte alterado:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Changed translations:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Tradusões alteradas:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Potentially outdated:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Posteriormente ultrapassado:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Removed strings:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Removidas cordas:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;h3&gt;Comparison Results&lt;/h3&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;h3&gt;Resultados de comparação&lt;/h3&gt;</translation>
         </message>
         <message>
             <source>Added</source>
-            <translation type="unfinished"/>
+            <translation>Adicionado</translation>
         </message>
         <message>
             <source>Changes</source>
-            <translation type="unfinished"/>
+            <translation>Mudanças</translation>
         </message>
         <message>
             <source>Compare</source>
-            <translation type="unfinished"/>
+            <translation>Comparar</translation>
         </message>
         <message>
             <source>Compare with commit:</source>
-            <translation type="unfinished"/>
+            <translation>Comparar com o comitê:</translation>
         </message>
         <message>
             <source>Comparing %d old vs %d current entries…</source>
-            <translation type="unfinished"/>
+            <translation>Comparar %d antigo vs %d entradas atuais...</translation>
         </message>
         <message>
             <source>Comparison complete.</source>
-            <translation type="unfinished"/>
+            <translation>Comparar completa.</translation>
         </message>
         <message>
             <source>Could not parse old version</source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu analisar a versão antiga</translation>
         </message>
         <message>
             <source>Diff with Previous Version</source>
-            <translation type="unfinished"/>
+            <translation>Diferença com versão anterior</translation>
         </message>
         <message>
             <source>Failed to get file at commit %s</source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu obter arquivo no commit %s</translation>
         </message>
         <message>
             <source>Modified</source>
-            <translation type="unfinished"/>
+            <translation>Modificados</translation>
         </message>
         <message>
             <source>New Source</source>
-            <translation type="unfinished"/>
+            <translation>Nova fonte</translation>
         </message>
         <message>
             <source>No git history found</source>
-            <translation type="unfinished"/>
+            <translation>Não encontrou histórico de dados</translation>
         </message>
         <message>
             <source>Old Source</source>
-            <translation type="unfinished"/>
+            <translation>Fonte antiga</translation>
         </message>
         <message>
             <source>Outdated</source>
-            <translation type="unfinished"/>
+            <translation>Antiquado</translation>
         </message>
         <message>
             <source>Removed</source>
-            <translation type="unfinished"/>
+            <translation>Removido</translation>
         </message>
         <message>
             <source>Source (new)</source>
-            <translation type="unfinished"/>
+            <translation>Fonte (nova)</translation>
         </message>
         <message>
             <source>Source (old)</source>
-            <translation type="unfinished"/>
+            <translation>Fonte (antiga)</translation>
         </message>
         <message>
             <source>Source changed</source>
-            <translation type="unfinished"/>
+            <translation>Fonte alterada</translation>
         </message>
         <message>
             <source>Status</source>
-            <translation type="unfinished"/>
+            <translation>Estatuto</translation>
         </message>
         <message>
             <source>Summary</source>
-            <translation type="unfinished"/>
+            <translation>Resumo</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tradução</translation>
         </message>
         <message>
             <source>Translation (new)</source>
-            <translation type="unfinished"/>
+            <translation>Tradução (nova)</translation>
         </message>
         <message>
             <source>Translation (old)</source>
-            <translation type="unfinished"/>
+            <translation>Tradução (velha)</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished"/>
+            <translation>Tipo</translation>
         </message>
         <message>
             <source>⚠ Outdated</source>
-            <translation type="unfinished"/>
+            <translation> Antiquado</translation>
         </message>
         <message>
             <source>&lt;b&gt;Outdated translations&lt;/b&gt; — source changed but translation stayed the same.</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;O traduções atualizadas&lt;/b&gt;  a fonte mudou, mas a tradução permaneceu a mesma.</translation>
         </message>
     </context>
     <context>
         <name>GlossaryDialog</name>
         <message>
             <source>%d terms</source>
-            <translation type="unfinished"/>
+            <translation>Termos %d</translation>
         </message>
         <message>
             <source>A term with this source text already exists. Update it?</source>
-            <translation type="unfinished"/>
+            <translation>Um termo com este texto de origem já existe.</translation>
         </message>
         <message>
             <source>Add</source>
-            <translation type="unfinished"/>
+            <translation>Adicionar</translation>
         </message>
         <message>
             <source>All domains</source>
-            <translation type="unfinished"/>
+            <translation>Todos os domínios</translation>
         </message>
         <message>
             <source>CSV Import Format</source>
-            <translation type="unfinished"/>
+            <translation>Formatos de importação CSV</translation>
         </message>
         <message>
             <source>CSV files (*.csv);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos CSV (*.csv);;Todos os arquivos (*)</translation>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished"/>
+            <translation>- Claro.</translation>
         </message>
         <message>
             <source>Confirm Delete</source>
-            <translation type="unfinished"/>
+            <translation>Confirmar a exclusão</translation>
         </message>
         <message>
             <source>Copy Source</source>
-            <translation type="unfinished"/>
+            <translation>Cópia de fonte</translation>
         </message>
         <message>
             <source>Copy Target</source>
-            <translation type="unfinished"/>
+            <translation>Copie alvo</translation>
         </message>
         <message>
             <source>Delete</source>
-            <translation type="unfinished"/>
+            <translation>Excluir</translation>
         </message>
         <message>
             <source>Delete term </source>
-            <translation type="unfinished"/>
+            <translation>Eliminar termo </translation>
         </message>
         <message>
             <source>Domain</source>
-            <translation type="unfinished"/>
+            <translation>Domínio</translation>
         </message>
         <message>
             <source>Domain:</source>
-            <translation type="unfinished"/>
+            <translation>Domínio:</translation>
         </message>
         <message>
             <source>Duplicate Term</source>
-            <translation type="unfinished"/>
+            <translation>Termo duplicado</translation>
         </message>
         <message>
             <source>Edit</source>
-            <translation type="unfinished"/>
+            <translation>Edição</translation>
         </message>
         <message>
             <source>Edit Term</source>
-            <translation type="unfinished"/>
+            <translation>Edição de Termo</translation>
         </message>
         <message>
             <source>Expected CSV format:\nsource,target,notes,domain\n\n</source>
-            <translation type="unfinished"/>
+            <translation>Formatos CSV esperados: fonte, alvo, notas, domínio</translation>
         </message>
         <message>
             <source>Export CSV...</source>
-            <translation type="unfinished"/>
+            <translation>Exportação de CSV...</translation>
         </message>
         <message>
             <source>Export Completed</source>
-            <translation type="unfinished"/>
+            <translation>Exportação concluída</translation>
         </message>
         <message>
             <source>Export Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro de exportação</translation>
         </message>
         <message>
             <source>Export Glossary to CSV</source>
-            <translation type="unfinished"/>
+            <translation>Glossário de exportação para CSV</translation>
         </message>
         <message>
             <source>Exported %d terms to %s</source>
-            <translation type="unfinished"/>
+            <translation>Exportados termos %d para %s</translation>
         </message>
         <message>
             <source>Failed to export glossary:\n%s</source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu exportar glossário:\n%s</translation>
         </message>
         <message>
             <source>Glossary Management</source>
-            <translation type="unfinished"/>
+            <translation>Gerenciamento do glossário</translation>
         </message>
         <message>
             <source>Import CSV...</source>
-            <translation type="unfinished"/>
+            <translation>Importar CSV...</translation>
         </message>
         <message>
             <source>Import Completed</source>
-            <translation type="unfinished"/>
+            <translation>Importação concluída</translation>
         </message>
         <message>
             <source>Import Glossary from CSV</source>
-            <translation type="unfinished"/>
+            <translation>Glossário de importação a partir do CSV</translation>
         </message>
         <message>
             <source>Imported %d terms with %d errors.\n\nFirst errors:\n%s</source>
-            <translation type="unfinished"/>
+            <translation>Importado %d termos com erros %d.\n\nPrimeiros erros:\n%s</translation>
         </message>
         <message>
             <source>No terms to export.</source>
-            <translation type="unfinished"/>
+            <translation>Não há condições para exportação.</translation>
         </message>
         <message>
             <source>Notes</source>
-            <translation type="unfinished"/>
+            <translation>Notas</translation>
         </message>
         <message>
             <source>Notes:</source>
-            <translation type="unfinished"/>
+            <translation>Notas:</translation>
         </message>
         <message>
             <source>Search &amp; Filter</source>
-            <translation type="unfinished"/>
+            <translation>Pesquisa e Filtração</translation>
         </message>
         <message>
             <source>Search in source or target...</source>
-            <translation type="unfinished"/>
+            <translation>Procura na fonte ou alvo...</translation>
         </message>
         <message>
             <source>Search:</source>
-            <translation type="unfinished"/>
+            <translation>Pesquisa:</translation>
         </message>
         <message>
             <source>Showing %d of %d terms</source>
-            <translation type="unfinished"/>
+            <translation>Mostração do %d dos termos %d</translation>
         </message>
         <message>
             <source>Source</source>
-            <translation type="unfinished"/>
+            <translation>Fonte:</translation>
         </message>
         <message>
             <source>Source text cannot be empty.</source>
-            <translation type="unfinished"/>
+            <translation>O texto fonte não pode ser vazio.</translation>
         </message>
         <message>
             <source>Source:</source>
-            <translation type="unfinished"/>
+            <translation>Fonte:</translation>
         </message>
         <message>
             <source>Successfully imported %d terms.</source>
-            <translation type="unfinished"/>
+            <translation>Termos %d importados com sucesso.</translation>
         </message>
         <message>
             <source>Target</source>
-            <translation type="unfinished"/>
+            <translation>Alvo</translation>
         </message>
         <message>
             <source>Target text cannot be empty.</source>
-            <translation type="unfinished"/>
+            <translation>O texto-alvo não pode estar vazio.</translation>
         </message>
         <message>
             <source>Target:</source>
-            <translation type="unfinished"/>
+            <translation>Alvo:</translation>
         </message>
         <message>
             <source>Terms</source>
-            <translation type="unfinished"/>
+            <translation>Termos</translation>
         </message>
         <message>
             <source>Update</source>
-            <translation type="unfinished"/>
+            <translation>Atualização</translation>
         </message>
         <message>
             <source>Warning</source>
-            <translation type="unfinished"/>
+            <translation>Aviso</translation>
         </message>
         <message>
-            <source>Delete term &apos;%s&apos; → &apos;%s&apos;?</source>
-            <translation type="unfinished"/>
+            <source>Delete term '%s' → '%s'?</source>
+            <translation>Eliminar o termo "%s" → "%s"?</translation>
         </message>
         <message>
-        <source>Failed to export glossary:
+            <source>Failed to export glossary:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Imported %d terms with %d errors.
+            <translation>Não foi exportado glossário: %s</translation>
+        </message>
+        <message>
+            <source>Imported %d terms with %d errors.
 
 First errors:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>Termos %d importados com erros %d. Primeiro erro: %s</translation>
+        </message>
+    </context>
     <context>
         <name>HeaderDialog</name>
         <message>
             <source>Additional Metadata</source>
-            <translation type="unfinished"/>
+            <translation>Metadados adicionais</translation>
         </message>
         <message>
             <source>Charset:</source>
-            <translation type="unfinished"/>
+            <translation>Charset:</translation>
         </message>
         <message>
             <source>Comment:</source>
-            <translation type="unfinished"/>
+            <translation>Comentário:</translation>
         </message>
         <message>
             <source>Content-Transfer-Encoding:</source>
-            <translation type="unfinished"/>
+            <translation>Transmissão de conteúdo:</translation>
         </message>
         <message>
             <source>Data Type:</source>
-            <translation type="unfinished"/>
+            <translation>Tipo de dados:</translation>
         </message>
         <message>
             <source>Define how plural forms work for this language.</source>
-            <translation type="unfinished"/>
+            <translation>Define como funcionam as formas plurais para esta língua.</translation>
         </message>
         <message>
             <source>Description:</source>
-            <translation type="unfinished"/>
+            <translation>Descrição:</translation>
         </message>
         <message>
             <source>Edit File Header</source>
-            <translation type="unfinished"/>
+            <translation>Edição de cabeçalho de arquivo</translation>
         </message>
         <message>
             <source>English (2 forms)</source>
-            <translation type="unfinished"/>
+            <translation>Inglês (2 formas)</translation>
         </message>
         <message>
             <source>File Metadata</source>
-            <translation type="unfinished"/>
+            <translation>Metadados de arquivo</translation>
         </message>
         <message>
             <source>Germanic (2 forms)</source>
-            <translation type="unfinished"/>
+            <translation>Germânico (2 formas)</translation>
         </message>
         <message>
             <source>Language-Team:</source>
-            <translation type="unfinished"/>
+            <translation>Equipa de Línguas:</translation>
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua:</translation>
         </message>
         <message>
             <source>Last-Translator:</source>
-            <translation type="unfinished"/>
+            <translation>Último tradutor:</translation>
         </message>
         <message>
             <source>Metadata</source>
-            <translation type="unfinished"/>
+            <translation>Metadados</translation>
         </message>
         <message>
             <source>Original File:</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo original:</translation>
         </message>
         <message>
             <source>PO Headers</source>
-            <translation type="unfinished"/>
+            <translation>Título de PO</translation>
         </message>
         <message>
             <source>PO-Revision-Date:</source>
-            <translation type="unfinished"/>
+            <translation>Data de revisão:</translation>
         </message>
         <message>
             <source>POT-Creation-Date:</source>
-            <translation type="unfinished"/>
+            <translation>POT-Criação-Date:</translation>
         </message>
         <message>
             <source>Package:</source>
-            <translation type="unfinished"/>
+            <translation>Pacote:</translation>
         </message>
         <message>
             <source>Plural Forms</source>
-            <translation type="unfinished"/>
+            <translation>Formas plurais</translation>
         </message>
         <message>
             <source>Project Information</source>
-            <translation type="unfinished"/>
+            <translation>Informações sobre os projectos</translation>
         </message>
         <message>
             <source>Project Name:</source>
-            <translation type="unfinished"/>
+            <translation>Nome do projeto:</translation>
         </message>
         <message>
             <source>Project-Id-Version:</source>
-            <translation type="unfinished"/>
+            <translation>Project-Id-Version:</translation>
         </message>
         <message>
             <source>Report-Msgid-Bugs-To:</source>
-            <translation type="unfinished"/>
+            <translation>Relatório-Msgid-Bugs-To:</translation>
         </message>
         <message>
             <source>Restore Defaults</source>
-            <translation type="unfinished"/>
+            <translation>Restaurar os padrões</translation>
         </message>
         <message>
             <source>Restore all fields to default values?</source>
-            <translation type="unfinished"/>
+            <translation>Restaurar todos os campos para valores padrão?</translation>
         </message>
         <message>
             <source>Romance (2 forms)</source>
-            <translation type="unfinished"/>
+            <translation>Romance (2 formas)</translation>
         </message>
         <message>
             <source>Source Language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua fonte:</translation>
         </message>
         <message>
             <source>TS Attributes</source>
-            <translation type="unfinished"/>
+            <translation>Atributos TS</translation>
         </message>
         <message>
             <source>TS File Attributes</source>
-            <translation type="unfinished"/>
+            <translation>Atributos de arquivo TS</translation>
         </message>
         <message>
             <source>TS Version:</source>
-            <translation type="unfinished"/>
+            <translation>Versão TS:</translation>
         </message>
         <message>
             <source>Target Language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua alvo:</translation>
         </message>
         <message>
             <source>Technical Information</source>
-            <translation type="unfinished"/>
+            <translation>Informações técnicas</translation>
         </message>
         <message>
             <source>Tool ID:</source>
-            <translation type="unfinished"/>
+            <translation>Identificação da ferramenta:</translation>
         </message>
         <message>
             <source>Tool Information</source>
-            <translation type="unfinished"/>
+            <translation>Informações sobre as ferramentas</translation>
         </message>
         <message>
             <source>Tool Name:</source>
-            <translation type="unfinished"/>
+            <translation>Nome da ferramenta:</translation>
         </message>
         <message>
             <source>Tool Version:</source>
-            <translation type="unfinished"/>
+            <translation>Versão de ferramenta:</translation>
         </message>
         <message>
             <source>Translation Information</source>
-            <translation type="unfinished"/>
+            <translation>Informações sobre traduções</translation>
         </message>
         <message>
             <source>Translator:</source>
-            <translation type="unfinished"/>
+            <translation>Traduzido:</translation>
         </message>
         <message>
             <source>Version:</source>
-            <translation type="unfinished"/>
+            <translation>Versão:</translation>
         </message>
         <message>
             <source>XLIFF Attributes</source>
-            <translation type="unfinished"/>
+            <translation>Atributos XLIFF</translation>
         </message>
         <message>
             <source>XLIFF File Attributes</source>
-            <translation type="unfinished"/>
+            <translation>Atributos de arquivo XLIFF</translation>
         </message>
         <message>
             <source>XLIFF Version:</source>
-            <translation type="unfinished"/>
+            <translation>Versão XLIFF:</translation>
         </message>
     </context>
     <context>
         <name>HistoryDialog</name>
         <message>
             <source>Added</source>
-            <translation type="unfinished"/>
+            <translation>Adicionado</translation>
         </message>
         <message>
             <source>After:</source>
-            <translation type="unfinished"/>
+            <translation>Após:</translation>
         </message>
         <message>
             <source>Before:</source>
-            <translation type="unfinished"/>
+            <translation>Antes:</translation>
         </message>
         <message>
             <source>Change History</source>
-            <translation type="unfinished"/>
+            <translation>Mudança da História</translation>
         </message>
         <message>
             <source>Change Type</source>
-            <translation type="unfinished"/>
+            <translation>Mudança de tipo</translation>
         </message>
         <message>
             <source>Changes</source>
-            <translation type="unfinished"/>
+            <translation>Mudanças</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Confirm Rollback</source>
-            <translation type="unfinished"/>
+            <translation>Confirmar o Rollback</translation>
         </message>
         <message>
             <source>Date/Time</source>
-            <translation type="unfinished"/>
+            <translation>Data/hora</translation>
         </message>
         <message>
             <source>Deleted</source>
-            <translation type="unfinished"/>
+            <translation>Exclusão</translation>
         </message>
         <message>
             <source>Diff:</source>
-            <translation type="unfinished"/>
+            <translation>Diferença:</translation>
         </message>
         <message>
             <source>Field</source>
-            <translation type="unfinished"/>
+            <translation>Campo</translation>
         </message>
         <message>
             <source>History for entry {0} in {1}</source>
-            <translation type="unfinished"/>
+            <translation>História da entrada {0} em {1}</translation>
         </message>
         <message>
             <source>Modified</source>
-            <translation type="unfinished"/>
+            <translation>Modificados</translation>
         </message>
         <message>
             <source>No changes</source>
-            <translation type="unfinished"/>
+            <translation>Não há alterações</translation>
         </message>
         <message>
             <source>No history available</source>
-            <translation type="unfinished"/>
+            <translation>Não há histórico disponível</translation>
         </message>
         <message>
             <source>Rollback to This Version</source>
-            <translation type="unfinished"/>
+            <translation>Retorno a esta versão</translation>
         </message>
         <message>
             <source>Select a history entry to see changes</source>
-            <translation type="unfinished"/>
+            <translation>Selecione uma entrada de histórico para ver as alterações</translation>
         </message>
         <message>
             <source>Translation History</source>
-            <translation type="unfinished"/>
+            <translation>História da tradução</translation>
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>Não conhecido</translation>
         </message>
         <message>
             <source>User</source>
-            <translation type="unfinished"/>
+            <translation>Utilizador</translation>
         </message>
         <message>
             <source>Are you sure you want to rollback to this version?\n\nThis will replace the current text with:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>Você tem certeza de que quer reverter para esta versão?</translation>
         </message>
         <message>
-        <source>Are you sure you want to rollback to this version?
+            <source>Are you sure you want to rollback to this version?
 
 This will replace the current text with:
 {}</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>Você tem certeza de que quer reverter para esta versão?</translation>
+        </message>
+    </context>
     <context>
         <name>ImagePreviewLabel</name>
         <message>
             <source>Click to select image\n(PNG, JPG, GIF)</source>
-            <translation type="unfinished"/>
+            <translation>Clique para selecionar imagem\n(PNG, JPG, GIF)</translation>
         </message>
         <message>
-        <source>Click to select image
+            <source>Click to select image
 (PNG, JPG, GIF)</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>Clique para selecionar imagem (PNG, JPG, GIF)</translation>
+        </message>
+    </context>
     <context>
         <name>LayoutSimulatorDialog</name>
         <message>
             <source>Bold</source>
-            <translation type="unfinished"/>
+            <translation>Ousado</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Dialog Button</source>
-            <translation type="unfinished"/>
+            <translation>Botão de diálogo</translation>
         </message>
         <message>
             <source>Font Family:</source>
-            <translation type="unfinished"/>
+            <translation>Família de fontes:</translation>
         </message>
         <message>
             <source>Font Settings</source>
-            <translation type="unfinished"/>
+            <translation>Configurações de fonte</translation>
         </message>
         <message>
             <source>Highlight Overflow</source>
-            <translation type="unfinished"/>
+            <translation>Destaque o fluxo excessivo</translation>
         </message>
         <message>
             <source>Layout Simulator</source>
-            <translation type="unfinished"/>
+            <translation>Simulador de layout</translation>
         </message>
         <message>
             <source>Max Width:</source>
-            <translation type="unfinished"/>
+            <translation>Max Width:</translation>
         </message>
         <message>
             <source>Menu Item</source>
-            <translation type="unfinished"/>
+            <translation>Item do menu</translation>
         </message>
         <message>
             <source>Mobile Button</source>
-            <translation type="unfinished"/>
+            <translation>Botão móvel</translation>
         </message>
         <message>
             <source>Presets:</source>
-            <translation type="unfinished"/>
+            <translation>Preconceitos:</translation>
         </message>
         <message>
             <source>Size (pt):</source>
-            <translation type="unfinished"/>
+            <translation>Dimensão (pt):</translation>
         </message>
         <message>
             <source>Source Text:</source>
-            <translation type="unfinished"/>
+            <translation>Texto fonte:</translation>
         </message>
         <message>
             <source>Source: {0}px | Translation: {1}px | Difference: {2}px ({3:.1f}%)</source>
-            <translation type="unfinished"/>
+            <translation>Fonte: {0}px Tradução: {1}px , Diferença: {2}px ({3: 1f}%)</translation>
         </message>
         <message>
             <source>Tablet</source>
-            <translation type="unfinished"/>
+            <translation>Tableta</translation>
         </message>
         <message>
             <source>Text Comparison</source>
-            <translation type="unfinished"/>
+            <translation>Comparar textos</translation>
         </message>
         <message>
             <source>Translation Text:</source>
-            <translation type="unfinished"/>
+            <translation>Tradução:</translation>
         </message>
         <message>
             <source>Width Constraints</source>
-            <translation type="unfinished"/>
+            <translation>Limitações de largura</translation>
         </message>
     </context>
     <context>
         <name>LinguaEditWindow</name>
         <message>
             <source> ⚠ long</source>
-            <translation type="unfinished"/>
+            <translation> longa</translation>
         </message>
         <message>
             <source> ⚠ short</source>
-            <translation type="unfinished"/>
+            <translation> curto</translation>
         </message>
         <message>
             <source>%d matches</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>%d strings</source>
-            <translation type="unfinished"/>
+            <translation>Cartas de %d</translation>
         </message>
         <message>
             <source>%d strings — %d translated, %d fuzzy, %d untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Strings %d  %d traduzido, %d confuso, %d não traduzido</translation>
         </message>
         <message>
             <source>%d translations applied</source>
-            <translation type="unfinished"/>
+            <translation>Traduções %d aplicadas</translation>
         </message>
         <message>
             <source>%p% translated</source>
-            <translation type="unfinished"/>
+            <translation>%p% traduzido</translation>
         </message>
         <message>
             <source>&amp;Catalog</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Catalogue</translation>
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Editar</translation>
         </message>
         <message>
             <source>&amp;File</source>
-            <translation type="unfinished"/>
+            <translation>&amp;File</translation>
         </message>
         <message>
             <source>&amp;Git</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Git</translation>
         </message>
         <message>
             <source>&amp;Go</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Go</translation>
         </message>
         <message>
             <source>&amp;Help</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Ajuda</translation>
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Open...</translation>
         </message>
         <message>
             <source>&amp;Platforms</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Plataformas</translation>
         </message>
         <message>
             <source>&amp;Save</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Save</translation>
         </message>
         <message>
             <source>&amp;Tools</source>
-            <translation type="unfinished"/>
+            <translation>&amp; Ferramentas</translation>
         </message>
         <message>
             <source>&amp;View</source>
-            <translation type="unfinished"/>
+            <translation>&amp;View</translation>
         </message>
         <message>
             <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Concordance search&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference source:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Fonte de referência:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt; Tradução de referência:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Texto de origem:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt; Sugestões&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Traduzir: &lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Translator comentário:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;(não correspondem na referência) &lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No suggestions&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>A macro with this name already exists.</source>
-            <translation type="unfinished"/>
+            <translation>Uma macro com esse nome já existe.</translation>
         </message>
         <message>
             <source>A translation file editor for PO, TS, JSON, XLIFF, </source>
-            <translation type="unfinished"/>
+            <translation>Um editor de arquivo de tradução para PO, TS, JSON, XLIFF, </translation>
         </message>
         <message>
             <source>A translation file is currently open with unsaved changes.\n</source>
-            <translation type="unfinished"/>
+            <translation>Um arquivo de tradução está atualmente aberto com alterações não salvas.\n</translation>
         </message>
         <message>
             <source>AI Review</source>
-            <translation type="unfinished"/>
+            <translation>Revisão da IA</translation>
         </message>
         <message>
             <source>API Keys</source>
-            <translation type="unfinished"/>
+            <translation>Chaves de API</translation>
         </message>
         <message>
             <source>API keys saved</source>
-            <translation type="unfinished"/>
+            <translation>Chaves de API guardadas</translation>
         </message>
         <message>
             <source>About LinguaEdit</source>
-            <translation type="unfinished"/>
+            <translation>Sobre LinguaEditar</translation>
         </message>
         <message>
             <source>About Qt</source>
-            <translation type="unfinished"/>
+            <translation>Sobre Qt</translation>
         </message>
         <message>
             <source>Achievements…</source>
-            <translation type="unfinished"/>
+            <translation>As conquistas...</translation>
         </message>
         <message>
             <source>Add Bookmark</source>
-            <translation type="unfinished"/>
+            <translation>Adicionar Marca de anotações</translation>
         </message>
         <message>
             <source>Add Comment</source>
-            <translation type="unfinished"/>
+            <translation>Adicionar comentário</translation>
         </message>
         <message>
             <source>Add Field</source>
-            <translation type="unfinished"/>
+            <translation>Adicionar Campo</translation>
         </message>
         <message>
             <source>Add Tag</source>
-            <translation type="unfinished"/>
+            <translation>Adicionar Tag</translation>
         </message>
         <message>
             <source>Add Tag...</source>
-            <translation type="unfinished"/>
+            <translation>Adicionar Tag...</translation>
         </message>
         <message>
             <source>Add Term</source>
-            <translation type="unfinished"/>
+            <translation>Adicionar termo</translation>
         </message>
         <message>
             <source>Add translator notes...</source>
-            <translation type="unfinished"/>
+            <translation>Adicionar notas de tradutor...</translation>
         </message>
         <message>
             <source>Added %d entries to Translation Memory</source>
-            <translation type="unfinished"/>
+            <translation>Adicionado %d entradas para a memória de tradução</translation>
         </message>
         <message>
             <source>Added: %s → %s</source>
-            <translation type="unfinished"/>
+            <translation>Adicionado: %s → %s</translation>
         </message>
         <message>
             <source>All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>Todos os ficheiros (*)</translation>
         </message>
         <message>
             <source>All strings</source>
-            <translation type="unfinished"/>
+            <translation>Todas as cordas</translation>
         </message>
         <message>
             <source>Already recording a macro</source>
-            <translation type="unfinished"/>
+            <translation>Já gravando uma macro</translation>
         </message>
         <message>
             <source>Applied changes to %d entries</source>
-            <translation type="unfinished"/>
+            <translation>As alterações aplicadas às entradas %d</translation>
         </message>
         <message>
             <source>Apply Machine Translation suggestion</source>
-            <translation type="unfinished"/>
+            <translation>Aplique a sugestão de Tradução Automática</translation>
         </message>
         <message>
             <source>Apply best Translation Memory match</source>
-            <translation type="unfinished"/>
+            <translation>Aplicar melhor correspondência de memória de tradução</translation>
         </message>
         <message>
             <source>Approve</source>
-            <translation type="unfinished"/>
+            <translation>Aprovação</translation>
         </message>
         <message>
             <source>Attach current file</source>
-            <translation type="unfinished"/>
+            <translation>Anexar arquivo atual</translation>
         </message>
         <message>
             <source>Auto-compile enabled</source>
-            <translation type="unfinished"/>
+            <translation>Ativado para compilação automática</translation>
         </message>
         <message>
             <source>Auto-compiled after save</source>
-            <translation type="unfinished"/>
+            <translation>Compilação automática após o armazenamento</translation>
         </message>
         <message>
             <source>Auto-propagate</source>
-            <translation type="unfinished"/>
+            <translation>Propagação automática</translation>
         </message>
         <message>
             <source>Auto-propagated %d entries</source>
-            <translation type="unfinished"/>
+            <translation>Introduções %d propagadas automaticamente</translation>
         </message>
         <message>
             <source>Batch Edit…</source>
-            <translation type="unfinished"/>
+            <translation>Batch Edit...</translation>
         </message>
         <message>
             <source>Batch Translate…</source>
-            <translation type="unfinished"/>
+            <translation>Tradução em lote...</translation>
         </message>
         <message>
             <source>Bilingual export (source + translation)</source>
-            <translation type="unfinished"/>
+            <translation>Exportação bilíngue (fonte + tradução)</translation>
         </message>
         <message>
             <source>Bookmark added</source>
-            <translation type="unfinished"/>
+            <translation>Marca de livro adicionada</translation>
         </message>
         <message>
             <source>Bookmark removed</source>
-            <translation type="unfinished"/>
+            <translation>Removido o marcador</translation>
         </message>
         <message>
             <source>By length</source>
-            <translation type="unfinished"/>
+            <translation>Por comprimento</translation>
         </message>
         <message>
             <source>By reference</source>
-            <translation type="unfinished"/>
+            <translation>Por referência</translation>
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished"/>
+            <translation>Cancelar</translation>
         </message>
         <message>
             <source>Cannot compile: install </source>
-            <translation type="unfinished"/>
+            <translation>Não pode compilar: instalar </translation>
         </message>
         <message>
             <source>Cannot compile: pyside6-lrelease or lrelease not found</source>
-            <translation type="unfinished"/>
+            <translation>Não pode ser compilada: não foi encontrada a liberação de pyside6 ou a liberação de pyside6</translation>
         </message>
         <message>
             <source>Cannot split empty entry</source>
-            <translation type="unfinished"/>
+            <translation>Não pode dividir entrada vazia</translation>
         </message>
         <message>
             <source>Category</source>
-            <translation type="unfinished"/>
+            <translation>Categoria</translation>
         </message>
         <message>
             <source>Changes committed locally</source>
-            <translation type="unfinished"/>
+            <translation>Mudanças cometidas localmente</translation>
         </message>
         <message>
             <source>Changes pushed successfully</source>
-            <translation type="unfinished"/>
+            <translation>Mudanças promovidas com êxito</translation>
         </message>
         <message>
             <source>Check for updates</source>
-            <translation type="unfinished"/>
+            <translation>Verifique para atualizações</translation>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished"/>
+            <translation>- Claro.</translation>
         </message>
         <message>
             <source>Clear translation</source>
-            <translation type="unfinished"/>
+            <translation>Tradução clara</translation>
         </message>
         <message>
             <source>Close Current File?</source>
-            <translation type="unfinished"/>
+            <translation>Fechar o arquivo atual?</translation>
         </message>
         <message>
             <source>Close Tab</source>
-            <translation type="unfinished"/>
+            <translation>Fechar o cartão</translation>
         </message>
         <message>
             <source>Close the current file and load extracted subtitles?</source>
-            <translation type="unfinished"/>
+            <translation>Fechar o arquivo atual e carregar subtítulos extraídos?</translation>
         </message>
         <message>
             <source>Comments</source>
-            <translation type="unfinished"/>
+            <translation>Comentários</translation>
         </message>
         <message>
             <source>Commit failed: %s</source>
-            <translation type="unfinished"/>
+            <translation>Comitê falhado: %s</translation>
         </message>
         <message>
             <source>Commit message:</source>
-            <translation type="unfinished"/>
+            <translation>Mensagem de compromisso:</translation>
         </message>
         <message>
             <source>Commit successful. Push to remote?</source>
-            <translation type="unfinished"/>
+            <translation>Compromete-te com sucesso.</translation>
         </message>
         <message>
             <source>Committed!</source>
-            <translation type="unfinished"/>
+            <translation>Comprometo!</translation>
         </message>
         <message>
             <source>Commit…</source>
-            <translation type="unfinished"/>
+            <translation>Comprometo...</translation>
         </message>
         <message>
             <source>Compare Files…</source>
-            <translation type="unfinished"/>
+            <translation>Comparar Arquivos...</translation>
         </message>
         <message>
             <source>Compare language…</source>
-            <translation type="unfinished"/>
+            <translation>Comparar a linguagem...</translation>
         </message>
         <message>
             <source>Compile</source>
-            <translation type="unfinished"/>
+            <translation>Compilação</translation>
         </message>
         <message>
             <source>Compile error: %s</source>
-            <translation type="unfinished"/>
+            <translation>Erro de compilação: %s</translation>
         </message>
         <message>
             <source>Compile not supported for %s files</source>
-            <translation type="unfinished"/>
+            <translation>Compile não suportado para arquivos %s</translation>
         </message>
         <message>
             <source>Compile translation</source>
-            <translation type="unfinished"/>
+            <translation>Compile tradução</translation>
         </message>
         <message>
             <source>Compiled: %s</source>
-            <translation type="unfinished"/>
+            <translation>Compilado: %s</translation>
         </message>
         <message>
             <source>Concordance</source>
-            <translation type="unfinished"/>
+            <translation>Concordância</translation>
         </message>
         <message>
             <source>Concordance Search…</source>
-            <translation type="unfinished"/>
+            <translation>Procura Concordance...</translation>
         </message>
         <message>
             <source>Consistency Check</source>
-            <translation type="unfinished"/>
+            <translation>Verificação da coerência</translation>
         </message>
         <message>
             <source>Consistency check</source>
-            <translation type="unfinished"/>
+            <translation>Verificação da coerência</translation>
         </message>
         <message>
             <source>Context</source>
-            <translation type="unfinished"/>
+            <translation>Contexto</translation>
         </message>
         <message>
             <source>Copy Source</source>
-            <translation type="unfinished"/>
+            <translation>Cópia de fonte</translation>
         </message>
         <message>
             <source>Copy source</source>
-            <translation type="unfinished"/>
+            <translation>Fonte de cópia</translation>
         </message>
         <message>
             <source>Copy source text to translation</source>
-            <translation type="unfinished"/>
+            <translation>Copie o texto da fonte para a tradução</translation>
         </message>
         <message>
             <source>Copy source text to translation (Ctrl+B)</source>
-            <translation type="unfinished"/>
+            <translation>Copiar o texto da fonte para tradução (Ctrl+B)</translation>
         </message>
         <message>
             <source>Copy source to translation</source>
-            <translation type="unfinished"/>
+            <translation>Cópia de fonte para tradução</translation>
         </message>
         <message>
             <source>Could not read video file:\n%s</source>
-            <translation type="unfinished"/>
+            <translation>Não consegui ler o arquivo de vídeo:\n%s</translation>
         </message>
         <message>
             <source>Count</source>
-            <translation type="unfinished"/>
+            <translation>Conde</translation>
         </message>
         <message>
             <source>Crowdin</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin</translation>
         </message>
         <message>
             <source>Crowdin Statistics…</source>
-            <translation type="unfinished"/>
+            <translation>Estatísticas Crowdin...</translation>
         </message>
         <message>
             <source>Crowdin Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro de Crowdin</translation>
         </message>
         <message>
             <source>No Crowdin API key configured.\nPlease add one in Translation → API Keys…</source>
-            <translation type="unfinished"/>
+            <translation>Não há chave de API Crowdin configurada.\nPor favor, adicione uma na Tradução → API Keys...</translation>
         </message>
         <message>
             <source>Crowdin — %s</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin  %s</translation>
         </message>
         <message>
             <source>Translated: %d%% (%d/%d)</source>
-            <translation type="unfinished"/>
+            <translation>Traduzido: %d%% (%d/%d)</translation>
         </message>
         <message>
             <source>Approved: %d%% (%d/%d)</source>
-            <translation type="unfinished"/>
+            <translation>Approvado: %d%% (%d/%d)</translation>
         </message>
         <message>
             <source>Pull Translations</source>
-            <translation type="unfinished"/>
+            <translation>Puxar traduções</translation>
         </message>
         <message>
             <source>Push Source</source>
-            <translation type="unfinished"/>
+            <translation>Push Source</translation>
         </message>
         <message>
             <source>Current string has no translation to propagate.</source>
-            <translation type="unfinished"/>
+            <translation>A corrente corrente não tem tradução para se propagar.</translation>
         </message>
         <message>
             <source>Customize Toolbar…</source>
-            <translation type="unfinished"/>
+            <translation>Personalizar a barra de ferramentas...</translation>
         </message>
         <message>
             <source>Dark</source>
-            <translation type="unfinished"/>
+            <translation>Escuridão</translation>
         </message>
         <message>
             <source>Date</source>
-            <translation type="unfinished"/>
+            <translation>Data</translation>
         </message>
         <message>
             <source>Developer</source>
-            <translation type="unfinished"/>
+            <translation>Desenvolvedor</translation>
         </message>
         <message>
             <source>Developer:</source>
-            <translation type="unfinished"/>
+            <translation>Desenvolvedor:</translation>
         </message>
         <message>
             <source>Diff</source>
-            <translation type="unfinished"/>
+            <translation>Diferença</translation>
         </message>
         <message>
             <source>Diff with Previous Version…</source>
-            <translation type="unfinished"/>
+            <translation>Diferença com a versão anterior...</translation>
         </message>
         <message>
             <source>Diff…</source>
-            <translation type="unfinished"/>
+            <translation>Diferença...</translation>
         </message>
         <message>
             <source>Documentation</source>
-            <translation type="unfinished"/>
+            <translation>Documentação</translation>
         </message>
         <message>
             <source>Donate ♥</source>
-            <translation type="unfinished"/>
+            <translation>Doar ♥</translation>
         </message>
         <message>
             <source>Done and next (Ctrl+Enter)</source>
-            <translation type="unfinished"/>
+            <translation>Feito e seguinte (Ctrl+Enter)</translation>
         </message>
         <message>
             <source>Edit Header…</source>
-            <translation type="unfinished"/>
+            <translation>Editar o Header...</translation>
         </message>
         <message>
             <source>Edit file header metadata. Changes are applied when you click Save.</source>
-            <translation type="unfinished"/>
+            <translation>Editar metadados de cabeçalho de arquivo. As alterações são aplicadas quando você clicar em Salvar.</translation>
         </message>
         <message>
             <source>Editor Below</source>
-            <translation type="unfinished"/>
+            <translation>Editor Abaixo</translation>
         </message>
         <message>
             <source>Editor on Right</source>
-            <translation type="unfinished"/>
+            <translation>Editor em Direita</translation>
         </message>
         <message>
             <source>Email Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tradução de e-mail</translation>
         </message>
         <message>
             <source>Email Translation…</source>
-            <translation type="unfinished"/>
+            <translation>Tradução de e-mail...</translation>
         </message>
         <message>
             <source>Email client opened</source>
-            <translation type="unfinished"/>
+            <translation>Cliente de e-mail aberto</translation>
         </message>
         <message>
             <source>Enter macro name:</source>
-            <translation type="unfinished"/>
+            <translation>Insira o nome da macro:</translation>
         </message>
         <message>
             <source>Enter translator note:</source>
-            <translation type="unfinished"/>
+            <translation>Insira nota do tradutor:</translation>
         </message>
         <message>
             <source>Entry</source>
-            <translation type="unfinished"/>
+            <translation>Entrada</translation>
         </message>
         <message>
             <source>Entry pinned</source>
-            <translation type="unfinished"/>
+            <translation>Entrada fixa</translation>
         </message>
         <message>
             <source>Entry split into 2 segments</source>
-            <translation type="unfinished"/>
+            <translation>Entrada dividida em 2 segmentos</translation>
         </message>
         <message>
             <source>Entry unpinned</source>
-            <translation type="unfinished"/>
+            <translation>Entrada sem pinça</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro</translation>
         </message>
         <message>
             <source>Error loading file: %s</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo de carregamento de erro: %s</translation>
         </message>
         <message>
             <source>Error loading reference: %s</source>
-            <translation type="unfinished"/>
+            <translation>Referência de erro de carregamento: %s</translation>
         </message>
         <message>
             <source>Export Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro de exportação</translation>
         </message>
         <message>
             <source>Export TMX</source>
-            <translation type="unfinished"/>
+            <translation>Exportação de TMX</translation>
         </message>
         <message>
             <source>Export TMX…</source>
-            <translation type="unfinished"/>
+            <translation>Exportação de TMX...</translation>
         </message>
         <message>
             <source>Export report…</source>
-            <translation type="unfinished"/>
+            <translation>Relatório de exportação...</translation>
         </message>
         <message>
             <source>Exported {} translation units to {}</source>
-            <translation type="unfinished"/>
+            <translation>Exportadas unidades de tradução para</translation>
         </message>
         <message>
             <source>Extract Subtitles from Video…</source>
-            <translation type="unfinished"/>
+            <translation>Extrair Subtítulos do Video...</translation>
         </message>
         <message>
             <source>Extracting</source>
-            <translation type="unfinished"/>
+            <translation>Extração</translation>
         </message>
         <message>
             <source>Extracting subtitles…</source>
-            <translation type="unfinished"/>
+            <translation>Extraindo subtítulos...</translation>
         </message>
         <message>
             <source>Extraction Failed</source>
-            <translation type="unfinished"/>
+            <translation>Extração falhou</translation>
         </message>
         <message>
             <source>Failed to export TMX file: {}</source>
-            <translation type="unfinished"/>
+            <translation>Falhou em exportar o arquivo TMX: {}</translation>
         </message>
         <message>
             <source>Failed to import TMX file: {}</source>
-            <translation type="unfinished"/>
+            <translation>Falhou em importar arquivo TMX: {}</translation>
         </message>
         <message>
             <source>Failed to play macro</source>
-            <translation type="unfinished"/>
+            <translation>Falhou em jogar macro</translation>
         </message>
         <message>
             <source>Failed to run msgmerge:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu executar msgmerge:\n{}</translation>
         </message>
         <message>
             <source>Feed file to TM</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo de alimentação para TM</translation>
         </message>
         <message>
             <source>File</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo</translation>
         </message>
         <message>
             <source>File Changed</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo alterado</translation>
         </message>
         <message>
             <source>File Header / Metadata</source>
-            <translation type="unfinished"/>
+            <translation>Cabeça de arquivo / Metadados</translation>
         </message>
         <message>
             <source>File metadata…</source>
-            <translation type="unfinished"/>
+            <translation>Metadados de arquivo...</translation>
         </message>
         <message>
             <source>File not found: %s</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo não encontrado: %s</translation>
         </message>
         <message>
             <source>File order</source>
-            <translation type="unfinished"/>
+            <translation>Ordem de arquivo</translation>
         </message>
         <message>
             <source>File reloaded (changed externally)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo recarregado (algo alterado externamente)</translation>
         </message>
         <message>
             <source>File reloaded (external change detected)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo recarregado (alteração externa detectada)</translation>
         </message>
         <message>
             <source>Find &amp;&amp; Replace…</source>
-            <translation type="unfinished"/>
+            <translation>Encontrar e substituir...</translation>
         </message>
         <message>
             <source>Find in translations…</source>
-            <translation type="unfinished"/>
+            <translation>Encontrar em traduções...</translation>
         </message>
         <message>
             <source>Find…</source>
-            <translation type="unfinished"/>
+            <translation>Encontrem...</translation>
         </message>
         <message>
             <source>Flags</source>
-            <translation type="unfinished"/>
+            <translation>Banderas</translation>
         </message>
         <message>
             <source>Focus Mode</source>
-            <translation type="unfinished"/>
+            <translation>Modo de foco</translation>
         </message>
         <message>
             <source>Focus mode disabled</source>
-            <translation type="unfinished"/>
+            <translation>Modo de foco desativado</translation>
         </message>
         <message>
             <source>Focus mode enabled - hiding completed translations</source>
-            <translation type="unfinished"/>
+            <translation>Modo de foco habilitado - ocultar traduções concluídas</translation>
         </message>
         <message>
             <source>Format:</source>
-            <translation type="unfinished"/>
+            <translation>Formatos:</translation>
         </message>
         <message>
             <source>Found %d subtitle track(s). Select one:</source>
-            <translation type="unfinished"/>
+            <translation>Encontrou a faixa de subtítulo %d (s). Selecione uma:</translation>
         </message>
         <message>
             <source>Fullscreen</source>
-            <translation type="unfinished"/>
+            <translation>Ecrã total</translation>
         </message>
         <message>
             <source>Fullscreen mode - Press Escape to exit</source>
-            <translation type="unfinished"/>
+            <translation>Modo de tela completa - Pressione Escape para sair</translation>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>- Não .</translation>
         </message>
         <message>
             <source>Fuzzy / Needs work</source>
-            <translation type="unfinished"/>
+            <translation>Fúzi / Precisa de trabalho</translation>
         </message>
         <message>
             <source>Fuzzy diff (previous → current)</source>
-            <translation type="unfinished"/>
+            <translation>Diferença de fuzzy (anterior → corrente)</translation>
         </message>
         <message>
             <source>Fuzzy:</source>
-            <translation type="unfinished"/>
+            <translation>- Não .</translation>
         </message>
         <message>
             <source>Fuzzy: %d</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Fuzzy: 0</source>
-            <translation type="unfinished"/>
+            <translation>- Não .</translation>
         </message>
         <message>
             <source>Generate Report</source>
-            <translation type="unfinished"/>
+            <translation>Gerar Relatório</translation>
         </message>
         <message>
             <source>Generate Report…</source>
-            <translation type="unfinished"/>
+            <translation>Gerar Relatório...</translation>
         </message>
         <message>
             <source>Generated by LinguaEdit</source>
-            <translation type="unfinished"/>
+            <translation>Gerado por LinguaEditar</translation>
         </message>
         <message>
             <source>Git</source>
-            <translation type="unfinished"/>
+            <translation>- Não .</translation>
         </message>
         <message>
             <source>Git Branches</source>
-            <translation type="unfinished"/>
+            <translation>Ramos de Git</translation>
         </message>
         <message>
             <source>Git Commit</source>
-            <translation type="unfinished"/>
+            <translation>Compromissar Git</translation>
         </message>
         <message>
             <source>Git Diff</source>
-            <translation type="unfinished"/>
+            <translation>Diferença de Git</translation>
         </message>
         <message>
             <source>Git Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro de Git</translation>
         </message>
         <message>
             <source>Git Status</source>
-            <translation type="unfinished"/>
+            <translation>Status do Git</translation>
         </message>
         <message>
             <source>Git operation error: {}</source>
-            <translation type="unfinished"/>
+            <translation>Erro de operação de Git: {}</translation>
         </message>
         <message>
             <source>Git operation failed: {}</source>
-            <translation type="unfinished"/>
+            <translation>Operação Git falhou: {}</translation>
         </message>
         <message>
             <source>GitHub PR</source>
-            <translation type="unfinished"/>
+            <translation>GitHub PR</translation>
         </message>
         <message>
             <source>GitHub PR…</source>
-            <translation type="unfinished"/>
+            <translation>Relações públicas do GitHub...</translation>
         </message>
         <message>
             <source>GitHub Repository</source>
-            <translation type="unfinished"/>
+            <translation>Repositório GitHub</translation>
         </message>
         <message>
             <source>Glossary</source>
-            <translation type="unfinished"/>
+            <translation>Glossário</translation>
         </message>
         <message>
             <source>Glossary / Terminology</source>
-            <translation type="unfinished"/>
+            <translation>Glossário / Terminologia</translation>
         </message>
         <message>
             <source>Glossary Check</source>
-            <translation type="unfinished"/>
+            <translation>Verificação do Glossário</translation>
         </message>
         <message>
             <source>Glossary…</source>
-            <translation type="unfinished"/>
+            <translation>Glosário...</translation>
         </message>
         <message>
             <source>HTML (*.html);;PDF (*.pdf)</source>
-            <translation type="unfinished"/>
+            <translation>HTML (*.html); PDF (*.pdf)</translation>
         </message>
         <message>
             <source>HTML files (*.html);;PDF files (*.pdf)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos HTML (*.html);; Arquivos PDF (*.pdf)</translation>
         </message>
         <message>
             <source>Header updated</source>
-            <translation type="unfinished"/>
+            <translation>Título atualizado</translation>
         </message>
         <message>
             <source>Import Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro de importação</translation>
         </message>
         <message>
             <source>Import TMX</source>
-            <translation type="unfinished"/>
+            <translation>Importação de TMX</translation>
         </message>
         <message>
             <source>Import TMX…</source>
-            <translation type="unfinished"/>
+            <translation>Importar o TMX...</translation>
         </message>
         <message>
             <source>Imported {} translation units</source>
-            <translation type="unfinished"/>
+            <translation>Unidades de tradução importadas</translation>
         </message>
         <message>
             <source>Include fuzzy entries</source>
-            <translation type="unfinished"/>
+            <translation>Incluir entradas confusas</translation>
         </message>
         <message>
             <source>Incomplete Subtitles</source>
-            <translation type="unfinished"/>
+            <translation>Subtítulos incompletos</translation>
         </message>
         <message>
             <source>Invalid regex</source>
-            <translation type="unfinished"/>
+            <translation>Regex inválido</translation>
         </message>
         <message>
             <source>Issues</source>
-            <translation type="unfinished"/>
+            <translation>Questões</translation>
         </message>
         <message>
             <source>JSON files (*.json);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos JSON (*.json);;Todos os arquivos (*)</translation>
         </message>
         <message>
             <source>Key</source>
-            <translation type="unfinished"/>
+            <translation>A chave</translation>
         </message>
         <message>
             <source>Language</source>
-            <translation type="unfinished"/>
+            <translation>Língua</translation>
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua:</translation>
         </message>
         <message>
             <source>Languages</source>
-            <translation type="unfinished"/>
+            <translation>Línguas</translation>
         </message>
         <message>
             <source>Layout Simulator</source>
-            <translation type="unfinished"/>
+            <translation>Simulador de layout</translation>
         </message>
         <message>
             <source>License:</source>
-            <translation type="unfinished"/>
+            <translation>Licença:</translation>
         </message>
         <message>
             <source>Light</source>
-            <translation type="unfinished"/>
+            <translation>Luz</translation>
         </message>
         <message>
             <source>LinguaEdit</source>
-            <translation type="unfinished"/>
+            <translation>LinguaEditar</translation>
         </message>
         <message>
             <source>Ln %d, Col %d</source>
-            <translation type="unfinished"/>
+            <translation>Ln %d, Col. %d</translation>
         </message>
         <message>
             <source>Ln 1, Col 1</source>
-            <translation type="unfinished"/>
+            <translation>Ln 1, Col. 1</translation>
         </message>
         <message>
             <source>Loaded reference: %s</source>
-            <translation type="unfinished"/>
+            <translation>Referência carregada: %s</translation>
         </message>
         <message>
             <source>Locale:</source>
-            <translation type="unfinished"/>
+            <translation>Localização:</translation>
         </message>
         <message>
             <source>MT translation failed</source>
-            <translation type="unfinished"/>
+            <translation>MT tradução falhou</translation>
         </message>
         <message>
             <source>Macro Exists</source>
-            <translation type="unfinished"/>
+            <translation>Macro Existem</translation>
         </message>
         <message>
             <source>Macros</source>
-            <translation type="unfinished"/>
+            <translation>Macros</translation>
         </message>
         <message>
             <source>Main</source>
-            <translation type="unfinished"/>
+            <translation>Principais</translation>
         </message>
         <message>
             <source>Manage API Keys…</source>
-            <translation type="unfinished"/>
+            <translation>Gerenciar as chaves da API...</translation>
         </message>
         <message>
             <source>Manage Macros…</source>
-            <translation type="unfinished"/>
+            <translation>Gerenciar Macros...</translation>
         </message>
         <message>
             <source>Manage Plugins…</source>
-            <translation type="unfinished"/>
+            <translation>Gerenciar Plugins...</translation>
         </message>
         <message>
             <source>Mark current entry as reviewed</source>
-            <translation type="unfinished"/>
+            <translation>Marque a entrada atual revisada</translation>
         </message>
         <message>
             <source>Mark this string as fuzzy / needs review (Ctrl+U)</source>
-            <translation type="unfinished"/>
+            <translation>Marque esta cadeia como revisa de necessidades / confusa (Ctrl+U)</translation>
         </message>
         <message>
             <source>Max width:</source>
-            <translation type="unfinished"/>
+            <translation>Largura máxima:</translation>
         </message>
         <message>
             <source>Merge Entries…</source>
-            <translation type="unfinished"/>
+            <translation>Entradas de fusão...</translation>
         </message>
         <message>
             <source>Merge with POT…</source>
-            <translation type="unfinished"/>
+            <translation>Fusão com POT...</translation>
         </message>
         <message>
             <source>Merged {} entries</source>
-            <translation type="unfinished"/>
+            <translation>Entradas combinadas</translation>
         </message>
         <message>
             <source>Message</source>
-            <translation type="unfinished"/>
+            <translation>Mensagem</translation>
         </message>
         <message>
             <source>Message:</source>
-            <translation type="unfinished"/>
+            <translation>Mensagem:</translation>
         </message>
         <message>
             <source>Metadata updated</source>
-            <translation type="unfinished"/>
+            <translation>Metadados atualizados</translation>
         </message>
         <message>
             <source>Minimap</source>
-            <translation type="unfinished"/>
+            <translation>Mapa mínimo</translation>
         </message>
         <message>
             <source>Monokai</source>
-            <translation type="unfinished"/>
+            <translation>Monokai</translation>
         </message>
         <message>
             <source>Msgmerge Error</source>
-            <translation type="unfinished"/>
+            <translation>Msgmerge Erro</translation>
         </message>
         <message>
             <source>Msgmerge Not Found</source>
-            <translation type="unfinished"/>
+            <translation>Msgmerge Não Encontrado</translation>
         </message>
         <message>
             <source>Needs Review</source>
-            <translation type="unfinished"/>
+            <translation>Necessidades de revisão</translation>
         </message>
         <message>
             <source>Needs work</source>
-            <translation type="unfinished"/>
+            <translation>Precisa de trabalho</translation>
         </message>
         <message>
             <source>Next</source>
-            <translation type="unfinished"/>
+            <translation>Próximo</translation>
         </message>
         <message>
             <source>Next entry</source>
-            <translation type="unfinished"/>
+            <translation>Próximo artigo</translation>
         </message>
         <message>
             <source>Next untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Próximo não traduzido</translation>
         </message>
         <message>
             <source>No File</source>
-            <translation type="unfinished"/>
+            <translation>Nenhum arquivo</translation>
         </message>
         <message>
             <source>No Subtitles</source>
-            <translation type="unfinished"/>
+            <translation>Não há subtítulos</translation>
         </message>
         <message>
             <source>No bookmarks set</source>
-            <translation type="unfinished"/>
+            <translation>Não há marcas definidas</translation>
         </message>
         <message>
             <source>No changes</source>
-            <translation type="unfinished"/>
+            <translation>Não há alterações</translation>
         </message>
         <message>
             <source>No embedded subtitle tracks found in this video file.</source>
-            <translation type="unfinished"/>
+            <translation>Não há trilhas de subtítulos embutidas neste arquivo de vídeo.</translation>
         </message>
         <message>
             <source>No enabled macros</source>
-            <translation type="unfinished"/>
+            <translation>Não há macros habilitados</translation>
         </message>
         <message>
             <source>No file</source>
-            <translation type="unfinished"/>
+            <translation>Não há arquivo</translation>
         </message>
         <message>
             <source>No file loaded</source>
-            <translation type="unfinished"/>
+            <translation>Nenhum arquivo carregado</translation>
         </message>
         <message>
             <source>No glossary violations found! ✓</source>
-            <translation type="unfinished"/>
+            <translation>Não foram encontradas violações do glossário! ✓</translation>
         </message>
         <message>
             <source>No identical source strings found.</source>
-            <translation type="unfinished"/>
+            <translation>Não encontrámos nenhuma cadeia de fonte idêntica.</translation>
         </message>
         <message>
             <source>No inconsistencies found! ✓</source>
-            <translation type="unfinished"/>
+            <translation>Não foram encontradas inconsistências! ✓</translation>
         </message>
         <message>
             <source>No issues found</source>
-            <translation type="unfinished"/>
+            <translation>Nenhum problema encontrado</translation>
         </message>
         <message>
             <source>No macros available</source>
-            <translation type="unfinished"/>
+            <translation>Não existem macros disponíveis</translation>
         </message>
         <message>
             <source>No more fuzzy strings</source>
-            <translation type="unfinished"/>
+            <translation>Não mais cordas borbulhadas .</translation>
         </message>
         <message>
             <source>No more untranslated strings</source>
-            <translation type="unfinished"/>
+            <translation>Não mais cordas não traduzidas</translation>
         </message>
         <message>
             <source>No screenshot available</source>
-            <translation type="unfinished"/>
+            <translation>Nenhuma captura de tela disponível</translation>
         </message>
         <message>
             <source>No source text to review</source>
-            <translation type="unfinished"/>
+            <translation>Não há texto de origem a rever</translation>
         </message>
         <message>
             <source>No terms defined</source>
-            <translation type="unfinished"/>
+            <translation>Não definidos termos</translation>
         </message>
         <message>
             <source>No text to check</source>
-            <translation type="unfinished"/>
+            <translation>Não há texto para verificar</translation>
         </message>
         <message>
             <source>No text to play</source>
-            <translation type="unfinished"/>
+            <translation>Não há texto para tocar</translation>
         </message>
         <message>
             <source>No translation selected</source>
-            <translation type="unfinished"/>
+            <translation>Não foi selecionada tradução</translation>
         </message>
         <message>
             <source>No translation to preview</source>
-            <translation type="unfinished"/>
+            <translation>Não há tradução para pré-visualização</translation>
         </message>
         <message>
             <source>Nord</source>
-            <translation type="unfinished"/>
+            <translation>Norte</translation>
         </message>
         <message>
             <source>Normal Mode</source>
-            <translation type="unfinished"/>
+            <translation>Modo normal</translation>
         </message>
         <message>
             <source>Normal sorting order</source>
-            <translation type="unfinished"/>
+            <translation>Ordem de classificação normal</translation>
         </message>
         <message>
             <source>Not a git repository</source>
-            <translation type="unfinished"/>
+            <translation>Não é um repositório de dados</translation>
         </message>
         <message>
             <source>Notes</source>
-            <translation type="unfinished"/>
+            <translation>Notas</translation>
         </message>
         <message>
             <source>OCR Screenshot…</source>
-            <translation type="unfinished"/>
+            <translation>Ocrã de vídeo...</translation>
         </message>
         <message>
             <source>OCR extraction completed. {} strings extracted.</source>
-            <translation type="unfinished"/>
+            <translation>A extracção da OCR terminada. {} cordas extraídas.</translation>
         </message>
         <message>
             <source>Open</source>
-            <translation type="unfinished"/>
+            <translation>Abre</translation>
         </message>
         <message>
             <source>Open Project…</source>
-            <translation type="unfinished"/>
+            <translation>Projeto Aberto...</translation>
         </message>
         <message>
             <source>Open Reference File</source>
-            <translation type="unfinished"/>
+            <translation>Abre o arquivo de referência</translation>
         </message>
         <message>
             <source>Open Translation File</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo de tradução aberto</translation>
         </message>
         <message>
             <source>Open Video</source>
-            <translation type="unfinished"/>
+            <translation>Video aberto</translation>
         </message>
         <message>
             <source>Open Video…</source>
-            <translation type="unfinished"/>
+            <translation>Video aberto...</translation>
         </message>
         <message>
             <source>Options</source>
-            <translation type="unfinished"/>
+            <translation>Opções</translation>
         </message>
         <message>
             <source>PO file merged successfully with POT file.\nPlease reload the file to see changes.</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo PO foi fundido com sucesso com arquivo POT.\nPor favor, recarregue o arquivo para ver as alterações.</translation>
         </message>
         <message>
             <source>PO files (*.po);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos de PO (*.po);;Todos os arquivos (*)</translation>
         </message>
         <message>
             <source>POT Files (*.pot)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos POT (*.pot)</translation>
         </message>
         <message>
             <source>Platform settings…</source>
-            <translation type="unfinished"/>
+            <translation>Configurações de plataforma...</translation>
         </message>
         <message>
             <source>Play Macro</source>
-            <translation type="unfinished"/>
+            <translation>Jogar Macro</translation>
         </message>
         <message>
             <source>Play Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tradução de Jogos</translation>
         </message>
         <message>
             <source>Playing translation...</source>
-            <translation type="unfinished"/>
+            <translation>A interpretar a tradução...</translation>
         </message>
         <message>
             <source>Please enter recipient email</source>
-            <translation type="unfinished"/>
+            <translation>Por favor, digite o e-mail do destinatário</translation>
         </message>
         <message>
             <source>Please open a PO file first.</source>
-            <translation type="unfinished"/>
+            <translation>Por favor, abram um ficheiro postal primeiro.</translation>
         </message>
         <message>
             <source>Plural: %s</source>
-            <translation type="unfinished"/>
+            <translation>Plural: %s</translation>
         </message>
         <message>
             <source>Pre-translate</source>
-            <translation type="unfinished"/>
+            <translation>Pre-tradução</translation>
         </message>
         <message>
             <source>Pre-translated %d entries via %s</source>
-            <translation type="unfinished"/>
+            <translation>As entradas pre-traduzidas para %d através de %s</translation>
         </message>
         <message>
             <source>Pre-translate…</source>
-            <translation type="unfinished"/>
+            <translation>Pre-tradução...</translation>
         </message>
         <message>
             <source>Preferences…</source>
-            <translation type="unfinished"/>
+            <translation>Preferências...</translation>
         </message>
         <message>
             <source>Preview</source>
-            <translation type="unfinished"/>
+            <translation>Previsão</translation>
         </message>
         <message>
             <source>Previous</source>
-            <translation type="unfinished"/>
+            <translation>Anterior</translation>
         </message>
         <message>
             <source>Previous entry</source>
-            <translation type="unfinished"/>
+            <translation>Entrada anterior</translation>
         </message>
         <message>
             <source>Previous untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Previamente não traduzido</translation>
         </message>
         <message>
             <source>Probing video for subtitle tracks…</source>
-            <translation type="unfinished"/>
+            <translation>Procurando vídeos para as faixas de subtítulos...</translation>
         </message>
         <message>
             <source>Project Dashboard</source>
-            <translation type="unfinished"/>
+            <translation>Planejamento de projetos</translation>
         </message>
         <message>
             <source>Propagate Translation</source>
-            <translation type="unfinished"/>
+            <translation>Propagem a tradução</translation>
         </message>
         <message>
             <source>Pull Latest</source>
-            <translation type="unfinished"/>
+            <translation>Pulsão Última</translation>
         </message>
         <message>
             <source>Pull from…</source>
-            <translation type="unfinished"/>
+            <translation>Tira de...</translation>
         </message>
         <message>
             <source>Push Changes</source>
-            <translation type="unfinished"/>
+            <translation>Empurre mudanças</translation>
         </message>
         <message>
             <source>Push to…</source>
-            <translation type="unfinished"/>
+            <translation>Põe para...</translation>
         </message>
         <message>
             <source>QA Profile: %s</source>
-            <translation type="unfinished"/>
+            <translation>Profil de QA: %s</translation>
         </message>
         <message>
             <source>QA profile: Formal</source>
-            <translation type="unfinished"/>
+            <translation>Profil de QA: Formal</translation>
         </message>
         <message>
             <source>QA profile: Informal</source>
-            <translation type="unfinished"/>
+            <translation>Profil de QA: Informal</translation>
         </message>
         <message>
             <source>Quality</source>
-            <translation type="unfinished"/>
+            <translation>Qualidade</translation>
         </message>
         <message>
             <source>Quality Score</source>
-            <translation type="unfinished"/>
+            <translation>Ponto de qualidade</translation>
         </message>
         <message>
             <source>Quit</source>
-            <translation type="unfinished"/>
+            <translation>Desistem.</translation>
         </message>
         <message>
             <source>Recent Files</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos recentes</translation>
         </message>
         <message>
             <source>Record Macro</source>
-            <translation type="unfinished"/>
+            <translation>Registo Macro</translation>
         </message>
         <message>
             <source>Recording macro </source>
-            <translation type="unfinished"/>
+            <translation>Registros macro </translation>
         </message>
         <message>
             <source>Redo</source>
-            <translation type="unfinished"/>
+            <translation>Redo</translation>
         </message>
         <message>
             <source>Reference</source>
-            <translation type="unfinished"/>
+            <translation>Referência</translation>
         </message>
         <message>
             <source>References</source>
-            <translation type="unfinished"/>
+            <translation>Referências</translation>
         </message>
         <message>
             <source>Regex</source>
-            <translation type="unfinished"/>
+            <translation>Regex</translation>
         </message>
         <message>
             <source>Regex Tester</source>
-            <translation type="unfinished"/>
+            <translation>Tester de regex</translation>
         </message>
         <message>
             <source>Reject</source>
-            <translation type="unfinished"/>
+            <translation>Rejeitar</translation>
         </message>
         <message>
             <source>Remove Bookmark</source>
-            <translation type="unfinished"/>
+            <translation>Remover o marcador</translation>
         </message>
         <message>
             <source>Remove Selected</source>
-            <translation type="unfinished"/>
+            <translation>Remover Selecionado</translation>
         </message>
         <message>
             <source>Replace</source>
-            <translation type="unfinished"/>
+            <translation>Substituição</translation>
         </message>
         <message>
             <source>Replace All</source>
-            <translation type="unfinished"/>
+            <translation>Substituir todos</translation>
         </message>
         <message>
             <source>Replace with…</source>
-            <translation type="unfinished"/>
+            <translation>Substitui-o por...</translation>
         </message>
         <message>
             <source>Replaced in %d entries</source>
-            <translation type="unfinished"/>
+            <translation>Substituído pelas entradas %d</translation>
         </message>
         <message>
             <source>Report Options</source>
-            <translation type="unfinished"/>
+            <translation>Opções de relatório</translation>
         </message>
         <message>
             <source>Report a Bug</source>
-            <translation type="unfinished"/>
+            <translation>Relatar um inseto</translation>
         </message>
         <message>
             <source>Report error: %s</source>
-            <translation type="unfinished"/>
+            <translation>Erro de relatório: %s</translation>
         </message>
         <message>
             <source>Report saved</source>
-            <translation type="unfinished"/>
+            <translation>Relatório salvado</translation>
         </message>
         <message>
             <source>Report saved to %s</source>
-            <translation type="unfinished"/>
+            <translation>Relatório guardado para %s</translation>
         </message>
         <message>
             <source>Report saved: %s</source>
-            <translation type="unfinished"/>
+            <translation>Relatório guardado: %s</translation>
         </message>
         <message>
             <source>Review</source>
-            <translation type="unfinished"/>
+            <translation>Revisão</translation>
         </message>
         <message>
             <source>Review Mode</source>
-            <translation type="unfinished"/>
+            <translation>Modo de revisão</translation>
         </message>
         <message>
             <source>Review mode disabled</source>
-            <translation type="unfinished"/>
+            <translation>Modo de revisão desativado</translation>
         </message>
         <message>
             <source>Review mode enabled</source>
-            <translation type="unfinished"/>
+            <translation>Modo de revisão habilitado</translation>
         </message>
         <message>
             <source>Reviewed</source>
-            <translation type="unfinished"/>
+            <translation>Revisão</translation>
         </message>
         <message>
             <source>Root key:</source>
-            <translation type="unfinished"/>
+            <translation>Chave raiz:</translation>
         </message>
         <message>
             <source>SRT files (*.srt);;VTT files (*.vtt);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos SRT (*.srt);;Arquivos VTT (*.vtt);;Todos os arquivos (*)</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished"/>
+            <translation>Salvar</translation>
         </message>
         <message>
             <source>Save &amp;As…</source>
-            <translation type="unfinished"/>
+            <translation>Salvar e como...</translation>
         </message>
         <message>
             <source>Save As…</source>
-            <translation type="unfinished"/>
+            <translation>Salva-o como...</translation>
         </message>
         <message>
             <source>Save Current File?</source>
-            <translation type="unfinished"/>
+            <translation>Salvar o arquivo atual?</translation>
         </message>
         <message>
             <source>Save Extracted Subtitles</source>
-            <translation type="unfinished"/>
+            <translation>Salvar Subtítulos Extraídos</translation>
         </message>
         <message>
             <source>Save Report</source>
-            <translation type="unfinished"/>
+            <translation>Salvar Relatório</translation>
         </message>
         <message>
             <source>Save error: %s</source>
-            <translation type="unfinished"/>
+            <translation>Erro de armazenamento: %s</translation>
         </message>
         <message>
             <source>Saved as %s</source>
-            <translation type="unfinished"/>
+            <translation>Salvo como %s</translation>
         </message>
         <message>
             <source>Saved!</source>
-            <translation type="unfinished"/>
+            <translation>Salvado!</translation>
         </message>
         <message>
             <source>Search</source>
-            <translation type="unfinished"/>
+            <translation>Busca</translation>
         </message>
         <message>
             <source>Search TM…</source>
-            <translation type="unfinished"/>
+            <translation>Pesquisa TM...</translation>
         </message>
         <message>
             <source>Search source and translation text…</source>
-            <translation type="unfinished"/>
+            <translation>Pesquisa de fonte e texto de tradução...</translation>
         </message>
         <message>
             <source>Select POT File</source>
-            <translation type="unfinished"/>
+            <translation>Selecionar arquivo POT</translation>
         </message>
         <message>
             <source>Select Subtitle Track</source>
-            <translation type="unfinished"/>
+            <translation>Selecionar Track de subtítulos</translation>
         </message>
         <message>
             <source>Select at least 2 entries to merge</source>
-            <translation type="unfinished"/>
+            <translation>Selecione pelo menos 2 entradas para serem fundidas</translation>
         </message>
         <message>
             <source>Select macro to play:</source>
-            <translation type="unfinished"/>
+            <translation>Selecione macro para jogar:</translation>
         </message>
         <message>
             <source>Select or enter tag:</source>
-            <translation type="unfinished"/>
+            <translation>Selecionar ou inserir tag:</translation>
         </message>
         <message>
             <source>Settings</source>
-            <translation type="unfinished"/>
+            <translation>Configurações</translation>
         </message>
         <message>
             <source>Severity</source>
-            <translation type="unfinished"/>
+            <translation>Gravidade</translation>
         </message>
         <message>
             <source>Show Bookmarked Only</source>
-            <translation type="unfinished"/>
+            <translation>Exibir apenas com marcação de livro</translation>
         </message>
         <message>
             <source>Show Pinned First</source>
-            <translation type="unfinished"/>
+            <translation>Mostre-se em primeiro lugar</translation>
         </message>
         <message>
             <source>Showing all entries</source>
-            <translation type="unfinished"/>
+            <translation>Mostra todas as entradas</translation>
         </message>
         <message>
             <source>Showing only bookmarked entries</source>
-            <translation type="unfinished"/>
+            <translation>Exercício de apenas inscrições marcadas</translation>
         </message>
         <message>
             <source>Showing pinned entries first</source>
-            <translation type="unfinished"/>
+            <translation>Mostra as entradas empinadas primeiro</translation>
         </message>
         <message>
             <source>Side-by-Side View</source>
-            <translation type="unfinished"/>
+            <translation>Vista de lado a lado</translation>
         </message>
         <message>
             <source>Sidebar</source>
-            <translation type="unfinished"/>
+            <translation>Barras laterais</translation>
         </message>
         <message>
             <source>Simple Mode</source>
-            <translation type="unfinished"/>
+            <translation>Modo simples</translation>
         </message>
         <message>
             <source>Solarized Dark</source>
-            <translation type="unfinished"/>
+            <translation>Escuro Solarizado</translation>
         </message>
         <message>
             <source>Source</source>
-            <translation type="unfinished"/>
+            <translation>Fonte:</translation>
         </message>
         <message>
             <source>Source A → Z</source>
-            <translation type="unfinished"/>
+            <translation>Fonte A → Z</translation>
         </message>
         <message>
             <source>Source Z → A</source>
-            <translation type="unfinished"/>
+            <translation>Fonte Z → A</translation>
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua fonte:</translation>
         </message>
         <message>
             <source>Source term:</source>
-            <translation type="unfinished"/>
+            <translation>Termo de origem:</translation>
         </message>
         <message>
             <source>Source text</source>
-            <translation type="unfinished"/>
+            <translation>Texto fonte</translation>
         </message>
         <message>
             <source>Source:</source>
-            <translation type="unfinished"/>
+            <translation>Fonte:</translation>
         </message>
         <message>
             <source>Spell check current</source>
-            <translation type="unfinished"/>
+            <translation>Controle de feitiço corrente</translation>
         </message>
         <message>
             <source>Spelling issues:\n%s</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Split Entry…</source>
-            <translation type="unfinished"/>
+            <translation>Entrada separada...</translation>
         </message>
         <message>
             <source>Stacked View</source>
-            <translation type="unfinished"/>
+            <translation>Vista em pilhas</translation>
         </message>
         <message>
             <source>Statistics</source>
-            <translation type="unfinished"/>
+            <translation>Estatísticas</translation>
         </message>
         <message>
             <source>Statistics…</source>
-            <translation type="unfinished"/>
+            <translation>Estatísticas...</translation>
         </message>
         <message>
             <source>Status</source>
-            <translation type="unfinished"/>
+            <translation>Estatuto</translation>
         </message>
         <message>
             <source>Status…</source>
-            <translation type="unfinished"/>
+            <translation>- Estágio...</translation>
         </message>
         <message>
             <source>String Info</source>
-            <translation type="unfinished"/>
+            <translation>Informações de cadeia</translation>
         </message>
         <message>
             <source>Subject:</source>
-            <translation type="unfinished"/>
+            <translation>Subject:</translation>
         </message>
         <message>
             <source>Success</source>
-            <translation type="unfinished"/>
+            <translation>Sucesso</translation>
         </message>
         <message>
             <source>Summary by Category</source>
-            <translation type="unfinished"/>
+            <translation>Resumo por categoria</translation>
         </message>
         <message>
             <source>Switch branch…</source>
-            <translation type="unfinished"/>
+            <translation>- A ligação...</translation>
         </message>
         <message>
             <source>System Default</source>
-            <translation type="unfinished"/>
+            <translation>Sistema de padrão</translation>
         </message>
         <message>
             <source>TM / Suggestions</source>
-            <translation type="unfinished"/>
+            <translation>TM / Sugestões</translation>
         </message>
         <message>
             <source>TMX</source>
-            <translation type="unfinished"/>
+            <translation>Tmx</translation>
         </message>
         <message>
             <source>TMX Export</source>
-            <translation type="unfinished"/>
+            <translation>Exportação TMX</translation>
         </message>
         <message>
             <source>TMX Files (*.tmx)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos TMX (*.tmx)</translation>
         </message>
         <message>
             <source>TMX Import</source>
-            <translation type="unfinished"/>
+            <translation>Importação TMX</translation>
         </message>
         <message>
             <source>TS files (*.ts);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos TS (*.ts);;Todos os arquivos (*)</translation>
         </message>
         <message>
             <source>TTS Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro TTS</translation>
         </message>
         <message>
             <source>Tag filter removed</source>
-            <translation type="unfinished"/>
+            <translation>Removido o filtro de tag</translation>
         </message>
         <message>
             <source>Tags</source>
-            <translation type="unfinished"/>
+            <translation>Tags</translation>
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua alvo:</translation>
         </message>
         <message>
             <source>Target term:</source>
-            <translation type="unfinished"/>
+            <translation>Termo-alvo:</translation>
         </message>
         <message>
             <source>Text-to-speech failed: {}</source>
-            <translation type="unfinished"/>
+            <translation>Falha a transmissão de texto para a fala:</translation>
         </message>
         <message>
             <source>The current file has unsaved changes.\nDo you want to save before continuing?</source>
-            <translation type="unfinished"/>
+            <translation>O arquivo atual tem alterações não salvas.\nQuer salvar antes de continuar?</translation>
         </message>
         <message>
             <source>The file </source>
-            <translation type="unfinished"/>
+            <translation>O arquivo .</translation>
         </message>
         <message>
             <source>The file has been changed externally. Reload?</source>
-            <translation type="unfinished"/>
+            <translation>O ficheiro foi alterado externamente.</translation>
         </message>
         <message>
             <source>Theme</source>
-            <translation type="unfinished"/>
+            <translation>Temática</translation>
         </message>
         <message>
             <source>Theme changed to %s</source>
-            <translation type="unfinished"/>
+            <translation>Temática mudada para %s</translation>
         </message>
         <message>
             <source>This feature only works with PO files.</source>
-            <translation type="unfinished"/>
+            <translation>Este recurso só funciona com arquivos de correio postal.</translation>
         </message>
         <message>
             <source>Time interval</source>
-            <translation type="unfinished"/>
+            <translation>Intervalo de tempo</translation>
         </message>
         <message>
             <source>Time:</source>
-            <translation type="unfinished"/>
+            <translation>Tempo:</translation>
         </message>
         <message>
             <source>To:</source>
-            <translation type="unfinished"/>
+            <translation>Para:</translation>
         </message>
         <message>
             <source>Toggle fuzzy/needs work flag</source>
-            <translation type="unfinished"/>
+            <translation>O comando de desvio é desfocado/necessita de trabalho</translation>
         </message>
         <message>
             <source>Total</source>
-            <translation type="unfinished"/>
+            <translation>Total</translation>
         </message>
         <message>
             <source>Total entries:</source>
-            <translation type="unfinished"/>
+            <translation>Total das entradas:</translation>
         </message>
         <message>
             <source>Transifex</source>
-            <translation type="unfinished"/>
+            <translation>Transifex</translation>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>Tradução</translation>
         </message>
         <message>
             <source>Translated via %s</source>
-            <translation type="unfinished"/>
+            <translation>Traduzido por %s</translation>
         </message>
         <message>
             <source>Translated:</source>
-            <translation type="unfinished"/>
+            <translation>Traduzido:</translation>
         </message>
         <message>
             <source>Translated: %d</source>
-            <translation type="unfinished"/>
+            <translation>Traduzido: %d</translation>
         </message>
         <message>
             <source>Translated: 0</source>
-            <translation type="unfinished"/>
+            <translation>Traduzido: 0</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tradução</translation>
         </message>
         <message>
             <source>Translation A → Z</source>
-            <translation type="unfinished"/>
+            <translation>Tradução A → Z</translation>
         </message>
         <message>
             <source>Translation Engine</source>
-            <translation type="unfinished"/>
+            <translation>Máquina de tradução</translation>
         </message>
         <message>
             <source>API key:</source>
-            <translation type="unfinished"/>
+            <translation>Técnica de API:</translation>
         </message>
         <message>
             <source>Auto-detect</source>
-            <translation type="unfinished"/>
+            <translation>Autodetecção</translation>
         </message>
         <message>
             <source>Enter API key</source>
-            <translation type="unfinished"/>
+            <translation>Digite a chave API</translation>
         </message>
         <message>
             <source>Not required for free engines</source>
-            <translation type="unfinished"/>
+            <translation>Não é necessário para motores livres</translation>
         </message>
         <message>
             <source>Translation History…</source>
-            <translation type="unfinished"/>
+            <translation>História da tradução...</translation>
         </message>
         <message>
             <source>Translation Map…</source>
-            <translation type="unfinished"/>
+            <translation>Mapa de tradução...</translation>
         </message>
         <message>
             <source>Translation Report</source>
-            <translation type="unfinished"/>
+            <translation>Relatório de tradução</translation>
         </message>
         <message>
             <source>Translation Z → A</source>
-            <translation type="unfinished"/>
+            <translation>Tradução Z → A</translation>
         </message>
         <message>
             <source>Translation preview will appear here</source>
-            <translation type="unfinished"/>
+            <translation>A prévia da tradução aparecerá aqui</translation>
         </message>
         <message>
             <source>Translation rolled back</source>
-            <translation type="unfinished"/>
+            <translation>Tradução retirada</translation>
         </message>
         <message>
             <source>Translation updated from AI review</source>
-            <translation type="unfinished"/>
+            <translation>Tradução atualizada da revisão da IA</translation>
         </message>
         <message>
             <source>Translation:</source>
-            <translation type="unfinished"/>
+            <translation>Tradução:</translation>
         </message>
         <message>
             <source>Undo</source>
-            <translation type="unfinished"/>
+            <translation>Desfeito</translation>
         </message>
         <message>
             <source>Unicode Inspector</source>
-            <translation type="unfinished"/>
+            <translation>Inspector Unicode</translation>
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>Não conhecido</translation>
         </message>
         <message>
             <source>Unsaved Changes</source>
-            <translation type="unfinished"/>
+            <translation>Mudanças não salvas</translation>
         </message>
         <message>
             <source>Unsupported file type: %s</source>
-            <translation type="unfinished"/>
+            <translation>Tipo de arquivo não suportado: %s</translation>
         </message>
         <message>
             <source>Untitled</source>
-            <translation type="unfinished"/>
+            <translation>Não identificado</translation>
         </message>
         <message>
             <source>Untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Não traduzido</translation>
         </message>
         <message>
             <source>Untranslated/errors first</source>
-            <translation type="unfinished"/>
+            <translation>Não traduzido/erros primeiro</translation>
         </message>
         <message>
             <source>Untranslated:</source>
-            <translation type="unfinished"/>
+            <translation>Não traduzido:</translation>
         </message>
         <message>
             <source>Untranslated: %d</source>
-            <translation type="unfinished"/>
+            <translation>Não traduzido: %d</translation>
         </message>
         <message>
             <source>Untranslated: 0</source>
-            <translation type="unfinished"/>
+            <translation>Não traduzido: 0</translation>
         </message>
         <message>
             <source>Up to date</source>
-            <translation type="unfinished"/>
+            <translation>Atualização</translation>
         </message>
         <message>
             <source>Update Available</source>
-            <translation type="unfinished"/>
+            <translation>Atualização disponível</translation>
         </message>
         <message>
             <source>Updated {} translation</source>
-            <translation type="unfinished"/>
+            <translation>Tradução atualizada</translation>
         </message>
         <message>
             <source>Validate</source>
-            <translation type="unfinished"/>
+            <translation>Validação</translation>
         </message>
         <message>
             <source>Validate (Lint)</source>
-            <translation type="unfinished"/>
+            <translation>Validação (Lint)</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished"/>
+            <translation>Valor</translation>
         </message>
         <message>
             <source>Version:</source>
-            <translation type="unfinished"/>
+            <translation>Versão:</translation>
         </message>
         <message>
             <source>Video</source>
-            <translation type="unfinished"/>
+            <translation>Vídeo</translation>
         </message>
         <message>
             <source>Video file</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo de vídeo</translation>
         </message>
         <message>
             <source>Video files (*.mkv *.mp4 *.avi *.mov *.webm *.flv *.wmv *.ogv);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos de vídeo (*.mkv *.mp4 *.avi *.mov *.webm *.flv *.wmv *.ogv);;Todos os arquivos (*)</translation>
         </message>
         <message>
             <source>Warnings</source>
-            <translation type="unfinished"/>
+            <translation>Advertências</translation>
         </message>
         <message>
             <source>Watch File</source>
-            <translation type="unfinished"/>
+            <translation>Ficha de observação</translation>
         </message>
         <message>
             <source>Watch mode disabled</source>
-            <translation type="unfinished"/>
+            <translation>Modo de vigilância desativado</translation>
         </message>
         <message>
             <source>Watch mode enabled - file changes will be detected</source>
-            <translation type="unfinished"/>
+            <translation>Modo de vigilância habilitado - alterações de arquivo serão detectadas</translation>
         </message>
         <message>
             <source>Weblate</source>
-            <translation type="unfinished"/>
+            <translation>Tela de papel</translation>
         </message>
         <message>
             <source>Website:</source>
-            <translation type="unfinished"/>
+            <translation>Site:</translation>
         </message>
         <message>
             <source>With warnings</source>
-            <translation type="unfinished"/>
+            <translation>Com advertências</translation>
         </message>
         <message>
             <source>Words: %d | Chars: %d | Source: %dw%s</source>
-            <translation type="unfinished"/>
+            <translation>Palavras: %d  Characters: %d  Source: %dw%s</translation>
         </message>
         <message>
             <source>Would you like to extract subtitles from this video?</source>
-            <translation type="unfinished"/>
+            <translation>Quer extrair legendas deste vídeo?</translation>
         </message>
         <message>
             <source>Wrong File Type</source>
-            <translation type="unfinished"/>
+            <translation>Tipo de arquivo errado</translation>
         </message>
         <message>
             <source>XLIFF files (*.xlf *.xliff);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos XLIFF (*.xlf *.xliff);;Todos os arquivos (*)</translation>
         </message>
         <message>
             <source>Zen Mode</source>
-            <translation type="unfinished"/>
+            <translation>Modo Zen</translation>
         </message>
         <message>
             <source>\n\nErrors:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>Erros:</translation>
         </message>
         <message>
             <source>lrelease error: %s</source>
-            <translation type="unfinished"/>
+            <translation>Erro de liberação: %s</translation>
         </message>
         <message>
             <source>msgfmt error: %s</source>
-            <translation type="unfinished"/>
+            <translation>erro msgfmt: %s</translation>
         </message>
         <message>
             <source>msgmerge command not found. Please install gettext tools.</source>
-            <translation type="unfinished"/>
+            <translation>msgmerge comando não encontrado. Por favor instale ferramentas gettext.</translation>
         </message>
         <message>
             <source>msgmerge failed:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>msgmerge falhou:\n{}</translation>
         </message>
         <message>
             <source>translated</source>
-            <translation type="unfinished"/>
+            <translation>Tradução</translation>
         </message>
         <message>
             <source>words</source>
-            <translation type="unfinished"/>
+            <translation>Palavras</translation>
         </message>
         <message>
             <source>{} chars | {} words | Source: {} chars</source>
-            <translation type="unfinished"/>
+            <translation>As palavras são as palavras.</translation>
         </message>
         <message>
             <source>… and %d more</source>
-            <translation type="unfinished"/>
+            <translation>... e %d mais</translation>
         </message>
         <message>
             <source>⚠️ Toggle Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>️ Toga Fuzzy</translation>
         </message>
         <message>
             <source>✅ Mark Reviewed</source>
-            <translation type="unfinished"/>
+            <translation>✅ Marca Revisada</translation>
         </message>
         <message>
             <source>✓ No spelling issues found</source>
-            <translation type="unfinished"/>
+            <translation>✓ Nenhum problema de ortografia encontrado</translation>
         </message>
         <message>
             <source>💬 Comment</source>
-            <translation type="unfinished"/>
+            <translation> Comentário</translation>
         </message>
         <message>
             <source>💾 Apply TM #1</source>
-            <translation type="unfinished"/>
+            <translation> Aplicar o TM #1</translation>
         </message>
         <message>
             <source>📋 Copy Source</source>
-            <translation type="unfinished"/>
+            <translation> Copia Fonte</translation>
         </message>
         <message>
             <source>📌 Pin Entry</source>
-            <translation type="unfinished"/>
+            <translation>📌 Entrada de pin</translation>
         </message>
         <message>
             <source>📌 Unpin Entry</source>
-            <translation type="unfinished"/>
+            <translation>📌 Entrada de pinheira</translation>
         </message>
         <message>
             <source>🔊 Play Translation</source>
-            <translation type="unfinished"/>
+            <translation> Jogar Tradução</translation>
         </message>
         <message>
             <source>🤖 Apply MT</source>
-            <translation type="unfinished"/>
+            <translation> Aplicar MT</translation>
         </message>
         <message>
             <source>DeepL formality:</source>
-            <translation type="unfinished"/>
+            <translation>Formalidade do DeepL:</translation>
         </message>
         <message>
             <source>OpenAI model:</source>
-            <translation type="unfinished"/>
+            <translation>Modelo OpenAI:</translation>
         </message>
         <message>
             <source>Anthropic model:</source>
-            <translation type="unfinished"/>
+            <translation>Modelo antropológico:</translation>
         </message>
         <message>
             <source>MS Azure region:</source>
-            <translation type="unfinished"/>
+            <translation>Região MS Azure:</translation>
         </message>
         <message>
             <source>AWS Secret Key:</source>
-            <translation type="unfinished"/>
+            <translation>A chave secreta da AWS:</translation>
         </message>
         <message>
             <source>AWS Region:</source>
-            <translation type="unfinished"/>
+            <translation>Região AWS:</translation>
         </message>
         <message>
             <source>ID: %1</source>
-            <translation type="unfinished"/>
+            <translation>Identificação: %1</translation>
         </message>
         <message>
             <source>State: %1</source>
-            <translation type="unfinished"/>
+            <translation>Estado: %1</translation>
         </message>
         <message>
             <source>Translation: %1</source>
-            <translation type="unfinished"/>
+            <translation>Tradução: %1</translation>
         </message>
         <message>
             <source>%d min %d s remaining</source>
-            <translation type="unfinished"/>
+            <translation>%d min %d s restante</translation>
         </message>
         <message>
             <source>%d of %d entries (%d%%) have no translation.\n\nUntranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.\n\nSave anyway?</source>
-            <translation type="unfinished"/>
+            <translation>%d das entradas %d (%d%%) não têm tradução.\n\nEntregues não traduzidas serão marcadas e salvas com o texto fonte como fallback, então elas ainda serão exibidas durante a reprodução. Quando reabertas em LinguaEdit, elas serão correctamente mostradas como não traduzidas.\n\nSave de qualquer maneira?</translation>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s</source>
-            <translation type="unfinished"/>
+            <translation>%d de cordas %d · %.1f cordas/s · %s</translation>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s remaining</source>
-            <translation type="unfinished"/>
+            <translation>%d das cordas %d · %.1f de cordas/s · restante %s</translation>
         </message>
         <message>
             <source>%d s remaining</source>
-            <translation type="unfinished"/>
+            <translation>Resíduos de %d</translation>
         </message>
         <message>
-            <source>&lt;p&gt;LinguaEdit is free software.&lt;/p&gt;&lt;p&gt;If you find it useful, consider supporting development:&lt;/p&gt;&lt;p&gt;❤️ &lt;b&gt;GitHub Sponsors:&lt;/b&gt; &lt;a href=&apos;https://github.com/sponsors/yeager&apos;&gt;github.com/sponsors/yeager&lt;/a&gt;&lt;/p&gt;&lt;p&gt;🇸🇪 &lt;b&gt;Swish:&lt;/b&gt; +46702526206 — &lt;a href=&apos;swish://payment?payee=0702526206&amp;message=LinguaEdit&apos;&gt;Öppna Swish&lt;/a&gt;&lt;/p&gt;</source>
-            <translation type="unfinished"/>
+            <source>&lt;p&gt;LinguaEdit is free software.&lt;/p&gt;&lt;p&gt;If you find it useful, consider supporting development:&lt;/p&gt;&lt;p&gt;❤️ &lt;b&gt;GitHub Sponsors:&lt;/b&gt; &lt;a href='https://github.com/sponsors/yeager'&gt;github.com/sponsors/yeager&lt;/a&gt;&lt;/p&gt;&lt;p&gt;🇸🇪 &lt;b&gt;Swish:&lt;/b&gt; +46702526206 — &lt;a href='swish://payment?payee=0702526206&amp;message=LinguaEdit'&gt;Öppna Swish&lt;/a&gt;&lt;/p&gt;</source>
+            <translation type="unfinished" />
         </message>
         <message>
-            <source>Cannot compile: install &apos;polib&apos; or &apos;gettext&apos; (msgfmt)</source>
-            <translation type="unfinished"/>
+            <source>Cannot compile: install 'polib' or 'gettext' (msgfmt)</source>
+            <translation>Não pode compilar: instalar 'polib' ou 'gettext' (msgfmt)</translation>
         </message>
         <message>
             <source>No untranslated entries</source>
-            <translation type="unfinished"/>
+            <translation>Não há entradas não traduzidas</translation>
         </message>
         <message>
             <source>Pre-translated %d entries via %s (%d errors)</source>
-            <translation type="unfinished"/>
+            <translation>As entradas %d pre-traduzidas através de %s (erros %d)</translation>
         </message>
         <message>
             <source>Pre-translated %d entries via %s (%d errors — last: %s)</source>
-            <translation type="unfinished"/>
+            <translation>Entradas pre-traduzidas %d através de %s (erros %d  último: %s)</translation>
         </message>
         <message>
             <source>Pre-translated %d of %d entries via %s (cancelled)</source>
-            <translation type="unfinished"/>
+            <translation>Pre-tradução %d das entradas %d via %s (cancelada)</translation>
         </message>
         <message>
             <source>Pre-translated %d of %d entries via %s (cancelled, %d errors — last: %s)</source>
-            <translation type="unfinished"/>
+            <translation>Pre-tradução %d das entradas %d via %s (cancelado, erros %d  último: %s)</translation>
         </message>
         <message>
             <source>Pre-translate cancelled — no translations made</source>
-            <translation type="unfinished"/>
+            <translation>Pre-tradução cancelada  nenhuma tradução feita</translation>
         </message>
         <message>
             <source>Pre-translating…</source>
-            <translation type="unfinished"/>
+            <translation>- Pre-tradução...</translation>
         </message>
         <message>
             <source>Translation Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro de tradução</translation>
         </message>
         <message>
             <source>Error translating string %d of %d:</source>
-            <translation type="unfinished"/>
+            <translation>Erro na tradução de cadeia %d de %d:</translation>
         </message>
         <message>
             <source>Skip All Errors</source>
-            <translation type="unfinished"/>
+            <translation>Evite todos os erros</translation>
         </message>
         <message>
             <source>Continue</source>
-            <translation type="unfinished"/>
+            <translation>Continuar</translation>
         </message>
         <message>
             <source>Stop</source>
-            <translation type="unfinished"/>
+            <translation>Parem!</translation>
         </message>
         <message>
-            <source>Recording macro &apos;{}&apos;...</source>
-            <translation type="unfinished"/>
+            <source>Recording macro '{}'...</source>
+            <translation>Gravar macro '{}'...</translation>
         </message>
         <message>
-            <source>The file &apos;%s&apos; has unsaved changes.\nDo you want to save before closing?</source>
-            <translation type="unfinished"/>
+            <source>The file '%s' has unsaved changes.\nDo you want to save before closing?</source>
+            <translation>O arquivo '%s' tem alterações não salvas.\nQuer salvar antes de fechar?</translation>
         </message>
         <message>
             <source>LinguaEdit — %s</source>
-            <translation type="unfinished"/>
+            <translation>LinguaEditar  %s</translation>
         </message>
         <message>
             <source>Backend: %s</source>
-            <translation type="unfinished"/>
+            <translation>Backend: %s</translation>
         </message>
         <message>
-            <source>Source: \&quot;%s\&quot;\n  Entries: %s\n  Translations: %s\n</source>
-            <translation type="unfinished"/>
+            <source>Source: \"%s\"\n  Entries: %s\n  Translations: %s\n</source>
+            <translation>Fonte: \"%s\"\n Entries: %s\n Traduções: %s\n</translation>
         </message>
-    <message>
+        <message>
             <source>Source: %s\nTarget: %s</source>
-            <translation type="unfinished"/>
+            <translation>Fonte: %s\nObjetivo: %s</translation>
         </message>
         <message>
             <source>%s\n\nAdd a new term or check file?</source>
-            <translation type="unfinished"/>
+            <translation>%s\n\n adicionar um novo termo ou arquivo de verificação?</translation>
         </message>
         <message>
             <source>File: %s\nEntries: %d</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo: %s\nEntregues: %d</translation>
         </message>
         <message>
             <source>Found %d inconsistencies:\n\n</source>
-            <translation type="unfinished"/>
+            <translation>Encontraram inconsistências %d:</translation>
         </message>
         <message>
             <source>Weblate Statistics…</source>
-            <translation type="unfinished"/>
+            <translation>Estatísticas Weblate...</translation>
         </message>
         <message>
             <source>No Weblate API key or server URL configured.\nPlease add them in Translation → API Keys…</source>
-            <translation type="unfinished"/>
+            <translation>Nenhuma chave de API Weblate ou URL do servidor configurado.\nPor favor adicione-as em Tradução → API Keys...</translation>
         </message>
         <message>
             <source>Weblate Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro Weblate</translation>
         </message>
         <message>
             <source>Weblate — %s</source>
-            <translation type="unfinished"/>
+            <translation>Weblate  %s</translation>
         </message>
         <message>
             <source>  (fuzzy: %d)</source>
-            <translation type="unfinished"/>
+            <translation>(%d)</translation>
         </message>
         <message>
             <source>Weblate Server URL:</source>
-            <translation type="unfinished"/>
+            <translation>URL do Weblate Server:</translation>
         </message>
-    <message><source>No API Key</source><translation type="unfinished"/></message><message><source>No Transifex API key configured.
-Please add one in Translation → API Keys…</source><translation type="unfinished"/></message><message><source>No language statistics found.</source><translation type="unfinished"/></message><message><source>No organizations found.</source><translation type="unfinished"/></message><message><source>No projects found.</source><translation type="unfinished"/></message><message><source>Organization:</source><translation type="unfinished"/></message><message><source>Project:</source><translation type="unfinished"/></message><message><source>Select Organization</source><translation type="unfinished"/></message><message><source>Select Project</source><translation type="unfinished"/></message><message><source>Transifex Error</source><translation type="unfinished"/></message><message><source>Transifex Statistics…</source><translation type="unfinished"/></message><message><source>Transifex — %s</source><translation type="unfinished"/></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation type="unfinished"/></message>    <message>
-        <source>
+        <message>
+            <source>No API Key</source>
+            <translation>Não há chave de API</translation>
+        </message>
+        <message>
+            <source>No Transifex API key configured.
+Please add one in Translation → API Keys…</source>
+            <translation>Não há chave de API Transifex configurada. Por favor, adicione uma na tradução → API Keys...</translation>
+        </message>
+        <message>
+            <source>No language statistics found.</source>
+            <translation>Não encontraram estatísticas linguísticas.</translation>
+        </message>
+        <message>
+            <source>No organizations found.</source>
+            <translation>Não encontraram organizações.</translation>
+        </message>
+        <message>
+            <source>No projects found.</source>
+            <translation>Não encontrámos nenhum projecto.</translation>
+        </message>
+        <message>
+            <source>Organization:</source>
+            <translation>Organização:</translation>
+        </message>
+        <message>
+            <source>Project:</source>
+            <translation>Projeto:</translation>
+        </message>
+        <message>
+            <source>Select Organization</source>
+            <translation>Selecione a organização</translation>
+        </message>
+        <message>
+            <source>Select Project</source>
+            <translation>Selecionar Projeto</translation>
+        </message>
+        <message>
+            <source>Transifex Error</source>
+            <translation>Erro Transifex</translation>
+        </message>
+        <message>
+            <source>Transifex Statistics…</source>
+            <translation>Estatísticas da Transifex...</translation>
+        </message>
+        <message>
+            <source>Transifex — %s</source>
+            <translation>Transifex  %s</translation>
+        </message>
+        <message>
+            <source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source>
+            <translation>Estatísticas de tradução para &lt;b&gt;%s&lt;/b&gt;:</translation>
+        </message>
+        <message>
+            <source>
 
 Errors:
 {}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>%d of %d entries (%d%%) have no translation.
+            <translation>Erros: {}</translation>
+        </message>
+        <message>
+            <source>%d of %d entries (%d%%) have no translation.
 
 Untranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.
 
 Save anyway?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>%s
+            <translation>%d das entradas %d (%d%%) não têm tradução. As entradas não traduzidas serão marcadas e salvas com o texto fonte como fallback, então elas ainda serão exibidas durante a reprodução. Quando reabertas em LinguaEdit, elas serão exibidas corretamente como não traduzidas. Salva de qualquer maneira?</translation>
+        </message>
+        <message>
+            <source>%s
 
 Add a new term or check file?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Approved</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Back-translating…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Back-translation Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Back-translation Verification</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>By context</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Could not read video file:
+            <translation>%s Adicionar um novo termo ou arquivo de verificação?</translation>
+        </message>
+        <message>
+            <source>Approved</source>
+            <translation>Approvado</translation>
+        </message>
+        <message>
+            <source>Back-translating…</source>
+            <translation>Tradução de volta...</translation>
+        </message>
+        <message>
+            <source>Back-translation Error</source>
+            <translation>Erro de tradução</translation>
+        </message>
+        <message>
+            <source>Back-translation Verification</source>
+            <translation>Verificação de tradução de origem</translation>
+        </message>
+        <message>
+            <source>By context</source>
+            <translation>Por contexto</translation>
+        </message>
+        <message>
+            <source>Could not read video file:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Failed to run msgmerge:
+            <translation>Não consegui ler o arquivo de vídeo: %s</translation>
+        </message>
+        <message>
+            <source>Failed to run msgmerge:
 {}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>File: %s
+            <translation>Não conseguiu executar msgmerge: {}</translation>
+        </message>
+        <message>
+            <source>File: %s
 Entries: %d</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Found %d inconsistencies:
+            <translation>Arquivo: %s Entradas: %d</translation>
+        </message>
+        <message>
+            <source>Found %d inconsistencies:
 
 </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Help translate:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Issues:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Made %d replacements</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Needs review</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No Crowdin API key configured.
+            <translation>Encontraram inconsistências na %d: </translation>
+        </message>
+        <message>
+            <source>Help translate:</source>
+            <translation>Ajuda na tradução:</translation>
+        </message>
+        <message>
+            <source>Issues:</source>
+            <translation>Questões:</translation>
+        </message>
+        <message>
+            <source>Made %d replacements</source>
+            <translation>Substituição feita por %d</translation>
+        </message>
+        <message>
+            <source>Needs review</source>
+            <translation>Necessidades de revisão</translation>
+        </message>
+        <message>
+            <source>No Crowdin API key configured.
 Please add one in Translation → API Keys…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No Weblate API key or server URL configured.
+            <translation>Não há chave Crowdin API configurada. Por favor, adicione uma na tradução → API Keys...</translation>
+        </message>
+        <message>
+            <source>No Weblate API key or server URL configured.
 Please add them in Translation → API Keys…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No entry selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No matches found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>PO file merged successfully with POT file.
+            <translation>Nenhuma chave de API Weblate ou URL do servidor configurado. Por favor, adicione-os em Tradução → API Keys...</translation>
+        </message>
+        <message>
+            <source>No entry selected</source>
+            <translation>Nenhuma entrada selecionada</translation>
+        </message>
+        <message>
+            <source>No matches found</source>
+            <translation>Não encontramos fósforos .</translation>
+        </message>
+        <message>
+            <source>PO file merged successfully with POT file.
 Please reload the file to see changes.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Pomodoro Timer…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Quality score:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Rejected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Review status: %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Review status: Needs review</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Source text is read-only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Source:
+            <translation>O arquivo PO foi fundido com sucesso com o arquivo POT. Por favor, recarregue o arquivo para ver as alterações.</translation>
+        </message>
+        <message>
+            <source>Pomodoro Timer…</source>
+            <translation>Pomodoro Timer...</translation>
+        </message>
+        <message>
+            <source>Quality score:</source>
+            <translation>Pontuação de qualidade:</translation>
+        </message>
+        <message>
+            <source>Rejected</source>
+            <translation>Rejeito</translation>
+        </message>
+        <message>
+            <source>Review status: %s</source>
+            <translation>Estatuto da revisão: %s</translation>
+        </message>
+        <message>
+            <source>Review status: Needs review</source>
+            <translation>Estatuto da revisão: Necessidades de revisão</translation>
+        </message>
+        <message>
+            <source>Source text is read-only</source>
+            <translation>O texto fonte é apenas para leitura</translation>
+        </message>
+        <message>
+            <source>Source:
 %s
 
 Back-translation:
 %s
 
 Text similarity: %.0f%%</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Source: %s
+            <translation>Fonte:
+%s
+
+Retrotradução:
+%s
+
+Similaridade do texto: %.0f%%</translation>
+        </message>
+        <message>
+            <source>Source: %s
 Target: %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Source: \"%s\"
+            <translation>Fonte: %s Alvo: %s</translation>
+        </message>
+        <message>
+            <source>Source: \"%s\"
   Entries: %s
   Translations: %s
 </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Spelling issues:
+            <translation>Fonte: \"%s\" Entradas: %s Traduções: %s </translation>
+        </message>
+        <message>
+            <source>Spelling issues:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The current entry is untranslated</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The current file has unsaved changes.
+            <translation>Problemas ortográficos: %s</translation>
+        </message>
+        <message>
+            <source>The current entry is untranslated</source>
+            <translation>A entrada atual não está traduzida</translation>
+        </message>
+        <message>
+            <source>The current file has unsaved changes.
 Do you want to save before continuing?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The file '%s' has unsaved changes.
+            <translation>O arquivo atual tem alterações não salvas. Quer salvar antes de continuar?</translation>
+        </message>
+        <message>
+            <source>The file '%s' has unsaved changes.
 Do you want to save before closing?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Verify with Back-translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>msgmerge failed:
+            <translation>O arquivo '%s' tem alterações não salvas. Quer salvar antes de fechar?</translation>
+        </message>
+        <message>
+            <source>Verify with Back-translation</source>
+            <translation>Verifique com Back-translation</translation>
+        </message>
+        <message>
+            <source>msgmerge failed:
 {}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>A newer local recovery snapshot exists. Restore it?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Accessibility</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Accessibility check</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Automatic QA found %d errors. Save anyway?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Found %d issues:
+            <translation>msgmerge falhou: {}</translation>
+        </message>
+        <message>
+            <source>A newer local recovery snapshot exists. Restore it?</source>
+            <translation>Existe uma nova imagem de recuperação local.</translation>
+        </message>
+        <message>
+            <source>Accessibility</source>
+            <translation>Acessibilidade</translation>
+        </message>
+        <message>
+            <source>Accessibility check</source>
+            <translation>Verificação da acessibilidade</translation>
+        </message>
+        <message>
+            <source>Automatic QA found %d errors. Save anyway?</source>
+            <translation>A análise automática encontrou erros %d.</translation>
+        </message>
+        <message>
+            <source>Found %d issues:
 
 </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Git Commit Blocked</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Health: %.1f%%
+            <translation>Encontrou problemas de %d: </translation>
+        </message>
+        <message>
+            <source>Git Commit Blocked</source>
+            <translation>Comit Git bloqueado</translation>
+        </message>
+        <message>
+            <source>Health: %.1f%%
 Translated: %d/%d
 Stale: %d
 Errors: %d
@@ -3946,2677 +4005,2677 @@ Warnings: %d
 Terminology issues: %d
 Accessibility issues: %d
 Risks: %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Inspect translation build</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No accessibility issues found! ✓</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No linguaedit_*.ts catalogs found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Potential secrets were found. Nothing was staged.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Project Health</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Project health</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Pseudolocalize current entry</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Pseudolocalized current entry</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>QA profile: Android</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>QA profile: Qt</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>QA profile: Subtitles</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Quality errors</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Recover unsaved work</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select translation catalog directory</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Translation Build</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>none</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>Salud: %.1f%% Traduzido: %d/%d Estabelecimento: %d Erros: %d Aviso: %d Problemas de terminologia: %d Problemas de acessibilidade: %d Riscos: %s</translation>
+        </message>
+        <message>
+            <source>Inspect translation build</source>
+            <translation>Inscreva a construção de traduções</translation>
+        </message>
+        <message>
+            <source>No accessibility issues found! ✓</source>
+            <translation>Não foram encontrados problemas de acessibilidade! ✓</translation>
+        </message>
+        <message>
+            <source>No linguaedit_*.ts catalogs found</source>
+            <translation>Nenhum catálogo de linguaedit_*.ts encontrado</translation>
+        </message>
+        <message>
+            <source>Potential secrets were found. Nothing was staged.</source>
+            <translation>Encontraram-se potenciais segredos, nada foi encenado.</translation>
+        </message>
+        <message>
+            <source>Project Health</source>
+            <translation>Saúde do projecto</translation>
+        </message>
+        <message>
+            <source>Project health</source>
+            <translation>Saúde do projecto</translation>
+        </message>
+        <message>
+            <source>Pseudolocalize current entry</source>
+            <translation>Pseudo-localização da entrada corrente</translation>
+        </message>
+        <message>
+            <source>Pseudolocalized current entry</source>
+            <translation>Entrada corrente pseudolocalizada</translation>
+        </message>
+        <message>
+            <source>QA profile: Android</source>
+            <translation>Profil de QA: Android</translation>
+        </message>
+        <message>
+            <source>QA profile: Qt</source>
+            <translation>Profil de QA: Qt</translation>
+        </message>
+        <message>
+            <source>QA profile: Subtitles</source>
+            <translation>Profil de QA: Subtítulos</translation>
+        </message>
+        <message>
+            <source>Quality errors</source>
+            <translation>Erros de qualidade</translation>
+        </message>
+        <message>
+            <source>Recover unsaved work</source>
+            <translation>Recuperar o trabalho não salvo</translation>
+        </message>
+        <message>
+            <source>Select translation catalog directory</source>
+            <translation>Selecionar o catálogo de traduções</translation>
+        </message>
+        <message>
+            <source>Translation Build</source>
+            <translation>Construir traduções</translation>
+        </message>
+        <message>
+            <source>none</source>
+            <translation>Não há</translation>
+        </message>
+    </context>
     <context>
         <name>Linter</name>
         <message>
             <source>Accelerator key mismatch: source has %d, translation has %d</source>
-            <translation type="unfinished"/>
+            <translation>Desconformidade da chave do acelerador: fonte tem %d, tradução tem %d</translation>
         </message>
         <message>
             <source>Case mismatch: source starts with </source>
-            <translation type="unfinished"/>
+            <translation>Desconformidade do caso: a fonte começa com </translation>
         </message>
         <message>
             <source>Ending </source>
-            <translation type="unfinished"/>
+            <translation>Acabar .</translation>
         </message>
         <message>
             <source>Extra HTML/XML tags in translation: %s</source>
-            <translation type="unfinished"/>
+            <translation>Tags adicionais de HTML/XML em tradução: %s</translation>
         </message>
         <message>
             <source>Format specifier mismatch: %s vs %s</source>
-            <translation type="unfinished"/>
+            <translation>Desconformidade do especificador de formato: %s vs %s</translation>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>- Não .</translation>
         </message>
         <message>
             <source>Glossary inconsistency: %s</source>
-            <translation type="unfinished"/>
+            <translation>Inconsistência do glossário: %s</translation>
         </message>
         <message>
             <source>Inconsistent translation for </source>
-            <translation type="unfinished"/>
+            <translation>Tradução inconsistente para </translation>
         </message>
         <message>
             <source>Leading whitespace mismatch</source>
-            <translation type="unfinished"/>
+            <translation>O principal desajuste no espaço branco</translation>
         </message>
         <message>
             <source>Missing HTML/XML tags in translation: %s</source>
-            <translation type="unfinished"/>
+            <translation>Faltando tags HTML/XML na tradução: %s</translation>
         </message>
         <message>
             <source>Newline count mismatch (%s vs %s)</source>
-            <translation type="unfinished"/>
+            <translation>Descoincidência de contagem de linhas novas (%s vs %s)</translation>
         </message>
         <message>
             <source>Python format mismatch: %s vs %s</source>
-            <translation type="unfinished"/>
+            <translation>Desconformidade no formato Python: %s vs %s</translation>
         </message>
         <message>
             <source>Suspicious length ratio: %sx</source>
-            <translation type="unfinished"/>
+            <translation>Relação de comprimento suspeito: %sx</translation>
         </message>
         <message>
             <source>Trailing whitespace mismatch</source>
-            <translation type="unfinished"/>
+            <translation>Descoincidência no espaço branco</translation>
         </message>
         <message>
             <source>Untranslated</source>
-            <translation type="unfinished"/>
+            <translation>Não traduzido</translation>
         </message>
     </context>
     <context>
         <name>LocaleMapDialog</name>
         <message>
             <source>Average progress</source>
-            <translation type="unfinished"/>
+            <translation>Progresso médio</translation>
         </message>
         <message>
             <source>Browse...</source>
-            <translation type="unfinished"/>
+            <translation>- Não, não.</translation>
         </message>
         <message>
             <source>Click on a country to see details</source>
-            <translation type="unfinished"/>
+            <translation>Clique em um país para ver os detalhes</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Complete</source>
-            <translation type="unfinished"/>
+            <translation>Completado</translation>
         </message>
         <message>
             <source>Countries with translations</source>
-            <translation type="unfinished"/>
+            <translation>Países com traduções</translation>
         </message>
         <message>
             <source>Country Details</source>
-            <translation type="unfinished"/>
+            <translation>Detalhes do país</translation>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation type="unfinished"/>
+            <translation>- Não .</translation>
         </message>
         <message>
             <source>Locale Files</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos locais</translation>
         </message>
         <message>
             <source>Minimal</source>
-            <translation type="unfinished"/>
+            <translation>Minimal</translation>
         </message>
         <message>
             <source>Missing</source>
-            <translation type="unfinished"/>
+            <translation>- Desaparecido.</translation>
         </message>
         <message>
             <source>No translation data</source>
-            <translation type="unfinished"/>
+            <translation>Nenhum dado de tradução</translation>
         </message>
         <message>
             <source>No translation files found in project.</source>
-            <translation type="unfinished"/>
+            <translation>Nenhum arquivo de tradução encontrado no projeto.</translation>
         </message>
         <message>
             <source>Open File</source>
-            <translation type="unfinished"/>
+            <translation>Abrir arquivo</translation>
         </message>
         <message>
             <source>Partial</source>
-            <translation type="unfinished"/>
+            <translation>Parciais</translation>
         </message>
         <message>
             <source>Project Summary</source>
-            <translation type="unfinished"/>
+            <translation>Resumo do projecto</translation>
         </message>
         <message>
             <source>Project:</source>
-            <translation type="unfinished"/>
+            <translation>Projeto:</translation>
         </message>
         <message>
             <source>Refresh</source>
-            <translation type="unfinished"/>
+            <translation>Refrescamento</translation>
         </message>
         <message>
             <source>Select Project Directory</source>
-            <translation type="unfinished"/>
+            <translation>Selecionar o diretório de projetos</translation>
         </message>
         <message>
             <source>Total strings</source>
-            <translation type="unfinished"/>
+            <translation>Cartas totais</translation>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>Tradução</translation>
         </message>
         <message>
             <source>Translation Map</source>
-            <translation type="unfinished"/>
+            <translation>Mapa de tradução</translation>
         </message>
         <message>
             <source>Translation Progress by Region</source>
-            <translation type="unfinished"/>
+            <translation>Progresso na tradução por região</translation>
         </message>
         <message>
             <source>Translation Statistics</source>
-            <translation type="unfinished"/>
+            <translation>Estatísticas de tradução</translation>
         </message>
         <message>
             <source>Would open: {}</source>
-            <translation type="unfinished"/>
+            <translation>- Abriu-se:</translation>
         </message>
     </context>
     <context>
         <name>MacroDialog</name>
         <message>
             <source>A macro with this name already exists. Please choose a different name.</source>
-            <translation type="unfinished"/>
+            <translation>Uma macro com esse nome já existe. Por favor escolha um nome diferente.</translation>
         </message>
         <message>
             <source>Actions:</source>
-            <translation type="unfinished"/>
+            <translation>Ações:</translation>
         </message>
         <message>
             <source>Are you sure you want to delete the macro </source>
-            <translation type="unfinished"/>
+            <translation>Tem certeza que quer excluir a macro ?</translation>
         </message>
         <message>
             <source>Cannot find main window for macro playback.</source>
-            <translation type="unfinished"/>
+            <translation>Não consigo encontrar a janela principal para reprodução de macro.</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Delete</source>
-            <translation type="unfinished"/>
+            <translation>Excluir</translation>
         </message>
         <message>
             <source>Delete Failed</source>
-            <translation type="unfinished"/>
+            <translation>Excluir Falha</translation>
         </message>
         <message>
             <source>Delete Macro</source>
-            <translation type="unfinished"/>
+            <translation>Excluir Macro</translation>
         </message>
         <message>
             <source>Description:</source>
-            <translation type="unfinished"/>
+            <translation>Descrição:</translation>
         </message>
         <message>
             <source>Disabled</source>
-            <translation type="unfinished"/>
+            <translation>Desempenhados</translation>
         </message>
         <message>
             <source>Enabled:</source>
-            <translation type="unfinished"/>
+            <translation>Ativado:</translation>
         </message>
         <message>
             <source>Enter macro description (optional):</source>
-            <translation type="unfinished"/>
+            <translation>Entre a descrição macro (opcional):</translation>
         </message>
         <message>
             <source>Enter macro name:</source>
-            <translation type="unfinished"/>
+            <translation>Insira o nome da macro:</translation>
         </message>
         <message>
             <source>Enter new name:</source>
-            <translation type="unfinished"/>
+            <translation>Insira novo nome:</translation>
         </message>
         <message>
             <source>Export</source>
-            <translation type="unfinished"/>
+            <translation>Exportação</translation>
         </message>
         <message>
             <source>Export Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro de exportação</translation>
         </message>
         <message>
             <source>Export Failed</source>
-            <translation type="unfinished"/>
+            <translation>Exportação falhada</translation>
         </message>
         <message>
             <source>Export Macro</source>
-            <translation type="unfinished"/>
+            <translation>Exportação macro</translation>
         </message>
         <message>
             <source>Export Successful</source>
-            <translation type="unfinished"/>
+            <translation>Exportação bem sucedida</translation>
         </message>
         <message>
             <source>Failed to delete macro.</source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu excluir o macro.</translation>
         </message>
         <message>
             <source>Failed to export macro.</source>
-            <translation type="unfinished"/>
+            <translation>Não consegui exportar macro.</translation>
         </message>
         <message>
             <source>Failed to export macro: {}</source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu exportar macro: {}</translation>
         </message>
         <message>
             <source>Failed to import macro: {}</source>
-            <translation type="unfinished"/>
+            <translation>Falhou em importar macro: {}</translation>
         </message>
         <message>
             <source>Failed to play macro </source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu jogar macro </translation>
         </message>
         <message>
             <source>Failed to rename macro. The new name may already exist.</source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu renomear o macro.</translation>
         </message>
         <message>
             <source>Failed to save the macro. No actions were recorded.</source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu salvar a macro, não foram gravadas ações.</translation>
         </message>
         <message>
             <source>Import</source>
-            <translation type="unfinished"/>
+            <translation>Importação</translation>
         </message>
         <message>
             <source>Import Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro de importação</translation>
         </message>
         <message>
             <source>Import Failed</source>
-            <translation type="unfinished"/>
+            <translation>Importação falhou</translation>
         </message>
         <message>
             <source>Import Macro</source>
-            <translation type="unfinished"/>
+            <translation>Importação de Macro</translation>
         </message>
         <message>
             <source>Import Successful</source>
-            <translation type="unfinished"/>
+            <translation>Importar com sucesso</translation>
         </message>
         <message>
             <source>JSON Files (*.json)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos JSON (*.json)</translation>
         </message>
         <message>
             <source>Macro </source>
-            <translation type="unfinished"/>
+            <translation>Macro </translation>
         </message>
         <message>
             <source>Macro Description</source>
-            <translation type="unfinished"/>
+            <translation>Descrição macro</translation>
         </message>
         <message>
             <source>Macro Details</source>
-            <translation type="unfinished"/>
+            <translation>Detalhes macros</translation>
         </message>
         <message>
             <source>Macro Exists</source>
-            <translation type="unfinished"/>
+            <translation>Macro Existem</translation>
         </message>
         <message>
             <source>Macro Saved</source>
-            <translation type="unfinished"/>
+            <translation>Macro Salvado</translation>
         </message>
         <message>
             <source>Macro exported to {}</source>
-            <translation type="unfinished"/>
+            <translation>Macro exportado para {}</translation>
         </message>
         <message>
             <source>Macros</source>
-            <translation type="unfinished"/>
+            <translation>Macros</translation>
         </message>
         <message>
             <source>Manage Macros</source>
-            <translation type="unfinished"/>
+            <translation>Gerenciar Macros</translation>
         </message>
         <message>
             <source>Name:</source>
-            <translation type="unfinished"/>
+            <translation>Nome:</translation>
         </message>
         <message>
             <source>No actions recorded</source>
-            <translation type="unfinished"/>
+            <translation>Não registadas acções</translation>
         </message>
         <message>
             <source>Play</source>
-            <translation type="unfinished"/>
+            <translation>Jogar</translation>
         </message>
         <message>
             <source>Playback Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro de reprodução</translation>
         </message>
         <message>
             <source>Ready to record</source>
-            <translation type="unfinished"/>
+            <translation>Pronto para gravação</translation>
         </message>
         <message>
             <source>Record Macro</source>
-            <translation type="unfinished"/>
+            <translation>Registo Macro</translation>
         </message>
         <message>
             <source>Record New Macro</source>
-            <translation type="unfinished"/>
+            <translation>Registo Nova Macro</translation>
         </message>
         <message>
             <source>Recording Failed</source>
-            <translation type="unfinished"/>
+            <translation>Gravação falhou</translation>
         </message>
         <message>
             <source>Rename</source>
-            <translation type="unfinished"/>
+            <translation>Renomeamento</translation>
         </message>
         <message>
             <source>Rename Failed</source>
-            <translation type="unfinished"/>
+            <translation>Renomeado Falhou</translation>
         </message>
         <message>
             <source>Rename Macro</source>
-            <translation type="unfinished"/>
+            <translation>Renomear Macro</translation>
         </message>
         <message>
             <source>Shortcut:</source>
-            <translation type="unfinished"/>
+            <translation>- Desvio:</translation>
         </message>
         <message>
             <source>Stop Recording</source>
-            <translation type="unfinished"/>
+            <translation>Pare de gravar</translation>
         </message>
         <message>
             <source>🔴 Recording in progress...</source>
-            <translation type="unfinished"/>
+            <translation>🔴 A gravação está em andamento...</translation>
         </message>
         <message>
             <source>🔴 Recording... ({} actions)</source>
-            <translation type="unfinished"/>
+            <translation>🔴 Gravar... ({} ações)</translation>
         </message>
         <message>
-            <source>Are you sure you want to delete the macro &apos;{}&apos;?</source>
-            <translation type="unfinished"/>
+            <source>Are you sure you want to delete the macro '{}'?</source>
+            <translation>Você tem certeza que quer excluir a macro '{}'?</translation>
         </message>
         <message>
-            <source>Failed to play macro &apos;{}&apos;.</source>
-            <translation type="unfinished"/>
+            <source>Failed to play macro '{}'.</source>
+            <translation>Não conseguiu jogar macro '{}'.</translation>
         </message>
         <message>
-            <source>Macro &apos;{}&apos; has been saved successfully.</source>
-            <translation type="unfinished"/>
+            <source>Macro '{}' has been saved successfully.</source>
+            <translation>O macro '{}' foi salvo com sucesso.</translation>
         </message>
     </context>
     <context>
         <name>MergePreviewDialog</name>
         <message>
             <source>Merge Entries</source>
-            <translation type="unfinished"/>
+            <translation>Inscrições de fusão</translation>
         </message>
         <message>
             <source>Original segments:</source>
-            <translation type="unfinished"/>
+            <translation>Segmentos originais:</translation>
         </message>
         <message>
             <source>Preview of merged entry ({} segments):</source>
-            <translation type="unfinished"/>
+            <translation>Previsão da entrada combinada (segmentos {}):</translation>
         </message>
         <message>
             <source>Source:</source>
-            <translation type="unfinished"/>
+            <translation>Fonte:</translation>
         </message>
         <message>
             <source>Translation:</source>
-            <translation type="unfinished"/>
+            <translation>Tradução:</translation>
         </message>
     </context>
     <context>
         <name>MinimapWidget</name>
         <message>
             <source>Minimap – click to jump</source>
-            <translation type="unfinished"/>
+            <translation>Minimap  clique para pular</translation>
         </message>
     </context>
     <context>
         <name>OCRDialog</name>
         <message>
             <source>Apply image preprocessing to improve OCR accuracy</source>
-            <translation type="unfinished"/>
+            <translation>Aplicar o pré-processamento de imagens para melhorar a precisão do OCR</translation>
         </message>
         <message>
             <source>Apply preprocessing</source>
-            <translation type="unfinished"/>
+            <translation>Aplicar o pré-processamento</translation>
         </message>
         <message>
             <source>Assume a single column of text of variable sizes</source>
-            <translation type="unfinished"/>
+            <translation>Assumir uma única coluna de texto de tamanhos variáveis</translation>
         </message>
         <message>
             <source>Assume a single uniform block of text</source>
-            <translation type="unfinished"/>
+            <translation>Assumir um único bloco de texto uniforme</translation>
         </message>
         <message>
             <source>Assume a single uniform block of vertically aligned text</source>
-            <translation type="unfinished"/>
+            <translation>Suponha um único bloco uniforme de texto alinhado verticalmente</translation>
         </message>
         <message>
             <source>Automatic page segmentation with OSD</source>
-            <translation type="unfinished"/>
+            <translation>Segmentação automática de páginas com OSD</translation>
         </message>
         <message>
             <source>Automatic page segmentation, but no OSD, or OCR</source>
-            <translation type="unfinished"/>
+            <translation>Segmentação automática de páginas, mas sem OSD ou OCR</translation>
         </message>
         <message>
             <source>Browse Image...</source>
-            <translation type="unfinished"/>
+            <translation>Explore imagem...</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Could not load image.</source>
-            <translation type="unfinished"/>
+            <translation>Não consegui carregar imagem.</translation>
         </message>
         <message>
             <source>Create PO from Extracted Strings</source>
-            <translation type="unfinished"/>
+            <translation>Criar PO a partir de Cordas Extraídas</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro</translation>
         </message>
         <message>
             <source>Extract Text</source>
-            <translation type="unfinished"/>
+            <translation>Extrair texto</translation>
         </message>
         <message>
             <source>Extracted Text</source>
-            <translation type="unfinished"/>
+            <translation>Texto extraído</translation>
         </message>
         <message>
             <source>Failed to create PO file:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu criar arquivo PO:\n{}</translation>
         </message>
         <message>
             <source>Filter extracted strings...</source>
-            <translation type="unfinished"/>
+            <translation>Filtra as cordas extraídas...</translation>
         </message>
         <message>
             <source>Filter:</source>
-            <translation type="unfinished"/>
+            <translation>Filtro:</translation>
         </message>
         <message>
             <source>Fully automatic page segmentation, but no OSD</source>
-            <translation type="unfinished"/>
+            <translation>Segmentação de página totalmente automática, mas sem OSD</translation>
         </message>
         <message>
             <source>Image</source>
-            <translation type="unfinished"/>
+            <translation>Imagem</translation>
         </message>
         <message>
             <source>Image Files (*.png *.jpg *.jpeg *.gif *.bmp *.tiff)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos de imagem (*.png *.jpg *.jpeg *.gif *.bmp *.tiff)</translation>
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua:</translation>
         </message>
         <message>
             <source>No Strings</source>
-            <translation type="unfinished"/>
+            <translation>Sem cordas</translation>
         </message>
         <message>
             <source>No strings selected for PO file creation.</source>
-            <translation type="unfinished"/>
+            <translation>Não há cadeias selecionadas para criação de arquivo PO.</translation>
         </message>
         <message>
             <source>OCR Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro de OCR</translation>
         </message>
         <message>
             <source>OCR Screenshot</source>
-            <translation type="unfinished"/>
+            <translation>Imagem de tela OCR</translation>
         </message>
         <message>
             <source>OCR Settings</source>
-            <translation type="unfinished"/>
+            <translation>Configurações de OCR</translation>
         </message>
         <message>
             <source>Orientation and script detection (OSD) only</source>
-            <translation type="unfinished"/>
+            <translation>Apenas detecção de orientação e script (OSD)</translation>
         </message>
         <message>
             <source>PO Files (*.po)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos de correio postal (*.po)</translation>
         </message>
         <message>
             <source>PO file created successfully:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo PO criado com sucesso:\n{}</translation>
         </message>
         <message>
             <source>Page Segmentation:</source>
-            <translation type="unfinished"/>
+            <translation>Segmentação de página:</translation>
         </message>
         <message>
             <source>Raw OCR Output</source>
-            <translation type="unfinished"/>
+            <translation>Output de OCR bruto</translation>
         </message>
         <message>
             <source>Raw line. Treat the image as a single text line, bypassing hacks</source>
-            <translation type="unfinished"/>
+            <translation>Linha crua. Trata a imagem como uma única linha de texto, ignorando hacks</translation>
         </message>
         <message>
             <source>Remove Selected</source>
-            <translation type="unfinished"/>
+            <translation>Remover Selecionado</translation>
         </message>
         <message>
             <source>Save PO File</source>
-            <translation type="unfinished"/>
+            <translation>Salvar arquivo de correio</translation>
         </message>
         <message>
             <source>Select All</source>
-            <translation type="unfinished"/>
+            <translation>Selecione Todos</translation>
         </message>
         <message>
             <source>Select Image</source>
-            <translation type="unfinished"/>
+            <translation>Selecionar Imagem</translation>
         </message>
         <message>
             <source>Select None</source>
-            <translation type="unfinished"/>
+            <translation>Selecionar Nenhum</translation>
         </message>
         <message>
             <source>Sparse text with OSD</source>
-            <translation type="unfinished"/>
+            <translation>Esparcer texto com OSD</translation>
         </message>
         <message>
             <source>Sparse text. Find as much text as possible in no particular order</source>
-            <translation type="unfinished"/>
+            <translation>Esparcer texto. Encontre o máximo de texto possível em nenhuma ordem específica</translation>
         </message>
         <message>
             <source>Success</source>
-            <translation type="unfinished"/>
+            <translation>Sucesso</translation>
         </message>
         <message>
             <source>Tesseract Required</source>
-            <translation type="unfinished"/>
+            <translation>Requerido Tesseracto</translation>
         </message>
         <message>
             <source>Treat the image as a single character</source>
-            <translation type="unfinished"/>
+            <translation>Trata a imagem como um único personagem</translation>
         </message>
         <message>
             <source>Treat the image as a single text line</source>
-            <translation type="unfinished"/>
+            <translation>Tratar a imagem como uma única linha de texto</translation>
         </message>
         <message>
             <source>Treat the image as a single word</source>
-            <translation type="unfinished"/>
+            <translation>Trata a imagem como uma única palavra</translation>
         </message>
         <message>
             <source>Treat the image as a single word in a circle</source>
-            <translation type="unfinished"/>
+            <translation>Trate a imagem como uma única palavra em um círculo</translation>
         </message>
         <message>
             <source>✓ Tesseract available: %1</source>
-            <translation type="unfinished"/>
+            <translation>✓ Tesseract disponível: %1</translation>
         </message>
         <message>
             <source>Image loaded: %1</source>
-            <translation type="unfinished"/>
+            <translation>Imagem carregada: %1</translation>
         </message>
         <message>
             <source>✓ OCR completed. Found %1 text strings.</source>
-            <translation type="unfinished"/>
+            <translation>✓ OCR completado. Encontrou strings de texto %1.</translation>
         </message>
         <message>
             <source>✗ OCR failed: %1</source>
-            <translation type="unfinished"/>
+            <translation> Falha de OCR: %1</translation>
         </message>
         <message>
             <source>OCR functionality requires tesseract-ocr to be installed.\n\nInstallation instructions:\n• macOS: brew install tesseract\n• Ubuntu/Debian: sudo apt install tesseract-ocr\n• Windows: Download from GitHub releases\n• Arch Linux: sudo pacman -S tesseract</source>
-            <translation type="unfinished"/>
+            <translation>Funcionalidade OCR requer que tesseract-ocr seja instalado.\n\nInstruções de instalação:\n• macOS: brew install tesseract\n• Ubuntu/Debian: sudo apt install tesseract-ocr\n• Windows: Download do GitHub versões\n• Arch Linux: sudo pacman -S tesseract</translation>
         </message>
         <message>
             <source>⚠ No text found in image.</source>
-            <translation type="unfinished"/>
+            <translation> Nenhum texto encontrado na imagem.</translation>
         </message>
         <message>
             <source>⚠ Tesseract not found. Please install tesseract-ocr.</source>
-            <translation type="unfinished"/>
+            <translation> Tesseract não encontrado.</translation>
         </message>
         <message>
-        <source>Failed to create PO file:
+            <source>Failed to create PO file:
 {}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>OCR functionality requires tesseract-ocr to be installed.
+            <translation>Não conseguiu criar arquivo PO: {}</translation>
+        </message>
+        <message>
+            <source>OCR functionality requires tesseract-ocr to be installed.
 
 Installation instructions:
 • macOS: brew install tesseract
 • Ubuntu/Debian: sudo apt install tesseract-ocr
 • Windows: Download from GitHub releases
 • Arch Linux: sudo pacman -S tesseract</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>PO file created successfully:
+            <translation>A funcionalidade OCR requer a instalação de tesseract-ocr. Instruções de instalação: • macOS: brew install tesseract • Ubuntu/Debian: sudo apt install tesseract-ocr • Windows: Download do GitHub releases • Arch Linux: sudo pacman -S tesseract</translation>
+        </message>
+        <message>
+            <source>PO file created successfully:
 {}</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>Arquivo de correio criado com sucesso: {}</translation>
+        </message>
+    </context>
     <context>
         <name>OCRWorker</name>
         <message>
             <source>Checking tesseract installation...</source>
-            <translation type="unfinished"/>
+            <translation>Verificando a instalação do tesseract...</translation>
         </message>
         <message>
             <source>Processing image...</source>
-            <translation type="unfinished"/>
+            <translation>Processamento de imagem...</translation>
         </message>
         <message>
             <source>Tesseract not installed. Please install tesseract-ocr.</source>
-            <translation type="unfinished"/>
+            <translation>Tesseract não instalado, por favor instale Tesseract-ocr.</translation>
         </message>
     </context>
     <context>
         <name>PlatformSettingsDialog</name>
         <message>
             <source>API Key:</source>
-            <translation type="unfinished"/>
+            <translation>- A chave da API:</translation>
         </message>
         <message>
             <source>API Token:</source>
-            <translation type="unfinished"/>
+            <translation>Indicação de código:</translation>
         </message>
         <message>
             <source>API URL:</source>
-            <translation type="unfinished"/>
+            <translation>URL da API:</translation>
         </message>
         <message>
             <source>Base URL:</source>
-            <translation type="unfinished"/>
+            <translation>URL de base:</translation>
         </message>
         <message>
             <source>Component:</source>
-            <translation type="unfinished"/>
+            <translation>Componente:</translation>
         </message>
         <message>
             <source>Crowdin</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin</translation>
         </message>
         <message>
             <source>Crowdin API</source>
-            <translation type="unfinished"/>
+            <translation>API de Crowdin</translation>
         </message>
         <message>
             <source>Organization:</source>
-            <translation type="unfinished"/>
+            <translation>Organização:</translation>
         </message>
         <message>
             <source>Platform Settings</source>
-            <translation type="unfinished"/>
+            <translation>Configurações de plataforma</translation>
         </message>
         <message>
             <source>Project ID:</source>
-            <translation type="unfinished"/>
+            <translation>Identificação do projeto:</translation>
         </message>
         <message>
             <source>Project:</source>
-            <translation type="unfinished"/>
+            <translation>Projeto:</translation>
         </message>
         <message>
             <source>Save</source>
-            <translation type="unfinished"/>
+            <translation>Salvar</translation>
         </message>
         <message>
             <source>Test Connection</source>
-            <translation type="unfinished"/>
+            <translation>Conexão de teste</translation>
         </message>
         <message>
             <source>Testing…</source>
-            <translation type="unfinished"/>
+            <translation>Testeio...</translation>
         </message>
         <message>
             <source>Transifex</source>
-            <translation type="unfinished"/>
+            <translation>Transifex</translation>
         </message>
         <message>
             <source>Transifex API</source>
-            <translation type="unfinished"/>
+            <translation>Transifex API</translation>
         </message>
         <message>
             <source>Weblate</source>
-            <translation type="unfinished"/>
+            <translation>Tela de papel</translation>
         </message>
         <message>
             <source>Weblate API</source>
-            <translation type="unfinished"/>
+            <translation>API Weblate</translation>
         </message>
         <message>
             <source>⚠️ No system keychain — tokens stored with basic obfuscation. </source>
-            <translation type="unfinished"/>
+            <translation>️ Nenhuma cadeia de chaves do sistema  tokens armazenados com obfuscação básica. </translation>
         </message>
         <message>
             <source>✓ Connected: %1</source>
-            <translation type="unfinished"/>
+            <translation>✓ Conectado: %1</translation>
         </message>
         <message>
             <source>✓ Saved</source>
-            <translation type="unfinished"/>
+            <translation>✓ Salvado</translation>
         </message>
         <message>
             <source>✗ %1</source>
-            <translation type="unfinished"/>
+            <translation> %1</translation>
         </message>
         <message>
             <source>✗ Project ID must be a number</source>
-            <translation type="unfinished"/>
+            <translation> O ID do projeto deve ser um número</translation>
         </message>
         <message>
             <source>🔒 Tokens stored in %1</source>
-            <translation type="unfinished"/>
+            <translation> Tokens armazenados em %1</translation>
         </message>
         <message>
-        <source>Browse…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Loading…</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select Component</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select Organization</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select Project</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>✗ Select a project first</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>✗ Select an organization first</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <source>Browse…</source>
+            <translation>- Não, não.</translation>
+        </message>
+        <message>
+            <source>Loading…</source>
+            <translation>Carregando...</translation>
+        </message>
+        <message>
+            <source>Select Component</source>
+            <translation>Selecionar Componente</translation>
+        </message>
+        <message>
+            <source>Select Organization</source>
+            <translation>Selecione a organização</translation>
+        </message>
+        <message>
+            <source>Select Project</source>
+            <translation>Selecionar Projeto</translation>
+        </message>
+        <message>
+            <source>✗ Select a project first</source>
+            <translation> Selecionar um projeto primeiro</translation>
+        </message>
+        <message>
+            <source>✗ Select an organization first</source>
+            <translation> Selecionar uma organização primeiro</translation>
+        </message>
+    </context>
     <context>
         <name>PluginDialog</name>
         <message>
             <source>All plugins have been reloaded successfully.</source>
-            <translation type="unfinished"/>
+            <translation>Todos os plugins foram recarregados com sucesso.</translation>
         </message>
         <message>
             <source>Author</source>
-            <translation type="unfinished"/>
+            <translation>Autor</translation>
         </message>
         <message>
             <source>Author: {}</source>
-            <translation type="unfinished"/>
+            <translation>Autor: {}</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Disable</source>
-            <translation type="unfinished"/>
+            <translation>Desativar</translation>
         </message>
         <message>
             <source>Enable</source>
-            <translation type="unfinished"/>
+            <translation>Ativar</translation>
         </message>
         <message>
             <source>Enabled</source>
-            <translation type="unfinished"/>
+            <translation>Ativado</translation>
         </message>
         <message>
             <source>Failed to reload plugins: {}</source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu recarregar plugins: {}</translation>
         </message>
         <message>
             <source>Installed Plugins</source>
-            <translation type="unfinished"/>
+            <translation>Plugins instalados</translation>
         </message>
         <message>
             <source>Manage Plugins</source>
-            <translation type="unfinished"/>
+            <translation>Gerenciar Plugins</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished"/>
+            <translation>Nome</translation>
         </message>
         <message>
             <source>Open Plugin Folder</source>
-            <translation type="unfinished"/>
+            <translation>Abra o Plugin Folder</translation>
         </message>
         <message>
             <source>Plugin Details</source>
-            <translation type="unfinished"/>
+            <translation>Detalhes do plug-in</translation>
         </message>
         <message>
             <source>Plugins Reloaded</source>
-            <translation type="unfinished"/>
+            <translation>Plugins recarregados</translation>
         </message>
         <message>
             <source>Plugins are loaded from: {}</source>
-            <translation type="unfinished"/>
+            <translation>Os plugins são carregados a partir de: {}</translation>
         </message>
         <message>
             <source>Reload Failed</source>
-            <translation type="unfinished"/>
+            <translation>Recarregamento falhou</translation>
         </message>
         <message>
             <source>Reload Plugins</source>
-            <translation type="unfinished"/>
+            <translation>Reload Plugins</translation>
         </message>
         <message>
             <source>Version</source>
-            <translation type="unfinished"/>
+            <translation>Versão</translation>
         </message>
         <message>
             <source>Version: {}</source>
-            <translation type="unfinished"/>
+            <translation>Versão: {}</translation>
         </message>
     </context>
     <context>
         <name>PluralFormsEditor</name>
         <message>
             <source>Plural rules</source>
-            <translation type="unfinished"/>
+            <translation>Regras plurais</translation>
         </message>
         <message>
             <source>Clear all</source>
-            <translation type="unfinished"/>
+            <translation>Despejam tudo.</translation>
         </message>
         <message>
             <source>Sync from singular</source>
-            <translation type="unfinished"/>
+            <translation>Sincronização de singular</translation>
         </message>
     </context>
     <context>
         <name>PreferencesDialog</name>
         <message>
             <source> characters</source>
-            <translation type="unfinished"/>
+            <translation>caracteres</translation>
         </message>
         <message>
             <source>Appearance</source>
-            <translation type="unfinished"/>
+            <translation>Aparência</translation>
         </message>
         <message>
             <source>Auto-compile on save</source>
-            <translation type="unfinished"/>
+            <translation>Compilação automática em save</translation>
         </message>
         <message>
             <source>Automatically compile .mo/.qm after saving</source>
-            <translation type="unfinished"/>
+            <translation>Compilação automática de .mo/.qm após a armazenagem</translation>
         </message>
         <message>
             <source>Character limit:</source>
-            <translation type="unfinished"/>
+            <translation>Limite de caracteres:</translation>
         </message>
         <message>
             <source>Credential storage:</source>
-            <translation type="unfinished"/>
+            <translation>Armazenamento de credenciais:</translation>
         </message>
         <message>
             <source>Dark</source>
-            <translation type="unfinished"/>
+            <translation>Escuridão</translation>
         </message>
         <message>
             <source>Default</source>
-            <translation type="unfinished"/>
+            <translation>Default</translation>
         </message>
         <message>
             <source>Default engine:</source>
-            <translation type="unfinished"/>
+            <translation>Motor por defeito:</translation>
         </message>
         <message>
             <source>Double-click to edit translations directly in the list</source>
-            <translation type="unfinished"/>
+            <translation>Clique duas vezes para editar traduções diretamente na lista</translation>
         </message>
         <message>
             <source>Editor font size:</source>
-            <translation type="unfinished"/>
+            <translation>Tamanho de fonte do editor:</translation>
         </message>
         <message>
             <source>Email:</source>
-            <translation type="unfinished"/>
+            <translation>E-mail:</translation>
         </message>
         <message>
             <source>Enable inline editing</source>
-            <translation type="unfinished"/>
+            <translation>Ativar a edição em linha</translation>
         </message>
         <message>
             <source>Formal</source>
-            <translation type="unfinished"/>
+            <translation>Formal</translation>
         </message>
         <message>
             <source>Formality level:</source>
-            <translation type="unfinished"/>
+            <translation>Nível de formalidade:</translation>
         </message>
         <message>
             <source>Informal</source>
-            <translation type="unfinished"/>
+            <translation>Informal</translation>
         </message>
         <message>
             <source>Language / Locale:</source>
-            <translation type="unfinished"/>
+            <translation>Língua / Localidade:</translation>
         </message>
         <message>
             <source>Light</source>
-            <translation type="unfinished"/>
+            <translation>Luz</translation>
         </message>
         <message>
             <source>Name:</source>
-            <translation type="unfinished"/>
+            <translation>Nome:</translation>
         </message>
         <message>
             <source>Personal</source>
-            <translation type="unfinished"/>
+            <translation>Pessoal</translation>
         </message>
         <message>
             <source>Preferences</source>
-            <translation type="unfinished"/>
+            <translation>Preferências</translation>
         </message>
         <message>
             <source>Security</source>
-            <translation type="unfinished"/>
+            <translation>Segurança</translation>
         </message>
         <message>
             <source>Show character counter</source>
-            <translation type="unfinished"/>
+            <translation>Contador de personagens</translation>
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua fonte:</translation>
         </message>
         <message>
             <source>System default</source>
-            <translation type="unfinished"/>
+            <translation>Padrão do sistema</translation>
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua alvo:</translation>
         </message>
         <message>
             <source>Team:</source>
-            <translation type="unfinished"/>
+            <translation>Equipa:</translation>
         </message>
         <message>
             <source>Theme:</source>
-            <translation type="unfinished"/>
+            <translation>Temática:</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tradução</translation>
         </message>
         <message>
             <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.\n\nFor better security, install:\n• macOS: Built-in (Keychain)\n• Windows: pip install keyring\n• Linux: pip install secretstorage</source>
-            <translation type="unfinished"/>
+            <translation>Não foi detectada a cadeia de chaves do sistema. As credenciais são armazenadas em um arquivo criptografado com uma senha principal.\n\nPara melhor segurança, instale:\n• macOS: Inbuilt (Keychain)\n• Windows: pip install keyring\n• Linux: pip install secretstorage</translation>
         </message>
         <message>
             <source>Your credentials are securely stored in the system keychain.</source>
-            <translation type="unfinished"/>
+            <translation>As suas credenciais estão armazenadas na cadeia de chaves do sistema.</translation>
         </message>
         <message>
-        <source>Automatically reload watched files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.
+            <source>Automatically reload watched files</source>
+            <translation>Auto-recarregamento de arquivos observados</translation>
+        </message>
+        <message>
+            <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.
 
 For better security, install:
 • macOS: Built-in (Keychain)
 • Windows: pip install keyring
 • Linux: pip install secretstorage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Reload external changes without asking while Watch File is enabled</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>Não foi detectada a cadeia de chaves do sistema. As credenciais são armazenadas em um arquivo criptografado com uma senha principal. Para melhor segurança, instale: • macOS: Inbuilt (Keychain) • Windows: pip install keyring • Linux: pip install secretstorage</translation>
+        </message>
+        <message>
+            <source>Reload external changes without asking while Watch File is enabled</source>
+            <translation>Reload alterações externas sem pedir enquanto o arquivo de observação está habilitado</translation>
+        </message>
+    </context>
     <context>
         <name>ProjectDockWidget</name>
         <message>
             <source>All files</source>
-            <translation type="unfinished"/>
+            <translation>Todos os ficheiros</translation>
         </message>
         <message>
             <source>Analyzing project...</source>
-            <translation type="unfinished"/>
+            <translation>Analisar o projeto...</translation>
         </message>
         <message>
             <source>Avg:</source>
-            <translation type="unfinished"/>
+            <translation>Avg:</translation>
         </message>
         <message>
             <source>Complete</source>
-            <translation type="unfinished"/>
+            <translation>Completado</translation>
         </message>
         <message>
             <source>Copy Path</source>
-            <translation type="unfinished"/>
+            <translation>Caminho de cópia</translation>
         </message>
         <message>
             <source>File</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo</translation>
         </message>
         <message>
             <source>File Properties</source>
-            <translation type="unfinished"/>
+            <translation>Propriedades de arquivo</translation>
         </message>
         <message>
             <source>Files:</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos:</translation>
         </message>
         <message>
             <source>Filter:</source>
-            <translation type="unfinished"/>
+            <translation>Filtro:</translation>
         </message>
         <message>
             <source>Found %d translation files</source>
-            <translation type="unfinished"/>
+            <translation>Encontrou arquivos de tradução %d</translation>
         </message>
         <message>
             <source>Incomplete</source>
-            <translation type="unfinished"/>
+            <translation>Incompleto</translation>
         </message>
         <message>
             <source>JSON files</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos JSON</translation>
         </message>
         <message>
             <source>No project</source>
-            <translation type="unfinished"/>
+            <translation>Não há projecto</translation>
         </message>
         <message>
             <source>No translation files found in this folder</source>
-            <translation type="unfinished"/>
+            <translation>Nenhum arquivo de tradução encontrado nesta pasta</translation>
         </message>
         <message>
             <source>Open</source>
-            <translation type="unfinished"/>
+            <translation>Abre</translation>
         </message>
         <message>
             <source>Open a project folder to begin</source>
-            <translation type="unfinished"/>
+            <translation>Abra uma pasta de projeto para começar</translation>
         </message>
         <message>
             <source>Open project folder</source>
-            <translation type="unfinished"/>
+            <translation>Abre o mapa de projetos</translation>
         </message>
         <message>
             <source>Open...</source>
-            <translation type="unfinished"/>
+            <translation>Abre...</translation>
         </message>
         <message>
             <source>PO files</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos de correio postal</translation>
         </message>
         <message>
             <source>Progress</source>
-            <translation type="unfinished"/>
+            <translation>Progressos</translation>
         </message>
         <message>
             <source>Project</source>
-            <translation type="unfinished"/>
+            <translation>Projeto</translation>
         </message>
         <message>
             <source>Properties</source>
-            <translation type="unfinished"/>
+            <translation>Propriedades</translation>
         </message>
         <message>
             <source>Refresh</source>
-            <translation type="unfinished"/>
+            <translation>Refrescamento</translation>
         </message>
         <message>
             <source>Refresh project files</source>
-            <translation type="unfinished"/>
+            <translation>Refrescar arquivos de projeto</translation>
         </message>
         <message>
             <source>Select Project Folder</source>
-            <translation type="unfinished"/>
+            <translation>Selecionar o painel de projeto</translation>
         </message>
         <message>
             <source>Show in File Manager</source>
-            <translation type="unfinished"/>
+            <translation>Mostra no gerenciador de arquivos</translation>
         </message>
         <message>
             <source>TS files</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos TS</translation>
         </message>
         <message>
             <source>Translated</source>
-            <translation type="unfinished"/>
+            <translation>Tradução</translation>
         </message>
         <message>
             <source>Type</source>
-            <translation type="unfinished"/>
+            <translation>Tipo</translation>
         </message>
         <message>
             <source>XLIFF files</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos XLIFF</translation>
         </message>
         <message>
             <source>%1 files</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos %1</translation>
         </message>
         <message>
             <source>0 files</source>
-            <translation type="unfinished"/>
+            <translation>0 arquivos</translation>
         </message>
         <message>
             <source>File: %s</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo: %s</translation>
         </message>
         <message>
             <source>Path: %s</source>
-            <translation type="unfinished"/>
+            <translation>Caminho: %s</translation>
         </message>
         <message>
             <source>Type: %s</source>
-            <translation type="unfinished"/>
+            <translation>Tipo: %s</translation>
         </message>
         <message>
             <source>Size: %s bytes</source>
-            <translation type="unfinished"/>
+            <translation>Dimensão: bytes %s</translation>
         </message>
         <message>
             <source>Total entries: %d</source>
-            <translation type="unfinished"/>
+            <translation>Inscrições totais: %d</translation>
         </message>
         <message>
             <source>Translated: %d</source>
-            <translation type="unfinished"/>
+            <translation>Traduzido: %d</translation>
         </message>
         <message>
             <source>Fuzzy: %d</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Untranslated: %d</source>
-            <translation type="unfinished"/>
+            <translation>Não traduzido: %d</translation>
         </message>
         <message>
             <source>Progress: %.1f%%</source>
-            <translation type="unfinished"/>
+            <translation>Progresso: %.1f%%</translation>
         </message>
         <message>
             <source>Modified: %s</source>
-            <translation type="unfinished"/>
+            <translation>Modificado: %s</translation>
         </message>
     </context>
     <context>
         <name>QuickActionsMenu</name>
         <message>
             <source>Quick Actions</source>
-            <translation type="unfinished"/>
+            <translation>Ações rápidas</translation>
         </message>
         <message>
             <source>📋 Copy source</source>
-            <translation type="unfinished"/>
+            <translation> Fonte de cópia</translation>
         </message>
         <message>
             <source>📚 Apply glossary term</source>
-            <translation type="unfinished"/>
+            <translation> Aplicar o termo glossário</translation>
         </message>
         <message>
             <source>🔤 Capitalize first letter</source>
-            <translation type="unfinished"/>
+            <translation> Capitalize a primeira letra</translation>
         </message>
         <message>
             <source>🔤 Lowercase first letter</source>
-            <translation type="unfinished"/>
+            <translation> Primeira letra em minúscula</translation>
         </message>
         <message>
             <source>🧠 Apply TM suggestion</source>
-            <translation type="unfinished"/>
+            <translation> Aplicar a sugestão TM</translation>
         </message>
     </context>
     <context>
         <name>RecordMacroDialog</name>
         <message>
             <source>Recording Macro</source>
-            <translation type="unfinished"/>
+            <translation>Gravação Macro</translation>
         </message>
         <message>
             <source>Stop Recording</source>
-            <translation type="unfinished"/>
+            <translation>Pare de gravar</translation>
         </message>
         <message>
             <source>🔴 Recording macro...</source>
-            <translation type="unfinished"/>
+            <translation>🔴 Gravar macro...</translation>
         </message>
     </context>
     <context>
         <name>RegexTesterDialog</name>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Copied</source>
-            <translation type="unfinished"/>
+            <translation>Copiado</translation>
         </message>
         <message>
             <source>Copy Result</source>
-            <translation type="unfinished"/>
+            <translation>Copia Resultado</translation>
         </message>
         <message>
             <source>Could not copy to clipboard.</source>
-            <translation type="unfinished"/>
+            <translation>Não consegui copiar para o clipboard.</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro</translation>
         </message>
         <message>
             <source>Format Strings Found</source>
-            <translation type="unfinished"/>
+            <translation>Formatação de cordas encontradas</translation>
         </message>
         <message>
             <source>Input Text</source>
-            <translation type="unfinished"/>
+            <translation>Texto de entrada</translation>
         </message>
         <message>
             <source>Live Preview</source>
-            <translation type="unfinished"/>
+            <translation>Previsão ao vivo</translation>
         </message>
         <message>
             <source>Regex Tester</source>
-            <translation type="unfinished"/>
+            <translation>Tester de regex</translation>
         </message>
         <message>
             <source>Result copied to clipboard.</source>
-            <translation type="unfinished"/>
+            <translation>Resultado copiado para o clipboard.</translation>
         </message>
         <message>
             <source>Sample text</source>
-            <translation type="unfinished"/>
+            <translation>Texto de amostra</translation>
         </message>
         <message>
             <source>Test Values</source>
-            <translation type="unfinished"/>
+            <translation>Valores de teste</translation>
         </message>
         <message>
             <source>Test value</source>
-            <translation type="unfinished"/>
+            <translation>Valor de ensaio</translation>
         </message>
         <message>
             <source>Value</source>
-            <translation type="unfinished"/>
+            <translation>Valor</translation>
         </message>
         <message>
             <source>Error: %s</source>
-            <translation type="unfinished"/>
+            <translation>Erro: %s</translation>
         </message>
     </context>
     <context>
         <name>SearchReplaceDialog</name>
         <message>
             <source>%d of %d matches</source>
-            <translation type="unfinished"/>
+            <translation>%d de equipamentos %d</translation>
         </message>
         <message>
             <source>Both</source>
-            <translation type="unfinished"/>
+            <translation>Ambos os dois .</translation>
         </message>
         <message>
             <source>Case sensitive</source>
-            <translation type="unfinished"/>
+            <translation>Caso sensível</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Enter replacement text...</source>
-            <translation type="unfinished"/>
+            <translation>Digite o texto de substituição...</translation>
         </message>
         <message>
             <source>Enter search text...</source>
-            <translation type="unfinished"/>
+            <translation>Digite o texto de busca...</translation>
         </message>
         <message>
             <source>Find &amp; Replace</source>
-            <translation type="unfinished"/>
+            <translation>Encontrar e Substituir</translation>
         </message>
         <message>
             <source>Find All</source>
-            <translation type="unfinished"/>
+            <translation>Encontrar todos</translation>
         </message>
         <message>
             <source>Find Next</source>
-            <translation type="unfinished"/>
+            <translation>Encontrar o seguinte</translation>
         </message>
         <message>
             <source>Find Previous</source>
-            <translation type="unfinished"/>
+            <translation>Encontrar Anterior</translation>
         </message>
         <message>
             <source>Find:</source>
-            <translation type="unfinished"/>
+            <translation>Encontrar:</translation>
         </message>
         <message>
             <source>No matches found</source>
-            <translation type="unfinished"/>
+            <translation>Não encontramos fósforos .</translation>
         </message>
         <message>
             <source>Options</source>
-            <translation type="unfinished"/>
+            <translation>Opções</translation>
         </message>
         <message>
             <source>Regular expression</source>
-            <translation type="unfinished"/>
+            <translation>Expressão regular</translation>
         </message>
         <message>
             <source>Replace</source>
-            <translation type="unfinished"/>
+            <translation>Substituição</translation>
         </message>
         <message>
             <source>Replace All</source>
-            <translation type="unfinished"/>
+            <translation>Substituir todos</translation>
         </message>
         <message>
             <source>Replace:</source>
-            <translation type="unfinished"/>
+            <translation>Substituição:</translation>
         </message>
         <message>
             <source>Search</source>
-            <translation type="unfinished"/>
+            <translation>Busca</translation>
         </message>
         <message>
             <source>Search in:</source>
-            <translation type="unfinished"/>
+            <translation>Pesquisar em:</translation>
         </message>
         <message>
             <source>Source text</source>
-            <translation type="unfinished"/>
+            <translation>Texto fonte</translation>
         </message>
         <message>
             <source>Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tradução</translation>
         </message>
         <message>
             <source>Whole words</source>
-            <translation type="unfinished"/>
+            <translation>Palavras inteiras</translation>
         </message>
     </context>
     <context>
         <name>SplitDialog</name>
         <message>
             <source>Place the cursor inside the source text to mark the split point.</source>
-            <translation type="unfinished"/>
+            <translation>Coloque o cursor dentro do texto fonte para marcar o ponto de divisão.</translation>
         </message>
         <message>
             <source>Segment 1: \u201c{}\u201d  |  Segment 2: \u201c{}\u201d</source>
-            <translation type="unfinished"/>
+            <translation>Segmento 1: U201c { \ u201d }</translation>
         </message>
         <message>
             <source>Source:</source>
-            <translation type="unfinished"/>
+            <translation>Fonte:</translation>
         </message>
         <message>
             <source>Split Entry</source>
-            <translation type="unfinished"/>
+            <translation>Entrada dividida</translation>
         </message>
         <message>
             <source>Target:</source>
-            <translation type="unfinished"/>
+            <translation>Alvo:</translation>
         </message>
         <message>
             <source>Click in the source text where you want to split, then press OK.</source>
-            <translation type="unfinished"/>
+            <translation>Clique no texto fonte onde você deseja dividir, e pressione OK.</translation>
         </message>
     </context>
     <context>
         <name>StatisticsDialog</name>
         <message>
             <source>(text contracted)</source>
-            <translation type="unfinished"/>
+            <translation>(texto contratado)</translation>
         </message>
         <message>
             <source>(text expanded)</source>
-            <translation type="unfinished"/>
+            <translation>(texto ampliado)</translation>
         </message>
         <message>
             <source>Additional Details</source>
-            <translation type="unfinished"/>
+            <translation>Detalhes adicionais</translation>
         </message>
         <message>
             <source>Average source length</source>
-            <translation type="unfinished"/>
+            <translation>Comprimento médio da fonte</translation>
         </message>
         <message>
             <source>Average translation length</source>
-            <translation type="unfinished"/>
+            <translation>Duração média da tradução</translation>
         </message>
         <message>
             <source>Average words per entry</source>
-            <translation type="unfinished"/>
+            <translation>Palavras médias por entrada</translation>
         </message>
         <message>
             <source>Characters:</source>
-            <translation type="unfinished"/>
+            <translation>Personagens:</translation>
         </message>
         <message>
             <source>Entry #</source>
-            <translation type="unfinished"/>
+            <translation>Entrada</translation>
         </message>
         <message>
             <source>Expansion ratio:</source>
-            <translation type="unfinished"/>
+            <translation>Relação de expansão:</translation>
         </message>
         <message>
             <source>File:</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo:</translation>
         </message>
         <message>
             <source>Fuzzy/Needs work:</source>
-            <translation type="unfinished"/>
+            <translation>Funções de fuzzy/necessidades:</translation>
         </message>
         <message>
             <source>Length</source>
-            <translation type="unfinished"/>
+            <translation>Duração</translation>
         </message>
         <message>
             <source>Longest Source Strings</source>
-            <translation type="unfinished"/>
+            <translation>As cordas de fonte mais longas</translation>
         </message>
         <message>
             <source>N/A</source>
-            <translation type="unfinished"/>
+            <translation>N/A</translation>
         </message>
         <message>
             <source>No additional details available.</source>
-            <translation type="unfinished"/>
+            <translation>Não há mais informações disponíveis.</translation>
         </message>
         <message>
             <source>Overview</source>
-            <translation type="unfinished"/>
+            <translation>Visão geral</translation>
         </message>
         <message>
             <source>Source text:</source>
-            <translation type="unfinished"/>
+            <translation>Texto fonte:</translation>
         </message>
         <message>
             <source>Text Preview</source>
-            <translation type="unfinished"/>
+            <translation>Previsão do texto</translation>
         </message>
         <message>
             <source>Text Statistics</source>
-            <translation type="unfinished"/>
+            <translation>Texto Estatísticas</translation>
         </message>
         <message>
             <source>Total entries:</source>
-            <translation type="unfinished"/>
+            <translation>Total das entradas:</translation>
         </message>
         <message>
             <source>Translated:</source>
-            <translation type="unfinished"/>
+            <translation>Traduzido:</translation>
         </message>
         <message>
             <source>Translation Progress:</source>
-            <translation type="unfinished"/>
+            <translation>Progresso na tradução:</translation>
         </message>
         <message>
             <source>Translation Statistics</source>
-            <translation type="unfinished"/>
+            <translation>Estatísticas de tradução</translation>
         </message>
         <message>
             <source>Translation completion</source>
-            <translation type="unfinished"/>
+            <translation>Completamento da tradução</translation>
         </message>
         <message>
             <source>Translation:</source>
-            <translation type="unfinished"/>
+            <translation>Tradução:</translation>
         </message>
         <message>
             <source>Untranslated:</source>
-            <translation type="unfinished"/>
+            <translation>Não traduzido:</translation>
         </message>
         <message>
             <source>Words:</source>
-            <translation type="unfinished"/>
+            <translation>Palavras:</translation>
         </message>
         <message>
             <source>characters</source>
-            <translation type="unfinished"/>
+            <translation>caracteres</translation>
         </message>
         <message>
             <source>translated</source>
-            <translation type="unfinished"/>
+            <translation>Tradução</translation>
         </message>
     </context>
     <context>
         <name>StatsWidget</name>
         <message>
             <source>Auto Translations</source>
-            <translation type="unfinished"/>
+            <translation>Traduções automáticas</translation>
         </message>
         <message>
             <source>Best Streak</source>
-            <translation type="unfinished"/>
+            <translation>Melhor Streak</translation>
         </message>
         <message>
             <source>Current Streak</source>
-            <translation type="unfinished"/>
+            <translation>Fluxo de corrente</translation>
         </message>
         <message>
             <source>Details</source>
-            <translation type="unfinished"/>
+            <translation>Detalhes</translation>
         </message>
         <message>
             <source>File Formats</source>
-            <translation type="unfinished"/>
+            <translation>Formatos de arquivo</translation>
         </message>
         <message>
             <source>Files Completed</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos completados</translation>
         </message>
         <message>
             <source>Formats: {}</source>
-            <translation type="unfinished"/>
+            <translation>Formas: {}</translation>
         </message>
         <message>
             <source>Languages Used</source>
-            <translation type="unfinished"/>
+            <translation>Línguas usadas</translation>
         </message>
         <message>
             <source>Languages: {}</source>
-            <translation type="unfinished"/>
+            <translation>Línguas: {}</translation>
         </message>
         <message>
             <source>Manual Translations</source>
-            <translation type="unfinished"/>
+            <translation>Traduções Manuais</translation>
         </message>
         <message>
             <source>Total Translations</source>
-            <translation type="unfinished"/>
+            <translation>Traduções Totais</translation>
         </message>
         <message>
             <source>Translation Statistics</source>
-            <translation type="unfinished"/>
+            <translation>Estatísticas de tradução</translation>
         </message>
     </context>
     <context>
         <name>SyncDialog</name>
         <message>
             <source>%1 resources found</source>
-            <translation type="unfinished"/>
+            <translation>Recursos encontrados em %1</translation>
         </message>
         <message>
             <source>Crowdin not configured. Open Platform Settings first.</source>
-            <translation type="unfinished"/>
+            <translation>Crowdin não configurado, abre as configurações da plataforma primeiro.</translation>
         </message>
         <message>
             <source>Downloading…</source>
-            <translation type="unfinished"/>
+            <translation>Descarregando...</translation>
         </message>
         <message>
             <source>Enter a language code</source>
-            <translation type="unfinished"/>
+            <translation>Digite um código de idioma</translation>
         </message>
         <message>
             <source>Language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua:</translation>
         </message>
         <message>
             <source>Loading resources…</source>
-            <translation type="unfinished"/>
+            <translation>Carregando recursos...</translation>
         </message>
         <message>
             <source>No file loaded to push</source>
-            <translation type="unfinished"/>
+            <translation>Nenhum arquivo carregado para empurrar</translation>
         </message>
         <message>
             <source>No resources found</source>
-            <translation type="unfinished"/>
+            <translation>Nenhum recurso encontrado</translation>
         </message>
         <message>
             <source>Pull</source>
-            <translation type="unfinished"/>
+            <translation>Puxar</translation>
         </message>
         <message>
             <source>Pull Translation</source>
-            <translation type="unfinished"/>
+            <translation>Puxar tradução</translation>
         </message>
         <message>
             <source>Push</source>
-            <translation type="unfinished"/>
+            <translation>Põe</translation>
         </message>
         <message>
             <source>Push Translation</source>
-            <translation type="unfinished"/>
+            <translation>Tradução em Push</translation>
         </message>
         <message>
             <source>Resources</source>
-            <translation type="unfinished"/>
+            <translation>Recursos</translation>
         </message>
         <message>
             <source>Select a resource first</source>
-            <translation type="unfinished"/>
+            <translation>Selecione um recurso primeiro</translation>
         </message>
         <message>
             <source>Transifex not configured. Open Platform Settings first.</source>
-            <translation type="unfinished"/>
+            <translation>Transifex não configurado.</translation>
         </message>
         <message>
             <source>Unknown</source>
-            <translation type="unfinished"/>
+            <translation>Não conhecido</translation>
         </message>
         <message>
             <source>Unknown platform</source>
-            <translation type="unfinished"/>
+            <translation>Plataforma desconhecida</translation>
         </message>
         <message>
             <source>Uploading…</source>
-            <translation type="unfinished"/>
+            <translation>A carregar...</translation>
         </message>
         <message>
             <source>Weblate not configured. Open Platform Settings first.</source>
-            <translation type="unfinished"/>
+            <translation>Weblate não configurado.</translation>
         </message>
         <message>
             <source>e.g. sv, de, fr</source>
-            <translation type="unfinished"/>
+            <translation>Por exemplo, sv, de, fr</translation>
         </message>
         <message>
             <source>✓ Downloaded at %1\nSaved to: %2</source>
-            <translation type="unfinished"/>
+            <translation>✓ Descarregado em %1\nSalvado para: %2</translation>
         </message>
         <message>
             <source>✓ Uploaded at %1</source>
-            <translation type="unfinished"/>
+            <translation>✓ Carregado em %1</translation>
         </message>
         <message>
             <source>✗ Error: %1</source>
-            <translation type="unfinished"/>
+            <translation> Erro: %1</translation>
         </message>
         <message>
             <source>✗ Pull failed: %1</source>
-            <translation type="unfinished"/>
+            <translation> Falha de puxão: %1</translation>
         </message>
         <message>
             <source>✗ Push failed: %1</source>
-            <translation type="unfinished"/>
+            <translation> Falha de empurrão: %1</translation>
         </message>
         <message>
-        <source>✓ Downloaded at %1
+            <source>✓ Downloaded at %1
 Saved to: %2</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>✓ Descarregado em %1 Salvado para: %2</translation>
+        </message>
+    </context>
     <context>
         <name>ToolbarCustomizeDialog</name>
         <message>
             <source>Check actions to show in toolbar:</source>
-            <translation type="unfinished"/>
+            <translation>Verifique as ações para serem exibidas na barra de ferramentas:</translation>
         </message>
         <message>
             <source>Customize Toolbar</source>
-            <translation type="unfinished"/>
+            <translation>Personalizar barra de ferramentas</translation>
         </message>
     </context>
     <context>
         <name>UnicodeDialog</name>
         <message>
             <source> | ⚠️ Check highlighted characters</source>
-            <translation type="unfinished"/>
+            <translation>️ Verifique os personagens destacados</translation>
         </message>
         <message>
             <source>Analyze</source>
-            <translation type="unfinished"/>
+            <translation>Analisar</translation>
         </message>
         <message>
             <source>Block</source>
-            <translation type="unfinished"/>
+            <translation>Bloco</translation>
         </message>
         <message>
             <source>Category</source>
-            <translation type="unfinished"/>
+            <translation>Categoria</translation>
         </message>
         <message>
             <source>Char</source>
-            <translation type="unfinished"/>
+            <translation>- Não .</translation>
         </message>
         <message>
             <source>Character Analysis</source>
-            <translation type="unfinished"/>
+            <translation>Análise de Caráter</translation>
         </message>
         <message>
             <source>Character Details</source>
-            <translation type="unfinished"/>
+            <translation>Detalhes de Características</translation>
         </message>
         <message>
             <source>Clear</source>
-            <translation type="unfinished"/>
+            <translation>- Claro.</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Code Point</source>
-            <translation type="unfinished"/>
+            <translation>Ponto de código</translation>
         </message>
         <message>
             <source>Copy Analysis</source>
-            <translation type="unfinished"/>
+            <translation>Análise de cópia</translation>
         </message>
         <message>
             <source>Enter or paste text to analyze...</source>
-            <translation type="unfinished"/>
+            <translation>Introduza ou coleta texto para analisar...</translation>
         </message>
         <message>
             <source>Enter text to analyze Unicode characters</source>
-            <translation type="unfinished"/>
+            <translation>Digite texto para analisar caracteres Unicode</translation>
         </message>
         <message>
             <source>Highlight suspicious characters</source>
-            <translation type="unfinished"/>
+            <translation>Destaque personagens suspeitos</translation>
         </message>
         <message>
             <source>Name</source>
-            <translation type="unfinished"/>
+            <translation>Nome</translation>
         </message>
         <message>
             <source>Pos</source>
-            <translation type="unfinished"/>
+            <translation>- O que é isso?</translation>
         </message>
         <message>
             <source>Text to Analyze</source>
-            <translation type="unfinished"/>
+            <translation>Texto para Analisar</translation>
         </message>
         <message>
             <source>Unicode Inspector</source>
-            <translation type="unfinished"/>
+            <translation>Inspector Unicode</translation>
         </message>
         <message>
             <source>Total: {0} characters | Invisible: {1} | Suspicious: {2}</source>
-            <translation type="unfinished"/>
+            <translation>Total: {0} personagens .</translation>
         </message>
     </context>
     <context>
         <name>ValidationDialog</name>
         <message>
             <source>#</source>
-            <translation type="unfinished"/>
+            <translation>- Não .</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>Errors</source>
-            <translation type="unfinished"/>
+            <translation>Erros</translation>
         </message>
         <message>
             <source>Errors: %d | Warnings: %d</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Info</source>
-            <translation type="unfinished"/>
+            <translation>Informações</translation>
         </message>
         <message>
             <source>Message</source>
-            <translation type="unfinished"/>
+            <translation>Mensagem</translation>
         </message>
         <message>
             <source>Quality score: %s%%</source>
-            <translation type="unfinished"/>
+            <translation>Pontuação de qualidade: %s%%</translation>
         </message>
         <message>
             <source>Re-validate</source>
-            <translation type="unfinished"/>
+            <translation>Revalidação</translation>
         </message>
         <message>
             <source>Severity</source>
-            <translation type="unfinished"/>
+            <translation>Gravidade</translation>
         </message>
         <message>
             <source>Source text</source>
-            <translation type="unfinished"/>
+            <translation>Texto fonte</translation>
         </message>
         <message>
             <source>Validation Results</source>
-            <translation type="unfinished"/>
+            <translation>Resultados da validação</translation>
         </message>
         <message>
             <source>Warnings</source>
-            <translation type="unfinished"/>
+            <translation>Advertências</translation>
         </message>
     </context>
     <context>
         <name>VideoDockWidget</name>
         <message>
             <source>Video Preview</source>
-            <translation type="unfinished"/>
+            <translation>Previsão de vídeo</translation>
         </message>
     </context>
     <context>
         <name>VideoPreviewWidget</name>
         <message>
             <source>Back 1s (Shift+←)</source>
-            <translation type="unfinished"/>
+            <translation>1s de volta (Shift+←)</translation>
         </message>
         <message>
             <source>Forward 1s (Shift+→)</source>
-            <translation type="unfinished"/>
+            <translation>1s para a frente (Shift+→)</translation>
         </message>
         <message>
             <source>Go to current subtitle (G)</source>
-            <translation type="unfinished"/>
+            <translation>Vai para o subtítulo atual (G)</translation>
         </message>
         <message>
             <source>Larger subtitles</source>
-            <translation type="unfinished"/>
+            <translation>Subtítulos maiores</translation>
         </message>
         <message>
             <source>Loop segment (L)</source>
-            <translation type="unfinished"/>
+            <translation>Segmento de ciclo (L)</translation>
         </message>
         <message>
             <source>Mute (M)</source>
-            <translation type="unfinished"/>
+            <translation>Mute (M)</translation>
         </message>
         <message>
             <source>Next entry (Ctrl+→)</source>
-            <translation type="unfinished"/>
+            <translation>Próxima entrada (Ctrl+→)</translation>
         </message>
         <message>
             <source>Pause</source>
-            <translation type="unfinished"/>
+            <translation>Pausa</translation>
         </message>
         <message>
             <source>Pause at segment end</source>
-            <translation type="unfinished"/>
+            <translation>Pausa no final do segmento</translation>
         </message>
         <message>
             <source>Play / Pause (Space)</source>
-            <translation type="unfinished"/>
+            <translation>Reprodução / Pausa (espaço)</translation>
         </message>
         <message>
             <source>Playback speed</source>
-            <translation type="unfinished"/>
+            <translation>Velocidade de reprodução</translation>
         </message>
         <message>
             <source>Previous entry (Ctrl+←)</source>
-            <translation type="unfinished"/>
+            <translation>Entrada anterior (Ctrl+←)</translation>
         </message>
         <message>
             <source>Smaller subtitles</source>
-            <translation type="unfinished"/>
+            <translation>Subtítulos menores</translation>
         </message>
         <message>
             <source>Stop (S)</source>
-            <translation type="unfinished"/>
+            <translation>Paragem (s)</translation>
         </message>
         <message>
             <source>Volume</source>
-            <translation type="unfinished"/>
+            <translation>Volume</translation>
         </message>
     </context>
     <context>
         <name>VideoSubtitleDialog</name>
         <message>
             <source>%d subtitle tracks found. Duration: %s</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>Cancel</source>
-            <translation type="unfinished"/>
+            <translation>Cancelar</translation>
         </message>
         <message>
             <source>Browse…</source>
-            <translation type="unfinished"/>
+            <translation>- Não, não.</translation>
         </message>
         <message>
             <source>Extract and Save As…</source>
-            <translation type="unfinished"/>
+            <translation>Extrair e salvar como...</translation>
         </message>
         <message>
             <source>Extract and Open</source>
-            <translation type="unfinished"/>
+            <translation>Extrair e abrir</translation>
         </message>
         <message>
             <source>Extract Subtitles from Video</source>
-            <translation type="unfinished"/>
+            <translation>Extrair subtítulos do vídeo</translation>
         </message>
         <message>
             <source>Extracting</source>
-            <translation type="unfinished"/>
+            <translation>Extração</translation>
         </message>
         <message>
             <source>Extracting preview…</source>
-            <translation type="unfinished"/>
+            <translation>Extraindo uma pré-visualização...</translation>
         </message>
         <message>
             <source>Extracting subtitles…</source>
-            <translation type="unfinished"/>
+            <translation>Extraindo subtítulos...</translation>
         </message>
         <message>
             <source>Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro</translation>
         </message>
         <message>
             <source>Extraction Error</source>
-            <translation type="unfinished"/>
+            <translation>Erro de extracção</translation>
         </message>
         <message>
             <source>Format:</source>
-            <translation type="unfinished"/>
+            <translation>Formatos:</translation>
         </message>
         <message>
             <source>Preview</source>
-            <translation type="unfinished"/>
+            <translation>Previsão</translation>
         </message>
         <message>
             <source>Preview failed: %s</source>
-            <translation type="unfinished"/>
+            <translation>Falha de visualização: %s</translation>
         </message>
         <message>
             <source>No subtitle tracks found</source>
-            <translation type="unfinished"/>
+            <translation>Não encontramos trilhas de subtítulos</translation>
         </message>
         <message>
             <source>No file selected</source>
-            <translation type="unfinished"/>
+            <translation>Nenhum arquivo selecionado</translation>
         </message>
         <message>
             <source>Done</source>
-            <translation type="unfinished"/>
+            <translation>Feito</translation>
         </message>
         <message>
             <source>Could not extract the subtitle:\n%s</source>
-            <translation type="unfinished"/>
+            <translation>Não conseguiu extrair o subtítulo:\n%s</translation>
         </message>
         <message>
             <source>Could not read the video file:\n%s</source>
-            <translation type="unfinished"/>
+            <translation>Não consegui ler o arquivo de vídeo:\n%s</translation>
         </message>
         <message>
             <source>Save Subtitle As</source>
-            <translation type="unfinished"/>
+            <translation>Salvar Subtítulos como</translation>
         </message>
         <message>
             <source>Play / Pause</source>
-            <translation type="unfinished"/>
+            <translation>Reprodução / Pausa</translation>
         </message>
         <message>
             <source>Stop</source>
-            <translation type="unfinished"/>
+            <translation>Parem!</translation>
         </message>
         <message>
             <source>Close</source>
-            <translation type="unfinished"/>
+            <translation>- Quase</translation>
         </message>
         <message>
             <source>The subtitle has been saved to:\n%s</source>
-            <translation type="unfinished"/>
+            <translation>O subtítulo foi guardado para:\n%s</translation>
         </message>
         <message>
             <source>Subtitle Tracks</source>
-            <translation type="unfinished"/>
+            <translation>Subtítulos</translation>
         </message>
         <message>
             <source>Output Format</source>
-            <translation type="unfinished"/>
+            <translation>Formatos de saída</translation>
         </message>
         <message>
             <source>Video File</source>
-            <translation type="unfinished"/>
+            <translation>Arquivo de vídeo</translation>
         </message>
         <message>
             <source>Video files (%s);;All files (*)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos de vídeo (%s);;Todos os arquivos (*)</translation>
         </message>
         <message>
             <source>Select a video file to preview subtitles</source>
-            <translation type="unfinished"/>
+            <translation>Selecione um arquivo de vídeo para visualizar subtítulos</translation>
         </message>
         <message>
             <source>Select Video File</source>
-            <translation type="unfinished"/>
+            <translation>Selecionar arquivo de vídeo</translation>
         </message>
         <message>
             <source>This video file contains no embedded subtitle tracks.</source>
-            <translation type="unfinished"/>
+            <translation>Este arquivo de vídeo não contém trilhas de subtítulos incorporadas.</translation>
         </message>
         <message>
             <source>SRT (.srt)</source>
-            <translation type="unfinished"/>
+            <translation>SRT (. srt)</translation>
         </message>
         <message>
             <source>WebVTT (.vtt)</source>
-            <translation type="unfinished"/>
+            <translation>WebVTT (.vtt)</translation>
         </message>
         <message>
             <source>ASS/SSA (.ass)</source>
-            <translation type="unfinished"/>
+            <translation>Assinatura de dados</translation>
         </message>
         <message>
             <source>SubRip (*.srt)</source>
-            <translation type="unfinished"/>
+            <translation>SubRip (*.srt)</translation>
         </message>
         <message>
             <source>WebVTT (*.vtt)</source>
-            <translation type="unfinished"/>
+            <translation>WebVTT (*.vtt)</translation>
         </message>
         <message>
             <source>Advanced SubStation Alpha (*.ass)</source>
-            <translation type="unfinished"/>
+            <translation>Subestação Avançada Alpha (*.ass)</translation>
         </message>
         <message>
             <source>Subtitle files (*.*)</source>
-            <translation type="unfinished"/>
+            <translation>Arquivos de subtítulos (**)</translation>
         </message>
         <message>
-        <source>Could not extract the subtitle:
+            <source>Could not extract the subtitle:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Could not read the video file:
+            <translation>Não conseguiu extrair o subtítulo: %s</translation>
+        </message>
+        <message>
+            <source>Could not read the video file:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>The subtitle has been saved to:
+            <translation>Não consegui ler o arquivo de vídeo: %s</translation>
+        </message>
+        <message>
+            <source>The subtitle has been saved to:
 %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>O subtítulo foi guardado para: %s</translation>
+        </message>
+    </context>
     <context>
         <name>WelcomeDialog</name>
         <message>
             <source>Appearance</source>
-            <translation type="unfinished"/>
+            <translation>Aparência</translation>
         </message>
         <message>
             <source>Back</source>
-            <translation type="unfinished"/>
+            <translation>De volta</translation>
         </message>
         <message>
             <source>Dark</source>
-            <translation type="unfinished"/>
+            <translation>Escuridão</translation>
         </message>
         <message>
             <source>Default</source>
-            <translation type="unfinished"/>
+            <translation>Default</translation>
         </message>
         <message>
             <source>Default engine:</source>
-            <translation type="unfinished"/>
+            <translation>Motor por defeito:</translation>
         </message>
         <message>
             <source>Editor font size:</source>
-            <translation type="unfinished"/>
+            <translation>Tamanho de fonte do editor:</translation>
         </message>
         <message>
             <source>Email:</source>
-            <translation type="unfinished"/>
+            <translation>E-mail:</translation>
         </message>
         <message>
             <source>Formal</source>
-            <translation type="unfinished"/>
+            <translation>Formal</translation>
         </message>
         <message>
             <source>Formality level:</source>
-            <translation type="unfinished"/>
+            <translation>Nível de formalidade:</translation>
         </message>
         <message>
             <source>Informal</source>
-            <translation type="unfinished"/>
+            <translation>Informal</translation>
         </message>
         <message>
             <source>Language / Locale:</source>
-            <translation type="unfinished"/>
+            <translation>Língua / Localidade:</translation>
         </message>
         <message>
             <source>Light</source>
-            <translation type="unfinished"/>
+            <translation>Luz</translation>
         </message>
         <message>
             <source>Name:</source>
-            <translation type="unfinished"/>
+            <translation>Nome:</translation>
         </message>
         <message>
             <source>Next</source>
-            <translation type="unfinished"/>
+            <translation>Próximo</translation>
         </message>
         <message>
             <source>Personal Information</source>
-            <translation type="unfinished"/>
+            <translation>Informações pessoais</translation>
         </message>
         <message>
             <source>Source language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua fonte:</translation>
         </message>
         <message>
             <source>Start translating!</source>
-            <translation type="unfinished"/>
+            <translation>Comece a traduzir!</translation>
         </message>
         <message>
             <source>System default</source>
-            <translation type="unfinished"/>
+            <translation>Padrão do sistema</translation>
         </message>
         <message>
             <source>Target language:</source>
-            <translation type="unfinished"/>
+            <translation>Língua alvo:</translation>
         </message>
         <message>
             <source>Team (optional):</source>
-            <translation type="unfinished"/>
+            <translation>Equipa (opcional):</translation>
         </message>
         <message>
             <source>Theme:</source>
-            <translation type="unfinished"/>
+            <translation>Temática:</translation>
         </message>
         <message>
             <source>Translation Settings</source>
-            <translation type="unfinished"/>
+            <translation>Configurações de tradução</translation>
         </message>
         <message>
             <source>Welcome to LinguaEdit</source>
-            <translation type="unfinished"/>
+            <translation>Bem-vindo à LinguaEditar</translation>
         </message>
         <message>
             <source>You</source>
-            <translation type="unfinished"/>
+            <translation>Tu, tu.</translation>
         </message>
         <message>
             <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,\nAndroid XML, ARB, PHP, and YAML files.\n\nFeatures include AI-powered pre-translation, translation memory,\nquality assurance, spell checking, and platform integration.</source>
-            <translation type="unfinished"/>
+            <translation>LinguaEdit é um editor de tradução moderno para arquivos PO, TS, JSON, XLIFF, \nAndroid XML, ARB, PHP e YAML.\n\nFonteiras incluem pré-tradução com tecnologia de inteligência artificial, memória de tradução, garantia de qualidade, verificação de ortografia e integração com a plataforma.</translation>
         </message>
         <message>
-            <source>You&apos;re all set!</source>
-            <translation type="unfinished"/>
+            <source>You're all set!</source>
+            <translation>Está tudo pronto!</translation>
         </message>
         <message>
             <source>Version %s</source>
-            <translation type="unfinished"/>
+            <translation>Versão %s</translation>
         </message>
         <message>
-        <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,
+            <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,
 Android XML, ARB, PHP, and YAML files.
 
 Features include AI-powered pre-translation, translation memory,
 quality assurance, spell checking, and platform integration.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+            <translation>LinguaEdit é um editor de tradução moderno para arquivos PO, TS, JSON, XLIFF, Android XML, ARB, PHP e YAML. As características incluem pré-tradução com tecnologia artificial, memória de tradução, garantia de qualidade, verificação de ortografia e integração com a plataforma.</translation>
+        </message>
+    </context>
     <context>
         <name>WorldMapWidget</name>
         <message>
             <source>Translation Progress</source>
-            <translation type="unfinished"/>
+            <translation>Progresso na tradução</translation>
         </message>
     </context>
     <context>
         <name>ZenModeWidget</name>
         <message>
             <source>&lt;b&gt;Source text&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Texto de origem&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translation&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Translação&lt;/b&gt;</translation>
         </message>
         <message>
             <source>Exit Zen</source>
-            <translation type="unfinished"/>
+            <translation>A saída Zen</translation>
         </message>
         <message>
             <source>Next entry</source>
-            <translation type="unfinished"/>
+            <translation>Próximo artigo</translation>
         </message>
         <message>
             <source>Next untranslated ▶▶</source>
-            <translation type="unfinished"/>
+            <translation>Próximo não traduzido ▶ ▶</translation>
         </message>
         <message>
             <source>Previous entry</source>
-            <translation type="unfinished"/>
+            <translation>Entrada anterior</translation>
         </message>
         <message>
             <source>Skip to next untranslated (Ctrl+Enter)</source>
-            <translation type="unfinished"/>
+            <translation>Passe para o próximo não traduzido (Ctrl+Enter)</translation>
         </message>
         <message>
             <source>&amp;Catalog</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Catalogue</translation>
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Editar</translation>
         </message>
         <message>
             <source>&amp;File</source>
-            <translation type="unfinished"/>
+            <translation>&amp;File</translation>
         </message>
         <message>
             <source>&amp;Git</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Git</translation>
         </message>
         <message>
             <source>&amp;Go</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Go</translation>
         </message>
         <message>
             <source>&amp;Help</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Ajuda</translation>
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Open...</translation>
         </message>
         <message>
             <source>&amp;Platforms</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Plataformas</translation>
         </message>
         <message>
             <source>&amp;Save</source>
-            <translation type="unfinished"/>
+            <translation>&amp;Save</translation>
         </message>
         <message>
             <source>&amp;Tools</source>
-            <translation type="unfinished"/>
+            <translation>&amp; Ferramentas</translation>
         </message>
         <message>
             <source>&amp;View</source>
-            <translation type="unfinished"/>
+            <translation>&amp;View</translation>
         </message>
         <message>
             <source>&lt;b&gt;%d&lt;/b&gt; untranslated strings out of &lt;b&gt;%d&lt;/b&gt; total.</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
             <source>&lt;b&gt;Added strings:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Added strings:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Changed source text:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Texto de fonte alterado:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Changed translations:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Tradusões alteradas:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Concordance search&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Outdated translations&lt;/b&gt; — source changed but translation stayed the same.</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;O traduções atualizadas&lt;/b&gt;  a fonte mudou, mas a tradução permaneceu a mesma.</translation>
         </message>
         <message>
             <source>&lt;b&gt;Potentially outdated:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Posteriormente ultrapassado:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference source:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Fonte de referência:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Reference translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt; Tradução de referência:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Removed strings:&lt;/b&gt; %d</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Removidas cordas:&lt;/b&gt; %d</translation>
         </message>
         <message>
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Texto de origem:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt; Sugestões&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Traduzir: &lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;b&gt;Translator comentário:&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;h3&gt;Comparison Results&lt;/h3&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;h3&gt;Resultados de comparação&lt;/h3&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;(não correspondem na referência) &lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;MT unavailable&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;MT não disponível&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No matches&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;N Não correspondem&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No matching terms&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;N Não existem termos correspondentes &lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No suggestion&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation>&lt;i&gt;N Não há sugestão&lt;/i&gt;</translation>
         </message>
         <message>
             <source>&lt;i&gt;No suggestions&lt;/i&gt;</source>
-            <translation type="unfinished"/>
+            <translation type="unfinished" />
         </message>
         <message>
-            <source>Are you sure you want to delete the macro &apos;{}&apos;?</source>
-            <translation type="unfinished"/>
+            <source>Are you sure you want to delete the macro '{}'?</source>
+            <translation>Você tem certeza que quer excluir a macro '{}'?</translation>
         </message>
         <message>
-            <source>Cannot compile: install &apos;polib&apos; or &apos;gettext&apos; (msgfmt)</source>
-            <translation type="unfinished"/>
+            <source>Cannot compile: install 'polib' or 'gettext' (msgfmt)</source>
+            <translation>Não pode compilar: instalar 'polib' ou 'gettext' (msgfmt)</translation>
         </message>
         <message>
             <source>Click in the source text where you want to split, then press OK.</source>
-            <translation type="unfinished"/>
+            <translation>Clique no texto fonte onde você deseja dividir, e pressione OK.</translation>
         </message>
         <message>
-            <source>Delete term &apos;%s&apos; → &apos;%s&apos;?</source>
-            <translation type="unfinished"/>
+            <source>Delete term '%s' → '%s'?</source>
+            <translation>Eliminar o termo "%s" → "%s"?</translation>
         </message>
         <message>
             <source>This video file contains no embedded subtitle tracks.</source>
-            <translation type="unfinished"/>
+            <translation>Este arquivo de vídeo não contém trilhas de subtítulos incorporadas.</translation>
         </message>
         <message>
-            <source>Failed to play macro &apos;{}&apos;.</source>
-            <translation type="unfinished"/>
+            <source>Failed to play macro '{}'.</source>
+            <translation>Não conseguiu jogar macro '{}'.</translation>
         </message>
         <message>
             <source>Find &amp; Replace</source>
-            <translation type="unfinished"/>
+            <translation>Encontrar e Substituir</translation>
         </message>
         <message>
             <source>Find &amp;&amp; Replace…</source>
-            <translation type="unfinished"/>
+            <translation>Encontrar e substituir...</translation>
         </message>
         <message>
-            <source>Macro &apos;{}&apos; has been saved successfully.</source>
-            <translation type="unfinished"/>
+            <source>Macro '{}' has been saved successfully.</source>
+            <translation>O macro '{}' foi salvo com sucesso.</translation>
         </message>
         <message>
-            <source>Recording macro &apos;{}&apos;...</source>
-            <translation type="unfinished"/>
+            <source>Recording macro '{}'...</source>
+            <translation>Gravar macro '{}'...</translation>
         </message>
         <message>
             <source>Save &amp;As…</source>
-            <translation type="unfinished"/>
+            <translation>Salvar e como...</translation>
         </message>
         <message>
             <source>Search &amp; Filter</source>
-            <translation type="unfinished"/>
+            <translation>Pesquisa e Filtração</translation>
         </message>
         <message>
             <source>Search &amp; Replace</source>
-            <translation type="unfinished"/>
+            <translation>Buscar e substituir</translation>
         </message>
         <message>
-            <source>The file &apos;%s&apos; has unsaved changes.\nDo you want to save before closing?</source>
-            <translation type="unfinished"/>
+            <source>The file '%s' has unsaved changes.\nDo you want to save before closing?</source>
+            <translation>O arquivo '%s' tem alterações não salvas.\nQuer salvar antes de fechar?</translation>
         </message>
         <message>
             <source>Total: {0} characters | Invisible: {1} | Suspicious: {2}</source>
-            <translation type="unfinished"/>
+            <translation>Total: {0} personagens .</translation>
         </message>
         <message>
-            <source>You&apos;re all set!</source>
-            <translation type="unfinished"/>
+            <source>You're all set!</source>
+            <translation>Está tudo pronto!</translation>
         </message>
         <message>
             <source>Your credentials are securely stored in the system keychain.</source>
-            <translation type="unfinished"/>
+            <translation>As suas credenciais estão armazenadas na cadeia de chaves do sistema.</translation>
         </message>
         <message>
             <source>Are you sure you want to rollback to this version?\n\nThis will replace the current text with:\n{}</source>
-            <translation type="unfinished"/>
+            <translation>Você tem certeza de que quer reverter para esta versão?</translation>
         </message>
         <message>
             <source>OCR functionality requires tesseract-ocr to be installed.\n\nInstall with:\n• macOS: brew install tesseract\n• Ubuntu: sudo apt install tesseract-ocr\n• Windows: download from GitHub</source>
-            <translation type="unfinished"/>
+            <translation>Funcionalidade OCR requer que tesseract-ocr seja instalado.\n\nInstallação com:\n• macOS: brew install tesseract\n• Ubuntu: sudo apt install tesseract-ocr\n• Windows: download do GitHub</translation>
         </message>
         <message>
             <source>%d of %d entries (%d%%) have no translation.\n\nUntranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.\n\nSave anyway?</source>
-            <translation type="unfinished"/>
+            <translation>%d das entradas %d (%d%%) não têm tradução.\n\nEntregues não traduzidas serão marcadas e salvas com o texto fonte como fallback, então elas ainda serão exibidas durante a reprodução. Quando reabertas em LinguaEdit, elas serão correctamente mostradas como não traduzidas.\n\nSave de qualquer maneira?</translation>
         </message>
         <message>
             <source>A translation file is currently open with unsaved changes.\nSave before loading new subtitles?</source>
-            <translation type="unfinished"/>
+            <translation>Um arquivo de tradução está atualmente aberto com alterações não guardadas.\nSave antes de carregar novos subtítulos?</translation>
         </message>
         <message>
             <source>Crowdin Over-The-Air functionality not yet implemented.\nThis would pull latest translations from Crowdin.</source>
-            <translation type="unfinished"/>
+            <translation>A funcionalidade Crowdin Over-The-Air ainda não implementada. Isto retiraria as últimas traduções de Crowdin.</translation>
         </message>
     </context>
     <context>
         <name>AIReviewWorker</name>
         <message>
             <source>Translation is missing</source>
-            <translation type="unfinished"/>
+            <translation>Falta tradução</translation>
         </message>
         <message>
             <source>Translation much longer than source</source>
-            <translation type="unfinished"/>
+            <translation>Tradução muito mais longa do que a fonte</translation>
         </message>
         <message>
             <source>Translation much shorter than source</source>
-            <translation type="unfinished"/>
+            <translation>Tradução muito mais curta do que a fonte</translation>
         </message>
         <message>
             <source>Different number of format markers/tags</source>
-            <translation type="unfinished"/>
+            <translation>Diferente número de marcadores/etiquetas de formato</translation>
         </message>
         <message>
             <source>Identical to source text</source>
-            <translation type="unfinished"/>
+            <translation>Identico ao texto fonte</translation>
         </message>
         <message>
             <source>All uppercase when source is not</source>
-            <translation type="unfinished"/>
+            <translation>Todas as letras maiúsculas quando a fonte não é</translation>
         </message>
         <message>
             <source>No obvious problems found with this translation.</source>
-            <translation type="unfinished"/>
+            <translation>Não encontramos problemas óbvios com esta tradução.</translation>
         </message>
         <message>
             <source>Problems identified: </source>
-            <translation type="unfinished"/>
+            <translation>Problemas identificados: </translation>
         </message>
     </context>
     <context>
         <name>BatchOperationThread</name>
         <message>
             <source>Error: %s</source>
-            <translation type="unfinished"/>
+            <translation>Erro: %s</translation>
         </message>
     </context>
     <context>
         <name>FileAnalysisThread</name>
         <message>
             <source>Analyzing %s...</source>
-            <translation type="unfinished"/>
+            <translation>Analisando o %s...</translation>
         </message>
     </context>
     <context>
         <name>GlossaryImportThread</name>
         <message>
             <source>Importing term %d/%d</source>
-            <translation type="unfinished"/>
+            <translation>Termo de importação %d/%d</translation>
         </message>
         <message>
             <source>Row %d: %s</source>
-            <translation type="unfinished"/>
+            <translation>Linha %d: %s</translation>
         </message>
         <message>
             <source>File error: %s</source>
-            <translation type="unfinished"/>
+            <translation>Erro de arquivo: %s</translation>
         </message>
     </context>
     <context>
         <name>TextRenderWidget</name>
         <message>
             <source>Width: %dpx</source>
-            <translation type="unfinished"/>
+            <translation>Largura: %dpx</translation>
         </message>
         <message>
             <source>OVERFLOW: +%dpx</source>
-            <translation type="unfinished"/>
+            <translation>OVERFLOW: +%dpx</translation>
         </message>
     </context>
     <context>
         <name>UpdateDialog</name>
         <message>
             <source>Update Available</source>
-            <translation type="unfinished"/>
+            <translation>Atualização disponível</translation>
         </message>
         <message>
             <source>A new version of LinguaEdit is available!</source>
-            <translation type="unfinished"/>
+            <translation>Uma nova versão do LinguaEdit está disponível!</translation>
         </message>
         <message>
             <source>Current version: %s
 New version: %s</source>
-            <translation type="unfinished"/>
+            <translation>Versao actual: %s Nova versão: %s</translation>
         </message>
         <message>
             <source>Release notes:</source>
-            <translation type="unfinished"/>
+            <translation>Nota de liberação:</translation>
         </message>
         <message>
             <source>Skip this version</source>
-            <translation type="unfinished"/>
+            <translation>Esqueça esta versão</translation>
         </message>
         <message>
             <source>Download</source>
-            <translation type="unfinished"/>
+            <translation>Descarga</translation>
         </message>
         <message>
             <source>Remind me later</source>
-            <translation type="unfinished"/>
+            <translation>Lembra-me mais tarde.</translation>
         </message>
     </context>
-<context>
-    <name>PomodoroDialog</name>
-    <message>
-        <source>Focus minutes:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Pause</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Pomodoro Timer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Resume</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Start</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Time for a break!</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+    <context>
+        <name>PomodoroDialog</name>
+        <message>
+            <source>Focus minutes:</source>
+            <translation>Minutos de foco:</translation>
+        </message>
+        <message>
+            <source>Pause</source>
+            <translation>Pausa</translation>
+        </message>
+        <message>
+            <source>Pomodoro Timer</source>
+            <translation>Pomodoro Timer</translation>
+        </message>
+        <message>
+            <source>Reset</source>
+            <translation>Reset</translation>
+        </message>
+        <message>
+            <source>Resume</source>
+            <translation>Resumo</translation>
+        </message>
+        <message>
+            <source>Start</source>
+            <translation>Começa</translation>
+        </message>
+        <message>
+            <source>Time for a break!</source>
+            <translation>É hora de uma pausa!</translation>
+        </message>
+    </context>
 </TS>
