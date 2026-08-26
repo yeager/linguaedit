@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-import locale
+import re
 import sys
 from pathlib import Path
 
@@ -11,6 +11,62 @@ from PySide6.QtWidgets import QApplication
 
 from linguaedit import APP_ID
 from linguaedit.services.settings import Settings
+
+
+def _match_supported_language(tag: str, available: set[str]) -> str | None:
+    """Map an OS locale tag to an available LinguaEdit catalog."""
+    normalized = tag.strip().replace("_", "-").lower()
+    if not normalized or normalized in {"c", "posix"}:
+        return None
+    if normalized.startswith("zh"):
+        candidates = ("zh_CN", "zh")
+    elif normalized.startswith("pt-br"):
+        candidates = ("pt_BR", "pt")
+    elif normalized.startswith(("no", "nb", "nn")):
+        candidates = ("nb",)
+    else:
+        candidates = (normalized.split("-", 1)[0],)
+    return next((code for code in candidates if code in available), None)
+
+
+def _system_ui_language(translations_dir: Path) -> str:
+    """Return the preferred available UI language, including macOS app bundles."""
+    available = {"en"}
+    available.update(
+        qm.stem.removeprefix("linguaedit_")
+        for qm in translations_dir.glob("linguaedit_*.qm")
+        if qm.stat().st_size >= 100
+    )
+    candidates: list[str] = []
+
+    # NSLocale respects the user's ordered language list in a macOS .app bundle.
+    if sys.platform == "darwin":
+        try:
+            from Foundation import NSLocale
+            candidates.extend(str(value) for value in NSLocale.preferredLanguages())
+        except (ImportError, AttributeError):
+            pass
+
+    system_locale = QLocale.system()
+    candidates.extend(system_locale.uiLanguages())
+    candidates.append(system_locale.name())
+
+    if sys.platform == "darwin":
+        try:
+            import subprocess
+            result = subprocess.run(
+                ["defaults", "read", "-g", "AppleLanguages"],
+                capture_output=True, text=True, timeout=2, check=False,
+            )
+            candidates.extend(re.findall(r'"?([A-Za-z]{2,3}(?:[-_][A-Za-z0-9]+)*)"?', result.stdout))
+        except (OSError, subprocess.SubprocessError):
+            pass
+
+    for candidate in candidates:
+        matched = _match_supported_language(candidate, available)
+        if matched:
+            return matched
+    return "en"
 
 
 def _find_translations_dir() -> Path:
@@ -87,61 +143,9 @@ class LinguaEditApp:
         lang = settings["language"]
         log.info("Settings language: %s", lang)
 
-        # If language is "en", try to detect system language
-        if lang == "en":
-            sys_lang = QLocale.system().name()[:2]
-            log.info("System locale: %s", sys_lang)
-            if sys_lang in ("C", "en", ""):
-                if sys.platform == "darwin":
-                    try:
-                        import subprocess
-                        result = subprocess.run(
-                            ["defaults", "read", "-g", "AppleLanguages"],
-                            capture_output=True, text=True, timeout=2
-                        )
-                        for line in result.stdout.splitlines():
-                            line = line.strip().strip('",')
-                            if line and len(line) >= 2 and not line.startswith("(") and not line.startswith(")"):
-                                sys_lang = line[:2]
-                                break
-                    except Exception:
-                        pass
-                elif sys.platform == "win32":
-                    # Windows: try ctypes GetUserDefaultUILanguage
-                    try:
-                        import ctypes
-                        lang_id = ctypes.windll.kernel32.GetUserDefaultUILanguage()
-                        # lang_id is a LANGID; primary language is low 10 bits
-                        # Map common primary language IDs
-                        _WIN_LANG_MAP = {
-                            0x1D: "sv", 0x06: "da", 0x14: "no", 0x0B: "fi",
-                            0x07: "de", 0x0C: "fr", 0x0A: "es", 0x10: "it",
-                            0x13: "nl", 0x15: "pl", 0x05: "cs", 0x19: "ru",
-                            0x22: "uk", 0x11: "ja", 0x12: "ko", 0x04: "zh",
-                            0x16: "pt", 0x01: "ar",
-                        }
-                        primary = lang_id & 0x3FF
-                        if primary in _WIN_LANG_MAP:
-                            sys_lang = _WIN_LANG_MAP[primary]
-                            log.info("Windows UI language: 0x%04x -> %s", lang_id, sys_lang)
-                    except Exception:
-                        pass
-                # Also try locale module as fallback (works on all platforms)
-                if sys_lang in ("C", "en", ""):
-                    try:
-                        loc = locale.getdefaultlocale()[0] or ""
-                        if len(loc) >= 2:
-                            loc_lang = loc[:2]
-                            if loc_lang not in ("C", "en", ""):
-                                sys_lang = loc_lang
-                                log.info("Fallback locale: %s", sys_lang)
-                    except Exception:
-                        pass
-            translations_dir = _find_translations_dir()
-            sys_qm = translations_dir / f"linguaedit_{sys_lang}.qm"
-            if sys_qm.exists():
-                lang = sys_lang
-                log.info("Auto-detected language: %s", lang)
+        if lang == "auto":
+            lang = _system_ui_language(_find_translations_dir())
+            log.info("Auto-detected UI language: %s", lang)
 
         qt_locale = QLocale(lang)
 

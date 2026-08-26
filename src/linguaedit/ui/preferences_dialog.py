@@ -139,11 +139,11 @@ class PreferencesDialog(QDialog):
         lang_lookup = {code: label for code, label in SUPPORTED_LANGUAGES}
 
         # Sort: English first, then alphabetically by label
-        lang_items = []
+        lang_items = [("auto", self.tr("System default"))]
         for code in available_codes:
             label = lang_lookup.get(code, code)
             lang_items.append((code, label))
-        lang_items.sort(key=lambda x: (x[0] != "en", x[1]))
+        lang_items[1:] = sorted(lang_items[1:], key=lambda x: (x[0] != "en", x[1]))
 
         current_lang = self._settings["language"]
         for i, (code, label) in enumerate(lang_items):

@@ -32,6 +32,22 @@ class TestSettings:
                 continue
             assert val == default_val, f"Default mismatch for {key}: {val} != {default_val}"
 
+    def test_new_install_uses_automatic_ui_language(self):
+        from linguaedit.services.settings import Settings
+
+        assert Settings.get()["language"] == "auto"
+
+    def test_existing_explicit_ui_language_is_preserved(self, isolate_settings):
+        import json
+
+        from linguaedit.services.settings import Settings
+
+        isolate_settings.write_text(
+            json.dumps({"language": "en", "first_run_complete": True}), "utf-8"
+        )
+        Settings.reset_instance()
+        assert Settings.get()["language"] == "en"
+
     def test_get_value(self):
         from linguaedit.services.settings import Settings
         s = Settings.get()

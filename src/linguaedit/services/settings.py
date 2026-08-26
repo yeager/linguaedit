@@ -42,7 +42,8 @@ DEFAULTS: dict[str, Any] = {
     # Personal info
     "translator_name": "",
     "translator_email": "",
-    "language": "en",
+    # "auto" follows the operating system; a locale code is always explicit.
+    "language": "auto",
     "team": "",
 
     # Translation
@@ -163,7 +164,6 @@ class Settings:
             except Exception:
                 pass
         else:
-            # Set system language as default
-            sys_lang = _detect_system_language()
-            self._data["language"] = sys_lang
-            self._data["target_language"] = sys_lang
+            # UI follows the system until the user explicitly chooses a language.
+            # The translation target is independent and gets a useful first-run default.
+            self._data["target_language"] = _detect_system_language()
