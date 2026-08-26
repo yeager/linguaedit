@@ -46,7 +46,7 @@ jobs:
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
         run: |
           for attempt in 1 2 3; do
-            if tx push --translation --all --force --workers 1; then
+            if tx push --translation --all --force --workers 1 --silent; then
               exit 0
             fi
             if [ "$attempt" -lt 3 ]; then
