@@ -8,7 +8,65 @@ permissions:
   contents: write
 
 jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verify tag and package versions
+        run: |
+          python - <<'PY'
+          import pathlib
+          import tomllib
+
+          tag = "${{ github.ref_name }}"
+          expected = tag.removeprefix("v")
+          project = tomllib.loads(pathlib.Path("pyproject.toml").read_text("utf-8"))
+          package = project["project"]["version"]
+          namespace = {}
+          exec(pathlib.Path("src/linguaedit/__init__.py").read_text("utf-8"), namespace)
+          runtime = namespace["__version__"]
+          assert package == expected, (tag, package)
+          assert runtime == expected, (tag, runtime)
+          PY
+      - name: Install Qt runtime libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1 libpulse0
+      - name: Install project and release tools
+        run: pip install -e ".[dev]" build
+      - name: Run release checks
+        run: |
+          pytest -q
+          ruff check src tests scripts build_backend.py translation_build.py .github/scripts
+          python scripts/update_translations.py --check
+          python -m compileall -q src tests build_backend.py
+      - name: Build wheel
+        run: python -m build --wheel
+      - name: Verify wheel resources
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          wheel = next(Path("dist").glob("linguaedit-${{ github.ref_name }}-*.whl".replace("v", "", 1)))
+          with ZipFile(wheel) as archive:
+              names = archive.namelist()
+          assert not any(name.endswith(".ts") for name in names)
+          assert sum(name.endswith(".qm") for name in names) >= 10
+          assert not list(Path("src/linguaedit/translations").glob("*.qm"))
+          PY
+      - uses: actions/upload-artifact@v7
+        with:
+          name: python-wheel
+          path: dist/*.whl
+
   macos:
+    needs: verify
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v5
@@ -16,7 +74,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install dependencies
-        run: pip install pyinstaller PySide6 polib requests PyYAML
+        run: pip install . pyinstaller
       - name: Compile translations above 20 percent
         run: python translation_build.py
       - name: Build .app
@@ -29,6 +87,8 @@ jobs:
             --paths=src src/linguaedit/app.py
       - name: Register file types
         run: |
+          plutil -replace CFBundleShortVersionString -string "${GITHUB_REF_NAME#v}" dist/LinguaEdit.app/Contents/Info.plist
+          plutil -replace CFBundleVersion -string "${GITHUB_REF_NAME#v}" dist/LinguaEdit.app/Contents/Info.plist
           plutil -insert CFBundleDocumentTypes -json '[{"CFBundleTypeName":"PO File","CFBundleTypeExtensions":["po","pot"],"CFBundleTypeRole":"Editor"},{"CFBundleTypeName":"Qt TS File","CFBundleTypeExtensions":["ts"],"CFBundleTypeRole":"Editor"},{"CFBundleTypeName":"XLIFF File","CFBundleTypeExtensions":["xliff","xlf"],"CFBundleTypeRole":"Editor"},{"CFBundleTypeName":"ARB File","CFBundleTypeExtensions":["arb"],"CFBundleTypeRole":"Editor"}]' dist/LinguaEdit.app/Contents/Info.plist
       - name: Create zip
         run: |
@@ -39,6 +99,7 @@ jobs:
           path: LinguaEdit-${{ github.ref_name }}-macOS.zip
 
   windows:
+    needs: verify
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v5
@@ -47,7 +108,7 @@ jobs:
           python-version: '3.12'
       - name: Install deps
         run: |
-          pip install pyinstaller PySide6 polib requests PyYAML Pillow
+          pip install . pyinstaller Pillow
       - name: Compile translations above 20 percent
         run: python translation_build.py
       - name: Create .ico
@@ -72,6 +133,7 @@ jobs:
           path: LinguaEdit-*-Setup.exe
 
   linux:
+    needs: verify
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -90,7 +152,7 @@ jobs:
           path: linguaedit_*_all.deb
 
   release:
-    needs: [macos, windows, linux]
+    needs: [verify, macos, windows, linux]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v7
@@ -104,4 +166,6 @@ jobs:
             LinguaEdit-*-macOS.zip
             LinguaEdit-*-Setup.exe
             linguaedit_*_all.deb
+            *.whl
           overwrite_files: true
+          generate_release_notes: true

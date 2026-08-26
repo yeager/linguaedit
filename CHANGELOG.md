@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## [1.8.16] — 2026-08-26
+
+### Added
+- **Offline localization quality suite** — validates placeholders, markup, newlines, corruption, and translation coverage without sending project text to external services
+- **Cross-platform release automation** — verified macOS app, Windows installer, and Debian package artifacts through GitHub Actions
+
+### Changed
+- **Complete UI localizations** — Swedish, German, French, Norwegian Bokmål, Spanish, Simplified Chinese, Japanese, Italian, and Finnish now include all 1,608 messages
+- **Translation builds** — `.qm` files are generated from `.ts` catalogs only when more than 20% translated and are never stored in source control
+- **System language default** — new installations follow the operating-system UI language until the user explicitly selects a language
+
+### Fixed
+- **Explicit English selection** — English is no longer confused with automatic language detection
+- **macOS language detection** — app bundles honor the ordered macOS preferred-language list through `NSLocale`, with Qt and `AppleLanguages` fallbacks
+- **Locale aliases** — Norwegian, Brazilian Portuguese, and Simplified Chinese locale variants resolve to the correct packaged catalogs
+- **Localization safety** — repaired malformed placeholders, HTML, line breaks, accelerator keys, and untranslated interface labels
+
 ## [1.8.14-r2] — 2026-03-13
 
 ### Added

@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Build .deb package for LinguaEdit."""
-import os, sys, shutil, subprocess, stat
+
+import os
+import shutil
+import subprocess
+import sys
 
 VERSION = sys.argv[1] if len(sys.argv) > 1 else "0.0.0"
 PKG = "linguaedit-deb-build"
@@ -13,12 +17,16 @@ os.makedirs(f"{PKG}/usr/share/linguaedit/translations", exist_ok=True)
 
 # Copy source
 shutil.copytree("src/linguaedit", f"{PKG}/usr/lib/python3/dist-packages/linguaedit", dirs_exist_ok=True)
+for root, _dirs, files in os.walk(f"{PKG}/usr/lib/python3/dist-packages/linguaedit"):
+    for filename in files:
+        if filename.endswith(".ts"):
+            os.unlink(os.path.join(root, filename))
 
 # Copy translations (check both locations)
 for tdir in ["src/linguaedit/translations", "translations"]:
     if os.path.isdir(tdir):
         for f in os.listdir(tdir):
-            if f.endswith(".qm") or f.endswith(".ts"):
+            if f.endswith(".qm"):
                 shutil.copy2(f"{tdir}/{f}", f"{PKG}/usr/share/linguaedit/translations/")
 
 # Launcher script
@@ -82,5 +90,8 @@ os.makedirs(f"{PKG}/usr/share/applications", exist_ok=True)
 shutil.copy2("io.github.yeager.linguaedit.desktop", f"{PKG}/usr/share/applications/")
 
 # Build
-subprocess.run(["dpkg-deb", "--build", PKG, f"linguaedit_{VERSION}_all.deb"], check=True)
+subprocess.run(
+    ["dpkg-deb", "--root-owner-group", "--build", PKG, f"linguaedit_{VERSION}_all.deb"],
+    check=True,
+)
 print(f"Built linguaedit_{VERSION}_all.deb")

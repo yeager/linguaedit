@@ -1,6 +1,6 @@
 # LinguaEdit
 
-![Version](https://img.shields.io/badge/version-1.8.14-blue)
+![Version](https://img.shields.io/badge/version-1.8.16-blue)
 ![GitHub Release](https://img.shields.io/github/v/release/yeager/linguaedit)
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue)
 ![Python](https://img.shields.io/badge/python-3.10+-green)
@@ -44,15 +44,15 @@ LinguaEdit is a feature-rich, cross-platform translation editor that supports 17
 
 ## 📦 Installation & Downloads
 
-### 🚀 Latest Release (v1.8.14)
+### 🚀 Latest Release (v1.8.16)
 
 Download ready-to-use binaries from **[GitHub Releases](https://github.com/yeager/linguaedit/releases/latest)**:
 
 | Platform | Download | Size | Installation |
 |----------|----------|------|-------------|
-| **🍎 macOS** | `LinguaEdit-1.8.14-macOS-arm64.dmg` | 64MB | Drag to Applications |
-| **🪟 Windows** | `LinguaEdit-1.8.14-Windows-Portable.zip` | 1.5MB | Unzip and run `LinguaEdit.bat` |
-| **🐧 Linux** | Package managers (see below) | ~300KB | `apt install linguaedit` |
+| **🍎 macOS** | `LinguaEdit-v1.8.16-macOS.zip` | — | Unzip and move to Applications |
+| **🪟 Windows** | `LinguaEdit-1.8.16-Setup.exe` | — | Run the installer |
+| **🐧 Linux** | `linguaedit_1.8.16_all.deb` | — | Install with your package manager |
 
 ### 🐧 Linux Package Managers
 
