@@ -581,13 +581,7 @@
             <source>Source: %s\nTarget: %s</source>
             <translation>Källa: %s\nMål: %s</translation>
         </message>
-        <message>
-        <source>Source: %s
-Target: %s</source>
-        <translation>Källa: %s
-Mål: %s</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>DashboardDialog</name>
         <message>
@@ -1241,23 +1235,7 @@ Mål: %s</translation>
             <source>Delete term &apos;%s&apos; → &apos;%s&apos;?</source>
             <translation>Ta bort term &apos;%s&apos; → &apos;%s&apos;?</translation>
         </message>
-        <message>
-        <source>Failed to export glossary:
-%s</source>
-        <translation>Det gick inte att exportera ordlistan:
-%s</translation>
-    </message>
-    <message>
-        <source>Imported %d terms with %d errors.
-
-First errors:
-%s</source>
-        <translation>Importerade %d termer med %d fel.
-
-Första felen:
-%s</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>HeaderDialog</name>
         <message>
@@ -1527,30 +1505,14 @@ Första felen:
             <source>Are you sure you want to rollback to this version?\n\nThis will replace the current text with:\n{}</source>
             <translation>Är du säker på att du vill återställa till denna version?\n\nDetta ersätter den nuvarande texten med:\n{}</translation>
         </message>
-        <message>
-        <source>Are you sure you want to rollback to this version?
-
-This will replace the current text with:
-{}</source>
-        <translation>Vill du verkligen återställa till den här versionen?
-
-Detta ersätter den aktuella texten med:
-{}</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>ImagePreviewLabel</name>
         <message>
             <source>Click to select image\n(PNG, JPG, GIF)</source>
             <translation>Klicka för att välja bild\n(PNG, JPG, GIF)</translation>
         </message>
-        <message>
-        <source>Click to select image
-(PNG, JPG, GIF)</source>
-        <translation>Klicka för att välja bild
-(PNG, JPG, GIF)</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>LayoutSimulatorDialog</name>
         <message>
@@ -3733,6 +3695,10 @@ Detta ersätter den aktuella texten med:
             <translation>Weblate-fel</translation>
         </message>
         <message>
+            <source>Weblate</source>
+            <translation>Weblate</translation>
+        </message>
+        <message>
             <source>Weblate — %s</source>
             <translation>Weblate — %s</translation>
         </message>
@@ -3746,331 +3712,7 @@ Detta ersätter den aktuella texten med:
         </message>
     <message><source>No API Key</source><translation>Ingen API-nyckel</translation></message><message><source>No Transifex API key configured.
 Please add one in Translation → API Keys…</source><translation>Ingen Transifex API-nyckel konfigurerad.
-Lägg till en i Översättning → API-nycklar…</translation></message><message><source>No language statistics found.</source><translation>Ingen språkstatistik hittades.</translation></message><message><source>No organizations found.</source><translation>Inga organisationer hittades.</translation></message><message><source>No projects found.</source><translation>Inga projekt hittades.</translation></message><message><source>Organization:</source><translation>Organisation:</translation></message><message><source>Project:</source><translation>Projekt:</translation></message><message><source>Select Organization</source><translation>Välj organisation</translation></message><message><source>Select Project</source><translation>Välj projekt</translation></message><message><source>Transifex Error</source><translation>Transifex-fel</translation></message><message><source>Transifex Statistics…</source><translation>Transifex-statistik…</translation></message><message><source>Transifex — %s</source><translation>Transifex — %s</translation></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation>Översättningsstatistik för &lt;b&gt;%s&lt;/b&gt;:</translation></message>    <message>
-        <source>
-
-Errors:
-{}</source>
-        <translation>
-
-Fel:
-{}</translation>
-    </message>
-    <message>
-        <source>%d of %d entries (%d%%) have no translation.
-
-Untranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.
-
-Save anyway?</source>
-        <translation>%d av %d poster (%d%%) saknar översättning.
-
-Oöversatta poster markeras och sparas med källtexten som reserv så att de fortfarande visas under uppspelning. När filen öppnas igen i LinguaEdit visas de korrekt som oöversatta.
-
-Spara ändå?</translation>
-    </message>
-    <message>
-        <source>%s
-
-Add a new term or check file?</source>
-        <translation>%s
-
-Lägg till en ny term eller kontrollera filen?</translation>
-    </message>
-    <message>
-        <source>Approved</source>
-        <translation>Godkänd</translation>
-    </message>
-    <message>
-        <source>Back-translating…</source>
-        <translation>Bakåtöversätter…</translation>
-    </message>
-    <message>
-        <source>Back-translation Error</source>
-        <translation>Fel vid bakåtöversättning</translation>
-    </message>
-    <message>
-        <source>Back-translation Verification</source>
-        <translation>Verifiering med bakåtöversättning</translation>
-    </message>
-    <message>
-        <source>By context</source>
-        <translation>Efter sammanhang</translation>
-    </message>
-    <message>
-        <source>Could not read video file:
-%s</source>
-        <translation>Det gick inte att läsa videofilen:
-%s</translation>
-    </message>
-    <message>
-        <source>Failed to run msgmerge:
-{}</source>
-        <translation>Det gick inte att köra msgmerge:
-{}</translation>
-    </message>
-    <message>
-        <source>File: %s
-Entries: %d</source>
-        <translation>Fil: %s
-Poster: %d</translation>
-    </message>
-    <message>
-        <source>Found %d inconsistencies:
-
-</source>
-        <translation>Hittade %d inkonsekvenser:
-
-</translation>
-    </message>
-    <message>
-        <source>Help translate:</source>
-        <translation>Hjälp till att översätta:</translation>
-    </message>
-    <message>
-        <source>Issues:</source>
-        <translation>Problem:</translation>
-    </message>
-    <message>
-        <source>Made %d replacements</source>
-        <translation>Gjorde %d ersättningar</translation>
-    </message>
-    <message>
-        <source>Needs review</source>
-        <translation>Behöver granskas</translation>
-    </message>
-    <message>
-        <source>No Crowdin API key configured.
-Please add one in Translation → API Keys…</source>
-        <translation>Ingen API-nyckel för Crowdin har konfigurerats.
-Lägg till en under Översättning → API-nycklar…</translation>
-    </message>
-    <message>
-        <source>No Weblate API key or server URL configured.
-Please add them in Translation → API Keys…</source>
-        <translation>Ingen API-nyckel eller serveradress för Weblate har konfigurerats.
-Lägg till dem under Översättning → API-nycklar…</translation>
-    </message>
-    <message>
-        <source>No entry selected</source>
-        <translation>Ingen post har valts</translation>
-    </message>
-    <message>
-        <source>No matches found</source>
-        <translation>Inga träffar hittades</translation>
-    </message>
-    <message>
-        <source>PO file merged successfully with POT file.
-Please reload the file to see changes.</source>
-        <translation>PO-filen sammanfogades med POT-filen.
-Läs in filen igen för att se ändringarna.</translation>
-    </message>
-    <message>
-        <source>Pomodoro Timer…</source>
-        <translation>Pomodoro-timer…</translation>
-    </message>
-    <message>
-        <source>Quality score:</source>
-        <translation>Kvalitetspoäng:</translation>
-    </message>
-    <message>
-        <source>Rejected</source>
-        <translation>Avvisad</translation>
-    </message>
-    <message>
-        <source>Review status: %s</source>
-        <translation>Granskningsstatus: %s</translation>
-    </message>
-    <message>
-        <source>Review status: Needs review</source>
-        <translation>Granskningsstatus: Behöver granskas</translation>
-    </message>
-    <message>
-        <source>Source text is read-only</source>
-        <translation>Källtexten är skrivskyddad</translation>
-    </message>
-    <message>
-        <source>Source:
-%s
-
-Back-translation:
-%s
-
-Text similarity: %.0f%%</source>
-        <translation>Källa:
-%s
-
-Bakåtöversättning:
-%s
-
-Textlikhet: %.0f%%</translation>
-    </message>
-    <message>
-        <source>Source: %s
-Target: %s</source>
-        <translation>Källa: %s
-Mål: %s</translation>
-    </message>
-    <message>
-        <source>Source: \"%s\"
-  Entries: %s
-  Translations: %s
-</source>
-        <translation>Källa: \"%s\"
-  Poster: %s
-  Översättningar: %s
-</translation>
-    </message>
-    <message>
-        <source>Spelling issues:
-%s</source>
-        <translation>Stavningsproblem:
-%s</translation>
-    </message>
-    <message>
-        <source>The current entry is untranslated</source>
-        <translation>Den aktuella posten är oöversatt</translation>
-    </message>
-    <message>
-        <source>The current file has unsaved changes.
-Do you want to save before continuing?</source>
-        <translation>Den aktuella filen har osparade ändringar.
-Vill du spara innan du fortsätter?</translation>
-    </message>
-    <message>
-        <source>The file '%s' has unsaved changes.
-Do you want to save before closing?</source>
-        <translation>Filen ”%s” har osparade ändringar.
-Vill du spara innan den stängs?</translation>
-    </message>
-    <message>
-        <source>Verify with Back-translation</source>
-        <translation>Verifiera med bakåtöversättning</translation>
-    </message>
-    <message>
-        <source>msgmerge failed:
-{}</source>
-        <translation>msgmerge misslyckades:
-{}</translation>
-    </message>
-    <message>
-        <source>A newer local recovery snapshot exists. Restore it?</source>
-        <translation>Det finns en nyare lokal återställningskopia. Vill du återställa den?</translation>
-    </message>
-    <message>
-        <source>Accessibility</source>
-        <translation>Tillgänglighet</translation>
-    </message>
-    <message>
-        <source>Accessibility check</source>
-        <translation>Tillgänglighetskontroll</translation>
-    </message>
-    <message>
-        <source>Automatic QA found %d errors. Save anyway?</source>
-        <translation>Den automatiska kvalitetskontrollen hittade %d fel. Spara ändå?</translation>
-    </message>
-    <message>
-        <source>Found %d issues:
-
-</source>
-        <translation>Hittade %d problem:
-
-</translation>
-    </message>
-    <message>
-        <source>Git Commit Blocked</source>
-        <translation>Git-incheckning blockerad</translation>
-    </message>
-    <message>
-        <source>Health: %.1f%%
-Translated: %d/%d
-Stale: %d
-Errors: %d
-Warnings: %d
-Terminology issues: %d
-Accessibility issues: %d
-Risks: %s</source>
-        <translation>Hälsa: %.1f%%
-Översatta: %d/%d
-Inaktuella: %d
-Fel: %d
-Varningar: %d
-Terminologiproblem: %d
-Tillgänglighetsproblem: %d
-Risker: %s</translation>
-    </message>
-    <message>
-        <source>Inspect translation build</source>
-        <translation>Inspektera översättningsbygge</translation>
-    </message>
-    <message>
-        <source>No accessibility issues found! ✓</source>
-        <translation>Inga tillgänglighetsproblem hittades! ✓</translation>
-    </message>
-    <message>
-        <source>No linguaedit_*.ts catalogs found</source>
-        <translation>Inga linguaedit_*.ts-kataloger hittades</translation>
-    </message>
-    <message>
-        <source>Potential secrets were found. Nothing was staged.</source>
-        <translation>Möjliga hemligheter hittades. Ingenting lades till i stagingområdet.</translation>
-    </message>
-    <message>
-        <source>Project Health</source>
-        <translation>Projekthälsa</translation>
-    </message>
-    <message>
-        <source>Project health</source>
-        <translation>Projekthälsa</translation>
-    </message>
-    <message>
-        <source>Pseudolocalize current entry</source>
-        <translation>Pseudolokalisera aktuell post</translation>
-    </message>
-    <message>
-        <source>Pseudolocalized current entry</source>
-        <translation>Aktuell post pseudolokaliserades</translation>
-    </message>
-    <message>
-        <source>QA profile: Android</source>
-        <translation>Kvalitetsprofil: Android</translation>
-    </message>
-    <message>
-        <source>QA profile: Qt</source>
-        <translation>Kvalitetsprofil: Qt</translation>
-    </message>
-    <message>
-        <source>QA profile: Subtitles</source>
-        <translation>Kvalitetsprofil: Undertexter</translation>
-    </message>
-    <message>
-        <source>Quality errors</source>
-        <translation>Kvalitetsfel</translation>
-    </message>
-    <message>
-        <source>Recover unsaved work</source>
-        <translation>Återställ osparat arbete</translation>
-    </message>
-    <message>
-        <source>Select translation catalog directory</source>
-        <translation>Välj katalog för översättningskataloger</translation>
-    </message>
-    <message>
-        <source>Translation Build</source>
-        <translation>Översättningsbygge</translation>
-    </message>
-    <message>
-        <source>none</source>
-        <translation>inga</translation>
-    </message>
-    <message>
-        <source>OpenNMT model:</source>
-        <translation>OpenNMT-modell:</translation>
-    </message>
-    <message>
-        <source>Path to an OpenNMT-py model file</source>
-        <translation>Sökväg till en OpenNMT-py-modellfil</translation>
-    </message>
-</context>
+Lägg till en i Översättning → API-nycklar…</translation></message><message><source>No language statistics found.</source><translation>Ingen språkstatistik hittades.</translation></message><message><source>No organizations found.</source><translation>Inga organisationer hittades.</translation></message><message><source>No projects found.</source><translation>Inga projekt hittades.</translation></message><message><source>Organization:</source><translation>Organisation:</translation></message><message><source>Project:</source><translation>Projekt:</translation></message><message><source>Select Organization</source><translation>Välj organisation</translation></message><message><source>Select Project</source><translation>Välj projekt</translation></message><message><source>Transifex Error</source><translation>Transifex-fel</translation></message><message><source>Transifex Statistics…</source><translation>Transifex-statistik…</translation></message><message><source>Transifex — %s</source><translation>Transifex — %s</translation></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation>Översättningsstatistik för &lt;b&gt;%s&lt;/b&gt;:</translation></message></context>
     <context>
         <name>Linter</name>
         <message>
@@ -4712,35 +4354,7 @@ Risker: %s</translation>
             <source>⚠ Tesseract not found. Please install tesseract-ocr.</source>
             <translation>⚠ Tesseract hittades inte. Installera tesseract-ocr.</translation>
         </message>
-        <message>
-        <source>Failed to create PO file:
-{}</source>
-        <translation>Det gick inte att skapa PO-filen:
-{}</translation>
-    </message>
-    <message>
-        <source>OCR functionality requires tesseract-ocr to be installed.
-
-Installation instructions:
-• macOS: brew install tesseract
-• Ubuntu/Debian: sudo apt install tesseract-ocr
-• Windows: Download from GitHub releases
-• Arch Linux: sudo pacman -S tesseract</source>
-        <translation>OCR-funktionen kräver att tesseract-ocr är installerat.
-
-Installationsanvisningar:
-• macOS: brew install tesseract
-• Ubuntu/Debian: sudo apt install tesseract-ocr
-• Windows: Hämta från GitHub-utgåvor
-• Arch Linux: sudo pacman -S tesseract</translation>
-    </message>
-    <message>
-        <source>PO file created successfully:
-{}</source>
-        <translation>PO-filen skapades:
-{}</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>OCRWorker</name>
         <message>
@@ -4854,35 +4468,7 @@ Installationsanvisningar:
             <source>🔒 Tokens stored in %1</source>
             <translation>🔒 Tokens lagrade i %1</translation>
         </message>
-        <message>
-        <source>Browse…</source>
-        <translation>Bläddra…</translation>
-    </message>
-    <message>
-        <source>Loading…</source>
-        <translation>Läser in…</translation>
-    </message>
-    <message>
-        <source>Select Component</source>
-        <translation>Välj komponent</translation>
-    </message>
-    <message>
-        <source>Select Organization</source>
-        <translation>Välj organisation</translation>
-    </message>
-    <message>
-        <source>Select Project</source>
-        <translation>Välj projekt</translation>
-    </message>
-    <message>
-        <source>✗ Select a project first</source>
-        <translation>✗ Välj ett projekt först</translation>
-    </message>
-    <message>
-        <source>✗ Select an organization first</source>
-        <translation>✗ Välj en organisation först</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>PluginDialog</name>
         <message>
@@ -5103,37 +4689,7 @@ Installationsanvisningar:
             <source>Your credentials are securely stored in the system keychain.</source>
             <translation>Dina inloggningsuppgifter lagras säkert i systemets nyckelring.</translation>
         </message>
-        <message>
-        <source>Automatically reload watched files</source>
-        <translation>Läs automatiskt in bevakade filer igen</translation>
-    </message>
-    <message>
-        <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.
-
-For better security, install:
-• macOS: Built-in (Keychain)
-• Windows: pip install keyring
-• Linux: pip install secretstorage</source>
-        <translation>Ingen systemnyckelring hittades. Inloggningsuppgifter lagras i en krypterad fil med ett huvudlösenord.
-
-Installera följande för bättre säkerhet:
-• macOS: Inbyggt (Nyckelring)
-• Windows: pip install keyring
-• Linux: pip install secretstorage</translation>
-    </message>
-    <message>
-        <source>Reload external changes without asking while Watch File is enabled</source>
-        <translation>Läs in externa ändringar utan att fråga när filbevakning är aktiverad</translation>
-    </message>
-    <message>
-        <source>OpenNMT model:</source>
-        <translation>OpenNMT-modell:</translation>
-    </message>
-    <message>
-        <source>Path to an OpenNMT-py model file</source>
-        <translation>Sökväg till en OpenNMT-py-modellfil</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>ProjectDockWidget</name>
         <message>
@@ -5800,13 +5356,7 @@ Installera följande för bättre säkerhet:
             <source>✗ Push failed: %1</source>
             <translation>✗ Push misslyckades: %1</translation>
         </message>
-        <message>
-        <source>✓ Downloaded at %1
-Saved to: %2</source>
-        <translation>✓ Hämtad %1
-Sparad i: %2</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>ToolbarCustomizeDialog</name>
         <message>
@@ -6172,25 +5722,7 @@ Sparad i: %2</translation>
             <source>Subtitle files (*.*)</source>
             <translation>Undertextfiler (*.*)</translation>
         </message>
-        <message>
-        <source>Could not extract the subtitle:
-%s</source>
-        <translation>Det gick inte att extrahera undertexten:
-%s</translation>
-    </message>
-    <message>
-        <source>Could not read the video file:
-%s</source>
-        <translation>Det gick inte att läsa videofilen:
-%s</translation>
-    </message>
-    <message>
-        <source>The subtitle has been saved to:
-%s</source>
-        <translation>Undertexten har sparats i:
-%s</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>WelcomeDialog</name>
         <message>
@@ -6301,19 +5833,7 @@ Sparad i: %2</translation>
             <source>Version %s</source>
             <translation>Version %s</translation>
         </message>
-        <message>
-        <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,
-Android XML, ARB, PHP, and YAML files.
-
-Features include AI-powered pre-translation, translation memory,
-quality assurance, spell checking, and platform integration.</source>
-        <translation>LinguaEdit är en modern översättningsredigerare för PO-, TS-, JSON-, XLIFF-,
-Android XML-, ARB-, PHP- och YAML-filer.
-
-Funktionerna omfattar AI-baserad föröversättning, översättningsminne,
-kvalitetskontroll, stavningskontroll och plattformsintegration.</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>WorldMapWidget</name>
         <message>
@@ -6440,12 +5960,20 @@ kvalitetskontroll, stavningskontroll och plattformsintegration.</translation>
             <translation>&lt;b&gt;Källtext:&lt;/b&gt;</translation>
         </message>
         <message>
+            <source>&lt;b&gt;Source text&lt;/b&gt;</source>
+            <translation>&lt;b&gt;Källtext&lt;/b&gt;</translation>
+        </message>
+        <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
             <translation>&lt;b&gt;Förslag&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
             <translation>&lt;b&gt;Översättning:&lt;/b&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;b&gt;Translation&lt;/b&gt;</source>
+            <translation>&lt;b&gt;Översättning&lt;/b&gt;</translation>
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
@@ -6676,35 +6204,4 @@ Ny version: %s</translation>
             <translation>Påminn mig senare</translation>
         </message>
     </context>
-<context>
-    <name>PomodoroDialog</name>
-    <message>
-        <source>Focus minutes:</source>
-        <translation>Fokusminuter:</translation>
-    </message>
-    <message>
-        <source>Pause</source>
-        <translation>Pausa</translation>
-    </message>
-    <message>
-        <source>Pomodoro Timer</source>
-        <translation>Pomodoro-timer</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Återställ</translation>
-    </message>
-    <message>
-        <source>Resume</source>
-        <translation>Fortsätt</translation>
-    </message>
-    <message>
-        <source>Start</source>
-        <translation>Starta</translation>
-    </message>
-    <message>
-        <source>Time for a break!</source>
-        <translation>Dags för en paus!</translation>
-    </message>
-</context>
 </TS>

@@ -3,6708 +3,6203 @@
         <name>AIReviewDialog</name>
         <message>
             <source>AI Translation Review</source>
-            <translation>Oversettelsesanmeldelse av AI</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Analysis</source>
-            <translation>Analyse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Analyzing translation...</source>
-            <translation>Analysere oversettelse...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Apply Suggestion</source>
-            <translation>Søke forslag</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Score:</source>
-            <translation>Poeng:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Error</source>
-            <translation>Feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Analysis error: </source>
-            <translation>Analysefeil:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Improvement suggestions:</source>
-            <translation>Forbedringsforslag:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Explanation:</source>
-            <translation>Forklaring:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No specific suggestions.</source>
-            <translation>Ingen konkrete forslag.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Could not analyze translation: </source>
-            <translation>Kunne ikke analysere oversettelse:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source text:</source>
-            <translation>Kildetekst:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Text to Review</source>
-            <translation>Tekst til anmeldelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation:</source>
-            <translation>Oversettelse:</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>AchievementManager</name>
         <message>
             <source>Complete 10 translations</source>
-            <translation>Komplett 10 oversettelser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Complete 100 translations</source>
-            <translation>Komplette 100 oversettelser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Complete 1000 translations</source>
-            <translation>Komplette 1000 oversettelser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Complete 50 translations without using auto-translate</source>
-            <translation>Fullfør 50 oversettelser uten å bruke auto-translate</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Complete your first translation</source>
-            <translation>Fullfør din første oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Completionist</source>
-            <translation>Fullføringsarbeider</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Dedicated Translator</source>
-            <translation>Dedikert oversetter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Early Bird</source>
-            <translation>Tidlig fugl</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>First Steps</source>
-            <translation>Første steg</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Format Explorer</source>
-            <translation>Formater Explorer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fully translate a file (100% complete)</source>
-            <translation>Fullstendig oversett en fil (100% comluth)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Getting Into Rhythm</source>
-            <translation>Komme inn i rytmen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Getting Started</source>
-            <translation>Komme i gang</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Linguistic Expert</source>
-            <translation>Språkekspert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Night Owl</source>
-            <translation>Natt Owl</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Perfectionist</source>
-            <translation>Perfeksjonist</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Polyglot</source>
-            <translation>Polyglot</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Speed Demon</source>
-            <translation>Speed Demon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translate 50 strings in one hour</source>
-            <translation>Oversett 50 strenger på én time</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translate after 10 PM</source>
-            <translation>Oversett etter 10 PM</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translate before 8 AM</source>
-            <translation>Oversett før 8 AM</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translate for 3 days in a row</source>
-            <translation>Oversett i 3 dager på rad</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translate for 30 days in a row</source>
-            <translation>Oversett i 30 dager på rad</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translate for 7 days in a row</source>
-            <translation>Oversett i 7 dager på rad</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Master</source>
-            <translation>Oversettelsesmester</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unstoppable</source>
-            <translation>Ustoppelig</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Week Warrior</source>
-            <translation>Ukekriger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Work with 3 different languages</source>
-            <translation>Arbeid med 3 forskjellige språk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Work with 5 different file formats</source>
-            <translation>Arbeid med 5 forskjellige filformater</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Work with 5 different languages</source>
-            <translation>Arbeid med 5 forskjellige språk</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>AchievementWidget</name>
         <message>
             <source>Unlocked: {}</source>
-            <translation>Låst opp: {}</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>AchievementsDialog</name>
         <message>
             <source>Achievement Progress</source>
-            <translation>Oppnåelsesframgang</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Achievements</source>
-            <translation>Oppnåelser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>All</source>
-            <translation>Alle</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Locked</source>
-            <translation>Låst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Overall Progress:</source>
-            <translation>Samlet fremgang:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Statistics</source>
-            <translation>Statistikk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translations: {0} | Streak: {1} days | Languages: {2}</source>
-            <translation>Oversettelser: {0} | Streak: {1} dager | Språk: {2}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unlocked</source>
-            <translation>Låst opp</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>BatchEditDialog</name>
         <message>
             <source>Accept all fuzzy translations</source>
-            <translation>Godta alle uklare oversettelser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>After</source>
-            <translation>Etter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Apply Changes</source>
-            <translation>Bruk endringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Apply changes to %d entries?</source>
-            <translation>Bruk endringer i %d-oppføringer?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Batch Edit</source>
-            <translation>Masseredigering</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Before</source>
-            <translation>Før</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Case sensitive</source>
-            <translation>Case sensitiv</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Clear fuzzy flag from all translations</source>
-            <translation>Fjerne fuzzy flagg fra alle oversettelser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Completed successfully. %d entries modified.</source>
-            <translation>Ferdig. %d-oppføringer endret.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Completed with %d errors. %d entries modified.</source>
-            <translation>Ferdig med %d feil. %d-oppføringer endret.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Confirm Changes</source>
-            <translation>Bekreft endringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy Source</source>
-            <translation>Kopier kilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy source text to empty translation fields.</source>
-            <translation>Kopier kildetekst til tomme oversettelsesfelt.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy source to empty translations</source>
-            <translation>Kopier kilde til tomme oversettelser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Entry</source>
-            <translation>Inngang</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Find:</source>
-            <translation>Finn:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy Operations</source>
-            <translation>Fuzzy operasjoner</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy: </source>
-            <translation>- Fuzzy:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Mark all translations as fuzzy</source>
-            <translation>Merk alle oversettelser som uklare</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No</source>
-            <translation>Nei</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Operation</source>
-            <translation>Operasjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Options</source>
-            <translation>Alternativer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Please enter text to find.</source>
-            <translation>Skriv inn tekst for å finne.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Preview</source>
-            <translation>Forhåndsvisning</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Processing...</source>
-            <translation>Bearbeiding...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Regular expression</source>
-            <translation>Regulært uttrykk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Replace:</source>
-            <translation>Bytt ut:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Search &amp; Replace</source>
-            <translation>Søk og erstatt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source Copy</source>
-            <translation>Kildekopi</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Text change</source>
-            <translation>Tekstendring</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Warning</source>
-            <translation>Advarsel</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Yes</source>
-            <translation>Ja</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>BatchTranslateDialog</name>
         <message>
             <source> (API key)</source>
-            <translation>(API-nøkkel)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%v / %m</source>
-            <translation>%v / %m</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>All entries are already translated.</source>
-            <translation>Alle innlegg er allerede oversatt.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Apply Results</source>
-            <translation>Søkeresultater</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Batch Machine Translate</source>
-            <translation>Batch Machine Oversett</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Cancel Translation</source>
-            <translation>Avbryt oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Cancelling…</source>
-            <translation>Avbryter...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Done. %d translated, %d errors.</source>
-            <translation>Ferdig. %d oversatt, %d feil.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Engine:</source>
-            <translation>Motor:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Error</source>
-            <translation>Feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Mark results as fuzzy / needs work</source>
-            <translation>Merk resultater som uklare / behov arbeid</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Nothing to Translate</source>
-            <translation>Ingenting å oversette</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pending</source>
-            <translation>Venter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source</source>
-            <translation>Kilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source language:</source>
-            <translation>Kildespråk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Status</source>
-            <translation>Status</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Target language:</source>
-            <translation>Målspråk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translate All</source>
-            <translation>Oversett alle</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translating…</source>
-            <translation>Omsetter...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation</source>
-            <translation>Oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Settings</source>
-            <translation>Oversettelsesinnstillinger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d min %d s remaining</source>
-            <translation>%d min %d er igjen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s</source>
-            <translation>%d av %d strenger · %.1f strenger/s · %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s remaining</source>
-            <translation>%d av %d strenger · %.1f strenger/s · %s gjenværende</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d s remaining</source>
-            <translation>%d er igjen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;%d&lt;/b&gt; untranslated strings out of &lt;b&gt;%d&lt;/b&gt; total.</source>
-            <translation>&lt;b&gt;%d&lt;/b&gt;UOUtranslaterte strenger ut av &lt;b&gt;Z%d&lt;/b&gt;ZXXXXXXXQPLACEHOLDER5QXZXZ totalt.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Completed %d strings in %d s</source>
-            <translation>Ferdige %d strenger i %d s</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>CollapsibleSidePanel</name>
         <message>
             <source>Ctx</source>
-            <translation>Ctx</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Info</source>
-            <translation>Informasjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pre</source>
-            <translation>Pre</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Ref</source>
-            <translation>Ref</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>TM</source>
-            <translation>TM</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Toggle side panel</source>
-            <translation>Bytt sidepanelet</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>ConcordanceDialog</name>
         <message>
             <source>Concordance Search</source>
-            <translation>Konkordanssøk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Double-click a row to copy translation to clipboard.</source>
-            <translation>Dobbeltklikk på en rad for å kopiere oversettelse til utklippstavle.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enter word or phrase to search in TM…</source>
-            <translation>Skriv inn ord eller uttrykk for å søke i TM...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File</source>
-            <translation>Fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Score</source>
-            <translation>Poeng</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Search</source>
-            <translation>Søk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source</source>
-            <translation>Kilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation</source>
-            <translation>Oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation copied to clipboard.</source>
-            <translation>Oversettelse kopiert til utklippstavle.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>{} results found for </source>
-            <translation>{} resultater funnet for</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>ContextPanel</name>
         <message>
             <source>&lt;i&gt;MT unavailable&lt;/i&gt;</source>
-            <translation>&lt;i&gt;MT utilgjengelig&lt;/i&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;i&gt;No matches&lt;/i&gt;</source>
-            <translation>&lt;i&gt; Ingen matches&lt;/i&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;i&gt;No matching terms&lt;/i&gt;</source>
-            <translation>&lt;i&gt; Ingen matchende vilkår&lt;/i&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;i&gt;No suggestion&lt;/i&gt;</source>
-            <translation>&lt;i&gt; Ingen forslag&lt;/i&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Context</source>
-            <translation>Kontekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Glossary</source>
-            <translation>Ordliste</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Machine Translation</source>
-            <translation>Maskinoversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Memory</source>
-            <translation>Oversettelsesminne</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source: %s\nTarget: %s</source>
-            <translation>Kilde: %s\nTarget: %s</translation>
+            <translation type="unfinished"/>
         </message>
-        <message>
-        <source>Source: %s
-Target: %s</source>
-        <translation>Kilde: %s
-Target: %s</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>DashboardDialog</name>
         <message>
             <source>CSV files (*.csv)</source>
-            <translation>CSV-filer (*.csv)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export Complete</source>
-            <translation>Eksportering fullført</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export Statistics as CSV</source>
-            <translation>Eksporter statistikk som CSV</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export as CSV…</source>
-            <translation>Eksporter som CSV...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>F:%d U:%d</source>
-            <translation>F:%d U:%d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation>Uklar</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Per-Language Progress</source>
-            <translation>Per-språks fremskritt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Project Dashboard</source>
-            <translation>Prosjekt Dashboard</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Statistics exported to %s</source>
-            <translation>Statistikk eksportert til %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translated</source>
-            <translation>Oversatte</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Untranslated</source>
-            <translation>Uoversatt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;h2&gt;Project Overview&lt;/h2&gt;&lt;b&gt;Total strings:&lt;/b&gt; %d &amp;nbsp; &lt;span style=&apos;color:green&apos;&gt;Translated: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:orange&apos;&gt;Fuzzy: %d&lt;/span&gt; &amp;nbsp; &lt;span style=&apos;color:red&apos;&gt;Untranslated: %d&lt;/span&gt;</source>
-            <translation>&lt;h2&gt;Prosjektoversikt&lt;/h2&gt;&lt;b&gt;Totale strenger:&lt;/b&gt; %d&amp;nbsp;&lt;span style='color:green'&gt;Oversatt:%d&lt;/span&gt;&amp;nbsp;&lt;span style='color:orange'&gt;- Fuzzy:%d&lt;/span&gt;&amp;nbsp;&lt;span style='color:red'&gt;Uomsatt:%d&lt;/span&gt;</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>DiffDialog</name>
         <message>
             <source>Added Only</source>
-            <translation>Lagt til kun</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Added:</source>
-            <translation>Lagt til:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>All Changes</source>
-            <translation>Alle endringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Browse...</source>
-            <translation>Bla gjennom...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Change</source>
-            <translation>Endre</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Changes</source>
-            <translation>Endringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Compare Files</source>
-            <translation>Sammenlign filer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Compare Translation Files</source>
-            <translation>Sammenlign oversettelsesfiler</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Comparison</source>
-            <translation>Sammenligning</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Comparison File</source>
-            <translation>Sammenligningsfil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Comparison File:</source>
-            <translation>Sammenligningsfil:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Comparison Options</source>
-            <translation>Sammenligningsalternativer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Comparison Statistics</source>
-            <translation>Sammenligningsstatistikk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Comparison complete. %d changes found.</source>
-            <translation>Sammenligning fullført. %d endringer funnet.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Comparison failed: %s</source>
-            <translation>Sammenligning mislyktes: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Error</source>
-            <translation>Feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to load file: %s</source>
-            <translation>Klarte ikke å laste fil: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Ignore case</source>
-            <translation>Ignorere små/store</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Ignore whitespace</source>
-            <translation>Oversjå tomme tegn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Modified Only</source>
-            <translation>Endret kun</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Modified:</source>
-            <translation>Endret:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No file selected</source>
-            <translation>Ingen fil valgt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Original</source>
-            <translation>Original</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Original File</source>
-            <translation>Opprinnelig fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Original File:</source>
-            <translation>Opprinnelig fil:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Removed Only</source>
-            <translation>Fjernet kun</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Removed:</source>
-            <translation>Fjernet:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select Files to Compare</source>
-            <translation>Velg Filer som skal sammenlignes</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select Translation File</source>
-            <translation>Velg Oversettelsesfil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Show unchanged</source>
-            <translation>Vis uendret</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Show:</source>
-            <translation>Vis:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Side by Side</source>
-            <translation>Side ved side</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source Text</source>
-            <translation>Kildetekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Summary</source>
-            <translation>Sammendrag</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Total entries:</source>
-            <translation>Totalposter:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation files (*.po *.pot *.ts *.json *.xliff *.xlf);;All files (*)</source>
-            <translation>Oversettelsesfiler (*.po *.pot *.ts *.json *.xliff *.xlf);;Alle filer (*)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unchanged:</source>
-            <translation>Uendret:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unsupported file format: %s</source>
-            <translation>Filformatet er ikke støtta: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source: %s</source>
-            <translation>Kilde: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation: %s</source>
-            <translation>Oversettelse: %s</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>FFmpegMissingDialog</name>
         <message>
             <source>Cancel</source>
-            <translation>Avbryt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Browse for ffmpeg…</source>
-            <translation>For å se på ffmpeg...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>The selected file does not appear to be ffmpeg.</source>
-            <translation>Den valgte filen ser ikke ut til å være ffmpeg.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Not Found</source>
-            <translation>Ikke funnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>FFmpeg Required</source>
-            <translation>FFmpeg kreves</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>FFmpeg could still not be found in the system path.</source>
-            <translation>FFmpeg kunne fortsatt ikke finnes i systemstien.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Error</source>
-            <translation>Feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Retry</source>
-            <translation>Prøv på nytt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Installation Instructions</source>
-            <translation>Instruksjoner for installasjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Could not run the selected file.</source>
-            <translation>Kunne ikke kjøre den valgte filen.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Executable files (*)</source>
-            <translation>Eksisterende filer (*)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Invalid File</source>
-            <translation>Ugyldig fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select ffmpeg binary</source>
-            <translation>Velg ffmpeg binær</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open Download Page</source>
-            <translation>Åpne nedlastingssiden</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Ubuntu/Debian:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo apt install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Fedora:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo dnf install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Arch Linux:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo pacman -S ffmpeg&lt;/code&gt;</source>
-            <translation>&lt;b&gt;Ubuntu/Debian:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo apt install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Fedora:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo dnf install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Arch Linux:&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo pacman -S ffmpeg&lt;/code&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;macOS (Homebrew):&lt;/b&gt;&lt;br&gt;&lt;code&gt;brew install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;macOS (MacPorts):&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo port install ffmpeg&lt;/code&gt;</source>
-            <translation>&lt;b&gt;macOS (Homebrew):&lt;/b&gt;&lt;br&gt;&lt;code&gt;brew install ffmpeg&lt;/code&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;macOS (MacPorts):&lt;/b&gt;&lt;br&gt;&lt;code&gt;sudo port install ffmpeg&lt;/code&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;h3&gt;FFmpeg could not be found&lt;/h3&gt;&lt;p&gt;LinguaEdit needs &lt;b&gt;ffmpeg&lt;/b&gt; and &lt;b&gt;ffprobe&lt;/b&gt; to extract subtitles from video files.&lt;/p&gt;</source>
-            <translation>&lt;h3&gt;FFmpeg ble ikke funnet&lt;/h3&gt;&lt;p&gt;LinguaEdit behov&lt;b&gt;ffmpeg&lt;/b&gt;og&lt;b&gt;ffprobe&lt;/b&gt;å trekke ut undertekster fra videofiler.&lt;/p&gt;</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>FileHistoryDialog</name>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Date/Time</source>
-            <translation>Dato/tid</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Entry</source>
-            <translation>Inngang</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Field</source>
-            <translation>Felt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File History</source>
-            <translation>Fillogg</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Recent changes in: {}</source>
-            <translation>Nylige endringer i: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Summary</source>
-            <translation>Sammendrag</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unknown</source>
-            <translation>Ukjent</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>User</source>
-            <translation>Bruker</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>View Entry History</source>
-            <translation>Vis oppføringslogg</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>GitDiffDialog</name>
         <message>
             <source>&lt;b&gt;Added strings:&lt;/b&gt; %d</source>
-            <translation>&lt;b&gt;Adde strenger: &lt;/b&gt; %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Changed source text:&lt;/b&gt; %d</source>
-            <translation>&lt;b&gt;Anmeldt kildetekst:&lt;/b&gt; %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Changed translations:&lt;/b&gt; %d</source>
-            <translation>&lt;b&gt;Evented oversettelser:&lt;/b&gt; %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Potentially outdated:&lt;/b&gt; %d</source>
-            <translation>&lt;b&gt;Potentialt utdatert: &lt;/b&gt; %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Removed strings:&lt;/b&gt; %d</source>
-            <translation>&lt;b&gt;Fjernede strenger: &lt;/b&gt; %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;h3&gt;Comparison Results&lt;/h3&gt;</source>
-            <translation>&lt;h3&gt;Komparasjon Resultater&lt;/h3&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Added</source>
-            <translation>Lagt til</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Changes</source>
-            <translation>Endringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Compare</source>
-            <translation>Sammenlign</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Compare with commit:</source>
-            <translation>Sammenlign med forpliktelse:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Comparing %d old vs %d current entries…</source>
-            <translation>Sammenligning %d gammel vs %d gjeldende oppføringer...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Comparison complete.</source>
-            <translation>Sammenligning fullført.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Could not parse old version</source>
-            <translation>Kunne ikke tolke gammel versjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Diff with Previous Version</source>
-            <translation>Diff med forrige versjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to get file at commit %s</source>
-            <translation>Klarte ikke å få fil på forplikte %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Modified</source>
-            <translation>Endret</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>New Source</source>
-            <translation>Ny kilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No git history found</source>
-            <translation>Ingen git historie funnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Old Source</source>
-            <translation>Gamle kilder</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Outdated</source>
-            <translation>Utslått</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Removed</source>
-            <translation>Fjernet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source (new)</source>
-            <translation>Kilde (ny)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source (old)</source>
-            <translation>Kilde (gammel)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source changed</source>
-            <translation>Kilde endret</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Status</source>
-            <translation>Status</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Summary</source>
-            <translation>Sammendrag</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation</source>
-            <translation>Oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation (new)</source>
-            <translation>Oversettelse (ny)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation (old)</source>
-            <translation>Oversettelse (gammel)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Type</source>
-            <translation>Type</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>⚠ Outdated</source>
-            <translation>⚠ Utdatert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Outdated translations&lt;/b&gt; — source changed but translation stayed the same.</source>
-            <translation>&lt;b&gt;Outdatert oversettelser&lt;/b&gt; — kilde endret, men oversettelsen forble den samme.</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>GlossaryDialog</name>
         <message>
             <source>%d terms</source>
-            <translation>%d vilkår</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>A term with this source text already exists. Update it?</source>
-            <translation>Et uttrykk med denne kildeteksten eksisterer allerede. Oppdater den?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Add</source>
-            <translation>Legg til</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>All domains</source>
-            <translation>Alle domener</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>CSV Import Format</source>
-            <translation>CSV- importformat</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>CSV files (*.csv);;All files (*)</source>
-            <translation>CSV-filer (*.csv);;Alle filer (*)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Clear</source>
-            <translation>Tøm</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Confirm Delete</source>
-            <translation>Bekreft slette</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy Source</source>
-            <translation>Kopier kilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy Target</source>
-            <translation>Kopier mål</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Delete</source>
-            <translation>Slett</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Delete term </source>
-            <translation>Slett begrep</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Domain</source>
-            <translation>Domene</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Domain:</source>
-            <translation>Domene:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Duplicate Term</source>
-            <translation>Duplisert term</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Edit</source>
-            <translation>Rediger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Edit Term</source>
-            <translation>Redigere periode</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Expected CSV format:\nsource,target,notes,domain\n\n</source>
-            <translation>Forventet CSV-format:\nsource, target,noter,domene\n\n</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export CSV...</source>
-            <translation>Eksporter CSV...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export Completed</source>
-            <translation>Eksportering fullført</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export Error</source>
-            <translation>Eksportere feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export Glossary to CSV</source>
-            <translation>Eksporter ordliste til CSV</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Exported %d terms to %s</source>
-            <translation>Eksportert %d vilkår til %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to export glossary:\n%s</source>
-            <translation>Klarte ikke å eksportere ordliste:\n%s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Glossary Management</source>
-            <translation>Ordlisteledelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Import CSV...</source>
-            <translation>Importer CSV...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Import Completed</source>
-            <translation>Importering fullført</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Import Glossary from CSV</source>
-            <translation>Importere ordliste fra CSV</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Imported %d terms with %d errors.\n\nFirst errors:\n%s</source>
-            <translation>Importert%dVilkår med%dfeil.\n\nFørste feil:\n%s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No terms to export.</source>
-            <translation>Ingen vilkår for eksport.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Notes</source>
-            <translation>Noter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Notes:</source>
-            <translation>Merknader:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Search &amp; Filter</source>
-            <translation>Søk og filtrer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Search in source or target...</source>
-            <translation>Søk i kilde eller mål...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Search:</source>
-            <translation>Søk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Showing %d of %d terms</source>
-            <translation>Viser %d av %d vilkår</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source</source>
-            <translation>Kilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source text cannot be empty.</source>
-            <translation>Kildeteksten kan ikke være tom.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source:</source>
-            <translation>Kilde:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Successfully imported %d terms.</source>
-            <translation>Vellykket importerte %d-vilkår.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Target</source>
-            <translation>Mål</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Target text cannot be empty.</source>
-            <translation>Målteksten kan ikke være tom.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Target:</source>
-            <translation>Mål:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Terms</source>
-            <translation>Vilkår</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Update</source>
-            <translation>Oppdater</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Warning</source>
-            <translation>Advarsel</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Delete term &apos;%s&apos; → &apos;%s&apos;?</source>
-            <translation>Slette begrepet '%s' → '%s'?</translation>
+            <translation type="unfinished"/>
         </message>
-        <message>
-        <source>Failed to export glossary:
-%s</source>
-        <translation>Klarte ikke å eksportere ordliste:
-%s</translation>
-    </message>
-    <message>
-        <source>Imported %d terms with %d errors.
-
-First errors:
-%s</source>
-        <translation>Importert%dVilkår med%dfeil.
-
-Første feil:
-%s</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>HeaderDialog</name>
         <message>
             <source>Additional Metadata</source>
-            <translation>Tilleggsmetadata</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Charset:</source>
-            <translation>Charset:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Comment:</source>
-            <translation>Kommentar:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Content-Transfer-Encoding:</source>
-            <translation>Innholds-overføringskode:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Data Type:</source>
-            <translation>Datatype:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Define how plural forms work for this language.</source>
-            <translation>Definer hvordan flere former fungerer for dette språket.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Description:</source>
-            <translation>Beskrivelse:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Edit File Header</source>
-            <translation>Rediger filhode</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>English (2 forms)</source>
-            <translation>Engelsk (2 skjemaer)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File Metadata</source>
-            <translation>Filmetadata</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Germanic (2 forms)</source>
-            <translation>Germansk (2 former)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Language-Team:</source>
-            <translation>Språk-team:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Language:</source>
-            <translation>Språk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Last-Translator:</source>
-            <translation>Siste translator:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Metadata</source>
-            <translation>Metadata</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Original File:</source>
-            <translation>Opprinnelig fil:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>PO Headers</source>
-            <translation>PO-topptekster</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>PO-Revision-Date:</source>
-            <translation>PO-revision-Date:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>POT-Creation-Date:</source>
-            <translation>POT-Creation-Date:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Package:</source>
-            <translation>Pakke:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Plural Forms</source>
-            <translation>Flertallsformer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Project Information</source>
-            <translation>Prosjektinformasjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Project Name:</source>
-            <translation>Prosjektnavn:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Project-Id-Version:</source>
-            <translation>Prosjekt-ID-Version:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Report-Msgid-Bugs-To:</source>
-            <translation>Rapport-Msgid-Bugs-Til:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Restore Defaults</source>
-            <translation>Gjenopprett standardverdier</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Restore all fields to default values?</source>
-            <translation>Gjenopprette alle felt til standardverdier?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Romance (2 forms)</source>
-            <translation>Romantikk (2 former)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source Language:</source>
-            <translation>Kildespråk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>TS Attributes</source>
-            <translation>TS-attributter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>TS File Attributes</source>
-            <translation>TS-filattributter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>TS Version:</source>
-            <translation>TS-versjon:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Target Language:</source>
-            <translation>Målspråk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Technical Information</source>
-            <translation>Teknisk informasjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Tool ID:</source>
-            <translation>Verktøy-ID:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Tool Information</source>
-            <translation>Verktøyinformasjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Tool Name:</source>
-            <translation>Verktøynavn:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Tool Version:</source>
-            <translation>Verktøyversjon:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Information</source>
-            <translation>Oversettelsesinformasjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translator:</source>
-            <translation>Oversetter:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Version:</source>
-            <translation>Versjon:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>XLIFF Attributes</source>
-            <translation>XLIFF-attributter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>XLIFF File Attributes</source>
-            <translation>XLIFF-filattributter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>XLIFF Version:</source>
-            <translation>XLIFF versjon:</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>HistoryDialog</name>
         <message>
             <source>Added</source>
-            <translation>Lagt til</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>After:</source>
-            <translation>Etter:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Before:</source>
-            <translation>Før:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Change History</source>
-            <translation>Endre historie</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Change Type</source>
-            <translation>Endre type</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Changes</source>
-            <translation>Endringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Confirm Rollback</source>
-            <translation>Bekreft tilbakerulling</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Date/Time</source>
-            <translation>Dato/tid</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Deleted</source>
-            <translation>Slettet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Diff:</source>
-            <translation>Diff.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Field</source>
-            <translation>Felt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>History for entry {0} in {1}</source>
-            <translation>Historie for oppføring {0} i {1}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Modified</source>
-            <translation>Endret</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No changes</source>
-            <translation>Ingen endringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No history available</source>
-            <translation>Ingen historie tilgjengelig</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Rollback to This Version</source>
-            <translation>Tilbake til denne versjonen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select a history entry to see changes</source>
-            <translation>Velg en historieoppføring for å se endringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation History</source>
-            <translation>Oversettelseshistorie</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unknown</source>
-            <translation>Ukjent</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>User</source>
-            <translation>Bruker</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Are you sure you want to rollback to this version?\n\nThis will replace the current text with:\n{}</source>
-            <translation>Er du sikker på at du vil tilbake til denne versjonen?\n\nDette vil erstatte gjeldende tekst med:\n{}</translation>
+            <translation type="unfinished"/>
         </message>
-        <message>
-        <source>Are you sure you want to rollback to this version?
-
-This will replace the current text with:
-{}</source>
-        <translation>Er du sikker på at du vil tilbake til denne versjonen?
-
-Dette vil erstatte gjeldende tekst med:
-{}</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>ImagePreviewLabel</name>
         <message>
             <source>Click to select image\n(PNG, JPG, GIF)</source>
-            <translation>Klikk for å velge image\n(PNG, JPG, GIF)</translation>
+            <translation type="unfinished"/>
         </message>
-        <message>
-        <source>Click to select image
-(PNG, JPG, GIF)</source>
-        <translation>Klikk for å velge image
-(PNG, JPG, GIF)</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>LayoutSimulatorDialog</name>
         <message>
             <source>Bold</source>
-            <translation>Kåt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Dialog Button</source>
-            <translation>Dialogknapp</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Font Family:</source>
-            <translation>Skriftfamilie:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Font Settings</source>
-            <translation>Skriftinnstillinger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Highlight Overflow</source>
-            <translation>Høydeoverstrøm</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Layout Simulator</source>
-            <translation>Layoutsimulator</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Max Width:</source>
-            <translation>Maks bredde:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Menu Item</source>
-            <translation>Menyelement</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Mobile Button</source>
-            <translation>Mobilknapp</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Presets:</source>
-            <translation>Forvalg:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Size (pt):</source>
-            <translation>Størrelse (pt):</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source Text:</source>
-            <translation>Kildetekst:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source: {0}px | Translation: {1}px | Difference: {2}px ({3:.1f}%)</source>
-            <translation>Kilde:{0}px | Oversettelse:{1}px | forskjell:{2}px ({3:.1f}%</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Tablet</source>
-            <translation>Tablett</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Text Comparison</source>
-            <translation>Tekstsammenlikning</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Text:</source>
-            <translation>Oversettelsestekst:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Width Constraints</source>
-            <translation>Breddebegrenser</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>LinguaEditWindow</name>
         <message>
             <source> ⚠ long</source>
-            <translation>⚠ lang</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source> ⚠ short</source>
-            <translation>⚠ kort</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d matches</source>
-            <translation>%d treff</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d strings</source>
-            <translation>%d strenger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d strings — %d translated, %d fuzzy, %d untranslated</source>
-            <translation>%d strenger — %d oversatt, %d fuzzy, %d untranslated</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d translations applied</source>
-            <translation>%d oversettelser brukt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%p% translated</source>
-            <translation>%p% trenslatert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Catalog</source>
-            <translation>&amp;Katalog</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation>&amp;Rediger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;File</source>
-            <translation>&amp;Fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Git</source>
-            <translation>&amp;Git</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Go</source>
-            <translation>&amp;Gå</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Help</source>
-            <translation>&amp;Hjelp</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation>&amp;Åpne…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Platforms</source>
-            <translation>&amp;Plattformer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Save</source>
-            <translation>&amp;Lagre</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Tools</source>
-            <translation>Verktøy</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;View</source>
-            <translation>&amp;Vis</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Konkordanssøk&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Reference source:&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Referansekilde:&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Reference translation:&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Referanseoversettelse:&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Kildetekst:&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Forslag&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Oversettelse:&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Translator kommentar:&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
-            <translation>&lt;i&gt;(ingen treff i referanse)&lt;/i&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;i&gt;No suggestions&lt;/i&gt;</source>
-            <translation>&lt;i&gt;Ingen forslag&lt;/i&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>A macro with this name already exists.</source>
-            <translation>En makro med dette navnet eksisterer allerede.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>A translation file editor for PO, TS, JSON, XLIFF, </source>
-            <translation>En oversettelsesfil editor for PO, TS, JSON, XLIFF,</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>A translation file is currently open with unsaved changes.\n</source>
-            <translation>En oversettelsesfil er for tiden åpen med ulagrede endringer.\n</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>AI Review</source>
-            <translation>AI-anmeldelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>API Keys</source>
-            <translation>API-nøkler</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>API keys saved</source>
-            <translation>API-nøkler lagret</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>About LinguaEdit</source>
-            <translation>Om LinguaEdit</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>About Qt</source>
-            <translation>Om Qt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Achievements…</source>
-            <translation>Oppnåelser...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Add Bookmark</source>
-            <translation>Legg til bokmerke</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Add Comment</source>
-            <translation>Legg til kommentar</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Add Field</source>
-            <translation>Legg til felt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Add Tag</source>
-            <translation>Legg til etikett</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Add Tag...</source>
-            <translation>Legg til etikett...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Add Term</source>
-            <translation>Legg til term</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Add translator notes...</source>
-            <translation>Legg til oversetternotater...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Added %d entries to Translation Memory</source>
-            <translation>La til %d poster i oversettelsesminnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Added: %s → %s</source>
-            <translation>Lagt til: %s → %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>All files (*)</source>
-            <translation>Alle filer (*)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>All strings</source>
-            <translation>Alle strenger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Already recording a macro</source>
-            <translation>Allerede å spille inn en makro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Applied changes to %d entries</source>
-            <translation>Brukte endringer i %d-oppføringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Apply Machine Translation suggestion</source>
-            <translation>Bruk Machine Oversettelsesforslag</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Apply best Translation Memory match</source>
-            <translation>Bruk beste oversettelse minne match</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Approve</source>
-            <translation>Godkjenn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Attach current file</source>
-            <translation>Legg ved gjeldende fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Auto-compile enabled</source>
-            <translation>Auto-kompiler aktivert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Auto-compiled after save</source>
-            <translation>Auto-kompilert etter å ha lagret</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Auto-propagate</source>
-            <translation>Autopropager</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Auto-propagated %d entries</source>
-            <translation>Autopropagerte %d poster</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Batch Edit…</source>
-            <translation>Redigering av batch...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Batch Translate…</source>
-            <translation>Oversetter...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Bilingual export (source + translation)</source>
-            <translation>Bilingual eksport (kilde + oversettelse)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Bookmark added</source>
-            <translation>Bokmerke lagt til</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Bookmark removed</source>
-            <translation>Bokmerke fjernet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>By length</source>
-            <translation>Etter lengde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>By reference</source>
-            <translation>Etter referanse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Cancel</source>
-            <translation>Avbryt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Cannot compile: install </source>
-            <translation>Kan ikke kompilere: installer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Cannot compile: pyside6-lrelease or lrelease not found</source>
-            <translation>Kan ikke kompilere: pyside6-lrelease eller lrelease ble ikke funnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Cannot split empty entry</source>
-            <translation>Kan ikke dele tom oppføring</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Category</source>
-            <translation>Kategori</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Changes committed locally</source>
-            <translation>Endringer utført lokalt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Changes pushed successfully</source>
-            <translation>Endringer som er vellykket</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Check for updates</source>
-            <translation>Søk etter oppdateringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Clear</source>
-            <translation>Tøm</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Clear translation</source>
-            <translation>Tøm oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close Current File?</source>
-            <translation>Lukk gjeldende fil?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close Tab</source>
-            <translation>Lukk fane</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close the current file and load extracted subtitles?</source>
-            <translation>Lukk gjeldende fil og last ut ekstrahert undertekster?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Comments</source>
-            <translation>Kommentarer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Commit failed: %s</source>
-            <translation>Commit mislyktes: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Commit message:</source>
-            <translation>Commit-melding:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Commit successful. Push to remote?</source>
-            <translation>- Push til fjernkontrollen?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Committed!</source>
-            <translation>Committet!</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Commit…</source>
-            <translation>Utfør commit …</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Compare Files…</source>
-            <translation>Sammenlign filer...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Compare language…</source>
-            <translation>Sammenlign språk…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Compile</source>
-            <translation>Kompiler</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Compile error: %s</source>
-            <translation>Kompileringsfeil: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Compile not supported for %s files</source>
-            <translation>Kompilering støttes ikke for %s-filer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Compile translation</source>
-            <translation>Kompiler oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Compiled: %s</source>
-            <translation>Kompilert: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Concordance</source>
-            <translation>Concordance</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Concordance Search…</source>
-            <translation>Søk etter Concordance...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Consistency Check</source>
-            <translation>Konsistenssjekk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Consistency check</source>
-            <translation>Konsistenssjekk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Context</source>
-            <translation>Kontekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy Source</source>
-            <translation>Kopier kilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy source</source>
-            <translation>Kopier kilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy source text to translation</source>
-            <translation>Kopier kildetekst til oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy source text to translation (Ctrl+B)</source>
-            <translation>Kopier kildetekst til oversettelse (Ctrl+B)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy source to translation</source>
-            <translation>Kopier kilde til oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Could not read video file:\n%s</source>
-            <translation>Kunne ikke lese videofil:\n%s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Count</source>
-            <translation>Teller</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Crowdin</source>
-            <translation>Crowdin</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Crowdin Statistics…</source>
-            <translation>Crowdin Statistics...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Crowdin Error</source>
-            <translation>Crowdin-feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No Crowdin API key configured.\nPlease add one in Translation → API Keys…</source>
-            <translation>Ingen Crowdin API-nøkkel konfigurert.\n Vennligst legg til en i Oversettelse → API-nøkler...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Crowdin — %s</source>
-            <translation>Crowdin — %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translated: %d%% (%d/%d)</source>
-            <translation>Oversatt: %d%% (%d/%d)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Approved: %d%% (%d/%d)</source>
-            <translation>Godkjent: %d%% (%d/%d)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pull Translations</source>
-            <translation>Pull Oversettelser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Push Source</source>
-            <translation>Skyv kildetekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Current string has no translation to propagate.</source>
-            <translation>Nåværende streng har ingen oversettelse å utbrede.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Customize Toolbar…</source>
-            <translation>Tilpass verktøylinje...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Dark</source>
-            <translation>Mørke</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Date</source>
-            <translation>Dato</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Developer</source>
-            <translation>Utvikler</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Developer:</source>
-            <translation>Utvikler:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Diff</source>
-            <translation>Diff</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Diff with Previous Version…</source>
-            <translation>Fordeler med forrige versjon...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Diff…</source>
-            <translation>Diff…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Documentation</source>
-            <translation>Dokumentasjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Donate ♥</source>
-            <translation>Doner ♥</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Done and next (Ctrl+Enter)</source>
-            <translation>Ferdig og neste (Ctrl+Enter)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Edit Header…</source>
-            <translation>Rediger overskrift...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Edit file header metadata. Changes are applied when you click Save.</source>
-            <translation>Rediger filhodets metadata. Endringer brukes når du klikker Lagre.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Editor Below</source>
-            <translation>Redaktør Nedenfor</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Editor on Right</source>
-            <translation>Redaktør på høyre</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Email Translation</source>
-            <translation>E-post Oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Email Translation…</source>
-            <translation>E-post Oversettelse...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Email client opened</source>
-            <translation>E-postklient åpnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enter macro name:</source>
-            <translation>Skriv inn makronavn:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enter translator note:</source>
-            <translation>Skriv inn oversetternotat:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Entry</source>
-            <translation>Inngang</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Entry pinned</source>
-            <translation>Inngang festet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Entry split into 2 segments</source>
-            <translation>Inngang delt i 2 segmenter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Entry unpinned</source>
-            <translation>Inngang uten pinnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Error</source>
-            <translation>Feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Error loading file: %s</source>
-            <translation>Feil ved lasting av fil: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Error loading reference: %s</source>
-            <translation>Feil ved lasting av referanse: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export Error</source>
-            <translation>Eksportere feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export TMX</source>
-            <translation>Eksporter TMX</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export TMX…</source>
-            <translation>Eksporter TMX...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export report…</source>
-            <translation>Eksporter rapport…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Exported {} translation units to {}</source>
-            <translation>Eksportert {} oversettelsesenheter til {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extract Subtitles from Video…</source>
-            <translation>Utdrag undertekster fra video...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extracting</source>
-            <translation>Uttrekking</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extracting subtitles…</source>
-            <translation>Pakker ut undertekster...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extraction Failed</source>
-            <translation>Utvinning mislyktes</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to export TMX file: {}</source>
-            <translation>Klarte ikke å eksportere TMX-fil: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to import TMX file: {}</source>
-            <translation>Klarte ikke å importere TMX-fil: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to play macro</source>
-            <translation>Klarte ikke å spille makro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to run msgmerge:\n{}</source>
-            <translation>Klarte ikke å kjøre msgmerge:\n{}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Feed file to TM</source>
-            <translation>Legg fil til TM</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File</source>
-            <translation>Fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File Changed</source>
-            <translation>Filen endret</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File Header / Metadata</source>
-            <translation>Filhode / Metadata</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File metadata…</source>
-            <translation>Filmetadata…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File not found: %s</source>
-            <translation>Filen ble ikke funnet: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File order</source>
-            <translation>Filrekkefølge</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File reloaded (changed externally)</source>
-            <translation>Filen ble lastet inn på nytt (endret eksternt)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File reloaded (external change detected)</source>
-            <translation>Filen lastes på nytt (ekstern endring oppdaget)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Find &amp;&amp; Replace…</source>
-            <translation>Finn og erstatt…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Find in translations…</source>
-            <translation>Finn i oversettelser…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Find…</source>
-            <translation>Finn…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Flags</source>
-            <translation>Flagg</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Focus Mode</source>
-            <translation>Fokusmodus</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Focus mode disabled</source>
-            <translation>Fokusmodus deaktivert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Focus mode enabled - hiding completed translations</source>
-            <translation>Fokusmodus aktivert - skjule fullførte oversettelser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Format:</source>
-            <translation>Format:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Found %d subtitle track(s). Select one:</source>
-            <translation>Fant undertittelspor for undertittelen %d. Velg ett:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fullscreen</source>
-            <translation>Fullstendig</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fullscreen mode - Press Escape to exit</source>
-            <translation>Fullstendig modus - Trykk Escape for å avslutte</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation>Uklar</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy / Needs work</source>
-            <translation>Uklar / Trenger arbeid</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy diff (previous → current)</source>
-            <translation>Uklar diff (forrige → nåværende)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy:</source>
-            <translation>- Fuzzy:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy: %d</source>
-            <translation>Uklare: %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy: 0</source>
-            <translation>Fucky: 0</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Generate Report</source>
-            <translation>Opprett rapport</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Generate Report…</source>
-            <translation>Oppretter rapport...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Generated by LinguaEdit</source>
-            <translation>Generert av LinguaEdit</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Git</source>
-            <translation>Git</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Git Branches</source>
-            <translation>Git-grener</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Git Commit</source>
-            <translation>GitCommit</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Git Diff</source>
-            <translation>Git Diff</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Git Error</source>
-            <translation>Git feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Git Status</source>
-            <translation>Git-status</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Git operation error: {}</source>
-            <translation>Git operasjonsfeil: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Git operation failed: {}</source>
-            <translation>Git-operasjonen mislyktes: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>GitHub PR</source>
-            <translation>GitHub PR</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>GitHub PR…</source>
-            <translation>GitHub PR…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>GitHub Repository</source>
-            <translation>GitHub arkiv</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Glossary</source>
-            <translation>Ordliste</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Glossary / Terminology</source>
-            <translation>Ordbok / Terminologi</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Glossary Check</source>
-            <translation>Ordlistesjekk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Glossary…</source>
-            <translation>Ordliste…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>HTML (*.html);;PDF (*.pdf)</source>
-            <translation>HTML (*.html);;PDF (*.pdf)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>HTML files (*.html);;PDF files (*.pdf)</source>
-            <translation>HTML-filer (*.html);;PDF-filer (*.pdf)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Header updated</source>
-            <translation>Header oppdatert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Import Error</source>
-            <translation>Importere feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Import TMX</source>
-            <translation>Importer TMX</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Import TMX…</source>
-            <translation>Importer TMX...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Imported {} translation units</source>
-            <translation>Importerte {} oversettelsesenheter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Include fuzzy entries</source>
-            <translation>Inkluder uklare oppføringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Incomplete Subtitles</source>
-            <translation>Ufullstendig undertekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Invalid regex</source>
-            <translation>Ugyldig regulær regulær</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Issues</source>
-            <translation>Problemer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>JSON files (*.json);;All files (*)</source>
-            <translation>JSON-filer (*.json);; Alle filer (*)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Key</source>
-            <translation>Nøkkel</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Language</source>
-            <translation>Språk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Language:</source>
-            <translation>Språk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Languages</source>
-            <translation>Språk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Layout Simulator</source>
-            <translation>Layoutsimulator</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>License:</source>
-            <translation>Lisens:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Light</source>
-            <translation>Lys</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>LinguaEdit</source>
-            <translation>LinguaEdit</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Ln %d, Col %d</source>
-            <translation>Ln %d, Col %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Ln 1, Col 1</source>
-            <translation>Ln 1, Col 1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Loaded reference: %s</source>
-            <translation>Lastet referanse: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Locale:</source>
-            <translation>Locale:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>MT translation failed</source>
-            <translation>MT-oversettelse mislyktes</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Macro Exists</source>
-            <translation>Makro eksisterer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Macros</source>
-            <translation>Makroer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Main</source>
-            <translation>Hoved</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Manage API Keys…</source>
-            <translation>Administrer API- nøkler...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Manage Macros…</source>
-            <translation>Administrer makroer...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Manage Plugins…</source>
-            <translation>Administrer plugins...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Mark current entry as reviewed</source>
-            <translation>Merk gjeldende oppføring som gjennomgått</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Mark this string as fuzzy / needs review (Ctrl+U)</source>
-            <translation>Merk denne strengen som uklar / trenger anmeldelse (Ctrl+U)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Max width:</source>
-            <translation>Maks bredde:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Merge Entries…</source>
-            <translation>Merk oppføringer...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Merge with POT…</source>
-            <translation>Merk med POT...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Merged {} entries</source>
-            <translation>Mergere {}-oppføringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Message</source>
-            <translation>Melding</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Message:</source>
-            <translation>Melding:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Metadata updated</source>
-            <translation>Metadata oppdatert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Minimap</source>
-            <translation>Minimap</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Monokai</source>
-            <translation>Monokai</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Msgmerge Error</source>
-            <translation>Msgmerge feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Msgmerge Not Found</source>
-            <translation>Msgmerge ble ikke funnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Needs Review</source>
-            <translation>Behov for gjennomgang</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Needs work</source>
-            <translation>Trenger arbeid</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Next</source>
-            <translation>Neste</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Next entry</source>
-            <translation>Neste post</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Next untranslated</source>
-            <translation>Neste uoversatte</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No File</source>
-            <translation>Ingen fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No Subtitles</source>
-            <translation>Ingen undertekster</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No bookmarks set</source>
-            <translation>Ingen bokmerker satt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No changes</source>
-            <translation>Ingen endringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No embedded subtitle tracks found in this video file.</source>
-            <translation>Ingen innbygde undertittelspor funnet i denne videofilen.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No enabled macros</source>
-            <translation>Ingen aktiverte makroer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No file</source>
-            <translation>Ingen fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No file loaded</source>
-            <translation>Ingen fil lastet inn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No glossary violations found! ✓</source>
-            <translation>Ingen ordbokbrudd funnet! ✓</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No identical source strings found.</source>
-            <translation>Ingen identiske kildestrenger funnet.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No inconsistencies found! ✓</source>
-            <translation>Ingen uoverensstemmelser funnet! ✓</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No issues found</source>
-            <translation>Ingen problemer funnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No macros available</source>
-            <translation>Ingen makroer tilgjengelig</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No more fuzzy strings</source>
-            <translation>Ingen flere fuzzy strenger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No more untranslated strings</source>
-            <translation>Ingen flere uomsatte strenger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No screenshot available</source>
-            <translation>Ingen skjermbilde tilgjengelig</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No source text to review</source>
-            <translation>Ingen kildetekst å gjennomse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No terms defined</source>
-            <translation>Ingen vilkår definert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No text to check</source>
-            <translation>Ingen tekst å sjekke</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No text to play</source>
-            <translation>Ingen tekst å spille av</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No translation selected</source>
-            <translation>Ingen oversettelse valgt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No translation to preview</source>
-            <translation>Ingen oversettelse å forhåndsvise</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Nord</source>
-            <translation>Nord</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Normal Mode</source>
-            <translation>Normalmodus</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Normal sorting order</source>
-            <translation>Normal sorteringsorden</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Not a git repository</source>
-            <translation>Ikke et git-arkiv</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Notes</source>
-            <translation>Noter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>OCR Screenshot…</source>
-            <translation>OCR-skjermbilde...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>OCR extraction completed. {} strings extracted.</source>
-            <translation>OCR ekstraksjon fullført. {} strenger ekstrahert.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open</source>
-            <translation>Åpne</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open Project…</source>
-            <translation>Åpne prosjekt...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open Reference File</source>
-            <translation>Åpne referansefil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open Translation File</source>
-            <translation>Åpne oversettelsesfil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open Video</source>
-            <translation>Åpne video</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open Video…</source>
-            <translation>Åpne video...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Options</source>
-            <translation>Alternativer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>PO file merged successfully with POT file.\nPlease reload the file to see changes.</source>
-            <translation>PO-fil slått sammen med POT-fil.\n Vennligst last filen på nytt for å se endringer.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>PO files (*.po);;All files (*)</source>
-            <translation>PO-filer (*.po);;Alle filer (*)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>POT Files (*.pot)</source>
-            <translation>POT-filer (*.pot)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Platform settings…</source>
-            <translation>Plattforminnstillinger…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Play Macro</source>
-            <translation>Spill Makro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Play Translation</source>
-            <translation>Spill oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Playing translation...</source>
-            <translation>Spiller oversettelse...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Please enter recipient email</source>
-            <translation>Vennligst skriv inn mottaker e-post</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Please open a PO file first.</source>
-            <translation>Åpne en PO-fil først.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Plural: %s</source>
-            <translation>Plural: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pre-translate</source>
-            <translation>Forhåndsoversett</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pre-translated %d entries via %s</source>
-            <translation>Forhåndsoversatte %d-oppføringer via %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pre-translate…</source>
-            <translation>Forhåndsoversett…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Preferences…</source>
-            <translation>Innstillinger…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Preview</source>
-            <translation>Forhåndsvisning</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Previous</source>
-            <translation>Forrige</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Previous entry</source>
-            <translation>Forrige post</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Previous untranslated</source>
-            <translation>Forrige uoversatte</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Probing video for subtitle tracks…</source>
-            <translation>Probing video for undertittel spor...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Project Dashboard</source>
-            <translation>Prosjekt Dashboard</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Propagate Translation</source>
-            <translation>Utbred oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pull Latest</source>
-            <translation>Trekk siste</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pull from…</source>
-            <translation>Hent fra…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Push Changes</source>
-            <translation>Skyv endringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Push to…</source>
-            <translation>Send til…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>QA Profile: %s</source>
-            <translation>QA Profil: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>QA profile: Formal</source>
-            <translation>QA-profil: Formell</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>QA profile: Informal</source>
-            <translation>QA-profil: Uformell</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Quality</source>
-            <translation>Kvalitet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Quality Score</source>
-            <translation>Kvalitetsscore</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Quit</source>
-            <translation>Avslutt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Recent Files</source>
-            <translation>Nylige filer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Record Macro</source>
-            <translation>Opptak Macro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Recording macro </source>
-            <translation>Opptaksmakro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Redo</source>
-            <translation>Gjør om</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Reference</source>
-            <translation>Referanse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>References</source>
-            <translation>Referanser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Regex</source>
-            <translation>Regex</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Regex Tester</source>
-            <translation>Regex Tester</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Reject</source>
-            <translation>Avvis</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Remove Bookmark</source>
-            <translation>Fjern bokmerke</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Remove Selected</source>
-            <translation>Fjern valgte</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Replace</source>
-            <translation>Erstatt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Replace All</source>
-            <translation>Erstatt alle</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Replace with…</source>
-            <translation>Erstatt med…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Replaced in %d entries</source>
-            <translation>Bytt ut i %d-oppføringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Report Options</source>
-            <translation>Rapportere alternativer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Report a Bug</source>
-            <translation>Rapporter en feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Report error: %s</source>
-            <translation>Rapportfeil: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Report saved</source>
-            <translation>Rapport lagret</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Report saved to %s</source>
-            <translation>Rapport lagret til %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Report saved: %s</source>
-            <translation>Rapport lagret: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Review</source>
-            <translation>Gjennomgang</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Review Mode</source>
-            <translation>Anmeldelsesmodus</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Review mode disabled</source>
-            <translation>Oversiktsmodus deaktivert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Review mode enabled</source>
-            <translation>Gjennomgangsmodus aktivert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Reviewed</source>
-            <translation>Anmeldt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Root key:</source>
-            <translation>Rotnøkkel:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>SRT files (*.srt);;VTT files (*.vtt);;All files (*)</source>
-            <translation>SRT-filer (*.srt);;VTT-filer (*.vtt);;Alle filer (*)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Save</source>
-            <translation>Lagre</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Save &amp;As…</source>
-            <translation>Lagre &amp; som...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Save As…</source>
-            <translation>Lagre som...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Save Current File?</source>
-            <translation>Lagre gjeldende fil?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Save Extracted Subtitles</source>
-            <translation>Lagre utpakkede undertekster</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Save Report</source>
-            <translation>Lagre rapport</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Save error: %s</source>
-            <translation>Lagre feil: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Saved as %s</source>
-            <translation>Lagret som %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Saved!</source>
-            <translation>Lagret!</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Search</source>
-            <translation>Søk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Search TM…</source>
-            <translation>Søk i TM…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Search source and translation text…</source>
-            <translation>Søk kilde og oversettelsestekst...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select POT File</source>
-            <translation>Velg POT-fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select Subtitle Track</source>
-            <translation>Velg undertekstspor</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select at least 2 entries to merge</source>
-            <translation>Velg minst 2 oppføringer å slå sammen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select macro to play:</source>
-            <translation>Velg makro som skal spilles:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select or enter tag:</source>
-            <translation>Velg eller skriv inn etiketten:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Settings</source>
-            <translation>Innstillinger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Severity</source>
-            <translation>Alvorlighetsgrad</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Show Bookmarked Only</source>
-            <translation>Vis kun bokmerke</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Show Pinned First</source>
-            <translation>Vis pinned først</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Showing all entries</source>
-            <translation>Viser alle oppføringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Showing only bookmarked entries</source>
-            <translation>Viser kun bokmerkede oppføringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Showing pinned entries first</source>
-            <translation>Viser festede oppføringer først</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Side-by-Side View</source>
-            <translation>Side-by-Side-visning</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Sidebar</source>
-            <translation>Sidekolonne</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Simple Mode</source>
-            <translation>Enkelt modus</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Solarized Dark</source>
-            <translation>Solarisert Mørk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source</source>
-            <translation>Kilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source A → Z</source>
-            <translation>Kilde A → Z</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source Z → A</source>
-            <translation>Kilde Z → A</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source language:</source>
-            <translation>Kildespråk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source term:</source>
-            <translation>Kildeord:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source text</source>
-            <translation>Kildetekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source:</source>
-            <translation>Kilde:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Spell check current</source>
-            <translation>Stavekontroll</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Spelling issues:\n%s</source>
-            <translation>Staveproblemer:\n%s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Split Entry…</source>
-            <translation>Del oppføringen...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Stacked View</source>
-            <translation>Stablet visning</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Statistics</source>
-            <translation>Statistikk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Statistics…</source>
-            <translation>Statistikk…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Status</source>
-            <translation>Status</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Status…</source>
-            <translation>Status…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>String Info</source>
-            <translation>Strenginformasjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Subject:</source>
-            <translation>Emne:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Success</source>
-            <translation>Suksess</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Summary by Category</source>
-            <translation>Sammendrag etter kategori</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Switch branch…</source>
-            <translation>Bytt gren…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>System Default</source>
-            <translation>Systemstandard</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>TM / Suggestions</source>
-            <translation>TM / Forslag</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>TMX</source>
-            <translation>TMX</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>TMX Export</source>
-            <translation>TMX- eksport</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>TMX Files (*.tmx)</source>
-            <translation>TMX-filer (*.tmx)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>TMX Import</source>
-            <translation>TMX import</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>TS files (*.ts);;All files (*)</source>
-            <translation>TS-filer (*.ts);;Alle filer (*)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>TTS Error</source>
-            <translation>TTS-feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Tag filter removed</source>
-            <translation>Taggfilter fjernet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Tags</source>
-            <translation>Tags</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Target language:</source>
-            <translation>Målspråk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Target term:</source>
-            <translation>Målbegrep:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Text-to-speech failed: {}</source>
-            <translation>Tekst til speech mislyktes: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>The current file has unsaved changes.\nDo you want to save before continuing?</source>
-            <translation>Den gjeldende filen har ulagrede endringer.\n Vil du lagre før du fortsetter?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>The file </source>
-            <translation>Filen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>The file has been changed externally. Reload?</source>
-            <translation>Filen er endret eksternt. Last på nytt?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Theme</source>
-            <translation>Tema</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Theme changed to %s</source>
-            <translation>Tema endret til %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>This feature only works with PO files.</source>
-            <translation>Denne funksjonen fungerer kun med PO-filer.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Time interval</source>
-            <translation>Tidsintervall</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Time:</source>
-            <translation>Tid:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>To:</source>
-            <translation>Til:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Toggle fuzzy/needs work flag</source>
-            <translation>Slå av uklar/behov arbeidsflagg</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Total</source>
-            <translation>Totalt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Total entries:</source>
-            <translation>Totalposter:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Transifex</source>
-            <translation>Transifex</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translated</source>
-            <translation>Oversatte</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translated via %s</source>
-            <translation>Oversatt via %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translated:</source>
-            <translation>Oversatt:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translated: %d</source>
-            <translation>Oversatt: %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translated: 0</source>
-            <translation>Oversatt: 0</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation</source>
-            <translation>Oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation A → Z</source>
-            <translation>Oversettelse A → Z</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Engine</source>
-            <translation>Oversettelsesmotor</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>API key:</source>
-            <translation>API-nøkkel:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Auto-detect</source>
-            <translation>Auto-detekter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enter API key</source>
-            <translation>Skriv inn API-nøkkel</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Not required for free engines</source>
-            <translation>Ikke nødvendig for gratis motorer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation History…</source>
-            <translation>Oversettelseshistorie...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Map…</source>
-            <translation>Oversettelseskart...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Report</source>
-            <translation>Oversettelsesrapport</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Z → A</source>
-            <translation>Oversettelse Z → A</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation preview will appear here</source>
-            <translation>Oversettelsesvisning vil vises her</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation rolled back</source>
-            <translation>Oversettelse rullet tilbake</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation updated from AI review</source>
-            <translation>Oversettelse oppdatert fra AI-anmeldelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation:</source>
-            <translation>Oversettelse:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Undo</source>
-            <translation>Angre</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unicode Inspector</source>
-            <translation>Unicode-inspektør</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unknown</source>
-            <translation>Ukjent</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unsaved Changes</source>
-            <translation>Ulagrede endringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unsupported file type: %s</source>
-            <translation>Ikke støtta filtype: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Untitled</source>
-            <translation>Uten navn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Untranslated</source>
-            <translation>Uoversatt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Untranslated/errors first</source>
-            <translation>Uomsatte/feil først</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Untranslated:</source>
-            <translation>Uomsatt:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Untranslated: %d</source>
-            <translation>Ikke translatert: %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Untranslated: 0</source>
-            <translation>Uomsatt: 0</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Up to date</source>
-            <translation>Opp til dato</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Update Available</source>
-            <translation>Oppdatering tilgjengelig</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Updated {} translation</source>
-            <translation>Oppdatert {} oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Validate</source>
-            <translation>Valider</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Validate (Lint)</source>
-            <translation>Valider (Lint)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Value</source>
-            <translation>Verdi</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Version:</source>
-            <translation>Versjon:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Video</source>
-            <translation>Video</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Video file</source>
-            <translation>Videofil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Video files (*.mkv *.mp4 *.avi *.mov *.webm *.flv *.wmv *.ogv);;All files (*)</source>
-            <translation>Videofiler (*.mkv *.mp4 *.avi *.mov *.webm *.flv *.wmv *.ogv);;Alle filer (*)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Warnings</source>
-            <translation>Advarsler</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Watch File</source>
-            <translation>Se på fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Watch mode disabled</source>
-            <translation>Seingsmodus deaktivert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Watch mode enabled - file changes will be detected</source>
-            <translation>Watch mode aktivert - filendringer vil bli oppdaget</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Weblate</source>
-            <translation>Weblate</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Website:</source>
-            <translation>Nettsted:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>With warnings</source>
-            <translation>Med advarsler</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Words: %d | Chars: %d | Source: %dw%s</source>
-            <translation>Ord:%dChars:%d| Kilde:%dw%s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Would you like to extract subtitles from this video?</source>
-            <translation>Vil du uttrekke undertekster fra denne videoen?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Wrong File Type</source>
-            <translation>Feil filtype</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>XLIFF files (*.xlf *.xliff);;All files (*)</source>
-            <translation>XLIFF-filer (*.xlf *.xliff);;Alle filer (*)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Zen Mode</source>
-            <translation>Zen-modus</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>\n\nErrors:\n{}</source>
-            <translation>\n\nErrors:\n{}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>lrelease error: %s</source>
-            <translation>lanseringsfeil: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>msgfmt error: %s</source>
-            <translation>msgfmt feil: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>msgmerge command not found. Please install gettext tools.</source>
-            <translation>kommandoen msgmerge ikke funnet. Installer gettext- verktøy.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>msgmerge failed:\n{}</source>
-            <translation>msgmerge mislykkes: \n{}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>translated</source>
-            <translation>oversatt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>words</source>
-            <translation>ord</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>{} chars | {} words | Source: {} chars</source>
-            <translation>{} tegn ® {} ord ® Kilde: {} tegn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>… and %d more</source>
-            <translation>... og %d mer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>⚠️ Toggle Fuzzy</source>
-            <translation>⚠️ Bytt Fuzzy</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✅ Mark Reviewed</source>
-            <translation>✅ Mark Anmeldt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✓ No spelling issues found</source>
-            <translation>✓ Ingen staveproblemer funnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>💬 Comment</source>
-            <translation>💬 Kommentar</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>💾 Apply TM #1</source>
-            <translation>💾 Bruk TM #1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>📋 Copy Source</source>
-            <translation>📋 Kopier kilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>📌 Pin Entry</source>
-            <translation>📌 Fest oppføring</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>📌 Unpin Entry</source>
-            <translation>📌 Unpin-inngang</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>🔊 Play Translation</source>
-            <translation>🔊 Spill oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>🤖 Apply MT</source>
-            <translation>🤖 Bruk MT</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>DeepL formality:</source>
-            <translation>DeepL-formalitet:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>OpenAI model:</source>
-            <translation>OpenAI-modell:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Anthropic model:</source>
-            <translation>Antropic modell:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>MS Azure region:</source>
-            <translation>MS Azure-regionen:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>AWS Secret Key:</source>
-            <translation>AWS hemmelig nøkkel:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>AWS Region:</source>
-            <translation>AWS Region:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>ID: %1</source>
-            <translation>ID: %1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>State: %1</source>
-            <translation>Tilstand: %1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation: %1</source>
-            <translation>Oversettelse: %1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d min %d s remaining</source>
-            <translation>%d min %d er igjen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d of %d entries (%d%%) have no translation.\n\nUntranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.\n\nSave anyway?</source>
-            <translation>%dav%dinnlegg (%d%%) har ingen oversettelse.\n\nUomsette oppføringer vil bli merket og lagret med kildeteksten som reserveverdi, slik at de fortsatt vil vise seg under avspillingen. Når de åpnes opp igjen i LinguaEdit, vil de bli vist som uomsatte.\n\n- Spar uansett?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s</source>
-            <translation>%d av %d strenger · %.1f strenger/s · %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d of %d strings · %.1f strings/s · %s remaining</source>
-            <translation>%d av %d strenger · %.1f strenger/s · %s gjenværende</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d s remaining</source>
-            <translation>%d er igjen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;p&gt;LinguaEdit is free software.&lt;/p&gt;&lt;p&gt;If you find it useful, consider supporting development:&lt;/p&gt;&lt;p&gt;❤️ &lt;b&gt;GitHub Sponsors:&lt;/b&gt; &lt;a href=&apos;https://github.com/sponsors/yeager&apos;&gt;github.com/sponsors/yeager&lt;/a&gt;&lt;/p&gt;&lt;p&gt;🇸🇪 &lt;b&gt;Swish:&lt;/b&gt; +46702526206 — &lt;a href=&apos;swish://payment?payee=0702526206&amp;message=LinguaEdit&apos;&gt;Öppna Swish&lt;/a&gt;&lt;/p&gt;</source>
-            <translation>&lt;p&gt;LinguaEdit er gratis programvare.&lt;/p&gt;&lt;p&gt;Hvis du finner det nyttig, bør du vurdere å støtte utviklingen:&lt;/p&gt;&lt;p&gt;❤️&lt;b&gt;GitHub-sponsorer:&lt;/b&gt; &lt;a href='https://github.com/sponsors/yeager'&gt;Github.com/Sponsorer/yeager&lt;/a&gt;&lt;/p&gt;&lt;p&gt;🇸🇪&lt;b&gt;Svisk:&lt;/b&gt;+46702526206 —&lt;a href='swish://payment?payee=0702526206&amp;message=LinguaEdit'&gt;Öppna Swish&lt;/a&gt;&lt;/p&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Cannot compile: install &apos;polib&apos; or &apos;gettext&apos; (msgfmt)</source>
-            <translation>Kan ikke kompilere: installer 'polib' eller 'gettext' (msgfmt)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No untranslated entries</source>
-            <translation>Ingen uomsatte oppføringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pre-translated %d entries via %s (%d errors)</source>
-            <translation>Pre-translaterte %d-oppføringer via %s (%d-feil)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pre-translated %d entries via %s (%d errors — last: %s)</source>
-            <translation>Forhåndstranslaterte %d-oppføringer via %s (%d-feil — siste: %s)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pre-translated %d of %d entries via %s (cancelled)</source>
-            <translation>Forhåndstranslatert %d av %d-oppføringer via %s (kancellet)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pre-translated %d of %d entries via %s (cancelled, %d errors — last: %s)</source>
-            <translation>Pre-translatert %d av %d-oppføringer via %s (kancellet, %d-feil — siste: %s)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pre-translate cancelled — no translations made</source>
-            <translation>Forhåndstranslatert kansellert — ingen oversettelser gjort</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pre-translating…</source>
-            <translation>Forhåndsoversettelse...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Error</source>
-            <translation>Oversettelsesfeil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Error translating string %d of %d:</source>
-            <translation>Feil ved oversettelse av streng %d av %d:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Skip All Errors</source>
-            <translation>Hopp over alle feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Continue</source>
-            <translation>Fortsett</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Stop</source>
-            <translation>Stopp</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Recording macro &apos;{}&apos;...</source>
-            <translation>Opptaksmakro '{}'...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>The file &apos;%s&apos; has unsaved changes.\nDo you want to save before closing?</source>
-            <translation>Filen '%s' har u lagret endringer.\n Vil du spare før du lukker?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>LinguaEdit — %s</source>
-            <translation>LinguaEdit — %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Backend: %s</source>
-            <translation>Motor: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source: \&quot;%s\&quot;\n  Entries: %s\n  Translations: %s\n</source>
-            <translation>Kilde: \"%s""\nInnlegg:%s\nOversettelser:%s\n</translation>
+            <translation type="unfinished"/>
         </message>
     <message>
             <source>Source: %s\nTarget: %s</source>
-            <translation>Kilde: %s\nTarget: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%s\n\nAdd a new term or check file?</source>
-            <translation>%s\n\nLegg til et nytt begrep eller sjekk fil?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File: %s\nEntries: %d</source>
-            <translation>Fil: %s\nENTER: %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Found %d inconsistencies:\n\n</source>
-            <translation>Funnet %d uoverensstemmelser: \n\n</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Weblate Statistics…</source>
-            <translation>Weblate Statistics...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No Weblate API key or server URL configured.\nPlease add them in Translation → API Keys…</source>
-            <translation>Ingen Weblate API-nøkkel eller server URL konfigurert.\n Legg dem i oversettelse → API-nøkler...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Weblate Error</source>
-            <translation>Weblate-feil</translation>
+            <translation type="unfinished"/>
+        </message>
+        <message>
+            <source>Weblate</source>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Weblate — %s</source>
-            <translation>Weblate — %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>  (fuzzy: %d)</source>
-            <translation>(Spill: %d)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Weblate Server URL:</source>
-            <translation>URL til Weblate Server:</translation>
+            <translation type="unfinished"/>
         </message>
-    <message><source>No API Key</source><translation>Ingen API-nøkkel</translation></message><message><source>No Transifex API key configured.
-Please add one in Translation → API Keys…</source><translation>Ingen Transifex API-nøkkel konfigurert.
- Vennligst legg til en i Oversettelse → API-nøkler...</translation></message><message><source>No language statistics found.</source><translation>Ingen språkstatistikk funnet.</translation></message><message><source>No organizations found.</source><translation>Ingen organisasjoner funnet.</translation></message><message><source>No projects found.</source><translation>Ingen prosjekter funnet.</translation></message><message><source>Organization:</source><translation>Organisasjon:</translation></message><message><source>Project:</source><translation>Prosjekt:</translation></message><message><source>Select Organization</source><translation>Velg organisasjon</translation></message><message><source>Select Project</source><translation>Velg prosjekt</translation></message><message><source>Transifex Error</source><translation>Transifex-feil</translation></message><message><source>Transifex Statistics…</source><translation>Transifex-statistikk...</translation></message><message><source>Transifex — %s</source><translation>Transifex — %s</translation></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation>Oversettelsesstatistikk for &lt;b&gt;Z%s&lt;/b&gt;:</translation></message>    <message>
-        <source>
-
-Errors:
-{}</source>
-        <translation>
-
-Feil:
-{}</translation>
-    </message>
-    <message>
-        <source>%d of %d entries (%d%%) have no translation.
-
-Untranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.
-
-Save anyway?</source>
-        <translation>%dav%dinnlegg (%d%%) har ingen oversettelse.
-
-Uomsette oppføringer vil bli merket og lagret med kildeteksten som reserveverdi, slik at de fortsatt vil vise seg under avspillingen. Når de åpnes opp igjen i LinguaEdit, vil de bli vist som uomsatte.
-
-- Spar uansett?</translation>
-    </message>
-    <message>
-        <source>%s
-
-Add a new term or check file?</source>
-        <translation>%s
-
-Legg til et nytt begrep eller sjekk fil?</translation>
-    </message>
-    <message>
-        <source>Approved</source>
-        <translation>Godkjent</translation>
-    </message>
-    <message>
-        <source>Back-translating…</source>
-        <translation>Tilbake-omsette...</translation>
-    </message>
-    <message>
-        <source>Back-translation Error</source>
-        <translation>Tilbaketranslasjonsfeil</translation>
-    </message>
-    <message>
-        <source>Back-translation Verification</source>
-        <translation>Tilbake-translasjon Verifisering</translation>
-    </message>
-    <message>
-        <source>By context</source>
-        <translation>I kontekst</translation>
-    </message>
-    <message>
-        <source>Could not read video file:
-%s</source>
-        <translation>Kunne ikke lese videofil:
-%s</translation>
-    </message>
-    <message>
-        <source>Failed to run msgmerge:
-{}</source>
-        <translation>Klarte ikke å kjøre msgmerge:
-{}</translation>
-    </message>
-    <message>
-        <source>File: %s
-Entries: %d</source>
-        <translation>Fil: %s
-ENTER: %d</translation>
-    </message>
-    <message>
-        <source>Found %d inconsistencies:
-
-</source>
-        <translation>Funnet%dUoverensstemmelser:
-
-</translation>
-    </message>
-    <message>
-        <source>Help translate:</source>
-        <translation>Hjelp med å oversette:</translation>
-    </message>
-    <message>
-        <source>Issues:</source>
-        <translation>Problemene:</translation>
-    </message>
-    <message>
-        <source>Made %d replacements</source>
-        <translation>Laget %d erstatninger</translation>
-    </message>
-    <message>
-        <source>Needs review</source>
-        <translation>Behov for vurdering</translation>
-    </message>
-    <message>
-        <source>No Crowdin API key configured.
-Please add one in Translation → API Keys…</source>
-        <translation>Ingen Crowdin API-nøkkel konfigurert.
- Vennligst legg til en i Oversettelse → API-nøkler...</translation>
-    </message>
-    <message>
-        <source>No Weblate API key or server URL configured.
-Please add them in Translation → API Keys…</source>
-        <translation>Ingen Weblate API-nøkkel eller server URL konfigurert.
- Legg dem i oversettelse → API-nøkler...</translation>
-    </message>
-    <message>
-        <source>No entry selected</source>
-        <translation>Ingen oppføring valgt</translation>
-    </message>
-    <message>
-        <source>No matches found</source>
-        <translation>Ingen treff funnet</translation>
-    </message>
-    <message>
-        <source>PO file merged successfully with POT file.
-Please reload the file to see changes.</source>
-        <translation>PO-fil slått sammen med POT-fil.
- Vennligst last filen på nytt for å se endringer.</translation>
-    </message>
-    <message>
-        <source>Pomodoro Timer…</source>
-        <translation>Pomodoro Timer...</translation>
-    </message>
-    <message>
-        <source>Quality score:</source>
-        <translation>Kvalitetsscore:</translation>
-    </message>
-    <message>
-        <source>Rejected</source>
-        <translation>Avvist</translation>
-    </message>
-    <message>
-        <source>Review status: %s</source>
-        <translation>Anmeldelsesstatus: %s</translation>
-    </message>
-    <message>
-        <source>Review status: Needs review</source>
-        <translation>Anmeldelsesstatus: Behovs anmeldelse</translation>
-    </message>
-    <message>
-        <source>Source text is read-only</source>
-        <translation>Kildeteksten er skrivebeskyttet</translation>
-    </message>
-    <message>
-        <source>Source:
-%s
-
-Back-translation:
-%s
-
-Text similarity: %.0f%%</source>
-        <translation>Kilde:
-%s
-
-Tilbake-translasjon:
-%s
-
-Tekstliknelse:%.0f%%</translation>
-    </message>
-    <message>
-        <source>Source: %s
-Target: %s</source>
-        <translation>Kilde: %s
-Target: %s</translation>
-    </message>
-    <message>
-        <source>Source: \"%s\"
-  Entries: %s
-  Translations: %s
-</source>
-        <translation>Kilde: \"%s""
-Innlegg:%s
-Oversettelser:%s
-</translation>
-    </message>
-    <message>
-        <source>Spelling issues:
-%s</source>
-        <translation>Staveproblemer:
-%s</translation>
-    </message>
-    <message>
-        <source>The current entry is untranslated</source>
-        <translation>Den aktuelle oppføringen er ikke omsatt</translation>
-    </message>
-    <message>
-        <source>The current file has unsaved changes.
-Do you want to save before continuing?</source>
-        <translation>Den gjeldende filen har ulagrede endringer.
- Vil du lagre før du fortsetter?</translation>
-    </message>
-    <message>
-        <source>The file '%s' has unsaved changes.
-Do you want to save before closing?</source>
-        <translation>Filen '%s' har u lagret endringer.
- Vil du spare før du lukker?</translation>
-    </message>
-    <message>
-        <source>Verify with Back-translation</source>
-        <translation>Kontroller med back-translation</translation>
-    </message>
-    <message>
-        <source>msgmerge failed:
-{}</source>
-        <translation>msgmerge mislyktes:
-{}</translation>
-    </message>
-    <message>
-        <source>A newer local recovery snapshot exists. Restore it?</source>
-        <translation>Et nyttere lokalt gjenvinningsbilde eksisterer. Gjenopprett det?</translation>
-    </message>
-    <message>
-        <source>Accessibility</source>
-        <translation>Tilgjengelighet</translation>
-    </message>
-    <message>
-        <source>Accessibility check</source>
-        <translation>Tilgjengelighetssjekk</translation>
-    </message>
-    <message>
-        <source>Automatic QA found %d errors. Save anyway?</source>
-        <translation>Automatiske QA funnet %d feil. Lagre uansett?</translation>
-    </message>
-    <message>
-        <source>Found %d issues:
-
-</source>
-        <translation>Funnet%dproblemer:
-
-</translation>
-    </message>
-    <message>
-        <source>Git Commit Blocked</source>
-        <translation>Git Legg til blokkert</translation>
-    </message>
-    <message>
-        <source>Health: %.1f%%
-Translated: %d/%d
-Stale: %d
-Errors: %d
-Warnings: %d
-Terminology issues: %d
-Accessibility issues: %d
-Risks: %s</source>
-        <translation>Helse:%.1f%%
-Oversatt:%d/%d
-Stale:%d
-Feil:%d
-Advarslinger:%d
-Terminologiproblemer:%d
-Tilgjengelighetsproblemer:%d
-Risiko:%s</translation>
-    </message>
-    <message>
-        <source>Inspect translation build</source>
-        <translation>Inspeksjon av oversettelsesbygg</translation>
-    </message>
-    <message>
-        <source>No accessibility issues found! ✓</source>
-        <translation>Ingen problemer funnet! ✓</translation>
-    </message>
-    <message>
-        <source>No linguaedit_*.ts catalogs found</source>
-        <translation>Ingen Linguaedit *.ts kataloger funnet</translation>
-    </message>
-    <message>
-        <source>Potential secrets were found. Nothing was staged.</source>
-        <translation>Det ble funnet potensielle hemmeligheter.</translation>
-    </message>
-    <message>
-        <source>Project Health</source>
-        <translation>Prosjekthelse</translation>
-    </message>
-    <message>
-        <source>Project health</source>
-        <translation>Prosjekthelse</translation>
-    </message>
-    <message>
-        <source>Pseudolocalize current entry</source>
-        <translation>Pseudolocaliser gjeldende oppføring</translation>
-    </message>
-    <message>
-        <source>Pseudolocalized current entry</source>
-        <translation>Pseudolokalisert gjeldende oppføring</translation>
-    </message>
-    <message>
-        <source>QA profile: Android</source>
-        <translation>QA-profil: Android</translation>
-    </message>
-    <message>
-        <source>QA profile: Qt</source>
-        <translation>QA-profil: Qt</translation>
-    </message>
-    <message>
-        <source>QA profile: Subtitles</source>
-        <translation>QA profil: Undertekster</translation>
-    </message>
-    <message>
-        <source>Quality errors</source>
-        <translation>Kvalitetsfeil</translation>
-    </message>
-    <message>
-        <source>Recover unsaved work</source>
-        <translation>Gjenopprett uløst arbeid</translation>
-    </message>
-    <message>
-        <source>Select translation catalog directory</source>
-        <translation>Velg katalog for oversettelse</translation>
-    </message>
-    <message>
-        <source>Translation Build</source>
-        <translation>Oversettelsesbygging</translation>
-    </message>
-    <message>
-        <source>none</source>
-        <translation>ingen</translation>
-    </message>
-    <message>
-        <source>OpenNMT model:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Path to an OpenNMT-py model file</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+    <message><source>No API Key</source><translation type="unfinished"/></message><message><source>No Transifex API key configured.
+Please add one in Translation → API Keys…</source><translation type="unfinished"/></message><message><source>No language statistics found.</source><translation type="unfinished"/></message><message><source>No organizations found.</source><translation type="unfinished"/></message><message><source>No projects found.</source><translation type="unfinished"/></message><message><source>Organization:</source><translation type="unfinished"/></message><message><source>Project:</source><translation type="unfinished"/></message><message><source>Select Organization</source><translation type="unfinished"/></message><message><source>Select Project</source><translation type="unfinished"/></message><message><source>Transifex Error</source><translation type="unfinished"/></message><message><source>Transifex Statistics…</source><translation type="unfinished"/></message><message><source>Transifex — %s</source><translation type="unfinished"/></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation type="unfinished"/></message></context>
     <context>
         <name>Linter</name>
         <message>
             <source>Accelerator key mismatch: source has %d, translation has %d</source>
-            <translation>Akseleratortasten feiler: kilden har %d, oversettelsen har %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Case mismatch: source starts with </source>
-            <translation>Uoverensstemmelser mellom tilfellene: kilden starter med</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Ending </source>
-            <translation>Avslutter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extra HTML/XML tags in translation: %s</source>
-            <translation>Ekstra HTML/XML tags i oversettelse: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Format specifier mismatch: %s vs %s</source>
-            <translation>Formatspesifikasjon stemmer ikke: %s mot %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation>Uklar</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Glossary inconsistency: %s</source>
-            <translation>Ordbokkonsekvens: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Inconsistent translation for </source>
-            <translation>Inkonsistent oversettelse for</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Leading whitespace mismatch</source>
-            <translation>Innledende mellomrom stemmer ikke</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Missing HTML/XML tags in translation: %s</source>
-            <translation>Mangler HTML/XML-tagger i oversettelse: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Newline count mismatch (%s vs %s)</source>
-            <translation>Antall linjeskift stemmer ikke (%s mot %s)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Python format mismatch: %s vs %s</source>
-            <translation>Python-format stemmer ikke: %s mot %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Suspicious length ratio: %sx</source>
-            <translation>Mistenkelig lengdeforhold: %sx</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Trailing whitespace mismatch</source>
-            <translation>Avsluttende mellomrom stemmer ikke</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Untranslated</source>
-            <translation>Uoversatt</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>LocaleMapDialog</name>
         <message>
             <source>Average progress</source>
-            <translation>Gjennomsnittlig fremgang</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Browse...</source>
-            <translation>Bla gjennom...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Click on a country to see details</source>
-            <translation>Klikk på et land for å se detaljer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Complete</source>
-            <translation>Fullstendig</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Countries with translations</source>
-            <translation>Land med oversettelser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Country Details</source>
-            <translation>Land detaljer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy</source>
-            <translation>Uklar</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Locale Files</source>
-            <translation>Lokale filer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Minimal</source>
-            <translation>Minimal</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Missing</source>
-            <translation>Manglende</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No translation data</source>
-            <translation>Ingen oversettelsesdata</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No translation files found in project.</source>
-            <translation>Ingen oversettelsesfiler funnet i prosjektet.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open File</source>
-            <translation>Åpne fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Partial</source>
-            <translation>Delvis</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Project Summary</source>
-            <translation>Prosjektsammendrag</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Project:</source>
-            <translation>Prosjekt:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Refresh</source>
-            <translation>Oppdater</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select Project Directory</source>
-            <translation>Velg Prosjektkatalog</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Total strings</source>
-            <translation>Totalt antall strenger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translated</source>
-            <translation>Oversatte</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Map</source>
-            <translation>Oversettelseskart</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Progress by Region</source>
-            <translation>Oversettelsesframgang etter Region</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Statistics</source>
-            <translation>Oversettelsesstatistikk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Would open: {}</source>
-            <translation>Kunne åpne: {}</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>MacroDialog</name>
         <message>
             <source>A macro with this name already exists. Please choose a different name.</source>
-            <translation>Det finnes allerede en makro med dette navnet. Velg et annet navn.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Actions:</source>
-            <translation>Handlinger:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Are you sure you want to delete the macro </source>
-            <translation>Er du sikker på at du vil slette makroen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Cannot find main window for macro playback.</source>
-            <translation>Finn ikke hovedvinduet for makroavspilling.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Delete</source>
-            <translation>Slett</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Delete Failed</source>
-            <translation>Sletting mislyktes</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Delete Macro</source>
-            <translation>Slett makro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Description:</source>
-            <translation>Beskrivelse:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Disabled</source>
-            <translation>Deaktivert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enabled:</source>
-            <translation>Aktivert:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enter macro description (optional):</source>
-            <translation>Skriv inn makrobeskrivelse (valgfritt):</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enter macro name:</source>
-            <translation>Skriv inn makronavn:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enter new name:</source>
-            <translation>Skriv inn nytt navn:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export</source>
-            <translation>Eksporter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export Error</source>
-            <translation>Eksportere feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export Failed</source>
-            <translation>Eksporten mislyktes</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export Macro</source>
-            <translation>Eksporter makro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Export Successful</source>
-            <translation>Eksportere vellykket</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to delete macro.</source>
-            <translation>Klarte ikke å slette makro.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to export macro.</source>
-            <translation>Klarte ikke å eksportere makro.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to export macro: {}</source>
-            <translation>Klarte ikke å eksportere makro: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to import macro: {}</source>
-            <translation>Klarte ikke å importere makro: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to play macro </source>
-            <translation>Klarte ikke å spille makro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to rename macro. The new name may already exist.</source>
-            <translation>Klarte ikke å endre navn på makro. Det nye navnet kan allerede eksistere.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to save the macro. No actions were recorded.</source>
-            <translation>Klarte ikke å lagre makroen. Ingen handlinger ble registrert.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Import</source>
-            <translation>Importer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Import Error</source>
-            <translation>Importere feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Import Failed</source>
-            <translation>Importering mislyktes</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Import Macro</source>
-            <translation>Importer makro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Import Successful</source>
-            <translation>Importering vellykket</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>JSON Files (*.json)</source>
-            <translation>JSON-filer (*.json)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Macro </source>
-            <translation>Makro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Macro Description</source>
-            <translation>Makro Beskrivelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Macro Details</source>
-            <translation>Makrodetaljer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Macro Exists</source>
-            <translation>Makro eksisterer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Macro Saved</source>
-            <translation>Makro lagret</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Macro exported to {}</source>
-            <translation>Makro eksportert til {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Macros</source>
-            <translation>Makroer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Manage Macros</source>
-            <translation>Administrer makroer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Name:</source>
-            <translation>Navn:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No actions recorded</source>
-            <translation>Ingen handlinger registrert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Play</source>
-            <translation>Spill</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Playback Error</source>
-            <translation>Feil ved avspilling</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Ready to record</source>
-            <translation>Klar til å registrere</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Record Macro</source>
-            <translation>Opptak Macro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Record New Macro</source>
-            <translation>Ta opp ny makro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Recording Failed</source>
-            <translation>Opptak mislykkes</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Rename</source>
-            <translation>Endre navn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Rename Failed</source>
-            <translation>Endre navn mislykkes</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Rename Macro</source>
-            <translation>Endre navn på makro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Shortcut:</source>
-            <translation>Snarvei:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Stop Recording</source>
-            <translation>Stopp opptak</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>🔴 Recording in progress...</source>
-            <translation>🔴 Opptak i gang...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>🔴 Recording... ({} actions)</source>
-            <translation>🔴 Opptak... ({}-handlinger)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Are you sure you want to delete the macro &apos;{}&apos;?</source>
-            <translation>Er du sikker på at du vil slette makroen '{}'?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to play macro &apos;{}&apos;.</source>
-            <translation>Klarte ikke å spille makroen «{}».</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Macro &apos;{}&apos; has been saved successfully.</source>
-            <translation>Macro '{}' er blitt lagret vellykket.</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>MergePreviewDialog</name>
         <message>
             <source>Merge Entries</source>
-            <translation>Slå sammen oppføringer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Original segments:</source>
-            <translation>Opprinnelige segmenter:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Preview of merged entry ({} segments):</source>
-            <translation>Forhåndsvisning av sammenslått oppføring ({}-segmenter):</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source:</source>
-            <translation>Kilde:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation:</source>
-            <translation>Oversettelse:</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>MinimapWidget</name>
         <message>
             <source>Minimap – click to jump</source>
-            <translation>Minimap – klikk for å hoppe</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>OCRDialog</name>
         <message>
             <source>Apply image preprocessing to improve OCR accuracy</source>
-            <translation>Bruke forbehandling av bilder for å forbedre OCR- nøyaktigheten</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Apply preprocessing</source>
-            <translation>Bruk forbehandling</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Assume a single column of text of variable sizes</source>
-            <translation>Oppgi en enkelt kolonne med tekst av variabel størrelser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Assume a single uniform block of text</source>
-            <translation>Sett en enkelt uniform blokk av tekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Assume a single uniform block of vertically aligned text</source>
-            <translation>Oppsøk en enkelt ensartet blokk med vertikalt innrettet tekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Automatic page segmentation with OSD</source>
-            <translation>Automatisk sidesegmentering med OSD</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Automatic page segmentation, but no OSD, or OCR</source>
-            <translation>Automatisk sidesegmentering, men ingen OSD eller OCR</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Browse Image...</source>
-            <translation>Bla gjennom bildet...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Could not load image.</source>
-            <translation>Kunne ikke laste inn bildet.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Create PO from Extracted Strings</source>
-            <translation>Opprett PO fra utdragte strenger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Error</source>
-            <translation>Feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extract Text</source>
-            <translation>Pakk ut tekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extracted Text</source>
-            <translation>Utpakket tekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to create PO file:\n{}</source>
-            <translation>Klarte ikke å opprette PO-fil:\n{}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Filter extracted strings...</source>
-            <translation>Filtrer ekstrahert strenger...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Filter:</source>
-            <translation>Filtrer:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fully automatic page segmentation, but no OSD</source>
-            <translation>Fullautomatisk sidesegmentering, men ingen OSD</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Image</source>
-            <translation>Bilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Image Files (*.png *.jpg *.jpeg *.gif *.bmp *.tiff)</source>
-            <translation>Bildefiler (*.png *.jpg *.jpeg *.gif *.bmp *.tiff)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Language:</source>
-            <translation>Språk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No Strings</source>
-            <translation>Ingen strenger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No strings selected for PO file creation.</source>
-            <translation>Ingen strenger valgt for PO-filoppretting.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>OCR Error</source>
-            <translation>OCR-feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>OCR Screenshot</source>
-            <translation>OCR-skjermbilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>OCR Settings</source>
-            <translation>OCR-innstillinger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Orientation and script detection (OSD) only</source>
-            <translation>Bare orientering og skriptdeteksjon (OSD)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>PO Files (*.po)</source>
-            <translation>PO-filer (*.po)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>PO file created successfully:\n{}</source>
-            <translation>PO-fil opprettet med suksess:\n{}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Page Segmentation:</source>
-            <translation>Sidesegmentering:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Raw OCR Output</source>
-            <translation>Rå OCR-utgang</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Raw line. Treat the image as a single text line, bypassing hacks</source>
-            <translation>Rå linje. Behandle bildet som en enkelt tekst linje, omgå hacks</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Remove Selected</source>
-            <translation>Fjern valgte</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Save PO File</source>
-            <translation>Lagre PO-fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select All</source>
-            <translation>Velg alle</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select Image</source>
-            <translation>Velg bilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select None</source>
-            <translation>Velg Ingen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Sparse text with OSD</source>
-            <translation>Sparne tekst med OSD</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Sparse text. Find as much text as possible in no particular order</source>
-            <translation>Lese tekst. Finn så mye tekst som mulig i ingen bestemt rekkefølge</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Success</source>
-            <translation>Suksess</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Tesseract Required</source>
-            <translation>Tesseract kreves</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Treat the image as a single character</source>
-            <translation>Behandle bildet som én karakter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Treat the image as a single text line</source>
-            <translation>Behandle bildet som en enkelt tekstlinje</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Treat the image as a single word</source>
-            <translation>Behandle bildet som et enkelt ord</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Treat the image as a single word in a circle</source>
-            <translation>Behandle bildet som et enkelt ord i en sirkel</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✓ Tesseract available: %1</source>
-            <translation>✓ Tesseract tilgjengelig: %1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Image loaded: %1</source>
-            <translation>Bildet lastet: %1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✓ OCR completed. Found %1 text strings.</source>
-            <translation>✓ OCR fullført. Fant %1 tekststrenger.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✗ OCR failed: %1</source>
-            <translation>✗ OCR mislyktes: %1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>OCR functionality requires tesseract-ocr to be installed.\n\nInstallation instructions:\n• macOS: brew install tesseract\n• Ubuntu/Debian: sudo apt install tesseract-ocr\n• Windows: Download from GitHub releases\n• Arch Linux: sudo pacman -S tesseract</source>
-            <translation>OCR-funksjonalitet krever at tesseract-ocr er installert.\n\nInstallasjonsveiledning:\n• macOS: brew install tesseract\n• Ubuntu/Debian: sudo apt install tesseract-ocr\n• Windows: Last ned fra GitHub-utgivelser\n• Arch Linux: sudo pacman -S tesseract</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>⚠ No text found in image.</source>
-            <translation>⚠ Ingen tekst funnet i bildet.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>⚠ Tesseract not found. Please install tesseract-ocr.</source>
-            <translation>⚠ Tesseract ikke funnet. Vennligst installer tesseract-ocr.</translation>
+            <translation type="unfinished"/>
         </message>
-        <message>
-        <source>Failed to create PO file:
-{}</source>
-        <translation>Klarte ikke å opprette PO-fil:
-{}</translation>
-    </message>
-    <message>
-        <source>OCR functionality requires tesseract-ocr to be installed.
-
-Installation instructions:
-• macOS: brew install tesseract
-• Ubuntu/Debian: sudo apt install tesseract-ocr
-• Windows: Download from GitHub releases
-• Arch Linux: sudo pacman -S tesseract</source>
-        <translation>OCR-funksjonalitet krever at tesseract-ocr er installert.
-
-Installasjonsveiledning:
-• macOS: brew install tesseract
-• Ubuntu/Debian: sudo apt install tesseract-ocr
-• Windows: Last ned fra GitHub-utgivelser
-• Arch Linux: sudo pacman -S tesseract</translation>
-    </message>
-    <message>
-        <source>PO file created successfully:
-{}</source>
-        <translation>PO-fil opprettet med suksess:
-{}</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>OCRWorker</name>
         <message>
             <source>Checking tesseract installation...</source>
-            <translation>Kontrollere tesseract installasjon...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Processing image...</source>
-            <translation>Bearbeider bildet...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Tesseract not installed. Please install tesseract-ocr.</source>
-            <translation>Tesseract er ikke installert. Vennligst installer tesseract-ocr.</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>PlatformSettingsDialog</name>
         <message>
             <source>API Key:</source>
-            <translation>API-nøkkel:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>API Token:</source>
-            <translation>API-nøkkel:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>API URL:</source>
-            <translation>API-URL:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Base URL:</source>
-            <translation>Basis-URL:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Component:</source>
-            <translation>Komponent:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Crowdin</source>
-            <translation>Crowdin</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Crowdin API</source>
-            <translation>Crowdin API</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Organization:</source>
-            <translation>Organisasjon:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Platform Settings</source>
-            <translation>Plattforminnstillinger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Project ID:</source>
-            <translation>Prosjekt-ID:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Project:</source>
-            <translation>Prosjekt:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Save</source>
-            <translation>Lagre</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Test Connection</source>
-            <translation>Test tilkobling</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Testing…</source>
-            <translation>Tester…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Transifex</source>
-            <translation>Transifex</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Transifex API</source>
-            <translation>Transifex API</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Weblate</source>
-            <translation>Weblate</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Weblate API</source>
-            <translation>Weblate API</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>⚠️ No system keychain — tokens stored with basic obfuscation. </source>
-            <translation>⚠️ Ingen systemnøkkelkjede - polletter lagret med grunnleggende obfuscation.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✓ Connected: %1</source>
-            <translation>✓ Tilkoblet: %1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✓ Saved</source>
-            <translation>✓ Lagret</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✗ %1</source>
-            <translation>✗ %1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✗ Project ID must be a number</source>
-            <translation>✗ Prosjekt-ID må være et tall</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>🔒 Tokens stored in %1</source>
-            <translation>🔒 Nøkler lagret i %1</translation>
+            <translation type="unfinished"/>
         </message>
-        <message>
-        <source>Browse…</source>
-        <translation>Bla gjennom...</translation>
-    </message>
-    <message>
-        <source>Loading…</source>
-        <translation>Laster inn...</translation>
-    </message>
-    <message>
-        <source>Select Component</source>
-        <translation>Velg komponent</translation>
-    </message>
-    <message>
-        <source>Select Organization</source>
-        <translation>Velg organisasjon</translation>
-    </message>
-    <message>
-        <source>Select Project</source>
-        <translation>Velg prosjekt</translation>
-    </message>
-    <message>
-        <source>✗ Select a project first</source>
-        <translation>✗ Velg først et prosjekt</translation>
-    </message>
-    <message>
-        <source>✗ Select an organization first</source>
-        <translation>Velg en organisasjon først</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>PluginDialog</name>
         <message>
             <source>All plugins have been reloaded successfully.</source>
-            <translation>Alle plugins er blitt lastet på nytt.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Author</source>
-            <translation>Forfatter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Author: {}</source>
-            <translation>Forfatter: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Disable</source>
-            <translation>Slå av</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enable</source>
-            <translation>Slå på</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enabled</source>
-            <translation>Aktivert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to reload plugins: {}</source>
-            <translation>Klarte ikke å laste inn plugins på nytt: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Installed Plugins</source>
-            <translation>Installerte plugins</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Manage Plugins</source>
-            <translation>Administrer plugins</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Name</source>
-            <translation>Navn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open Plugin Folder</source>
-            <translation>Åpne plugin-mappe</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Plugin Details</source>
-            <translation>Tilleggsmoduldetaljer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Plugins Reloaded</source>
-            <translation>Plugins Lastet på nytt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Plugins are loaded from: {}</source>
-            <translation>Plugins lastes fra: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Reload Failed</source>
-            <translation>Lasting mislykkes</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Reload Plugins</source>
-            <translation>Last inn programtillegg på nytt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Version</source>
-            <translation>Utgave</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Version: {}</source>
-            <translation>Versjon: {}</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>PluralFormsEditor</name>
         <message>
             <source>Plural rules</source>
-            <translation>Flertallsregler</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Clear all</source>
-            <translation>Fjern alle</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Sync from singular</source>
-            <translation>Sync fra singular</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>PreferencesDialog</name>
         <message>
             <source> characters</source>
-            <translation>tegn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Appearance</source>
-            <translation>Utseende</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Auto-compile on save</source>
-            <translation>Kompiler automatisk ved lagring</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Automatically compile .mo/.qm after saving</source>
-            <translation>Kompiler .mo/.qm automatisk etter lagring</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Character limit:</source>
-            <translation>Tegngrense:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Credential storage:</source>
-            <translation>Pålitelig lagring:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Dark</source>
-            <translation>Mørke</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Default</source>
-            <translation>Standard</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Default engine:</source>
-            <translation>Standardmotor:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Double-click to edit translations directly in the list</source>
-            <translation>Dobbeltklikk for å redigere oversettelser direkte i listen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Editor font size:</source>
-            <translation>Skriftstørrelse i editoren:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Email:</source>
-            <translation>E-post:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enable inline editing</source>
-            <translation>Aktiver innlinjeredigering</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Formal</source>
-            <translation>Formell</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Formality level:</source>
-            <translation>Formalitetsnivå:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Informal</source>
-            <translation>Uformell</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Language / Locale:</source>
-            <translation>Språk / Locale:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Light</source>
-            <translation>Lys</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Name:</source>
-            <translation>Navn:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Personal</source>
-            <translation>Personlig</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Preferences</source>
-            <translation>Innstillinger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Security</source>
-            <translation>Sikkerhet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Show character counter</source>
-            <translation>Vis tegnteller</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source language:</source>
-            <translation>Kildespråk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>System default</source>
-            <translation>Systemstandard</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Target language:</source>
-            <translation>Målspråk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Team:</source>
-            <translation>Team:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Theme:</source>
-            <translation>Tema:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation</source>
-            <translation>Oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.\n\nFor better security, install:\n• macOS: Built-in (Keychain)\n• Windows: pip install keyring\n• Linux: pip install secretstorage</source>
-            <translation>Ingen systemnøkkelkjede oppdaget. Påbud er lagret i en kryptert fil med et masterpassord.For bedre sikkerhet, installer:• macOS: Innebygd (Keychain)• Windows: Pip installere nøkkelring• Linux: pip installere hemmeligheter</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Your credentials are securely stored in the system keychain.</source>
-            <translation>Dine legitimasjoner lagres sikkert i systemnøkkelboksen.</translation>
+            <translation type="unfinished"/>
         </message>
-        <message>
-        <source>Automatically reload watched files</source>
-        <translation>Last automatisk filer på nytt</translation>
-    </message>
-    <message>
-        <source>No system keychain detected. Credentials are stored in an encrypted file with a master password.
-
-For better security, install:
-• macOS: Built-in (Keychain)
-• Windows: pip install keyring
-• Linux: pip install secretstorage</source>
-        <translation>Ingen systemnøkkelkjede oppdaget. Påbud er lagret i en kryptert fil med et masterpassord.
-
-For bedre sikkerhet, installer:
-• macOS: Innebygd (Keychain)
-• Windows: Pip installere nøkkelring
-• Linux: pip installere hemmeligheter</translation>
-    </message>
-    <message>
-        <source>Reload external changes without asking while Watch File is enabled</source>
-        <translation>Last eksterne endringer på nytt uten å spørre mens Watch-filen er aktivert</translation>
-    </message>
-    <message>
-        <source>OpenNMT model:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Path to an OpenNMT-py model file</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>ProjectDockWidget</name>
         <message>
             <source>All files</source>
-            <translation>Alle filer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Analyzing project...</source>
-            <translation>Analysere prosjektet...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Avg:</source>
-            <translation>Avg:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Complete</source>
-            <translation>Fullstendig</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy Path</source>
-            <translation>Kopier sti</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File</source>
-            <translation>Fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File Properties</source>
-            <translation>Filegenskaper</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Files:</source>
-            <translation>Filer:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Filter:</source>
-            <translation>Filtrer:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Found %d translation files</source>
-            <translation>Fant %d-oversettelsesfiler</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Incomplete</source>
-            <translation>Ufullstendig</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>JSON files</source>
-            <translation>JSON-filer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No project</source>
-            <translation>Ingen prosjekt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No translation files found in this folder</source>
-            <translation>Ingen oversettelsesfiler funnet i denne mappen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open</source>
-            <translation>Åpne</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open a project folder to begin</source>
-            <translation>Åpne en prosjektmappe for å begynne</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open project folder</source>
-            <translation>Åpne prosjektmappe</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Open...</source>
-            <translation>Åpne...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>PO files</source>
-            <translation>PO-filer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Progress</source>
-            <translation>Fremskritt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Project</source>
-            <translation>Prosjekt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Properties</source>
-            <translation>Egenskaper</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Refresh</source>
-            <translation>Oppdater</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Refresh project files</source>
-            <translation>Oppdater prosjektfiler</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select Project Folder</source>
-            <translation>Velg prosjektmappe</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Show in File Manager</source>
-            <translation>Vis i filhåndtering</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>TS files</source>
-            <translation>TS-filer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translated</source>
-            <translation>Oversatte</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Type</source>
-            <translation>Type</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>XLIFF files</source>
-            <translation>XLIFF-filer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%1 files</source>
-            <translation>%1-filer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>0 files</source>
-            <translation>0 filer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File: %s</source>
-            <translation>Fil: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Path: %s</source>
-            <translation>Sti: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Type: %s</source>
-            <translation>Type: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Size: %s bytes</source>
-            <translation>Størrelse: %s bytes</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Total entries: %d</source>
-            <translation>Totalposter: %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translated: %d</source>
-            <translation>Oversatt: %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy: %d</source>
-            <translation>Uklare: %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Untranslated: %d</source>
-            <translation>Ikke translatert: %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Progress: %.1f%%</source>
-            <translation>Fremdrift: %.1f%%</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Modified: %s</source>
-            <translation>Endret: %s</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>QuickActionsMenu</name>
         <message>
             <source>Quick Actions</source>
-            <translation>Hurtige handlinger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>📋 Copy source</source>
-            <translation>📋 Kopier kilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>📚 Apply glossary term</source>
-            <translation>📚 Bruk ordliste begrep</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>🔤 Capitalize first letter</source>
-            <translation>🔤 Capitalize første bokstav</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>🔤 Lowercase first letter</source>
-            <translation>🔤 Små bokstaver</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>🧠 Apply TM suggestion</source>
-            <translation>🧠 Bruk TM forslag</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>RecordMacroDialog</name>
         <message>
             <source>Recording Macro</source>
-            <translation>Opptaksmakro</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Stop Recording</source>
-            <translation>Stopp opptak</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>🔴 Recording macro...</source>
-            <translation>🔴 Opptak makro...</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>RegexTesterDialog</name>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copied</source>
-            <translation>Kopiert</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy Result</source>
-            <translation>Kopier resultat</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Could not copy to clipboard.</source>
-            <translation>Kunne ikke kopiere til utklippstavle.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Error</source>
-            <translation>Feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Format Strings Found</source>
-            <translation>Formatstrenger funnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Input Text</source>
-            <translation>Inndatatekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Live Preview</source>
-            <translation>Live Forhåndsvisning</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Regex Tester</source>
-            <translation>Regex Tester</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Result copied to clipboard.</source>
-            <translation>Resultat kopiert til utklippstavle.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Sample text</source>
-            <translation>Eksempeltekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Test Values</source>
-            <translation>Testverdier</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Test value</source>
-            <translation>Testverdi</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Value</source>
-            <translation>Verdi</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Error: %s</source>
-            <translation>Feil: %s</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>SearchReplaceDialog</name>
         <message>
             <source>%d of %d matches</source>
-            <translation>%d fra %d-kamper</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Both</source>
-            <translation>Begge deler</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Case sensitive</source>
-            <translation>Case sensitiv</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enter replacement text...</source>
-            <translation>Skriv inn erstatningstekst...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enter search text...</source>
-            <translation>Skriv inn søketekst...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Find &amp; Replace</source>
-            <translation>Finn &amp; Erstatt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Find All</source>
-            <translation>Finn alle</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Find Next</source>
-            <translation>Finn neste</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Find Previous</source>
-            <translation>Finn forrige</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Find:</source>
-            <translation>Finn:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No matches found</source>
-            <translation>Ingen treff funnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Options</source>
-            <translation>Alternativer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Regular expression</source>
-            <translation>Regulært uttrykk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Replace</source>
-            <translation>Erstatt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Replace All</source>
-            <translation>Erstatt alle</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Replace:</source>
-            <translation>Bytt ut:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Search</source>
-            <translation>Søk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Search in:</source>
-            <translation>Søk i:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source text</source>
-            <translation>Kildetekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation</source>
-            <translation>Oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Whole words</source>
-            <translation>Hele ord</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>SplitDialog</name>
         <message>
             <source>Place the cursor inside the source text to mark the split point.</source>
-            <translation>Plasser markøren i kildeteksten for å markere delt punkt.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Segment 1: \u201c{}\u201d  |  Segment 2: \u201c{}\u201d</source>
-            <translation>Segment 1: \u201c{}\u201d | Segment 2: \u201c{}\u201d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source:</source>
-            <translation>Kilde:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Split Entry</source>
-            <translation>Del oppføringen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Target:</source>
-            <translation>Mål:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Click in the source text where you want to split, then press OK.</source>
-            <translation>Klikk i kildeteksten der du vil dele, og trykk deretter på OK.</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>StatisticsDialog</name>
         <message>
             <source>(text contracted)</source>
-            <translation>(tekstkontrakt)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>(text expanded)</source>
-            <translation>(tekst utvidet)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Additional Details</source>
-            <translation>Tilleggsinformasjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Average source length</source>
-            <translation>Gjennomsnittlig kildelengde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Average translation length</source>
-            <translation>Gjennomsnittlig oversettelseslengde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Average words per entry</source>
-            <translation>Gjennomsnittlige ord per oppføring</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Characters:</source>
-            <translation>Tegn:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Entry #</source>
-            <translation>Inngang #</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Expansion ratio:</source>
-            <translation>Forhold mellom utbygging:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File:</source>
-            <translation>Fil:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Fuzzy/Needs work:</source>
-            <translation>Fucky/Nødvändig arbeid:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Length</source>
-            <translation>Lengde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Longest Source Strings</source>
-            <translation>Lengste kildestrenger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>N/A</source>
-            <translation>N/A</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No additional details available.</source>
-            <translation>Ingen ekstra detaljer tilgjengelig.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Overview</source>
-            <translation>Oversikt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source text:</source>
-            <translation>Kildetekst:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Text Preview</source>
-            <translation>Forhåndsvisning av tekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Text Statistics</source>
-            <translation>Tekststatistikk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Total entries:</source>
-            <translation>Totalposter:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translated:</source>
-            <translation>Oversatt:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Progress:</source>
-            <translation>Oversettelsesframgang:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Statistics</source>
-            <translation>Oversettelsesstatistikk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation completion</source>
-            <translation>Oversettelsesfullføring</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation:</source>
-            <translation>Oversettelse:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Untranslated:</source>
-            <translation>Uomsatt:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Words:</source>
-            <translation>Ord:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>characters</source>
-            <translation>tegn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>translated</source>
-            <translation>oversatt</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>StatsWidget</name>
         <message>
             <source>Auto Translations</source>
-            <translation>Auto Oversettelser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Best Streak</source>
-            <translation>Beste Streak</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Current Streak</source>
-            <translation>Nåværende Streak</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Details</source>
-            <translation>Detaljer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File Formats</source>
-            <translation>Filformater</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Files Completed</source>
-            <translation>Filer fullførte</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Formats: {}</source>
-            <translation>Formater: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Languages Used</source>
-            <translation>Språk som brukes</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Languages: {}</source>
-            <translation>Språk: {}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Manual Translations</source>
-            <translation>Manuell oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Total Translations</source>
-            <translation>Total Oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Statistics</source>
-            <translation>Oversettelsesstatistikk</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>SyncDialog</name>
         <message>
             <source>%1 resources found</source>
-            <translation>%1 ressurser funnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Crowdin not configured. Open Platform Settings first.</source>
-            <translation>Crowdin er ikke konfigurert. Åpne plattforminnstillingene først.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Downloading…</source>
-            <translation>Laster ned…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enter a language code</source>
-            <translation>Skriv inn en språkkode</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Language:</source>
-            <translation>Språk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Loading resources…</source>
-            <translation>Laster ressurser…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No file loaded to push</source>
-            <translation>Ingen fil lastet inn for sending</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No resources found</source>
-            <translation>Ingen ressurser funnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pull</source>
-            <translation>Hent</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pull Translation</source>
-            <translation>Hent oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Push</source>
-            <translation>Send</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Push Translation</source>
-            <translation>Send oversettelse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Resources</source>
-            <translation>Ressurser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select a resource first</source>
-            <translation>Velg en ressurs først</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Transifex not configured. Open Platform Settings first.</source>
-            <translation>Transifex er ikke konfigurert. Åpne plattforminnstillingene først.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unknown</source>
-            <translation>Ukjent</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unknown platform</source>
-            <translation>Ukjent plattform</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Uploading…</source>
-            <translation>Laster opp…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Weblate not configured. Open Platform Settings first.</source>
-            <translation>Weblate er ikke konfigurert. Åpne plattforminnstillingene først.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>e.g. sv, de, fr</source>
-            <translation>f.eks. sv, de, fr</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✓ Downloaded at %1\nSaved to: %2</source>
-            <translation>✓ Lastet ned på%1\nLagret til:%2</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✓ Uploaded at %1</source>
-            <translation>✓ Lastet opp %1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✗ Error: %1</source>
-            <translation>✗ Feil: %1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✗ Pull failed: %1</source>
-            <translation>✗ Henting mislyktes: %1</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>✗ Push failed: %1</source>
-            <translation>✗ Sending mislyktes: %1</translation>
+            <translation type="unfinished"/>
         </message>
-        <message>
-        <source>✓ Downloaded at %1
-Saved to: %2</source>
-        <translation>✓ Lastet ned %1
-Lagret i: %2</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>ToolbarCustomizeDialog</name>
         <message>
             <source>Check actions to show in toolbar:</source>
-            <translation>Sjekk handlinger som skal vises i verktøylinjen:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Customize Toolbar</source>
-            <translation>Tilpass verktøylinje</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>UnicodeDialog</name>
         <message>
             <source> | ⚠️ Check highlighted characters</source>
-            <translation>| Sjekk uthevede tegn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Analyze</source>
-            <translation>Analyser</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Block</source>
-            <translation>Blokker</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Category</source>
-            <translation>Kategori</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Char</source>
-            <translation>Tegn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Character Analysis</source>
-            <translation>Karakteranalyse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Character Details</source>
-            <translation>Detaljer om tegn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Clear</source>
-            <translation>Tøm</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Code Point</source>
-            <translation>Kodepunkt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Copy Analysis</source>
-            <translation>Kopier analyse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enter or paste text to analyze...</source>
-            <translation>Skriv inn eller lim inn tekst for å analysere...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Enter text to analyze Unicode characters</source>
-            <translation>Skriv inn tekst for å analysere Unicode tegn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Highlight suspicious characters</source>
-            <translation>Høyde mistenkelige tegn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Name</source>
-            <translation>Navn</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pos</source>
-            <translation>Pos</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Text to Analyze</source>
-            <translation>Tekst til analyse</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Unicode Inspector</source>
-            <translation>Unicode-inspektør</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Total: {0} characters | Invisible: {1} | Suspicious: {2}</source>
-            <translation>Totalt: {0} tegn | Usynlig: {1} | Supicious: {2}</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>ValidationDialog</name>
         <message>
             <source>#</source>
-            <translation>#</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Errors</source>
-            <translation>Feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Errors: %d | Warnings: %d</source>
-            <translation>Feil: %d | Varsler: %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Info</source>
-            <translation>Informasjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Message</source>
-            <translation>Melding</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Quality score: %s%%</source>
-            <translation>Kvalitetsscore: %s%%</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Re-validate</source>
-            <translation>Revalidere</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Severity</source>
-            <translation>Alvorlighetsgrad</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source text</source>
-            <translation>Kildetekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Validation Results</source>
-            <translation>Valideringsresultater</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Warnings</source>
-            <translation>Advarsler</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>VideoDockWidget</name>
         <message>
             <source>Video Preview</source>
-            <translation>Videoforhåndsvisning</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>VideoPreviewWidget</name>
         <message>
             <source>Back 1s (Shift+←)</source>
-            <translation>Tilbake 1s (Shift+←)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Forward 1s (Shift+→)</source>
-            <translation>Fremover 1 s (Shift+→)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Go to current subtitle (G)</source>
-            <translation>Gå til gjeldende undertittel (G)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Larger subtitles</source>
-            <translation>Større undertekster</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Loop segment (L)</source>
-            <translation>Gjenta segment (L)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Mute (M)</source>
-            <translation>Mute (M)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Next entry (Ctrl+→)</source>
-            <translation>Neste innlegg (Ctrl+ →)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pause</source>
-            <translation>Paus</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Pause at segment end</source>
-            <translation>Pausa i segmentets ende</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Play / Pause (Space)</source>
-            <translation>Spill / pause (Space)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Playback speed</source>
-            <translation>Avspillingshastighet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Previous entry (Ctrl+←)</source>
-            <translation>Forrige innlegg (Ctrl+←)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Smaller subtitles</source>
-            <translation>Mindre undertekster</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Stop (S)</source>
-            <translation>Stopp (S)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Volume</source>
-            <translation>Volum</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>VideoSubtitleDialog</name>
         <message>
             <source>%d subtitle tracks found. Duration: %s</source>
-            <translation>%d undertittelspor funnet. Varighet: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Cancel</source>
-            <translation>Avbryt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Browse…</source>
-            <translation>Bla gjennom...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extract and Save As…</source>
-            <translation>Uttrekke og lagre som...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extract and Open</source>
-            <translation>Uttrekke og åpne</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extract Subtitles from Video</source>
-            <translation>Utdrag undertekster fra video</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extracting</source>
-            <translation>Uttrekking</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extracting preview…</source>
-            <translation>Pakker ut forhåndsvisning...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extracting subtitles…</source>
-            <translation>Pakker ut undertekster...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Error</source>
-            <translation>Feil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Extraction Error</source>
-            <translation>Utvinningsfeil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Format:</source>
-            <translation>Format:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Preview</source>
-            <translation>Forhåndsvisning</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Preview failed: %s</source>
-            <translation>Forhåndsvisning mislykkes: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No subtitle tracks found</source>
-            <translation>Ingen undertittelspor funnet</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No file selected</source>
-            <translation>Ingen fil valgt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Done</source>
-            <translation>Ferdig</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Could not extract the subtitle:\n%s</source>
-            <translation>Kunne ikke trekke ut undertittelen:\n%s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Could not read the video file:\n%s</source>
-            <translation>Kunne ikke lese videofilen:\n%s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Save Subtitle As</source>
-            <translation>Lagre undertekst som</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Play / Pause</source>
-            <translation>Spill / pause</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Stop</source>
-            <translation>Stopp</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Close</source>
-            <translation>Lukk</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>The subtitle has been saved to:\n%s</source>
-            <translation>Undertittelen er lagret i:\n%s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Subtitle Tracks</source>
-            <translation>Undertekstspor</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Output Format</source>
-            <translation>Utgangsformat</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Video File</source>
-            <translation>Videofil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Video files (%s);;All files (*)</source>
-            <translation>Videofiler (%s);;Alle filer (*)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select a video file to preview subtitles</source>
-            <translation>Velg en videofil som skal forhåndsvise undertekster</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Select Video File</source>
-            <translation>Velg videofil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>This video file contains no embedded subtitle tracks.</source>
-            <translation>Denne videofilen inneholder ingen innbygde undertittelspor.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>SRT (.srt)</source>
-            <translation>SRT (.srt)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>WebVTT (.vtt)</source>
-            <translation>WebVTT (.vtt)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>ASS/SSA (.ass)</source>
-            <translation>ASS/SSA (.ass)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>SubRip (*.srt)</source>
-            <translation>SubRip (*.srt)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>WebVTT (*.vtt)</source>
-            <translation>WebVTT (*.vtt)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Advanced SubStation Alpha (*.ass)</source>
-            <translation>Avansert understasjon Alpha (*.ass)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Subtitle files (*.*)</source>
-            <translation>Undertekstfiler (*)</translation>
+            <translation type="unfinished"/>
         </message>
-        <message>
-        <source>Could not extract the subtitle:
-%s</source>
-        <translation>Kunne ikke trekke ut undertittelen:
-%s</translation>
-    </message>
-    <message>
-        <source>Could not read the video file:
-%s</source>
-        <translation>Kunne ikke lese videofilen:
-%s</translation>
-    </message>
-    <message>
-        <source>The subtitle has been saved to:
-%s</source>
-        <translation>Undertittelen er lagret i:
-%s</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>WelcomeDialog</name>
         <message>
             <source>Appearance</source>
-            <translation>Utseende</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Back</source>
-            <translation>Tilbake</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Dark</source>
-            <translation>Mørke</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Default</source>
-            <translation>Standard</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Default engine:</source>
-            <translation>Standardmotor:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Editor font size:</source>
-            <translation>Skriftstørrelse i editoren:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Email:</source>
-            <translation>E-post:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Formal</source>
-            <translation>Formell</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Formality level:</source>
-            <translation>Formalitetsnivå:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Informal</source>
-            <translation>Uformell</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Language / Locale:</source>
-            <translation>Språk / Locale:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Light</source>
-            <translation>Lys</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Name:</source>
-            <translation>Navn:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Next</source>
-            <translation>Neste</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Personal Information</source>
-            <translation>Personlig informasjon</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Source language:</source>
-            <translation>Kildespråk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Start translating!</source>
-            <translation>Begynn å oversette!</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>System default</source>
-            <translation>Systemstandard</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Target language:</source>
-            <translation>Målspråk:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Team (optional):</source>
-            <translation>Team (valgfritt):</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Theme:</source>
-            <translation>Tema:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation Settings</source>
-            <translation>Oversettelsesinnstillinger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Welcome to LinguaEdit</source>
-            <translation>Velkommen til LinguaEdit</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>You</source>
-            <translation>Du</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,\nAndroid XML, ARB, PHP, and YAML files.\n\nFeatures include AI-powered pre-translation, translation memory,\nquality assurance, spell checking, and platform integration.</source>
-            <translation>LinguaEdit er en moderne oversettelsesredaktør for PO, TS, JSON, XLIFF,Android XML, ARB, PHP og YAML-filer.Funksjoner inkluderer AI-drevet pre-translation, oversettelsesminne,kvalitetssikring, stavekontroll og plattformintegrasjon.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>You&apos;re all set!</source>
-            <translation>Dere er alle sammen klar!</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Version %s</source>
-            <translation>Versjon %s</translation>
+            <translation type="unfinished"/>
         </message>
-        <message>
-        <source>LinguaEdit is a modern translation editor for PO, TS, JSON, XLIFF,
-Android XML, ARB, PHP, and YAML files.
-
-Features include AI-powered pre-translation, translation memory,
-quality assurance, spell checking, and platform integration.</source>
-        <translation>LinguaEdit er en moderne oversettelsesredaktør for PO, TS, JSON, XLIFF,
-Android XML, ARB, PHP og YAML-filer.
-
-Funksjoner inkluderer AI-drevet pre-translation, oversettelsesminne,
-kvalitetssikring, stavekontroll og plattformintegrasjon.</translation>
-    </message>
-</context>
+    </context>
     <context>
         <name>WorldMapWidget</name>
         <message>
             <source>Translation Progress</source>
-            <translation>Oversettelsesframgang</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>ZenModeWidget</name>
         <message>
             <source>&lt;b&gt;Source text&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Kjeldstekst&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Translation&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Oversettelse&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Exit Zen</source>
-            <translation>Avslutt Zen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Next entry</source>
-            <translation>Neste post</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Next untranslated ▶▶</source>
-            <translation>Neste uomsatte ▶▶</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Previous entry</source>
-            <translation>Forrige post</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Skip to next untranslated (Ctrl+Enter)</source>
-            <translation>Hopp til neste uomsette (Ctrl+Enter)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Catalog</source>
-            <translation>&amp;Katalog</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Edit</source>
-            <translation>&amp;Rediger</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;File</source>
-            <translation>&amp;Fil</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Git</source>
-            <translation>&amp;Git</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Go</source>
-            <translation>&amp;Gå</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Help</source>
-            <translation>&amp;Hjelp</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Open…</source>
-            <translation>&amp;Åpne…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Platforms</source>
-            <translation>&amp;Plattformer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Save</source>
-            <translation>&amp;Lagre</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;Tools</source>
-            <translation>Verktøy</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&amp;View</source>
-            <translation>&amp;Vis</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;%d&lt;/b&gt; untranslated strings out of &lt;b&gt;%d&lt;/b&gt; total.</source>
-            <translation>&lt;b&gt;%d&lt;/b&gt;UOUtranslaterte strenger ut av &lt;b&gt;Z%d&lt;/b&gt;ZXXXXXXXQPLACEHOLDER5QXZXZ totalt.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Added strings:&lt;/b&gt; %d</source>
-            <translation>&lt;b&gt;Adde strenger: &lt;/b&gt; %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Changed source text:&lt;/b&gt; %d</source>
-            <translation>&lt;b&gt;Anmeldt kildetekst:&lt;/b&gt; %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Changed translations:&lt;/b&gt; %d</source>
-            <translation>&lt;b&gt;Evented oversettelser:&lt;/b&gt; %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Concordance search&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Konkordanssøk&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Outdated translations&lt;/b&gt; — source changed but translation stayed the same.</source>
-            <translation>&lt;b&gt;Outdatert oversettelser&lt;/b&gt; — kilde endret, men oversettelsen forble den samme.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Potentially outdated:&lt;/b&gt; %d</source>
-            <translation>&lt;b&gt;Potentialt utdatert: &lt;/b&gt; %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Reference source:&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Referansekilde:&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Reference translation:&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Referanseoversettelse:&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Removed strings:&lt;/b&gt; %d</source>
-            <translation>&lt;b&gt;Fjernede strenger: &lt;/b&gt; %d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Kildetekst:&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
+        </message>
+        <message>
+            <source>&lt;b&gt;Source text&lt;/b&gt;</source>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Forslag&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Oversettelse:&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
+        </message>
+        <message>
+            <source>&lt;b&gt;Translation&lt;/b&gt;</source>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Translator kommentar:&lt;/b&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;h3&gt;Comparison Results&lt;/h3&gt;</source>
-            <translation>&lt;h3&gt;Komparasjon Resultater&lt;/h3&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;i&gt;(no match in reference)&lt;/i&gt;</source>
-            <translation>&lt;i&gt;(ingen treff i referanse)&lt;/i&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;i&gt;MT unavailable&lt;/i&gt;</source>
-            <translation>&lt;i&gt;MT utilgjengelig&lt;/i&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;i&gt;No matches&lt;/i&gt;</source>
-            <translation>&lt;i&gt; Ingen matches&lt;/i&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;i&gt;No matching terms&lt;/i&gt;</source>
-            <translation>&lt;i&gt; Ingen matchende vilkår&lt;/i&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;i&gt;No suggestion&lt;/i&gt;</source>
-            <translation>&lt;i&gt; Ingen forslag&lt;/i&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>&lt;i&gt;No suggestions&lt;/i&gt;</source>
-            <translation>&lt;i&gt;Ingen forslag&lt;/i&gt;</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Are you sure you want to delete the macro &apos;{}&apos;?</source>
-            <translation>Er du sikker på at du vil slette makroen '{}'?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Cannot compile: install &apos;polib&apos; or &apos;gettext&apos; (msgfmt)</source>
-            <translation>Kan ikke kompilere: installer 'polib' eller 'gettext' (msgfmt)</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Click in the source text where you want to split, then press OK.</source>
-            <translation>Klikk i kildeteksten der du vil dele, og trykk deretter på OK.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Delete term &apos;%s&apos; → &apos;%s&apos;?</source>
-            <translation>Slette begrepet '%s' → '%s'?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>This video file contains no embedded subtitle tracks.</source>
-            <translation>Denne videofilen inneholder ingen innbygde undertittelspor.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Failed to play macro &apos;{}&apos;.</source>
-            <translation>Klarte ikke å spille makroen «{}».</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Find &amp; Replace</source>
-            <translation>Finn &amp; Erstatt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Find &amp;&amp; Replace…</source>
-            <translation>Finn og erstatt…</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Macro &apos;{}&apos; has been saved successfully.</source>
-            <translation>Macro '{}' er blitt lagret vellykket.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Recording macro &apos;{}&apos;...</source>
-            <translation>Opptaksmakro '{}'...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Save &amp;As…</source>
-            <translation>Lagre &amp; som...</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Search &amp; Filter</source>
-            <translation>Søk og filtrer</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Search &amp; Replace</source>
-            <translation>Søk og erstatt</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>The file &apos;%s&apos; has unsaved changes.\nDo you want to save before closing?</source>
-            <translation>Filen '%s' har u lagret endringer.\n Vil du spare før du lukker?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Total: {0} characters | Invisible: {1} | Suspicious: {2}</source>
-            <translation>Totalt: {0} tegn | Usynlig: {1} | Supicious: {2}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>You&apos;re all set!</source>
-            <translation>Dere er alle sammen klar!</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Your credentials are securely stored in the system keychain.</source>
-            <translation>Dine legitimasjoner lagres sikkert i systemnøkkelboksen.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Are you sure you want to rollback to this version?\n\nThis will replace the current text with:\n{}</source>
-            <translation>Er du sikker på at du vil tilbake til denne versjonen?\n\nDette vil erstatte gjeldende tekst med:\n{}</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>OCR functionality requires tesseract-ocr to be installed.\n\nInstall with:\n• macOS: brew install tesseract\n• Ubuntu: sudo apt install tesseract-ocr\n• Windows: download from GitHub</source>
-            <translation>OCR-funksjonalitet krever at tesseract-ocr installeres.Installer med:• macOS: bryggeinstallasjon tesseract• Ubuntu: sudo apt installer tesseract-ocr• Windows: Last ned fra GitHub</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>%d of %d entries (%d%%) have no translation.\n\nUntranslated entries will be marked and saved with the source text as fallback, so they will still display during playback. When reopened in LinguaEdit, they will be correctly shown as untranslated.\n\nSave anyway?</source>
-            <translation>%dav%dinnlegg (%d%%) har ingen oversettelse.\n\nUomsette oppføringer vil bli merket og lagret med kildeteksten som reserveverdi, slik at de fortsatt vil vise seg under avspillingen. Når de åpnes opp igjen i LinguaEdit, vil de bli vist som uomsatte.\n\n- Spar uansett?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>A translation file is currently open with unsaved changes.\nSave before loading new subtitles?</source>
-            <translation>En oversettelsesfil er for øyeblikket åpen med ulagrede endringer.\nSave før du laster inn nye undertekster?</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Crowdin Over-The-Air functionality not yet implemented.\nThis would pull latest translations from Crowdin.</source>
-            <translation>Crowdin Over-The-Air funksjonalitet ikke implementert ennå.\nDette vil trekke nyeste oversettelser fra Crowdin.</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>AIReviewWorker</name>
         <message>
             <source>Translation is missing</source>
-            <translation>Oversettelse mangler</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation much longer than source</source>
-            <translation>Oversettelse mye lengre enn kilden</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Translation much shorter than source</source>
-            <translation>Oversettelse mye kortere enn kilde</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Different number of format markers/tags</source>
-            <translation>Ulike antall formatmarkører/merker</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Identical to source text</source>
-            <translation>Identikal til kildetekst</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>All uppercase when source is not</source>
-            <translation>Alle store tilfeller når kilden ikke er</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>No obvious problems found with this translation.</source>
-            <translation>Ingen åpenbare problemer funnet med denne oversettelsen.</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Problems identified: </source>
-            <translation>Problemer identifisert:</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>BatchOperationThread</name>
         <message>
             <source>Error: %s</source>
-            <translation>Feil: %s</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>FileAnalysisThread</name>
         <message>
             <source>Analyzing %s...</source>
-            <translation>Analysere %s...</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>GlossaryImportThread</name>
         <message>
             <source>Importing term %d/%d</source>
-            <translation>Import av termen %d/%d</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Row %d: %s</source>
-            <translation>Ré %d: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>File error: %s</source>
-            <translation>Filfeil: %s</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>TextRenderWidget</name>
         <message>
             <source>Width: %dpx</source>
-            <translation>Bredde: %dpx</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>OVERFLOW: +%dpx</source>
-            <translation>Overflow: +%dpx</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
     <context>
         <name>UpdateDialog</name>
         <message>
             <source>Update Available</source>
-            <translation>Oppdatering tilgjengelig</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>A new version of LinguaEdit is available!</source>
-            <translation>En ny versjon av LinguaEdit er tilgjengelig!</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Current version: %s
 New version: %s</source>
-            <translation>Nåværende versjon: %s
-Ny versjon: %s</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Release notes:</source>
-            <translation>Utgivelsesnotater:</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Skip this version</source>
-            <translation>Hopp over denne versjonen</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Download</source>
-            <translation>Last ned</translation>
+            <translation type="unfinished"/>
         </message>
         <message>
             <source>Remind me later</source>
-            <translation>Minne meg senere</translation>
+            <translation type="unfinished"/>
         </message>
     </context>
-<context>
-    <name>PomodoroDialog</name>
-    <message>
-        <source>Focus minutes:</source>
-        <translation>Fokusminutter:</translation>
-    </message>
-    <message>
-        <source>Pause</source>
-        <translation>Paus</translation>
-    </message>
-    <message>
-        <source>Pomodoro Timer</source>
-        <translation>Pomodoro-tidtaker</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Tilbakestill</translation>
-    </message>
-    <message>
-        <source>Resume</source>
-        <translation>Fortsett</translation>
-    </message>
-    <message>
-        <source>Start</source>
-        <translation>Start</translation>
-    </message>
-    <message>
-        <source>Time for a break!</source>
-        <translation>Tid til pause!</translation>
-    </message>
-</context>
 </TS>
