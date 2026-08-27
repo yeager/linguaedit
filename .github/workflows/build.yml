@@ -67,7 +67,15 @@ jobs:
 
   macos:
     needs: verify
-    runs-on: macos-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-15-intel
+            arch: x86_64
+          - runner: macos-15
+            arch: arm64
+    runs-on: ${{ matrix.runner }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -79,12 +87,14 @@ jobs:
         run: python translation_build.py
       - name: Build .app
         run: |
+          test "$(uname -m)" = "${{ matrix.arch }}"
           pyinstaller --windowed --name LinguaEdit \
             --add-data "src/linguaedit/translations:linguaedit/translations" \
             --add-data "resources/flags:resources/flags" \
             --hidden-import=linguaedit \
             --exclude-module=enchant \
             --paths=src src/linguaedit/app.py
+          file dist/LinguaEdit.app/Contents/MacOS/LinguaEdit | grep -q "${{ matrix.arch }}"
       - name: Register file types
         run: |
           plutil -replace CFBundleShortVersionString -string "${GITHUB_REF_NAME#v}" dist/LinguaEdit.app/Contents/Info.plist
@@ -92,11 +102,11 @@ jobs:
           plutil -insert CFBundleDocumentTypes -json '[{"CFBundleTypeName":"PO File","CFBundleTypeExtensions":["po","pot"],"CFBundleTypeRole":"Editor"},{"CFBundleTypeName":"Qt TS File","CFBundleTypeExtensions":["ts"],"CFBundleTypeRole":"Editor"},{"CFBundleTypeName":"XLIFF File","CFBundleTypeExtensions":["xliff","xlf"],"CFBundleTypeRole":"Editor"},{"CFBundleTypeName":"ARB File","CFBundleTypeExtensions":["arb"],"CFBundleTypeRole":"Editor"}]' dist/LinguaEdit.app/Contents/Info.plist
       - name: Create zip
         run: |
-          cd dist && zip -r ../LinguaEdit-${{ github.ref_name }}-macOS.zip LinguaEdit.app
+          cd dist && zip -r ../LinguaEdit-${{ github.ref_name }}-macOS-${{ matrix.arch }}.zip LinguaEdit.app
       - uses: actions/upload-artifact@v7
         with:
-          name: macos-build
-          path: LinguaEdit-${{ github.ref_name }}-macOS.zip
+          name: macos-${{ matrix.arch }}-build
+          path: LinguaEdit-${{ github.ref_name }}-macOS-${{ matrix.arch }}.zip
 
   windows:
     needs: verify
@@ -123,10 +133,11 @@ jobs:
             --hidden-import=linguaedit `
             --exclude-module=enchant `
             --paths=src src/linguaedit/app.py
-      - name: Build installer
+      - name: Build installer with Inno Setup
         run: |
           $version = "${{ github.ref_name }}".TrimStart("v")
           & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" /DMyAppVersion=$version installer\linguaedit.iss
+          if (-not (Test-Path "LinguaEdit-$version-Setup.exe")) { throw "Inno Setup installer was not created" }
       - uses: actions/upload-artifact@v7
         with:
           name: windows-build
@@ -163,7 +174,7 @@ jobs:
       - uses: softprops/action-gh-release@v2
         with:
           files: |
-            LinguaEdit-*-macOS.zip
+            LinguaEdit-*-macOS-*.zip
             LinguaEdit-*-Setup.exe
             linguaedit_*_all.deb
             *.whl

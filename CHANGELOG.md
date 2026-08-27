@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## [1.8.18] — 2026-08-27
+
+### Changed
+- **Native macOS applications** — releases now include separate Apple Silicon (`arm64`) and Intel (`x86_64`) app bundles
+- **Windows installer** — the release pipeline explicitly builds and verifies the Inno Setup installer
+
+### Fixed
+- **macOS startup language** — automated coverage verifies that a fresh app start follows the ordered macOS system-language preference unless a UI language was explicitly selected
+
 ## [1.8.17] — 2026-08-27
 
 ### Added
