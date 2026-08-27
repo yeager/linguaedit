@@ -5,7 +5,7 @@ backend-path = ["."]
 
 [project]
 name = "linguaedit"
-version = "1.8.16"
+version = "1.8.17"
 description = "A Qt6/PySide6 translation file editor for PO, TS, JSON, XLIFF, Android, ARB, PHP, and YAML files"
 readme = "README.md"
 license = "GPL-3.0-or-later"

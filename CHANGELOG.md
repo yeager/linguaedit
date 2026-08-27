@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## [1.8.17] — 2026-08-27
+
+### Added
+- **Offline OpenNMT-py translation** — select a local model in Preferences and translate without an API key or external service
+- **Swedish Argos Translate GUI localization** — upstream contribution with automatic system-language selection and build-time Qt catalogs
+
+### Changed
+- **Translation catalogs** — new OpenNMT settings are extracted into all catalogs and fully translated in Swedish
+- **Transifex automation** — serialized uploads and clearer failure reporting make synchronization safer and easier to diagnose
+
+### Security
+- **Local model execution** — OpenNMT uses argument-safe subprocess execution, temporary UTF-8 files, explicit timeouts, and no shell
+- **Secret handling** — release and translation automation continues to use GitHub Actions secrets without committing credentials
+
 ## [1.8.16] — 2026-08-26
 
 ### Added
