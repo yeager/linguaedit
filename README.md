@@ -1,423 +1,148 @@
 # LinguaEdit
 
-![Version](https://img.shields.io/badge/version-1.8.18-blue)
+![Version](https://img.shields.io/badge/version-1.8.19-blue)
 ![GitHub Release](https://img.shields.io/github/v/release/yeager/linguaedit)
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue)
 ![Python](https://img.shields.io/badge/python-3.10+-green)
-![Qt6](https://img.shields.io/badge/Qt-6-green)
-![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey)
-![Swedish](https://img.shields.io/badge/svenska-100%25-yellow)
+![Qt](https://img.shields.io/badge/Qt-6-green)
+![Platforms](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey)
 [![Translate on Transifex](https://img.shields.io/badge/translate-Transifex-blue)](https://app.transifex.com/danielnylander/linguaedit/)
 
-**Professional translation editor built with PySide6/Qt6 — by a translator, for translators.**
+LinguaEdit is a desktop editor for software localization files and subtitles. It runs on Linux, macOS, and Windows and is built with Python, PySide6, and Qt 6.
 
-LinguaEdit is a feature-rich, cross-platform translation editor that supports 17+ file formats, translation memory, AI-powered review, and a modern UI designed for productive translation workflows.
+- Website: [linguaedit.org](https://www.linguaedit.org)
+- Downloads: [GitHub Releases](https://github.com/yeager/linguaedit/releases)
+- Changelog: [CHANGELOG.md](CHANGELOG.md)
+- Bugs and feature requests: [GitHub Issues](https://github.com/yeager/linguaedit/issues)
 
-🌐 **Website:** [www.linguaedit.org](https://www.linguaedit.org)
-📦 **Releases:** [GitHub Releases](https://github.com/yeager/linguaedit/releases)
-📝 **Changelog:** [CHANGELOG.md](CHANGELOG.md)
-🐛 **Issues:** [GitHub Issues](https://github.com/yeager/linguaedit/issues)
+## Screenshots
 
----
-
-## 📸 Screenshots
-
-### Main Editor
-![Main Editor](docs/screenshots/main-editor.png)
-
-### Translation Engines
-![Translation Engines](docs/screenshots/mt-engines.png)
+### Editor
+![LinguaEdit editor](docs/screenshots/main-editor.png)
 
 ### Validation
-![Validation](docs/screenshots/validation.png)
+![Validation results](docs/screenshots/validation.png)
 
-### Statistics
-![Statistics](docs/screenshots/statistics.png)
+### Subtitle editing
+![Video subtitle editor](docs/screenshots/video-subtitles.png)
 
-### Video Subtitle Extraction
-![Video Subtitles](docs/screenshots/video-subtitles.png)
+## Install
 
-### Glossary Management
-![Glossary](docs/screenshots/glossary.png)
+The latest release is [v1.8.19](https://github.com/yeager/linguaedit/releases/tag/v1.8.19). Download the file for your system:
 
----
+| Platform | Download | Install |
+|---|---|---|
+| macOS, Apple Silicon | [ZIP](https://github.com/yeager/linguaedit/releases/download/v1.8.19/LinguaEdit-v1.8.19-macOS-arm64.zip) | Unzip and move LinguaEdit to Applications. |
+| macOS, Intel | [ZIP](https://github.com/yeager/linguaedit/releases/download/v1.8.19/LinguaEdit-v1.8.19-macOS-x86_64.zip) | Unzip and move LinguaEdit to Applications. |
+| Windows | [Installer](https://github.com/yeager/linguaedit/releases/download/v1.8.19/LinguaEdit-1.8.19-Setup.exe) | Run the installer. |
+| Debian or Ubuntu | [DEB package](https://github.com/yeager/linguaedit/releases/download/v1.8.19/linguaedit_1.8.19_all.deb) | Install with APT or a package manager. |
+| Python | [Wheel](https://github.com/yeager/linguaedit/releases/download/v1.8.19/linguaedit-1.8.19-py3-none-any.whl) | Install with pip; requires Python 3.10 or newer. |
 
-## 📦 Installation & Downloads
-
-### 🚀 Latest Release (v1.8.18)
-
-Download ready-to-use binaries from **[GitHub Releases](https://github.com/yeager/linguaedit/releases/latest)**:
-
-| Platform | Download | Size | Installation |
-|----------|----------|------|-------------|
-| **🍎 macOS (Apple Silicon)** | `LinguaEdit-v1.8.18-macOS-arm64.zip` | — | Unzip and move to Applications |
-| **🍎 macOS (Intel)** | `LinguaEdit-v1.8.18-macOS-x86_64.zip` | — | Unzip and move to Applications |
-| **🪟 Windows** | `LinguaEdit-1.8.18-Setup.exe` | — | Run the Inno Setup installer |
-| **🐧 Linux** | `linguaedit_1.8.18_all.deb` | — | Install with your package manager |
-
-### 🐧 Linux Package Managers
-
-#### APT (Debian/Ubuntu)
+The Python package published on PyPI may lag behind the GitHub release. For v1.8.19, download the wheel above, then run:
 
 ```bash
-# Add repository
-echo "deb [trusted=yes] https://yeager.github.io/debian-repo/ stable main" | sudo tee /etc/apt/sources.list.d/yeager.list
-
-# Install
-sudo apt update
-sudo apt install linguaedit
-```
-
-#### DNF (Fedora/RHEL)
-
-```bash
-# Add repository
-sudo tee /etc/yum.repos.d/yeager.repo > /dev/null << 'EOF'
-[yeager]
-name=Yeager Repository
-baseurl=https://yeager.github.io/rpm-repo/packages
-enabled=1
-gpgcheck=0
-EOF
-
-# Install
-sudo dnf install linguaedit
-```
-
-### 🐍 Python pip/pipx (All Platforms)
-
-```bash
-# Install with pipx (isolated environment) - RECOMMENDED
-pipx install linguaedit
-
-# Or with pip
-pip install linguaedit
-
-# Run
+python -m pip install ./linguaedit-1.8.19-py3-none-any.whl
 linguaedit-gui
 ```
 
-### 📋 System Requirements
+The macOS app requires macOS 13 or newer. The Windows installer does not require a separate Python installation. The Debian package requires Python 3.10 or newer and installs its Python dependencies during setup.
 
-| Platform | Requirements |
-|----------|-------------|
-| **macOS** | macOS 11+ (Big Sur), Apple Silicon or Intel |
-| **Windows** | Windows 10+, Python 3.10+ (for portable version) |
-| **Linux** | Python 3.10+, Qt6 libraries |
+Optional tools: `ffmpeg` for extracting subtitles from video, `hunspell` for spell checking, and `git` for version control features.
 
-**Optional dependencies:**
-- `ffmpeg` — video subtitle extraction
-- `hunspell` — spell checking
-- `git` — version control integration
+## Supported formats
 
----
+LinguaEdit edits the following localization formats:
 
-## ✨ Features
+| Format | Extensions |
+|---|---|
+| GNU gettext | `.po`, `.pot` |
+| Qt Linguist | `.ts` |
+| XLIFF 1.2 and 2.0 | `.xliff`, `.xlf` |
+| SDLXLIFF | `.sdlxliff` |
+| memoQ XLIFF | `.mqxliff` |
+| JSON localization files | `.json` |
+| YAML | `.yml`, `.yaml` |
+| Android resources | `.xml` |
+| Flutter ARB | `.arb` |
+| PHP arrays | `.php` |
+| Java Properties | `.properties` |
+| Apple Strings and Stringsdict | `.strings`, `.stringsdict` |
+| Unity assets | `.asset` |
+| .NET resources | `.resx` |
+| Chrome extension messages | `messages.json` |
+| Godot translations | `.csv`, `.tres` |
+| SubRip and WebVTT subtitles | `.srt`, `.vtt` |
 
-### 📄 17+ File Formats
+TMX is supported for translation-memory import and export. It is not an editable catalog format. See [Supported Formats](docs/formats.md) for details.
 
-| Format | Extensions | Notes |
-|--------|-----------|-------|
-| **PO / POT** | `.po`, `.pot` | GNU Gettext |
-| **Qt Linguist** | `.ts` | XML format |
-| **XLIFF** | `.xliff`, `.xlf` | Version 1.2 & 2.0 |
-| **SDLXLIFF** | `.sdlxliff` | Trados with segment definitions |
-| **MQXLIFF** | `.mqxliff` | memoQ with namespace detection |
-| **JSON** | `.json` | Flat & nested i18n |
-| **YAML** | `.yml`, `.yaml` | i18n files |
-| **Android XML** | `.xml` | strings.xml |
-| **ARB** | `.arb` | Flutter Application Resource Bundle |
-| **PHP** | `.php` | Array format |
-| **Java Properties** | `.properties` | Key=value |
-| **Apple Strings** | `.strings` | Localizable.strings |
-| **Unity Asset** | `.asset` | Unity localization |
-| **RESX** | `.resx` | .NET resource files |
-| **Chrome i18n** | `.json` | messages.json |
-| **Godot** | `.tres` | Godot translation resources |
-| **Subtitles** | `.srt`, `.vtt` | SubRip & WebVTT |
-| **TMX** | `.tmx` | Translation Memory eXchange |
+## Features
 
-### 🔍 Editor & Navigation
+- Edit several files in tabs; open files by drag and drop.
+- Find and replace text with regular expressions, case matching, or whole-word matching.
+- Filter entries by translation status, warnings, bookmarks, and tags.
+- Use translation memory with fuzzy matches, context weighting, and TMX import/export.
+- Maintain glossaries with approved and forbidden terms, and check term consistency.
+- Get suggestions from DeepL, OpenAI, Google, Lingva, MyMemory, Argos Translate, and OpenNMT-py. Hosted services may require API credentials. Argos and OpenNMT can run locally; OpenNMT also requires a compatible model and `onmt_translate` on `PATH`.
+- Check placeholders, markup, plural forms, terminology, accessibility, and other translation issues before saving.
+- Review changes with Git, monitor files for external edits, and recover unsaved work from local snapshots.
+- Translate subtitle files and extract subtitles from video with FFmpeg.
+- Use the dashboard, layout simulator, regex tester, OCR, text-to-speech, macros, and configurable QA profiles.
 
-- **Multi-tab editing** — work on multiple files simultaneously
-- **Smart search & replace** with regex, case sensitivity, whole word
-- **Status filters** — All, Untranslated, Fuzzy, Translated, Reviewed, With Warnings
-- **Sort modes** — File order, alphabetical, by length, untranslated first, by reference
-- **Inline editing** — double-click entries in the list
-- **Drag & drop** files to open
-- **Bookmarks** — star entries for quick access
-- **Tags** — organize entries with custom tags
-- **Minimap** — visual overview of file status
-
-### 🧘 Zen Translation Mode
-
-Distraction-free translation workflow (Ctrl+Alt+Z):
-- Source text (read-only) + translation (editable)
-- Progress bar at top
-- Tab = save + next untranslated
-- Escape = exit Zen mode
-
-### ⌨️ Keyboard Shortcuts
+### Keyboard shortcuts
 
 | Shortcut | Action |
-|----------|--------|
-| `Ctrl+O` | Open file |
+|---|---|
+| `Ctrl+O` | Open a file |
 | `Ctrl+S` | Save |
-| `Ctrl+H` | Search & Replace |
-| `Ctrl+U` | Toggle fuzzy |
-| `Alt+Enter` | Next untranslated |
-| `Ctrl+Shift+↑/↓` | Previous/next untranslated |
-| `Alt+Shift+↑/↓` | Previous/next fuzzy |
-| `Ctrl+Enter` | Save + next untranslated |
-| `Ctrl+B` | Copy source to translation |
-| `Tab` | Save + next entry |
-| `Shift+Tab` | Save + previous entry |
-| `Ctrl+Alt+Z` | Zen Mode |
-| `Ctrl+D` | Project Dashboard |
-| `Ctrl+Shift+D` | Git Diff |
-| `Ctrl+Alt+T` | Batch Translate |
-| `Ctrl+Shift+F` | Focus Mode (untranslated only) |
-| `F11` | Fullscreen |
-| `Ctrl+Shift+V` | Run linter |
-| `Ctrl+R` | Review Mode |
-| `Ctrl+Shift+A` | AI Review |
+| `Ctrl+H` | Find and replace |
+| `Ctrl+U` | Toggle fuzzy status |
+| `Alt+Enter` | Go to the next untranslated entry |
+| `Ctrl+Enter` | Save and go to the next untranslated entry |
+| `Ctrl+B` | Copy source text to translation |
+| `Ctrl+D` | Open the project dashboard |
+| `Ctrl+Shift+D` | Show Git diff |
+| `Ctrl+Alt+T` | Open batch translation |
+| `Ctrl+Shift+F` | Toggle focus mode |
+| `Ctrl+Alt+Z` | Toggle Zen mode |
+| `Ctrl+R` | Toggle review mode |
+| `Ctrl+Shift+A` | Open AI review |
+| `F11` | Toggle full screen |
 
-### 🧠 Translation Memory (TM)
+## Translations
 
-- SQLite-based, zero configuration
-- Fuzzy matching with configurable threshold
-- Project-origin context weighting and match provenance
-- Auto-learning from your translations
-- Autocomplete suggestions while typing
-- Import/export TMX files
-- Propagate identical translations across entries
+The project has 18 language catalogs with 1,612 messages. Catalog updates sync daily from [Transifex](https://app.transifex.com/danielnylander/linguaedit/) through GitHub Actions. Release builds include catalogs that are more than 20% translated.
 
-### 📖 Glossary
+To contribute a translation, join the project on Transifex.
 
-- Term management with source → target pairs
-- Domain tagging
-- Consistency checking across the project
-- Import/export CSV, TSV, and TBX
-- Approved variants and forbidden terminology
-- Real-time term highlighting in editor
-
-### 🤖 AI & Machine Translation
-
-- **Inline MT suggestions** — DeepL/OpenAI suggestions appear as you translate
-- **Batch Machine Translate** (Ctrl+Alt+T) — translate all untranslated at once
-- **AI Review** (Ctrl+Shift+A) — quality scoring with heuristic fallback
-- **Back-translation verification** — detect meaning drift
-- **Heuristic confidence estimates** per entry, labelled with method and evidence level
-- Supported engines include DeepL, OpenAI, Google, Lingva, MyMemory, Argos
-  Translate and OpenNMT-py. Argos and OpenNMT run locally without API keys;
-  OpenNMT requires a compatible model file and `onmt_translate` on `PATH`.
-
-### ✅ Quality Assurance
-
-- **15+ linting checks:**
-  - Missing translations
-  - Placeholder/format string mismatches (`%s`, `{0}`, etc.)
-  - HTML/XML tag mismatches
-  - Accelerator key mismatches (`&`)
-  - Length ratio warnings
-  - Duplicate translations
-  - Case mismatches
-  - CLDR plural form validation
-  - Number localization (thousands separator, currency, dates)
-  - Inconsistent translations
-  - Trailing whitespace/punctuation
-- **Spell check** — red wavy underlines with suggestions and custom dictionary
-- **Regex tester** — validate format strings
-- **Layout simulator** — pixel width checking for UI text
-- **Unicode inspector** — detect invisible/suspicious characters
-- **Automatic save-time QA** — errors are shown before a catalog is written
-- **Format profiles** — dedicated Qt, Android, subtitle, formal, and informal rules
-- **Accessibility audit** — missing labels and duplicate mnemonic keys
-- **Project health** — explainable score covering coverage, stale text, QA, terminology, and accessibility
-
-### 📊 Project Dashboard (Ctrl+D)
-
-- Per-language translation progress bars
-- Pie chart and bar chart (QPainter-based, no external deps)
-- Total string counts and summary stats
-- Export statistics as CSV
-
-### 🔀 Git Integration
-
-- **Git Diff** (Ctrl+Shift+D) — compare with previous commits
-- Detect outdated translations (source changed, translation didn't)
-- Stage, commit, branch management from within the editor
-- Secret scanning before LinguaEdit stages a file
-- File change monitoring with auto-reload
-
-### 🎬 Video Subtitle Translation
-
-- **FFmpeg integration** — extract subtitles from video files (.mkv, .mp4, .avi, etc.)
-- **Auto video preview** — opening a .srt/.vtt automatically finds and shows the matching video
-- **Editable timestamps** — time intervals as a dedicated column
-- **Progress bar** during extraction with percentage
-- User-friendly dialog when FFmpeg is not installed
-
-### 🔐 Security
-
-- **Cross-platform credential storage:**
-  - macOS: Keychain
-  - Windows: Credential Locker
-  - Linux: Secret Service (GNOME Keyring / KWallet)
-  - Fallback: AES-encrypted file with master password (PBKDF2, 480k iterations)
-- Security status visible in Preferences → Security
-- Explicit HTTPS host policy, private-network blocking, redacted errors, and no credential persistence in project files
-
-### 🛟 Local Recovery & Build Inspection
-
-- Atomic crash-recovery snapshots every 30 seconds with user-only file permissions
-- Recovery prompt when a newer unsaved local snapshot exists
-- Placeholder-safe pseudolocalization for layout testing, including RTL wrapping
-- Translation build inspector explaining `BUILD`/`SKIP`, completion, and the strict 20% threshold
-- Compiled `.qm` files remain artifact-only and `.ts` files remain source-only
-
-### 🌐 Platform Integration
-
-- **Transifex** — community translations with daily GitHub Actions sync (18 languages)
-- **File associations** — double-click `.po`, `.ts`, `.xliff`, etc. to open (macOS + Linux)
-- macOS `.app` bundle with proper menu bar name and icon
-- Linux `.desktop` file with MIME type definitions
-
-### 🎨 Themes & UI
-
-- **5 built-in themes** including comprehensive dark mode
-- **Horizontal/vertical layout toggle** — editor on right or below
-- **Auto-collapsing side panel** — hides when empty
-- **Context-aware toolbar** — customizable, with overflow menu
-- **Colored entry borders** — red (untranslated), orange (fuzzy), green (translated)
-- **Save flash animation** — green border flash confirming save
-- Fullscreen mode (F11)
-- Syntax highlighting for HTML tags, format strings, escape sequences
-
-### 🧪 Testing
-
-- **125+ tests** covering parsers, linter, TM, settings, security, GUI regressions, recovery, terminology, and packaging invariants
-
-### 🛠️ Advanced Tools
-
-- **Macro recording** — record and replay translation actions
-- **Versioned plugin API 1.0** — extend linting, suggestions, and transformations with compatibility checks
-- **Gamification** — achievements and streaks
-- **Pomodoro timer** — built-in focus timer
-- **TTS** — hear translations read aloud
-- **OCR** — extract text from images
-- **Locale map** — visual overview of project languages
-- **QA profiles** — configurable validation rule sets
-
----
-
-## 🌍 Translations
-
-LinguaEdit is translated via [Transifex](https://app.transifex.com/danielnylander/linguaedit/) with **about 1,600 catalog entries** and 18 languages configured. Translations sync daily via GitHub Actions.
-
-Currently translated:
-- **Swedish** — 100%
-
-**Help translate LinguaEdit into your language!** Join us on [Transifex](https://app.transifex.com/danielnylander/linguaedit/) — no coding required.
-
----
-
-## 🏗️ Building from Source
+## Build from source
 
 ```bash
-# Clone
 git clone https://github.com/yeager/linguaedit.git
 cd linguaedit
-
-# Install in development mode
-pip install -e .
-
-# Run
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ".[dev]" build
 linguaedit-gui
+```
 
-# Build wheel (compiles .ts to .qm inside the artifact)
+Build a wheel with:
+
+```bash
 python -m build --wheel
 ```
 
-Compiled `.qm` files are build artifacts and are not stored in the source tree.
-A language is included only when its `.ts` catalog is more than 20% translated.
+The build compiles `.ts` catalogs to `.qm` files inside the package when a catalog is more than 20% translated. Compiled `.qm` files are build artifacts and are not stored in the source tree. The release workflow builds the macOS apps, Windows installer, Debian package, and Python wheel; see [GitHub Actions](https://github.com/yeager/linguaedit/actions).
 
-### Dependencies
-
-- Python 3.10+
-- PySide6 >= 6.5
-- Optional: `ffmpeg` (video subtitle extraction), `hunspell` (spell checking)
-
-### Cross-Platform Builds
+The automated suite contains 147 tests. To run it locally:
 
 ```bash
-# Build for macOS (from macOS)
-pyinstaller LinguaEdit.spec
-
-# Create DMG
-hdiutil create -srcfolder "dist/LinguaEdit.app" -volname "LinguaEdit" "LinguaEdit.dmg"
-
-# Build for Windows (requires Wine or Windows machine)
-pyinstaller LinguaEdit-windows.spec
-
-# Create portable version (any platform)
-zip -r LinguaEdit-portable.zip src/ resources/ requirements.txt
+QT_QPA_PLATFORM=offscreen pytest -q
 ```
 
----
+## License
 
-## 📦 Package Repositories
+GPL-3.0-or-later. See [LICENSE](LICENSE).
 
-### Debian/Ubuntu (apt)
-**Repository:** https://yeager.github.io/debian-repo/
-```bash
-# Quick install:
-echo "deb [trusted=yes] https://yeager.github.io/debian-repo/ stable main" | sudo tee /etc/apt/sources.list.d/yeager.list
-sudo apt update && sudo apt install linguaedit
-```
+## Author
 
-### RPM (dnf/yum)
-**Repository:** https://yeager.github.io/rpm-repo/
-```bash
-# Quick install:
-sudo tee /etc/yum.repos.d/yeager.repo > /dev/null << 'EOF'
-[yeager]
-name=Yeager Repository
-baseurl=https://yeager.github.io/rpm-repo/packages
-enabled=1
-gpgcheck=0
-EOF
-sudo dnf install linguaedit
-```
-
-See [debian-repo](https://github.com/yeager/debian-repo) and [rpm-repo](https://github.com/yeager/rpm-repo) for setup instructions.
-
----
-
-## 📄 License
-
-GPL-3.0-or-later — see [LICENSE](LICENSE).
-
----
-
-## 👤 Author
-
-**Daniel Nylander** — Dedicated contributor to Swedish open-source localization, with translations of Ubuntu, GNU binutils, Ardour, util-linux, Weblate, and many more projects.
-
-- 🌐 [danielnylander.se](https://www.danielnylander.se)
-- 🐙 [github.com/yeager](https://github.com/yeager)
-
-## 🌍 Contributing Translations
-
-This app is translated via Transifex. Help translate it into your language!
-
-**[→ Translate on Transifex](https://app.transifex.com/danielnylander/linguaedit/)**
-
-Builds currently include Swedish, Danish, Japanese, Korean, Polish, and Simplified Chinese. Additional languages are included automatically as soon as their catalog is more than 20% translated.
-
-### For Translators
-1. Create a free account at [Transifex](https://www.transifex.com)
-2. Join the [danielnylander](https://app.transifex.com/danielnylander/) organization
-3. Start translating!
-
-Translations are automatically synced via GitHub Actions.
+Daniel Nylander — [danielnylander.se](https://www.danielnylander.se) · [GitHub](https://github.com/yeager)
