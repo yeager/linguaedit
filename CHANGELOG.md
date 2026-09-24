@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [1.8.19] — 2026-09-24
+
+### Fixed
+- **Localization format handling** — corrected parsing, saving, and recovery for multiple localization file formats
+- **Translation catalog coverage** — added 63 missing interface messages across supported catalogs for translation
+- **Editor stability** — fixed regressions in the translation editor and added regression coverage
+
 ## [1.8.18] — 2026-08-27
 
 ### Changed

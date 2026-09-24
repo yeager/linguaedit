@@ -505,7 +505,10 @@ class TestJavaPropertiesParser:
         assert cancel.value == "Avbryt"
 
     def test_values_keys_and_continuations_round_trip(self, tmp_path):
-        from linguaedit.parsers.java_properties import parse_java_properties, save_java_properties
+        from linguaedit.parsers.java_properties import (
+            parse_java_properties,
+            save_java_properties,
+        )
         path = tmp_path / "spacing.properties"
         path.write_text("spaced=  leading and trailing  \ncontinued=hello\\\n  world\nkey\\=part=value\nempty=\n", encoding="utf-8")
         data = parse_java_properties(path)
@@ -531,6 +534,7 @@ def test_webvtt_cue_identifiers_survive_save(tmp_path):
 
 def test_stringsdict_save_preserves_format_and_extra_plist_data(tmp_path):
     import plistlib
+
     from linguaedit.parsers.apple_strings import parse_apple_strings, save_apple_strings
     path = tmp_path / "Localizable.stringsdict"
     original = {

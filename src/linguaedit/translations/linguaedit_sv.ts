@@ -3709,7 +3709,203 @@
         </message>
     <message><source>No API Key</source><translation>Ingen API-nyckel</translation></message><message><source>No Transifex API key configured.
 Please add one in Translation → API Keys…</source><translation>Ingen Transifex API-nyckel konfigurerad.
-Lägg till en i Översättning → API-nycklar…</translation></message><message><source>No language statistics found.</source><translation>Ingen språkstatistik hittades.</translation></message><message><source>No organizations found.</source><translation>Inga organisationer hittades.</translation></message><message><source>No projects found.</source><translation>Inga projekt hittades.</translation></message><message><source>Organization:</source><translation>Organisation:</translation></message><message><source>Project:</source><translation>Projekt:</translation></message><message><source>Select Organization</source><translation>Välj organisation</translation></message><message><source>Select Project</source><translation>Välj projekt</translation></message><message><source>Transifex Error</source><translation>Transifex-fel</translation></message><message><source>Transifex Statistics…</source><translation>Transifex-statistik…</translation></message><message><source>Transifex — %s</source><translation>Transifex — %s</translation></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation>Översättningsstatistik för &lt;b&gt;%s&lt;/b&gt;:</translation></message></context>
+Lägg till en i Översättning → API-nycklar…</translation></message><message><source>No language statistics found.</source><translation>Ingen språkstatistik hittades.</translation></message><message><source>No organizations found.</source><translation>Inga organisationer hittades.</translation></message><message><source>No projects found.</source><translation>Inga projekt hittades.</translation></message><message><source>Organization:</source><translation>Organisation:</translation></message><message><source>Project:</source><translation>Projekt:</translation></message><message><source>Select Organization</source><translation>Välj organisation</translation></message><message><source>Select Project</source><translation>Välj projekt</translation></message><message><source>Transifex Error</source><translation>Transifex-fel</translation></message><message><source>Transifex Statistics…</source><translation>Transifex-statistik…</translation></message><message><source>Transifex — %s</source><translation>Transifex — %s</translation></message><message><source>Translation statistics for &lt;b&gt;%s&lt;/b&gt;:</source><translation>Översättningsstatistik för &lt;b&gt;%s&lt;/b&gt;:</translation></message>
+        <message>
+            <source>A newer local recovery snapshot exists. Restore it?</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Accessibility</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Accessibility check</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Approved</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Automatic QA found %d errors. Save anyway?</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Back-translating…</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Back-translation Error</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Back-translation Verification</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>By context</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Found %d issues:
+
+</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Git Commit Blocked</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Health: %.1f%%
+Translated: %d/%d
+Stale: %d
+Errors: %d
+Warnings: %d
+Terminology issues: %d
+Accessibility issues: %d
+Risks: %s</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Help translate:</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Inspect translation build</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Issues:</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Made %d replacements</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Needs review</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>No accessibility issues found! ✓</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>No entry selected</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>No linguaedit_*.ts catalogs found</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>No matches found</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>OpenNMT model:</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Path to an OpenNMT-py model file</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Pomodoro Timer…</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Potential secrets were found. Nothing was staged.</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Project Health</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Project health</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Pseudolocalize current entry</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Pseudolocalized current entry</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>QA profile: Android</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>QA profile: Qt</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>QA profile: Subtitles</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Quality errors</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Quality score:</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Recover unsaved work</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Rejected</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Review status: %s</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Review status: Needs review</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Select translation catalog directory</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Source text is read-only</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Source:
+%s
+
+Back-translation:
+%s
+
+Text similarity: %.0f%%</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>The current entry is untranslated</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Translation Build</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Verify with Back-translation</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>none</source>
+            <translation type="unfinished"></translation>
+        </message>
+</context>
     <context>
         <name>Linter</name>
         <message>
@@ -4465,7 +4661,35 @@ Lägg till en i Översättning → API-nycklar…</translation></message><messag
             <source>🔒 Tokens stored in %1</source>
             <translation>🔒 Tokens lagrade i %1</translation>
         </message>
-    </context>
+        <message>
+            <source>Browse…</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Loading…</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Select Component</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Select Organization</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Select Project</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>✗ Select a project first</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>✗ Select an organization first</source>
+            <translation type="unfinished"></translation>
+        </message>
+</context>
     <context>
         <name>PluginDialog</name>
         <message>
@@ -4686,7 +4910,23 @@ Lägg till en i Översättning → API-nycklar…</translation></message><messag
             <source>Your credentials are securely stored in the system keychain.</source>
             <translation>Dina inloggningsuppgifter lagras säkert i systemets nyckelring.</translation>
         </message>
-    </context>
+        <message>
+            <source>Automatically reload watched files</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>OpenNMT model:</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Path to an OpenNMT-py model file</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Reload external changes without asking while Watch File is enabled</source>
+            <translation type="unfinished"></translation>
+        </message>
+</context>
     <context>
         <name>ProjectDockWidget</name>
         <message>
@@ -6193,6 +6433,37 @@ Ny version: %s</translation>
         <message>
             <source>Remind me later</source>
             <translation>Påminn mig senare</translation>
+        </message>
+    </context>
+    <context>
+        <name>PomodoroDialog</name>
+        <message>
+            <source>Focus minutes:</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Pause</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Pomodoro Timer</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Reset</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Resume</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Start</source>
+            <translation type="unfinished"></translation>
+        </message>
+        <message>
+            <source>Time for a break!</source>
+            <translation type="unfinished"></translation>
         </message>
     </context>
 </TS>
