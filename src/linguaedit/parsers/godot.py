@@ -29,6 +29,23 @@ class GodotFileData:
     encoding: str = "utf-8"
     delimiter: str = ","
 
+    @property
+    def total_count(self) -> int:
+        return len(self.entries)
+
+    @property
+    def translated_count(self) -> int:
+        lang = self.languages[0] if self.languages else ""
+        return sum(bool(entry.translations.get(lang, "")) for entry in self.entries)
+
+    @property
+    def untranslated_count(self) -> int:
+        return self.total_count - self.translated_count
+
+    @property
+    def fuzzy_count(self) -> int:
+        return 0
+
 
 def _detect_delimiter(content: str) -> str:
     """Detektera delimiter (komma eller tab)."""

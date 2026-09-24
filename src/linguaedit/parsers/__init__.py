@@ -44,3 +44,13 @@ def safe_fromstring_xml(text: Union[str, bytes]) -> ET.Element:
     if _HAS_DEFUSEDXML:
         return _safe_ET.fromstring(text)
     return ET.fromstring(text, parser=_make_safe_parser())
+
+
+def set_xml_text_preserving_inline(element: ET.Element, text: str) -> None:
+    """Replace visible text while retaining inline XML marker elements."""
+    element.text = text
+    for child in element.iter():
+        if child is element:
+            continue
+        child.text = None
+        child.tail = None

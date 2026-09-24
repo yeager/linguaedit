@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import xml.etree.ElementTree as ET
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Union
 
@@ -19,6 +19,15 @@ class RESXData:
     metadata: Dict[str, Any] = None
     schema: str = ""
     headers: Dict[str, str] = None
+    _tree: ET.ElementTree | None = field(default=None, repr=False)
+
+    @property
+    def path(self) -> Path:
+        return Path(self.file_path)
+
+    @path.setter
+    def path(self, value: str | Path) -> None:
+        self.file_path = str(value)
 
     @property
     def total_count(self) -> int:
@@ -31,6 +40,10 @@ class RESXData:
     @property
     def untranslated_count(self) -> int:
         return sum(1 for e in self.entries if not e.msgstr)
+
+    @property
+    def fuzzy_count(self) -> int:
+        return 0
 
     @property
     def percent_translated(self) -> float:
@@ -62,6 +75,11 @@ def parse_resx(file_path: Union[str, Path]) -> RESXData:
             type_attr = data_elem.get('type', '')
             mime_type = data_elem.get('mimetype', '')
             
+            # Binary and typed resources are not translatable text. Keep them
+            # in the original XML tree and leave them out of the editor.
+            if mime_type or (type_attr and "System.String" not in type_attr):
+                continue
+
             # Find value element
             value_elem = data_elem.find('value')
             value = value_elem.text if value_elem is not None else ''
@@ -120,19 +138,17 @@ def parse_resx(file_path: Union[str, Path]) -> RESXData:
         file_path=str(path),
         metadata=metadata,
         schema=schema,
-        headers=headers or {}
+        headers=headers or {},
+        _tree=tree,
     )
 
 
 def save_resx(data: RESXData, file_path: Union[str, Path]) -> None:
     """Save RESX data to file."""
     path = Path(file_path)
-    
-    # Create root element
-    root = ET.Element('root')
-    
-    # Add schema if available (skip reserved namespaces)
-    if data.schema and data.schema != 'http://www.w3.org/XML/1998/namespace':
+    tree = data._tree or ET.ElementTree(ET.Element('root'))
+    root = tree.getroot()
+    if data._tree is None and data.schema and data.schema != 'http://www.w3.org/XML/1998/namespace':
         root.set('xmlns', data.schema)
     
     # Add standard resheader elements
@@ -146,24 +162,21 @@ def save_resx(data: RESXData, file_path: Union[str, Path]) -> None:
     # Merge with existing headers
     all_headers = {**standard_headers, **(data.headers or {})}
     
+    headers_by_name = {el.get('name'): el for el in root.findall('resheader')}
     for name, value in all_headers.items():
-        resheader = ET.SubElement(root, 'resheader')
-        resheader.set('name', name)
-        value_elem = ET.SubElement(resheader, 'value')
+        resheader = headers_by_name.get(name)
+        if resheader is None:
+            resheader = ET.SubElement(root, 'resheader', name=name)
+        value_elem = resheader.find('value')
+        if value_elem is None:
+            value_elem = ET.SubElement(resheader, 'value')
         value_elem.text = value
-    
-    # Add assembly references from metadata
-    for key, value in (data.metadata or {}).items():
-        if key.startswith('assembly_'):
-            alias = key[9:]  # Remove 'assembly_' prefix
-            assembly = ET.SubElement(root, 'assembly')
-            assembly.set('alias', alias)
-            assembly.set('name', value)
-    
-    # Add data entries
+
+    data_by_name = {el.get('name'): el for el in root.findall('data')}
     for entry in data.entries:
-        data_elem = ET.SubElement(root, 'data')
-        data_elem.set('name', entry.msgid)
+        data_elem = data_by_name.get(entry.msgid)
+        if data_elem is None:
+            data_elem = ET.SubElement(root, 'data', name=entry.msgid)
         
         # Add xml:space if needed
         for flag in entry.flags:
@@ -180,20 +193,26 @@ def save_resx(data: RESXData, file_path: Union[str, Path]) -> None:
                 data_elem.set('mimetype', cline[6:])
         
         # Add value
-        value_elem = ET.SubElement(data_elem, 'value')
+        value_elem = data_elem.find('value')
+        if value_elem is None:
+            value_elem = ET.SubElement(data_elem, 'value')
         value_elem.text = entry.msgstr
         
         # Add comment if available and not metadata
         regular_comments = [c for c in comment_lines
                           if not c.startswith('Type: ') and not c.startswith('MIME: ')]
         if regular_comments:
-            comment_elem = ET.SubElement(data_elem, 'comment')
+            comment_elem = data_elem.find('comment')
+            if comment_elem is None:
+                comment_elem = ET.SubElement(data_elem, 'comment')
             comment_elem.text = '\n'.join(regular_comments)
+        else:
+            comment_elem = data_elem.find('comment')
+            if comment_elem is not None:
+                data_elem.remove(comment_elem)
     
     # Write to file with proper formatting
     _indent_xml(root)
-    tree = ET.ElementTree(root)
-    
     # Write with XML declaration
     with open(path, 'wb') as f:
         tree.write(f, encoding='utf-8', xml_declaration=True)

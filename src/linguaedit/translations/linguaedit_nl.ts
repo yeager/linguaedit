@@ -3694,10 +3694,7 @@
             <source>Weblate Error</source>
             <translation type="unfinished"/>
         </message>
-        <message>
-            <source>Weblate</source>
-            <translation type="unfinished"/>
-        </message>
+
         <message>
             <source>Weblate — %s</source>
             <translation type="unfinished"/>
@@ -5958,10 +5955,7 @@ Please add one in Translation → API Keys…</source><translation type="unfinis
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
             <translation type="unfinished"/>
         </message>
-        <message>
-            <source>&lt;b&gt;Source text&lt;/b&gt;</source>
-            <translation type="unfinished"/>
-        </message>
+
         <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
             <translation type="unfinished"/>
@@ -5970,10 +5964,7 @@ Please add one in Translation → API Keys…</source><translation type="unfinis
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
             <translation type="unfinished"/>
         </message>
-        <message>
-            <source>&lt;b&gt;Translation&lt;/b&gt;</source>
-            <translation type="unfinished"/>
-        </message>
+
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
             <translation type="unfinished"/>

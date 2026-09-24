@@ -3694,10 +3694,7 @@
             <source>Weblate Error</source>
             <translation>Weblate-fel</translation>
         </message>
-        <message>
-            <source>Weblate</source>
-            <translation>Weblate</translation>
-        </message>
+
         <message>
             <source>Weblate — %s</source>
             <translation>Weblate — %s</translation>
@@ -5959,10 +5956,7 @@ Lägg till en i Översättning → API-nycklar…</translation></message><messag
             <source>&lt;b&gt;Source text:&lt;/b&gt;</source>
             <translation>&lt;b&gt;Källtext:&lt;/b&gt;</translation>
         </message>
-        <message>
-            <source>&lt;b&gt;Source text&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Källtext&lt;/b&gt;</translation>
-        </message>
+
         <message>
             <source>&lt;b&gt;Suggestions&lt;/b&gt;</source>
             <translation>&lt;b&gt;Förslag&lt;/b&gt;</translation>
@@ -5971,10 +5965,7 @@ Lägg till en i Översättning → API-nycklar…</translation></message><messag
             <source>&lt;b&gt;Translation:&lt;/b&gt;</source>
             <translation>&lt;b&gt;Översättning:&lt;/b&gt;</translation>
         </message>
-        <message>
-            <source>&lt;b&gt;Translation&lt;/b&gt;</source>
-            <translation>&lt;b&gt;Översättning&lt;/b&gt;</translation>
-        </message>
+
         <message>
             <source>&lt;b&gt;Translator comment:&lt;/b&gt;</source>
             <translation>&lt;b&gt;Översättarens kommentar:&lt;/b&gt;</translation>

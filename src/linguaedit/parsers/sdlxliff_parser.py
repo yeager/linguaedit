@@ -15,7 +15,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 
-from linguaedit.parsers import safe_parse_xml
+from linguaedit.parsers import safe_parse_xml, set_xml_text_preserving_inline
 
 _NS_XLIFF = "urn:oasis:names:tc:xliff:document:1.2"
 _NS_SDL = "http://sdl.com/FileTypes/SdlXliff/1.0"
@@ -228,6 +228,7 @@ def save_sdlxliff(data: SDLXLIFFFileData, path: Optional[str | Path] = None) -> 
 
         # Build lookup by id
         entry_map = {e.id: e for e in data.entries}
+        updated_targets = []
 
         for file_el in root.iter(f"{ns}file"):
             for body in file_el.iter(f"{ns}body"):
@@ -241,9 +242,8 @@ def save_sdlxliff(data: SDLXLIFFFileData, path: Optional[str | Path] = None) -> 
                     if target_el is None:
                         target_el = ET.SubElement(tu, f"{ns}target")
 
-                    # If target has inline markup, only update if it's plain text
-                    if len(target_el) == 0:
-                        target_el.text = entry.target
+                    set_xml_text_preserving_inline(target_el, entry.target)
+                    updated_targets.append((target_el, entry.target))
 
                     # Update SDL confirmation
                     for sd_el in tu.iter(f"{sdl}seg-defs"):
@@ -254,6 +254,8 @@ def save_sdlxliff(data: SDLXLIFFFileData, path: Optional[str | Path] = None) -> 
                                 seg.set("conf", "Draft")
 
         ET.indent(data._tree, space="    ")
+        for target_el, target_text in updated_targets:
+            set_xml_text_preserving_inline(target_el, target_text)
         data._tree.write(str(out), encoding="utf-8", xml_declaration=True)
     else:
         # Fallback: write as standard XLIFF 1.2

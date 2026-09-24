@@ -77,6 +77,54 @@ def test_chrome_messages_uses_chrome_parser(qapp, monkeypatch, tmp_path):
         win.close()
 
 
+def test_main_editor_saves_chrome_properties_and_godot_targets(qapp, monkeypatch, tmp_path):
+    win = _window(qapp, monkeypatch, tmp_path)
+    try:
+        locale_dir = tmp_path / "_locales"
+        locale_dir.mkdir()
+        chrome_path = locale_dir / "messages.json"
+        chrome_path.write_text('{"hello":{"message":"Hello"}}', encoding="utf-8")
+        win._load_file(str(chrome_path))
+        win._current_index = 0
+        win._trans_view.setPlainText("Hej")
+        win._save_current_entry()
+        assert win._file_data.entries[0].message == "Hej"
+
+        properties_path = tmp_path / "messages.properties"
+        properties_path.write_text("hello=Hello\n", encoding="utf-8")
+        win._load_file(str(properties_path))
+        win._current_index = 0
+        win._trans_view.setPlainText("Hej")
+        win._save_current_entry()
+        assert win._file_data.entries[0].value == "Hej"
+
+        godot_path = tmp_path / "messages.csv"
+        godot_path.write_text("keys,en,sv\nhello,Hello,\n", encoding="utf-8")
+        win._load_file(str(godot_path))
+        win._current_index = 0
+        win._trans_view.setPlainText("Hej")
+        win._save_current_entry()
+        assert win._file_data.entries[0].translations["en"] == "Hej"
+    finally:
+        win._modified = False
+        win.close()
+
+
+def test_bookmarks_persist_for_standard_path_models(qapp, monkeypatch, tmp_path):
+    win = _window(qapp, monkeypatch, tmp_path)
+    win._bookmarks_file = tmp_path / "bookmarks.json"
+    try:
+        win._load_file(str(FIXTURES / "test.po"))
+        win._bookmarks = {1, 3}
+        win._save_bookmarks()
+        win._bookmarks.clear()
+        win._load_bookmarks()
+        assert win._bookmarks == {1, 3}
+    finally:
+        win._modified = False
+        win.close()
+
+
 def test_empty_html_report_and_pdf_export(qapp, monkeypatch, tmp_path):
     win = _window(qapp, monkeypatch, tmp_path)
     try:

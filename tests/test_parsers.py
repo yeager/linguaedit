@@ -96,6 +96,18 @@ class TestTSParser:
         cancel = [e for e in data2.entries if e.source == "Cancel"][0]
         assert cancel.translation == "Avbryt"
 
+    def test_save_preserves_unmodeled_ts_metadata(self, tmp_path):
+        from linguaedit.parsers.ts_parser import parse_ts, save_ts
+        path = tmp_path / "metadata.ts"
+        path.write_text('''<TS version="2.1" language="sv" custom="keep"><extra>preserve</extra><context><name>Ctx</name><message id="42"><location filename="a.cpp" line="7"/><source>Open</source><extracomment>keep this</extracomment><translation>Öppna</translation></message></context></TS>''', encoding="utf-8")
+        data = parse_ts(path)
+        data.entries[0].translation = "Öppna nu"
+        save_ts(data)
+        saved = path.read_text(encoding="utf-8")
+        assert 'custom="keep"' in saved and "<extra>preserve</extra>" in saved
+        assert 'id="42"' in saved and "<extracomment>keep this</extracomment>" in saved
+        assert "Öppna nu" in saved
+
 
 # ── XLIFF Parser ─────────────────────────────────────────────────
 
@@ -126,6 +138,27 @@ class TestXLIFFParser:
         data2 = parse_xliff(out)
         save_entry = [e for e in data2.entries if e.source == "Save"][0]
         assert save_entry.target == "Spara"
+
+    def test_save_preserves_unmodeled_xliff_metadata(self, tmp_path):
+        from linguaedit.parsers.xliff_parser import parse_xliff, save_xliff
+        path = tmp_path / "metadata.xlf"
+        path.write_text('''<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:vendor="urn:vendor"><file source-language="en" target-language="sv" original="a" vendor:flag="keep"><header><tool tool-id="custom"/></header><body><trans-unit id="1" approved="yes"><source>Open</source><target><g id="1">old text</g></target><note>Keep note</note><vendor:extra>keep extension</vendor:extra></trans-unit></body></file></xliff>''', encoding="utf-8")
+        data = parse_xliff(path)
+        data.entries[0].target = "Öppna nu"
+        save_xliff(data)
+        import xml.etree.ElementTree as ET
+        root = ET.parse(path).getroot()
+        ns = {"x": "urn:oasis:names:tc:xliff:document:1.2", "v": "urn:vendor"}
+        file_element = root.find("x:file", ns)
+        unit = root.find(".//x:trans-unit", ns)
+        assert file_element.get("{urn:vendor}flag") == "keep"
+        assert root.find(".//x:tool", ns).get("tool-id") == "custom"
+        assert unit.get("approved") == "yes"
+        assert unit.findtext("x:note", namespaces=ns) == "Keep note"
+        assert unit.findtext("v:extra", namespaces=ns) == "keep extension"
+        target = unit.find("x:target", ns)
+        assert "".join(target.itertext()) == "Öppna nu"
+        assert target.find("x:g", ns).get("id") == "1"
 
 
 # ── JSON Parser ──────────────────────────────────────────────────
@@ -172,6 +205,17 @@ class TestJSONParser:
         data2 = parse_json(out)
         cancel = [e for e in data2.entries if e.key == "cancel"][0]
         assert cancel.value == "Avbryt"
+
+    def test_literal_dots_and_nested_keys_round_trip_without_collision(self, tmp_path):
+        from linguaedit.parsers.json_parser import parse_json, save_json
+        source = tmp_path / "keys.json"
+        source.write_text('{"a.b":"literal", "a":{"b":"nested"}}', encoding="utf-8")
+        data = parse_json(source)
+        out = tmp_path / "out.json"
+        save_json(data, out)
+        assert __import__("json").loads(out.read_text(encoding="utf-8")) == {
+            "a.b": "literal", "a": {"b": "nested"}
+        }
 
 
 # ── Chrome i18n Parser ───────────────────────────────────────────
@@ -405,6 +449,22 @@ class TestRESXParser:
         if cancel:
             assert cancel[0].msgstr == "Avbryt"
 
+    def test_save_preserves_non_string_resources_and_custom_xml(self, tmp_path):
+        from linguaedit.parsers.resx import parse_resx, save_resx
+        path = tmp_path / "custom.resx"
+        path.write_text('''<root><custom flag="keep"/><resheader name="custom"><value>x</value></resheader>
+<data name="text"><value>old</value><comment>note</comment></data>
+<data name="typed" type="System.String"><value>old typed</value></data>
+<data name="blob" type="System.Byte[]" mimetype="application/x-microsoft.net.object.bytearray.base64"><value>AA==</value></data></root>''', encoding="utf-8")
+        data = parse_resx(path)
+        assert [entry.msgid for entry in data.entries] == ["text", "typed"]
+        data.entries[0].msgstr = "new"
+        save_resx(data, path)
+        saved = path.read_text(encoding="utf-8")
+        assert '<custom flag="keep"' in saved
+        assert 'name="blob"' in saved and '>AA==<' in saved
+        assert '>new<' in saved
+
 
 # ── Java Properties Parser ───────────────────────────────────────
 
@@ -443,6 +503,57 @@ class TestJavaPropertiesParser:
         data2 = parse_java_properties(out)
         cancel = [e for e in data2.entries if e.key == "cancel"][0]
         assert cancel.value == "Avbryt"
+
+    def test_values_keys_and_continuations_round_trip(self, tmp_path):
+        from linguaedit.parsers.java_properties import parse_java_properties, save_java_properties
+        path = tmp_path / "spacing.properties"
+        path.write_text("spaced=  leading and trailing  \ncontinued=hello\\\n  world\nkey\\=part=value\nempty=\n", encoding="utf-8")
+        data = parse_java_properties(path)
+        values = {entry.key: entry.value for entry in data.entries}
+        assert values == {"spaced": "leading and trailing  ", "continued": "helloworld", "key=part": "value", "empty": ""}
+        out = tmp_path / "out.properties"
+        save_java_properties(data, out)
+        reread = {entry.key: entry.value for entry in parse_java_properties(out).entries}
+        assert reread == values
+
+
+def test_webvtt_cue_identifiers_survive_save(tmp_path):
+    from linguaedit.parsers.subtitles import parse_subtitles, save_subtitles
+    path = tmp_path / "ids.vtt"
+    path.write_text("WEBVTT\n\nchapter-1\n00:00:01.000 --> 00:00:02.000 align:start\nHello\n", encoding="utf-8")
+    data = parse_subtitles(path)
+    assert data.entries[0].identifier == "chapter-1"
+    data.entries[0].translation = "Hej"
+    save_subtitles(data)
+    saved = path.read_text(encoding="utf-8")
+    assert "chapter-1\n00:00:01.000 --> 00:00:02.000 align:start\nHej" in saved
+
+
+def test_stringsdict_save_preserves_format_and_extra_plist_data(tmp_path):
+    import plistlib
+    from linguaedit.parsers.apple_strings import parse_apple_strings, save_apple_strings
+    path = tmp_path / "Localizable.stringsdict"
+    original = {
+        "items": {
+            "NSStringLocalizedFormatKey": "%#@count@",
+            "count": {
+                "NSStringFormatSpecTypeKey": "NSStringPluralRuleType",
+                "NSStringFormatValueTypeKey": {"one": "%d item", "other": "%d items"},
+                "CustomKey": "preserve",
+            },
+        },
+        "metadata": "keep",
+    }
+    path.write_bytes(plistlib.dumps(original))
+    data = parse_apple_strings(path)
+    one = next(entry for entry in data.entries if entry.msgid == "items[one]")
+    one.msgstr = "%d thing"
+    save_apple_strings(data, path)
+    saved = plistlib.loads(path.read_bytes())
+    assert saved["items"]["NSStringLocalizedFormatKey"] == "%#@count@"
+    assert saved["items"]["count"]["NSStringFormatValueTypeKey"]["one"] == "%d thing"
+    assert saved["items"]["count"]["CustomKey"] == "preserve"
+    assert saved["metadata"] == "keep"
 
 
 # ── Godot Parser ─────────────────────────────────────────────────

@@ -2901,16 +2901,6 @@ class LinguaEditWindow(QMainWindow):
             return [(e.msgid, e.msgstr, e.fuzzy) for e in self._file_data.entries]
         return []
 
-    def _set_entry_translation(self, index: int, text: str) -> None:
-        """Set an entry target consistently across supported parser models."""
-        entry = self._file_data.entries[index]
-        for attribute in ("msgstr", "translation", "target", "value", "message"):
-            if hasattr(entry, attribute):
-                setattr(entry, attribute, text)
-                return
-        if self._file_type == "godot" and self._file_data.languages:
-            entry.translations[self._file_data.languages[0]] = text
-
     def _write_recovery_snapshot(self) -> None:
         if not self._modified or not self._file_data:
             return
@@ -2944,6 +2934,7 @@ class LinguaEditWindow(QMainWindow):
             index = recovered.get("index", -1)
             if 0 <= index < len(self._file_data.entries):
                 self._set_entry_translation(index, recovered.get("translation", ""))
+                self._set_entry_fuzzy(index, bool(recovered.get("fuzzy", False)))
         self._restored_recovery = True
         self._modified = True
 
@@ -3290,22 +3281,31 @@ class LinguaEditWindow(QMainWindow):
     # ══════════════════════════════════════════════════════════════
 
     def _set_entry_translation(self, idx: int, text: str):
+        entry = self._file_data.entries[idx]
         if self._file_type == "po":
-            self._file_data.entries[idx].msgstr = text
+            entry.msgstr = text
         elif self._file_type == "ts":
-            self._file_data.entries[idx].translation = text
+            entry.translation = text
         elif self._file_type == "json":
-            self._file_data.entries[idx].value = text
+            entry.value = text
+        elif self._file_type == "chrome_i18n":
+            entry.message = text
+        elif self._file_type == "java_properties":
+            entry.value = text
         elif self._file_type in ("xliff", "sdlxliff", "mqxliff"):
-            self._file_data.entries[idx].target = text
+            entry.target = text
         elif self._file_type in ("android", "arb", "php", "yaml"):
-            self._file_data.entries[idx].value = text
+            entry.value = text
+        elif self._file_type == "godot" and self._file_data.languages:
+            entry.translations[self._file_data.languages[0]] = text
         elif self._file_type == "subtitles":
-            self._file_data.entries[idx].translation = text
+            entry.translation = text
+        elif self._file_type in ("apple_strings", "unity_asset", "resx"):
+            entry.msgstr = text
 
     def _set_entry_fuzzy(self, idx: int, fuzzy: bool):
+        entry = self._file_data.entries[idx]
         if self._file_type == "po":
-            entry = self._file_data.entries[idx]
             if fuzzy:
                 if "fuzzy" not in entry.flags:
                     entry.flags.append("fuzzy")
@@ -3313,6 +3313,25 @@ class LinguaEditWindow(QMainWindow):
             else:
                 entry.flags = [f for f in entry.flags if f != "fuzzy"]
                 entry.fuzzy = False
+        elif self._file_type == "ts":
+            if fuzzy:
+                entry.translation_type = "unfinished"
+            elif entry.is_fuzzy:
+                entry.translation_type = ""
+        elif self._file_type == "xliff":
+            if fuzzy:
+                entry.state = "needs-review-translation"
+            elif entry.is_fuzzy:
+                entry.state = "translated"
+        elif self._file_type in ("sdlxliff", "mqxliff"):
+            if fuzzy:
+                entry.confirmed = False
+                entry.state = "needs-review-translation"
+            elif entry.is_fuzzy:
+                entry.confirmed = True
+                entry.state = "translated"
+        elif self._file_type == "subtitles":
+            entry.fuzzy = fuzzy
 
     # ── Auto-propagate ────────────────────────────────────────────
 
@@ -3822,6 +3841,10 @@ class LinguaEditWindow(QMainWindow):
             self._show_toast(self.tr("Error loading file: %s") % str(e))
             return
 
+        # Associate this freshly loaded model with its tab before recovery can
+        # dirty it; otherwise the tab-change signal may save the old model over
+        # the new tab's state.
+        self._save_current_tab()
         self._offer_recovery(p)
         self.setWindowTitle(self.tr("LinguaEdit — %s") % p.name)
 
@@ -3926,6 +3949,16 @@ class LinguaEditWindow(QMainWindow):
             if entry.value != text:
                 entry.value = text
                 self._modified = True
+        elif self._file_type == "chrome_i18n":
+            entry = self._file_data.entries[self._current_index]
+            if entry.message != text:
+                entry.message = text
+                self._modified = True
+        elif self._file_type == "java_properties":
+            entry = self._file_data.entries[self._current_index]
+            if entry.value != text:
+                entry.value = text
+                self._modified = True
         elif self._file_type == "xliff":
             entry = self._file_data.entries[self._current_index]
             if entry.target != text:
@@ -3943,6 +3976,12 @@ class LinguaEditWindow(QMainWindow):
             entry = self._file_data.entries[self._current_index]
             if entry.value != text:
                 entry.value = text
+                self._modified = True
+        elif self._file_type == "godot" and self._file_data.languages:
+            entry = self._file_data.entries[self._current_index]
+            lang = self._file_data.languages[0]
+            if entry.translations.get(lang, "") != text:
+                entry.translations[lang] = text
                 self._modified = True
         elif self._file_type == "subtitles":
             entry = self._file_data.entries[self._current_index]
@@ -4080,7 +4119,7 @@ class LinguaEditWindow(QMainWindow):
             )
             if not path:
                 return
-            self._file_data.file_path = Path(path)
+            self._file_data.path = Path(path)
             self._file_data.path = Path(path)
             self.setWindowTitle(self.tr("LinguaEdit — %s") % Path(path).name)
             # Update the tab label too
@@ -4153,13 +4192,15 @@ class LinguaEditWindow(QMainWindow):
             elif self._file_type == "subtitles":
                 save_subtitles(self._file_data)
             elif self._file_type == "apple_strings":
-                save_apple_strings(self._file_data, self._file_data.file_path)
+                save_apple_strings(self._file_data, self._file_data.path)
             elif self._file_type == "unity_asset":
-                save_unity_asset(self._file_data, self._file_data.file_path)
+                save_unity_asset(self._file_data, self._file_data.path)
             elif self._file_type == "resx":
-                save_resx(self._file_data, self._file_data.file_path)
+                save_resx(self._file_data, self._file_data.path)
             self._modified = False
-            self._recovery_journal.discard(self._file_data.path)
+            recovery_path = getattr(self._file_data, "path", None) or getattr(self._file_data, "file_path", None)
+            if recovery_path:
+                self._recovery_journal.discard(recovery_path)
             self._show_toast(self.tr("Saved!"))
             self._update_stats()
             self._populate_list()
@@ -4207,7 +4248,7 @@ class LinguaEditWindow(QMainWindow):
         if hasattr(self._file_data, 'path'):
             self._file_data.path = new_path_obj
         if hasattr(self._file_data, 'file_path'):
-            self._file_data.file_path = new_path_obj
+            self._file_data.path = new_path_obj
         if hasattr(self._file_data, 'fpath'):
             self._file_data.fpath = new_path_obj
         self._on_save()
@@ -6351,7 +6392,7 @@ class LinguaEditWindow(QMainWindow):
                     pass
             
             # Uppdatera för aktuell fil
-            file_key = str(Path(self._file_data.file_path).resolve())
+            file_key = str(Path(self._file_data.path).resolve())
             bookmarks_data[file_key] = list(self._bookmarks)
             
             # Spara
@@ -6372,7 +6413,7 @@ class LinguaEditWindow(QMainWindow):
                 return
             
             bookmarks_data = json.loads(self._bookmarks_file.read_text("utf-8"))
-            file_key = str(Path(self._file_data.file_path).resolve())
+            file_key = str(Path(self._file_data.path).resolve())
             
             self._bookmarks = set(bookmarks_data.get(file_key, []))
             
@@ -6415,7 +6456,7 @@ class LinguaEditWindow(QMainWindow):
             
         try:
             self._pinned_file.parent.mkdir(parents=True, exist_ok=True)
-            file_key = str(Path(self._file_data.path).resolve()) if hasattr(self._file_data, 'path') else str(self._file_data.file_path)
+            file_key = str(Path(self._file_data.path).resolve()) if hasattr(self._file_data, 'path') else str(self._file_data.path)
             
             # Ladda befintlig data
             pinned_data = {}
@@ -6446,7 +6487,7 @@ class LinguaEditWindow(QMainWindow):
                 return
             
             pinned_data = json.loads(self._pinned_file.read_text("utf-8"))
-            file_key = str(Path(self._file_data.path).resolve()) if hasattr(self._file_data, 'path') else str(self._file_data.file_path)
+            file_key = str(Path(self._file_data.path).resolve()) if hasattr(self._file_data, 'path') else str(self._file_data.path)
             
             self._pinned_entries = set(pinned_data.get(file_key, []))
             
@@ -6861,7 +6902,7 @@ class LinguaEditWindow(QMainWindow):
                     pass
             
             # Uppdatera för aktuell fil
-            file_key = str(Path(self._file_data.file_path).resolve())
+            file_key = str(Path(self._file_data.path).resolve())
             tags_data[file_key] = {str(k): v for k, v in self._tags.items()}
             
             # Spara
@@ -6882,7 +6923,7 @@ class LinguaEditWindow(QMainWindow):
                 return
             
             tags_data = json.loads(self._tags_file.read_text("utf-8"))
-            file_key = str(Path(self._file_data.file_path).resolve())
+            file_key = str(Path(self._file_data.path).resolve())
             
             raw_tags = tags_data.get(file_key, {})
             self._tags = {int(k): v for k, v in raw_tags.items()}
@@ -6973,7 +7014,7 @@ class LinguaEditWindow(QMainWindow):
         
         # Subject
         subject_edit = QLineEdit()
-        filename = Path(self._file_data.file_path).name
+        filename = Path(self._file_data.path).name
         subject_edit.setText(self.tr("Translation: %1").arg(filename))
         layout.addRow(self.tr("Subject:"), subject_edit)
         

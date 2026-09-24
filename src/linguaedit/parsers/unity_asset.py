@@ -20,6 +20,30 @@ class UnityAssetData:
     unity_version: str = ""
     guid: str = ""
 
+    @property
+    def path(self) -> Path:
+        return Path(self.file_path)
+
+    @path.setter
+    def path(self, value: str | Path) -> None:
+        self.file_path = str(value)
+
+    @property
+    def total_count(self) -> int:
+        return len(self.entries)
+
+    @property
+    def translated_count(self) -> int:
+        return sum(bool(entry.msgstr) for entry in self.entries)
+
+    @property
+    def untranslated_count(self) -> int:
+        return self.total_count - self.translated_count
+
+    @property
+    def fuzzy_count(self) -> int:
+        return sum(bool(entry.fuzzy) for entry in self.entries)
+
 
 def parse_unity_asset(file_path: Union[str, Path]) -> UnityAssetData:
     """Parse Unity .asset file (YAML-based localization table)."""

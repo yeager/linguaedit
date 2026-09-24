@@ -15,7 +15,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 
-from linguaedit.parsers import safe_parse_xml
+from linguaedit.parsers import safe_parse_xml, set_xml_text_preserving_inline
 
 _NS_XLIFF = "urn:oasis:names:tc:xliff:document:1.2"
 _NS_MQ = "MQXliff"
@@ -250,6 +250,7 @@ def save_mqxliff(data: MQXLIFFFileData, path: Optional[str | Path] = None) -> No
         ns = f"{{{_NS_XLIFF}}}"
 
         entry_map = {e.id: e for e in data.entries}
+        updated_targets = []
 
         for file_el in root.iter(f"{ns}file"):
             for body in file_el.iter(f"{ns}body"):
@@ -263,14 +264,15 @@ def save_mqxliff(data: MQXLIFFFileData, path: Optional[str | Path] = None) -> No
                     if target_el is None:
                         target_el = ET.SubElement(tu, f"{ns}target")
 
-                    # Only update plain text targets
-                    if len(target_el) == 0:
-                        target_el.text = entry.target
+                    set_xml_text_preserving_inline(target_el, entry.target)
+                    updated_targets.append((target_el, entry.target))
 
                     if entry.confirmed and entry.target:
                         target_el.set("state", "translated")
 
         ET.indent(data._tree, space="    ")
+        for target_el, target_text in updated_targets:
+            set_xml_text_preserving_inline(target_el, target_text)
         data._tree.write(str(out), encoding="utf-8", xml_declaration=True)
     else:
         # Fallback: write as standard XLIFF 1.2

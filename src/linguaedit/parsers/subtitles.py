@@ -20,6 +20,7 @@ class SubtitleEntry:
     cue_settings: str = ""  # För VTT
     note: str = ""  # För NOTE-kommentarer i VTT
     line_number: int = 0
+    identifier: str = ""  # WebVTT cue identifier
 
     @property
     def timestamp(self) -> str:
@@ -193,9 +194,10 @@ def _parse_vtt_content(content: str) -> SubtitleFileData:
             # Cue settings (efter timing)
             cue_settings = line[timing_match.end():].strip()
             
-            # Cue ID (föregående rad om den inte innehöll timing)
-            if i > 1 and not re.search(r'\d{2}:\d{2}:\d{2}\.\d{3}', lines[i-1]):
-                lines[i-1].strip()
+            # Cue ID (the optional line immediately before the timing line).
+            identifier = ""
+            if i > 1 and lines[i - 1].strip() and not re.search(r'\d{2}:\d{2}:\d{2}\.\d{3}', lines[i-1]):
+                identifier = lines[i - 1].strip()
             
             # Text (följande rader tills tom rad)
             i += 1
@@ -224,7 +226,8 @@ def _parse_vtt_content(content: str) -> SubtitleFileData:
                 translation=translation,
                 fuzzy=fuzzy,
                 cue_settings=cue_settings,
-                line_number=i
+                line_number=i,
+                identifier=identifier,
             )
             entries.append(entry)
         
@@ -334,6 +337,8 @@ def _save_vtt(file_data: SubtitleFileData) -> None:
     
     # Cues
     for entry in file_data.entries:
+        if entry.identifier:
+            lines.append(entry.identifier)
         # Timing med cue settings
         timing_line = f"{entry.start_time} --> {entry.end_time}"
         if entry.cue_settings:

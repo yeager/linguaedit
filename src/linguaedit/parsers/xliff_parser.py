@@ -3,11 +3,11 @@
 from __future__ import annotations
 
 import xml.etree.ElementTree as ET
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 
-from linguaedit.parsers import safe_parse_xml
+from linguaedit.parsers import safe_parse_xml, set_xml_text_preserving_inline
 
 
 @dataclass
@@ -50,6 +50,7 @@ class XLIFFFileData:
     target_language: str = ""
     version: str = "1.2"  # "1.2" or "2.0"
     original: str = ""
+    _tree: ET.ElementTree | None = field(default=None, repr=False)
 
     @property
     def translated_count(self) -> int:
@@ -156,12 +157,52 @@ def parse_xliff(path: str | Path) -> XLIFFFileData:
     return XLIFFFileData(
         path=path, entries=entries, source_language=src_lang,
         target_language=tgt_lang, version=version, original=original,
+        _tree=tree,
     )
 
 
 def save_xliff(data: XLIFFFileData, path: Optional[str | Path] = None) -> None:
     """Save an XLIFF file."""
     out = Path(path) if path else data.path
+
+    if data._tree is not None:
+        tree = data._tree
+        root = tree.getroot()
+        ns = root.tag.split("}")[0] + "}" if "}" in root.tag else ""
+        entry_index = 0
+        updated_targets = []
+        if data.version == "2.0":
+            for unit in root.iter(f"{ns}unit"):
+                for segment in unit.iter(f"{ns}segment"):
+                    if entry_index >= len(data.entries):
+                        break
+                    entry = data.entries[entry_index]
+                    entry_index += 1
+                    target_el = segment.find(f"{ns}target")
+                    if target_el is None:
+                        target_el = ET.SubElement(segment, f"{ns}target")
+                    set_xml_text_preserving_inline(target_el, entry.target)
+                    updated_targets.append((target_el, entry.target))
+                    if entry.state:
+                        segment.set("state", entry.state)
+        else:
+            for unit in root.iter(f"{ns}trans-unit"):
+                if entry_index >= len(data.entries):
+                    break
+                entry = data.entries[entry_index]
+                entry_index += 1
+                target_el = unit.find(f"{ns}target")
+                if target_el is None:
+                    target_el = ET.SubElement(unit, f"{ns}target")
+                set_xml_text_preserving_inline(target_el, entry.target)
+                updated_targets.append((target_el, entry.target))
+                if entry.state:
+                    target_el.set("state", entry.state)
+        ET.indent(tree, space="    ")
+        for target_el, target_text in updated_targets:
+            set_xml_text_preserving_inline(target_el, target_text)
+        tree.write(str(out), encoding="utf-8", xml_declaration=True)
+        return
 
     if data.version == "2.0":
         ns = "urn:oasis:names:tc:xliff:document:2.0"

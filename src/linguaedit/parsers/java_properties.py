@@ -26,31 +26,43 @@ class JavaPropertiesFileData:
     encoding: str = "utf-8"
     header_comment: str = ""
 
+    @property
+    def total_count(self) -> int:
+        return len(self.entries)
+
+    @property
+    def translated_count(self) -> int:
+        return sum(bool(entry.value) for entry in self.entries)
+
+    @property
+    def untranslated_count(self) -> int:
+        return self.total_count - self.translated_count
+
+    @property
+    def fuzzy_count(self) -> int:
+        return 0
+
 
 def _unescape_properties_value(value: str) -> str:
     """Unescape Java Properties-värde."""
-    # Hantera unicode escapes (\uXXXX)
-    def replace_unicode(match):
-        return chr(int(match.group(1), 16))
-    
-    value = re.sub(r'\\u([0-9a-fA-F]{4})', replace_unicode, value)
-    
-    # Hantera andra escape-sekvenser
-    escapes = {
-        '\\n': '\n',
-        '\\r': '\r',
-        '\\t': '\t',
-        '\\f': '\f',
-        '\\\\': '\\',
-        '\\:': ':',
-        '\\=': '=',
-        '\\ ': ' ',
-    }
-    
-    for escaped, unescaped in escapes.items():
-        value = value.replace(escaped, unescaped)
-        
-    return value
+    result = []
+    i = 0
+    while i < len(value):
+        if value[i] != "\\" or i + 1 == len(value):
+            result.append(value[i])
+            i += 1
+            continue
+        i += 1
+        char = value[i]
+        if char == "u" and i + 4 < len(value):
+            digits = value[i + 1:i + 5]
+            if re.fullmatch(r"[0-9a-fA-F]{4}", digits):
+                result.append(chr(int(digits, 16)))
+                i += 5
+                continue
+        result.append({"n": "\n", "r": "\r", "t": "\t", "f": "\f"}.get(char, char))
+        i += 1
+    return "".join(result)
 
 
 def _escape_properties_value(value: str) -> str:
@@ -80,7 +92,7 @@ def _escape_properties_value(value: str) -> str:
 
 def _parse_properties_line(line: str) -> tuple[Optional[str], Optional[str], Optional[str]]:
     """Parsa en rad från properties-fil. Returnerar (key, value, comment)."""
-    line = line.strip()
+    line = line.lstrip()
     
     # Tomma rader
     if not line:
@@ -111,14 +123,21 @@ def _parse_properties_line(line: str) -> tuple[Optional[str], Optional[str], Opt
         # Ingen separator funnen, hela raden är key med tomt värde
         return line, "", None
     
-    key = line[:separator_pos].strip()
-    value_part = line[separator_pos:].lstrip('=: \t')
-    
-    # Hantera multiline values (som slutar med \)
-    if value_part.endswith('\\'):
-        value_part = value_part[:-1]  # Ta bort trailing backslash
+    key = line[:separator_pos]
+    value_part = line[separator_pos:]
+    if value_part[:1].isspace():
+        value_part = value_part.lstrip(" \t\f")
+    if value_part[:1] in ("=", ":"):
+        value_part = value_part[1:]
+    value_part = value_part.lstrip(" \t\f")
     
     return key, value_part, None
+
+
+def _has_continuation(line: str) -> bool:
+    """Java Properties continues a line only after an odd number of slashes."""
+    slash_count = len(line) - len(line.rstrip("\\"))
+    return slash_count % 2 == 1
 
 
 def parse_java_properties(path: Union[str, Path]) -> JavaPropertiesFileData:
@@ -142,27 +161,40 @@ def parse_java_properties(path: Union[str, Path]) -> JavaPropertiesFileData:
     if not content:
         raise ValueError(f"Could not decode file: {path}")
     
-    lines = content.splitlines()
+    physical_lines = content.splitlines()
+    lines = []
+    i = 0
+    while i < len(physical_lines):
+        logical = physical_lines[i]
+        while _has_continuation(logical) and i + 1 < len(physical_lines):
+            logical = logical[:-1]
+            i += 1
+            logical += physical_lines[i].lstrip(" \t\f")
+        lines.append(logical)
+        i += 1
     entries = []
     header_comments = []
     in_header = True
     current_key = None
     current_value = ""
     current_comment = ""
+    pending_comments = []
     
     for line_num, line in enumerate(lines, 1):
         key, value, comment = _parse_properties_line(line)
         
-        # Header-kommentarer (innan första key)
-        if comment and in_header and key is None:
-            header_comments.append(comment)
+        if comment is not None and key is None:
+            if in_header:
+                header_comments.append(comment)
+            else:
+                pending_comments.append(comment)
             continue
         
         if key is not None:
             in_header = False
             
             # Spara föregående entry om vi har en
-            if current_key:
+            if current_key is not None:
                 entry = JavaPropertiesEntry(
                     key=current_key,
                     value=_unescape_properties_value(current_value),
@@ -172,28 +204,13 @@ def parse_java_properties(path: Union[str, Path]) -> JavaPropertiesFileData:
                 entries.append(entry)
             
             # Börja ny entry
-            current_key = key
+            current_key = _unescape_properties_value(key)
             current_value = value or ""
-            current_comment = ""
+            current_comment = "\n".join(pending_comments)
+            pending_comments.clear()
         
-        elif comment and current_key:
-            # Kommentar för current key
-            if current_comment:
-                current_comment += " " + comment
-            else:
-                current_comment = comment
-        
-        elif value and current_key:
-            # Fortsättning av multiline value
-            current_value += value
-        
-        # Kolla om värdet fortsätter på nästa rad
-        if line.rstrip().endswith('\\'):
-            current_value = current_value[:-1]  # Ta bort trailing backslash
-            continue
-    
     # Spara sista entry
-    if current_key:
+    if current_key is not None:
         entry = JavaPropertiesEntry(
             key=current_key,
             value=_unescape_properties_value(current_value),
@@ -234,27 +251,16 @@ def save_java_properties(file_data: JavaPropertiesFileData, path: Optional[Path]
                 if comment_line.strip():
                     lines.append(f"# {comment_line.strip()}")
         
-        # Key = Value
+        # Escape keys as well as values: separators, leading spaces and
+        # backslashes have syntactic meaning in Java Properties.
+        escaped_key = _escape_properties_value(entry.key).replace("=", "\\=").replace(":", "\\:")
+        escaped_key = escaped_key.replace(" ", "\\ ").replace("#", "\\#").replace("!", "\\!")
         escaped_value = _escape_properties_value(entry.value)
-        
-        # Hantera långa rader (split vid 80 tecken)
-        if len(entry.key) + len(escaped_value) > 80:
-            lines.append(f"{entry.key} = \\")
-            # Split value på lämpliga ställen
-            words = escaped_value.split(' ')
-            current_line = "    "
-            
-            for word in words:
-                if len(current_line) + len(word) > 76:
-                    lines.append(current_line.rstrip() + " \\")
-                    current_line = "    " + word + " "
-                else:
-                    current_line += word + " "
-            
-            if current_line.strip():
-                lines.append(current_line.rstrip())
-        else:
-            lines.append(f"{entry.key} = {escaped_value}")
+        leading_spaces = len(escaped_value) - len(escaped_value.lstrip(" "))
+        escaped_value = "\\ " * leading_spaces + escaped_value[leading_spaces:]
+        # Long physical lines are valid; wrapping can change continuation
+        # semantics and split escape sequences.
+        lines.append(f"{escaped_key}={escaped_value}")
         
         lines.append("")  # Tom rad mellan entries
     

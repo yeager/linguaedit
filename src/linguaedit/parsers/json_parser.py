@@ -45,10 +45,11 @@ class JSONFileData:
 
 
 def _flatten(obj: dict, prefix: str = "") -> list[JSONEntry]:
-    """Flatten nested dict to dot-separated keys."""
+    """Flatten nested dicts to dot-separated keys with escaping for literal dots."""
     entries = []
     for k, v in obj.items():
-        full_key = f"{prefix}.{k}" if prefix else k
+        escaped_key = str(k).replace("\\", "\\\\").replace(".", "\\.")
+        full_key = f"{prefix}.{escaped_key}" if prefix else escaped_key
         if isinstance(v, dict):
             entries.extend(_flatten(v, full_key))
         else:
@@ -57,10 +58,26 @@ def _flatten(obj: dict, prefix: str = "") -> list[JSONEntry]:
 
 
 def _unflatten(entries: list[JSONEntry]) -> dict:
-    """Unflatten dot-separated keys back to nested dict."""
+    """Unflatten escaped dot-separated keys back to nested dict."""
     result: dict = {}
     for entry in entries:
-        parts = entry.key.split(".")
+        parts = []
+        part = []
+        escaped = False
+        for char in entry.key:
+            if escaped:
+                part.append(char)
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == ".":
+                parts.append("".join(part))
+                part = []
+            else:
+                part.append(char)
+        if escaped:
+            part.append("\\")
+        parts.append("".join(part))
         d = result
         for part in parts[:-1]:
             d = d.setdefault(part, {})

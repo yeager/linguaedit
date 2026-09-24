@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import xml.etree.ElementTree as ET
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 
@@ -41,6 +41,7 @@ class TSFileData:
     entries: list[TSEntry]
     language: str = ""
     source_language: str = ""
+    _tree: ET.ElementTree | None = field(default=None, repr=False)
 
     @property
     def translated_count(self) -> int:
@@ -90,12 +91,54 @@ def parse_ts(path: str | Path) -> TSFileData:
                 translation_type=trans_type,
             ))
 
-    return TSFileData(path=path, entries=entries, language=lang, source_language=src_lang)
+    return TSFileData(path=path, entries=entries, language=lang, source_language=src_lang, _tree=tree)
 
 
 def save_ts(data: TSFileData, path: Optional[str | Path] = None) -> None:
     """Save a TS file."""
     out = Path(path) if path else data.path
+    if data._tree is not None:
+        tree = data._tree
+        root = tree.getroot()
+        contexts = {}
+        for ctx in root.findall("context"):
+            name = ctx.findtext("name", "")
+            contexts.setdefault(name, []).extend(ctx.findall("message"))
+        positions = {}
+        for entry in data.entries:
+            messages = contexts.get(entry.context_name, [])
+            msg = None
+            for candidate in messages:
+                if candidate in positions.get(entry.context_name, set()):
+                    continue
+                if candidate.findtext("source", "") == entry.source:
+                    msg = candidate
+                    break
+            if msg is None:
+                ctx = next((c for c in root.findall("context") if c.findtext("name", "") == entry.context_name), None)
+                if ctx is None:
+                    ctx = ET.SubElement(root, "context")
+                    ET.SubElement(ctx, "name").text = entry.context_name
+                msg = ET.SubElement(ctx, "message")
+                ET.SubElement(msg, "source").text = entry.source
+            positions.setdefault(entry.context_name, set()).add(msg)
+            trans = msg.find("translation")
+            if trans is None:
+                trans = ET.SubElement(msg, "translation")
+            if not trans.findall("numerusform"):
+                trans.text = entry.translation
+            if entry.translation_type:
+                trans.set("type", entry.translation_type)
+            else:
+                trans.attrib.pop("type", None)
+        if data.language:
+            root.set("language", data.language)
+        if data.source_language:
+            root.set("sourcelanguage", data.source_language)
+        ET.indent(tree, space="    ")
+        tree.write(str(out), encoding="utf-8", xml_declaration=True)
+        return
+
     root = ET.Element("TS", version="2.1")
     if data.language:
         root.set("language", data.language)

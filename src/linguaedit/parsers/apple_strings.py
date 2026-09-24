@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import plistlib
 import re
+from copy import deepcopy
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Union
@@ -18,6 +19,15 @@ class AppleStringsData:
     file_path: str
     is_stringsdict: bool = False
     metadata: Dict[str, Any] = None
+    raw_plist: Dict[str, Any] = None
+
+    @property
+    def path(self) -> Path:
+        return Path(self.file_path)
+
+    @path.setter
+    def path(self, value: str | Path) -> None:
+        self.file_path = str(value)
 
     @property
     def total_count(self) -> int:
@@ -30,6 +40,10 @@ class AppleStringsData:
     @property
     def untranslated_count(self) -> int:
         return sum(1 for e in self.entries if not e.msgstr)
+
+    @property
+    def fuzzy_count(self) -> int:
+        return 0
 
     @property
     def percent_translated(self) -> float:
@@ -106,15 +120,11 @@ def _parse_stringsdict(file_path: Path) -> AppleStringsData:
             
             # Extract plural forms
             plural_forms = {}
-            for var_key, var_value in value.items():
-                if var_key.startswith('VARIABLE_'):
-                    variable_data = var_value
-                    if isinstance(variable_data, dict) and 'NSStringFormatSpecTypeKey' in variable_data:
-                        spec_type = variable_data['NSStringFormatSpecTypeKey']
-                        if spec_type == 'NSStringPluralRuleType':
-                            plural_rules = variable_data.get('NSStringFormatValueTypeKey', {})
-                            for rule, text in plural_rules.items():
-                                plural_forms[rule] = text
+            for variable_data in value.values():
+                if isinstance(variable_data, dict) and variable_data.get('NSStringFormatSpecTypeKey') == 'NSStringPluralRuleType':
+                    plural_rules = variable_data.get('NSStringFormatValueTypeKey', {})
+                    for rule, text in plural_rules.items():
+                        plural_forms[rule] = text
             
             # Create entries for each plural form
             if plural_forms:
@@ -147,7 +157,8 @@ def _parse_stringsdict(file_path: Path) -> AppleStringsData:
     return AppleStringsData(
         entries=entries,
         file_path=str(file_path),
-        is_stringsdict=True
+        is_stringsdict=True,
+        raw_plist=plist_data,
     )
 
 
@@ -180,7 +191,7 @@ def _save_strings(data: AppleStringsData, file_path: Path) -> None:
 
 def _save_stringsdict(data: AppleStringsData, file_path: Path) -> None:
     """Save .stringsdict file format."""
-    plist_data = {}
+    plist_data = deepcopy(data.raw_plist or {})
     
     # Group entries by context (original key)
     grouped_entries = {}
@@ -191,37 +202,25 @@ def _save_stringsdict(data: AppleStringsData, file_path: Path) -> None:
         grouped_entries[context].append(entry)
     
     for context, entries in grouped_entries.items():
-        # Check if this has plural forms
+        # Update the existing structure in place, retaining its format key,
+        # variable name, categories and any application-specific metadata.
         plural_entries = [e for e in entries if 'plural' in e.flags]
-        
         if plural_entries:
-            # Create plural structure
-            plural_dict = {
-                'NSStringLocalizedFormatKey': f'%#@VARIABLE_{context.upper()}@',
-                f'VARIABLE_{context.upper()}': {
-                    'NSStringFormatSpecTypeKey': 'NSStringPluralRuleType',
-                    'NSStringFormatValueTypeKey': {
-                        'zero': '',
-                        'one': '',
-                        'two': '',
-                        'few': '',
-                        'many': '',
-                        'other': ''
-                    }
-                }
-            }
-            
-            # Fill in the plural forms
+            plural_dict = plist_data.get(context)
+            if not isinstance(plural_dict, dict):
+                continue
             for entry in plural_entries:
-                # Extract plural rule from source like "key[zero]"
                 match = re.search(r'\[(\w+)\]$', entry.msgid)
                 if match:
                     rule = match.group(1)
-                    plural_dict[f'VARIABLE_{context.upper()}']['NSStringFormatValueTypeKey'][rule] = entry.msgstr
-            
-            plist_data[context] = plural_dict
+                    for variable in plural_dict.values():
+                        if not isinstance(variable, dict):
+                            continue
+                        values = variable.get('NSStringFormatValueTypeKey')
+                        if isinstance(values, dict) and rule in values:
+                            values[rule] = entry.msgstr
+                            break
         else:
-            # Simple key-value
             if entries:
                 plist_data[context] = entries[0].msgstr
     
