@@ -4,7 +4,7 @@
 
 ### Fixed
 - **Localization format handling** — corrected parsing, saving, and recovery for multiple localization file formats
-- **Translation catalog coverage** — added 63 missing interface messages across supported catalogs for translation
+- **Translation catalog builds** — restored completed translations so all supported language resources are included in release builds
 - **Editor stability** — fixed regressions in the translation editor and added regression coverage
 
 ## [1.8.18] — 2026-08-27
