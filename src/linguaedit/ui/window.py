@@ -1802,8 +1802,16 @@ class LinguaEditWindow(QMainWindow):
         from PySide6.QtCore import QEvent
         from PySide6.QtWidgets import QToolTip
 
+        # Qt may deliver a final event while child widgets are being destroyed.
+        # Accessing viewport() on an already-deleted wrapper raises RuntimeError.
+        try:
+            tree = getattr(self, "_tree", None)
+            tree_viewport = tree.viewport() if tree is not None else None
+        except RuntimeError:
+            return False
+
         # Entry Preview on Hover (Feature 4)
-        if obj is self._tree.viewport() and event.type() == QEvent.ToolTip:
+        if obj is tree_viewport and event.type() == QEvent.ToolTip:
             pos = event.pos()
             item = self._tree.itemAt(pos)
             if item and self._file_data:
@@ -1830,7 +1838,7 @@ class LinguaEditWindow(QMainWindow):
                         f"{self.tr('Translation:')} {trn}<br>"
                         f"{status_html}"
                     )
-                    QToolTip.showText(event.globalPos(), tooltip, self._tree)
+                    QToolTip.showText(event.globalPos(), tooltip, tree)
                     return True
             QToolTip.hideText()
             return True

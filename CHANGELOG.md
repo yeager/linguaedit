@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [1.8.20] — 2026-10-25
+
+### Fixed
+- Ignore the final tree event safely when Qt has already destroyed the widget.
+
 ## [1.8.19] — 2026-09-24
 
 ### Fixed

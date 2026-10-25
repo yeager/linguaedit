@@ -1,6 +1,6 @@
 # LinguaEdit
 
-![Version](https://img.shields.io/badge/version-1.8.19-blue)
+![Version](https://img.shields.io/badge/version-1.8.20-blue)
 ![GitHub Release](https://img.shields.io/github/v/release/yeager/linguaedit)
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue)
 ![Python](https://img.shields.io/badge/python-3.10+-green)
@@ -28,20 +28,20 @@ LinguaEdit is a desktop editor for software localization files and subtitles. It
 
 ## Install
 
-The latest release is [v1.8.19](https://github.com/yeager/linguaedit/releases/tag/v1.8.19). Download the file for your system:
+The latest release is [v1.8.20](https://github.com/yeager/linguaedit/releases/tag/v1.8.20). Download the file for your system:
 
 | Platform | Download | Install |
 |---|---|---|
-| macOS, Apple Silicon | [ZIP](https://github.com/yeager/linguaedit/releases/download/v1.8.19/LinguaEdit-v1.8.19-macOS-arm64.zip) | Unzip and move LinguaEdit to Applications. |
-| macOS, Intel | [ZIP](https://github.com/yeager/linguaedit/releases/download/v1.8.19/LinguaEdit-v1.8.19-macOS-x86_64.zip) | Unzip and move LinguaEdit to Applications. |
-| Windows | [Installer](https://github.com/yeager/linguaedit/releases/download/v1.8.19/LinguaEdit-1.8.19-Setup.exe) | Run the installer. |
-| Debian or Ubuntu | [DEB package](https://github.com/yeager/linguaedit/releases/download/v1.8.19/linguaedit_1.8.19_all.deb) | Install with APT or a package manager. |
-| Python | [Wheel](https://github.com/yeager/linguaedit/releases/download/v1.8.19/linguaedit-1.8.19-py3-none-any.whl) | Install with pip; requires Python 3.10 or newer. |
+| macOS, Apple Silicon | [ZIP](https://github.com/yeager/linguaedit/releases/download/v1.8.20/LinguaEdit-v1.8.20-macOS-arm64.zip) | Unzip and move LinguaEdit to Applications. |
+| macOS, Intel | [ZIP](https://github.com/yeager/linguaedit/releases/download/v1.8.20/LinguaEdit-v1.8.20-macOS-x86_64.zip) | Unzip and move LinguaEdit to Applications. |
+| Windows | [Installer](https://github.com/yeager/linguaedit/releases/download/v1.8.20/LinguaEdit-1.8.20-Setup.exe) | Run the installer. |
+| Debian or Ubuntu | [DEB package](https://github.com/yeager/linguaedit/releases/download/v1.8.20/linguaedit_1.8.20_all.deb) | Install with APT or a package manager. |
+| Python | [Wheel](https://github.com/yeager/linguaedit/releases/download/v1.8.20/linguaedit-1.8.20-py3-none-any.whl) | Install with pip; requires Python 3.10 or newer. |
 
-The Python package published on PyPI may lag behind the GitHub release. For v1.8.19, download the wheel above, then run:
+The Python package published on PyPI may lag behind the GitHub release. For v1.8.20, download the wheel above, then run:
 
 ```bash
-python -m pip install ./linguaedit-1.8.19-py3-none-any.whl
+python -m pip install ./linguaedit-1.8.20-py3-none-any.whl
 linguaedit-gui
 ```
 

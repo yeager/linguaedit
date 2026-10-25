@@ -1,4 +1,4 @@
 """LinguaEdit — A Qt6 translation file editor."""
 
-__version__ = "1.8.19"
+__version__ = "1.8.20"
 APP_ID = "se.danielnylander.LinguaEdit"
